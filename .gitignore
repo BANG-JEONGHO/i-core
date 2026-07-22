@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+*.db
+venv/
+.venv/
+
+# Node
+node_modules/
+dist/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Uploads (user data)
+instructor-matching-backend/uploads/
+
+# Temp test scripts
+check_*.py
+test_*.py
+fix_*.py
+clean_*.py
+create_and_upload.py
+debug_*.py
