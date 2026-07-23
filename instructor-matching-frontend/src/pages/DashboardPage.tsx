@@ -46,7 +46,7 @@ export default function DashboardPage() {
     <div className="h-full flex flex-col">
       {/* 헤더 */}
       <div className="flex items-center justify-between mb-5">
-        <h1 className="text-lg font-bold text-gray-900">Board</h1>
+        <h1 className="text-lg font-bold text-gray-900">보드</h1>
         <div className="flex items-center gap-3">
           <div className="flex items-center gap-1.5 bg-white border border-gray-200 rounded-md px-2.5 py-1.5">
             <Calendar size={13} className="text-gray-400" />
@@ -100,7 +100,7 @@ function Column({ title, count, children }: { title: string; count: number; chil
         <span className="text-[10px] text-gray-400 bg-gray-200 w-5 h-5 rounded-full flex items-center justify-center font-semibold">{count}</span>
       </div>
       {/* 카드 영역 */}
-      <div className="flex-1 overflow-y-auto p-2 space-y-2">
+      <div className="flex-1 overflow-y-auto p-2.5 space-y-2.5">
         {React.Children.count(children) > 0 ? children : (
           <div className="text-center py-10"><p className="text-[10px] text-gray-300">항목 없음</p></div>
         )}
@@ -113,9 +113,9 @@ function Card({ title, tag, tagColor, userName, onDelete }: {
   title: string; tag: string; tagColor: string; userName?: string; onDelete?: () => void;
 }) {
   const tagColors: Record<string, string> = {
-    blue: 'bg-blue-600 text-white',
-    amber: 'bg-amber-500 text-white',
-    green: 'bg-green-600 text-white',
+    blue: 'bg-blue-100 text-blue-600',
+    amber: 'bg-amber-100 text-amber-600',
+    green: 'bg-green-100 text-green-600',
   };
   const initial = (userName || '?').charAt(0).toUpperCase();
 
