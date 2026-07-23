@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { useQuery } from '@tanstack/react-query';
-import { FileText, Play, CheckCircle, AlertCircle } from 'lucide-react';
+import { useQuery, useQueryClient } from '@tanstack/react-query';
+import { FileText, Play, CheckCircle, AlertCircle, RefreshCw } from 'lucide-react';
 import toast from 'react-hot-toast';
 import { taskOrdersApi } from '../api/taskOrders';
 import { matchingApi } from '../api/matching';
@@ -10,7 +10,9 @@ import type { TaskOrder } from '../types';
 export default function TaskOrderDetailPage() {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
+  const queryClient = useQueryClient();
   const [matching, setMatching] = useState(false);
+  const [reparsing, setReparsing] = useState(false);
 
   const { data: taskOrder, isLoading } = useQuery({
     queryKey: ['task-order', id],
@@ -67,10 +69,30 @@ export default function TaskOrderDetailPage() {
       {!hasData && (
         <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 flex items-start gap-3 mb-4">
           <AlertCircle size={18} className="text-amber-500 shrink-0 mt-0.5" />
-          <div>
+          <div className="flex-1">
             <p className="text-sm font-medium text-amber-800">파싱된 데이터가 없습니다</p>
-            <p className="text-xs text-amber-600 mt-0.5">문서에서 신청자격/평가기준을 자동 추출하지 못했습니다. 지원하는 형식인지 확인해 주세요.</p>
+            <p className="text-xs text-amber-600 mt-0.5">문서에서 신청자격/평가기준을 자동 추출하지 못했습니다.</p>
           </div>
+          <button
+            onClick={async () => {
+              if (!id) return;
+              setReparsing(true);
+              try {
+                await taskOrdersApi.reparse(id);
+                toast.success('재파싱 완료!');
+                queryClient.invalidateQueries({ queryKey: ['task-order', id] });
+              } catch (err: any) {
+                toast.error(err.response?.data?.detail || '재파싱에 실패했습니다');
+              } finally {
+                setReparsing(false);
+              }
+            }}
+            disabled={reparsing}
+            className="flex items-center gap-1.5 px-3 py-1.5 bg-amber-600 text-white text-xs font-medium rounded-lg hover:bg-amber-700 disabled:opacity-50 shrink-0"
+          >
+            <RefreshCw size={12} className={reparsing ? 'animate-spin' : ''} />
+            {reparsing ? '파싱 중...' : '재파싱'}
+          </button>
         </div>
       )}
 

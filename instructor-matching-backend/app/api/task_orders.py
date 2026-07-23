@@ -1,5 +1,6 @@
 """과업지시서 API 라우터."""
 
+import os
 from fastapi import APIRouter, Depends, Query, UploadFile
 from sqlalchemy.ext.asyncio import AsyncSession
 
@@ -66,3 +67,49 @@ async def update_parsed_result(
 ):
     """파싱 결과 수정."""
     return await task_order_service.update_parsed_result(db, task_order_id, data)
+
+
+@router.post("/{task_order_id}/reparse", response_model=TaskOrderResponse)
+async def reparse_task_order(
+    task_order_id: str,
+    db: AsyncSession = Depends(get_db),
+    current_user: User = Depends(get_current_user),
+):
+    """과업지시서 재파싱 - 파싱 실패 시 다시 시도."""
+    import asyncio
+    from datetime import datetime
+    from app.models.models import TaskOrder
+    from app.services.ai_agent import parse_document_with_ai
+
+    task_order = await db.get(TaskOrder, task_order_id)
+    if not task_order:
+        from fastapi import HTTPException, status
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND)
+
+    # 저장된 파일 읽기
+    file_path = task_order.file_path
+    if not file_path or not os.path.exists(file_path):
+        from fastapi import HTTPException, status
+        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="원본 파일을 찾을 수 없습니다.")
+
+    with open(file_path, "rb") as f:
+        content = f.read()
+
+    try:
+        ai_result = await asyncio.wait_for(
+            parse_document_with_ai(content, task_order.file_name),
+            timeout=120.0
+        )
+        task_order.raw_text = ai_result.get("raw_text", "")
+        task_order.qualifications = ai_result.get("qualifications", [])
+        task_order.evaluation_criteria = ai_result.get("evaluation_criteria", [])
+        if task_order.qualifications or task_order.evaluation_criteria:
+            task_order.parsed_at = datetime.utcnow()
+        from sqlalchemy.orm.attributes import flag_modified
+        flag_modified(task_order, "qualifications")
+        flag_modified(task_order, "evaluation_criteria")
+    except asyncio.TimeoutError:
+        from fastapi import HTTPException, status
+        raise HTTPException(status_code=status.HTTP_408_REQUEST_TIMEOUT, detail="파싱 시간이 초과되었습니다. 다시 시도해주세요.")
+
+    return TaskOrderResponse.model_validate(task_order)

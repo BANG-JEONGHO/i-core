@@ -52,7 +52,7 @@ async def upload_task_order(
         try:
             ai_result = await asyncio.wait_for(
                 parse_document_with_ai(content, file_name),
-                timeout=45.0
+                timeout=90.0
             )
             raw_text = ai_result.get("raw_text", "")
             qualifications_data = ai_result.get("qualifications", [])

@@ -30,4 +30,9 @@ export const taskOrdersApi = {
   delete: async (id: string): Promise<void> => {
     await apiClient.delete(`/api/task-orders/${id}`);
   },
+
+  reparse: async (id: string): Promise<TaskOrder> => {
+    const response = await apiClient.post(`/api/task-orders/${id}/reparse`, {}, { timeout: 130000 });
+    return response.data;
+  },
 };
