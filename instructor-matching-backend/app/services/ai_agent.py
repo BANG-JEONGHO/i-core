@@ -256,6 +256,39 @@ def _extract_text_from_docx(file_content: bytes) -> str | None:
     return None
 
 
+def _extract_text_from_pdf(file_content: bytes) -> str | None:
+    """pdfplumber로 PDF 텍스트 추출 (표 포함)."""
+    try:
+        import io
+        import pdfplumber
+
+        all_text = []
+        with pdfplumber.open(io.BytesIO(file_content)) as pdf:
+            for page in pdf.pages:
+                # 일반 텍스트
+                text = page.extract_text()
+                if text:
+                    all_text.append(text)
+
+                # 표 데이터도 추출
+                tables = page.extract_tables()
+                for table in tables:
+                    for row in table:
+                        if row:
+                            row_text = " | ".join(str(cell).strip() for cell in row if cell)
+                            if row_text.strip():
+                                all_text.append(row_text)
+
+        full_text = "\n".join(all_text)
+        if full_text and len(full_text.strip()) > 100:
+            logger.info("pdf_local_extraction_success", text_length=len(full_text))
+            return full_text
+        logger.warning("pdf_local_extraction_low_quality", text_length=len(full_text) if full_text else 0)
+    except Exception as e:
+        logger.warning("pdf_extraction_failed", error=str(e))
+    return None
+
+
 async def parse_document_with_ai(file_content: bytes, file_name: str) -> dict:
     """파일을 AI로 파싱하여 신청자격/평가기준을 추출합니다.
 
@@ -278,7 +311,11 @@ async def parse_document_with_ai(file_content: bytes, file_name: str) -> dict:
             use_file_api = True
             logger.info("hwp_fallback_to_file_api", file_name=file_name)
     elif ext == 'pdf':
-        use_file_api = True
+        # PDF: 먼저 로컬에서 텍스트 추출 시도 (pdfplumber)
+        raw_text = _extract_text_from_pdf(file_content) or ""
+        if not raw_text or len(raw_text.strip()) < 100:
+            # 텍스트 추출 실패 시 Gemini File API 사용
+            use_file_api = True
     else:
         try:
             raw_text = file_content.decode("utf-8", errors="ignore")
