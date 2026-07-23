@@ -74,14 +74,14 @@ export default function MatchingResultPage() {
   if (isLoading) return <div className="py-8 text-center text-sm text-gray-400">로딩 중...</div>;
   if (!result) return <div className="py-8 text-center text-sm text-gray-400">결과 없음</div>;
 
-  const top20 = result.results.slice(0, 20);
+  const top20 = result.results.slice(0, 50);
 
   return (
     <div className="h-full flex flex-col">
       <div className="mb-4">
         <p className="text-lg font-bold text-gray-900">매칭 결과</p>
         <p className="text-xs text-gray-500 mt-0.5">
-          상위 20명 추천
+          상위 50명 추천
           {finalSelected && <span className="text-green-600 ml-2">· 강사 선정 완료</span>}
           {!finalSelected && candidates.size > 0 && <span className="text-indigo-600 ml-2">· {candidates.size}명 후보 선정</span>}
         </p>
@@ -143,6 +143,58 @@ export default function MatchingResultPage() {
 
               {/* AI 추천 분석 */}
               <AiReasonSection matchingId={id!} instructorId={selected.instructor_id} key={selected.instructor_id} />
+
+              {/* 이력서 원본 보기 */}
+              {selectedInstructor && (
+                <div className="border-t border-gray-100 pt-3">
+                  <details className="group">
+                    <summary className="text-[11px] font-semibold text-gray-600 cursor-pointer hover:text-indigo-600 transition-colors">
+                      📄 이력서 원본 데이터 보기
+                    </summary>
+                    <div className="mt-2 space-y-2 text-[11px]">
+                      {selectedInstructor.specializations?.length > 0 && (
+                        <div><span className="font-semibold text-gray-500">전문분야:</span> <span className="text-gray-700">{selectedInstructor.specializations.join(', ')}</span></div>
+                      )}
+                      {selectedInstructor.certifications?.length > 0 && (
+                        <div><span className="font-semibold text-gray-500">자격증:</span> <span className="text-gray-700">{selectedInstructor.certifications.join(', ')}</span></div>
+                      )}
+                      {selectedInstructor.keywords?.length > 0 && (
+                        <div><span className="font-semibold text-gray-500">보유기술:</span> <span className="text-gray-700">{selectedInstructor.keywords.join(', ')}</span></div>
+                      )}
+                      {selectedInstructor.education && (
+                        <div><span className="font-semibold text-gray-500">학력:</span> <span className="text-gray-700">{selectedInstructor.education}</span></div>
+                      )}
+                      {selectedInstructor.experience_years > 0 && (
+                        <div><span className="font-semibold text-gray-500">강의건수:</span> <span className="text-gray-700">{selectedInstructor.experience_years}건</span></div>
+                      )}
+                      {selectedInstructor.lecture_history?.length > 0 && (
+                        <div>
+                          <span className="font-semibold text-gray-500">강의이력:</span>
+                          <ul className="mt-1 space-y-0.5 text-gray-600">
+                            {selectedInstructor.lecture_history.slice(0, 5).map((lh: any, i: number) => (
+                              <li key={i} className="pl-2 border-l-2 border-gray-200">
+                                {lh.title || lh.project_name || JSON.stringify(lh).slice(0, 60)}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
+                      {selectedInstructor.qualifications_career?.length > 0 && (
+                        <div>
+                          <span className="font-semibold text-gray-500">자격/경력:</span>
+                          <ul className="mt-1 space-y-0.5 text-gray-600">
+                            {selectedInstructor.qualifications_career.slice(0, 5).map((qc: any, i: number) => (
+                              <li key={i} className="pl-2 border-l-2 border-gray-200">
+                                {qc.name || qc.title || JSON.stringify(qc).slice(0, 60)}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
+                    </div>
+                  </details>
+                </div>
+              )}
 
               {/* 버튼 */}
               <div className="border-t border-gray-100 pt-4 space-y-2">

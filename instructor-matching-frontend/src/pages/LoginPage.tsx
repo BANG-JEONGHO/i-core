@@ -33,8 +33,10 @@ export default function LoginPage() {
       login(res.access_token, { id: res.user.id, username: res.user.email, name: res.user.name });
       toast.success(`${res.user.name}님, 환영합니다!`);
       navigate('/');
-    } catch {
-      toast.error('로그인에 실패했습니다');
+    } catch (err: any) {
+      const detail = err?.response?.data?.detail || '로그인에 실패했습니다';
+      toast.error(detail);
+      console.error('Google login error:', detail);
     } finally {
       setLoading(false);
     }
@@ -72,7 +74,6 @@ export default function LoginPage() {
     }
   }, [handleGoogleCallback]);
 
-  // Demo login fallback (when no Google Client ID configured)
   const handleDemoLogin = async () => {
     setLoading(true);
     try {
@@ -87,49 +88,60 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-50">
-      <div className="w-full max-w-[400px] bg-white rounded-xl border border-gray-200 p-8">
-        <div className="flex items-center gap-2.5 mb-8">
-          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-indigo-500 to-blue-600 flex items-center justify-center">
-            <span className="text-white text-xs font-black">IM</span>
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50">
+      {/* 배경 장식 */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-indigo-100 rounded-full opacity-40 blur-3xl" />
+        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-blue-100 rounded-full opacity-40 blur-3xl" />
+      </div>
+
+      <div className="relative w-full max-w-[420px] mx-4">
+        {/* 메인 카드 */}
+        <div className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl shadow-indigo-100/50 border border-white/60 p-10">
+          {/* 로고 영역 */}
+          <div className="text-center mb-10">
+            <div className="inline-flex items-center justify-center mb-4">
+              <img src="/logo.jpg" alt="iCore" className="w-20 h-20 rounded-2xl shadow-lg shadow-indigo-200 object-cover" />
+            </div>
+            <h1 className="text-2xl font-bold text-gray-900 mt-2">iCore 강사 매칭</h1>
+            <p className="text-sm text-gray-500 mt-1.5">AI 기반 최적 강사 매칭 플랫폼</p>
           </div>
-          <div>
-            <p className="text-sm font-semibold text-gray-900">강사 매칭 플랫폼</p>
-            <p className="text-[11px] text-gray-400">사내 업무 시스템</p>
+
+          {/* 구분선 */}
+          <div className="flex items-center gap-3 mb-8">
+            <div className="flex-1 h-px bg-gray-200" />
+            <span className="text-xs text-gray-400 font-medium">계정으로 시작하기</span>
+            <div className="flex-1 h-px bg-gray-200" />
           </div>
+
+          {/* Google Sign-In Button */}
+          <div className="flex justify-center mb-6">
+            <div ref={googleBtnRef} />
+          </div>
+
+          {loading && (
+            <div className="flex items-center justify-center gap-2 text-sm text-gray-500 mt-4">
+              <Loader2 size={16} className="animate-spin text-indigo-500" />
+              <span>로그인 처리 중...</span>
+            </div>
+          )}
+
+          {/* Fallback */}
+          {!GOOGLE_CLIENT_ID && (
+            <div className="mt-6 border-t border-gray-100 pt-5">
+              <button
+                onClick={handleDemoLogin}
+                disabled={loading}
+                className="w-full py-3 bg-gray-900 text-white text-sm font-semibold rounded-xl hover:bg-gray-800 disabled:opacity-50 transition-all duration-200 shadow-sm"
+              >
+                테스트 로그인
+              </button>
+            </div>
+          )}
         </div>
 
-        <div className="text-center mb-6">
-          <p className="text-sm text-gray-600">구글 계정으로 로그인하여 시작하세요</p>
-        </div>
-
-        {/* Google Sign-In Button */}
-        <div className="flex justify-center mb-4">
-          <div ref={googleBtnRef} />
-        </div>
-
-        {loading && (
-          <div className="flex items-center justify-center gap-2 text-sm text-gray-500 mt-4">
-            <Loader2 size={14} className="animate-spin" />
-            <span>로그인 처리 중...</span>
-          </div>
-        )}
-
-        {/* Fallback: when no Google Client ID */}
-        {!GOOGLE_CLIENT_ID && (
-          <div className="mt-6 border-t border-gray-100 pt-4">
-            <p className="text-[10px] text-gray-400 text-center mb-3">Google Client ID 미설정 시 테스트 로그인</p>
-            <button
-              onClick={handleDemoLogin}
-              disabled={loading}
-              className="w-full py-2.5 bg-gray-100 text-gray-700 text-sm font-medium rounded-lg hover:bg-gray-200 disabled:opacity-50 transition-colors"
-            >
-              테스트 로그인 (admin)
-            </button>
-          </div>
-        )}
-
-        <p className="text-[10px] text-gray-400 text-center mt-6">
+        {/* 하단 정보 */}
+        <p className="text-center text-[11px] text-gray-400 mt-5">
           Google 계정 인증을 통해 안전하게 접속합니다
         </p>
       </div>

@@ -36,18 +36,22 @@ async def google_login(request: GoogleLoginRequest, db: AsyncSession = Depends(g
     """Google OAuth 로그인. Google ID 토큰을 검증하고 JWT를 발급합니다."""
     from google.oauth2 import id_token
     from google.auth.transport import requests as google_requests
+    import structlog
+    logger = structlog.get_logger()
 
     try:
-        # Google ID 토큰 검증
+        # Google ID 토큰 검증 (audience 검증 포함)
         idinfo = id_token.verify_oauth2_token(
             request.credential,
             google_requests.Request(),
-            settings.GOOGLE_CLIENT_ID,
+            audience=settings.GOOGLE_CLIENT_ID,
         )
-    except ValueError:
+        logger.info("google_token_verified", email=idinfo.get("email"))
+    except Exception as e:
+        logger.error("google_token_verification_failed", error=str(e))
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
-            detail="유효하지 않은 Google 토큰입니다.",
+            detail=f"Google 토큰 검증 실패: {str(e)}",
         )
 
     email = idinfo.get("email", "")
