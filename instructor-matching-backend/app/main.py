@@ -7,7 +7,7 @@ from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
-from app.api import auth, instructors, matching, task_orders, schedules
+from app.api import auth, instructors, matching, task_orders, schedules, instructor_portal
 from app.core.config import settings
 from app.core.middleware import RequestLoggingMiddleware, SecurityHeadersMiddleware
 from app.db.database import engine
@@ -51,6 +51,7 @@ app.include_router(instructors.router)
 app.include_router(task_orders.router)
 app.include_router(matching.router)
 app.include_router(schedules.router)
+app.include_router(instructor_portal.router)
 
 
 # 글로벌 에러 핸들러
