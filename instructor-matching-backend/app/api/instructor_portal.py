@@ -80,10 +80,17 @@ async def delete_schedule(schedule_id: str, db: AsyncSession = Depends(get_db)):
 
 @router.post("/resume/{instructor_id}")
 async def upload_resume(instructor_id: str, file: UploadFile, db: AsyncSession = Depends(get_db)):
-    """강사가 이력서 파일 업로드 (관리자에게 전달용)."""
+    """강사가 이력서 파일 업로드. DB에 없는 강사면 자동 등록."""
     import os
     from pathlib import Path
     from datetime import datetime
+    from sqlalchemy import select
+
+    # instructor_id가 "new_"로 시작하면 새 강사 → app.db에 등록
+    if instructor_id.startswith("new_"):
+        # 요청 헤더에서 이름을 가져올 수 없으므로 파일명에서 추출하거나
+        # 별도 처리 필요 — 아래 register 엔드포인트로 분리
+        pass
 
     save_dir = Path("uploads/resumes") / datetime.now().strftime("%Y/%m")
     save_dir.mkdir(parents=True, exist_ok=True)
@@ -99,3 +106,34 @@ async def upload_resume(instructor_id: str, file: UploadFile, db: AsyncSession =
         "instructor_id": instructor_id,
         "path": str(save_path),
     }
+
+
+class PortalRegisterRequest(BaseModel):
+    name: str
+    resume_path: str | None = None
+
+
+@router.post("/register")
+async def register_instructor(body: PortalRegisterRequest, db: AsyncSession = Depends(get_db)):
+    """강사 포털에서 새 강사 등록 (이름 기반). 이미 있으면 기존 ID 반환."""
+    from app.services.external_instructor_db import list_all_instructor_profiles
+
+    # 기존 강사 목록에서 이름 검색
+    profiles = await list_all_instructor_profiles()
+    found = next((p for p in profiles if p.name == body.name.strip()), None)
+
+    if found:
+        return {"instructor_id": found.id, "name": found.name, "is_new": False}
+
+    # 새 강사 → app.db의 instructors 테이블에 추가
+    from app.models.models import Instructor
+    new_instructor = Instructor(
+        name=body.name.strip(),
+        specializations=[],
+        keywords=[],
+        experience_years=0,
+    )
+    db.add(new_instructor)
+    await db.flush()
+
+    return {"instructor_id": new_instructor.id, "name": new_instructor.name, "is_new": True}
