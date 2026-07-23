@@ -226,18 +226,23 @@ async def update_instructor(
 
 async def delete_instructor(db: AsyncSession, instructor_id: str) -> None:
     """강사를 삭제합니다."""
+    # app.db에서 삭제 시도
+    instructor = await db.get(Instructor, instructor_id)
+    if instructor:
+        await db.delete(instructor)
+        return
+    # 외부 DB의 강사는 삭제 불가
     raise HTTPException(
-        status_code=status.HTTP_405_METHOD_NOT_ALLOWED,
-        detail="외부 강사 이력서 DB 연결 모드에서는 삭제를 지원하지 않습니다.",
+        status_code=status.HTTP_400_BAD_REQUEST,
+        detail="외부 DB 강사는 삭제할 수 없습니다.",
     )
 
 
 async def delete_all_instructors(db: AsyncSession) -> int:
-    """모든 강사를 삭제합니다."""
-    raise HTTPException(
-        status_code=status.HTTP_405_METHOD_NOT_ALLOWED,
-        detail="외부 강사 이력서 DB 연결 모드에서는 전체 삭제를 지원하지 않습니다.",
-    )
+    """app.db의 모든 강사를 삭제합니다."""
+    from sqlalchemy import func, delete as sa_delete
+    result = await db.execute(sa_delete(Instructor))
+    return result.rowcount or 0
 
 
 async def get_statistics(db: AsyncSession) -> InstructorStats:

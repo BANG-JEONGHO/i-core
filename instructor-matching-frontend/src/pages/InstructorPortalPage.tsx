@@ -111,7 +111,6 @@ export default function InstructorPortalPage() {
         {/* Step 1: 랜딩 - 이름 입력 */}
         {step === 'landing' && (
           <div className="bg-white rounded-2xl p-10 shadow-sm text-center animate-fadeIn">
-            <img src="/logo.jpg" alt="iCore" className="w-16 h-16 rounded-xl object-cover mx-auto mb-5 shadow" />
             <h2 className="text-xl font-bold text-gray-900 mb-2">강사 포털</h2>
             <p className="text-sm text-gray-500 mb-8">이력서와 강의 일정을 등록해주세요</p>
             
@@ -243,8 +242,7 @@ export default function InstructorPortalPage() {
             </div>
             <h2 className="text-xl font-bold text-gray-900 mb-2">제출 완료</h2>
             <p className="text-sm text-gray-500 mb-6">
-              이력서와 일정이 성공적으로 등록되었습니다.<br/>
-              관리자가 매칭 시 참고합니다.
+              이력서와 일정이 성공적으로 등록되었습니다.
             </p>
             <button
               onClick={() => { setStep('landing'); setName(''); setSelectedId(''); setResumeFile(null); setSchedules([]); }}
