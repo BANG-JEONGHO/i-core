@@ -12,6 +12,9 @@ class Settings(BaseSettings):
 
     # Database
     DATABASE_URL: str = "sqlite+aiosqlite:///./app.db"
+    # The actual DB is intentionally excluded from Git. Place it at
+    # data/private/내부_강사_정보.db after cloning, or override this in .env.
+    INSTRUCTOR_DATABASE_URL: str = "sqlite+aiosqlite:///./data/private/내부_강사_정보.db"
 
     # Security
     SECRET_KEY: str = "change-this-to-a-secure-random-string-at-least-32-chars"
@@ -20,6 +23,23 @@ class Settings(BaseSettings):
 
     # AI
     GEMINI_API_KEY: str = ""
+    GEMINI_MODEL: str = "gemini-3.5-flash"
+    GEMINI_EMBEDDING_MODEL: str = "gemini-embedding-001"
+    # Set to true only when the deployment intentionally routes Gemini API
+    # traffic through HTTP(S)_PROXY. Local/serverless deployments should
+    # connect directly by default.
+    GEMINI_USE_ENV_PROXY: bool = False
+
+    # Agent-core matching workflow
+    # This points to the supplied agent_core package directory. Its parent is
+    # added to Python's import path only when an agent-based match is executed.
+    # Repository-relative by default. An environment variable can override this
+    # when agent_core is deployed as a separately managed package.
+    AGENT_CORE_PATH: str = "../agent_core"
+    AGENT_REVIEW_TOP_K: int = 10
+    VECTOR_STORE_PATH: str = "data/vector-store/rag.sqlite3"
+    AGENT_RUN_STORAGE_DIR: str = "data/agent-runs"
+    AGENT_BATCH_RUN_STORAGE_DIR: str = "data/agent-batch-runs"
 
     # CORS
     CORS_ORIGINS: list[str] = ["http://localhost:8900", "http://localhost:3000", "http://localhost:8700"]

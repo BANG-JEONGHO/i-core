@@ -19,12 +19,21 @@ from app.schemas.instructor import (
     InstructorStats,
     InstructorUpdate,
 )
+from app.services.external_instructor_db import (
+    get_instructor_profile,
+    list_instructor_profiles,
+)
 
 logger = structlog.get_logger()
 
 
 async def upload_bulk(db: AsyncSession, file: UploadFile) -> BulkUploadResponse:
     """Excel/CSV 파일에서 강사 데이터를 일괄 업로드합니다. 3시트 통합 지원."""
+    raise HTTPException(
+        status_code=status.HTTP_405_METHOD_NOT_ALLOWED,
+        detail="외부 강사 이력서 DB 연결 모드에서는 업로드를 지원하지 않습니다.",
+    )
+
     content = await file.read()
     file_name = file.filename or ""
 
@@ -162,38 +171,13 @@ async def list_instructors(
     limit: int = 20,
 ) -> tuple[list[InstructorResponse], int]:
     """강사 목록을 조회합니다."""
-    query = select(Instructor)
-
-    if keyword:
-        keyword_filter = f"%{keyword}%"
-        query = query.where(
-            Instructor.name.ilike(keyword_filter)
-            | Instructor.education.ilike(keyword_filter)
-            | Instructor.main_lecture_area.ilike(keyword_filter)
-            | Instructor.summary.ilike(keyword_filter)
-            | Instructor.affiliation.ilike(keyword_filter)
-            # keywords는 JSON이지만 SQLite에서 TEXT로 저장되므로 LIKE 검색 가능
-            | Instructor.keywords.cast(String).ilike(keyword_filter)
-            | Instructor.specializations.cast(String).ilike(keyword_filter)
-        )
-
-    # 총 개수
-    from sqlalchemy import func
-    count_query = select(func.count()).select_from(query.subquery())
-    count_result = await db.execute(count_query)
-    total = count_result.scalar() or 0
-
-    # 페이지네이션
-    query = query.order_by(Instructor.name).offset(offset).limit(limit)
-    result = await db.execute(query)
-    instructors = result.scalars().all()
-
+    instructors, total = await list_instructor_profiles(keyword=keyword, offset=offset, limit=limit)
     return [InstructorResponse.model_validate(i) for i in instructors], total
 
 
 async def get_instructor(db: AsyncSession, instructor_id: str) -> InstructorResponse:
     """강사 상세 정보를 조회합니다."""
-    instructor = await db.get(Instructor, instructor_id)
+    instructor = await get_instructor_profile(instructor_id)
     if not instructor:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="강사를 찾을 수 없습니다.")
     return InstructorResponse.model_validate(instructor)
@@ -203,43 +187,31 @@ async def update_instructor(
     db: AsyncSession, instructor_id: str, data: InstructorUpdate
 ) -> InstructorResponse:
     """강사 정보를 수정합니다."""
-    instructor = await db.get(Instructor, instructor_id)
-    if not instructor:
-        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="강사를 찾을 수 없습니다.")
-
-    update_data = data.model_dump(exclude_unset=True)
-    for field, value in update_data.items():
-        setattr(instructor, field, value)
-
-    # 키워드 재생성
-    instructor.keywords = _generate_keywords(instructor)
-    await db.flush()
-    return InstructorResponse.model_validate(instructor)
+    raise HTTPException(
+        status_code=status.HTTP_405_METHOD_NOT_ALLOWED,
+        detail="외부 강사 이력서 DB 연결 모드에서는 수정을 지원하지 않습니다.",
+    )
 
 
 async def delete_instructor(db: AsyncSession, instructor_id: str) -> None:
     """강사를 삭제합니다."""
-    instructor = await db.get(Instructor, instructor_id)
-    if not instructor:
-        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="강사를 찾을 수 없습니다.")
-    await db.delete(instructor)
+    raise HTTPException(
+        status_code=status.HTTP_405_METHOD_NOT_ALLOWED,
+        detail="외부 강사 이력서 DB 연결 모드에서는 삭제를 지원하지 않습니다.",
+    )
 
 
 async def delete_all_instructors(db: AsyncSession) -> int:
     """모든 강사를 삭제합니다."""
-    from sqlalchemy import delete as sql_delete
-    result = await db.execute(sql_delete(Instructor))
-    count = result.rowcount
-    logger.info("all_instructors_deleted", count=count)
-    return count
+    raise HTTPException(
+        status_code=status.HTTP_405_METHOD_NOT_ALLOWED,
+        detail="외부 강사 이력서 DB 연결 모드에서는 전체 삭제를 지원하지 않습니다.",
+    )
 
 
 async def get_statistics(db: AsyncSession) -> InstructorStats:
     """강사 통계를 반환합니다."""
-    result = await db.execute(select(Instructor))
-    instructors = result.scalars().all()
-
-    total = len(instructors)
+    instructors, total = await list_instructor_profiles(offset=0, limit=100_000)
     if total == 0:
         return InstructorStats(
             total_count=0, specialization_distribution={}, average_experience=0.0

@@ -20,13 +20,18 @@ from app.core.config import settings
 logger = structlog.get_logger()
 
 _client: genai.Client | None = None
-MODEL = "gemini-3.5-flash"
+MODEL = settings.GEMINI_MODEL
 
 
 def _get_client() -> genai.Client:
     global _client
     if _client is None:
-        _client = genai.Client(api_key=settings.GEMINI_API_KEY)
+        _client = genai.Client(
+            api_key=settings.GEMINI_API_KEY,
+            http_options=types.HttpOptions(
+                client_args={"trust_env": settings.GEMINI_USE_ENV_PROXY}
+            ),
+        )
     return _client
 
 
@@ -53,29 +58,31 @@ JSON만 출력하세요:"""
 
 
 def _extract_text_from_hwp(file_content: bytes, file_name: str) -> str | None:
-    """pyhwpx로 HWP 텍스트 추출 시도."""
+    """한글 프로그램이나 PDF 변환 없이 HWP 5.x 본문을 로컬에서 추출합니다."""
     try:
-        import pyhwpx
-        # 임시 파일로 저장 후 pyhwpx로 열기
-        with tempfile.NamedTemporaryFile(suffix='.hwp', delete=False) as tmp:
-            tmp.write(file_content)
-            tmp_path = tmp.name
+        from matching_core.parser import parse_document
 
-        try:
-            hwp = pyhwpx.Hwp(visible=False)
-            hwp.open(tmp_path)
-            text = hwp.get_text()
-            hwp.quit()
-            if text and len(text.strip()) > 50:
-                logger.info("hwp_pyhwpx_success", text_length=len(text))
-                return text
-        except Exception as e:
-            logger.warning("hwp_pyhwpx_failed", error=str(e))
-        finally:
-            os.unlink(tmp_path)
-    except ImportError:
-        logger.warning("pyhwpx_not_available")
+        text = parse_document(file_content, file_name).raw_text.strip()
+        if _is_usable_extracted_text(text):
+            logger.info("hwp_local_extraction_success", text_length=len(text))
+            return text
+        logger.warning("hwp_local_extraction_low_quality", text_length=len(text))
+    except Exception as exc:
+        logger.warning("hwp_local_extraction_failed", error=str(exc))
     return None
+
+
+def _is_usable_extracted_text(text: str) -> bool:
+    """바이너리 노이즈를 JSON 추출 모델에 전달하지 않도록 최소 품질을 검증합니다."""
+    normalized = text.strip()
+    if len(normalized) < 80:
+        return False
+
+    meaningful = sum(
+        character.isalnum() or character in " \n\r\t.,:;()[]{}<>/-_+%"
+        for character in normalized
+    )
+    return meaningful / len(normalized) >= 0.75
 
 
 def _extract_text_from_docx(file_content: bytes) -> str | None:
@@ -103,7 +110,7 @@ async def parse_document_with_ai(file_content: bytes, file_name: str) -> dict:
 
     전략:
     - DOCX: python-docx → 텍스트 → Gemini
-    - HWP: pyhwpx 시도 → 실패 시 olefile 기반 → Gemini
+    - HWP: 서버리스 호환 OLE/HWP 레코드 파서 → Gemini
     - PDF: Gemini File API에 직접 업로드
 
     Returns:
@@ -121,13 +128,14 @@ async def parse_document_with_ai(file_content: bytes, file_name: str) -> dict:
     elif ext == 'hwp':
         raw_text = _extract_text_from_hwp(file_content, file_name) or ""
         if not raw_text:
-            # olefile 기반 폴백
-            try:
-                from matching_core.parser import parse_document
-                doc = parse_document(file_content, file_name)
-                raw_text = doc.raw_text or ""
-            except Exception as e:
-                logger.warning("hwp_olefile_fallback_failed", error=str(e))
+            # Gemini File API는 HWP 이진 형식을 안정적으로 처리하지 못하므로
+            # 로컬 추출 실패를 원인과 함께 반환한다.
+            return {
+                "qualifications": [],
+                "evaluation_criteria": [],
+                "raw_text": "",
+                "parse_error": "HWP 본문을 추출하지 못했습니다. 암호화 또는 배포용 문서인지 확인해 주세요.",
+            }
     elif ext == 'pdf':
         # PDF는 Gemini File API로 직접 처리
         use_file_api = True

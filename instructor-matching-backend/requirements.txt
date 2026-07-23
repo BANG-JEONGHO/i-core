@@ -8,6 +8,8 @@ bcrypt==4.2.1
 python-multipart==0.0.12
 pydantic==2.9.2
 pydantic-settings==2.6.1
+google-genai==2.6.0
+olefile==0.47
 
 # Business
 pandas==2.2.3

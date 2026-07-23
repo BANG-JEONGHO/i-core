@@ -1,18 +1,17 @@
-"""매칭 서비스."""
+"""Matching service backed by the supplied agent_core workflow."""
 
 from __future__ import annotations
 
 import asyncio
-from dataclasses import asdict
-from functools import partial
 
 import structlog
 from fastapi import HTTPException, status
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from app.models.models import Instructor, MatchingResult, TaskOrder
+from app.models.models import MatchingResult, TaskOrder
 from app.schemas.matching import MatchingResultResponse, MatchingSummary, MatchScoreDTO
+from app.services.external_instructor_db import list_all_instructor_profiles
 
 logger = structlog.get_logger()
 
@@ -20,97 +19,49 @@ logger = structlog.get_logger()
 async def execute_matching(
     db: AsyncSession, task_order_id: str, user_id: str
 ) -> MatchingResultResponse:
-    """매칭을 실행합니다."""
-    # 과업지시서 로드
+    """Run agent-core ranking, A/B review, and grounding validation."""
     task_order = await db.get(TaskOrder, task_order_id)
     if not task_order:
-        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="과업지시서를 찾을 수 없습니다.")
-
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail="Task order was not found.",
+        )
     if not task_order.qualifications and not task_order.evaluation_criteria:
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST,
-            detail="추출된 요구사항이 없습니다. 파싱 결과를 확인해 주세요.",
+            detail="No normalized requirements were extracted. Review the parsing result first.",
         )
 
-    # 강사 풀 로드
-    result = await db.execute(select(Instructor))
-    db_instructors = result.scalars().all()
-
-    if not db_instructors:
-        raise HTTPException(
-            status_code=status.HTTP_400_BAD_REQUEST,
-            detail="등록된 강사가 없습니다. 먼저 강사 데이터를 업로드해 주세요.",
-        )
-
-    # matching_core 엔티티로 변환
-    from matching_core import (
-        EvaluationCriterion,
-        Instructor as MCInstructor,
-        Qualification,
-        TaskRequirements,
-        generate_match_reasons,
-        match_instructors,
+    from app.services.agent_core_adapter import (
+        AgentCoreConfigurationError,
+        execute_agent_core_matching,
     )
 
-    mc_instructors = [
-        MCInstructor(
-            id=i.id,
-            name=i.name,
-            specializations=i.specializations or [],
-            subjects=i.subjects or [],
-            experience_years=i.experience_years,
-            certifications=i.certifications or [],
-            education=i.education or "",
-            keywords=i.keywords or [],
+    try:
+        results_data, top_ids = await asyncio.to_thread(
+            execute_agent_core_matching, task_order
         )
-        for i in db_instructors
-    ]
+    except AgentCoreConfigurationError as error:
+        raise HTTPException(
+            status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
+            detail=str(error),
+        ) from error
+    except Exception as error:
+        logger.exception("agent_core_matching_failed", task_order_id=task_order_id)
+        raise HTTPException(
+            status_code=status.HTTP_502_BAD_GATEWAY,
+            detail="Agent-core matching failed. Check Gemini configuration and the agent audit logs.",
+        ) from error
 
-    # 매칭 실행 - AI 기반 스코어링
-    from app.services.ai_agent import ai_score_instructors
+    # Agent-core deliberately keeps private instructor data out of its prompts.
+    # The API adds the display name afterwards from the existing read adapter.
+    profiles = await list_all_instructor_profiles()
+    names_by_id = {profile.id: profile.name for profile in profiles}
+    for result in results_data:
+        result["instructor_name"] = names_by_id.get(
+            result["instructor_id"], "Unknown"
+        )
 
-    # 강사 데이터를 AI에 전달할 형태로 변환
-    instructor_dicts = [
-        {"id": i.id, "name": i.name, "keywords": i.keywords or [], "experience_years": i.experience_years}
-        for i in db_instructors
-    ]
-    task_req_dict = {
-        "qualifications": task_order.qualifications or [],
-        "evaluation_criteria": task_order.evaluation_criteria or [],
-    }
-
-    ai_scores = await ai_score_instructors(task_req_dict, instructor_dicts)
-
-    # AI 점수를 instructor_id로 매핑
-    ai_score_map = {}
-    for item in ai_scores:
-        item_id = item.get("id", "")
-        score = item.get("score", 50)
-        # ID 첫 8자리로 매칭
-        for i in db_instructors:
-            if i.id.startswith(item_id):
-                ai_score_map[i.id] = score
-                break
-
-    # 결과 구성
-    results_data = []
-    for i in db_instructors:
-        total_score = ai_score_map.get(i.id, 30)  # AI 점수 없으면 기본 30
-        results_data.append({
-            "instructor_id": i.id,
-            "instructor_name": i.name,
-            "total_score": total_score,
-            "keyword_score": round(total_score * 0.4, 1),
-            "qualification_score": round(total_score * 0.3, 1),
-            "experience_score": round(total_score * 0.3, 1),
-            "breakdown": [],
-        })
-
-    # 점수 내림차순 정렬
-    results_data.sort(key=lambda x: -x["total_score"])
-    top_ids = [r["instructor_id"] for r in results_data[:10]]
-
-    # DB 저장
     matching_result = MatchingResult(
         task_order_id=task_order_id,
         results=results_data,
@@ -121,58 +72,52 @@ async def execute_matching(
     await db.flush()
 
     logger.info(
-        "matching_executed",
+        "agent_core_matching_executed",
         task_order_id=task_order_id,
-        instructor_count=len(db_instructors),
+        instructor_count=len(results_data),
+        reviewed_count=sum(item.get("agent_review") is not None for item in results_data),
         top_score=results_data[0]["total_score"] if results_data else 0,
     )
-
-    return MatchingResultResponse(
-        id=matching_result.id,
-        task_order_id=task_order_id,
-        results=[MatchScoreDTO(**r) for r in results_data],
-        candidates=matching_result.candidates or [],
-        created_at=matching_result.created_at,
-    )
+    return _as_response(matching_result)
 
 
 async def get_matching_result(
     db: AsyncSession, matching_id: str
 ) -> MatchingResultResponse:
-    """매칭 결과를 조회합니다."""
     matching_result = await db.get(MatchingResult, matching_id)
     if not matching_result:
-        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="매칭 결과를 찾을 수 없습니다.")
-
-    return MatchingResultResponse(
-        id=matching_result.id,
-        task_order_id=matching_result.task_order_id,
-        results=[MatchScoreDTO(**r) for r in matching_result.results],
-        candidates=matching_result.candidates or [],
-        created_at=matching_result.created_at,
-    )
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail="Matching result was not found.",
+        )
+    return _as_response(matching_result)
 
 
 async def list_matching_history(
     db: AsyncSession, offset: int = 0, limit: int = 10
 ) -> list[MatchingSummary]:
-    """매칭 이력을 조회합니다."""
     result = await db.execute(
         select(MatchingResult)
         .order_by(MatchingResult.created_at.desc())
         .offset(offset)
         .limit(limit)
     )
-    results = result.scalars().all()
-
-    summaries = []
-    for r in results:
-        summaries.append(
-            MatchingSummary(
-                id=r.id,
-                task_order_id=r.task_order_id,
-                top_instructor_count=len(r.candidates or []),
-                created_at=r.created_at,
-            )
+    return [
+        MatchingSummary(
+            id=item.id,
+            task_order_id=item.task_order_id,
+            top_instructor_count=len(item.candidates or []),
+            created_at=item.created_at,
         )
-    return summaries
+        for item in result.scalars().all()
+    ]
+
+
+def _as_response(matching_result: MatchingResult) -> MatchingResultResponse:
+    return MatchingResultResponse(
+        id=matching_result.id,
+        task_order_id=matching_result.task_order_id,
+        results=[MatchScoreDTO(**item) for item in matching_result.results],
+        candidates=matching_result.candidates or [],
+        created_at=matching_result.created_at,
+    )

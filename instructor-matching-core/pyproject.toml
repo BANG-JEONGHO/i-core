@@ -10,6 +10,7 @@ requires-python = ">=3.11"
 dependencies = [
     "pdfplumber==0.10.4",
     "python-docx==1.1.2",
+    "olefile==0.47",
     "structlog==24.4.0",
 ]
 

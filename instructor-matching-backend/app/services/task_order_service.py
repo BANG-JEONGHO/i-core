@@ -57,6 +57,8 @@ async def upload_task_order(
             raw_text = ai_result.get("raw_text", "")
             qualifications_data = ai_result.get("qualifications", [])
             evaluation_data = ai_result.get("evaluation_criteria", [])
+            if parse_error := ai_result.get("parse_error"):
+                logger.warning("document_parse_unavailable", file_name=file_name, reason=parse_error)
         except asyncio.TimeoutError:
             logger.warning("ai_parsing_timeout", file_name=file_name)
             # 타임아웃 시 기본 파서로 폴백

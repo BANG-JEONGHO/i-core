@@ -108,8 +108,9 @@ async def get_ai_reason(
     current_user: User = Depends(get_current_user),
 ):
     """AI로 매칭 추천 이유를 생성합니다."""
-    from app.models.models import MatchingResult, Instructor, TaskOrder
+    from app.models.models import MatchingResult, TaskOrder
     from app.services.ai_agent import generate_match_reason
+    from app.services.external_instructor_db import get_instructor_profile
 
     result = await db.get(MatchingResult, matching_id)
     if not result:
@@ -127,7 +128,33 @@ async def get_ai_reason(
         return {"reason": "해당 강사의 매칭 데이터를 찾을 수 없습니다."}
 
     # 강사 정보 로드
-    instructor = await db.get(Instructor, instructor_id)
+    # Agent-core runs already contain audited analysis A, independent verifier
+    # B, and grounding checks. Reuse it instead of the legacy explanation LLM.
+    agent_review = score_data.get("agent_review")
+    if agent_review:
+        import json
+
+        analysis = agent_review.get("analysis", {})
+        verification = agent_review.get("verification", {})
+        grounding = agent_review.get("grounding") or {}
+        return {
+            "reason": json.dumps(
+                {
+                    "strengths": analysis.get("recommendation_reasons", []),
+                    "weaknesses": [
+                        *analysis.get("gaps", []),
+                        *analysis.get("risks", []),
+                    ],
+                    "summary": "; ".join(score_data.get("recommendation_reasons", [])),
+                    "final_status": score_data.get("final_status"),
+                    "verifier_verdict": verification.get("verdict"),
+                    "grounding_verdict": grounding.get("verdict"),
+                },
+                ensure_ascii=False,
+            )
+        }
+
+    instructor = await get_instructor_profile(instructor_id)
     if not instructor:
         return {"reason": "강사 정보를 찾을 수 없습니다."}
 

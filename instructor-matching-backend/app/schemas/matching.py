@@ -13,6 +13,13 @@ class MatchScoreDTO(BaseModel):
     qualification_score: float
     experience_score: float
     breakdown: list[dict]
+    # Agent-core review fields are optional so existing saved results remain
+    # readable while new runs expose the final verification outcome.
+    final_status: str | None = None
+    recommendation_reasons: list[str] = []
+    grounding_verdict: str | None = None
+    agent_run_id: str | None = None
+    agent_review: dict | None = None
 
 
 class MatchingResultResponse(BaseModel):
