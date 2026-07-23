@@ -72,9 +72,6 @@
 ├─ Text Embeddings (벡터화)
 └─ Gemini 1.5 Pro (1:1 RAG 분석)
 
-
-<img width="920" height="457" alt="image" src="https://github.com/user-attachments/assets/0d955acb-44b4-4cc6-97d6-4768495011a5" />
-
 ```
 
 ---
