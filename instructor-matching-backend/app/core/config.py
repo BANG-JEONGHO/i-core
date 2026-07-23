@@ -11,9 +11,7 @@ class Settings(BaseSettings):
     DEBUG: bool = True
 
     # Database
-    DATABASE_URL: str = "sqlite+aiosqlite:///./app.db"
-    # The actual DB is intentionally excluded from Git. Place it at
-    # data/private/내부_강사_정보.db after cloning, or override this in .env.
+    DATABASE_URL: str = "sqlite+aiosqlite:///./data/private/app.db"
     INSTRUCTOR_DATABASE_URL: str = "sqlite+aiosqlite:///./data/private/내부_강사_정보.db"
 
     # Security
@@ -25,6 +23,9 @@ class Settings(BaseSettings):
     GEMINI_API_KEY: str = ""
     GEMINI_MODEL: str = "gemini-3.5-flash"
     GEMINI_EMBEDDING_MODEL: str = "gemini-embedding-001"
+
+    # Google OAuth
+    GOOGLE_CLIENT_ID: str = ""
     # Set to true only when the deployment intentionally routes Gemini API
     # traffic through HTTP(S)_PROXY. Local/serverless deployments should
     # connect directly by default.

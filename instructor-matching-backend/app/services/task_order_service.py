@@ -61,16 +61,8 @@ async def upload_task_order(
                 logger.warning("document_parse_unavailable", file_name=file_name, reason=parse_error)
         except asyncio.TimeoutError:
             logger.warning("ai_parsing_timeout", file_name=file_name)
-            # 타임아웃 시 기본 파서로 폴백
-            try:
-                from matching_core import parse_and_extract
-                from dataclasses import asdict
-                requirements = parse_and_extract(content, file_name)
-                raw_text = requirements.raw_text
-                qualifications_data = [asdict(q) for q in requirements.qualifications]
-                evaluation_data = [asdict(e) for e in requirements.evaluation_criteria]
-            except:
-                pass
+            # 타임아웃 시 빈 결과 사용
+            pass
 
         if qualifications_data or evaluation_data or raw_text:
             parsed_at = datetime.utcnow()

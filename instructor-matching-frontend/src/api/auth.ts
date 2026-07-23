@@ -6,14 +6,25 @@ interface LoginResponse {
   token_type: string;
 }
 
+interface GoogleLoginResponse {
+  access_token: string;
+  token_type: string;
+  user: {
+    id: string;
+    email: string;
+    name: string;
+    picture: string | null;
+  };
+}
+
 export const authApi = {
-  register: async (username: string, password: string, name: string): Promise<User> => {
-    const response = await apiClient.post('/api/auth/register', { username, password, name });
+  login: async (username: string, password: string): Promise<LoginResponse> => {
+    const response = await apiClient.post('/api/auth/login', { username, password });
     return response.data;
   },
 
-  login: async (username: string, password: string): Promise<LoginResponse> => {
-    const response = await apiClient.post('/api/auth/login', { username, password });
+  googleLogin: async (credential: string): Promise<GoogleLoginResponse> => {
+    const response = await apiClient.post('/api/auth/google', { credential });
     return response.data;
   },
 };

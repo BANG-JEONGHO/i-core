@@ -60,13 +60,18 @@ JSON만 출력하세요:"""
 def _extract_text_from_hwp(file_content: bytes, file_name: str) -> str | None:
     """한글 프로그램이나 PDF 변환 없이 HWP 5.x 본문을 로컬에서 추출합니다."""
     try:
-        from matching_core.parser import parse_document
-
-        text = parse_document(file_content, file_name).raw_text.strip()
-        if _is_usable_extracted_text(text):
-            logger.info("hwp_local_extraction_success", text_length=len(text))
-            return text
-        logger.warning("hwp_local_extraction_low_quality", text_length=len(text))
+        import olefile
+        if not olefile.isOleFile(file_content):
+            return None
+        ole = olefile.OleFileIO(file_content)
+        # HWP 본문 스트림에서 텍스트 추출 시도
+        if ole.exists("BodyText/Section0"):
+            data = ole.openstream("BodyText/Section0").read()
+            text = data.decode("utf-16-le", errors="ignore")
+            if _is_usable_extracted_text(text):
+                logger.info("hwp_local_extraction_success", text_length=len(text))
+                return text
+        logger.warning("hwp_local_extraction_low_quality")
     except Exception as exc:
         logger.warning("hwp_local_extraction_failed", error=str(exc))
     return None
@@ -140,11 +145,9 @@ async def parse_document_with_ai(file_content: bytes, file_name: str) -> dict:
         # PDF는 Gemini File API로 직접 처리
         use_file_api = True
     else:
-        # 기타: matching_core 파서 시도
+        # 기타 형식: 텍스트로 디코딩 시도
         try:
-            from matching_core.parser import parse_document
-            doc = parse_document(file_content, file_name)
-            raw_text = doc.raw_text or ""
+            raw_text = file_content.decode("utf-8", errors="ignore")
         except:
             pass
 
