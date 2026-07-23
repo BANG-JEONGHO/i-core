@@ -10,6 +10,7 @@ import TaskOrderUploadPage from './pages/TaskOrderUploadPage';
 import MatchingResultPage from './pages/MatchingResultPage';
 import TaskOrderDetailPage from './pages/TaskOrderDetailPage';
 import MatchingHistoryPage from './pages/MatchingHistoryPage';
+import SettingsPage from './pages/SettingsPage';
 
 const queryClient = new QueryClient({
   defaultOptions: { queries: { retry: 1, staleTime: 30000 } },
@@ -28,6 +29,7 @@ export default function App() {
             <Route path="/task-orders/:id" element={<TaskOrderDetailPage />} />
             <Route path="/matching-history" element={<MatchingHistoryPage />} />
             <Route path="/matching/:id" element={<MatchingResultPage />} />
+            <Route path="/settings" element={<SettingsPage />} />
           </Route>
         </Routes>
       </BrowserRouter>
