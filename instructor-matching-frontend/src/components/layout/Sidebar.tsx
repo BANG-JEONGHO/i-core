@@ -17,7 +17,7 @@ export default function Sidebar() {
       {/* 프로젝트 */}
       <div className="px-4 py-5 border-b border-gray-100">
         <div className="flex items-center gap-2.5">
-          <img src="/logo.jpg" alt="iCore" className="w-7 h-7 rounded object-cover" />
+          <img src="/logo.jpg" alt="iCore" className="w-9 h-9 rounded-lg object-cover" />
           <div>
             <p className="text-[13px] font-semibold text-gray-900">강사 매칭</p>
             <p className="text-[10px] text-gray-400">사내 업무 플랫폼</p>

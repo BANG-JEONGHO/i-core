@@ -5,9 +5,11 @@ import { Plus, X, FileText, Users, CheckCircle2, Calendar } from 'lucide-react';
 import toast from 'react-hot-toast';
 import { matchingApi } from '../api/matching';
 import { taskOrdersApi } from '../api/taskOrders';
+import { useAuthStore } from '../store/authStore';
 
 export default function DashboardPage() {
   const queryClient = useQueryClient();
+  const user = useAuthStore((s) => s.user);
   const [dateFilter, setDateFilter] = useState<string>('');
   const { data: history } = useQuery({ queryKey: ['history'], queryFn: () => matchingApi.history(0, 50), refetchOnMount: 'always' });
   const { data: taskOrders } = useQuery({ queryKey: ['task-orders'], queryFn: () => taskOrdersApi.list(0, 50), refetchOnMount: 'always' });
@@ -95,7 +97,7 @@ export default function DashboardPage() {
             <span className="text-xs font-bold text-gray-700">과업지시서 분석</span>
             <span className="text-[10px] bg-blue-50 text-blue-600 px-1.5 py-0.5 rounded-full font-semibold">{pendingTaskOrders.length}</span>
           </div>
-          <div className="flex-1 bg-slate-50 rounded-xl p-2.5 overflow-y-auto space-y-2">
+          <div className="flex-1 bg-gray-50/80 rounded-xl p-3 overflow-y-auto space-y-3">
             {pendingTaskOrders.length > 0 ? (
               pendingTaskOrders.map((to: any) => (
                 <Link key={to.id} to={`/task-orders/${to.id}`}>
@@ -105,6 +107,7 @@ export default function DashboardPage() {
                     tag="분석완료"
                     tagColor="blue"
                     date={to.created_at}
+                    userName={user?.name || '나'}
                     onDelete={() => handleDeleteTaskOrder(to.id)}
                   />
                 </Link>
@@ -122,7 +125,7 @@ export default function DashboardPage() {
             <span className="text-xs font-bold text-gray-700">매칭중</span>
             <span className="text-[10px] bg-amber-50 text-amber-600 px-1.5 py-0.5 rounded-full font-semibold">{filteredMatching.length}</span>
           </div>
-          <div className="flex-1 bg-slate-50 rounded-xl p-2.5 overflow-y-auto space-y-2">
+          <div className="flex-1 bg-gray-50/80 rounded-xl p-3 overflow-y-auto space-y-3">
             {filteredMatching.length > 0 ? (
               filteredMatching.map((item: any) => (
                 <Link key={item.id} to={`/matching/${item.id}`}>
@@ -132,6 +135,7 @@ export default function DashboardPage() {
                     tag="후보 선정 대기"
                     tagColor="amber"
                     date={item.created_at}
+                    userName={user?.name || '나'}
                     onDelete={() => handleDeleteMatching(item.id)}
                   />
                 </Link>
@@ -149,7 +153,7 @@ export default function DashboardPage() {
             <span className="text-xs font-bold text-gray-700">완료</span>
             <span className="text-[10px] bg-green-50 text-green-600 px-1.5 py-0.5 rounded-full font-semibold">{filteredDone.length}</span>
           </div>
-          <div className="flex-1 bg-slate-50 rounded-xl p-2.5 overflow-y-auto space-y-2">
+          <div className="flex-1 bg-gray-50/80 rounded-xl p-3 overflow-y-auto space-y-3">
             {filteredDone.length > 0 ? (
               filteredDone.map((item: any) => (
                 <Link key={item.id} to={`/matching/${item.id}`}>
@@ -159,6 +163,7 @@ export default function DashboardPage() {
                     tag="강사 선정 완료"
                     tagColor="green"
                     date={item.created_at}
+                    userName={user?.name || '나'}
                     onDelete={() => handleDeleteMatching(item.id)}
                   />
                 </Link>
@@ -173,34 +178,47 @@ export default function DashboardPage() {
   );
 }
 
-function BoardCard({ icon, title, tag, tagColor, date, onDelete }: {
+function BoardCard({ icon, title, tag, tagColor, date, userName, onDelete }: {
   icon: React.ReactNode;
   title: string;
   tag: string;
   tagColor: string;
   date: string;
+  userName?: string;
   onDelete?: () => void;
 }) {
   const colors: Record<string, string> = {
-    blue: 'bg-blue-50 text-blue-700 border-blue-100',
-    green: 'bg-green-50 text-green-700 border-green-100',
-    amber: 'bg-amber-50 text-amber-700 border-amber-100',
+    blue: 'bg-blue-50 text-blue-700',
+    green: 'bg-green-50 text-green-700',
+    amber: 'bg-amber-50 text-amber-700',
+  };
+  const borderColors: Record<string, string> = {
+    blue: 'border-l-blue-400',
+    green: 'border-l-green-400',
+    amber: 'border-l-amber-400',
   };
   return (
-    <div className="bg-white rounded-lg border border-gray-150 p-3 hover:border-indigo-200 hover:shadow-md transition-all cursor-pointer group relative">
+    <div className={`bg-white rounded-xl border-l-4 ${borderColors[tagColor]} shadow-sm hover:shadow-md transition-all cursor-pointer group relative p-4`}>
       {onDelete && (
         <button onClick={(e) => { e.preventDefault(); e.stopPropagation(); onDelete(); }}
-          className="absolute top-2 right-2 p-1 rounded hover:bg-red-50 text-gray-300 hover:text-red-500 opacity-0 group-hover:opacity-100 transition-all">
+          className="absolute top-2.5 right-2.5 p-1 rounded-full hover:bg-red-50 text-gray-300 hover:text-red-500 opacity-0 group-hover:opacity-100 transition-all">
           <X size={12} />
         </button>
       )}
       <div className="flex items-start gap-2.5">
         <div className="mt-0.5 shrink-0">{icon}</div>
         <div className="flex-1 min-w-0">
-          <p className="text-[12px] font-medium text-gray-800 group-hover:text-indigo-700 line-clamp-2 leading-relaxed">{title}</p>
-          <div className="flex items-center justify-between mt-2">
-            <span className={`text-[9px] font-bold px-1.5 py-0.5 rounded border ${colors[tagColor]}`}>{tag}</span>
+          <p className="text-[12px] font-medium text-gray-800 group-hover:text-indigo-700 line-clamp-2 leading-relaxed pr-4">{title}</p>
+          <div className="flex items-center justify-between mt-3">
+            <span className={`text-[9px] font-bold px-2 py-0.5 rounded-full ${colors[tagColor]}`}>{tag}</span>
             <span className="text-[9px] text-gray-400">{new Date(date).toLocaleDateString('ko-KR')}</span>
+          </div>
+          {/* 작업자 프로필 */}
+          <div className="flex items-center gap-1.5 mt-2.5 pt-2 border-t border-gray-50">
+            <div className="w-4 h-4 rounded-full bg-indigo-100 flex items-center justify-center">
+              <span className="text-[7px] font-bold text-indigo-600">{(userName || '나').charAt(0)}</span>
+            </div>
+            <span className="text-[9px] text-gray-400">{userName || '나'}</span>
           </div>
         </div>
       </div>

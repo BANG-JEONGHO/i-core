@@ -343,12 +343,52 @@ async def parse_document_with_ai(file_content: bytes, file_name: str) -> dict:
 
 
 def _parse_with_text(client: genai.Client, text: str) -> dict:
-    """텍스트를 Gemini에 전달하여 파싱."""
-    # 텍스트가 너무 길면 잘라서 전달 (신청자격/평가기준이 보통 앞부분에 있음)
-    prompt = EXTRACTION_PROMPT + "\n\n## 과업지시서 전체 텍스트:\n" + text[:15000]
+    """텍스트를 Gemini에 전달하여 파싱. 관련 섹션만 추출해서 속도 향상."""
+    # 핵심 섹션만 추출 (신청자격, 평가기준 근처 텍스트)
+    focused_text = _extract_relevant_sections(text)
+    prompt = EXTRACTION_PROMPT + "\n\n## 과업지시서 텍스트:\n" + focused_text
 
-    response = client.models.generate_content(model=MODEL, contents=prompt)
+    response = client.models.generate_content(
+        model=MODEL,
+        contents=prompt,
+        config=types.GenerateContentConfig(
+            max_output_tokens=2048,
+            temperature=0.1,
+        ),
+    )
     return _parse_json_response(response.text)
+
+
+def _extract_relevant_sections(text: str) -> str:
+    """전체 텍스트에서 신청자격/평가기준 관련 섹션만 추출 (속도 향상)."""
+    # 관련 키워드 근처 텍스트를 우선 추출
+    keywords = ['신청자격', '참여자격', '참가자격', '입찰참가', '자격요건',
+                '평가기준', '심사기준', '배점', '평가항목', '기술평가',
+                '제안요청', '자격제한', '필수조건', '우대조건', '인력요건']
+    
+    lines = text.split('\n')
+    relevant_indices = set()
+    
+    for i, line in enumerate(lines):
+        for kw in keywords:
+            if kw in line:
+                # 해당 줄 전후 30줄 포함
+                start = max(0, i - 5)
+                end = min(len(lines), i + 30)
+                for j in range(start, end):
+                    relevant_indices.add(j)
+                break
+    
+    if relevant_indices:
+        # 관련 섹션 추출 (최대 8000자)
+        sorted_indices = sorted(relevant_indices)
+        sections = [lines[i] for i in sorted_indices]
+        result = '\n'.join(sections)[:8000]
+        if len(result) > 500:
+            return result
+    
+    # 관련 섹션 못 찾으면 전체 텍스트 앞부분
+    return text[:8000]
 
 
 def _parse_with_file_api(client: genai.Client, file_content: bytes, file_name: str) -> dict:
