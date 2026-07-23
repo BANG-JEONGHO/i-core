@@ -10,7 +10,7 @@ export default function InstructorsPage() {
   const [page, setPage] = useState(0);
   const [selectedInstructor, setSelectedInstructor] = useState<Instructor | null>(null);
   const queryClient = useQueryClient();
-  const limit = 20;
+  const limit = 50;
 
   const { data, isLoading } = useQuery({
     queryKey: ['instructors', keyword, page],
@@ -169,22 +169,25 @@ export default function InstructorsPage() {
 
       {/* 강사 상세 모달 */}
       {selectedInstructor && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/30" onClick={() => setSelectedInstructor(null)}>
-          <div className="bg-white rounded-xl w-full max-w-2xl max-h-[85vh] overflow-hidden flex flex-col" onClick={(e) => e.stopPropagation()}>
-            {/* 헤더 */}
-            <div className="bg-gradient-to-r from-indigo-500 to-blue-600 p-5 flex items-center justify-between shrink-0">
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full bg-white/20 backdrop-blur flex items-center justify-center">
-                  <span className="text-white text-lg font-bold">{selectedInstructor.name.charAt(0)}</span>
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/20 backdrop-blur-sm" onClick={() => setSelectedInstructor(null)}>
+          <div className="bg-white rounded-2xl w-full max-w-xl h-[600px] overflow-hidden flex flex-col shadow-2xl" onClick={(e) => e.stopPropagation()}>
+            {/* 헤더 - 이름 + 파란색 라인 */}
+            <div className="px-6 pt-5 pb-3 shrink-0">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-3">
+                  <div className="w-9 h-9 rounded-full bg-gray-100 flex items-center justify-center">
+                    <span className="text-sm font-bold text-gray-600">{selectedInstructor.name.charAt(0)}</span>
+                  </div>
+                  <div>
+                    <p className="text-lg font-bold text-gray-900">{selectedInstructor.name}</p>
+                    <p className="text-[10px] text-gray-400">{selectedInstructor.summary || selectedInstructor.main_lecture_area || '전문 강사'}</p>
+                  </div>
                 </div>
-                <div>
-                  <p className="text-base font-bold text-white">{selectedInstructor.name}</p>
-                  <p className="text-xs text-blue-100">{selectedInstructor.summary || selectedInstructor.notes || '전문 강사'}</p>
-                </div>
+                <button onClick={() => setSelectedInstructor(null)} className="p-1.5 rounded-lg hover:bg-gray-100">
+                  <X size={16} className="text-gray-400" />
+                </button>
               </div>
-              <button onClick={() => setSelectedInstructor(null)} className="p-1.5 rounded hover:bg-white/20">
-                <X size={18} className="text-white" />
-              </button>
+              <div className="h-[2px] bg-blue-500 rounded-full mt-3" />
             </div>
 
             {/* 탭 */}
@@ -206,19 +209,21 @@ function InfoRow({ label, value }: { label: string; value: string }) {
 }
 
 function DetailTabs({ instructor }: { instructor: Instructor }) {
-  const [tab, setTab] = useState<'info' | 'history' | 'qual'>('info');
+  const [tab, setTab] = useState<'info' | 'history' | 'qual' | 'schedule'>('info');
 
   return (
     <>
-      <div className="flex border-b border-gray-200 shrink-0">
-        <button onClick={() => setTab('info')} className={`px-4 py-2.5 text-xs font-medium transition-colors ${tab === 'info' ? 'border-b-2 border-indigo-500 text-indigo-700' : 'text-gray-500 hover:text-gray-700'}`}>기본정보</button>
-        <button onClick={() => setTab('history')} className={`px-4 py-2.5 text-xs font-medium transition-colors ${tab === 'history' ? 'border-b-2 border-indigo-500 text-indigo-700' : 'text-gray-500 hover:text-gray-700'}`}>강의 이력 ({instructor.lecture_history?.length || 0})</button>
-        <button onClick={() => setTab('qual')} className={`px-4 py-2.5 text-xs font-medium transition-colors ${tab === 'qual' ? 'border-b-2 border-indigo-500 text-indigo-700' : 'text-gray-500 hover:text-gray-700'}`}>자격/경력 ({instructor.qualifications_career?.length || 0})</button>
+      <div className="flex gap-1 px-6 pt-3 shrink-0">
+        <button onClick={() => setTab('info')} className={`px-3 py-1.5 text-[11px] font-medium rounded-md transition-colors ${tab === 'info' ? 'bg-gray-100 text-gray-900' : 'text-gray-400 hover:text-gray-600'}`}>기본정보</button>
+        <button onClick={() => setTab('history')} className={`px-3 py-1.5 text-[11px] font-medium rounded-md transition-colors ${tab === 'history' ? 'bg-gray-100 text-gray-900' : 'text-gray-400 hover:text-gray-600'}`}>강의 이력 ({instructor.lecture_history?.length || 0})</button>
+        <button onClick={() => setTab('qual')} className={`px-3 py-1.5 text-[11px] font-medium rounded-md transition-colors ${tab === 'qual' ? 'bg-gray-100 text-gray-900' : 'text-gray-400 hover:text-gray-600'}`}>자격/경력 ({instructor.qualifications_career?.length || 0})</button>
+        <button onClick={() => setTab('schedule')} className={`px-3 py-1.5 text-[11px] font-medium rounded-md transition-colors ${tab === 'schedule' ? 'bg-gray-100 text-gray-900' : 'text-gray-400 hover:text-gray-600'}`}>일정</button>
       </div>
-      <div className="flex-1 overflow-y-auto p-5">
+      <div className="flex-1 overflow-y-auto px-6 py-4">
         {tab === 'info' && <InfoTab instructor={instructor} />}
         {tab === 'history' && <HistoryTab history={instructor.lecture_history || []} />}
         {tab === 'qual' && <QualTab items={instructor.qualifications_career || []} />}
+        {tab === 'schedule' && <ScheduleTab instructor={instructor} />}
       </div>
     </>
   );
@@ -258,30 +263,20 @@ function InfoTab({ instructor }: { instructor: Instructor }) {
 }
 
 function HistoryTab({ history }: { history: any[] }) {
-  if (!history.length) return <p className="text-sm text-gray-400 text-center py-8">등록된 강의 이력이 없습니다.</p>;
+  if (!history.length) return <p className="text-xs text-gray-400 text-center py-8">등록된 강의 이력이 없습니다.</p>;
   return (
-    <div className="space-y-2">
+    <div className="space-y-1.5">
       {history.slice(0, 30).map((h, i) => (
-        <div key={i} className={`border border-gray-100 rounded-lg p-3 hover:shadow-sm transition-shadow`}>
-          <div className="flex items-start justify-between gap-2">
-            <p className="text-xs font-semibold text-gray-800 flex-1">{h.course || h.client}</p>
-            <span className={`text-[10px] px-1.5 py-0.5 rounded font-bold shrink-0 ${h.type === '강의' ? 'bg-blue-50 text-blue-600' : 'bg-violet-50 text-violet-600'}`}>{h.type}</span>
+        <div key={i} className="py-2.5 px-3 rounded-lg hover:bg-gray-50 transition-colors">
+          <p className="text-[12px] font-medium text-gray-800">{h.course || h.client}</p>
+          <div className="flex items-center gap-2 mt-1">
+            {h.client && h.client !== h.course && <span className="text-[10px] text-indigo-500">{h.client}</span>}
+            <span className="text-[10px] text-gray-400">{h.start}{h.end ? ` ~ ${h.end}` : ''}</span>
+            {h.type && <span className="text-[9px] bg-gray-100 text-gray-500 px-1.5 py-0.5 rounded">{h.type}</span>}
           </div>
-          <div className="flex items-center gap-3 mt-1.5">
-            {h.client && h.client !== h.course && <span className="text-[11px] font-medium text-indigo-600">{h.client}</span>}
-            <span className="text-[10px] text-gray-400">{h.start} ~ {h.end || '현재'}</span>
-            {h.role && <span className="text-[10px] bg-gray-100 text-gray-600 px-1.5 py-0.5 rounded">{h.role}</span>}
-          </div>
-          {h.keywords && h.keywords !== 'nan' && (
-            <div className="flex flex-wrap gap-1 mt-1.5">
-              {h.keywords.split(',').slice(0, 5).map((kw: string) => (
-                <span key={kw} className="text-[9px] bg-slate-100 text-slate-500 px-1.5 py-0.5 rounded">{kw.trim()}</span>
-              ))}
-            </div>
-          )}
         </div>
       ))}
-      {history.length > 30 && <p className="text-xs text-gray-400 text-center pt-2">외 {history.length - 30}건</p>}
+      {history.length > 30 && <p className="text-[10px] text-gray-400 text-center pt-2">외 {history.length - 30}건</p>}
     </div>
   );
 }
@@ -337,6 +332,118 @@ function InfoCard({ label, value }: { label: string; value: string }) {
     <div className="bg-gray-50 rounded-lg p-3">
       <p className="text-[10px] text-gray-500 mb-0.5">{label}</p>
       <p className="text-sm font-medium text-gray-800">{value}</p>
+    </div>
+  );
+}
+
+function ScheduleTab({ instructor }: { instructor: Instructor }) {
+  const [schedules, setSchedules] = useState<any[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [showForm, setShowForm] = useState(false);
+  const [form, setForm] = useState({ project_name: '', start_date: '', end_date: '', note: '' });
+
+  const loadSchedules = async () => {
+    try {
+      const { schedulesApi } = await import('../api/schedules');
+      const data = await schedulesApi.list(instructor.id);
+      setSchedules(data);
+    } catch { /* */ }
+    finally { setLoading(false); }
+  };
+
+  useState(() => { loadSchedules(); });
+
+  const handleAdd = async () => {
+    if (!form.project_name || !form.start_date || !form.end_date) {
+      toast.error('프로젝트명, 시작일, 종료일을 입력하세요');
+      return;
+    }
+    try {
+      const { schedulesApi } = await import('../api/schedules');
+      await schedulesApi.create({
+        instructor_id: instructor.id,
+        instructor_name: instructor.name,
+        project_name: form.project_name,
+        start_date: form.start_date,
+        end_date: form.end_date,
+        note: form.note || undefined,
+      });
+      toast.success('일정 등록 완료');
+      setForm({ project_name: '', start_date: '', end_date: '', note: '' });
+      setShowForm(false);
+      loadSchedules();
+    } catch { toast.error('등록 실패'); }
+  };
+
+  const handleDelete = async (id: string) => {
+    if (!confirm('삭제하시겠습니까?')) return;
+    try {
+      const { schedulesApi } = await import('../api/schedules');
+      await schedulesApi.delete(id);
+      toast.success('삭제 완료');
+      loadSchedules();
+    } catch { toast.error('삭제 실패'); }
+  };
+
+  if (loading) return <p className="text-xs text-gray-400 text-center py-8">로딩 중...</p>;
+
+  return (
+    <div className="space-y-4">
+      <div className="flex items-center justify-between">
+        <p className="text-[11px] font-semibold text-gray-600">참가중인 강의/프로젝트</p>
+        <button onClick={() => setShowForm(!showForm)} className="text-[10px] text-indigo-600 font-medium hover:text-indigo-800">
+          {showForm ? '취소' : '+ 일정 추가'}
+        </button>
+      </div>
+
+      {showForm && (
+        <div className="bg-gray-50 rounded-lg p-3 space-y-2">
+          <input type="text" placeholder="프로젝트/강의명" value={form.project_name}
+            onChange={(e) => setForm({ ...form, project_name: e.target.value })}
+            className="w-full text-[11px] px-3 py-2 rounded border border-gray-200 outline-none focus:border-indigo-400" />
+          <div className="grid grid-cols-2 gap-2">
+            <input type="date" value={form.start_date}
+              onChange={(e) => setForm({ ...form, start_date: e.target.value })}
+              className="text-[11px] px-3 py-2 rounded border border-gray-200 outline-none focus:border-indigo-400" />
+            <input type="date" value={form.end_date}
+              onChange={(e) => setForm({ ...form, end_date: e.target.value })}
+              className="text-[11px] px-3 py-2 rounded border border-gray-200 outline-none focus:border-indigo-400" />
+          </div>
+          <input type="text" placeholder="비고 (선택)" value={form.note}
+            onChange={(e) => setForm({ ...form, note: e.target.value })}
+            className="w-full text-[11px] px-3 py-2 rounded border border-gray-200 outline-none focus:border-indigo-400" />
+          <button onClick={handleAdd} className="w-full py-2 bg-indigo-600 text-white text-[11px] font-medium rounded hover:bg-indigo-700">
+            등록
+          </button>
+        </div>
+      )}
+
+      {schedules.length === 0 ? (
+        <p className="text-xs text-gray-400 text-center py-6">등록된 일정이 없습니다</p>
+      ) : (
+        <div className="space-y-2">
+          {schedules.map((s: any) => {
+            const isActive = new Date(s.end_date) >= new Date();
+            return (
+              <div key={s.id} className={`rounded-lg p-3 border ${isActive ? 'border-red-100 bg-red-50/50' : 'border-gray-100'}`}>
+                <div className="flex items-start justify-between">
+                  <div>
+                    <p className="text-[11px] font-medium text-gray-800">{s.project_name}</p>
+                    <p className="text-[10px] text-gray-500 mt-0.5">{s.start_date} ~ {s.end_date}</p>
+                    {s.note && <p className="text-[9px] text-gray-400 mt-0.5">{s.note}</p>}
+                  </div>
+                  <div className="flex items-center gap-2">
+                    {isActive && <span className="text-[8px] bg-red-100 text-red-600 px-1.5 py-0.5 rounded font-bold">진행중</span>}
+                    <button onClick={() => handleDelete(s.id)} className="text-gray-400 hover:text-red-500">
+                      <Trash2 size={12} />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      )}
     </div>
   );
 }

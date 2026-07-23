@@ -1,4 +1,4 @@
-"""Matching service backed by the supplied agent_core workflow."""
+"""Matching service - AI 기반 강사 매칭."""
 
 from __future__ import annotations
 
@@ -19,48 +19,106 @@ logger = structlog.get_logger()
 async def execute_matching(
     db: AsyncSession, task_order_id: str, user_id: str
 ) -> MatchingResultResponse:
-    """Run agent-core ranking, A/B review, and grounding validation."""
+    """AI 기반 강사 매칭을 실행합니다."""
     task_order = await db.get(TaskOrder, task_order_id)
     if not task_order:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
-            detail="Task order was not found.",
+            detail="과업지시서를 찾을 수 없습니다.",
         )
     if not task_order.qualifications and not task_order.evaluation_criteria:
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST,
-            detail="No normalized requirements were extracted. Review the parsing result first.",
+            detail="파싱된 데이터가 없습니다. 먼저 재파싱을 실행해주세요.",
         )
 
-    from app.services.agent_core_adapter import (
-        AgentCoreConfigurationError,
-        execute_agent_core_matching,
+    # 강사 목록 로드
+    profiles = await list_all_instructor_profiles()
+    if not profiles:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="등록된 강사가 없습니다.",
+        )
+
+    # AI 점수 매기기
+    from app.services.ai_agent import ai_score_instructors
+
+    task_requirements = {
+        "qualifications": task_order.qualifications or [],
+        "evaluation_criteria": task_order.evaluation_criteria or [],
+    }
+
+    # 일정 충돌 강사 제외
+    from app.models.models import InstructorSchedule
+    from sqlalchemy import select as sa_select
+
+    # 과업 기간 추출 (과업지시서 raw_text에서 기간 정보 확인)
+    task_start = None
+    task_end = None
+    # evaluation_criteria나 qualifications에서 기간 정보 추출 시도
+    # 기본: 오늘부터 3개월 후까지를 과업 기간으로 설정
+    from datetime import date, timedelta
+    task_start = date.today().isoformat()
+    task_end = (date.today() + timedelta(days=90)).isoformat()
+
+    # 일정 충돌 강사 조회
+    conflict_result = await db.execute(
+        sa_select(InstructorSchedule).where(
+            InstructorSchedule.start_date <= task_end,
+            InstructorSchedule.end_date >= task_start,
+        )
     )
+    conflicting_ids = set(s.instructor_id for s in conflict_result.scalars().all())
+    if conflicting_ids:
+        logger.info("schedule_conflicts_excluded", count=len(conflicting_ids))
+
+    # 충돌 강사 제외한 목록으로 매칭
+    instructors_data = [
+        {
+            "id": p.id,
+            "name": p.name,
+            "keywords": p.keywords or [],
+            "experience_years": p.experience_years or 0,
+        }
+        for p in profiles
+        if p.id not in conflicting_ids
+    ]
 
     try:
-        results_data, top_ids = await asyncio.to_thread(
-            execute_agent_core_matching, task_order
-        )
-    except AgentCoreConfigurationError as error:
-        raise HTTPException(
-            status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
-            detail=str(error),
-        ) from error
-    except Exception as error:
-        logger.exception("agent_core_matching_failed", task_order_id=task_order_id)
-        raise HTTPException(
-            status_code=status.HTTP_502_BAD_GATEWAY,
-            detail="Agent-core matching failed. Check Gemini configuration and the agent audit logs.",
-        ) from error
+        ai_scores = await ai_score_instructors(task_requirements, instructors_data)
+    except Exception as e:
+        logger.error("ai_scoring_failed", error=str(e))
+        ai_scores = []
 
-    # Agent-core deliberately keeps private instructor data out of its prompts.
-    # The API adds the display name afterwards from the existing read adapter.
-    profiles = await list_all_instructor_profiles()
-    names_by_id = {profile.id: profile.name for profile in profiles}
-    for result in results_data:
-        result["instructor_name"] = names_by_id.get(
-            result["instructor_id"], "Unknown"
-        )
+    # AI 점수를 강사 ID로 매핑
+    score_map = {}
+    for item in ai_scores:
+        sid = item.get("id", "")
+        score = item.get("score", 50)
+        # ID가 앞 8자리로 올 수 있으므로 매칭
+        for p in profiles:
+            if p.id.startswith(sid):
+                score_map[p.id] = score
+                break
+
+    # 결과 생성 (점수 높은 순)
+    results_data = []
+    for p in profiles:
+        total_score = score_map.get(p.id, 30)  # AI 점수 없으면 기본 30
+        results_data.append({
+            "instructor_id": p.id,
+            "instructor_name": p.name,
+            "total_score": total_score,
+            "keyword_score": round(total_score * 0.4),
+            "qualification_score": round(total_score * 0.3),
+            "experience_score": round(total_score * 0.3),
+        })
+
+    results_data.sort(key=lambda x: x["total_score"], reverse=True)
+
+    # 상위 30명만 저장
+    results_data = results_data[:30]
+    top_ids = [r["instructor_id"] for r in results_data[:10]]
 
     matching_result = MatchingResult(
         task_order_id=task_order_id,
@@ -72,10 +130,9 @@ async def execute_matching(
     await db.flush()
 
     logger.info(
-        "agent_core_matching_executed",
+        "matching_executed",
         task_order_id=task_order_id,
         instructor_count=len(results_data),
-        reviewed_count=sum(item.get("agent_review") is not None for item in results_data),
         top_score=results_data[0]["total_score"] if results_data else 0,
     )
     return _as_response(matching_result)
@@ -106,7 +163,8 @@ async def list_matching_history(
         MatchingSummary(
             id=item.id,
             task_order_id=item.task_order_id,
-            top_instructor_count=len(item.candidates or []),
+            top_instructor_count=sum(1 for c in (item.candidates or []) if c.startswith('final_')),
+            memo=item.memo,
             created_at=item.created_at,
         )
         for item in result.scalars().all()

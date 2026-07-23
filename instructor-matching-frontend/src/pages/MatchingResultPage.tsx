@@ -14,6 +14,7 @@ export default function MatchingResultPage() {
   const [selectedInstructor, setSelectedInstructor] = useState<Instructor | null>(null);
   const [candidates, setCandidates] = useState<Set<string>>(new Set());
   const [finalSelected, setFinalSelected] = useState<string | null>(null);
+  const [showResume, setShowResume] = useState(false);
 
   const { data: result, isLoading } = useQuery({
     queryKey: ['matching-result', id],
@@ -24,7 +25,17 @@ export default function MatchingResultPage() {
   useEffect(() => {
     if (result?.candidates) {
       const cands = result.candidates;
-      setCandidates(new Set(cands));
+      // final_ 접두사가 있는 것도 실제 ID로 변환해서 Set에 포함
+      const candidateIds = new Set<string>();
+      cands.forEach((c: string) => {
+        if (c.startsWith('final_')) {
+          candidateIds.add(c);
+          candidateIds.add(c.replace('final_', ''));
+        } else {
+          candidateIds.add(c);
+        }
+      });
+      setCandidates(candidateIds);
       const finalItem = cands.find((c: string) => c.startsWith('final_'));
       if (finalItem) setFinalSelected(finalItem.replace('final_', ''));
     }
@@ -32,6 +43,7 @@ export default function MatchingResultPage() {
 
   useEffect(() => {
     if (selected) {
+      setShowResume(false);
       instructorsApi.get(selected.instructor_id)
         .then(setSelectedInstructor)
         .catch(() => setSelectedInstructor(null));
@@ -74,14 +86,14 @@ export default function MatchingResultPage() {
   if (isLoading) return <div className="py-8 text-center text-sm text-gray-400">로딩 중...</div>;
   if (!result) return <div className="py-8 text-center text-sm text-gray-400">결과 없음</div>;
 
-  const top20 = result.results.slice(0, 50);
+  const top20 = result.results.slice(0, 30);
 
   return (
     <div className="h-full flex flex-col">
       <div className="mb-4">
         <p className="text-lg font-bold text-gray-900">매칭 결과</p>
         <p className="text-xs text-gray-500 mt-0.5">
-          상위 50명 추천
+          상위 30명 추천
           {finalSelected && <span className="text-green-600 ml-2">· 강사 선정 완료</span>}
           {!finalSelected && candidates.size > 0 && <span className="text-indigo-600 ml-2">· {candidates.size}명 후보 선정</span>}
         </p>
@@ -111,11 +123,79 @@ export default function MatchingResultPage() {
         <div className="w-96 bg-white border border-gray-200 rounded-lg overflow-y-auto">
           {selected ? (
             <div className="p-5 space-y-4">
-              {/* 상단 요약 */}
-              <div className="text-center pb-3 border-b border-gray-100">
-                <p className="text-lg font-bold text-gray-900">{selected.instructor_name}</p>
+              {/* 상단: 이름 + 이력서 보기 링크 */}
+              <div className="pb-3 border-b border-gray-100">
+                <p className="text-lg font-bold text-gray-900 text-center">{selected.instructor_name}</p>
+                {selectedInstructor && (
+                  <button
+                    onClick={() => setShowResume(!showResume)}
+                    className="mt-2 w-full text-center text-[11px] text-indigo-500 hover:text-indigo-700 font-medium"
+                  >
+                    {showResume ? '← 점수 보기' : '이력서 원본 보기 →'}
+                  </button>
+                )}
               </div>
 
+              {/* 이력서 원본 뷰 */}
+              {showResume && selectedInstructor ? (
+                <div className="space-y-3 text-[11px]">
+                  {selectedInstructor.contact && (
+                    <InfoRow icon={<Phone size={11} />} label="연락처" value={selectedInstructor.contact} />
+                  )}
+                  {selectedInstructor.email && (
+                    <InfoRow icon={<Mail size={11} />} label="이메일" value={selectedInstructor.email} />
+                  )}
+                  {selectedInstructor.affiliation && (
+                    <InfoRow icon={null} label="소속" value={selectedInstructor.affiliation} />
+                  )}
+                  {selectedInstructor.education && (
+                    <InfoRow icon={null} label="학력" value={selectedInstructor.education} />
+                  )}
+                  {selectedInstructor.specializations?.length > 0 && (
+                    <div>
+                      <p className="text-[10px] font-semibold text-gray-500 mb-1">전문분야</p>
+                      <div className="flex flex-wrap gap-1">
+                        {selectedInstructor.specializations.map((s: string) => (
+                          <span key={s} className="text-[10px] bg-indigo-50 text-indigo-600 px-2 py-0.5 rounded-full">{s}</span>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                  {selectedInstructor.certifications?.length > 0 && (
+                    <div>
+                      <p className="text-[10px] font-semibold text-gray-500 mb-1">자격증</p>
+                      <div className="flex flex-wrap gap-1">
+                        {selectedInstructor.certifications.map((c: string) => (
+                          <span key={c} className="text-[10px] bg-emerald-50 text-emerald-600 px-2 py-0.5 rounded-full">{c}</span>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                  {selectedInstructor.keywords?.length > 0 && (
+                    <div>
+                      <p className="text-[10px] font-semibold text-gray-500 mb-1">보유기술</p>
+                      <div className="flex flex-wrap gap-1">
+                        {selectedInstructor.keywords.map((k: string) => (
+                          <span key={k} className="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded">{k}</span>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                  {selectedInstructor.lecture_history?.length > 0 && (
+                    <div>
+                      <p className="text-[10px] font-semibold text-gray-500 mb-1">강의이력 ({selectedInstructor.lecture_history.length}건)</p>
+                      <div className="space-y-1 max-h-[150px] overflow-y-auto">
+                        {selectedInstructor.lecture_history.slice(0, 10).map((lh: any, i: number) => (
+                          <p key={i} className="text-[10px] text-gray-600 py-1 border-b border-gray-50">
+                            {lh.course || lh.client || lh.title || JSON.stringify(lh).slice(0, 50)}
+                          </p>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </div>
+              ) : !showResume ? (
+                <>
               {/* 연락처 */}
               {selectedInstructor && (selectedInstructor.contact || selectedInstructor.email) && (
                 <div className="bg-gray-50 rounded-lg p-3 space-y-1.5">
@@ -143,58 +223,8 @@ export default function MatchingResultPage() {
 
               {/* AI 추천 분석 */}
               <AiReasonSection matchingId={id!} instructorId={selected.instructor_id} key={selected.instructor_id} />
-
-              {/* 이력서 원본 보기 */}
-              {selectedInstructor && (
-                <div className="border-t border-gray-100 pt-3">
-                  <details className="group">
-                    <summary className="text-[11px] font-semibold text-gray-600 cursor-pointer hover:text-indigo-600 transition-colors">
-                      📄 이력서 원본 데이터 보기
-                    </summary>
-                    <div className="mt-2 space-y-2 text-[11px]">
-                      {selectedInstructor.specializations?.length > 0 && (
-                        <div><span className="font-semibold text-gray-500">전문분야:</span> <span className="text-gray-700">{selectedInstructor.specializations.join(', ')}</span></div>
-                      )}
-                      {selectedInstructor.certifications?.length > 0 && (
-                        <div><span className="font-semibold text-gray-500">자격증:</span> <span className="text-gray-700">{selectedInstructor.certifications.join(', ')}</span></div>
-                      )}
-                      {selectedInstructor.keywords?.length > 0 && (
-                        <div><span className="font-semibold text-gray-500">보유기술:</span> <span className="text-gray-700">{selectedInstructor.keywords.join(', ')}</span></div>
-                      )}
-                      {selectedInstructor.education && (
-                        <div><span className="font-semibold text-gray-500">학력:</span> <span className="text-gray-700">{selectedInstructor.education}</span></div>
-                      )}
-                      {selectedInstructor.experience_years > 0 && (
-                        <div><span className="font-semibold text-gray-500">강의건수:</span> <span className="text-gray-700">{selectedInstructor.experience_years}건</span></div>
-                      )}
-                      {selectedInstructor.lecture_history?.length > 0 && (
-                        <div>
-                          <span className="font-semibold text-gray-500">강의이력:</span>
-                          <ul className="mt-1 space-y-0.5 text-gray-600">
-                            {selectedInstructor.lecture_history.slice(0, 5).map((lh: any, i: number) => (
-                              <li key={i} className="pl-2 border-l-2 border-gray-200">
-                                {lh.title || lh.project_name || JSON.stringify(lh).slice(0, 60)}
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                      )}
-                      {selectedInstructor.qualifications_career?.length > 0 && (
-                        <div>
-                          <span className="font-semibold text-gray-500">자격/경력:</span>
-                          <ul className="mt-1 space-y-0.5 text-gray-600">
-                            {selectedInstructor.qualifications_career.slice(0, 5).map((qc: any, i: number) => (
-                              <li key={i} className="pl-2 border-l-2 border-gray-200">
-                                {qc.name || qc.title || JSON.stringify(qc).slice(0, 60)}
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                      )}
-                    </div>
-                  </details>
-                </div>
-              )}
+                </>
+              ) : null}
 
               {/* 버튼 */}
               <div className="border-t border-gray-100 pt-4 space-y-2">
@@ -335,6 +365,18 @@ function Bar({ label, score, max }: { label: string; score: number; max: number 
       <div className="h-1.5 bg-gray-100 rounded-full">
         <div className="h-full bg-blue-500 rounded-full" style={{ width: `${(score / max) * 100}%` }} />
       </div>
+    </div>
+  );
+}
+
+function InfoRow({ icon, label, value }: { icon: React.ReactNode | null; label: string; value: string }) {
+  return (
+    <div className="flex items-center justify-between py-1.5 border-b border-gray-50">
+      <div className="flex items-center gap-1.5">
+        {icon && <span className="text-gray-400">{icon}</span>}
+        <span className="text-[10px] text-gray-500">{label}</span>
+      </div>
+      <span className="text-[11px] text-gray-700 font-medium">{value}</span>
     </div>
   );
 }

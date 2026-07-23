@@ -39,8 +39,8 @@ export default function LandingPage() {
             AI가 자동으로 분석하여 최적의 강사를 매칭합니다
           </p>
 
-          {/* 특징 */}
-          <div className="grid grid-cols-3 gap-4 mb-10">
+          {/* 특징 카드 그리드 (간격 gap-4 -> gap-5로 살짝 여유있게 조정) */}
+          <div className="grid grid-cols-3 gap-5 mb-10">
             <FeatureCard emoji="📄" title="문서 파싱" desc="HWP·PDF·DOCX 자동 분석" />
             <FeatureCard emoji="🤖" title="AI 매칭" desc="Gemini 기반 최적 매칭" />
             <FeatureCard emoji="👥" title="강사 관리" desc="108명 이력서 DB" />
@@ -65,10 +65,16 @@ export default function LandingPage() {
 
 function FeatureCard({ emoji, title, desc }: { emoji: string; title: string; desc: string }) {
   return (
-    <div className="bg-white/60 backdrop-blur-sm rounded-xl p-4 border border-white/80">
-      <div className="text-xl mb-2">{emoji}</div>
-      <p className="text-xs font-semibold text-gray-800 mb-0.5">{title}</p>
-      <p className="text-[10px] text-gray-500">{desc}</p>
+    /* 
+      [수정 포인트]
+      - h-32 : 세로 높이를 128px로 일정하게 고정
+      - flex flex-col items-center justify-center : 카드 내부 내용들을 완전한 중앙 정렬
+      - shadow-sm hover:shadow transition-all : 살짝 입체감을 줘서 완성도 상승
+    */
+    <div className="bg-white/70 backdrop-blur-sm rounded-xl p-4 border border-white/90 h-32 flex flex-col items-center justify-center text-center shadow-sm hover:shadow transition-all">
+      <div className="text-2xl mb-1.5">{emoji}</div>
+      <p className="text-xs font-bold text-gray-800 mb-1">{title}</p>
+      <p className="text-[11px] text-gray-500 leading-snug break-keep">{desc}</p>
     </div>
   );
 }

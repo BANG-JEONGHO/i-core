@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useQuery, useQueryClient } from '@tanstack/react-query';
 import { Link } from 'react-router-dom';
-import { Plus, X, Calendar } from 'lucide-react';
+import { Plus, X, Calendar, MessageCircle } from 'lucide-react';
 import toast from 'react-hot-toast';
 import { matchingApi } from '../api/matching';
 import { taskOrdersApi } from '../api/taskOrders';
@@ -21,8 +21,8 @@ export default function DashboardPage() {
     return items.filter((item: any) => new Date(item.created_at).toISOString().split('T')[0] === dateFilter);
   };
 
-  const allMatching = recentItems.filter((item: any) => item.top_instructor_count < 2);
-  const allDone = recentItems.filter((item: any) => item.top_instructor_count >= 2);
+  const allMatching = recentItems.filter((item: any) => item.top_instructor_count < 1);
+  const allDone = recentItems.filter((item: any) => item.top_instructor_count >= 1);
   const matchedTaskOrderIds = new Set(recentItems.map((item: any) => item.task_order_id));
   const allPending = (taskOrders?.data || []).filter((to: any) => to.parsed_at && !matchedTaskOrderIds.has(to.id));
 
@@ -61,28 +61,28 @@ export default function DashboardPage() {
         </div>
       </div>
 
-      {/* 칸반 보드 - Jira 스타일 */}
+      {/* 칸반 보드 */}
       <div className="flex-1 grid grid-cols-3 gap-3 min-h-0">
         <Column title="과업지시서 분석" count={pendingTaskOrders.length}>
           {pendingTaskOrders.map((to: any) => (
-            <Link key={to.id} to={`/task-orders/${to.id}`}>
-              <Card title={to.file_name} tag="분석완료" tagColor="blue" userName={user?.name} onDelete={() => handleDeleteTaskOrder(to.id)} />
+            <Link key={to.id} to={`/task-orders/${to.id}`} className="block">
+              <Card id={to.id} title={to.file_name} tag="분석완료" tagColor="blue" userName={user?.name} onDelete={() => handleDeleteTaskOrder(to.id)} />
             </Link>
           ))}
         </Column>
 
         <Column title="매칭중" count={matchingItems.length}>
           {matchingItems.map((item: any) => (
-            <Link key={item.id} to={`/matching/${item.id}`}>
-              <Card title={taskOrderNameMap[item.task_order_id] || '매칭 분석'} tag="후보대기" tagColor="amber" userName={user?.name} onDelete={() => handleDeleteMatching(item.id)} />
+            <Link key={item.id} to={`/matching/${item.id}`} className="block">
+              <Card id={item.id} title={taskOrderNameMap[item.task_order_id] || '매칭 분석'} tag="후보대기" tagColor="amber" userName={user?.name} onDelete={() => handleDeleteMatching(item.id)} />
             </Link>
           ))}
         </Column>
 
         <Column title="완료" count={doneItems.length}>
           {doneItems.map((item: any) => (
-            <Link key={item.id} to={`/matching/${item.id}`}>
-              <Card title={taskOrderNameMap[item.task_order_id] || '매칭 완료'} tag="선정완료" tagColor="green" userName={user?.name} onDelete={() => handleDeleteMatching(item.id)} />
+            <Link key={item.id} to={`/matching/${item.id}`} className="block">
+              <Card id={item.id} title={taskOrderNameMap[item.task_order_id] || '매칭 완료'} tag="선정완료" tagColor="green" userName={user?.name} memo={item.memo} enableMemo onDelete={() => handleDeleteMatching(item.id)} />
             </Link>
           ))}
         </Column>
@@ -94,13 +94,11 @@ export default function DashboardPage() {
 function Column({ title, count, children }: { title: string; count: number; children: React.ReactNode }) {
   return (
     <div className="flex flex-col min-h-0 bg-gray-50 rounded-lg">
-      {/* 컬럼 헤더 - 가운데 정렬 */}
       <div className="flex items-center justify-center gap-2 px-3 py-2.5 border-b border-gray-200/60">
         <span className="text-[11px] font-bold text-gray-600 uppercase tracking-wide">{title}</span>
         <span className="text-[10px] text-gray-400 bg-gray-200 w-5 h-5 rounded-full flex items-center justify-center font-semibold">{count}</span>
       </div>
-      {/* 카드 영역 */}
-      <div className="flex-1 overflow-y-auto p-2.5 space-y-2.5">
+      <div className="flex-1 overflow-y-auto p-2.5 space-y-3.5">
         {React.Children.count(children) > 0 ? children : (
           <div className="text-center py-10"><p className="text-[10px] text-gray-300">항목 없음</p></div>
         )}
@@ -109,8 +107,8 @@ function Column({ title, count, children }: { title: string; count: number; chil
   );
 }
 
-function Card({ title, tag, tagColor, userName, onDelete }: {
-  title: string; tag: string; tagColor: string; userName?: string; onDelete?: () => void;
+function Card({ id, title, tag, tagColor, userName, memo: initialMemo, enableMemo, onDelete }: {
+  id: string; title: string; tag: string; tagColor: string; userName?: string; memo?: string; enableMemo?: boolean; onDelete?: () => void;
 }) {
   const tagColors: Record<string, string> = {
     blue: 'bg-blue-100 text-blue-600',
@@ -118,18 +116,25 @@ function Card({ title, tag, tagColor, userName, onDelete }: {
     green: 'bg-green-100 text-green-600',
   };
   const initial = (userName || '?').charAt(0).toUpperCase();
+  const [memo, setMemo] = useState(initialMemo || '');
+  const [showMemo, setShowMemo] = useState(false);
+
+  const saveMemo = async (value: string) => {
+    setMemo(value);
+    try { await matchingApi.updateMemo(id, value); } catch { /* silent */ }
+  };
 
   return (
-    <div className="bg-white rounded-md p-3 shadow-sm hover:shadow-md transition-shadow cursor-pointer group relative">
+    <div className="bg-white rounded-md p-3 shadow-sm hover:shadow-md transition-shadow cursor-pointer group relative flex flex-col justify-between">
       {onDelete && (
         <button onClick={(e) => { e.preventDefault(); e.stopPropagation(); onDelete(); }}
-          className="absolute top-2 right-2 p-0.5 rounded text-gray-300 hover:text-red-500 opacity-0 group-hover:opacity-100 transition-opacity">
+          className="absolute top-2 right-2 p-0.5 rounded text-gray-300 hover:text-red-500 opacity-0 group-hover:opacity-100 transition-opacity z-10">
           <X size={11} />
         </button>
       )}
-      {/* 제목 */}
-      <p className="text-[11px] font-medium text-gray-800 leading-relaxed line-clamp-2 pr-4 mb-2.5">{title}</p>
-      {/* 하단: 태그 + 프로필 */}
+      <div className="h-[36px] flex items-center mb-2.5 pr-3">
+        <p className="text-[11px] font-medium text-gray-800 leading-relaxed line-clamp-2">{title}</p>
+      </div>
       <div className="flex items-center justify-between">
         <span className={`text-[9px] font-bold px-2 py-0.5 rounded-sm ${tagColors[tagColor]}`}>{tag}</span>
         <div className="relative group/avatar">
@@ -141,6 +146,48 @@ function Card({ title, tag, tagColor, userName, onDelete }: {
           </div>
         </div>
       </div>
+      {/* 메모 - 완료 카드에서 아이콘 클릭 시 토글 */}
+      {enableMemo && (
+        <>
+          <div className="flex items-center justify-end mt-2">
+            <button
+              onClick={(e) => { e.preventDefault(); e.stopPropagation(); setShowMemo(!showMemo); }}
+              className={`p-1 rounded transition-all ${memo ? 'text-gray-900' : 'text-gray-900'} hover:text-gray-700`}
+              title="코멘트 작성"
+            >
+              <MessageCircle size={12} />
+            </button>
+          </div>
+          {showMemo && (
+            <div className="mt-1" onClick={(e) => { e.preventDefault(); e.stopPropagation(); }}>
+              <textarea
+                value={memo}
+                onChange={(e) => setMemo(e.target.value)}
+                placeholder="코멘트 작성..."
+                className="w-full text-[10px] text-gray-600 bg-amber-50/50 border border-amber-100 rounded p-2 outline-none resize-none h-12 placeholder-gray-400 focus:border-amber-300"
+              />
+              <button
+                onClick={() => { saveMemo(memo); setShowMemo(false); }}
+                className="mt-1 px-3 py-1 bg-indigo-600 text-white text-[10px] font-medium rounded hover:bg-indigo-700"
+              >
+                저장
+              </button>
+            </div>
+          )}
+          {!showMemo && memo && (
+            <div className="mt-1.5 flex items-center gap-1.5">
+              <p className="text-[9px] text-amber-600 truncate flex-1">💬 <span className="text-gray-500">{userName || '나'}:</span> {memo}</p>
+              <button
+                onClick={(e) => { e.preventDefault(); e.stopPropagation(); saveMemo(''); }}
+                className="text-gray-900 hover:text-red-600 shrink-0"
+                title="코멘트 삭제"
+              >
+                <X size={10} />
+              </button>
+            </div>
+          )}
+        </>
+      )}
     </div>
   );
 }

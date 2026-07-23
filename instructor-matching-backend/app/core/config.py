@@ -12,7 +12,7 @@ class Settings(BaseSettings):
 
     # Database
     DATABASE_URL: str = "sqlite+aiosqlite:///./data/private/app.db"
-    INSTRUCTOR_DATABASE_URL: str = "sqlite+aiosqlite:///./data/private/app.db"
+    INSTRUCTOR_DATABASE_URL: str = "sqlite+aiosqlite:///./data/private/내부_강사_정보.db"
 
     # Security
     SECRET_KEY: str = "change-this-to-a-secure-random-string-at-least-32-chars"

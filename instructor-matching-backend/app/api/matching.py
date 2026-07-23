@@ -25,7 +25,7 @@ async def execute_matching(
 @router.get("/history", response_model=list[MatchingSummary])
 async def list_matching_history(
     offset: int = Query(default=0, ge=0),
-    limit: int = Query(default=10, ge=1, le=50),
+    limit: int = Query(default=10, ge=1, le=100),
     db: AsyncSession = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ):
@@ -98,6 +98,23 @@ async def delete_matching_result(
     result = await db.get(MatchingResult, matching_id)
     if result:
         await db.delete(result)
+
+
+@router.put("/{matching_id}/memo")
+async def update_memo(
+    matching_id: str,
+    body: dict,
+    db: AsyncSession = Depends(get_db),
+    current_user: User = Depends(get_current_user),
+):
+    """매칭 결과에 메모 저장."""
+    from app.models.models import MatchingResult
+    result = await db.get(MatchingResult, matching_id)
+    if not result:
+        from fastapi import HTTPException, status
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND)
+    result.memo = body.get("memo", "")
+    return {"memo": result.memo}
 
 
 @router.post("/{matching_id}/ai-reason/{instructor_id}")

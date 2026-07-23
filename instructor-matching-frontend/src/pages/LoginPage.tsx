@@ -89,11 +89,11 @@ export default function LoginPage() {
       </div>
 
       {/* 단일 카드 - 스텝 전환 */}
-      <div className="relative w-full max-w-[400px] mx-4 bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl shadow-indigo-100/50 border border-white/60 p-10 overflow-hidden">
+      <div className="relative w-full max-w-xl mx-4 bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl shadow-indigo-100/50 border border-white/60 h-[450px] flex items-center justify-center overflow-hidden">
         
         {/* Step 1: 소개 */}
         {step === 'intro' && (
-          <div className="text-center animate-fadeIn">
+          <div className="text-center animate-fadeIn p-10">
             <img src="/logo.jpg" alt="iCore" className="w-20 h-20 rounded-2xl object-cover shadow-lg mx-auto mb-5" />
             <h1 className="text-xl font-bold text-gray-900 mb-2">iCore 강사 매칭</h1>
             <p className="text-sm text-gray-500 mb-2">AI 기반 최적 강사 매칭 플랫폼</p>
@@ -112,7 +112,7 @@ export default function LoginPage() {
 
         {/* Step 2: 로그인 */}
         {step === 'login' && (
-          <div className="text-center animate-fadeIn">
+          <div className="text-center animate-fadeIn p-10">
             <img src="/logo.jpg" alt="iCore" className="w-14 h-14 rounded-xl object-cover shadow mx-auto mb-4" />
             <h2 className="text-lg font-bold text-gray-900 mb-1">로그인</h2>
             <p className="text-xs text-gray-400 mb-6">Google 계정으로 시작하세요</p>
