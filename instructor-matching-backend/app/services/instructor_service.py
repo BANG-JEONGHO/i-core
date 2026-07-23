@@ -170,9 +170,40 @@ async def list_instructors(
     offset: int = 0,
     limit: int = 20,
 ) -> tuple[list[InstructorResponse], int]:
-    """강사 목록을 조회합니다."""
-    instructors, total = await list_instructor_profiles(keyword=keyword, offset=offset, limit=limit)
-    return [InstructorResponse.model_validate(i) for i in instructors], total
+    """강사 목록을 조회합니다 (외부 DB + app.db 통합)."""
+    # 1. 외부 강사 DB (내부_강사_정보.db)
+    ext_instructors, ext_total = await list_instructor_profiles(keyword=keyword, offset=0, limit=500)
+
+    # 2. app.db의 instructors 테이블 (포털에서 등록한 강사)
+    from sqlalchemy import func
+    query = select(Instructor)
+    if keyword:
+        query = query.where(Instructor.name.contains(keyword))
+    count_query = select(func.count(Instructor.id))
+    if keyword:
+        count_query = count_query.where(Instructor.name.contains(keyword))
+
+    count_result = await db.execute(count_query)
+    app_total = count_result.scalar() or 0
+
+    app_result = await db.execute(query.order_by(Instructor.created_at.desc()))
+    app_instructors = [InstructorResponse.model_validate(i) for i in app_result.scalars().all()]
+
+    # 3. 통합 (중복 제거: 이름 기준)
+    seen_names = set()
+    combined = []
+    for i in ext_instructors:
+        if i.name not in seen_names:
+            seen_names.add(i.name)
+            combined.append(i)
+    for i in app_instructors:
+        if i.name not in seen_names:
+            seen_names.add(i.name)
+            combined.append(i)
+
+    total = len(combined)
+    paginated = combined[offset:offset + limit]
+    return [InstructorResponse.model_validate(i) if not isinstance(i, InstructorResponse) else i for i in paginated], total
 
 
 async def get_instructor(db: AsyncSession, instructor_id: str) -> InstructorResponse:
