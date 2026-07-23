@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useQuery, useQueryClient } from '@tanstack/react-query';
 import { Link } from 'react-router-dom';
-import { Plus, X, MoreHorizontal, Calendar } from 'lucide-react';
+import { Plus, X, Calendar } from 'lucide-react';
 import toast from 'react-hot-toast';
 import { matchingApi } from '../api/matching';
 import { taskOrdersApi } from '../api/taskOrders';
@@ -148,16 +148,11 @@ function KanbanColumn({ title, count, color, children }: {
 
   return (
     <div className="flex flex-col min-h-0">
-      <div className="flex items-center justify-between mb-4">
-        <div className="flex items-center gap-2">
-          <span className={`inline-block px-2.5 py-0.5 text-[10px] font-bold rounded ${badgeColors[color]}`}>{title}</span>
-          <span className="text-[11px] text-gray-400 font-medium">{count}</span>
-        </div>
-        <button className="p-1 rounded hover:bg-gray-100 text-gray-400">
-          <MoreHorizontal size={14} />
-        </button>
+      <div className="flex items-center gap-2 mb-3">
+        <span className={`inline-block px-2.5 py-0.5 text-[10px] font-bold rounded ${badgeColors[color]}`}>{title}</span>
+        <span className="text-[11px] text-gray-400 font-medium">{count}</span>
       </div>
-      <div className="flex-1 overflow-y-auto space-y-4 pr-1">
+      <div className="flex-1 overflow-y-auto space-y-2.5 pr-1">
         {React.Children.count(children) > 0 ? children : (
           <div className="text-center py-12">
             <p className="text-[11px] text-gray-300">항목 없음</p>
@@ -177,24 +172,24 @@ function KanbanCard({ title, date, userName, onDelete }: {
   const initial = (userName || '?').charAt(0).toUpperCase();
 
   return (
-    <div className="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow cursor-pointer group relative border border-gray-100">
+    <div className="bg-white rounded-lg px-3.5 py-3 shadow-sm hover:shadow transition-shadow cursor-pointer group relative">
       {onDelete && (
         <button onClick={(e) => { e.preventDefault(); e.stopPropagation(); onDelete(); }}
-          className="absolute top-3 right-3 p-0.5 rounded text-gray-300 hover:text-red-500 opacity-0 group-hover:opacity-100 transition-opacity">
-          <X size={12} />
+          className="absolute top-2.5 right-2.5 p-0.5 rounded text-gray-300 hover:text-red-500 opacity-0 group-hover:opacity-100 transition-opacity">
+          <X size={11} />
         </button>
       )}
-      <p className="text-[12px] font-medium text-gray-800 leading-relaxed line-clamp-2 pr-5 mb-4">{title}</p>
+      <p className="text-[12px] font-medium text-gray-800 leading-relaxed line-clamp-2 pr-4 mb-2.5">{title}</p>
 
       <div className="flex items-center justify-between">
         <span className="text-[10px] text-gray-400">
           {new Date(date).toLocaleDateString('ko-KR', { month: 'long', day: 'numeric' })}
         </span>
         <div className="relative group/avatar">
-          <div className="w-6 h-6 rounded-full bg-gradient-to-br from-indigo-100 to-blue-100 flex items-center justify-center ring-2 ring-white">
-            <span className="text-[9px] font-bold text-indigo-600">{initial}</span>
+          <div className="w-5 h-5 rounded-full bg-gradient-to-br from-indigo-100 to-blue-100 flex items-center justify-center">
+            <span className="text-[8px] font-bold text-indigo-600">{initial}</span>
           </div>
-          <div className="absolute bottom-full right-0 mb-1.5 px-2 py-1 bg-gray-900 text-white text-[9px] rounded-md whitespace-nowrap opacity-0 group-hover/avatar:opacity-100 transition-opacity pointer-events-none shadow-lg">
+          <div className="absolute bottom-full right-0 mb-1.5 px-2 py-1 bg-gray-900 text-white text-[9px] rounded-md whitespace-nowrap opacity-0 group-hover/avatar:opacity-100 transition-opacity pointer-events-none shadow-lg z-10">
             {userName || '담당자'}
           </div>
         </div>

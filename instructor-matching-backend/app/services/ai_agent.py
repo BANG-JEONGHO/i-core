@@ -343,52 +343,44 @@ async def parse_document_with_ai(file_content: bytes, file_name: str) -> dict:
 
 
 def _parse_with_text(client: genai.Client, text: str) -> dict:
-    """텍스트를 Gemini에 전달하여 파싱. 관련 섹션만 추출해서 속도 향상."""
-    # 핵심 섹션만 추출 (신청자격, 평가기준 근처 텍스트)
-    focused_text = _extract_relevant_sections(text)
-    prompt = EXTRACTION_PROMPT + "\n\n## 과업지시서 텍스트:\n" + focused_text
+    """텍스트를 Gemini에 전달하여 파싱."""
+    # 바이너리 노이즈 제거 (CJK 유니코드 범위 밖의 이상한 문자)
+    cleaned = _clean_text_noise(text)
+    prompt = EXTRACTION_PROMPT + "\n\n## 과업지시서 전체 텍스트:\n" + cleaned[:12000]
 
     response = client.models.generate_content(
         model=MODEL,
         contents=prompt,
         config=types.GenerateContentConfig(
-            max_output_tokens=2048,
+            max_output_tokens=4096,
             temperature=0.1,
         ),
     )
     return _parse_json_response(response.text)
 
 
-def _extract_relevant_sections(text: str) -> str:
-    """전체 텍스트에서 신청자격/평가기준 관련 섹션만 추출 (속도 향상)."""
-    # 관련 키워드 근처 텍스트를 우선 추출
-    keywords = ['신청자격', '참여자격', '참가자격', '입찰참가', '자격요건',
-                '평가기준', '심사기준', '배점', '평가항목', '기술평가',
-                '제안요청', '자격제한', '필수조건', '우대조건', '인력요건']
-    
-    lines = text.split('\n')
-    relevant_indices = set()
-    
-    for i, line in enumerate(lines):
-        for kw in keywords:
-            if kw in line:
-                # 해당 줄 전후 30줄 포함
-                start = max(0, i - 5)
-                end = min(len(lines), i + 30)
-                for j in range(start, end):
-                    relevant_indices.add(j)
-                break
-    
-    if relevant_indices:
-        # 관련 섹션 추출 (최대 8000자)
-        sorted_indices = sorted(relevant_indices)
-        sections = [lines[i] for i in sorted_indices]
-        result = '\n'.join(sections)[:8000]
-        if len(result) > 500:
-            return result
-    
-    # 관련 섹션 못 찾으면 전체 텍스트 앞부분
-    return text[:8000]
+def _clean_text_noise(text: str) -> str:
+    """HWP 추출 텍스트에서 바이너리 노이즈를 제거합니다."""
+    import re
+    # CJK 이상한 문자 (한자 범위이지만 실제로는 노이즈)를 줄바꿈으로 대체
+    # 정상: 한글, 영문, 숫자, 일반 문장부호, 공백
+    cleaned_lines = []
+    for line in text.split('\n'):
+        # 라인의 절반 이상이 정상 문자이면 유지
+        if not line.strip():
+            cleaned_lines.append('')
+            continue
+        normal_chars = sum(1 for c in line if (
+            '\uAC00' <= c <= '\uD7A3' or  # 한글
+            '\u0020' <= c <= '\u007E' or  # ASCII
+            c in '\t\n\r' or
+            '\u3131' <= c <= '\u318E' or  # 한글 자모
+            '\u2000' <= c <= '\u206F' or  # 일반 구두점
+            '\uFF00' <= c <= '\uFFEF'     # 전각 문자
+        ))
+        if normal_chars / max(len(line), 1) > 0.5:
+            cleaned_lines.append(line)
+    return '\n'.join(cleaned_lines)
 
 
 def _parse_with_file_api(client: genai.Client, file_content: bytes, file_name: str) -> dict:
@@ -442,7 +434,7 @@ def _parse_with_file_api(client: genai.Client, file_content: bytes, file_name: s
 
 
 def _parse_json_response(text: str) -> dict:
-    """AI 응답에서 JSON을 추출."""
+    """AI 응답에서 JSON을 추출. 불완전한 JSON도 최대한 파싱."""
     text = text.strip()
     if text.startswith("```"):
         lines = text.split("\n")
@@ -454,13 +446,24 @@ def _parse_json_response(text: str) -> dict:
     try:
         return json.loads(text)
     except json.JSONDecodeError:
+        # JSON 부분만 추출 시도
         start = text.find("{")
         end = text.rfind("}") + 1
         if start >= 0 and end > start:
             try:
                 return json.loads(text[start:end])
             except:
-                pass
+                # 불완전한 JSON: 마지막 완전한 배열까지 잘라서 시도
+                fragment = text[start:end]
+                # qualifications 배열이라도 추출
+                try:
+                    # 마지막 유효한 ] 위치 찾기
+                    last_bracket = fragment.rfind("]")
+                    if last_bracket > 0:
+                        truncated = fragment[:last_bracket+1] + "}"
+                        return json.loads(truncated)
+                except:
+                    pass
     return {"qualifications": [], "evaluation_criteria": []}
 
 

@@ -4,6 +4,7 @@ import { Toaster } from 'react-hot-toast';
 import Layout from './components/layout/Layout';
 import ProtectedRoute from './components/common/ProtectedRoute';
 import LoginPage from './pages/LoginPage';
+import LandingPage from './pages/LandingPage';
 import DashboardPage from './pages/DashboardPage';
 import InstructorsPage from './pages/InstructorsPage';
 import TaskOrderUploadPage from './pages/TaskOrderUploadPage';
@@ -22,6 +23,7 @@ export default function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/login" element={<LoginPage />} />
+          <Route path="/welcome" element={<LandingPage />} />
           <Route element={<ProtectedRoute><Layout /></ProtectedRoute>}>
             <Route path="/" element={<DashboardPage />} />
             <Route path="/instructors" element={<InstructorsPage />} />
