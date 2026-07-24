@@ -10,6 +10,7 @@ from __future__ import annotations
 import re
 import sys
 from pathlib import Path
+from threading import BoundedSemaphore
 from typing import Any
 
 from app.core.config import settings
@@ -19,6 +20,15 @@ from app.services.external_instructor_db import get_external_db_path
 
 class AgentCoreConfigurationError(RuntimeError):
     """The locally supplied agent-core package or its configuration is invalid."""
+
+
+class AgentCoreExecutionError(RuntimeError):
+    """Attach the failing workflow stage without exposing sensitive settings."""
+
+    def __init__(self, stage: str, cause: Exception) -> None:
+        self.stage = stage
+        self.cause = cause
+        super().__init__(f"{stage}: {type(cause).__name__}: {cause}")
 
 
 def execute_agent_core_matching(task_order: TaskOrder) -> tuple[list[dict[str, Any]], list[str]]:
@@ -44,14 +54,17 @@ def execute_agent_core_matching(task_order: TaskOrder) -> tuple[list[dict[str, A
     from agent_core.services.run_storage import RunStorage
     from agent_core.services.vector_store import LocalVectorStore
 
-    project = _build_project_profile(
-        task_order,
-        ProjectProfile=ProjectProfile,
-        ProjectBase=ProjectBase,
-        EducationRequirements=EducationRequirements,
-        InstructorRequirements=InstructorRequirements,
-        EvidenceRef=EvidenceRef,
-    )
+    try:
+        project = _build_project_profile(
+            task_order,
+            ProjectProfile=ProjectProfile,
+            ProjectBase=ProjectBase,
+            EducationRequirements=EducationRequirements,
+            InstructorRequirements=InstructorRequirements,
+            EvidenceRef=EvidenceRef,
+        )
+    except Exception as error:
+        raise AgentCoreExecutionError("과업 데이터·개요 프로필 생성", error) from error
     repository = InstructorRepository(database_path=Path(get_external_db_path()))
     retriever = EvidenceRetriever(
         embeddings=_ConfiguredGeminiEmbeddings(
@@ -62,23 +75,32 @@ def execute_agent_core_matching(task_order: TaskOrder) -> tuple[list[dict[str, A
     # Index the original extracted text for RAG. If unavailable, agent_core
     # falls back to its structured project profile during retrieval.
     if task_order.raw_text and task_order.raw_text.strip():
-        retriever.index_document(
-            document_id=f"task-order:{task_order.id}",
-            source_type="project",
-            text=task_order.raw_text,
-        )
+        try:
+            retriever.index_document(
+                document_id=f"task-order:{task_order.id}",
+                source_type="project",
+                text=task_order.raw_text,
+            )
+        except Exception as error:
+            raise AgentCoreExecutionError("RAG 문서 임베딩·저장", error) from error
 
     workflow = BatchMatchingWorkflow(
         repository=repository,
         llm=_ConfiguredGeminiStructuredLLM(
-            settings.GEMINI_API_KEY, settings.GEMINI_MODEL
+            settings.GEMINI_API_KEY,
+            settings.GEMINI_MODEL,
+            max_concurrent_requests=settings.AGENT_MAX_CONCURRENT_LLM_REQUESTS,
         ),
         run_storage=RunStorage(Path(settings.AGENT_RUN_STORAGE_DIR)),
         evidence_retriever=retriever,
+        review_workers=settings.AGENT_REVIEW_WORKERS,
     )
 
     # First phase: deterministic candidate search over every instructor.
-    preliminary = workflow.run(BatchMatchRequest(project=project))
+    try:
+        preliminary = workflow.run(BatchMatchRequest(project=project))
+    except Exception as error:
+        raise AgentCoreExecutionError("전체 강사 후보 정렬", error) from error
     review_limit = min(max(settings.AGENT_REVIEW_TOP_K, 0), len(preliminary.rankings), 108)
     review_ids = [
         int(_database_id(item.instructor_id))
@@ -87,10 +109,13 @@ def execute_agent_core_matching(task_order: TaskOrder) -> tuple[list[dict[str, A
 
     # Second phase: independent analysis A, verifier B, and code grounding.
     request = BatchMatchRequest(project=project, review_instructor_ids=review_ids)
-    batch_result = workflow.run(request)
-    BatchRunStorage(Path(settings.AGENT_BATCH_RUN_STORAGE_DIR)).save_batch_run(
-        request, batch_result
-    )
+    try:
+        batch_result = workflow.run(request)
+        BatchRunStorage(Path(settings.AGENT_BATCH_RUN_STORAGE_DIR)).save_batch_run(
+            request, batch_result
+        )
+    except Exception as error:
+        raise AgentCoreExecutionError("A/B 적합도 분석·검증", error) from error
 
     reviewed_by_id = {
         instructor_id: result
@@ -136,10 +161,18 @@ def _build_project_profile(
 ) -> Any:
     qualifications = task_order.qualifications or []
     criteria = task_order.evaluation_criteria or []
+    overview = task_order.overview or {}
     requirement_texts = _descriptions(qualifications)
     criterion_texts = _descriptions(criteria)
     qualification_terms = _keywords(qualifications)
     criterion_terms = _keywords(criteria)
+    overview_topics = _overview_values(overview, "core_topics")
+    overview_audience = _overview_values(overview, "target_audience")
+    overview_formats = _overview_values(overview, "delivery_formats")
+    overview_roles = _overview_values(overview, "required_roles")
+    overview_scope = _overview_values(overview, "scope")
+    overview_outcomes = _overview_values(overview, "expected_outcomes")
+    overview_experience = _overview_values(overview, "preferred_experience")
     source_id = f"task-order:{task_order.id}"
 
     required_certifications = [
@@ -171,22 +204,31 @@ def _build_project_profile(
         classification_confidence=1.0,
         base=ProjectBase(
             project_name=task_order.file_name,
-            proposal_requirements=requirement_texts,
+            purpose=_unique([str(overview.get("summary", "")), *overview_scope, *overview_outcomes]),
+            deliverables=_unique([*overview_scope, *overview_outcomes]),
+            proposal_requirements=_unique([*requirement_texts, *overview_roles]),
             compliance_requirements=criterion_texts,
         ),
         education=EducationRequirements(
-            technology_domains=_unique([*qualification_terms, *criterion_terms]),
-            program_topics=_unique([*criterion_terms, *qualification_terms]),
+            technology_domains=_unique([*overview_topics, *qualification_terms, *criterion_terms]),
+            program_topics=_unique([*overview_topics, *criterion_terms, *qualification_terms]),
+            target_audience=overview_audience,
+            delivery_format=overview_formats,
+            required_roles=overview_roles,
             instructor_requirements=InstructorRequirements(
                 required_experience=required_experience,
                 required_certifications=required_certifications,
+                similar_project_experience=overview_experience,
             ),
+            practical_project_requirements=_unique([*overview_scope, *overview_roles]),
             assessment_requirements=criterion_texts,
+            outcome_requirements=overview_outcomes,
         ),
         extensions={
             "source_task_order_id": task_order.id,
             "normalized_qualifications": qualifications,
             "normalized_evaluation_criteria": criteria,
+            "overview": overview,
         },
         evidence=evidence,
     )
@@ -249,7 +291,7 @@ def _reviewed_result_to_fields(review: Any) -> dict[str, Any]:
 class _ConfiguredGeminiStructuredLLM:
     """Implement agent_core's StructuredLLM protocol using app settings."""
 
-    def __init__(self, api_key: str, model: str) -> None:
+    def __init__(self, api_key: str, model: str, *, max_concurrent_requests: int) -> None:
         from google import genai
         from google.genai import types
 
@@ -260,22 +302,26 @@ class _ConfiguredGeminiStructuredLLM:
             ),
         )
         self.model = model
+        self._request_limiter = BoundedSemaphore(max(1, max_concurrent_requests))
 
     def parse(self, *, instructions: str, input_text: str, schema: Any) -> Any:
         from agent_core.services.llm import parse_structured_output
 
-        interaction = self.client.interactions.create(
-            model=self.model,
-            input=(
-                "<agent_instructions>\n" + instructions + "\n</agent_instructions>\n\n"
-                "<task_input>\n" + input_text + "\n</task_input>"
-            ),
-            response_format={
-                "type": "text",
-                "mime_type": "application/json",
-                "schema": schema.model_json_schema(),
-            },
-        )
+        # Several candidate workers can run at once. Keep a single global
+        # ceiling for both A and B calls to stay below Gemini request limits.
+        with self._request_limiter:
+            interaction = self.client.interactions.create(
+                model=self.model,
+                input=(
+                    "<agent_instructions>\n" + instructions + "\n</agent_instructions>\n\n"
+                    "<task_input>\n" + input_text + "\n</task_input>"
+                ),
+                response_format={
+                    "type": "text",
+                    "mime_type": "application/json",
+                    "schema": schema.model_json_schema(),
+                },
+            )
         return parse_structured_output(interaction.output_text, schema)
 
 
@@ -311,6 +357,13 @@ def _database_id(value: str) -> str:
 
 def _description(item: dict[str, Any]) -> str:
     return str(item.get("description", "")).strip()
+
+
+def _overview_values(overview: dict[str, Any], key: str) -> list[str]:
+    value = overview.get(key, [])
+    if not isinstance(value, list):
+        return []
+    return _unique([str(item).strip() for item in value if str(item).strip()])
 
 
 def _descriptions(items: list[dict[str, Any]]) -> list[str]:

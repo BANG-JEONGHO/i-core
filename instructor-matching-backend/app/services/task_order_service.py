@@ -42,12 +42,13 @@ async def upload_task_order(
     # 파싱 시도 (AI Agent 기반, 타임아웃 30초)
     qualifications_data: list[dict] = []
     evaluation_data: list[dict] = []
+    overview_data: dict = {}
     raw_text: str | None = None
     parsed_at: datetime | None = None
 
     try:
         import asyncio
-        from app.services.ai_agent import parse_document_with_ai
+        from app.services.ai_agent import extract_overview_context, parse_document_with_ai
 
         try:
             ai_result = await asyncio.wait_for(
@@ -57,6 +58,7 @@ async def upload_task_order(
             raw_text = ai_result.get("raw_text", "")
             qualifications_data = ai_result.get("qualifications", [])
             evaluation_data = ai_result.get("evaluation_criteria", [])
+            overview_data = ai_result.get("overview", {})
             if parse_error := ai_result.get("parse_error"):
                 logger.warning("document_parse_unavailable", file_name=file_name, reason=parse_error)
         except asyncio.TimeoutError:
@@ -69,10 +71,11 @@ async def upload_task_order(
                 raw_text = requirements.raw_text
                 qualifications_data = [asdict(q) for q in requirements.qualifications]
                 evaluation_data = [asdict(e) for e in requirements.evaluation_criteria]
+                overview_data = extract_overview_context(raw_text)
             except:
                 pass
 
-        if qualifications_data or evaluation_data or raw_text:
+        if qualifications_data or evaluation_data or overview_data or raw_text:
             parsed_at = datetime.utcnow()
 
         logger.info(
@@ -92,6 +95,7 @@ async def upload_task_order(
         raw_text=raw_text,
         qualifications=qualifications_data,
         evaluation_criteria=evaluation_data,
+        overview=overview_data,
         parsed_at=parsed_at,
         uploaded_by=user_id,
     )
@@ -135,6 +139,8 @@ async def update_parsed_result(
 
     task_order.qualifications = data.qualifications
     task_order.evaluation_criteria = data.evaluation_criteria
+    if data.overview is not None:
+        task_order.overview = data.overview
     await db.flush()
 
     return TaskOrderResponse.model_validate(task_order)

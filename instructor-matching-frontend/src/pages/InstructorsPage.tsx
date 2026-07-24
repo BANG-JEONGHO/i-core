@@ -196,15 +196,6 @@ export default function InstructorsPage() {
   );
 }
 
-function InfoRow({ label, value }: { label: string; value: string }) {
-  return (
-    <div className="flex items-center justify-between py-2 border-b border-gray-50">
-      <span className="text-xs text-gray-500">{label}</span>
-      <span className="text-sm font-medium text-gray-800">{value}</span>
-    </div>
-  );
-}
-
 function DetailTabs({ instructor }: { instructor: Instructor }) {
   const [tab, setTab] = useState<'info' | 'history' | 'qual'>('info');
 

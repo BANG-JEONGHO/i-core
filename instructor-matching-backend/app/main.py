@@ -16,12 +16,26 @@ from app.models.models import Base
 logger = structlog.get_logger()
 
 
+def _apply_additive_schema_updates(connection) -> None:
+    """Apply the small SQLite additions that ``create_all`` cannot backfill."""
+    columns = {
+        row[1]
+        for row in connection.exec_driver_sql("PRAGMA table_info(task_orders)").fetchall()
+    }
+    if "overview" not in columns:
+        connection.exec_driver_sql(
+            "ALTER TABLE task_orders ADD COLUMN overview JSON NOT NULL DEFAULT '{}'"
+        )
+        logger.info("database_schema_updated", table="task_orders", column="overview")
+
+
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     """앱 시작/종료 시 실행."""
     # 시작: 테이블 생성
     async with engine.begin() as conn:
         await conn.run_sync(Base.metadata.create_all)
+        await conn.run_sync(_apply_additive_schema_updates)
     logger.info("database_initialized")
     yield
     # 종료

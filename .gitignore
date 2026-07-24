@@ -26,6 +26,7 @@ Thumbs.db
 instructor-matching-backend/data/agent-runs/
 instructor-matching-backend/data/agent-batch-runs/
 instructor-matching-backend/data/vector-store/
+instructor-matching-backend/data/logs/
 instructor-matching-core/build/
 .pytest_cache/
 

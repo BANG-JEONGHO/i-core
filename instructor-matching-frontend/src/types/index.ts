@@ -57,8 +57,29 @@ export interface TaskOrder {
   file_type: string;
   qualifications: Qualification[];
   evaluation_criteria: EvaluationCriterion[];
+  overview: TaskOverview;
   parsed_at: string | null;
   created_at: string;
+}
+
+export interface TaskOverview {
+  section_titles: string[];
+  summary: string;
+  core_topics: string[];
+  target_audience: string[];
+  delivery_formats: string[];
+  required_roles: string[];
+  scope: string[];
+  expected_outcomes: string[];
+  preferred_experience: string[];
+  source_excerpt: string;
+  matching_rules: OverviewRule[];
+}
+
+export interface OverviewRule {
+  key: string;
+  label: string;
+  values: string[];
 }
 
 export interface Qualification {

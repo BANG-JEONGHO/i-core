@@ -2,7 +2,9 @@ import axios from 'axios';
 import { useAuthStore } from '../store/authStore';
 
 const apiClient = axios.create({
-  baseURL: 'http://localhost:8700',
+  // 개발 환경에서는 Vite 프록시(/api)를 통해 백엔드에 연결한다.
+  // 배포 환경에서는 동일 도메인의 /api 리버스 프록시를 사용한다.
+  baseURL: import.meta.env.VITE_API_BASE_URL || '',
   timeout: 60000,
   headers: {
     'Content-Type': 'application/json',

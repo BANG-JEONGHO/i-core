@@ -182,37 +182,6 @@ export default function MatchingResultPage() {
   );
 }
 
-function MatchAnalysis({ score }: { score: MatchScore }) {
-  const strengths: string[] = [];
-  const weaknesses: string[] = [];
-  if (score.keyword_score >= 28) strengths.push('과업 관련 키워드 높은 일치율');
-  else if (score.keyword_score >= 16) strengths.push('과업 관련 키워드 일부 일치');
-  else weaknesses.push('과업 관련 키워드 일치율 낮음');
-  if (score.qualification_score >= 21) strengths.push('자격 요건 충족');
-  else if (score.qualification_score >= 10) weaknesses.push('자격 요건 일부 미충족');
-  else weaknesses.push('자격 요건 미충족');
-  if (score.experience_score >= 21) strengths.push('충분한 경력 보유');
-  else if (score.experience_score >= 10) weaknesses.push('경력 다소 부족');
-  else weaknesses.push('경력 부족');
-  if (score.total_score >= 70) strengths.push('종합 적합도 우수');
-  return (
-    <div className="space-y-2">
-      {strengths.length > 0 && (
-        <div className="bg-green-50 rounded-lg p-2.5">
-          <p className="text-[10px] text-green-700 font-bold mb-1">✓ 강점</p>
-          {strengths.map((s, i) => <p key={i} className="text-[11px] text-green-800">• {s}</p>)}
-        </div>
-      )}
-      {weaknesses.length > 0 && (
-        <div className="bg-red-50 rounded-lg p-2.5">
-          <p className="text-[10px] text-red-600 font-bold mb-1">✗ 약점</p>
-          {weaknesses.map((w, i) => <p key={i} className="text-[11px] text-red-700">• {w}</p>)}
-        </div>
-      )}
-    </div>
-  );
-}
-
 function AiReasonSection({ matchingId, instructorId }: { matchingId: string; instructorId: string }) {
   const [data, setData] = useState<{ strengths?: string[]; weaknesses?: string[]; summary?: string } | null>(null);
   const [loading, setLoading] = useState(false);

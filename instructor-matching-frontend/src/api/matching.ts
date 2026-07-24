@@ -1,9 +1,16 @@
 import apiClient from './client';
 import type { MatchingResult } from '../types';
 
+// A/B 검증은 후보별 LLM 호출을 포함하므로 기본 API 제한(60초)보다 길게 둔다.
+const MATCHING_TIMEOUT_MS = 30 * 60 * 1000;
+
 export const matchingApi = {
   execute: async (taskOrderId: string): Promise<MatchingResult> => {
-    const response = await apiClient.post(`/api/matching/execute/${taskOrderId}`);
+    const response = await apiClient.post(
+      `/api/matching/execute/${taskOrderId}`,
+      undefined,
+      { timeout: MATCHING_TIMEOUT_MS },
+    );
     return response.data;
   },
 

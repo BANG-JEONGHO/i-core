@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
-import { FileText, Play, CheckCircle, AlertCircle } from 'lucide-react';
+import { FileText, Play, CheckCircle, AlertCircle, ChevronDown, ChevronUp, Target } from 'lucide-react';
 import toast from 'react-hot-toast';
 import { taskOrdersApi } from '../api/taskOrders';
 import { matchingApi } from '../api/matching';
@@ -35,7 +35,8 @@ export default function TaskOrderDetailPage() {
   if (isLoading) return <div className="py-16 text-center text-sm text-gray-400">로딩 중...</div>;
   if (!taskOrder) return <div className="py-16 text-center text-sm text-gray-400">과업지시서를 찾을 수 없습니다.</div>;
 
-  const hasData = (taskOrder.qualifications?.length > 0) || (taskOrder.evaluation_criteria?.length > 0);
+  const hasOverview = Boolean(taskOrder.overview?.summary || taskOrder.overview?.matching_rules?.length);
+  const hasData = (taskOrder.qualifications?.length > 0) || (taskOrder.evaluation_criteria?.length > 0) || hasOverview;
 
   return (
     <div className="flex flex-col" style={{ minHeight: 'calc(100vh - 140px)' }}>
@@ -73,6 +74,8 @@ export default function TaskOrderDetailPage() {
           </div>
         </div>
       )}
+
+      {hasOverview && <OverviewCard overview={taskOrder.overview} />}
 
       <div className="grid grid-cols-2 gap-5 flex-1 min-h-0">
         {/* 신청자격 */}
@@ -118,6 +121,62 @@ export default function TaskOrderDetailPage() {
         </div>
       </div>
     </div>
+  );
+}
+
+function OverviewCard({ overview }: { overview: TaskOrder['overview'] }) {
+  const [expanded, setExpanded] = useState(false);
+  const rules = overview.matching_rules || [];
+
+  return (
+    <section className="bg-indigo-50/50 border border-indigo-100 rounded-xl p-4 mb-5">
+      <div className="flex items-start justify-between gap-4">
+        <div className="min-w-0">
+          <div className="flex items-center gap-2">
+            <Target size={16} className="text-indigo-600" />
+            <h2 className="text-sm font-semibold text-gray-900">과업 핵심 요약</h2>
+            <span className="text-[10px] bg-indigo-100 text-indigo-700 px-1.5 py-0.5 rounded">매칭 반영</span>
+          </div>
+          <p className="text-sm text-gray-700 mt-2 leading-6">{overview.summary}</p>
+        </div>
+        <button
+          onClick={() => setExpanded((value) => !value)}
+          className="shrink-0 text-xs text-indigo-700 hover:text-indigo-900 flex items-center gap-1"
+        >
+          {expanded ? '근거 접기' : '근거 보기'}
+          {expanded ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
+        </button>
+      </div>
+
+      {rules.length > 0 && (
+        <div className="flex flex-wrap gap-2 mt-3">
+          {rules.slice(0, 5).flatMap((rule) => rule.values.slice(0, 3).map((value) => (
+            <span key={`${rule.key}-${value}`} className="text-[11px] bg-white text-indigo-700 border border-indigo-100 px-2 py-1 rounded-full">
+              {rule.label}: {value}
+            </span>
+          )))}
+        </div>
+      )}
+
+      {expanded && (
+        <div className="mt-4 pt-4 border-t border-indigo-100 space-y-3">
+          {overview.section_titles?.length > 0 && (
+            <p className="text-xs text-gray-500">인식된 섹션: {overview.section_titles.join(', ')}</p>
+          )}
+          {rules.map((rule) => (
+            <div key={rule.key} className="text-xs">
+              <span className="font-medium text-gray-700">{rule.label}</span>
+              <span className="text-gray-600"> · {rule.values.join(', ')}</span>
+            </div>
+          ))}
+          {overview.source_excerpt && (
+            <p className="text-xs text-gray-500 whitespace-pre-line bg-white/70 rounded-lg p-3 leading-5">
+              {overview.source_excerpt}
+            </p>
+          )}
+        </div>
+      )}
+    </section>
   );
 }
 

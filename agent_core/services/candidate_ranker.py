@@ -77,6 +77,34 @@ def score_instructor(
             *project.education.instructor_requirements.required_vendor_credentials,
         ]
     )
+    overview_context_terms = _unique(
+        [
+            *project.education.target_audience,
+            *project.education.delivery_format,
+            *project.education.required_roles,
+            *project.education.practical_project_requirements,
+            *project.education.instructor_requirements.similar_project_experience,
+        ]
+    )
+    overview_context_values = [
+        *instructor.delivery_modes,
+        *[
+            value
+            for item in instructor.teaching_items
+            for value in [item.topic, *item.target_audience, *item.delivery_format, *item.outcomes]
+        ],
+        *[
+            value
+            for item in instructor.project_items
+            for value in [item.title, item.role or "", *item.keywords]
+        ],
+        *[item.summary for item in instructor.work_experience_items],
+    ]
+    overview_context_evidence = [
+        *[evidence for item in instructor.teaching_items for evidence in item.evidence],
+        *[evidence for item in instructor.project_items for evidence in item.evidence],
+        *[evidence for item in instructor.work_experience_items for evidence in item.evidence],
+    ]
 
     score_items = [
         _score_component(
@@ -113,6 +141,13 @@ def score_instructor(
             required_terms=certification_terms,
             candidate_values=[certificate.name for certificate in instructor.certifications],
             evidence=[evidence for certificate in instructor.certifications for evidence in certificate.evidence],
+        ),
+        _score_component(
+            criterion="overview_context_fit",
+            max_score=15,
+            required_terms=overview_context_terms,
+            candidate_values=overview_context_values,
+            evidence=overview_context_evidence,
         ),
     ]
 

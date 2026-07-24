@@ -3,12 +3,19 @@
 from __future__ import annotations
 
 import asyncio
+import json
+import re
+import traceback
+from datetime import datetime, timezone
+from pathlib import Path
+from uuid import uuid4
 
 import structlog
 from fastapi import HTTPException, status
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
+from app.core.config import settings
 from app.models.models import MatchingResult, TaskOrder
 from app.schemas.matching import MatchingResultResponse, MatchingSummary, MatchScoreDTO
 from app.services.external_instructor_db import list_all_instructor_profiles
@@ -34,6 +41,7 @@ async def execute_matching(
 
     from app.services.agent_core_adapter import (
         AgentCoreConfigurationError,
+        AgentCoreExecutionError,
         execute_agent_core_matching,
     )
 
@@ -47,10 +55,35 @@ async def execute_matching(
             detail=str(error),
         ) from error
     except Exception as error:
-        logger.exception("agent_core_matching_failed", task_order_id=task_order_id)
+        error_id = uuid4().hex[:8]
+        stage = error.stage if isinstance(error, AgentCoreExecutionError) else "분석 실행"
+        safe_message = _safe_error_message(
+            str(error.cause) if isinstance(error, AgentCoreExecutionError) else str(error)
+        )
+        log_path = _write_matching_error_log(
+            error_id=error_id,
+            task_order_id=task_order_id,
+            stage=stage,
+            error=error,
+        )
+        # The complete traceback is already stored in the UTF-8 JSONL file.
+        # Avoid printing it through a Windows cp949 console, which can turn a
+        # handled agent error into a second 500 response.
+        logger.error(
+            "agent_core_matching_failed",
+            task_order_id=task_order_id,
+            error_id=error_id,
+            stage=stage,
+            error_type=type(error).__name__,
+            error_log=str(log_path) if log_path else None,
+        )
         raise HTTPException(
             status_code=status.HTTP_502_BAD_GATEWAY,
-            detail="Agent-core matching failed. Check Gemini configuration and the agent audit logs.",
+            detail=(
+                f"적합도 분석 실패 [{error_id}] — {stage} 단계에서 "
+                f"{type(error.cause).__name__ if isinstance(error, AgentCoreExecutionError) else type(error).__name__}"
+                f" 오류가 발생했습니다: {safe_message}"
+            ),
         ) from error
 
     # Agent-core deliberately keeps private instructor data out of its prompts.
@@ -121,3 +154,46 @@ def _as_response(matching_result: MatchingResult) -> MatchingResultResponse:
         candidates=matching_result.candidates or [],
         created_at=matching_result.created_at,
     )
+
+
+def _write_matching_error_log(
+    *,
+    error_id: str,
+    task_order_id: str,
+    stage: str,
+    error: Exception,
+) -> Path | None:
+    """Persist a local diagnostic record for a failed matching run.
+
+    Runtime logs are intentionally ignored by Git. The response returns only a
+    short, redacted summary while this file retains the traceback needed for
+    debugging the local server.
+    """
+    try:
+        log_dir = Path(settings.AGENT_RUN_STORAGE_DIR).parent / "logs"
+        log_dir.mkdir(parents=True, exist_ok=True)
+        log_path = log_dir / "agent-core-errors.jsonl"
+        record = {
+            "error_id": error_id,
+            "occurred_at": datetime.now(timezone.utc).isoformat(),
+            "task_order_id": task_order_id,
+            "stage": stage,
+            "error_type": type(error).__name__,
+            "error_message": _safe_error_message(str(error)),
+            "traceback": _safe_error_message("".join(traceback.format_exception(error))),
+        }
+        with log_path.open("a", encoding="utf-8") as file:
+            file.write(json.dumps(record, ensure_ascii=False) + "\n")
+        return log_path
+    except OSError:
+        return None
+
+
+def _safe_error_message(message: str) -> str:
+    """Keep diagnostics useful without writing credentials to a response/log."""
+    redacted = re.sub(
+        r"(?i)(api[_ -]?key|authorization|bearer|key)=?\s*[^\s,&]+",
+        r"\1=<redacted>",
+        message,
+    )
+    return redacted.replace("\n", " ").strip()[:800]

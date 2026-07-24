@@ -2,7 +2,7 @@
 
 from datetime import datetime
 
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 
 class TaskOrderResponse(BaseModel):
@@ -11,6 +11,7 @@ class TaskOrderResponse(BaseModel):
     file_type: str
     qualifications: list[dict]
     evaluation_criteria: list[dict]
+    overview: dict = Field(default_factory=dict)
     parsed_at: datetime | None
     created_at: datetime
 
@@ -32,3 +33,4 @@ class TaskOrderSummary(BaseModel):
 class ParsedResultUpdate(BaseModel):
     qualifications: list[dict]
     evaluation_criteria: list[dict]
+    overview: dict | None = None

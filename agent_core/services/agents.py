@@ -1,5 +1,7 @@
 ﻿from __future__ import annotations
 
+from concurrent.futures import ThreadPoolExecutor
+
 from agent_core.schemas import (
     InstructorProfile,
     MatchAnalysis,
@@ -88,8 +90,18 @@ class MatchingWorkflow:
         from agent_core.services.evidence_validator import validate_grounding
 
         context = self.evidence_retriever.retrieve(request.project, request.instructor)
-        analysis = self.analyst.run(request.project, request.instructor, context)
-        verification = self.verifier.run(request.project, request.instructor, context)
+        # A and B are independent: each receives only project, instructor, and
+        # evidence. They can therefore run in parallel without weakening B.
+        # The backend adapter applies a shared limit to outgoing LLM calls.
+        with ThreadPoolExecutor(max_workers=2, thread_name_prefix="match-review") as executor:
+            analysis_future = executor.submit(
+                self.analyst.run, request.project, request.instructor, context
+            )
+            verification_future = executor.submit(
+                self.verifier.run, request.project, request.instructor, context
+            )
+            analysis = analysis_future.result()
+            verification = verification_future.result()
         grounding = validate_grounding(
             request.project, request.instructor, analysis, verification, context
         )

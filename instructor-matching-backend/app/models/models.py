@@ -79,6 +79,7 @@ class TaskOrder(Base):
     raw_text: Mapped[str | None] = mapped_column(Text, nullable=True)
     qualifications: Mapped[list] = mapped_column(JSON, default=list)
     evaluation_criteria: Mapped[list] = mapped_column(JSON, default=list)
+    overview: Mapped[dict] = mapped_column(JSON, default=dict)
     parsed_at: Mapped[datetime | None] = mapped_column(DateTime, nullable=True)
     uploaded_by: Mapped[str] = mapped_column(String(36), ForeignKey("users.id"))
     created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)

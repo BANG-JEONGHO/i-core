@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+from concurrent.futures import ThreadPoolExecutor
+
 from agent_core.schemas import BatchMatchRequest, BatchMatchResult, MatchRequest
 from agent_core.services.agents import MatchingWorkflow
 from agent_core.services.candidate_ranker import rank_instructors
@@ -21,11 +23,13 @@ class BatchMatchingWorkflow:
         llm: StructuredLLM | None = None,
         run_storage: RunStorage | None = None,
         evidence_retriever: EvidenceRetriever | None = None,
+        review_workers: int = 1,
     ) -> None:
         self.repository = repository
         self.llm = llm
         self.run_storage = run_storage
         self.evidence_retriever = evidence_retriever
+        self.review_workers = max(1, review_workers)
 
     def run(self, request: BatchMatchRequest) -> BatchMatchResult:
         rankings = rank_instructors(request.project, self.repository)
@@ -39,15 +43,25 @@ class BatchMatchingWorkflow:
             if self.llm is None or self.run_storage is None or self.evidence_retriever is None:
                 raise RuntimeError("LLM review dependencies are not configured.")
 
-            matching_workflow = MatchingWorkflow(self.llm, self.evidence_retriever)
-            for instructor_id in request.review_instructor_ids:
+            def review_one(instructor_id: int):
                 profile = build_instructor_profile(
                     self.repository.get_instructor(instructor_id)
                 )
                 match_request = MatchRequest(project=request.project, instructor=profile)
+                # Each worker owns its workflow instance. The adapter's LLM
+                # semaphore still limits total outbound Gemini requests.
+                matching_workflow = MatchingWorkflow(self.llm, self.evidence_retriever)
                 result = matching_workflow.run(match_request)
                 run_id = self.run_storage.save_match_run(match_request, result)
-                reviewed_matches.append(result.model_copy(update={"run_id": run_id}))
+                return result.model_copy(update={"run_id": run_id})
+
+            # executor.map preserves ranked input order, so result alignment
+            # with request.review_instructor_ids remains deterministic.
+            with ThreadPoolExecutor(
+                max_workers=min(self.review_workers, len(request.review_instructor_ids)),
+                thread_name_prefix="candidate-review",
+            ) as executor:
+                reviewed_matches = list(executor.map(review_one, request.review_instructor_ids))
 
         return BatchMatchResult(
             total_instructors=len(rankings),
