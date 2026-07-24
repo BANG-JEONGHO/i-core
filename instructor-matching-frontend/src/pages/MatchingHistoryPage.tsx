@@ -18,8 +18,8 @@ export default function MatchingHistoryPage() {
   const nameMap: Record<string, string> = {};
   (taskOrders?.data || []).forEach((to: any) => { nameMap[to.id] = to.file_name; });
 
-  // 완료된 매칭만 표시 (강사 선정됨 = top_instructor_count >= 2)
-  const completedItems = (history || []).filter((item: any) => item.top_instructor_count >= 2);
+  // 완료된 매칭만 표시 (강사 선정됨 = final_ 접두사 있음)
+  const completedItems = (history || []).filter((item: any) => item.top_instructor_count >= 1);
 
   return (
     <div className="h-full flex flex-col">

@@ -25,13 +25,18 @@ async def upload_task_order(
 ) -> TaskOrderResponse:
     """과업지시서를 업로드하고 파싱합니다."""
     content = await file.read()
-    file_name = file.filename or "unknown"
+    # 파일명에서 surrogate 및 특수문자 제거
+    raw_name = file.filename or "unknown"
+    file_name = raw_name.encode('utf-8', errors='surrogateescape').decode('utf-8', errors='ignore')
+    if not file_name.strip() or not any(c.isalnum() for c in file_name):
+        file_name = "document"
     file_ext = Path(file_name).suffix.lower()
 
-    # 파일 저장
+    # 파일 저장 (파일명에 uuid 사용해서 인코딩 문제 방지)
     save_dir = Path(settings.UPLOAD_DIR) / datetime.now().strftime("%Y/%m")
     save_dir.mkdir(parents=True, exist_ok=True)
-    saved_name = f"{uuid.uuid4()}_{file_name}"
+    safe_ext = file_ext if file_ext else '.bin'
+    saved_name = f"{uuid.uuid4()}{safe_ext}"
     save_path = save_dir / saved_name
 
     with open(save_path, "wb") as f:
@@ -39,7 +44,7 @@ async def upload_task_order(
 
     logger.info("file_saved", file_name=file_name, size=len(content))
 
-    # 파싱 시도 (AI Agent 기반, 타임아웃 30초)
+    # 파싱 시도 (AI Agent 기반, 타임아웃 90초)
     qualifications_data: list[dict] = []
     evaluation_data: list[dict] = []
     raw_text: str | None = None
@@ -65,7 +70,7 @@ async def upload_task_order(
             pass
 
         if qualifications_data or evaluation_data or raw_text:
-            parsed_at = datetime.utcnow()
+            parsed_at = datetime.now()
 
         logger.info(
             "document_parsed",
@@ -74,7 +79,7 @@ async def upload_task_order(
         )
     except Exception as e:
         logger.warning("parse_failed", error=str(e), file_name=file_name)
-        # 파싱 실패해도 레코드는 생성 (parsed_at = None)
+        # ?�싱 ?�패?�도 ?�코?�는 ?�성 (parsed_at = None)
 
     # DB 저장
     task_order = TaskOrder(
@@ -94,17 +99,17 @@ async def upload_task_order(
 
 
 async def get_task_order(db: AsyncSession, task_order_id: str) -> TaskOrderResponse:
-    """과업지시서 상세 정보를 조회합니다."""
+    """과업지?�서 ?�세 ?�보�?조회?�니??"""
     task_order = await db.get(TaskOrder, task_order_id)
     if not task_order:
-        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="과업지시서를 찾을 수 없습니다.")
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="과업지?�서�?찾을 ???�습?�다.")
     return TaskOrderResponse.model_validate(task_order)
 
 
 async def list_task_orders(
     db: AsyncSession, offset: int = 0, limit: int = 20
 ) -> tuple[list[TaskOrderSummary], int]:
-    """과업지시서 목록을 조회합니다."""
+    """과업지?�서 목록??조회?�니??"""
     from sqlalchemy import func
 
     count_result = await db.execute(select(func.count(TaskOrder.id)))
@@ -120,10 +125,10 @@ async def list_task_orders(
 async def update_parsed_result(
     db: AsyncSession, task_order_id: str, data: ParsedResultUpdate
 ) -> TaskOrderResponse:
-    """파싱 결과를 수정합니다."""
+    """?�싱 결과�??�정?�니??"""
     task_order = await db.get(TaskOrder, task_order_id)
     if not task_order:
-        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="과업지시서를 찾을 수 없습니다.")
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="과업지?�서�?찾을 ???�습?�다.")
 
     task_order.qualifications = data.qualifications
     task_order.evaluation_criteria = data.evaluation_criteria
