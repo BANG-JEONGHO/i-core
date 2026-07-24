@@ -16,7 +16,7 @@ from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.core.config import settings
-from app.models.models import MatchingResult, TaskOrder
+from app.models.models import InstructorSchedule, MatchingResult, TaskOrder
 from app.schemas.matching import MatchingResultResponse, MatchingSummary, MatchScoreDTO
 from app.services.external_instructor_db import list_all_instructor_profiles
 
@@ -95,6 +95,12 @@ async def execute_matching(
             result["instructor_id"], "Unknown"
         )
 
+    conflicting_ids = await _schedule_conflicts_for_task(db, task_order)
+    if conflicting_ids:
+        results_data = [item for item in results_data if item["instructor_id"] not in conflicting_ids]
+        top_ids = [instructor_id for instructor_id in top_ids if instructor_id not in conflicting_ids]
+        logger.info("scheduled_instructors_excluded", count=len(conflicting_ids))
+
     matching_result = MatchingResult(
         task_order_id=task_order_id,
         results=results_data,
@@ -140,6 +146,7 @@ async def list_matching_history(
             id=item.id,
             task_order_id=item.task_order_id,
             top_instructor_count=len(item.candidates or []),
+            memo=item.memo,
             created_at=item.created_at,
         )
         for item in result.scalars().all()
@@ -154,6 +161,22 @@ def _as_response(matching_result: MatchingResult) -> MatchingResultResponse:
         candidates=matching_result.candidates or [],
         created_at=matching_result.created_at,
     )
+
+
+async def _schedule_conflicts_for_task(db: AsyncSession, task_order: TaskOrder) -> set[str]:
+    """Exclude schedules only when the document contains an explicit date range."""
+    raw_dates = re.findall(r"\b(20\d{2})[.\-/](\d{1,2})[.\-/](\d{1,2})\b", task_order.raw_text or "")
+    if len(raw_dates) < 2:
+        return set()
+    dates = sorted(f"{year}-{int(month):02d}-{int(day):02d}" for year, month, day in raw_dates)
+    start_date, end_date = dates[0], dates[-1]
+    result = await db.execute(
+        select(InstructorSchedule.instructor_id).where(
+            InstructorSchedule.start_date <= end_date,
+            InstructorSchedule.end_date >= start_date,
+        )
+    )
+    return set(result.scalars().all())
 
 
 def _write_matching_error_log(

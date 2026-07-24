@@ -42,7 +42,6 @@ export default function InstructorsPage() {
       const r = await instructorsApi.upload(file);
       if (r.errors.length > 0) {
         toast.success(`${r.success}/${r.total}명 업로드 (${r.errors.length}건 건너뜀)`, { duration: 5000 });
-        console.log('업로드 에러:', r.errors);
       } else {
         toast.success(`${r.success}명 업로드 완료`);
       }
@@ -169,22 +168,21 @@ export default function InstructorsPage() {
 
       {/* 강사 상세 모달 */}
       {selectedInstructor && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/30" onClick={() => setSelectedInstructor(null)}>
-          <div className="bg-white rounded-xl w-full max-w-2xl max-h-[85vh] overflow-hidden flex flex-col" onClick={(e) => e.stopPropagation()}>
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/20 backdrop-blur-sm" onClick={() => setSelectedInstructor(null)}>
+          <div className="bg-white rounded-2xl w-full max-w-xl h-[600px] overflow-hidden flex flex-col shadow-2xl" onClick={(e) => e.stopPropagation()}>
             {/* 헤더 */}
-            <div className="bg-gradient-to-r from-indigo-500 to-blue-600 p-5 flex items-center justify-between shrink-0">
+            <div className="px-6 pt-5 pb-3 shrink-0">
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full bg-white/20 backdrop-blur flex items-center justify-center">
-                  <span className="text-white text-lg font-bold">{selectedInstructor.name.charAt(0)}</span>
+                <div className="w-9 h-9 rounded-full bg-gray-100 flex items-center justify-center">
+                  <span className="text-sm font-bold text-gray-600">{selectedInstructor.name.charAt(0)}</span>
                 </div>
                 <div>
-                  <p className="text-base font-bold text-white">{selectedInstructor.name}</p>
-                  <p className="text-xs text-blue-100">{selectedInstructor.summary || selectedInstructor.notes || '전문 강사'}</p>
+                  <p className="text-lg font-bold text-gray-900">{selectedInstructor.name}</p>
+                  <p className="text-[10px] text-gray-400">{selectedInstructor.summary || selectedInstructor.notes || selectedInstructor.main_lecture_area || '전문 강사'}</p>
                 </div>
+                <button onClick={() => setSelectedInstructor(null)} className="ml-auto p-1.5 rounded-lg hover:bg-gray-100"><X size={16} className="text-gray-400" /></button>
               </div>
-              <button onClick={() => setSelectedInstructor(null)} className="p-1.5 rounded hover:bg-white/20">
-                <X size={18} className="text-white" />
-              </button>
+              <div className="h-[2px] bg-blue-500 rounded-full mt-3" />
             </div>
 
             {/* 탭 */}
@@ -201,12 +199,12 @@ function DetailTabs({ instructor }: { instructor: Instructor }) {
 
   return (
     <>
-      <div className="flex border-b border-gray-200 shrink-0">
-        <button onClick={() => setTab('info')} className={`px-4 py-2.5 text-xs font-medium transition-colors ${tab === 'info' ? 'border-b-2 border-indigo-500 text-indigo-700' : 'text-gray-500 hover:text-gray-700'}`}>기본정보</button>
-        <button onClick={() => setTab('history')} className={`px-4 py-2.5 text-xs font-medium transition-colors ${tab === 'history' ? 'border-b-2 border-indigo-500 text-indigo-700' : 'text-gray-500 hover:text-gray-700'}`}>강의 이력 ({instructor.lecture_history?.length || 0})</button>
-        <button onClick={() => setTab('qual')} className={`px-4 py-2.5 text-xs font-medium transition-colors ${tab === 'qual' ? 'border-b-2 border-indigo-500 text-indigo-700' : 'text-gray-500 hover:text-gray-700'}`}>자격/경력 ({instructor.qualifications_career?.length || 0})</button>
+      <div className="flex gap-1 px-6 pt-3 shrink-0">
+        <button onClick={() => setTab('info')} className={`px-3 py-1.5 text-[11px] font-medium rounded-md transition-colors ${tab === 'info' ? 'bg-gray-100 text-gray-900' : 'text-gray-400 hover:text-gray-600'}`}>기본정보</button>
+        <button onClick={() => setTab('history')} className={`px-3 py-1.5 text-[11px] font-medium rounded-md transition-colors ${tab === 'history' ? 'bg-gray-100 text-gray-900' : 'text-gray-400 hover:text-gray-600'}`}>강의 이력 ({instructor.lecture_history?.length || 0})</button>
+        <button onClick={() => setTab('qual')} className={`px-3 py-1.5 text-[11px] font-medium rounded-md transition-colors ${tab === 'qual' ? 'bg-gray-100 text-gray-900' : 'text-gray-400 hover:text-gray-600'}`}>자격/경력 ({instructor.qualifications_career?.length || 0})</button>
       </div>
-      <div className="flex-1 overflow-y-auto p-5">
+      <div className="flex-1 overflow-y-auto px-6 py-4">
         {tab === 'info' && <InfoTab instructor={instructor} />}
         {tab === 'history' && <HistoryTab history={instructor.lecture_history || []} />}
         {tab === 'qual' && <QualTab items={instructor.qualifications_career || []} />}

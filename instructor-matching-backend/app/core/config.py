@@ -25,6 +25,11 @@ class Settings(BaseSettings):
     GEMINI_API_KEY: str = ""
     GEMINI_MODEL: str = "gemini-3.5-flash"
     GEMINI_EMBEDDING_MODEL: str = "gemini-embedding-001"
+
+    # Google OAuth (leave blank to keep username/password-only login)
+    GOOGLE_CLIENT_ID: str = ""
+    # Optional domain restriction for a company Google Workspace deployment.
+    GOOGLE_ALLOWED_DOMAIN: str = ""
     # Set to true only when the deployment intentionally routes Gemini API
     # traffic through HTTP(S)_PROXY. Local/serverless deployments should
     # connect directly by default.

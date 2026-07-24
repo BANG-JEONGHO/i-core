@@ -233,9 +233,7 @@ def _build_overview_rules(overview: dict) -> list[dict]:
 def _extract_text_from_hwp(file_content: bytes, file_name: str) -> str | None:
     """한글 프로그램이나 PDF 변환 없이 HWP 5.x 본문을 로컬에서 추출합니다."""
     try:
-        from matching_core.parser import parse_document
-
-        text = parse_document(file_content, file_name).raw_text.strip()
+        text = _extract_hwp_ole_text(file_content).strip()
         if _is_usable_extracted_text(text):
             logger.info("hwp_local_extraction_success", text_length=len(text))
             return text
@@ -243,6 +241,63 @@ def _extract_text_from_hwp(file_content: bytes, file_name: str) -> str | None:
     except Exception as exc:
         logger.warning("hwp_local_extraction_failed", error=str(exc))
     return None
+
+
+def _extract_hwp_ole_text(file_content: bytes) -> str:
+    """Read HWP 5.x BodyText streams without Hancom Office or matching_core."""
+    import io
+    import zlib
+    import olefile
+
+    with olefile.OleFileIO(io.BytesIO(file_content)) as ole:
+        if not ole.exists("FileHeader"):
+            raise ValueError("not an HWP 5.x OLE document")
+        header = ole.openstream("FileHeader").read()
+        if len(header) < 40:
+            raise ValueError("invalid HWP file header")
+        compressed = bool(int.from_bytes(header[36:40], "little") & 0x01)
+        sections = sorted(
+            (item for item in ole.listdir() if len(item) == 2 and item[0] == "BodyText" and item[1].startswith("Section")),
+            key=lambda item: int(item[1].removeprefix("Section")) if item[1].removeprefix("Section").isdigit() else 0,
+        )
+        if not sections:
+            raise ValueError("BodyText sections are missing")
+        parts: list[str] = []
+        for section in sections:
+            data = ole.openstream(section).read()
+            if compressed:
+                data = zlib.decompress(data, -15)
+            text = _extract_hwp_paragraph_records(data)
+            if text:
+                parts.append(text)
+        return "\n".join(parts)
+
+
+def _extract_hwp_paragraph_records(data: bytes) -> str:
+    """Decode paragraph text (tag 67) records from an HWP BodyText stream."""
+    offset = 0
+    paragraphs: list[str] = []
+    while offset + 4 <= len(data):
+        header = int.from_bytes(data[offset: offset + 4], "little")
+        tag = header & 0x3FF
+        size = header >> 20
+        offset += 4
+        if size == 0xFFF:
+            if offset + 4 > len(data):
+                break
+            size = int.from_bytes(data[offset: offset + 4], "little")
+            offset += 4
+        if offset + size > len(data):
+            break
+        payload = data[offset: offset + size]
+        offset += size
+        if tag != 67:
+            continue
+        text = payload.decode("utf-16-le", errors="ignore")
+        text = "".join(character for character in text if character.isprintable() or character in "\r\n\t").strip()
+        if text:
+            paragraphs.append(text)
+    return "\n".join(paragraphs)
 
 
 def _is_usable_extracted_text(text: str) -> bool:
@@ -275,6 +330,33 @@ def _extract_text_from_docx(file_content: bytes) -> str | None:
             return text
     except Exception as e:
         logger.warning("docx_extraction_failed", error=str(e))
+    return None
+
+
+def _extract_text_from_pdf(file_content: bytes) -> str | None:
+    """Extract PDF text and tables locally before falling back to Gemini File API."""
+    try:
+        import io
+        import pdfplumber
+
+        fragments: list[str] = []
+        with pdfplumber.open(io.BytesIO(file_content)) as document:
+            for page in document.pages:
+                page_text = page.extract_text() or ""
+                if page_text.strip():
+                    fragments.append(page_text)
+                for table in page.extract_tables() or []:
+                    for row in table:
+                        cells = [str(cell).strip() for cell in row if cell and str(cell).strip()]
+                        if cells:
+                            fragments.append(" | ".join(cells))
+        text = "\n".join(fragments).strip()
+        if _is_usable_extracted_text(text):
+            logger.info("pdf_local_extraction_success", text_length=len(text))
+            return text
+        logger.warning("pdf_local_extraction_low_quality", text_length=len(text))
+    except Exception as error:
+        logger.warning("pdf_local_extraction_failed", error=str(error))
     return None
 
 
@@ -312,7 +394,8 @@ async def parse_document_with_ai(file_content: bytes, file_name: str) -> dict:
             }
     elif ext == 'pdf':
         # PDF는 Gemini File API로 직접 처리
-        use_file_api = True
+        raw_text = _extract_text_from_pdf(file_content) or ""
+        use_file_api = not raw_text
     else:
         # 기타: matching_core 파서 시도
         try:

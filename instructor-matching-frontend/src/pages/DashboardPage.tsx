@@ -1,36 +1,40 @@
+import React, { useState } from 'react';
 import { useQuery, useQueryClient } from '@tanstack/react-query';
 import { Link } from 'react-router-dom';
-import { Plus, X } from 'lucide-react';
+import { Plus, X, Calendar, MessageCircle } from 'lucide-react';
 import toast from 'react-hot-toast';
 import { matchingApi } from '../api/matching';
 import { taskOrdersApi } from '../api/taskOrders';
+import { useAuthStore } from '../store/authStore';
 
 export default function DashboardPage() {
   const queryClient = useQueryClient();
-  const { data: history } = useQuery({ queryKey: ['history'], queryFn: () => matchingApi.history(0, 20), refetchOnMount: 'always' });
-  const { data: taskOrders } = useQuery({ queryKey: ['task-orders'], queryFn: () => taskOrdersApi.list(0, 20), refetchOnMount: 'always' });
+  const user = useAuthStore((state) => state.user);
+  const [dateFilter, setDateFilter] = useState('');
+  const { data: history } = useQuery({ queryKey: ['history'], queryFn: () => matchingApi.history(0, 100), refetchOnMount: 'always' });
+  const { data: taskOrders } = useQuery({ queryKey: ['task-orders'], queryFn: () => taskOrdersApi.list(0, 100), refetchOnMount: 'always' });
 
   const recentItems = history || [];
-  
-  // 매칭중 = 후보 선정 중 (final_ 없음 = count < 2), 완료 = 강사 선정됨 (final_ 있음 = count >= 2)
-  // 매칭 실행만 하고 아무것도 안 한 건(count=0)도 매칭중으로 표시
-  const matchingItems = recentItems.filter((item: any) => item.top_instructor_count < 2);
-  const doneItems = recentItems.filter((item: any) => item.top_instructor_count >= 2);
+  const filterByDate = (items: any[]) => !dateFilter
+    ? items
+    : items.filter((item) => new Date(item.created_at).toISOString().slice(0, 10) === dateFilter);
 
-  // 과업지시서 파싱 완료되었지만 아직 매칭되지 않은 과업지시서
+  // final_ 후보가 포함되어야 실제 강사 선정 완료로 판단한다.
+  const allMatching = recentItems.filter((item: any) => item.top_instructor_count < 2);
+  const allDone = recentItems.filter((item: any) => item.top_instructor_count >= 2);
   const matchedTaskOrderIds = new Set(recentItems.map((item: any) => item.task_order_id));
-  const pendingTaskOrders = (taskOrders?.data || []).filter(
-    (to: any) => to.parsed_at && !matchedTaskOrderIds.has(to.id)
-  );
+  const allPending = (taskOrders?.data || []).filter((taskOrder: any) => taskOrder.parsed_at && !matchedTaskOrderIds.has(taskOrder.id));
 
-  // task_order_id → 파일명 매핑
+  const pendingTaskOrders = filterByDate(allPending);
+  const matchingItems = filterByDate(allMatching);
+  const doneItems = filterByDate(allDone);
   const taskOrderNameMap: Record<string, string> = {};
-  (taskOrders?.data || []).forEach((to: any) => { taskOrderNameMap[to.id] = to.file_name; });
+  (taskOrders?.data || []).forEach((taskOrder: any) => { taskOrderNameMap[taskOrder.id] = taskOrder.file_name; });
 
-  const handleDeleteTaskOrder = async (toId: string) => {
+  const handleDeleteTaskOrder = async (taskOrderId: string) => {
     if (!confirm('이 과업지시서를 삭제하시겠습니까?')) return;
     try {
-      await taskOrdersApi.delete(toId);
+      await taskOrdersApi.delete(taskOrderId);
       toast.success('삭제 완료');
       queryClient.invalidateQueries({ queryKey: ['task-orders'] });
     } catch { toast.error('삭제 실패'); }
@@ -47,116 +51,87 @@ export default function DashboardPage() {
 
   return (
     <div className="h-full flex flex-col">
-      {/* 보드 헤더 */}
       <div className="flex items-center justify-between mb-5">
-        <h1 className="text-xl font-bold text-gray-900">보드</h1>
-        <Link to="/task-orders/upload"
-          className="flex items-center gap-1.5 px-3 py-1.5 bg-blue-600 text-white text-xs font-medium rounded hover:bg-blue-700 transition-colors">
-          <Plus size={14} />
-          새 매칭
-        </Link>
+        <h1 className="text-lg font-bold text-gray-900">보드</h1>
+        <div className="flex items-center gap-3">
+          <div className="flex items-center gap-1.5 bg-white border border-gray-200 rounded-md px-2.5 py-1.5">
+            <Calendar size={13} className="text-gray-400" />
+            <input type="date" value={dateFilter} onChange={(event) => setDateFilter(event.target.value)} className="text-[11px] bg-transparent outline-none text-gray-600 w-[105px]" />
+            {dateFilter && <button onClick={() => setDateFilter('')} className="text-gray-400 hover:text-red-500"><X size={10} /></button>}
+          </div>
+          <Link to="/task-orders/upload" className="flex items-center gap-1.5 px-3.5 py-1.5 bg-indigo-600 text-white text-[11px] font-semibold rounded-md hover:bg-indigo-700">
+            <Plus size={13} /> 새 과업지시서
+          </Link>
+        </div>
       </div>
 
-      {/* 칸반 보드 */}
-      <div className="flex-1 flex gap-4">
-        {/* 과업지시서 분석 */}
-        <Column title="과업지시서 분석" color="text-blue-600">
-          {pendingTaskOrders.length > 0 ? (
-            pendingTaskOrders.map((to: any) => (
-              <Link key={to.id} to={`/task-orders/${to.id}`}>
-                <Card
-                  title={to.file_name}
-                  tag="분석완료"
-                  tagColor="blue"
-                  subtitle={new Date(to.created_at).toLocaleDateString('ko-KR')}
-                  onDelete={() => handleDeleteTaskOrder(to.id)}
-                />
-              </Link>
-            ))
-          ) : (
-            <EmptyColumn text="과업지시서를 업로드하면 여기에 표시됩니다" />
-          )}
+      <div className="flex-1 grid grid-cols-3 gap-3 min-h-0">
+        <Column title="과업지시서 분석" count={pendingTaskOrders.length}>
+          {pendingTaskOrders.map((taskOrder: any) => (
+            <Link key={taskOrder.id} to={`/task-orders/${taskOrder.id}`} className="block">
+              <Card id={taskOrder.id} title={taskOrder.file_name} tag="분석완료" tagColor="blue" userName={user?.name} onDelete={() => handleDeleteTaskOrder(taskOrder.id)} />
+            </Link>
+          ))}
         </Column>
-
-        {/* 매칭중 */}
-        <Column title="매칭중" color="text-amber-600">
-          {matchingItems.length > 0 ? (
-            matchingItems.map((item: any) => (
-              <Link key={item.id} to={`/matching/${item.id}`}>
-                <Card
-                  title={taskOrderNameMap[item.task_order_id] || '매칭 분석'}
-                  tag="강사선정 대기"
-                  tagColor="orange"
-                  subtitle={new Date(item.created_at).toLocaleDateString('ko-KR')}
-                  onDelete={() => handleDeleteMatching(item.id)}
-                />
-              </Link>
-            ))
-          ) : (
-            <EmptyColumn text="매칭 진행 중인 건이 없습니다" />
-          )}
+        <Column title="매칭중" count={matchingItems.length}>
+          {matchingItems.map((item: any) => (
+            <Link key={item.id} to={`/matching/${item.id}`} className="block">
+              <Card id={item.id} title={taskOrderNameMap[item.task_order_id] || '매칭 분석'} tag="후보대기" tagColor="amber" userName={user?.name} onDelete={() => handleDeleteMatching(item.id)} />
+            </Link>
+          ))}
         </Column>
-
-        {/* 완료 */}
-        <Column title="완료" color="text-green-600">
-          {doneItems.length > 0 ? (
-            doneItems.map((item: any) => (
-              <Link key={item.id} to={`/matching/${item.id}`}>
-                <Card
-                  title={taskOrderNameMap[item.task_order_id] || '매칭 완료'}
-                  tag={`강사 선정 완료`}
-                  tagColor="green"
-                  subtitle={new Date(item.created_at).toLocaleDateString('ko-KR')}
-                  onDelete={() => handleDeleteMatching(item.id)}
-                />
-              </Link>
-            ))
-          ) : (
-            <EmptyColumn text="완료된 매칭이 없습니다" />
-          )}
+        <Column title="완료" count={doneItems.length}>
+          {doneItems.map((item: any) => (
+            <Link key={item.id} to={`/matching/${item.id}`} className="block">
+              <Card id={item.id} title={taskOrderNameMap[item.task_order_id] || '매칭 완료'} tag="선정완료" tagColor="green" userName={user?.name} memo={item.memo} enableMemo onDelete={() => handleDeleteMatching(item.id)} />
+            </Link>
+          ))}
         </Column>
       </div>
     </div>
   );
 }
 
-function Column({ title, color, children }: { title: string; color: string; children: React.ReactNode }) {
+function Column({ title, count, children }: { title: string; count: number; children: React.ReactNode }) {
   return (
-    <div className="flex-1 min-w-[260px]">
-      <div className="flex items-center justify-center mb-3">
-        <span className={`text-xs font-bold uppercase tracking-wider ${color}`}>{title}</span>
+    <div className="flex flex-col min-h-0 bg-gray-50 rounded-lg">
+      <div className="flex items-center justify-center gap-2 px-3 py-2.5 border-b border-gray-200/60">
+        <span className="text-[11px] font-bold text-gray-600 uppercase tracking-wide">{title}</span>
+        <span className="text-[10px] text-gray-400 bg-gray-200 w-5 h-5 rounded-full flex items-center justify-center font-semibold">{count}</span>
       </div>
-      <div className="space-y-2.5 bg-gray-100/50 rounded-lg p-2.5 min-h-[200px]">
-        {children}
+      <div className="flex-1 overflow-y-auto p-2.5 space-y-3.5">
+        {React.Children.count(children) > 0 ? children : <div className="text-center py-10"><p className="text-[10px] text-gray-300">항목 없음</p></div>}
       </div>
     </div>
   );
 }
 
-function Card({ title, tag, tagColor, subtitle, onDelete }: { title: string; tag: string; tagColor: string; subtitle: string; onDelete?: () => void }) {
-  const colors: Record<string, string> = {
-    blue: 'bg-blue-100 text-blue-700',
-    green: 'bg-green-100 text-green-700',
-    purple: 'bg-purple-100 text-purple-700',
-    orange: 'bg-orange-100 text-orange-700',
+function Card({ id, title, tag, tagColor, userName, memo: initialMemo, enableMemo, onDelete }: { id: string; title: string; tag: string; tagColor: string; userName?: string; memo?: string; enableMemo?: boolean; onDelete?: () => void }) {
+  const tagColors: Record<string, string> = { blue: 'bg-blue-100 text-blue-600', amber: 'bg-amber-100 text-amber-600', green: 'bg-green-100 text-green-600' };
+  const initial = (userName || '?').charAt(0).toUpperCase();
+  const [memo, setMemo] = useState(initialMemo || '');
+  const [showMemo, setShowMemo] = useState(false);
+  const saveMemo = async (value: string) => {
+    setMemo(value);
+    try { await matchingApi.updateMemo(id, value); } catch { toast.error('메모 저장에 실패했습니다.'); }
   };
+
   return (
-    <div className="bg-white rounded-lg border border-gray-200 p-3.5 hover:border-blue-300 hover:shadow-sm transition-all cursor-pointer group relative">
-      {onDelete && (
-        <button onClick={(e) => { e.preventDefault(); e.stopPropagation(); onDelete(); }}
-          className="absolute top-2 right-2 p-1 rounded hover:bg-red-50 text-gray-300 hover:text-red-500 opacity-0 group-hover:opacity-100 transition-all">
-          <X size={14} />
-        </button>
-      )}
-      <p className="text-[13px] font-medium text-gray-800 group-hover:text-blue-700 mb-2 pr-6 line-clamp-2">{title}</p>
-      <span className={`text-[10px] font-bold px-1.5 py-0.5 rounded ${colors[tagColor]}`}>{tag}</span>
-      <div className="flex items-center justify-end mt-3 pt-2 border-t border-gray-50">
-        <span className="text-[10px] text-gray-400">{subtitle}</span>
+    <div className="bg-white rounded-md p-3 shadow-sm hover:shadow-md transition-shadow cursor-pointer group relative flex flex-col justify-between">
+      {onDelete && <button onClick={(event) => { event.preventDefault(); event.stopPropagation(); onDelete(); }} className="absolute top-2 right-2 p-0.5 rounded text-gray-300 hover:text-red-500 opacity-0 group-hover:opacity-100 transition-opacity z-10"><X size={11} /></button>}
+      <div className="h-[36px] flex items-center mb-2.5 pr-3"><p className="text-[11px] font-medium text-gray-800 leading-relaxed line-clamp-2">{title}</p></div>
+      <div className="flex items-center justify-between">
+        <span className={`text-[9px] font-bold px-2 py-0.5 rounded-sm ${tagColors[tagColor]}`}>{tag}</span>
+        <div className="relative group/avatar">
+          <div className="w-5 h-5 rounded-full bg-gradient-to-br from-orange-200 to-orange-300 flex items-center justify-center"><span className="text-[8px] font-bold text-orange-800">{initial}</span></div>
+          <div className="absolute bottom-full right-0 mb-1 px-2 py-0.5 bg-gray-800 text-white text-[8px] rounded whitespace-nowrap opacity-0 group-hover/avatar:opacity-100 transition-opacity pointer-events-none z-10">{userName || '담당자'}</div>
+        </div>
       </div>
+      {enableMemo && <>
+        <div className="flex items-center justify-end mt-2"><button onClick={(event) => { event.preventDefault(); event.stopPropagation(); setShowMemo(!showMemo); }} className="p-1 rounded hover:text-gray-700" title="코멘트 작성"><MessageCircle size={12} /></button></div>
+        {showMemo && <div className="mt-1" onClick={(event) => { event.preventDefault(); event.stopPropagation(); }}><textarea value={memo} onChange={(event) => setMemo(event.target.value)} placeholder="코멘트 작성..." className="w-full text-[10px] text-gray-600 bg-amber-50/50 border border-amber-100 rounded p-2 outline-none resize-none h-12 placeholder-gray-400 focus:border-amber-300" /><button onClick={() => { saveMemo(memo); setShowMemo(false); }} className="mt-1 px-3 py-1 bg-indigo-600 text-white text-[10px] font-medium rounded hover:bg-indigo-700">저장</button></div>}
+        {!showMemo && memo && <div className="mt-1.5 flex items-center gap-1.5"><p className="text-[9px] text-amber-600 truncate flex-1">💬 <span className="text-gray-500">{userName || '나'}:</span> {memo}</p><button onClick={(event) => { event.preventDefault(); event.stopPropagation(); saveMemo(''); }} className="text-gray-900 hover:text-red-600 shrink-0" title="코멘트 삭제"><X size={10} /></button></div>}
+      </>}
     </div>
   );
-}
-
-function EmptyColumn({ text }: { text: string }) {
-  return <div className="text-xs text-gray-400 text-center py-8">{text}</div>;
 }

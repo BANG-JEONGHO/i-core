@@ -1,0 +1,33 @@
+import { User, Shield, Database, LogOut } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
+import toast from 'react-hot-toast';
+import { useAuthStore } from '../store/authStore';
+
+export default function SettingsPage() {
+  const user = useAuthStore((state) => state.user);
+  const logout = useAuthStore((state) => state.logout);
+  const navigate = useNavigate();
+
+  return (
+    <div className="max-w-2xl mx-auto py-4">
+      <h1 className="text-lg font-bold text-gray-900 mb-6">설정</h1>
+      <div className="space-y-4">
+        <SettingSection title="프로필" icon={<User size={16} />}>
+          <div className="flex items-center gap-4"><div className="w-12 h-12 rounded-full bg-gradient-to-br from-indigo-100 to-blue-100 flex items-center justify-center"><span className="text-lg font-bold text-indigo-600">{(user?.name || '?').charAt(0)}</span></div><div><p className="text-sm font-semibold text-gray-800">{user?.name || '사용자'}</p><p className="text-xs text-gray-500">{user?.username || ''}</p></div></div>
+        </SettingSection>
+        <SettingSection title="데이터 관리" icon={<Database size={16} />}>
+          <div className="flex items-center justify-between"><div><p className="text-xs font-medium text-gray-700">캐시 초기화</p><p className="text-[10px] text-gray-400">로컬 캐시를 삭제합니다</p></div><button onClick={() => { localStorage.clear(); toast.success('캐시가 초기화되었습니다'); }} className="px-3 py-1.5 text-[11px] font-medium bg-gray-100 text-gray-600 rounded-lg hover:bg-gray-200">초기화</button></div>
+        </SettingSection>
+        <SettingSection title="보안" icon={<Shield size={16} />}>
+          <div className="flex items-center justify-between"><div><p className="text-xs font-medium text-gray-700">로그인 방식</p><p className="text-[10px] text-gray-400">Google OAuth 2.0 또는 계정 로그인</p></div><span className="text-[10px] bg-green-50 text-green-700 px-2 py-0.5 rounded-full font-medium">연결됨</span></div>
+        </SettingSection>
+        <div className="pt-4 border-t border-gray-100"><button onClick={() => { logout(); navigate('/login'); }} className="flex items-center gap-2 px-4 py-2.5 text-sm text-red-600 hover:bg-red-50 rounded-lg transition-colors w-full"><LogOut size={16} />로그아웃</button></div>
+        <div className="text-center pt-4"><p className="text-[10px] text-gray-300">iCore 강사 매칭 플랫폼 v1.0</p></div>
+      </div>
+    </div>
+  );
+}
+
+function SettingSection({ title, icon, children }: { title: string; icon: React.ReactNode; children: React.ReactNode }) {
+  return <div className="bg-white rounded-xl border border-gray-100 p-5"><div className="flex items-center gap-2 mb-4"><span className="text-gray-500">{icon}</span><h2 className="text-sm font-semibold text-gray-800">{title}</h2></div>{children}</div>;
+}

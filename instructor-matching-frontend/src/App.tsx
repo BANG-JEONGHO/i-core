@@ -4,6 +4,9 @@ import { Toaster } from 'react-hot-toast';
 import Layout from './components/layout/Layout';
 import ProtectedRoute from './components/common/ProtectedRoute';
 import LoginPage from './pages/LoginPage';
+import InstructorPortalPage from './pages/InstructorPortalPage';
+import SettingsPage from './pages/SettingsPage';
+import SchedulesPage from './pages/SchedulesPage';
 import DashboardPage from './pages/DashboardPage';
 import InstructorsPage from './pages/InstructorsPage';
 import TaskOrderUploadPage from './pages/TaskOrderUploadPage';
@@ -21,6 +24,7 @@ export default function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/login" element={<LoginPage />} />
+          <Route path="/instructor" element={<InstructorPortalPage />} />
           <Route element={<ProtectedRoute><Layout /></ProtectedRoute>}>
             <Route path="/" element={<DashboardPage />} />
             <Route path="/instructors" element={<InstructorsPage />} />
@@ -28,6 +32,8 @@ export default function App() {
             <Route path="/task-orders/:id" element={<TaskOrderDetailPage />} />
             <Route path="/matching-history" element={<MatchingHistoryPage />} />
             <Route path="/matching/:id" element={<MatchingResultPage />} />
+            <Route path="/settings" element={<SettingsPage />} />
+            <Route path="/schedules" element={<SchedulesPage />} />
           </Route>
         </Routes>
       </BrowserRouter>

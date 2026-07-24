@@ -66,3 +66,13 @@ async def update_parsed_result(
 ):
     """파싱 결과 수정."""
     return await task_order_service.update_parsed_result(db, task_order_id, data)
+
+
+@router.post("/{task_order_id}/reparse", response_model=TaskOrderResponse)
+async def reparse_task_order(
+    task_order_id: str,
+    db: AsyncSession = Depends(get_db),
+    current_user: User = Depends(get_current_user),
+):
+    """Retry local extraction and AI normalization for an uploaded task order."""
+    return await task_order_service.reparse_task_order(db, task_order_id)

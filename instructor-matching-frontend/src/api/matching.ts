@@ -38,6 +38,11 @@ export const matchingApi = {
     await apiClient.delete(`/api/matching/${matchingId}`);
   },
 
+  updateMemo: async (matchingId: string, memo: string): Promise<{ memo: string | null }> => {
+    const response = await apiClient.put(`/api/matching/${matchingId}/memo`, { memo });
+    return response.data;
+  },
+
   getAiReason: async (matchingId: string, instructorId: string): Promise<{ reason: string }> => {
     const response = await apiClient.post(`/api/matching/${matchingId}/ai-reason/${instructorId}`);
     return response.data;

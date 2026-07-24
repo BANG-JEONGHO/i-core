@@ -97,6 +97,7 @@ export interface EvaluationCriterion {
 }
 
 export interface ScoreBreakdown {
+  source?: 'deterministic_retrieval' | 'agent_a' | 'agent_b';
   criterion: string;
   score: number;
   max_score: number;
@@ -120,12 +121,6 @@ export interface MatchingResult {
   results: MatchScore[];
   candidates: string[];
   created_at: string;
-}
-
-export interface InstructorStats {
-  total_count: number;
-  specialization_distribution: Record<string, number>;
-  average_experience: number;
 }
 
 export interface BulkUploadResponse {

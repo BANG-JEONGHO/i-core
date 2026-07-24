@@ -1,5 +1,5 @@
 import apiClient from './client';
-import type { BulkUploadResponse, Instructor, InstructorStats, PaginatedResponse } from '../types';
+import type { BulkUploadResponse, Instructor, PaginatedResponse } from '../types';
 
 export const instructorsApi = {
   list: async (keyword?: string, offset = 0, limit = 20): Promise<PaginatedResponse<Instructor>> => {
@@ -11,11 +11,6 @@ export const instructorsApi = {
 
   get: async (id: string): Promise<Instructor> => {
     const response = await apiClient.get(`/api/instructors/${id}`);
-    return response.data;
-  },
-
-  update: async (id: string, data: Partial<Instructor>): Promise<Instructor> => {
-    const response = await apiClient.put(`/api/instructors/${id}`, data);
     return response.data;
   },
 
@@ -34,11 +29,6 @@ export const instructorsApi = {
     const response = await apiClient.post('/api/instructors/upload', formData, {
       headers: { 'Content-Type': 'multipart/form-data' },
     });
-    return response.data;
-  },
-
-  statistics: async (): Promise<InstructorStats> => {
-    const response = await apiClient.get('/api/instructors/statistics');
     return response.data;
   },
 };

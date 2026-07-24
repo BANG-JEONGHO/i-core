@@ -5,7 +5,7 @@ import { CheckCircle, Phone, Mail } from 'lucide-react';
 import toast from 'react-hot-toast';
 import { matchingApi } from '../api/matching';
 import { instructorsApi } from '../api/instructors';
-import type { MatchScore, Instructor } from '../types';
+import type { MatchScore, Instructor, ScoreBreakdown } from '../types';
 
 export default function MatchingResultPage() {
   const { id } = useParams<{ id: string }>();
@@ -136,9 +136,15 @@ export default function MatchingResultPage() {
 
               {/* 점수 */}
               <div className="space-y-2">
-                <Bar label="키워드 매칭" score={selected.keyword_score} max={40} />
-                <Bar label="자격 매칭" score={selected.qualification_score} max={30} />
-                <Bar label="경력 매칭" score={selected.experience_score} max={30} />
+                <div className="flex items-center justify-between">
+                  <p className="text-xs font-semibold text-gray-700">
+                    {hasAgentReview(selected.breakdown) ? 'AI 분석·검증 항목' : '후보 검색 항목'}
+                  </p>
+                  <span className="text-[10px] text-gray-400">100점 만점</span>
+                </div>
+                {getScoreRows(selected).map((row) => (
+                  <Bar key={row.criterion} label={row.label} score={row.score} max={row.maxScore} />
+                ))}
               </div>
 
               {/* AI 추천 분석 */}
@@ -242,15 +248,74 @@ function Score({ value }: { value: number }) {
   return <span className={`text-[11px] font-bold px-2 py-0.5 rounded ${color}`}>{value}</span>;
 }
 
+const SCORE_LABELS: Record<string, string> = {
+  topic_tags: '기술·주제 태그',
+  teaching_experience: '강의 경력',
+  project_and_work_experience: '프로젝트·실무 경력',
+  required_certifications: '필수 자격증',
+  overview_context_fit: '과업 개요 적합도',
+  topic_match: '과목·기술 적합도',
+  teaching_depth: '강의 수행 깊이',
+  audience_fit: '교육 대상 적합도',
+  career_and_certification: '경력·자격증',
+  evidence_completeness: '근거 충실도',
+};
+
+type ScoreRow = { criterion: string; label: string; score: number; maxScore: number };
+
+function hasAgentReview(breakdown: ScoreBreakdown[]) {
+  return breakdown.some((item) => item.source === 'agent_a' || item.source === 'agent_b');
+}
+
+function getScoreRows(match: MatchScore): ScoreRow[] {
+  const agentA = match.breakdown.filter((item) => item.source === 'agent_a');
+  const agentB = new Map(
+    match.breakdown
+      .filter((item) => item.source === 'agent_b')
+      .map((item) => [item.criterion, item]),
+  );
+
+  if (agentA.length > 0) {
+    // 최종 점수는 A/B 평균이므로, 화면의 각 항목도 같은 방식으로 평균을 표시한다.
+    return agentA.map((item) => {
+      const verifierItem = agentB.get(item.criterion);
+      return {
+        criterion: item.criterion,
+        label: SCORE_LABELS[item.criterion] ?? item.criterion,
+        score: verifierItem ? (item.score + verifierItem.score) / 2 : item.score,
+        maxScore: item.max_score,
+      };
+    });
+  }
+
+  const retrievalItems = match.breakdown.filter(
+    (item) => item.source === 'deterministic_retrieval' || !item.source,
+  );
+  const activeMax = retrievalItems.reduce((sum, item) => sum + item.max_score, 0);
+
+  // 1차 검색 결과도 총점과 동일한 100점 스케일로 보이도록 배점을 정규화한다.
+  return retrievalItems.map((item) => ({
+    criterion: item.criterion,
+    label: SCORE_LABELS[item.criterion] ?? item.criterion,
+    score: activeMax > 0 ? (item.score / activeMax) * 100 : 0,
+    maxScore: activeMax > 0 ? (item.max_score / activeMax) * 100 : 0,
+  }));
+}
+
+function formatScore(value: number) {
+  return Number.isInteger(value) ? String(value) : value.toFixed(1);
+}
+
 function Bar({ label, score, max }: { label: string; score: number; max: number }) {
+  const width = max > 0 ? Math.max(0, Math.min(100, (score / max) * 100)) : 0;
   return (
     <div>
       <div className="flex justify-between text-[11px] mb-0.5">
         <span className="text-gray-500">{label}</span>
-        <span className="text-gray-700 font-medium">{score}점</span>
+        <span className="text-gray-700 font-medium">{formatScore(score)} / {formatScore(max)}점</span>
       </div>
       <div className="h-1.5 bg-gray-100 rounded-full">
-        <div className="h-full bg-blue-500 rounded-full" style={{ width: `${(score / max) * 100}%` }} />
+        <div className="h-full bg-blue-500 rounded-full" style={{ width: `${width}%` }} />
       </div>
     </div>
   );

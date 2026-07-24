@@ -100,6 +100,24 @@ async def delete_matching_result(
         await db.delete(result)
 
 
+@router.put("/{matching_id}/memo")
+async def update_memo(
+    matching_id: str,
+    body: dict,
+    db: AsyncSession = Depends(get_db),
+    current_user: User = Depends(get_current_user),
+):
+    from fastapi import HTTPException, status
+    from app.models.models import MatchingResult
+
+    result = await db.get(MatchingResult, matching_id)
+    if not result:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Matching result was not found")
+    memo = str(body.get("memo", "")).strip()
+    result.memo = memo[:1000] or None
+    return {"memo": result.memo}
+
+
 @router.post("/{matching_id}/ai-reason/{instructor_id}")
 async def get_ai_reason(
     matching_id: str,

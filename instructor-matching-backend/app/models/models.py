@@ -95,5 +95,22 @@ class MatchingResult(Base):
     results: Mapped[list] = mapped_column(JSON, nullable=False)
     top_instructors: Mapped[list] = mapped_column(JSON, default=list)
     candidates: Mapped[list] = mapped_column(JSON, default=list)
+    memo: Mapped[str | None] = mapped_column(String(1000), nullable=True, default=None)
     executed_by: Mapped[str] = mapped_column(String(36), ForeignKey("users.id"))
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+
+
+class InstructorSchedule(Base):
+    """Availability records managed by staff or through the instructor portal."""
+
+    __tablename__ = "instructor_schedules"
+
+    id: Mapped[str] = mapped_column(String(36), primary_key=True, default=generate_uuid)
+    instructor_id: Mapped[str] = mapped_column(String(36), nullable=False, index=True)
+    instructor_name: Mapped[str] = mapped_column(String(100), nullable=False)
+    project_name: Mapped[str] = mapped_column(String(300), nullable=False)
+    start_date: Mapped[str] = mapped_column(String(10), nullable=False)
+    end_date: Mapped[str] = mapped_column(String(10), nullable=False)
+    note: Mapped[str | None] = mapped_column(Text, nullable=True)
+    created_by: Mapped[str | None] = mapped_column(String(36), nullable=True)
     created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)

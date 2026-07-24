@@ -1,5 +1,5 @@
 import apiClient from './client';
-import type { PaginatedResponse, TaskOrder, TaskOverview } from '../types';
+import type { PaginatedResponse, TaskOrder } from '../types';
 
 export const taskOrdersApi = {
   upload: async (file: File): Promise<TaskOrder> => {
@@ -22,12 +22,12 @@ export const taskOrdersApi = {
     return response.data;
   },
 
-  updateParsed: async (id: string, data: { qualifications: object[]; evaluation_criteria: object[]; overview?: TaskOverview }): Promise<TaskOrder> => {
-    const response = await apiClient.put(`/api/task-orders/${id}/parsed`, data);
-    return response.data;
-  },
-
   delete: async (id: string): Promise<void> => {
     await apiClient.delete(`/api/task-orders/${id}`);
+  },
+
+  reparse: async (id: string): Promise<TaskOrder> => {
+    const response = await apiClient.post(`/api/task-orders/${id}/reparse`, {}, { timeout: 130000 });
+    return response.data;
   },
 };

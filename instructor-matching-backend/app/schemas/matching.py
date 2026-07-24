@@ -38,6 +38,7 @@ class MatchingSummary(BaseModel):
     task_order_id: str
     task_order_name: str | None = None
     top_instructor_count: int
+    memo: str | None = None
     created_at: datetime
 
 

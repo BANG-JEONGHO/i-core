@@ -171,13 +171,27 @@ async def list_instructors(
     limit: int = 20,
 ) -> tuple[list[InstructorResponse], int]:
     """강사 목록을 조회합니다."""
-    instructors, total = await list_instructor_profiles(keyword=keyword, offset=offset, limit=limit)
-    return [InstructorResponse.model_validate(i) for i in instructors], total
+    external, _ = await list_instructor_profiles(keyword=keyword, offset=0, limit=10_000)
+    query = select(Instructor).order_by(Instructor.created_at.desc())
+    if keyword:
+        query = query.where(Instructor.name.contains(keyword))
+    local = (await db.execute(query)).scalars().all()
+
+    seen_names: set[str] = set()
+    combined: list[InstructorResponse] = []
+    for item in [*external, *local]:
+        if item.name in seen_names:
+            continue
+        seen_names.add(item.name)
+        combined.append(InstructorResponse.model_validate(item))
+    return combined[offset: offset + limit], len(combined)
 
 
 async def get_instructor(db: AsyncSession, instructor_id: str) -> InstructorResponse:
     """강사 상세 정보를 조회합니다."""
     instructor = await get_instructor_profile(instructor_id)
+    if not instructor:
+        instructor = await db.get(Instructor, instructor_id)
     if not instructor:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="강사를 찾을 수 없습니다.")
     return InstructorResponse.model_validate(instructor)

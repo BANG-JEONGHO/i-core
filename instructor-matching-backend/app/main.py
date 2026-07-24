@@ -7,7 +7,7 @@ from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
-from app.api import auth, instructors, matching, task_orders
+from app.api import auth, instructors, instructor_portal, matching, schedules, task_orders
 from app.core.config import settings
 from app.core.middleware import RequestLoggingMiddleware, SecurityHeadersMiddleware
 from app.db.database import engine
@@ -27,6 +27,14 @@ def _apply_additive_schema_updates(connection) -> None:
             "ALTER TABLE task_orders ADD COLUMN overview JSON NOT NULL DEFAULT '{}'"
         )
         logger.info("database_schema_updated", table="task_orders", column="overview")
+
+    matching_columns = {
+        row[1]
+        for row in connection.exec_driver_sql("PRAGMA table_info(matching_results)").fetchall()
+    }
+    if "memo" not in matching_columns:
+        connection.exec_driver_sql("ALTER TABLE matching_results ADD COLUMN memo VARCHAR(1000)")
+        logger.info("database_schema_updated", table="matching_results", column="memo")
 
 
 @asynccontextmanager
@@ -64,6 +72,8 @@ app.include_router(auth.router)
 app.include_router(instructors.router)
 app.include_router(task_orders.router)
 app.include_router(matching.router)
+app.include_router(schedules.router)
+app.include_router(instructor_portal.router)
 
 
 # 글로벌 에러 핸들러

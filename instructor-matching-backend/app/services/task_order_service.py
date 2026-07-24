@@ -25,13 +25,13 @@ async def upload_task_order(
 ) -> TaskOrderResponse:
     """과업지시서를 업로드하고 파싱합니다."""
     content = await file.read()
-    file_name = file.filename or "unknown"
+    file_name = Path(file.filename or "unknown").name or "document"
     file_ext = Path(file_name).suffix.lower()
 
     # 파일 저장
     save_dir = Path(settings.UPLOAD_DIR) / datetime.now().strftime("%Y/%m")
     save_dir.mkdir(parents=True, exist_ok=True)
-    saved_name = f"{uuid.uuid4()}_{file_name}"
+    saved_name = f"{uuid.uuid4()}{file_ext or '.bin'}"
     save_path = save_dir / saved_name
 
     with open(save_path, "wb") as f:
@@ -53,7 +53,7 @@ async def upload_task_order(
         try:
             ai_result = await asyncio.wait_for(
                 parse_document_with_ai(content, file_name),
-                timeout=45.0
+                timeout=90.0
             )
             raw_text = ai_result.get("raw_text", "")
             qualifications_data = ai_result.get("qualifications", [])
@@ -102,6 +102,36 @@ async def upload_task_order(
     db.add(task_order)
     await db.flush()
 
+    return TaskOrderResponse.model_validate(task_order)
+
+
+async def reparse_task_order(db: AsyncSession, task_order_id: str) -> TaskOrderResponse:
+    """Retry extraction while retaining the current overview contract."""
+    task_order = await db.get(TaskOrder, task_order_id)
+    if not task_order:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Task order was not found")
+
+    path = Path(task_order.file_path)
+    if not path.is_file():
+        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="The original uploaded file is unavailable")
+
+    import asyncio
+    from app.services.ai_agent import parse_document_with_ai
+
+    try:
+        result = await asyncio.wait_for(
+            parse_document_with_ai(path.read_bytes(), task_order.file_name), timeout=120.0
+        )
+    except asyncio.TimeoutError as error:
+        raise HTTPException(status_code=status.HTTP_408_REQUEST_TIMEOUT, detail="Parsing timed out") from error
+
+    task_order.raw_text = result.get("raw_text", "")
+    task_order.qualifications = result.get("qualifications", [])
+    task_order.evaluation_criteria = result.get("evaluation_criteria", [])
+    task_order.overview = result.get("overview") or task_order.overview or {}
+    if task_order.raw_text or task_order.qualifications or task_order.evaluation_criteria or task_order.overview:
+        task_order.parsed_at = datetime.utcnow()
+    await db.flush()
     return TaskOrderResponse.model_validate(task_order)
 
 
