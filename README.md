@@ -71,6 +71,53 @@
 
 ---
 
+## 🛡️ AI 할루시네이션(거짓말) 방지 아키텍처
+
+> *"AI가 존재하지 않는 이력이나 자격증을 맘대로 지어내서 추천하면 어쩌죠?"*
+
+i-Core는 AI의 가장 큰 단점인 **할루시네이션(거짓 정보 생성)**을 철저히 막기 위해 **3단계 사실 검증 시스템(Vector DB + RAG + 교차 검증 에이전트)**을 구축했습니다.
+
+```mermaid
+flowchart TD
+    A[📄 과업지시서 업로드] --> B[🔍 문서 자격요건 추출]
+    
+    subgraph Vector_RAG [1단계: 팩트 기반 Vector DB 검색]
+        C[(💾 Vector DB\n강사 이력 지식창고)] -->|의미 기반 팩트 추출| D[📑 Evidence Retriever\n100% 검증된 증거 문장 추출]
+    end
+    
+    B --> D
+    
+    subgraph Agent_Validation [2단계: AI 에이전트 2중 교차 검증]
+        D --> E[🤖 에이전트 A: 분석가\n실제 증거문서만 바탕으로 추천사유 작성]
+        E --> F[🕵️ 에이전트 B: 검증가\n지어낸 사실이 있는지 2차 감시/검증]
+    end
+    
+    F -->|검증 완료된 데이터만| G[📊 최종 신뢰 스코어 & AI 추천 리포트]
+```
+
+<!-- 🖼️ [이미지 슬롯 6] AI 에이전트 교차 검증 구조 다이어그램 -->
+<p align="center">
+  <img src="./docs/images/agent-architecture-diagram.png" width="100%" alt="AI 에이전트 할루시네이션 방지 구조" />
+  <br>
+  <em>▲ Vector DB 기반 사실 추출 및 2단계 AI 에이전트 교차 검증 메커니즘</em>
+</p>
+
+### 📐 3단계 할루시네이션 방지 원리
+
+1. **💾 1단계: Vector DB (팩트 전용 지식창고)**
+   - 강사들의 모든 실제 이력서, 보유 자격증, 강의 경력을 AI가 이해할 수 있는 의미 단위(Vector)로 변환해 저장합니다.
+   - 외부의 인터넷 정보나 추측을 배제하고 **오직 검증된 내부 데이터**만 참조합니다.
+
+2. **📑 2단계: Evidence Retriever (증거 수집기)**
+   - AI가 답변을 작성하기 전, 공고문 조건과 강사 데이터에서 **"100% 사실로 확인된 증거 문장(Evidence)"만 선별**해 냅니다.
+   - 근거가 없는 정보는 아예 AI에게 전달하지 않음으로써 거짓말의 원인을 차단합니다.
+
+3. **🕵️ 3단계: 2-Step 에이전트 교차 검증 (Analyst & Verifier)**
+   - **분석가 AI(Match Analyst)**: 수집된 실제 증거 문장만 보고 1차 추천 사유를 작성합니다.
+   - **검증가 AI(Match Verifier)**: 분석가 AI가 쓴 글 중 조금이라도 부풀려지거나 문서에 없는 표현이 있는지 **독립된 검증 AI가 2차 감시 및 검수**를 진행합니다.
+
+---
+
 ## ✨ 쉽게 알아보는 4가지 핵심 기능 (Key Features)
 
 ### 1. 🔒 편리한 구글 간편 로그인
@@ -133,7 +180,10 @@ i-core/
 │
 ├── backend/                       # 백엔드 서버 (AI 문서 분석 & 매칭 알고리즘 실행 엔진)
 │   ├── app/                       # 로그인, 강사 데이터, 매칭 서비스 연결 통로
-│   ├── agent_core/                # Gemini AI 기반 심층 평가 및 추천 이유 생성기
+│   ├── agent_core/                # Gemini AI 기반 심층 평가 & Vector DB 할루시네이션 검증 엔진
+│   │   ├── services/vector_store.py       # Vector DB (의미 기반 지식 창고)
+│   │   ├── services/evidence_retriever.py # 팩트 증거 추출기
+│   │   └── services/evidence_validator.py # AI 교차 검증 및 할루시네이션 방지 모듈
 │   ├── matching_core/             # 문서 파서(HWP/PDF/DOCX) 및 조건 스코어 계산기
 │   └── data/                      # 데이터베이스 저장소
 │
