@@ -1,0 +1,35 @@
+# i-Core 통합 백엔드 의존성 (FastAPI, AI Agent, Matching Engine, Document Parsers)
+
+# FastAPI 및 Web Server Core
+fastapi==0.115.6
+uvicorn==0.30.6
+sqlalchemy>=2.0.51
+aiosqlite==0.20.0
+pyjwt==2.9.0
+bcrypt==4.2.1
+python-multipart==0.0.12
+pydantic>=2.10.0
+pydantic-settings>=2.6.1
+
+# AI & LLM Core (Google Gemini, Auth, LangChain)
+google-genai==2.6.0
+google-auth>=2.48.1
+
+# 문서 파싱 및 데이터 처리 (PDF, DOCX, HWP, Excel)
+pdfplumber==0.10.4
+python-docx==1.1.2
+olefile==0.47
+pandas==2.2.3
+openpyxl==3.1.5
+
+# 미들웨어 및 로깅
+slowapi==0.1.9
+structlog==24.4.0
+
+# 테스트 및 개발 도구
+pytest==8.3.3
+httpx>=0.28.1
+pytest-asyncio==0.24.0
+pytest-cov==5.0.0
+hypothesis==6.112.0
+mypy==1.11.0

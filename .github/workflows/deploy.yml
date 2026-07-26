@@ -1,0 +1,52 @@
+name: Deploy i-Core to Google Cloud Run
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy-backend:
+    name: Deploy Backend to Cloud Run
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Google Auth
+        uses: google-github-actions/auth@v2
+        with:
+          credentials_json: ${{ secrets.GCP_SA_KEY }}
+
+      - name: Set up Cloud SDK
+        uses: google-github-actions/setup-gcloud@v2
+
+      - name: Deploy Backend
+        run: |
+          gcloud run deploy i-core-backend \
+            --source ./backend \
+            --region asia-northeast3 \
+            --allow-unauthenticated \
+            --set-env-vars "APP_NAME=i-Core API,SECRET_KEY=change_this_to_a_secure_secret_key_in_production,GOOGLE_CLIENT_ID=761086712825-cp5lvscdoer4lt8emg2gmhbrejktng0s.apps.googleusercontent.com"
+
+  deploy-frontend:
+    name: Deploy Frontend to Cloud Run
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Google Auth
+        uses: google-github-actions/auth@v2
+        with:
+          credentials_json: ${{ secrets.GCP_SA_KEY }}
+
+      - name: Set up Cloud SDK
+        uses: google-github-actions/setup-gcloud@v2
+
+      - name: Deploy Frontend
+        run: |
+          gcloud run deploy i-core-frontend \
+            --source ./frontend \
+            --region asia-northeast3 \
+            --allow-unauthenticated
