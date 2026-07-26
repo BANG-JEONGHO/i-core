@@ -16,10 +16,86 @@
 
 ---
 
+## 📌 서비스 개요 (Service Overview)
+
+**i-Core**는 나라장터(G2B) 등 공공/기업 사업 공고의 수백 페이지에 달하는 과업지시서를 **AI 파서가 수초 만에 정밀 파싱**하고, 보유 강사 데이터베이스(DB)와 **하이브리드 AI 매칭 알고리즘(규칙 기반 스코어링 + Gemini LLM 심층 평가)**을 수행하여 **최적의 전문 강사를 즉시 추천**하는 스마트 강사 매칭 플랫폼입니다.
+
+<!-- 🖼️ [이미지 슬롯 1] 메인 대시보드 화면 -->
+<p align="center">
+  <img src="./docs/images/dashboard-preview.png" width="100%" alt="i-Core 메인 대시보드 화면" />
+  <br>
+  <em>▲ i-Core 통합 플랫폼 메인 대시보드 화면</em>
+</p>
+
+---
+
+## ✨ 핵심 기능 상세 (Key Features)
+
+### 1. 🔒 구글 계정 & 사내 인증 (Google OAuth 2.0 & JWT)
+- **원클릭 GIS 로그인**: Google Workspace 계정을 활용한 원클릭 소셜 로그인 지원.
+- **안전한 세션 관리**: JWT(JSON Web Token) 기반 클라이언트 인증 및 세션 자동 갱신.
+- **데모 백도어 지원**: 테스트 및 발표 환경을 위한 간이 데모 로그인 모드 지원.
+
+<!-- 🖼️ [이미지 슬롯 2] 로그인 화면 -->
+<p align="center">
+  <img src="./docs/images/login-screen.png" width="85%" alt="로그인 화면" />
+  <br>
+  <em>▲ 구글 계정 기반 사내 원클릭 로그인 화면</em>
+</p>
+
+---
+
+### 2. 📄 과업지시서 자동 파싱 엔진 (HWP / PDF / DOCX)
+- **다양한 문서 포맷 지원**: 국문 HWX/HWP, PDF, DOCX 등 공공 공고 첨부파일을 완전 자동 파싱.
+- **AI 요건 추출**: 필수 자격증, 필요 경력 연수, 교육 과목, 일정을 구조화된 JSON 데이터로 자동 추출.
+
+| 지원 문서 포맷 | 추출 항목 | 비고 |
+| :--- | :--- | :--- |
+| **HWP / HWX** (한글) | 교육 과목, 자격 요건, 인원 | 공공 기관 사업지시서 완벽 지원 |
+| **PDF / DOCX** (문서) | 필수 경력, 일정, 평가 기준 | 표 및 항목별 텍스트 정밀 추출 |
+
+<!-- 🖼️ [이미지 슬롯 3] 과업지시서 업로드 및 파싱 화면 -->
+<p align="center">
+  <img src="./docs/images/task-order-parsing.png" width="100%" alt="과업지시서 자동 분석 화면" />
+  <br>
+  <em>▲ 과업지시서 파일 업로드 및 AI 자격요건 추출 분석 화면</em>
+</p>
+
+---
+
+### 3. 🎯 하이브리드 AI 강사 매칭 (Rule Scorer + Gemini Agent)
+- **1차 결정론적 규칙 매칭 (`matching_core`)**:
+  - 키워드, 자격증, 강의 경력 연수 기반 결정론적 가중치 스코어 산출.
+- **2차 Gemini LLM 심층 매칭 (`agent_core`)**:
+  - Google Gemini 3.5 LLM 에이전트가 1차 추천 후보군을 대상으로 정성적 심층 검증 수행.
+  - 추천 사유, 강점/약점 분석, 매칭 적합도 종합 리포트 생성.
+
+<!-- 🖼️ [이미지 슬롯 4] 매칭 결과 및 리포트 화면 -->
+<p align="center">
+  <img src="./docs/images/matching-result.png" width="100%" alt="매칭 결과 및 AI 추천 리포트 화면" />
+  <br>
+  <em>▲ 강사 매칭 스코어카드 및 Gemini AI 심층 추천 리포트 화면</em>
+</p>
+
+---
+
+### 4. 📊 강사 DB 및 일정 관리 (Instructor Portal)
+- **강사 이력 검색 및 상세 조회**: 전문 분야, 강의 이력, 보유 자격증 통합 검색.
+- **스마트 일정 충돌 검지**: 요청된 교육 일정과 강사의 기존 강의 스케줄 간 충돌을 사전에 자동 경고.
+
+<!-- 🖼️ [이미지 슬롯 5] 강사 프로필 및 일정 관리 화면 -->
+<p align="center">
+  <img src="./docs/images/instructor-management.png" width="100%" alt="강사 프로필 및 일정 관리 화면" />
+  <br>
+  <em>▲ 강사 프로필 조회 및 일정 충돌 검지 화면</em>
+</p>
+
+---
+
 ## 🛠️ 기술 스택 (Tech Stack)
 
 ### 🎨 Frontend
-p
+<p>
   <img src="https://img.shields.io/badge/React_19-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" />
   <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
   <img src="https://img.shields.io/badge/Vite_v8-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
@@ -53,8 +129,6 @@ p
 
 ## 🏗️ 통합 시스템 구조 (Unified Architecture)
 
-`i-Core` 프로젝트는 분산되어 있던 Google OAuth 세션 인증, FastAPI REST API, Gemini AI 에이전트, 규칙 스코어링 엔진, React 19 프론트엔드를 **단일 통합 모듈 및 구글 클라우드 런(Cloud Run) 서버리스 구조**로 정돈 및 리팩토링한 웹 애플리케이션입니다.
-
 ```text
 i-core/
 ├── .github/workflows/             # GitHub Actions 자동 배포 (CI/CD)
@@ -78,28 +152,12 @@ i-core/
 │   ├── nginx.conf                 # SPA 라우팅 지원 Nginx 설정
 │   └── vite.config.ts             # Vite 빌드 & 개발 서버 프록시 설정
 │
+├── docs/                          # 이미지 자원 및 AIDLC 문서
+│   └── images/                    # README 캡처 이미지 저장 폴더
+│
 ├── start.bat                      # 원클릭 로컬 서버 동시 실행 스크립트
 └── README.md                      # 프로젝트 가이드 문서
 ```
-
----
-
-## ✨ 주요 기능 (Key Features)
-
-1. 🔒 **구글 계정 & 사내 인증 (Google OAuth 2.0 & JWT)**
-   - Google Workspace 계정을 통한 원클릭 GIS 로그인 지원 및 JWT 토큰 기반 세션 관리.
-   - 로컬 테스트 환경을 위한 데모 인증 백도어 지원.
-
-2. 📄 **나라장터 과업지시서 자동 파싱 (HWP / PDF / DOCX)**
-   - 과업지시서 첨부문서를 업로드하면 문서 파서가 강사 자격 요건, 필수 경력, 교육 주제를 자동 정제.
-
-3. 🎯 **하이브리드 AI 강사 매칭 & 심층 검증 (Agent & Rule Scoring)**
-   - `matching_core`: 규칙 기반 키워드/자격증/경력 결정론적 스코어링.
-   - `agent_core`: Gemini LLM 기반 2단계 A/B AI 에이전트 검증 및 Grounding 평가.
-   - 스코어 카드 브레이크다운을 한눈에 파악할 수 있는 매칭 결과 리포트 제공.
-
-4. 📊 **강사 DB 및 과업 이력 관리**
-   - 강사 검색 및 상세 이력 조회, 일정 충돌 감지, 매칭 이력 영구 보존.
 
 ---
 
@@ -119,4 +177,4 @@ i-core/
 GitHub 저장소 `main` 브랜치에 `push` 시 GitHub Actions에 의해 백엔드와 프론트엔드가 자동으로 클라우드로 무중단 배포됩니다.
 
 - **웹 서비스 접속 URL**: [https://i-core-frontend-761086712825.asia-northeast3.run.app](https://i-core-frontend-761086712825.asia-northeast3.run.app)
-- **클라우드 API 문 서**: [https://i-core-backend-761086712825.asia-northeast3.run.app/docs](https://i-core-backend-761086712825.asia-northeast3.run.app/docs)
+- **클라우드 API 문서**: [https://i-core-backend-761086712825.asia-northeast3.run.app/docs](https://i-core-backend-761086712825.asia-northeast3.run.app/docs)
