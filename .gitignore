@@ -23,6 +23,7 @@ build/
 .idea/
 .DS_Store
 Thumbs.db
+desktop.ini
 
 # 데이터베이스 파일 (보안 유지)
 *.db
