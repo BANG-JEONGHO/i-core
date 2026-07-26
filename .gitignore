@@ -23,3 +23,8 @@ build/
 .idea/
 .DS_Store
 Thumbs.db
+
+# 데이터베이스 파일 (보안 유지)
+*.db
+*.sqlite
+*.sqlite3
