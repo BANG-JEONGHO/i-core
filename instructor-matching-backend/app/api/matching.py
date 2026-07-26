@@ -25,7 +25,7 @@ async def execute_matching(
 @router.get("/history", response_model=list[MatchingSummary])
 async def list_matching_history(
     offset: int = Query(default=0, ge=0),
-    limit: int = Query(default=10, ge=1, le=50),
+    limit: int = Query(default=10, ge=1, le=500),
     db: AsyncSession = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ):

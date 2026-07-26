@@ -60,7 +60,7 @@ export default function TaskOrderDetailPage() {
         <button
           onClick={handleMatch}
           disabled={matching || !hasData}
-          className="flex items-center gap-2 px-5 py-2.5 bg-indigo-600 text-white text-sm font-medium rounded-lg hover:bg-indigo-700 disabled:opacity-50 transition-colors"
+          className="flex items-center gap-2 px-5 py-2.5 bg-indigo-600 text-white text-sm font-medium rounded-lg hover:bg-indigo-700 disabled:opacity-50 transition-colors cursor-pointer"
         >
           <Play size={16} />
           {matching ? '매칭 중...' : '매칭 시작'}
@@ -146,7 +146,12 @@ export default function TaskOrderDetailPage() {
 
 function OverviewCard({ overview }: { overview: TaskOrder['overview'] }) {
   const [expanded, setExpanded] = useState(false);
-  const rules = overview.matching_rules || [];
+  const rules = overview?.matching_rules || [];
+  const summaryText = typeof overview?.summary === 'string' 
+    ? overview.summary 
+    : overview?.summary 
+      ? JSON.stringify(overview.summary) 
+      : '';
 
   return (
     <section className="bg-indigo-50/50 border border-indigo-100 rounded-xl p-4 mb-5">
@@ -157,11 +162,11 @@ function OverviewCard({ overview }: { overview: TaskOrder['overview'] }) {
             <h2 className="text-sm font-semibold text-gray-900">과업 핵심 요약</h2>
             <span className="text-[10px] bg-indigo-100 text-indigo-700 px-1.5 py-0.5 rounded">매칭 반영</span>
           </div>
-          <p className="text-sm text-gray-700 mt-2 leading-6">{overview.summary}</p>
+          <p className="text-sm text-gray-700 mt-2 leading-6">{summaryText}</p>
         </div>
         <button
           onClick={() => setExpanded((value) => !value)}
-          className="shrink-0 text-xs text-indigo-700 hover:text-indigo-900 flex items-center gap-1"
+          className="shrink-0 text-xs text-indigo-700 hover:text-indigo-900 flex items-center gap-1 cursor-pointer"
         >
           {expanded ? '근거 접기' : '근거 보기'}
           {expanded ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
@@ -170,7 +175,7 @@ function OverviewCard({ overview }: { overview: TaskOrder['overview'] }) {
 
       {rules.length > 0 && (
         <div className="flex flex-wrap gap-2 mt-3">
-          {rules.slice(0, 5).flatMap((rule) => rule.values.slice(0, 3).map((value) => (
+          {rules.slice(0, 5).flatMap((rule) => (rule.values || []).slice(0, 3).map((value) => (
             <span key={`${rule.key}-${value}`} className="text-[11px] bg-white text-indigo-700 border border-indigo-100 px-2 py-1 rounded-full">
               {rule.label}: {value}
             </span>
@@ -180,16 +185,16 @@ function OverviewCard({ overview }: { overview: TaskOrder['overview'] }) {
 
       {expanded && (
         <div className="mt-4 pt-4 border-t border-indigo-100 space-y-3">
-          {overview.section_titles?.length > 0 && (
+          {overview?.section_titles && overview.section_titles.length > 0 && (
             <p className="text-xs text-gray-500">인식된 섹션: {overview.section_titles.join(', ')}</p>
           )}
           {rules.map((rule) => (
             <div key={rule.key} className="text-xs">
               <span className="font-medium text-gray-700">{rule.label}</span>
-              <span className="text-gray-600"> · {rule.values.join(', ')}</span>
+              <span className="text-gray-600"> · {(rule.values || []).join(', ')}</span>
             </div>
           ))}
-          {overview.source_excerpt && (
+          {overview?.source_excerpt && (
             <p className="text-xs text-gray-500 whitespace-pre-line bg-white/70 rounded-lg p-3 leading-5">
               {overview.source_excerpt}
             </p>
@@ -201,10 +206,11 @@ function OverviewCard({ overview }: { overview: TaskOrder['overview'] }) {
 }
 
 function QualCard({ item }: { item: any }) {
+  const desc = typeof item.description === 'string' ? item.description : JSON.stringify(item.description);
   return (
     <div className="border border-gray-100 rounded-lg p-3">
       <div className="flex items-start justify-between gap-2">
-        <p className="text-xs font-medium text-gray-800 line-clamp-3">{item.description}</p>
+        <p className="text-xs font-medium text-gray-800 line-clamp-3">{desc}</p>
         {item.is_mandatory ? (
           <span className="text-[9px] bg-red-50 text-red-600 px-1.5 py-0.5 rounded font-bold shrink-0">필수</span>
         ) : (
@@ -226,10 +232,11 @@ function QualCard({ item }: { item: any }) {
 }
 
 function EvalCard({ item }: { item: any }) {
+  const desc = typeof item.description === 'string' ? item.description : JSON.stringify(item.description);
   return (
     <div className="border border-gray-100 rounded-lg p-3">
       <div className="flex items-start justify-between gap-2">
-        <p className="text-xs font-medium text-gray-800 line-clamp-3">{item.description}</p>
+        <p className="text-xs font-medium text-gray-800 line-clamp-3">{desc}</p>
         {item.weight && (
           <span className="text-[10px] font-bold text-purple-600 shrink-0">{item.weight}점</span>
         )}

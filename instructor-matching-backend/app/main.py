@@ -50,6 +50,7 @@ async def lifespan(app: FastAPI):
     await engine.dispose()
 
 
+
 app = FastAPI(
     title=settings.APP_NAME,
     version="0.1.0",

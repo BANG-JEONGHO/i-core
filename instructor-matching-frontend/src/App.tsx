@@ -6,7 +6,6 @@ import ProtectedRoute from './components/common/ProtectedRoute';
 import LoginPage from './pages/LoginPage';
 import InstructorPortalPage from './pages/InstructorPortalPage';
 import SettingsPage from './pages/SettingsPage';
-import SchedulesPage from './pages/SchedulesPage';
 import DashboardPage from './pages/DashboardPage';
 import InstructorsPage from './pages/InstructorsPage';
 import TaskOrderUploadPage from './pages/TaskOrderUploadPage';
@@ -33,7 +32,6 @@ export default function App() {
             <Route path="/matching-history" element={<MatchingHistoryPage />} />
             <Route path="/matching/:id" element={<MatchingResultPage />} />
             <Route path="/settings" element={<SettingsPage />} />
-            <Route path="/schedules" element={<SchedulesPage />} />
           </Route>
         </Routes>
       </BrowserRouter>

@@ -4,6 +4,8 @@ export interface User {
   id: string;
   username: string;
   name: string;
+  email?: string;
+  picture?: string;
 }
 
 export interface Instructor {

@@ -38,8 +38,11 @@ class MatchingSummary(BaseModel):
     task_order_id: str
     task_order_name: str | None = None
     top_instructor_count: int
+    candidates: list[str] = []
+    has_final: bool = False
     memo: str | None = None
     created_at: datetime
+
 
 
 class CompareRequest(BaseModel):

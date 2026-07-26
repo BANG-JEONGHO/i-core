@@ -146,6 +146,8 @@ async def list_matching_history(
             id=item.id,
             task_order_id=item.task_order_id,
             top_instructor_count=len(item.candidates or []),
+            candidates=item.candidates or [],
+            has_final=any(str(c).startswith("final_") for c in (item.candidates or [])),
             memo=item.memo,
             created_at=item.created_at,
         )
