@@ -1,21 +1,43 @@
 # 🚀 i-Core 구글 클라우드(GCP Cloud Run) 배포 실전 가이드
 
-> **본 문서는 i-Core 강사 매칭 플랫폼의 백엔드(FastAPI) 및 프론트엔드(React)를 Docker 컨테이너로 빌드하고, Google Cloud Run에 배포하며, GitHub Actions를 통해 자동 배포(CI/CD) 환경을 구축한 전체 과정을 누구나 알아보기 쉽게 정리한 가이드입니다.**
+> **본 문서는 pyenv + Poetry(Python 3.14) 환경으로 구축된 i-Core 강사 매칭 플랫폼의 백엔드(FastAPI)와 프론트엔드(React)를 Docker 컨테이너로 빌드하고, Google Cloud Run에 배포하며, GitHub Actions를 통해 자동 배포(CI/CD) 환경을 구축한 전체 과정을 알아보기 쉽게 정리한 가이드입니다.**
 
 ---
 
 ## 📌 목차 (Table of Contents)
 
-1. [왜 Google Cloud Run을 선택했나요?](#1-왜-google-cloud-run을-선택했나요)
-2. [1단계: 백엔드(FastAPI) 도커화 및 Cloud Run 배포](#2-1단계-백엔드fastapi-도커화-및-cloud-run-배포)
-3. [2단계: 프론트엔드(React) 도커화 및 Cloud Run 배포](#3-2단계-프론트엔드react-도커화-및-cloud-run-배포)
-4. [3단계: 구글 로그인(Google OAuth) 및 CORS 접속 허용 설정](#4-3단계-구글-로그인google-oauth-및-cors-접속-허용-설정)
-5. [4단계: GitHub Actions 깃 푸시 시 자동 배포(CI/CD) 구축](#5-4단계-github-actions-깃-푸시-시-자동-배포cicd-구축)
-6. [5단계: 로컬 테스트 vs 클라우드 운영 환경 사용법](#6-5단계-로컬-테스트-vs-클라우드-운영-환경-사용법)
+1. [개발 환경 구성 (pyenv + Poetry + Python 3.14)](#1-개발-환경-구성-pyenv--poetry--python-314)
+2. [왜 Google Cloud Run을 선택했나요?](#2-왜-google-cloud-run을-선택했나요)
+3. [1단계: 백엔드(FastAPI) 도커화 및 Cloud Run 배포](#3-1단계-백엔드fastapi-도커화-및-cloud-run-배포)
+4. [2단계: 프론트엔드(React) 도커화 및 Cloud Run 배포](#4-2단계-프론트엔드react-도커화-및-cloud-run-배포)
+5. [3단계: 구글 로그인(Google OAuth) 및 CORS 접속 허용 설정](#5-3단계-구글-로그인google-oauth-및-cors-접속-허용-설정)
+6. [4단계: GitHub Actions 깃 푸시 시 자동 배포(CI/CD) 구축](#6-4단계-github-actions-깃-푸시-시-자동-배포cicd-구축)
+7. [5단계: 로컬 테스트 vs 클라우드 운영 환경 사용법](#7-5단계-로컬-테스트-vs-클라우드-운영-환경-사용법)
 
 ---
 
-## 1. 왜 Google Cloud Run을 선택했나요?
+## 1. 개발 환경 구성 (pyenv + Poetry + Python 3.14)
+
+i-Core 백엔드는 파이썬 최신 버전인 **Python 3.14** 환경과 **Poetry** 의존성 관리 도구를 기반으로 구축되었습니다.
+
+### 🛠️ 개발 환경 스택
+- **파이썬 버전 관리**: `pyenv` (Python 3.14 환경 전용 격리 및 세팅)
+- **패키지 및 의존성 관리**: `Poetry` (`pyproject.toml` 기반 프로젝트 관리)
+- **웹 서버 실행**: FastAPI + Uvicorn Async Server
+
+```bash
+# 1) pyenv를 통한 파이썬 3.14 설치 및 로컬 적용
+pyenv install 3.14.0
+pyenv local 3.14.0
+
+# 2) Poetry 패키지 의존성 설치 및 가상환경 실행
+poetry config virtualenvs.in-project true
+poetry install
+```
+
+---
+
+## 2. 왜 Google Cloud Run을 선택했나요?
 
 웹 서비스를 인터넷에 공개하려면 24시간 켜져 있는 서버가 필요합니다. 하지만 24시간 내내 켜두는 기존 서버는 사용자가 접속하지 않는 시간에도 똑같이 비용이 발생합니다.
 
@@ -26,24 +48,29 @@
 
 ---
 
-## 2. 1단계: 백엔드(FastAPI) 도커화 및 Cloud Run 배포
+## 3. 1단계: 백엔드(FastAPI) 도커화 및 Cloud Run 배포
 
 ### 1) 백엔드 Dockerfile 작성 (`backend/Dockerfile`)
-파이썬 백엔드 앱을 구글 클라우드에서 독립된 포장 상자(컨테이너)로 실행하기 위해 `Dockerfile`을 작성했습니다.
+pyenv + Poetry 기반으로 개발된 파이썬 3.14 백엔드 앱을 구글 클라우드에서 독립된 포장 상자(컨테이너)로 실행하기 위해 `Dockerfile`을 작성했습니다.
 
 ```dockerfile
-FROM python:3.11-slim
+# 파이썬 3.14 슬림 베이스 이미지 선택
+FROM python:3.14-slim
 ENV PYTHONUNBUFFERED=1
 WORKDIR /app
 
+# 시스템 빌드 의존성 설치
 RUN apt-get update && apt-get install -y --no-install-recommends build-essential && rm -rf /var/lib/apt-get/lists/*
 
+# 의존성 패키지 설치 (Poetry / requirements)
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
+# 소스코드 전체 복사 및 포트 설정
 COPY . .
 ENV PORT=8080
 
+# Cloud Run PORT 주입 환경 지원 Uvicorn 실행
 CMD ["sh", "-c", "uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8080}"]
 ```
 
@@ -65,7 +92,7 @@ gcloud projects add-iam-policy-binding iceu-bangjeongho833 `
 
 ---
 
-## 3. 2단계: 프론트엔드(React) 도커화 및 Cloud Run 배포
+## 4. 2단계: 프론트엔드(React) 도커화 및 Cloud Run 배포
 
 ### 1) 환경변수 분리 (`.env.development` & `.env.production`)
 로컬에서 개발할 때와 클라우드에 배포했을 때 바라보는 백엔드 주소가 달라야 하므로 환경별로 파일을 분리했습니다.
@@ -100,7 +127,7 @@ CMD ["nginx", "-g", "daemon off;"]
 
 ---
 
-## 4. 3단계: 구글 로그인(Google OAuth) 및 CORS 접속 허용 설정
+## 5. 3단계: 구글 로그인(Google OAuth) 및 CORS 접속 허용 설정
 
 ### 1) `400 origin_mismatch` 구글 로그인 오류 해결
 구글 로그인 보안 정책상 승인되지 않은 웹사이트 주소에서는 로그인 팝업이 차단됩니다.
@@ -115,7 +142,7 @@ CMD ["nginx", "-g", "daemon off;"]
 
 ---
 
-## 5. 4단계: GitHub Actions 깃 푸시 시 자동 배포(CI/CD) 구축
+## 6. 4단계: GitHub Actions 깃 푸시 시 자동 배포(CI/CD) 구축
 
 개발자가 `git push origin main` 을 실행하면 별도의 조치 없이 알아서 구글 클라우드로 백엔드와 프론트엔드가 무중단 자동 배포되도록 설정했습니다.
 
@@ -165,7 +192,7 @@ GitHub 저장소 ➔ **Settings** ➔ **Secrets and variables** ➔ **Actions** 
 
 ---
 
-## 6. 5단계: 로컬 테스트 vs 클라우드 운영 환경 사용법
+## 7. 5단계: 로컬 테스트 vs 클라우드 운영 환경 사용법
 
 | 구 분 | 🌐 클라우드 운영 환경 | 💻 로컬 개발/테스트 환경 |
 | :--- | :--- | :--- |
@@ -176,4 +203,4 @@ GitHub 저장소 ➔ **Settings** ➔ **Secrets and variables** ➔ **Actions** 
 
 ---
 
-🎉 **이제 i-Core 플랫폼의 전체 배포 과정 및 자동화 가이드가 완성되었습니다.**
+🎉 **이제 pyenv + Poetry(Python 3.14) 환경 기반의 i-Core 플랫폼 배포 가이드가 완성되었습니다.**
