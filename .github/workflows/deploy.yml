@@ -28,7 +28,7 @@ jobs:
             --region asia-northeast3 \
             --allow-unauthenticated \
             --add-cloudsql-instances "iceu-bangjeongho833:asia-northeast3:icore-postgres" \
-            --set-env-vars "APP_NAME=i-Core API,DEBUG=false,GOOGLE_CLIENT_ID=761086712825-cp5lvscdoer4lt8emg2gmhbrejktng0s.apps.googleusercontent.com" \
+            --set-env-vars "APP_NAME=i-Core API,DEBUG=false,GOOGLE_CLIENT_ID=761086712825-cp5lvscdoer4lt8emg2gmhbrejktng0s.apps.googleusercontent.com,GCS_BUCKET=i-core-documents-gb" \
             --set-secrets "SECRET_KEY=icore-secret-key:latest,GEMINI_API_KEY=gemini-api-key:latest,DATABASE_URL=icore-app-database-url:latest,INSTRUCTOR_DATABASE_URL=icore-instructor-database-url:latest"
 
   deploy-frontend:

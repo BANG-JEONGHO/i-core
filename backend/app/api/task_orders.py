@@ -51,10 +51,7 @@ async def delete_task_order(
     current_user: User = Depends(get_current_user),
 ):
     """과업지시서 삭제."""
-    from app.models.models import TaskOrder
-    task_order = await db.get(TaskOrder, task_order_id)
-    if task_order:
-        await db.delete(task_order)
+    await task_order_service.delete_task_order(db, task_order_id)
 
 
 @router.put("/{task_order_id}/parsed", response_model=TaskOrderResponse)

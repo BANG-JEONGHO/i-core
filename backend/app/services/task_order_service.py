@@ -2,9 +2,6 @@
 
 from __future__ import annotations
 
-import os
-import uuid
-from dataclasses import asdict
 from datetime import datetime
 from pathlib import Path
 
@@ -13,9 +10,14 @@ from fastapi import HTTPException, UploadFile, status
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from app.core.config import settings
 from app.models.models import TaskOrder
 from app.schemas.task_order import ParsedResultUpdate, TaskOrderResponse, TaskOrderSummary
+from app.services.object_storage import (
+    ObjectStorageError,
+    delete_task_order_file,
+    read_task_order_file,
+    save_task_order_file,
+)
 
 logger = structlog.get_logger()
 
@@ -29,15 +31,16 @@ async def upload_task_order(
     file_ext = Path(file_name).suffix.lower()
 
     # 파일 저장
-    save_dir = Path(settings.UPLOAD_DIR) / datetime.now().strftime("%Y/%m")
-    save_dir.mkdir(parents=True, exist_ok=True)
-    saved_name = f"{uuid.uuid4()}{file_ext or '.bin'}"
-    save_path = save_dir / saved_name
+    try:
+        saved_path = await save_task_order_file(content, file_name, file.content_type)
+    except ObjectStorageError as error:
+        logger.exception("file_storage_failed", file_name=file_name)
+        raise HTTPException(
+            status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
+            detail="The original file could not be stored",
+        ) from error
 
-    with open(save_path, "wb") as f:
-        f.write(content)
-
-    logger.info("file_saved", file_name=file_name, size=len(content))
+    logger.info("file_saved", file_name=file_name, size=len(content), path=saved_path)
 
     # 파싱 시도 (AI Agent 기반, 타임아웃 30초)
     qualifications_data: list[dict] = []
@@ -90,7 +93,7 @@ async def upload_task_order(
     # DB 저장
     task_order = TaskOrder(
         file_name=file_name,
-        file_path=str(save_path),
+        file_path=saved_path,
         file_type=file_ext.lstrip("."),
         raw_text=raw_text,
         qualifications=qualifications_data,
@@ -111,17 +114,19 @@ async def reparse_task_order(db: AsyncSession, task_order_id: str) -> TaskOrderR
     if not task_order:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Task order was not found")
 
-    path = Path(task_order.file_path)
-    if not path.is_file():
-        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="The original uploaded file is unavailable")
-
     import asyncio
     from app.services.ai_agent import parse_document_with_ai
 
     try:
+        content = await read_task_order_file(task_order.file_path)
         result = await asyncio.wait_for(
-            parse_document_with_ai(path.read_bytes(), task_order.file_name), timeout=120.0
+            parse_document_with_ai(content, task_order.file_name), timeout=120.0
         )
+    except ObjectStorageError as error:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="The original uploaded file is unavailable",
+        ) from error
     except asyncio.TimeoutError as error:
         raise HTTPException(status_code=status.HTTP_408_REQUEST_TIMEOUT, detail="Parsing timed out") from error
 
@@ -141,6 +146,21 @@ async def get_task_order(db: AsyncSession, task_order_id: str) -> TaskOrderRespo
     if not task_order:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="과업지시서를 찾을 수 없습니다.")
     return TaskOrderResponse.model_validate(task_order)
+
+
+async def delete_task_order(db: AsyncSession, task_order_id: str) -> None:
+    """Remove the task-order record and its original file when available."""
+    task_order = await db.get(TaskOrder, task_order_id)
+    if not task_order:
+        return
+
+    try:
+        await delete_task_order_file(task_order.file_path)
+    except ObjectStorageError:
+        # A stale DB record should still be removable if its object was already
+        # removed outside the application.
+        logger.warning("task_order_file_delete_failed", task_order_id=task_order_id)
+    await db.delete(task_order)
 
 
 async def list_task_orders(

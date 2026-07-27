@@ -64,6 +64,9 @@ class Settings(BaseSettings):
 
     # File Upload
     UPLOAD_DIR: str = "uploads"
+    # Cloud Run uses this bucket for durable original HWP/PDF storage.
+    # Leave empty to retain the local development uploads directory.
+    GCS_BUCKET: str = ""
     MAX_FILE_SIZE_MB: int = 50
 
     # Rate Limiting
