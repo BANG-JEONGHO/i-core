@@ -27,6 +27,11 @@ def _apply_additive_schema_updates(connection) -> None:
     SQLAlchemy create_all()이 이미 존재하는 테이블에 신규 컬럼을 자동으로 추가하지 못하므로,
     task_orders 및 matching_results 테이블의 신규 필드를 안전하게 브리지합니다.
     """
+    # PostgreSQL deployments are initialized from the current ORM metadata.
+    # The PRAGMA-based bridge below is only for legacy local SQLite files.
+    if connection.dialect.name != "sqlite":
+        return
+
     # 1. task_orders 테이블 overview 컬럼 체크 및 추가
     columns = {
         row[1]

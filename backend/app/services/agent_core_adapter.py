@@ -15,7 +15,7 @@ from typing import Any
 
 from app.core.config import settings
 from app.models.models import TaskOrder
-from app.services.external_instructor_db import get_external_db_path
+from app.services.external_instructor_db import get_external_database_sync_url
 
 
 class AgentCoreConfigurationError(RuntimeError):
@@ -65,7 +65,9 @@ def execute_agent_core_matching(task_order: TaskOrder) -> tuple[list[dict[str, A
         )
     except Exception as error:
         raise AgentCoreExecutionError("과업 데이터·개요 프로필 생성", error) from error
-    repository = InstructorRepository(database_path=Path(get_external_db_path()))
+    repository = InstructorRepository(
+        database_url=get_external_database_sync_url()
+    )
     retriever = EvidenceRetriever(
         embeddings=_ConfiguredGeminiEmbeddings(
             settings.GEMINI_API_KEY, settings.GEMINI_EMBEDDING_MODEL

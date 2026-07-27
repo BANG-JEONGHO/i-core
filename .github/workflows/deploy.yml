@@ -27,7 +27,9 @@ jobs:
             --source ./backend \
             --region asia-northeast3 \
             --allow-unauthenticated \
-            --set-env-vars "APP_NAME=i-Core API,SECRET_KEY=change_this_to_a_secure_secret_key_in_production,GOOGLE_CLIENT_ID=761086712825-cp5lvscdoer4lt8emg2gmhbrejktng0s.apps.googleusercontent.com"
+            --add-cloudsql-instances "iceu-bangjeongho833:asia-northeast3:icore-postgres" \
+            --set-env-vars "APP_NAME=i-Core API,DEBUG=false,GOOGLE_CLIENT_ID=761086712825-cp5lvscdoer4lt8emg2gmhbrejktng0s.apps.googleusercontent.com" \
+            --set-secrets "SECRET_KEY=icore-secret-key:latest,GEMINI_API_KEY=gemini-api-key:latest,DATABASE_URL=icore-app-database-url:latest,INSTRUCTOR_DATABASE_URL=icore-instructor-database-url:latest"
 
   deploy-frontend:
     name: Deploy Frontend to Cloud Run

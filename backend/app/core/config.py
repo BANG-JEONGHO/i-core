@@ -11,9 +11,12 @@ class Settings(BaseSettings):
     DEBUG: bool = True
 
     # Database
+    # Local development keeps using SQLite. Cloud Run uses PostgreSQL URLs
+    # injected through Secret Manager (see .env.example).
     DATABASE_URL: str = "sqlite+aiosqlite:///./app.db"
-    # The actual DB is intentionally excluded from Git. Place it at
-    # data/private/내부_강사_정보.db after cloning, or override this in .env.
+    # The instructor database is intentionally separated from app data because
+    # it contains resume records. This accepts either SQLite (local) or
+    # PostgreSQL (Cloud SQL) URLs.
     INSTRUCTOR_DATABASE_URL: str = "sqlite+aiosqlite:///./data/private/내부_강사_정보.db"
 
     # Security
