@@ -51,8 +51,8 @@ def execute_agent_core_matching(task_order: TaskOrder) -> tuple[list[dict[str, A
     from agent_core.services.batch_run_storage import BatchRunStorage
     from agent_core.services.evidence_retriever import EvidenceRetriever
     from agent_core.services.instructor_repository import InstructorRepository
+    from agent_core.services.cloud_sql_vector_store import CloudSQLVectorStore
     from agent_core.services.run_storage import RunStorage
-    from agent_core.services.vector_store import LocalVectorStore
 
     try:
         project = _build_project_profile(
@@ -65,24 +65,26 @@ def execute_agent_core_matching(task_order: TaskOrder) -> tuple[list[dict[str, A
         )
     except Exception as error:
         raise AgentCoreExecutionError("과업 데이터·개요 프로필 생성", error) from error
+    db_url = get_external_database_sync_url()
     repository = InstructorRepository(
-        database_url=get_external_database_sync_url()
+        database_url=db_url
     )
     retriever = EvidenceRetriever(
         embeddings=_ConfiguredGeminiEmbeddings(
             settings.GEMINI_API_KEY, settings.GEMINI_EMBEDDING_MODEL
         ),
-        store=LocalVectorStore(Path(settings.VECTOR_STORE_PATH)),
+        store=CloudSQLVectorStore(database_url=db_url),
     )
-    # Index the original extracted text for RAG. If unavailable, agent_core
-    # falls back to its structured project profile during retrieval.
+    # Index the original extracted text for RAG if not already indexed.
     if task_order.raw_text and task_order.raw_text.strip():
+        task_order_doc_id = f"task-order:{task_order.id}"
         try:
-            retriever.index_document(
-                document_id=f"task-order:{task_order.id}",
-                source_type="project",
-                text=task_order.raw_text,
-            )
+            if not retriever.store.document_text(task_order_doc_id):
+                retriever.index_document(
+                    document_id=task_order_doc_id,
+                    source_type="project",
+                    text=task_order.raw_text,
+                )
         except Exception as error:
             raise AgentCoreExecutionError("RAG 문서 임베딩·저장", error) from error
 

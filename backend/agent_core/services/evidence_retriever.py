@@ -6,11 +6,11 @@ from agent_core.schemas import EvidenceRef, InstructorProfile, ProjectProfile, R
 from agent_core.services.document_chunker import chunk_text
 from agent_core.services.embedding_client import EmbeddingProvider
 from agent_core.services.llm import as_json
-from agent_core.services.vector_store import LocalVectorStore, VectorRecord
+from typing import Any
 
 
 class EvidenceRetriever:
-    def __init__(self, embeddings: EmbeddingProvider, store: LocalVectorStore) -> None:
+    def __init__(self, embeddings: EmbeddingProvider, store: Any) -> None:
         self.embeddings = embeddings
         self.store = store
 
@@ -42,11 +42,12 @@ class EvidenceRetriever:
         # but a real indexed resume always takes precedence.
         if not instructor_document_ids:
             fallback_id = f"rag:{instructor.instructor_id}:{instructor.profile_version}"
-            self.index_document(
-                document_id=fallback_id,
-                source_type="instructor",
-                text=_profile_source_text(instructor),
-            )
+            if not self.store.document_text(fallback_id):
+                self.index_document(
+                    document_id=fallback_id,
+                    source_type="instructor",
+                    text=_profile_source_text(instructor),
+                )
             instructor_document_ids = [fallback_id]
 
         project_vector = self.embeddings.embed([_project_query(project)])[0]

@@ -44,11 +44,11 @@ class Settings(BaseSettings):
     # Repository-relative by default. An environment variable can override this
     # when agent_core is deployed as a separately managed package.
     AGENT_CORE_PATH: str = "agent_core"
-    AGENT_REVIEW_TOP_K: int = 10
+    AGENT_REVIEW_TOP_K: int = 20
     # Candidate reviews run concurrently, while the Gemini request limit is
     # shared by all A/B workers to avoid quota bursts.
-    AGENT_REVIEW_WORKERS: int = 3
-    AGENT_MAX_CONCURRENT_LLM_REQUESTS: int = 4
+    AGENT_REVIEW_WORKERS: int = 20
+    AGENT_MAX_CONCURRENT_LLM_REQUESTS: int = 40
     VECTOR_STORE_PATH: str = "data/vector-store/rag.sqlite3"
     AGENT_RUN_STORAGE_DIR: str = "data/agent-runs"
     AGENT_BATCH_RUN_STORAGE_DIR: str = "data/agent-batch-runs"
