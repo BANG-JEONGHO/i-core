@@ -195,7 +195,7 @@ export default function DashboardPage() {
   return (
     <div className="h-full flex flex-col select-none">
 
-      /* ---------------------------------------------------- */
+      {/* ---------------------------------------------------- */}
       {/* 툴바 컨트롤 바 */}
       {/* ---------------------------------------------------- */}
       <div className="flex items-center justify-end gap-2 mb-5 pb-3 border-b border-slate-200/80 flex-wrap">
@@ -204,8 +204,8 @@ export default function DashboardPage() {
         <button
           onClick={handleToggleToday}
           className={`px-4 py-1.5 text-xs font-bold rounded-lg transition-all border ${isTodayActive
-              ? 'bg-sky-600 hover:bg-sky-700 text-white border-sky-600 shadow-sm'
-              : 'bg-sky-50 hover:bg-sky-100 text-sky-700 border-sky-200/80'
+            ? 'bg-sky-600 hover:bg-sky-700 text-white border-sky-600 shadow-sm'
+            : 'bg-sky-50 hover:bg-sky-100 text-sky-700 border-sky-200/80'
             }`}
           title={isTodayActive ? '클릭 시 오늘 필터 해제' : '오늘 생성된 항목만 보기'}
         >
@@ -217,10 +217,10 @@ export default function DashboardPage() {
           <button
             onClick={() => setIsFilterOpen(!isFilterOpen)}
             className={`flex items-center gap-1.5 px-3 py-1.5 border text-xs font-semibold rounded-lg shadow-2xs transition-all ${isFilterActive && !isTodayActive
-                ? 'bg-sky-50 border-sky-300 text-sky-800 font-bold'
-                : isFilterActive
-                  ? 'bg-slate-100 border-slate-300 text-slate-800 font-bold'
-                  : 'bg-white border-slate-200 hover:bg-slate-50 text-slate-700'
+              ? 'bg-sky-50 border-sky-300 text-sky-800 font-bold'
+              : isFilterActive
+                ? 'bg-slate-100 border-slate-300 text-slate-800 font-bold'
+                : 'bg-white border-slate-200 hover:bg-slate-50 text-slate-700'
               }`}
           >
             <Filter size={14} className={isFilterActive ? 'text-sky-700' : 'text-slate-500'} />
