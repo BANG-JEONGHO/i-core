@@ -52,10 +52,6 @@ def _apply_additive_schema_updates(connection) -> None:
         connection.exec_driver_sql("ALTER TABLE matching_results ADD COLUMN memo VARCHAR(1000)")
         logger.info("database_schema_updated", table="matching_results", column="memo")
 
-    if "memo_author_name" not in matching_columns:
-        connection.exec_driver_sql("ALTER TABLE matching_results ADD COLUMN memo_author_name VARCHAR(100)")
-        logger.info("database_schema_updated", table="matching_results", column="memo_author_name")
-
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):

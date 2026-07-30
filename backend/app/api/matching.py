@@ -109,17 +109,28 @@ async def update_memo(
 ):
     from fastapi import HTTPException, status
     from app.models.models import MatchingResult
+    from app.services.matching_service import parse_memo
 
     result = await db.get(MatchingResult, matching_id)
     if not result:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Matching result was not found")
-    memo = str(body.get("memo", "")).strip()
-    result.memo = memo[:1000] or None
-    if result.memo:
-        result.memo_author_name = current_user.name
+
+    raw_memo = str(body.get("memo", "")).strip()
+    if raw_memo:
+        if raw_memo.startswith("[") and "]" in raw_memo:
+            end_idx = raw_memo.find("]")
+            raw_memo = raw_memo[end_idx + 1 :].strip()
+
+        if raw_memo:
+            author_name = current_user.name or "사용자"
+            result.memo = f"[{author_name}] {raw_memo}"[:1000]
+        else:
+            result.memo = None
     else:
-        result.memo_author_name = None
-    return {"memo": result.memo, "memo_author_name": result.memo_author_name}
+        result.memo = None
+
+    memo_text, memo_author = parse_memo(result.memo)
+    return {"memo": memo_text, "memo_author_name": memo_author}
 
 
 @router.post("/{matching_id}/ai-reason/{instructor_id}")

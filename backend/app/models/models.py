@@ -96,7 +96,6 @@ class MatchingResult(Base):
     top_instructors: Mapped[list] = mapped_column(JSON, default=list)
     candidates: Mapped[list] = mapped_column(JSON, default=list)
     memo: Mapped[str | None] = mapped_column(String(1000), nullable=True, default=None)
-    memo_author_name: Mapped[str | None] = mapped_column(String(100), nullable=True, default=None)
     executed_by: Mapped[str] = mapped_column(String(36), ForeignKey("users.id"))
     created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
 

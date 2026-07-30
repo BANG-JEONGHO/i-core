@@ -132,6 +132,18 @@ async def get_matching_result(
     return _as_response(matching_result)
 
 
+def parse_memo(memo_str: str | None) -> tuple[str | None, str | None]:
+    """Extract (memo_text, author_name) from '[Author] Content' formatted string."""
+    if not memo_str:
+        return None, None
+    if memo_str.startswith("[") and "]" in memo_str:
+        end_idx = memo_str.find("]")
+        author = memo_str[1:end_idx].strip()
+        content = memo_str[end_idx + 1 :].strip()
+        return content, author
+    return memo_str, None
+
+
 async def list_matching_history(
     db: AsyncSession, offset: int = 0, limit: int = 10
 ) -> list[MatchingSummary]:
@@ -141,29 +153,33 @@ async def list_matching_history(
         .offset(offset)
         .limit(limit)
     )
-    return [
-        MatchingSummary(
-            id=item.id,
-            task_order_id=item.task_order_id,
-            top_instructor_count=len(item.candidates or []),
-            candidates=item.candidates or [],
-            has_final=any(str(c).startswith("final_") for c in (item.candidates or [])),
-            memo=item.memo,
-            memo_author_name=item.memo_author_name,
-            created_at=item.created_at,
+    summaries = []
+    for item in result.scalars().all():
+        memo_text, author = parse_memo(item.memo)
+        summaries.append(
+            MatchingSummary(
+                id=item.id,
+                task_order_id=item.task_order_id,
+                top_instructor_count=len(item.candidates or []),
+                candidates=item.candidates or [],
+                has_final=any(str(c).startswith("final_") for c in (item.candidates or [])),
+                memo=memo_text,
+                memo_author_name=author,
+                created_at=item.created_at,
+            )
         )
-        for item in result.scalars().all()
-    ]
+    return summaries
 
 
 def _as_response(matching_result: MatchingResult) -> MatchingResultResponse:
+    memo_text, author = parse_memo(matching_result.memo)
     return MatchingResultResponse(
         id=matching_result.id,
         task_order_id=matching_result.task_order_id,
         results=[MatchScoreDTO(**item) for item in matching_result.results],
         candidates=matching_result.candidates or [],
-        memo=matching_result.memo,
-        memo_author_name=matching_result.memo_author_name,
+        memo=memo_text,
+        memo_author_name=author,
         created_at=matching_result.created_at,
     )
 
