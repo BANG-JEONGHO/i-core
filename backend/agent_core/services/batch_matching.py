@@ -1,4 +1,4 @@
-﻿"""Orchestrate full-DB ranking with optional explicit A/B reviews."""
+"""Orchestrate full-DB ranking with optional explicit A/B reviews."""
 
 from __future__ import annotations
 
@@ -32,7 +32,7 @@ class BatchMatchingWorkflow:
         self.review_workers = max(1, review_workers)
 
     def run(self, request: BatchMatchRequest) -> BatchMatchResult:
-        rankings = rank_instructors(request.project, self.repository)
+        rankings = rank_instructors(request.project, self.repository, self.evidence_retriever)
         available_ids = set(self.repository.list_instructor_ids())
         unknown_ids = sorted(set(request.review_instructor_ids) - available_ids)
         if unknown_ids:

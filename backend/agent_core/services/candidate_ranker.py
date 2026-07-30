@@ -1,4 +1,4 @@
-﻿"""Deterministic, evidence-backed retrieval ranking for every instructor.
+"""Deterministic, evidence-backed retrieval ranking for every instructor.
 
 The score in this module is not the final recommendation score.  It is a fast
 DB-based retrieval score used to order all instructors before optional LLM
@@ -39,12 +39,44 @@ _STOP_TOKENS = {
 def rank_instructors(
     project: ProjectProfile,
     repository: InstructorRepository,
+    evidence_retriever: Any = None,
 ) -> list[RankedInstructor]:
-    """Rank every instructor in the DB; zero-score instructors are retained."""
-    rankings = [
-        score_instructor(project, build_instructor_profile(repository.get_instructor(id)))
-        for id in repository.list_instructor_ids()
-    ]
+    """Rank every instructor using 80% Vector Cosine Similarity + 20% Keyword Match Hybrid scoring."""
+    vector_scores: dict[int, float] = {}
+    if evidence_retriever is not None and getattr(evidence_retriever, "store", None):
+        try:
+            from agent_core.services.evidence_retriever import _project_query
+            query_text = _project_query(project)
+            query_vector = evidence_retriever.embeddings.embed([query_text])[0]
+            vector_records = evidence_retriever.store.search(
+                query_vector, source_type="instructor", limit=10000
+            )
+            for record in vector_records:
+                doc_id = record.document_id
+                inst_id = None
+                if doc_id.startswith("rag:"):
+                    parts = doc_id.split(":")
+                    if len(parts) >= 2 and parts[1].isdigit():
+                        inst_id = int(parts[1])
+                if inst_id is not None:
+                    score_100 = max(0.0, min(100.0, float(record.score) * 100.0))
+                    if inst_id not in vector_scores or score_100 > vector_scores[inst_id]:
+                        vector_scores[inst_id] = score_100
+        except Exception:
+            pass
+
+    rankings = []
+    for id in repository.list_instructor_ids():
+        inst_id = int(id)
+        profile = build_instructor_profile(repository.get_instructor(inst_id))
+        item = score_instructor(project, profile)
+        if inst_id in vector_scores:
+            vec_s = vector_scores[inst_id]
+            kw_s = item.retrieval_score
+            hybrid_s = round(0.8 * vec_s + 0.2 * kw_s, 2)
+            item = item.model_copy(update={"retrieval_score": hybrid_s})
+        rankings.append(item)
+
     return sorted(
         rankings,
         key=lambda ranking: (-ranking.retrieval_score, ranking.instructor_id),
