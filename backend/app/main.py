@@ -22,12 +22,30 @@ logger = structlog.get_logger()
 
 
 def _apply_additive_schema_updates(connection) -> None:
-    """SQLite 데이터베이스 스키마 하위 호환 마이그레이션.
+    """Apply idempotent schema defaults required by the application.
     
     SQLAlchemy create_all()이 이미 존재하는 테이블에 신규 컬럼을 자동으로 추가하지 못하므로,
     task_orders 및 matching_results 테이블의 신규 필드를 안전하게 브리지합니다.
     """
-    # PostgreSQL deployments are initialized from the current ORM metadata.
+    # ``create_all()`` does not add a server default to an existing column.
+    # Set defaults explicitly for the Cloud SQL tables created before
+    # ``server_default=func.now()`` was introduced in the ORM models.
+    if connection.dialect.name == "postgresql":
+        for table_name, column_name in (
+            ("users", "created_at"),
+            ("instructors", "created_at"),
+            ("instructors", "updated_at"),
+            ("task_orders", "created_at"),
+            ("matching_results", "created_at"),
+            ("instructor_schedules", "created_at"),
+        ):
+            connection.exec_driver_sql(
+                f"ALTER TABLE {table_name} "
+                f"ALTER COLUMN {column_name} SET DEFAULT CURRENT_TIMESTAMP"
+            )
+        logger.info("database_timestamp_defaults_updated")
+        return
+
     # The PRAGMA-based bridge below is only for legacy local SQLite files.
     if connection.dialect.name != "sqlite":
         return
