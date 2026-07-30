@@ -115,7 +115,11 @@ async def update_memo(
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Matching result was not found")
     memo = str(body.get("memo", "")).strip()
     result.memo = memo[:1000] or None
-    return {"memo": result.memo}
+    if result.memo:
+        result.memo_author_name = current_user.name
+    else:
+        result.memo_author_name = None
+    return {"memo": result.memo, "memo_author_name": result.memo_author_name}
 
 
 @router.post("/{matching_id}/ai-reason/{instructor_id}")

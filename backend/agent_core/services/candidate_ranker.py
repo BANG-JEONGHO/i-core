@@ -68,7 +68,7 @@ def rank_instructors(
 
     rankings = []
     for id in repository.list_instructor_ids():
-        inst_id = int(id)
+        inst_id = id
         profile = build_instructor_profile(repository.get_instructor(inst_id))
         item = score_instructor(project, profile)
         if inst_id in vector_scores:

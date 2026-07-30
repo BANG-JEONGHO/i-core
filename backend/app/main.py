@@ -43,7 +43,7 @@ def _apply_additive_schema_updates(connection) -> None:
         )
         logger.info("database_schema_updated", table="task_orders", column="overview")
 
-    # 2. matching_results 테이블 memo 컬럼 체크 및 추가
+    # 2. matching_results 테이블 memo 및 memo_author_name 컬럼 체크 및 추가
     matching_columns = {
         row[1]
         for row in connection.exec_driver_sql("PRAGMA table_info(matching_results)").fetchall()
@@ -51,6 +51,10 @@ def _apply_additive_schema_updates(connection) -> None:
     if "memo" not in matching_columns:
         connection.exec_driver_sql("ALTER TABLE matching_results ADD COLUMN memo VARCHAR(1000)")
         logger.info("database_schema_updated", table="matching_results", column="memo")
+
+    if "memo_author_name" not in matching_columns:
+        connection.exec_driver_sql("ALTER TABLE matching_results ADD COLUMN memo_author_name VARCHAR(100)")
+        logger.info("database_schema_updated", table="matching_results", column="memo_author_name")
 
 
 @asynccontextmanager

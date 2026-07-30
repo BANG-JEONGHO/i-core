@@ -1,7 +1,7 @@
 import React, { useMemo, useRef, useEffect } from 'react';
 import { useQuery, useQueryClient } from '@tanstack/react-query';
 import { Link, useSearchParams } from 'react-router-dom';
-import { 
+import {
   Plus, Filter, Clock,
   CheckCircle2, FileText, Sparkles, MessageSquare, Trash2
 } from 'lucide-react';
@@ -91,7 +91,7 @@ export default function DashboardPage() {
   const { data: taskOrders } = useQuery({ queryKey: ['task-orders'], queryFn: () => taskOrdersApi.list(0, 100), refetchOnMount: 'always' });
 
   const recentItems = history || [];
-  
+
   const isFinalSelected = (item: any) =>
     item.has_final || (item.candidates && item.candidates.some((c: string) => c.startsWith('final_')));
 
@@ -117,17 +117,17 @@ export default function DashboardPage() {
     return true;
   };
 
-  const pendingTaskOrders = useMemo(() => 
+  const pendingTaskOrders = useMemo(() =>
     allPending.filter((item: any) => filterItem(item.created_at)),
     [allPending, startDate, endDate]
   );
 
-  const matchingItems = useMemo(() => 
+  const matchingItems = useMemo(() =>
     allMatching.filter((item: any) => filterItem(item.created_at)),
     [allMatching, startDate, endDate]
   );
 
-  const doneItems = useMemo(() => 
+  const doneItems = useMemo(() =>
     allDone.filter((item: any) => filterItem(item.created_at)),
     [allDone, startDate, endDate]
   );
@@ -194,20 +194,19 @@ export default function DashboardPage() {
 
   return (
     <div className="h-full flex flex-col select-none">
-      
-      {/* ---------------------------------------------------- */}
+
+      /* ---------------------------------------------------- */
       {/* 툴바 컨트롤 바 */}
       {/* ---------------------------------------------------- */}
       <div className="flex items-center justify-end gap-2 mb-5 pb-3 border-b border-slate-200/80 flex-wrap">
-        
+
         {/* 오늘 버튼 (안 눌렸을 때는 연한 톤, 눌렸을 때는 찐하고 선명한 톤) */}
-        <button 
+        <button
           onClick={handleToggleToday}
-          className={`px-4 py-1.5 text-xs font-bold rounded-lg transition-all border ${
-            isTodayActive
+          className={`px-4 py-1.5 text-xs font-bold rounded-lg transition-all border ${isTodayActive
               ? 'bg-sky-600 hover:bg-sky-700 text-white border-sky-600 shadow-sm'
               : 'bg-sky-50 hover:bg-sky-100 text-sky-700 border-sky-200/80'
-          }`}
+            }`}
           title={isTodayActive ? '클릭 시 오늘 필터 해제' : '오늘 생성된 항목만 보기'}
         >
           오늘
@@ -215,15 +214,14 @@ export default function DashboardPage() {
 
         {/* 날짜 범위 지정 필터 */}
         <div className="relative" ref={filterRef}>
-          <button 
+          <button
             onClick={() => setIsFilterOpen(!isFilterOpen)}
-            className={`flex items-center gap-1.5 px-3 py-1.5 border text-xs font-semibold rounded-lg shadow-2xs transition-all ${
-              isFilterActive && !isTodayActive
-                ? 'bg-sky-50 border-sky-300 text-sky-800 font-bold' 
+            className={`flex items-center gap-1.5 px-3 py-1.5 border text-xs font-semibold rounded-lg shadow-2xs transition-all ${isFilterActive && !isTodayActive
+                ? 'bg-sky-50 border-sky-300 text-sky-800 font-bold'
                 : isFilterActive
-                ? 'bg-slate-100 border-slate-300 text-slate-800 font-bold'
-                : 'bg-white border-slate-200 hover:bg-slate-50 text-slate-700'
-            }`}
+                  ? 'bg-slate-100 border-slate-300 text-slate-800 font-bold'
+                  : 'bg-white border-slate-200 hover:bg-slate-50 text-slate-700'
+              }`}
           >
             <Filter size={14} className={isFilterActive ? 'text-sky-700' : 'text-slate-500'} />
             필터 {isFilterActive && <span className="w-1.5 h-1.5 bg-sky-600 rounded-full"></span>}
@@ -246,21 +244,21 @@ export default function DashboardPage() {
               <div className="space-y-2.5">
                 <div>
                   <span className="block text-[11px] text-slate-400 mb-1 font-semibold">시작 날짜</span>
-                  <input 
-                    type="date" 
-                    value={startDate} 
-                    onChange={(e) => updateDates(e.target.value, endDate)} 
-                    className="w-full text-xs border border-slate-200 rounded-lg p-2 bg-slate-50 outline-none text-slate-800 font-semibold" 
+                  <input
+                    type="date"
+                    value={startDate}
+                    onChange={(e) => updateDates(e.target.value, endDate)}
+                    className="w-full text-xs border border-slate-200 rounded-lg p-2 bg-slate-50 outline-none text-slate-800 font-semibold"
                   />
                 </div>
 
                 <div>
                   <span className="block text-[11px] text-slate-400 mb-1 font-semibold">기한 (종료 날짜)</span>
-                  <input 
-                    type="date" 
-                    value={endDate} 
-                    onChange={(e) => updateDates(startDate, e.target.value)} 
-                    className="w-full text-xs border border-slate-200 rounded-lg p-2 bg-slate-50 outline-none text-slate-800 font-semibold" 
+                  <input
+                    type="date"
+                    value={endDate}
+                    onChange={(e) => updateDates(startDate, e.target.value)}
+                    className="w-full text-xs border border-slate-200 rounded-lg p-2 bg-slate-50 outline-none text-slate-800 font-semibold"
                   />
                 </div>
               </div>
@@ -278,11 +276,11 @@ export default function DashboardPage() {
       {/* 보드 뷰 */}
       {/* ---------------------------------------------------- */}
       <div className="flex-1 grid grid-cols-1 md:grid-cols-3 gap-4 min-h-0">
-        
+
         {/* 과업지시서 분석 (분석완료: 파란색) */}
         <JiraColumn title="과업지시서 분석" count={pendingTaskOrders.length} statusColor="border-blue-500 bg-blue-100/70">
           {pendingTaskOrders.map((taskOrder: any) => (
-            <JiraCard 
+            <JiraCard
               key={taskOrder.id}
               title={taskOrder.file_name}
               date={getLocalDateString(taskOrder.created_at)}
@@ -311,7 +309,7 @@ export default function DashboardPage() {
             const hasCandidates = item.candidates && item.candidates.length > 0;
             const title = taskOrderNameMap[item.task_order_id] || '매칭 분석';
             return (
-              <JiraCard 
+              <JiraCard
                 key={item.id}
                 title={title}
                 date={getLocalDateString(item.created_at)}
@@ -340,7 +338,7 @@ export default function DashboardPage() {
           {doneItems.map((item: any) => {
             const title = taskOrderNameMap[item.task_order_id] || '매칭 완료';
             return (
-              <JiraCard 
+              <JiraCard
                 key={item.id}
                 title={title}
                 date={getLocalDateString(item.created_at)}
@@ -350,6 +348,7 @@ export default function DashboardPage() {
                 typeIcon={<CheckCircle2 size={15} className="text-emerald-600" />}
                 assignee={user?.name || '관리자'}
                 memo={item.memo}
+                memoAuthor={item.memo_author_name}
                 onDelete={() => handleDeleteCard(item.id, 'done', title)}
                 onClick={() => setSelectedIssue({
                   id: item.id,
@@ -359,6 +358,7 @@ export default function DashboardPage() {
                   date: getLocalDateString(item.created_at),
                   assignee: user?.name || '관리자',
                   memo: item.memo,
+                  memoAuthor: item.memo_author_name,
                   matchingId: item.id,
                 })}
               />
@@ -369,7 +369,7 @@ export default function DashboardPage() {
       </div>
 
       {/* 이슈 상세 Drawer */}
-      <IssueDetailDrawer 
+      <IssueDetailDrawer
         item={selectedIssue}
         onClose={() => setSelectedIssue(null)}
         onUpdateMemo={() => {
@@ -408,37 +408,41 @@ function JiraColumn({ title, count, statusColor, children }: { title: string; co
   );
 }
 
-function JiraCard({ 
-  title, 
-  date, 
-  status, 
-  tag, 
-  tagColor, 
-  typeIcon, 
-  assignee, 
-  memo, 
+function JiraCard({
+  title,
+  date,
+  status,
+  tag,
+  tagColor,
+  typeIcon,
+  assignee,
+  memo,
+  memoAuthor,
   onDelete,
-  onClick 
-}: { 
-  title: string; 
-  date: string; 
-  status: string; 
-  tag: string; 
-  tagColor: string; 
-  typeIcon: React.ReactNode; 
-  assignee: string; 
-  memo?: string; 
+  onClick
+}: {
+  title: string;
+  date: string;
+  status: string;
+  tag: string;
+  tagColor: string;
+  typeIcon: React.ReactNode;
+  assignee: string;
+  memo?: string;
+  memoAuthor?: string;
   onDelete: () => void;
-  onClick: () => void; 
+  onClick: () => void;
 }) {
-  const tagColors: Record<string, string> = { 
-    blue: 'bg-blue-50 text-blue-700 border-blue-200', 
-    pink: 'bg-pink-50 text-pink-700 border-pink-200', 
-    green: 'bg-emerald-50 text-emerald-700 border-emerald-200' 
+  const tagColors: Record<string, string> = {
+    blue: 'bg-blue-50 text-blue-700 border-blue-200',
+    pink: 'bg-pink-50 text-pink-700 border-pink-200',
+    green: 'bg-emerald-50 text-emerald-700 border-emerald-200'
   };
 
+  const commentAuthor = memoAuthor || assignee;
+
   return (
-    <div 
+    <div
       onClick={onClick}
       className="bg-white border border-slate-200 hover:border-slate-400 rounded-xl p-3.5 shadow-xs hover:shadow-md transition-all cursor-pointer group relative flex flex-col justify-between"
     >
@@ -447,7 +451,7 @@ function JiraCard({
         <div className="flex items-center gap-1.5">
           {typeIcon}
         </div>
-        
+
         <div className="flex items-center gap-2">
           <span className="text-[10px] text-slate-400 font-medium flex items-center gap-1">
             <Clock size={10} /> {date}
@@ -472,7 +476,7 @@ function JiraCard({
       {memo && status === '완료' && (
         <div className="mb-3 text-[11px] bg-slate-50/90 p-2 rounded-lg border border-slate-200/80 flex items-center gap-1.5 font-medium text-slate-700 min-w-0">
           <MessageSquare size={12} className="text-slate-500 shrink-0" />
-          <span className="font-bold text-slate-900 shrink-0">{assignee}:</span>
+          <span className="font-bold text-slate-900 shrink-0">{commentAuthor}:</span>
           <span className="truncate text-slate-700">{memo}</span>
         </div>
       )}

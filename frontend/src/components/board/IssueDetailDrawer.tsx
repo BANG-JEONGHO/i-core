@@ -3,6 +3,7 @@ import { X, Calendar, MessageSquare, FileText, CheckCircle2, ArrowRight, Send, T
 import { Link } from 'react-router-dom';
 import toast from 'react-hot-toast';
 import { matchingApi } from '../../api/matching';
+import { useAuthStore } from '../../store/authStore';
 
 export type IssueDetailItem = {
   issueKey?: string;
@@ -13,6 +14,7 @@ export type IssueDetailItem = {
   date: string;
   assignee: string;
   memo?: string;
+  memoAuthor?: string;
   taskOrderId?: string;
   matchingId?: string;
   rawDetails?: any;
@@ -21,13 +23,14 @@ export type IssueDetailItem = {
 interface IssueDetailDrawerProps {
   item: IssueDetailItem | null;
   onClose: () => void;
-  onUpdateMemo?: (id: string, newMemo: string) => void;
+  onUpdateMemo?: (id: string, newMemo: string, authorName?: string) => void;
 }
 
 export default function IssueDetailDrawer({ item, onClose, onUpdateMemo }: IssueDetailDrawerProps) {
   const [memo, setMemo] = useState('');
   const [isEditing, setIsFocused] = useState(false);
   const [isSaving, setIsSaving] = useState(false);
+  const currentUser = useAuthStore((state) => state.user);
 
   useEffect(() => {
     if (item) {
@@ -39,17 +42,20 @@ export default function IssueDetailDrawer({ item, onClose, onUpdateMemo }: Issue
   if (!item) return null;
 
   const isDoneItem = item.type === 'done' || item.status.includes('완료') || item.status.includes('선정');
+  const displayAuthor = item.memoAuthor || item.assignee;
 
   const handleSaveMemo = async () => {
     if (!isDoneItem) return;
     setIsSaving(true);
     try {
+      let updatedAuthorName: string | undefined;
       if (item.matchingId || item.type !== 'task_order') {
         const idToUpdate = item.matchingId || item.id;
-        await matchingApi.updateMemo(idToUpdate, memo);
+        const res = await matchingApi.updateMemo(idToUpdate, memo);
+        updatedAuthorName = res.memo_author_name || currentUser?.name;
       }
       if (onUpdateMemo) {
-        onUpdateMemo(item.id, memo);
+        onUpdateMemo(item.id, memo, updatedAuthorName);
       }
       toast.success('코멘트가 저장되었습니다.');
       setIsFocused(false);
@@ -68,7 +74,7 @@ export default function IssueDetailDrawer({ item, onClose, onUpdateMemo }: Issue
       await matchingApi.updateMemo(idToUpdate, '');
       setMemo('');
       if (onUpdateMemo) {
-        onUpdateMemo(item.id, '');
+        onUpdateMemo(item.id, '', undefined);
       }
       toast.success('코멘트가 삭제되었습니다.');
       setIsFocused(true);
@@ -174,9 +180,9 @@ export default function IssueDetailDrawer({ item, onClose, onUpdateMemo }: Issue
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-2">
                       <div className="w-5 h-5 rounded-full bg-amber-100 border border-amber-200 text-slate-900 flex items-center justify-center font-bold text-[9px]">
-                        {item.assignee.charAt(0)}
+                        {displayAuthor.charAt(0)}
                       </div>
-                      <span className="text-xs font-bold text-slate-900">{item.assignee}</span>
+                      <span className="text-xs font-bold text-slate-900">{displayAuthor}</span>
                       <span className="text-[10px] text-slate-400">• {item.date}</span>
                     </div>
 
@@ -207,7 +213,7 @@ export default function IssueDetailDrawer({ item, onClose, onUpdateMemo }: Issue
                 <div className="border border-slate-300 ring-2 ring-slate-100 bg-white rounded-xl shadow-xs transition-all">
                   <div className="p-3 flex gap-2.5 items-start">
                     <div className="w-6 h-6 rounded-full bg-slate-800 text-white flex items-center justify-center font-bold text-[10px] shrink-0 mt-0.5">
-                      {item.assignee.charAt(0)}
+                      {(currentUser?.name || displayAuthor).charAt(0)}
                     </div>
                     <textarea 
                       value={memo}
@@ -217,8 +223,8 @@ export default function IssueDetailDrawer({ item, onClose, onUpdateMemo }: Issue
                     />
                   </div>
 
-                  <div className="px-3 py-2 border-t border-slate-100 bg-slate-50/50 rounded-b-xl flex items-center justify-between">
-                    <span className="text-[10px] text-slate-400">작성자: {item.assignee}</span>
+                  <div className="px-3.5 py-2 border-t border-slate-100 bg-slate-50/50 rounded-b-xl flex items-center justify-between">
+                    <span className="text-[10px] text-slate-400">작성자: {currentUser?.name || displayAuthor}</span>
                     <div className="flex items-center gap-2">
                       {item.memo && (
                         <button 

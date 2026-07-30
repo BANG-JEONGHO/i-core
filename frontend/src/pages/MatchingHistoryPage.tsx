@@ -80,6 +80,9 @@ export default function MatchingHistoryPage() {
                     {item.memo && (
                       <div className="flex items-center gap-1.5 text-[11px] text-slate-500 bg-amber-50/60 border border-amber-200/60 p-2.5 rounded-lg font-medium mb-1">
                         <MessageSquare size={12} className="text-amber-600 shrink-0" />
+                        {item.memo_author_name && (
+                          <span className="font-bold text-slate-900 shrink-0">{item.memo_author_name}:</span>
+                        )}
                         <span className="truncate">{item.memo}</span>
                       </div>
                     )}

@@ -149,6 +149,7 @@ async def list_matching_history(
             candidates=item.candidates or [],
             has_final=any(str(c).startswith("final_") for c in (item.candidates or [])),
             memo=item.memo,
+            memo_author_name=item.memo_author_name,
             created_at=item.created_at,
         )
         for item in result.scalars().all()
@@ -161,6 +162,8 @@ def _as_response(matching_result: MatchingResult) -> MatchingResultResponse:
         task_order_id=matching_result.task_order_id,
         results=[MatchScoreDTO(**item) for item in matching_result.results],
         candidates=matching_result.candidates or [],
+        memo=matching_result.memo,
+        memo_author_name=matching_result.memo_author_name,
         created_at=matching_result.created_at,
     )
 

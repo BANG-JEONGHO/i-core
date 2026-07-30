@@ -38,7 +38,7 @@ export const matchingApi = {
     await apiClient.delete(`/api/matching/${matchingId}`);
   },
 
-  updateMemo: async (matchingId: string, memo: string): Promise<{ memo: string | null }> => {
+  updateMemo: async (matchingId: string, memo: string): Promise<{ memo: string | null; memo_author_name: string | null }> => {
     const response = await apiClient.put(`/api/matching/${matchingId}/memo`, { memo });
     return response.data;
   },

@@ -122,6 +122,8 @@ export interface MatchingResult {
   task_order_id: string;
   results: MatchScore[];
   candidates: string[];
+  memo?: string | null;
+  memo_author_name?: string | null;
   created_at: string;
 }
 

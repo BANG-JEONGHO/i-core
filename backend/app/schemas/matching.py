@@ -27,6 +27,8 @@ class MatchingResultResponse(BaseModel):
     task_order_id: str
     results: list[MatchScoreDTO]
     candidates: list[str] = []
+    memo: str | None = None
+    memo_author_name: str | None = None
     created_at: datetime
 
     class Config:
@@ -41,6 +43,7 @@ class MatchingSummary(BaseModel):
     candidates: list[str] = []
     has_final: bool = False
     memo: str | None = None
+    memo_author_name: str | None = None
     created_at: datetime
 
 
