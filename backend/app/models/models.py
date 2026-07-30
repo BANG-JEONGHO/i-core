@@ -29,7 +29,7 @@ class User(Base):
     hashed_password: Mapped[str] = mapped_column(String(200), nullable=False)
     name: Mapped[str] = mapped_column(String(50), nullable=False)
     is_active: Mapped[bool] = mapped_column(Boolean, default=True)
-    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    created_at: Mapped[datetime] = mapped_column(DateTime)
 
 
 class Instructor(Base):
@@ -61,10 +61,8 @@ class Instructor(Base):
     lecture_history: Mapped[list] = mapped_column(JSON, default=list)
     # 자격/경력 (JSON 배열)
     qualifications_career: Mapped[list] = mapped_column(JSON, default=list)
-    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
-    updated_at: Mapped[datetime] = mapped_column(
-        DateTime, default=datetime.utcnow, onupdate=datetime.utcnow
-    )
+    created_at: Mapped[datetime] = mapped_column(DateTime)
+    updated_at: Mapped[datetime] = mapped_column(DateTime)
 
 
 class TaskOrder(Base):
@@ -82,7 +80,7 @@ class TaskOrder(Base):
     overview: Mapped[dict] = mapped_column(JSON, default=dict)
     parsed_at: Mapped[datetime | None] = mapped_column(DateTime, nullable=True)
     uploaded_by: Mapped[str] = mapped_column(String(36), ForeignKey("users.id"))
-    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    created_at: Mapped[datetime] = mapped_column(DateTime)
 
 
 class MatchingResult(Base):
@@ -97,7 +95,7 @@ class MatchingResult(Base):
     candidates: Mapped[list] = mapped_column(JSON, default=list)
     memo: Mapped[str | None] = mapped_column(String(1000), nullable=True, default=None)
     executed_by: Mapped[str] = mapped_column(String(36), ForeignKey("users.id"))
-    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    created_at: Mapped[datetime] = mapped_column(DateTime)
 
 
 class InstructorSchedule(Base):
@@ -113,4 +111,4 @@ class InstructorSchedule(Base):
     end_date: Mapped[str] = mapped_column(String(10), nullable=False)
     note: Mapped[str | None] = mapped_column(Text, nullable=True)
     created_by: Mapped[str | None] = mapped_column(String(36), nullable=True)
-    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    created_at: Mapped[datetime] = mapped_column(DateTime)
