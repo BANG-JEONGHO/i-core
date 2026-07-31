@@ -1,0 +1,363 @@
+{
+  "run_id": "20260725T003844Z_6df0ae57dff4",
+  "final_score": 60.5,
+  "final_status": "on_hold",
+  "reasons": [
+    "Code validation found an invalid citation or an unmet exact mandatory condition.",
+    "A/B score difference: 19.0",
+    "Evidence coverage: 100%",
+    "Verifier verdict: FAIL",
+    "Code grounding verdict: FAIL",
+    "Citation accuracy: 57%"
+  ],
+  "analysis": {
+    "total_score": 70.0,
+    "score_items": [
+      {
+        "criterion": "topic_match",
+        "score": 25.0,
+        "max_score": 35.0,
+        "rationale": "강사는 AWS DeepRacer 과정 등 AWS 및 클라우드 분야와 관련된 강의 경력을 다수 보유하고 있으나, 본 과업이 요구하는 AWS Certified Cloud Practitioner 자격증 취득 목적의 핵심 이론 및 실습 교육을 직접 전담한 명시적인 실적은 확인하기 어렵습니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:4c3fea27-9584-47b7-acdb-b6895a8fea52",
+            "page": null,
+            "section": "chunk 1",
+            "quote": ".\n계약방법 : 제한경쟁입찰, 협상에 의한 계약\n라.\n사업예산 : 금 25,792,000 원(VAT포함)\n마.\n교육목표\n○ 교육 일정 : 2026.01.14.(수)~2026.01.16.(금)\n○ 모집 : 30명 선발\n바.\n모집대상 : 빅데이터 컨소시엄 재학생 30명\n사.\n운영장소 : 집체 교육이 가능한 강의실 대여\n2.\n세부 과업 범위\n가.\n과업 내용氠瑢\n구분\n과업 내용\n프로그램 홍보\n가.\n프로그램 목적 및 목표 달성을 위한 프로그램 홍보\n- 홍보를 위한 현수막 및 배너 제작\n교육 참가자 관리\n가.\n대상: 빅데이터 컨소시엄 재학생\n나.\n교육 참가자 30명 모집 및 관리\n다.\n관리: 교육 과정 운영 및 안전 관리\n교육 실습용\n재료 제공\n가.\n교육 및 실습에 필요한 데이터 및 라이센스 제공\n나.\n공인 AWS 전문가로 교육 구성\n교육 운영\n교육 과정\n구성 및 기획\n가.\n교육 프로그램 전체 구성 및 운영 방법 기획\n나.\n강의 계획 및 강의(안) 제작\n다.\n전문 교육강사, 운영진 섭외\n이론 교육\n가.\n클라우드 컴퓨팅 기본 개념 이해\n- AWS 클라우드, 글로벌 인프라 구조 이해\n나.\nAmazon EC2, AWS Lambda 등 서버 및 컴퓨팅 리소스       서비스 이해\n다.\nAWS Well Architected Framework 클라우드 아키텍처 설      계 이해\n라.\nAWS Certified Cloud Practitioner 자격 시험 대비 교육\n프로그램 운영\n가.\n프로그램 주관인력 배치\n나.\n장소 대관 및 현수막 등 제작\n다.\n참가자 다과 제공\n라.\n오프라인 교육 3일간 식사 제공\n결과 보고 및 제언\n가.\n교육 결과 보고를 위한 영상, 사진 등 미디어 자료 취합\n- 프로그램 진행 사진 및 동영상 제출\n나.\n프로그램 만족도 설문조사 진행\n다.\n교육 전반적인 추진 성과 및 결과 보고",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": []
+      },
+      {
+        "criterion": "teaching_depth",
+        "score": 20.0,
+        "max_score": 30.0,
+        "rationale": "강사는 20년 경력의 풍부한 교육 경험과 구름, 멀티캠퍼스 등 유수 교육 기관에서의 클라우드 네이티브 및 실무 프로젝트형 교육 경험을 보유하고 있어 교육 운영 능력이 탁월하지만, 본 용역에서 요구하는 AWS Certified Cloud Practitioner 자격 대비 모의고사 세션 구성 등 자격 시험 특화 교육의 실제 수행 이력은 구체적이지 않습니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:4c3fea27-9584-47b7-acdb-b6895a8fea52",
+            "page": null,
+            "section": "chunk 2",
+            "quote": "간 식사 제공\n결과 보고 및 제언\n가.\n교육 결과 보고를 위한 영상, 사진 등 미디어 자료 취합\n- 프로그램 진행 사진 및 동영상 제출\n나.\n프로그램 만족도 설문조사 진행\n다.\n교육 전반적인 추진 성과 및 결과 보고\n(종합결과 및 개선사항 반영) 등\n※ 상기 과업 내용은 예시로서 과업 목표를 달성하기 위해 과업 내용이 추가 될 수 있음\n나.\n세부 교육내용(안)\n❍ 제안사는 공인 AWS 교육 전문가를 활용하여 교육과정을 제공해야 함\n❍ 교육 과정은 AWS Certified Cloud Practitioner 자격증 대비를 목표로 하며, 별도의 모의고사 세션을 필수로 포함해야 함.\n다.\n운영 내용\n❍ 제안사는 프로그램 진행을 위한 장소를 대여하여야 하며, 30명의 참여자 및 사업단 관계자를 원활하게 수용할 수 있어야 한다.\n❍ 제안사는 장소 대여 전 사업단의 최종 승인을 받아야한다.\n❍ 제안사는 프로그램 운영에 최선을 변경사항과 특이사항 발생 시 즉각 주관기관에게 보고 후 협의한다.\n라.\n사업수행 조직 인력 및 관리\n❍ 제안사는 사업의 성공적인 추진을 위해 사업 총괄 책임자를 두어 사업을 책임지고 수행하며, 필요한 경우 주관기관과 협의하여 진행한다.\n❍ 계약기간 중 참여 인력은 임의로 교체할 수 없으며, 부득이한 경우 사전에 교체 사유와 교체 인력의 명단, 경력 등에 관한 서류를 주관기관에 제출하고 승인을 받아야 한다.\n❍ 참여 인력 중 업무 태만 등 부적합하다고 판단되는 인력에 대해 주관기관은 인력 교체를 요구할 수 있으며, 이에 제안사는 해당 인력을 교체해야 한다.\n마.\n과업협의 및 보고\n❍ 업무보고 세부내용\n- 착수계는 계약일로부터 7일 이내에 제출하여야 하며, 과업의 수행방법, 사업수행자 명단, 참여자의 인적사항, 조직의 편성 및 수행계획 등을 포함하여야 한다.",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": []
+      },
+      {
+        "criterion": "audience_fit",
+        "score": 15.0,
+        "max_score": 15.0,
+        "rationale": "본 용역의 교육 대상은 빅데이터 컨소시엄 대학 재학생이며, 강사는 제주대학교, 한국외국어대학교, 전남대학교, 전북대학교 등 다양한 대학교의 재학생들을 대상으로 AWS DeepRacer 과정 및 AI 전문인력 양성 과정 등을 다수 운영한 이력이 확인되어 교육 대상과의 적합도가 매우 높습니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:4c3fea27-9584-47b7-acdb-b6895a8fea52",
+            "page": null,
+            "section": "chunk 1",
+            "quote": ".\n계약방법 : 제한경쟁입찰, 협상에 의한 계약\n라.\n사업예산 : 금 25,792,000 원(VAT포함)\n마.\n교육목표\n○ 교육 일정 : 2026.01.14.(수)~2026.01.16.(금)\n○ 모집 : 30명 선발\n바.\n모집대상 : 빅데이터 컨소시엄 재학생 30명\n사.\n운영장소 : 집체 교육이 가능한 강의실 대여\n2.\n세부 과업 범위\n가.\n과업 내용氠瑢\n구분\n과업 내용\n프로그램 홍보\n가.\n프로그램 목적 및 목표 달성을 위한 프로그램 홍보\n- 홍보를 위한 현수막 및 배너 제작\n교육 참가자 관리\n가.\n대상: 빅데이터 컨소시엄 재학생\n나.\n교육 참가자 30명 모집 및 관리\n다.\n관리: 교육 과정 운영 및 안전 관리",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": []
+      },
+      {
+        "criterion": "career_and_certification",
+        "score": 5.0,
+        "max_score": 15.0,
+        "rationale": "본 과업은 '공인 AWS 교육 전문가'의 활용을 필수 요건으로 내세우고 있으나, 강사는 정보처리기사 2급 및 정보처리 기능사 1급/2급 자격만 증빙되고 있으며, AWS 공인 교육 전문가(AWS Certified Instructor) 등 AWS 관련 공인 자격증의 취득 여부 및 관련 공식 증빙은 기재되어 있지 않아 요건 부합도가 다소 떨어집니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:4c3fea27-9584-47b7-acdb-b6895a8fea52",
+            "page": null,
+            "section": "chunk 0",
+            "quote": "捤獥汤捯氠瑢\n경기과학기술대학교\n2025년 빅데이터혁신융합대학사업\n동계 AWS 교육 제안요청서\n氠瑢\nⅠ\n사업개요\n1.\n과업명 : 경기과학기술대학교 2025년 빅데이터혁신융합대학사업\n동계 AWS 교육 프로그램 운영 용역\n2.\n과업의 목적\n○ AWS 클라우드의 기본적 글로벌 인프라 이해\n○ AWS Certified Cloud Practitioner 자격증 취득\n○ 컴퓨터 네트워크, 데이터베이스, 스토리지 등 핵심 AWS 서비스 이해\n○ 집체교육을 통하여 산업체에서 요구하는 SW 기초 실무 능력 함양\n3.\n과업 기간 : 계약체결일로부터 캠프종료일 까지\n4.\n사업금액 : 금 25,792,000 원(VAT포함)\n* 강사료, 교육라이센스 이용료, 운영비 등 교육 운영에 필요한 모든 비용 포함\n5.\n프로그램 기간 : 2026.01.14.(수) ~ 2026.01.16.(금)\n6.\n주요 과업 내용\n가.\n교육인원 : 30명\n나.\n기획 : 교육과정 구성, 프로그램 운영, 참여학생 모집을 위한 홍보물 제작, 식사예약 등\n다.\n교육 운영 :\n- 공인 AWS 교육 전문가를 활용한 교육 진행\n- 오프라인 교육을 통한 교육 수료증 제공\n라.\n학생 관리 : 학생 관리를 위한 전반적인 사항\n마.\n사후관리 : 프로그램 운영 결과보고 및 학생 만족도 조사 등 피드백 환류\n바.\n기타 : 프로그램 운영에 필요한 모든 사항\n氠瑢\nⅡ\n제안 요청 사항\n1.\n과업개요\n가.\n사업명 : 경기과학기술대학교 2025년 빅데이터혁신융합대학사업\n동계 AWS 교육 프로그램 운영 용역\n나.\n사업기간 : 계약일로부터 캠프종료일까지\n다.\n계약방법 : 제한경쟁입찰, 협상에 의한 계약\n라.\n사업예산 : 금 25,792,000 원(VAT포함)\n마.\n교육목표\n○ 교육 일정 : 2026.01.14.(수)~2026.01.16.(금)\n○ 모집 : 30명 선발",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": []
+      },
+      {
+        "criterion": "evidence_completeness",
+        "score": 5.0,
+        "max_score": 5.0,
+        "rationale": "평가 대상이 되는 정성 항목 전체에서 분석 과업(제안요청서)의 세부 요구 사항과 강사의 활동 이력 간의 정합성을 검증할 수 있는 출처 문헌 근거들을 상호 누락 없이 풍부하게 제시하였습니다.",
+        "project_evidence": [],
+        "instructor_evidence": []
+      }
+    ],
+    "recommendation_reasons": [
+      "AWS DeepRacer 교육과 같이 대학 및 공공기관 대상의 풍부한 오프라인 AWS 및 클라우드 교육 실적이 있어 대학 재학생 교육에 대한 노하우가 매우 우수합니다.",
+      "20년 이상의 풍부한 IT 교육 경력을 바탕으로 한 수석강사로서의 교육 운영 안정성이 기대됩니다."
+    ],
+    "gaps": [
+      "강사의 이력서 및 자격증 목록 상에 제안요청서가 필수 자격 요건으로 제시한 '공인 AWS 교육 전문가' 자격 여부를 명시적으로 증명할 수 있는 자료(AWS Certified Instructor 등)가 누락되어 있습니다."
+    ],
+    "risks": [
+      "과업에 필수적인 '공인 AWS 교육 전문가' 자격 요건을 정식으로 증빙하지 못할 경우, 제안 자격 미달로 계약 수행 시 문제가 될 위험이 존재합니다."
+    ],
+    "required_conditions_passed": null,
+    "required_condition_notes": [
+      "제안요청서의 핵심 인력요건으로 '공인 AWS 교육 전문가' 활용이 기재되어 있으나, 강사 증빙 자료상에 해당 자격 취득 사실이 기재되어 있지 않아 필수 요건 검증에 제한이 발생합니다."
+    ]
+  },
+  "verification": {
+    "independent_score": 51.0,
+    "verdict": "FAIL",
+    "evidence_coverage": 1.0,
+    "issues": [
+      {
+        "severity": "high",
+        "category": "required_condition",
+        "description": "용역 과업의 필수 조건인 '공인 AWS 교육 전문가(강사)' 요건을 증명할 수 있는 AWS 공인 강사(ACI) 자격증 혹은 AWS 자격증 보유 사실이 강사의 이력 및 자격 사항에서 확인되지 않습니다.",
+        "related_criterion": "career_and_certification"
+      }
+    ],
+    "corrected_score_items": [
+      {
+        "criterion": "topic_match",
+        "score": 15.0,
+        "max_score": 35.0,
+        "rationale": "본 과업의 핵심 주제는 AWS 클라우드 인프라의 기초 이해 및 'AWS Certified Cloud Practitioner 자격증 취득' 교육입니다. 그러나 강사는 인공지능 및 머신러닝 교구를 활용하는 'AWS DeepRacer 과정' 중심의 강의를 주로 진행하였으며, AWS Cloud Practitioner 자격증 대비를 위한 기초 인프라 및 핵심 서비스 강의 실적은 구체적으로 명시되어 있지 않아 주제 부합도가 다소 떨어집니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:4c3fea27-9584-47b7-acdb-b6895a8fea52",
+            "page": null,
+            "section": "chunk 1",
+            "quote": "AWS Certified Cloud Practitioner 자격증 대비 교육",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1629",
+            "quote": "AWS DeepRacer 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "criterion": "teaching_depth",
+        "score": 18.0,
+        "max_score": 30.0,
+        "rationale": "강사는 20년 이상의 풍부한 IT 및 클라우드 분야 교육 경력을 보유하고 있으나, 자격증 취득 과정 설계 및 모의고사 세션 필수 운영 등 본 과업에서 요구하는 구체적인 수험 맞춤형 교수 설계 역량을 검증할 수 있는 AWS 자격증 교육 실적이 부족합니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:4c3fea27-9584-47b7-acdb-b6895a8fea52",
+            "page": null,
+            "section": "chunk 2",
+            "quote": "교육 과정은 AWS Certified Cloud Practitioner 자격증 대비를 목표로 하며, 별도의 모의고사 세션을 필수로 포함해야 함.",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": [
+          {
+            "source_document_id": "instructor-db:74",
+            "page": null,
+            "section": "instructors",
+            "quote": "AI, 클라우드, 시스템 프로그래밍 개발 및 교육 20년 경력의 수석강사",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "criterion": "audience_fit",
+        "score": 12.0,
+        "max_score": 15.0,
+        "rationale": "과업 대상은 대학 재학생 30명이며, 강사는 제주대학교, 한국외국어대학교, 전북대학교 등 다수의 대학생 대상 강의 수행 이력이 풍부하여 대상자 맞춤형 교육 진행 역량은 우수하다고 평가됩니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:4c3fea27-9584-47b7-acdb-b6895a8fea52",
+            "page": null,
+            "section": "chunk 1",
+            "quote": "모집대상 : 빅데이터 컨소시엄 재학생 30명",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1631",
+            "quote": "AWS DeepRacer 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "criterion": "career_and_certification",
+        "score": 3.0,
+        "max_score": 15.0,
+        "rationale": "제안요청서의 필수 인력 조건으로 '공인 AWS 교육 전문가(강사)' 활용이 요구되나, 강사는 정보처리 기사/기능사 외에 AWS 관련 공인 자격증(ACI - AWS Certified Instructor 또는 AWS Certified Cloud Practitioner 등)을 보유했다는 증빙이 강사 프로필 및 자격 내역에 명시되어 있지 않아 해당 필수 요건을 충족하지 못합니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:4c3fea27-9584-47b7-acdb-b6895a8fea52",
+            "page": null,
+            "section": "chunk 2",
+            "quote": "제안사는 공인 AWS 교육 전문가를 활용하여 교육과정을 제공해야 함",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 695",
+            "quote": "정보처리 기사 2급",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "criterion": "evidence_completeness",
+        "score": 3.0,
+        "max_score": 5.0,
+        "rationale": "강사의 20년 강의 경력 등 기본 증빙은 완전하게 제공되었으나, 과업의 핵심 자격 요건인 공인 AWS 교육 전문가(ACI) 자격 및 AWS Certified Cloud Practitioner 취득 관련 교육 성과에 대한 구체적 입증 자료가 결여되어 있어 감점 처리합니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:4c3fea27-9584-47b7-acdb-b6895a8fea52",
+            "page": null,
+            "section": "chunk 0",
+            "quote": "공인 AWS 교육 전문가를 활용한 교육 진행",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 701",
+            "quote": "교육팀 수석강사",
+            "confidence": 1.0
+          }
+        ]
+      }
+    ],
+    "required_conditions_passed": false
+  },
+  "grounding": {
+    "citation_accuracy": 0.5714285714285714,
+    "invalid_citation_count": 6,
+    "unsupported_positive_score_count": 4,
+    "required_condition_checks": [],
+    "verdict": "FAIL"
+  },
+  "rag_context": {
+    "project_evidence": [
+      {
+        "source_type": "project",
+        "evidence": {
+          "source_document_id": "task-order:4c3fea27-9584-47b7-acdb-b6895a8fea52",
+          "page": null,
+          "section": "chunk 2",
+          "quote": "간 식사 제공\n결과 보고 및 제언\n가.\n교육 결과 보고를 위한 영상, 사진 등 미디어 자료 취합\n- 프로그램 진행 사진 및 동영상 제출\n나.\n프로그램 만족도 설문조사 진행\n다.\n교육 전반적인 추진 성과 및 결과 보고\n(종합결과 및 개선사항 반영) 등\n※ 상기 과업 내용은 예시로서 과업 목표를 달성하기 위해 과업 내용이 추가 될 수 있음\n나.\n세부 교육내용(안)\n❍ 제안사는 공인 AWS 교육 전문가를 활용하여 교육과정을 제공해야 함\n❍ 교육 과정은 AWS Certified Cloud Practitioner 자격증 대비를 목표로 하며, 별도의 모의고사 세션을 필수로 포함해야 함.\n다.\n운영 내용\n❍ 제안사는 프로그램 진행을 위한 장소를 대여하여야 하며, 30명의 참여자 및 사업단 관계자를 원활하게 수용할 수 있어야 한다.\n❍ 제안사는 장소 대여 전 사업단의 최종 승인을 받아야한다.\n❍ 제안사는 프로그램 운영에 최선을 변경사항과 특이사항 발생 시 즉각 주관기관에게 보고 후 협의한다.\n라.\n사업수행 조직 인력 및 관리\n❍ 제안사는 사업의 성공적인 추진을 위해 사업 총괄 책임자를 두어 사업을 책임지고 수행하며, 필요한 경우 주관기관과 협의하여 진행한다.\n❍ 계약기간 중 참여 인력은 임의로 교체할 수 없으며, 부득이한 경우 사전에 교체 사유와 교체 인력의 명단, 경력 등에 관한 서류를 주관기관에 제출하고 승인을 받아야 한다.\n❍ 참여 인력 중 업무 태만 등 부적합하다고 판단되는 인력에 대해 주관기관은 인력 교체를 요구할 수 있으며, 이에 제안사는 해당 인력을 교체해야 한다.\n마.\n과업협의 및 보고\n❍ 업무보고 세부내용\n- 착수계는 계약일로부터 7일 이내에 제출하여야 하며, 과업의 수행방법, 사업수행자 명단, 참여자의 인적사항, 조직의 편성 및 수행계획 등을 포함하여야 한다.",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.7837
+      },
+      {
+        "source_type": "project",
+        "evidence": {
+          "source_document_id": "task-order:4c3fea27-9584-47b7-acdb-b6895a8fea52",
+          "page": null,
+          "section": "chunk 1",
+          "quote": ".\n계약방법 : 제한경쟁입찰, 협상에 의한 계약\n라.\n사업예산 : 금 25,792,000 원(VAT포함)\n마.\n교육목표\n○ 교육 일정 : 2026.01.14.(수)~2026.01.16.(금)\n○ 모집 : 30명 선발\n바.\n모집대상 : 빅데이터 컨소시엄 재학생 30명\n사.\n운영장소 : 집체 교육이 가능한 강의실 대여\n2.\n세부 과업 범위\n가.\n과업 내용氠瑢\n구분\n과업 내용\n프로그램 홍보\n가.\n프로그램 목적 및 목표 달성을 위한 프로그램 홍보\n- 홍보를 위한 현수막 및 배너 제작\n교육 참가자 관리\n가.\n대상: 빅데이터 컨소시엄 재학생\n나.\n교육 참가자 30명 모집 및 관리\n다.\n관리: 교육 과정 운영 및 안전 관리\n교육 실습용\n재료 제공\n가.\n교육 및 실습에 필요한 데이터 및 라이센스 제공\n나.\n공인 AWS 전문가로 교육 구성\n교육 운영\n교육 과정\n구성 및 기획\n가.\n교육 프로그램 전체 구성 및 운영 방법 기획\n나.\n강의 계획 및 강의(안) 제작\n다.\n전문 교육강사, 운영진 섭외\n이론 교육\n가.\n클라우드 컴퓨팅 기본 개념 이해\n- AWS 클라우드, 글로벌 인프라 구조 이해\n나.\nAmazon EC2, AWS Lambda 등 서버 및 컴퓨팅 리소스       서비스 이해\n다.\nAWS Well Architected Framework 클라우드 아키텍처 설      계 이해\n라.\nAWS Certified Cloud Practitioner 자격 시험 대비 교육\n프로그램 운영\n가.\n프로그램 주관인력 배치\n나.\n장소 대관 및 현수막 등 제작\n다.\n참가자 다과 제공\n라.\n오프라인 교육 3일간 식사 제공\n결과 보고 및 제언\n가.\n교육 결과 보고를 위한 영상, 사진 등 미디어 자료 취합\n- 프로그램 진행 사진 및 동영상 제출\n나.\n프로그램 만족도 설문조사 진행\n다.\n교육 전반적인 추진 성과 및 결과 보고",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.7812
+      },
+      {
+        "source_type": "project",
+        "evidence": {
+          "source_document_id": "task-order:4c3fea27-9584-47b7-acdb-b6895a8fea52",
+          "page": null,
+          "section": "chunk 0",
+          "quote": "捤獥汤捯氠瑢\n경기과학기술대학교\n2025년 빅데이터혁신융합대학사업\n동계 AWS 교육 제안요청서\n氠瑢\nⅠ\n사업개요\n1.\n과업명 : 경기과학기술대학교 2025년 빅데이터혁신융합대학사업\n동계 AWS 교육 프로그램 운영 용역\n2.\n과업의 목적\n○ AWS 클라우드의 기본적 글로벌 인프라 이해\n○ AWS Certified Cloud Practitioner 자격증 취득\n○ 컴퓨터 네트워크, 데이터베이스, 스토리지 등 핵심 AWS 서비스 이해\n○ 집체교육을 통하여 산업체에서 요구하는 SW 기초 실무 능력 함양\n3.\n과업 기간 : 계약체결일로부터 캠프종료일 까지\n4.\n사업금액 : 금 25,792,000 원(VAT포함)\n* 강사료, 교육라이센스 이용료, 운영비 등 교육 운영에 필요한 모든 비용 포함\n5.\n프로그램 기간 : 2026.01.14.(수) ~ 2026.01.16.(금)\n6.\n주요 과업 내용\n가.\n교육인원 : 30명\n나.\n기획 : 교육과정 구성, 프로그램 운영, 참여학생 모집을 위한 홍보물 제작, 식사예약 등\n다.\n교육 운영 :\n- 공인 AWS 교육 전문가를 활용한 교육 진행\n- 오프라인 교육을 통한 교육 수료증 제공\n라.\n학생 관리 : 학생 관리를 위한 전반적인 사항\n마.\n사후관리 : 프로그램 운영 결과보고 및 학생 만족도 조사 등 피드백 환류\n바.\n기타 : 프로그램 운영에 필요한 모든 사항\n氠瑢\nⅡ\n제안 요청 사항\n1.\n과업개요\n가.\n사업명 : 경기과학기술대학교 2025년 빅데이터혁신융합대학사업\n동계 AWS 교육 프로그램 운영 용역\n나.\n사업기간 : 계약일로부터 캠프종료일까지\n다.\n계약방법 : 제한경쟁입찰, 협상에 의한 계약\n라.\n사업예산 : 금 25,792,000 원(VAT포함)\n마.\n교육목표\n○ 교육 일정 : 2026.01.14.(수)~2026.01.16.(금)\n○ 모집 : 30명 선발",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.7546
+      },
+      {
+        "source_type": "project",
+        "evidence": {
+          "source_document_id": "task-order:4c3fea27-9584-47b7-acdb-b6895a8fea52",
+          "page": null,
+          "section": "chunk 12",
+          "quote": "인력 현황\n□ 수행 인력 현황\n氠瑢\n분야\n성명\n해당분야\n업무경력\n직급\n담당업무\n투입률\n사업총괄\n책 임 자\n사업관리자\n(PM)\n부문\n부문\n부문\n부문\n부문\n부문\n부문\n□ 수행 인력 개인별 경력 사항\n氠瑢\n성명\n소속\n직위\n연령\n세\n제안업체 근속년수\n년      월   ~       년     월  (     년      개월)\n해당분야 업무경력\n년      월   ~       년     월  (     년      개월)\n경  력  사  항\n참여 사업명\n사업 개요\n참여기간\n발주기관\n참여 당시\n담당업무\n소속회사\n직위\n* 투입 인력은 반드시 본 사업에 투입 가능한 인력으로 구성하여야 하며, 개인별 경력 사항이 허위사실로 판명될 경우 계약업체 선정을 무효화 함.\n* 참여 사업명은 대학, 공공기관, 일반업체 순으로 작성함.\n[서식5] 최근 3년간 유사 용역사업 수행 실적\n최근 3년간 유사 용역사업 수행 실적\n氠瑢\n번호\n사업명\n사업개요\n사업기간\n(완료구분)\n계약금액\n(천원)\n발주처\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n1.\n완료 구분란은 완료, 진행 중으로 명시\n2.\n현재 수행중인 업무를 포함 최근 연도순으로 실적 기재\n3.\n실적증명서 등의 증빙자료 첨부\n[서식6] 실적증명서\n실 적 증 명 서\n氠瑢\n신 청 인\n업체명(상호)\n대 표 자\n영업소재지\n(주  소)\n전화번호\n사업자 등록번호\n제 출 처\n증명서용도\n경기과학기술대학교 2025년 빅데이터 혁신융합대학사업 동계 AWS 교육 프로그램 용역 입찰시 제출\n사업수행\n실적내용\n사  업  명\n총 사업금액(원)\n￦\n100%\n계약번호\n계약일자\n계약기간\n비  고\n～\n증 명 서\n발급기관\n위 사실을 증명함\n2025년     월      일\n기 관 명 :                     (인)\n발급부서:\n전화번호:",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.7281
+      },
+      {
+        "source_type": "project",
+        "evidence": {
+          "source_document_id": "task-order:4c3fea27-9584-47b7-acdb-b6895a8fea52",
+          "page": null,
+          "section": "chunk 13",
+          "quote": "사업금액(원)\n￦\n100%\n계약번호\n계약일자\n계약기간\n비  고\n～\n증 명 서\n발급기관\n위 사실을 증명함\n2025년     월      일\n기 관 명 :                     (인)\n발급부서:\n전화번호:\n담 당 자:                    (인)\n* 1개 기관에 2건 이상의 실적 시 각각 실적증명서를 발급 첨부하여야 함\n* 입찰공고 이후에 발급받은 제작실적증명서만 실적으로 인정하며 사본 제출 가능.\n나라장터 실적증명서 출력본으로 대체 가능\n* 실적은 입찰공고 시에 제시한 용역범위 및 기준(금액 등)등의 조건에 부합되는 실적에 한하며, 공동계약으로 이행하였을 경우 비율과 이행실적을 기재하여야 함\n* 실적은 입찰공고일로부터 최근 3년 이내에 완료한 실적을 기재 (발주처확인)\n[서식7] 보안서약서\n보안 서약서\n본인은 2025년 00월 00일부로 「경기과학기술대학교 2025년 빅데이터 혁신융합대학사업 동계 AWS 교육 프로그램 용역」 업무를 수행함에 있어 다음사항을 준수할 것을 엄숙히 서약합니다.\n1.\n본인은 「경기과학기술대학교 2025년 빅데이터 혁신융합대학사업 동계 AWS 교육 프로그램 용역」 업무 중 알게 될 일체의 내용이 직무상 기밀 사항임을 인정한다.\n2.\n본인은 이 기밀을 누설함이 국가안전보장 및 국가이익에 위해가 될 수 있음을 인식하여 업무수행 중 지득한 제반 기밀사항을 일체 누설하거나 공개하지 아니한다.\n3.\n본인이 이 기밀을 누설하거나 관계 규정을 위반한 때에는 관련 법령 및 계약에 따라 어떠한 처벌 및 불이익도 감수한다.\n4.\n본인은 하도급업체를 통한 사업 수행 시 하도급업체로 인해 발생하는 위반사항에 대하여 모든 책임을 부담한다.\n2025년   월    일\n개인정보취급 : □ 동 의\n※ 개인정보보호법 의거하여 개인정보를 제공할 것을 동의합니다.",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.726
+      }
+    ],
+    "instructor_evidence": [
+      {
+        "source_type": "instructor",
+        "evidence": {
+          "source_document_id": "rag:instructor-74:db-765b1f86035b",
+          "page": null,
+          "section": "chunk 1",
+          "quote": "교육팀 수석강사\",\n\"이레이어 시스템 - 교육팀 수석강사\",\n\"박영만 전산 전문학원 - 교육팀 강사\",\n\"한국 CIM - 개발부 대리\"\n],\n\"vendor_certifications\": [\n\"정보처리 기능사 1급\",\n\"정보처리 기사 2급\",\n\"정보처리 기능사 2급\"\n],\n\"teaching_items\": [\n{\n\"topic\": \"거점형 스마트도시 조성사업 교육\",\n\"organization\": \"천안과학산업진흥원\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 1628\",\n\"quote\": \"거점형 스마트도시 조성사업 교육\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"AWS DeepRacer 과정\",\n\"organization\": \"부산교육청\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 1629\",\n\"quote\": \"AWS DeepRacer 과정\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"Data siance\",\n\"organization\": \"삼성디스플레이\",\n\"target_audience\": [],",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.7067
+      },
+      {
+        "source_type": "instructor",
+        "evidence": {
+          "source_document_id": "rag:instructor-74:db-765b1f86035b",
+          "page": null,
+          "section": "chunk 4",
+          "quote": "력 row 1634\",\n\"quote\": \"Goolge Cloud 활용 AI 인재양성 과정\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"Google Cloud 활용 AI 전문인력 양성 과정\",\n\"organization\": \"전남대학교\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 1635\",\n\"quote\": \"Google Cloud 활용 AI 전문인력 양성 과정\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"AWS DeepRacer 과정\",\n\"organization\": \"전북대학교\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 1637\",\n\"quote\": \"AWS DeepRacer 과정\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"클라우드 네이티브 엔지니어링 개발자 과정\",\n\"organization\": \"구름\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.7019
+      },
+      {
+        "source_type": "instructor",
+        "evidence": {
+          "source_document_id": "rag:instructor-74:db-765b1f86035b",
+          "page": null,
+          "section": "chunk 5",
+          "quote": "과정\",\n\"organization\": \"구름\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 1636\",\n\"quote\": \"클라우드 네이티브 엔지니어링 개발자 과정\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"수도권/전남 ICT이노베이션 스퀘어 사업\",\n\"organization\": \"한국IT서비스산업협회\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 1627\",\n\"quote\": \"수도권/전남 ICT이노베이션 스퀘어 사업\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"실전 자연어 프로젝트 과정\",\n\"organization\": \"제주테크노파크\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 1638\",",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.7003
+      },
+      {
+        "source_type": "instructor",
+        "evidence": {
+          "source_document_id": "rag:instructor-74:db-765b1f86035b",
+          "page": null,
+          "section": "chunk 2",
+          "quote": "\"AWS DeepRacer 과정\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"Data siance\",\n\"organization\": \"삼성디스플레이\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 1630\",\n\"quote\": \"Data siance\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"AWS DeepRacer 과정\",\n\"organization\": \"제주대학교\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 1631\",\n\"quote\": \"AWS DeepRacer 과정\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"iOS 앱 개발\",\n\"organization\": \"금융연수원\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.6972
+      },
+      {
+        "source_type": "instructor",
+        "evidence": {
+          "source_document_id": "rag:instructor-74:db-765b1f86035b",
+          "page": null,
+          "section": "chunk 3",
+          "quote": "l,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 1633\",\n\"quote\": \"iOS 앱 개발\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"AWS DeepRacer 과정\",\n\"organization\": \"한국외국어대학교\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 1632\",\n\"quote\": \"AWS DeepRacer 과정\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"Goolge Cloud 활용 AI 인재양성 과정\",\n\"organization\": \"경기도경제과학진흥원\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 1634\",\n\"quote\": \"Goolge Cloud 활용 AI 인재양성 과정\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"Google Cloud 활용 AI 전문인력 양성 과정\",",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.6908
+      }
+    ]
+  }
+}

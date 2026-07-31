@@ -1,0 +1,427 @@
+{
+  "run_id": "20260731T062609Z_646851174f62",
+  "final_score": 34.5,
+  "final_status": "on_hold",
+  "reasons": [
+    "Code validation found an invalid citation or an unmet exact mandatory condition.",
+    "A/B score difference: 21.0",
+    "Evidence coverage: 100%",
+    "Verifier verdict: FAIL",
+    "Code grounding verdict: FAIL",
+    "Citation accuracy: 56%"
+  ],
+  "analysis": {
+    "total_score": 45.0,
+    "score_items": [
+      {
+        "criterion": "topic_match",
+        "score": 10.0,
+        "max_score": 35.0,
+        "rationale": "본 과업은 기초통합교육(CLF + AIF), SAA 교육, AAI 교육 등 AWS 클라우드 및 AI 역량 강화에 초점이 맞춰져 있습니다. 강사는 클라우드 컴퓨팅(오픈스택) 및 SMAC 이해 등의 강의 실적이 있어 클라우드 분야의 기초적 매칭은 가능하나, AWS 기반 교육 및 자격증 취득 과정을 전담하기에는 구체적인 AWS 핵심 교육 주제와의 직접적인 이력 매칭도가 다소 낮습니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:93b2ada7-89c6-469b-ba89-ef659f16969b",
+            "page": null,
+            "section": "chunk 1",
+            "quote": "나.\nAWS 교직원 역량 강화 교육\n­ 기초 통합 교육(CLF + AIF)과정 운영\n­ SAA 교육과정 및 AAI 교육과정 운영\n­ AWS 공인 강사 선정 시험 및 인터뷰",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": [
+          {
+            "source_document_id": "rag:instructor-105:db-c65e7778e818",
+            "page": null,
+            "section": "chunk 9",
+            "quote": ",\n{\n\"topic\": \"오픈소스를 이용한 클라우드 컴퓨팅 전문가 과정(오픈스택)\",\n\"organization\": \"삼성멀티캠퍼스\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 2345\",\n\"quote\": \"오픈소스를 이용한 클라우드 컴퓨팅 전문가 과정(오픈스택)\",\n\"confidence\": 1.0\n}\n]\n},",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "criterion": "teaching_depth",
+        "score": 10.0,
+        "max_score": 30.0,
+        "rationale": "과업에서는 '단계별 AWS 공인 전문 강사'로 구성된 실습형 및 자기주도 학습 연계 프로그램을 요구하고 있습니다. 강사는 다수의 프로젝트 및 프로그래밍 실습 교육 경험이 있어 교육 운영 역량 자체는 입증되나, 필수 요건인 AWS 공인 전문 강사 역량을 증명하기에는 이력이 부족합니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:93b2ada7-89c6-469b-ba89-ef659f16969b",
+            "page": null,
+            "section": "chunk 3",
+            "quote": "­ 단계별 AWS 공인 전문 강사 프로그램 운영\n­ 교육 이후 교육생이 AI·Cloud 교육을 직접 수행할 수 있는 역량을\n발휘할 수 있도록 전문 역량을 갖춘 강사로 구성",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": [
+          {
+            "source_document_id": "rag:instructor-105:db-c65e7778e818",
+            "page": null,
+            "section": "chunk 49",
+            "quote": "{\n\"topic\": \"C 프로젝트\",\n\"organization\": \"삼성SDS\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 2440\",\n\"quote\": \"C 프로젝트\",\n\"confidence\": 1.0\n}\n]\n},",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "criterion": "audience_fit",
+        "score": 15.0,
+        "max_score": 15.0,
+        "rationale": "교육 대상은 대학의 교직원 및 교원입니다. 강사는 대학의 조교수, 객원교원, 겸임전임강사 등으로 재직하며 교원 직무를 직접 수행한 경력이 풍부하여, 대학교원 대상 맞춤형 교육 진행과 교수자 대상의 교수법(AAI) 전달 및 역량 강화 목적에 완벽하게 부합합니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:93b2ada7-89c6-469b-ba89-ef659f16969b",
+            "page": null,
+            "section": "chunk 2",
+            "quote": "1.\n과업 수행범위\n가.\n과업대상: 본교 교직원 및 교원\n나.\n과업기간: 2026.\n7.\n~ 2026.\n10.\n다.\n과업장소: 울산과학대학교 동부캠퍼스",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": [
+          {
+            "source_document_id": "rag:instructor-105:db-c65e7778e818",
+            "page": null,
+            "section": "chunk 1",
+            "quote": "\"호원대학교 - 사이버수사경찰학부 조교수 (강의 및 연구)\",\n\"현대정보기술 - 자바프로젝트 구축 전문가 과정 강사 (강의)\",\n\"비트교육센터 - Enterprise Java Bean 강사 (강의)\",\n\"우송대학교 - 우송IT교육센터 시간강사 (강의)\",\n\"썬마이크로시스템즈 - 교육사업부 전임강사 (강의)\",\n\"호원대학교 - 컴퓨터학부 / 전자계산학과 객원교원 (강의)\",\n\"순천제일대학교 - 컴퓨터과학과, 멀티미디어학과 겸임전임강사 (강의)\"",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "criterion": "career_and_certification",
+        "score": 5.0,
+        "max_score": 15.0,
+        "rationale": "강사는 자바, 스프링(Spring Web, Core-Spring 등), 데이터베이스(SCJI, SCJP, 정보처리기사) 관련 다수의 전문 자격증을 보유하고 있으나, 과업 지시서 상 명시된 필수 조건인 AWS 공인 전문 강사(AWS Certified Trainer) 자격 증빙이 불가능합니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:93b2ada7-89c6-469b-ba89-ef659f16969b",
+            "page": null,
+            "section": "chunk 3",
+            "quote": "나.\n교직원 역량 강화 교육\n1) 강사진 구성\n­ 단계별 AWS 공인 전문 강사 프로그램 운영",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": [
+          {
+            "source_document_id": "rag:instructor-105:db-c65e7778e818",
+            "page": null,
+            "section": "chunk 1",
+            "quote": "\"vendor_certifications\": [\n\"Spring Web (Reg.\nID 277288912)\",\n\"Core-Spring (Reg.\nID 272911418)\",\n\"SCCD\",\n\"SCJI Professional\",\n\"SCJI\",\n\"SCJP\",\n\"전자계산기기사\",\n\"정보처리기사\"\n]",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "criterion": "evidence_completeness",
+        "score": 5.0,
+        "max_score": 5.0,
+        "rationale": "모든 세부 평가 항목에 대하여 과업 대비 강사 이력 매칭 유무가 누락 없이 완벽히 비교 작성되었습니다.",
+        "project_evidence": [],
+        "instructor_evidence": []
+      }
+    ],
+    "recommendation_reasons": [
+      "강사가 대학 조교수 및 객원교원 등으로 다년간 근무하여 대학 교직원 및 교원들의 특성과 교수법 역량 강화 목적을 가장 잘 이해하고 있습니다.",
+      "자바, 빅데이터, 데이터베이스 등 IT 기초 핵심 기술 분야의 깊이 있는 전문 지식과 교육 경력을 다수 보유하고 있습니다."
+    ],
+    "gaps": [
+      "AWS 공인 강사 자격(AWS Certified Trainer)이 프로필 및 자격증 정보에서 누락되어 필수 요구 사항을 충족하기 어렵습니다.",
+      "AWS CLF, AIF, SAA, AAI 등 본 과업의 필수 교과목에 매칭되는 직접적인 AWS 교육 강의 이력이 부재합니다."
+    ],
+    "risks": [
+      "제안서 평가 단계에서 필수 자격 요건인 AWS 공인 강사진 구성 미달로 인한 입찰 탈락 혹은 감점 처리가 발생할 위험이 있습니다.",
+      "AWS Skill Builder 연계 교육 및 SAA 자격증 취득 유도 등 AWS 특화 실무 교육 진행 시 원활한 지도가 어려울 수 있습니다."
+    ],
+    "required_conditions_passed": false,
+    "required_condition_notes": [
+      "과업 지시서 상 필수 강사 자격 요건으로 'AWS 공인 전문 강사' 및 '성범죄 경력, 아동학대 전력 등이 없는 강사'가 명시되어 있으나 강사의 해당 자격 보유 여부가 확인되지 않습니다."
+    ]
+  },
+  "verification": {
+    "independent_score": 24.0,
+    "verdict": "FAIL",
+    "evidence_coverage": 1.0,
+    "issues": [
+      {
+        "severity": "high",
+        "category": "required_condition",
+        "description": "과업 지시서 상 필수 요건인 '단계별 AWS 공인 전문 강사' 자격을 충족하는 AWS 공인 자격증(AAI, SAA 등) 및 강사 승인 증적이 프로필상에서 전혀 확인되지 않습니다.",
+        "related_criterion": "career_and_certification"
+      },
+      {
+        "severity": "high",
+        "category": "evidence",
+        "description": "AWS 클라우드 및 AI 핵심 주제(SAA-C03 자격증 과정, AAI AI 교수법 등)에 대한 실제 교육 수행 이력이나 관련 프로젝트 투입 이력이 전무합니다.",
+        "related_criterion": "topic_match"
+      }
+    ],
+    "corrected_score_items": [
+      {
+        "criterion": "topic_match",
+        "score": 5.0,
+        "max_score": 35.0,
+        "rationale": "본 과업은 AWS C3 인증센터 구축 및 SAA, AAI 등 AWS 기반 클라우드 및 AI 교육을 요구합니다. 그러나 강사의 주요 이력은 Java, 빅데이터(하둡, R, Python), 웹 개발에 치우쳐 있으며, 클라우드 관련 경력도 오픈스택이나 일반 클라우드 이해 수준에 그쳐 AWS 핵심 기술 및 자격증 교육과정과의 매칭도가 매우 낮습니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:93b2ada7-89c6-469b-ba89-ef659f16969b",
+            "page": null,
+            "section": "chunk 1",
+            "quote": "기초통합교육(CLF + AIF), SAA 교육, AAI 교육 운영",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 2345",
+            "quote": "오픈소스를 이용한 클라우드 컴퓨팅 전문가 과정(오픈스택)",
+            "confidence": 0.9
+          }
+        ]
+      },
+      {
+        "criterion": "teaching_depth",
+        "score": 5.0,
+        "max_score": 30.0,
+        "rationale": "강사는 고급 소프트웨어 분석/설계, 빅데이터 전문가 과정 등 IT 전반의 교육 깊이는 매우 깊으나, 과업에서 필요로 하는 AWS 아키텍처 설계(SAA-C03) 및 AI 교수자 양성(AAI) 교육을 직접 설계하고 실행할 수 있는 AWS 중심의 전문 강의 이력이나 깊이가 입증되지 않습니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:93b2ada7-89c6-469b-ba89-ef659f16969b",
+            "page": null,
+            "section": "chunk 1",
+            "quote": "대학 자체적인 국제 표준 교육 과정 설계 및 운영 체계 구축\n교육생의 SAA-C03 자격증 취득 및 AI 교수자 양성",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 2428",
+            "quote": "Architect Senior 트랙 : 아키텍처, 프로젝트 리더십, 분석설계, CBD 방법론",
+            "confidence": 0.9
+          }
+        ]
+      },
+      {
+        "criterion": "audience_fit",
+        "score": 10.0,
+        "max_score": 15.0,
+        "rationale": "과업 대상은 대학교 교직원 및 교원입니다. 강사는 다수의 대학(호원대학교, 순천제일대학교, 우송대학교 등)에서 조교수, 객원교원, 겸임교원 등으로 재직하며 교원 사회와 대학 교육 체계에 대한 이해도가 높고 대학생 및 성인 대상 강의 경험이 풍부하여 대상 적합성은 뛰어납니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:93b2ada7-89c6-469b-ba89-ef659f16969b",
+            "page": null,
+            "section": "chunk 2",
+            "quote": "과업대상: 본교 교직원 및 교원",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 1107",
+            "quote": "호원대학교 - 사이버수사경찰학부 조교수 (강의 및 연구)",
+            "confidence": 1.0
+          },
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 1113",
+            "quote": "순천제일대학교 - 컴퓨터과학과, 멀티미디어학과 겸임전임강사 (강의)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "criterion": "career_and_certification",
+        "score": 0.0,
+        "max_score": 15.0,
+        "rationale": "과업에서 핵심 조건으로 명시한 'AWS 공인 전문 강사' 자격증 또는 그에 준하는 AWS 아키텍트/클라우드 공인 자격증(SAA, CLF 등)을 보유하고 있지 않으며, 관련 벤더 자격증 이력이 전무합니다. 이로 인해 해당 평가 항목은 0점 처리됩니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:93b2ada7-89c6-469b-ba89-ef659f16969b",
+            "page": null,
+            "section": "chunk 3",
+            "quote": "전문 역량을 갖춘 단계별 AWS 공인 전문 강사로 구성",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": []
+      },
+      {
+        "criterion": "evidence_completeness",
+        "score": 4.0,
+        "max_score": 5.0,
+        "rationale": "과업 및 강사의 기본적인 프로필과 경력 데이터는 상세히 확보되었으나, AWS 자격증 및 전문 역량을 검증하기 위한 강사의 실질적 AWS 활동 증빙 자료가 존재하지 않아 완성도는 부분적입니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:93b2ada7-89c6-469b-ba89-ef659f16969b",
+            "page": null,
+            "section": "chunk 0",
+            "quote": "2026년 AWS C3 인증센터 구축 및 교직원 역량 강화 교육 용역 과업지시서",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "1. 강사 기본 정보",
+            "quote": "빅데이터 및 자바/웹 전문 이학박사 강사",
+            "confidence": 1.0
+          }
+        ]
+      }
+    ],
+    "required_conditions_passed": false
+  },
+  "grounding": {
+    "citation_accuracy": 0.5555555555555556,
+    "invalid_citation_count": 8,
+    "unsupported_positive_score_count": 0,
+    "required_condition_checks": [
+      {
+        "requirement": "「국가를 당사자로 하는 계약에 관한 법률 시행령」 제12조 및 「동법 시행규칙」 제14조에 의한 자격요건을 갖춘 업체",
+        "condition_type": "certification",
+        "status": "failed",
+        "detail": "Required credential not found in instructor profile."
+      },
+      {
+        "requirement": "전문 역량을 갖춘 단계별 AWS 공인 전문 강사로 구성 및 성범죄 경력, 아동학대 전력 등이 없는 강사",
+        "condition_type": "certification",
+        "status": "failed",
+        "detail": "Required credential not found in instructor profile."
+      },
+      {
+        "requirement": "공고일 기준 최근 3년 이내 국내 대학 및 전문대학 또는 공공기관에서 유사한 위탁운영 실적이 단일건수 기준 5천만원 이상 1건 이상 실행한 업체(사업완료 건수)",
+        "condition_type": "experience",
+        "status": "not_automatically_verifiable",
+        "detail": "Experience requirements need human or model review unless a numeric rule is configured."
+      },
+      {
+        "requirement": "전문 역량을 갖춘 단계별 AWS 공인 전문 강사로 구성 및 성범죄 경력, 아동학대 전력 등이 없는 강사",
+        "condition_type": "experience",
+        "status": "not_automatically_verifiable",
+        "detail": "Experience requirements need human or model review unless a numeric rule is configured."
+      }
+    ],
+    "verdict": "FAIL"
+  },
+  "rag_context": {
+    "project_evidence": [
+      {
+        "source_type": "project",
+        "evidence": {
+          "source_document_id": "task-order:93b2ada7-89c6-469b-ba89-ef659f16969b",
+          "page": null,
+          "section": "chunk 2",
+          "quote": "있음\n- 2 -\n단 계 | 내 용 | 교육 일정\n기초통합교육 | - 클라우드와 AI 의 핵심 개념 이해\n- 최신 Agentic AI 기술 동향 파악 | 8월 중순\nSAA 교육 | - AWS 아키텍처 설계 역량 확보\n- SAA-C03 자격증 취득 준비 | 8월 중순\nAAI 교육 | - AI 애플리케이션 개발 실습 역량 ,\n- AI 교수자 양성, 학생 대상 교수법 체득 | 8월 중순\n기 간\n세부사업내용 | 사 업 추 진 일 정 (월)\n7 | 8 | 9 | 10\n위탁용역 공고\n업체 선정 및 착수\n교직원 역량 강화 교육\nAWS C3 인증센터 구축\n사업 결과보고\nⅡ 과업 내용\n1.\n과업 수행범위\n가.\n과업대상: 본교 교직원 및 교원\n나.\n과업기간: 2026.\n7.\n~ 2026.\n10.\n다.\n과업장소: 울산과학대학교 동부캠퍼스\n라.\n과업방법: AWS C3 인증센터 구축 및 교직원 역량강화 교육\n마.\n과업내용\n­ AWS C3 센터 운영에 필요한 4개 영역을 통합 구축\n­ 교직원 및 교원 수준을 고려한 질 높은 맞춤형 프로그램 개발 및 운영\n­ 프로그램 운영 후 설문조사를 통한 교육 효과성 분석 및 공유\n2.\n과업 세부내용\n가.\nAWS C3인증센터 구축\n­ AWS C3 센터 운영에 필요한 4개 영역을 통합 구축\n구 분 목 적 내 용\n- 1인 독립 시험 부스\nAWS 공인 자격증 시험을 공정하\n- 부스별 기본 시험 장비 포함\n시험장 인프라 구축 고 안전하게 진행하기 위한 독립\n- AWS 공인시험 운영 기준에\n시험 환경을 구축\n부합하는 환경 구성\nAWS가 공식 운영하는 자기주도 - AWS Skill Builder\n학습 플랫폼 라이선스 및\n학습 및 공인 자격증 시험 대비를 - Certi Navigator\nAWS 실습 환경 구축 위한 환경을 구축 - AWS Cloud\nAWS C3 공인인증센터의 효율적",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.865
+      },
+      {
+        "source_type": "project",
+        "evidence": {
+          "source_document_id": "task-order:93b2ada7-89c6-469b-ba89-ef659f16969b",
+          "page": null,
+          "section": "chunk 1",
+          "quote": "지털 전환의 촉진: 새로운 비즈니스 모델 창출을 지원하는 실무형\n클라우드-AI 역량을 갖춘 인재를 양성\n나.\n글로벌 표준 교육 체계 구축: 대학이 자체적으로 국제 표준 교육 과정을\n설계하고 운영할 수 있는 체계\n다.\n사회적 가치 창출: 지역 인재의 일자리 창출과 기업의 디지털 전환 성공\n사례를 확대함으로써 디지털 혁신 기여도 상승취업 마인드 함양, 자기주도\n적 취업진로 설계 등 학생 취업인식 개선\n3.\n주요 내용\n가.\nAWS C3 구축\n­ 시험장 인프라 구축(1인 독립부스)\n­ 학습 플랫폼 라이선스 및 AWS 실습 환경 구축\n­ AWS C3 운영 시스템 구축\n­ Tier 관리 및 운영 지원\n- 1 -\n나.\nAWS 교직원 역량 강화 교육\n­ 기초 통합 교육(CLF + AIF)과정 운영\n­ SAA 교육과정 및 AAI 교육과정 운영\n­ AWS 공인 강사 선정 시험 및 인터뷰\n다.\n교육 운영 일정\n단 계 내 용 교육 일정\n- 클라우드와 AI 의 핵심 개념 이해\n기초통합교육 8월 중순\n- 최신 Agentic AI 기술 동향 파악\n- AWS 아키텍처 설계 역량 확보\nSAA 교육 8월 중순\n- SAA-C03 자격증 취득 준비\n- AI 애플리케이션 개발 실습 역량 ,\nAAI 교육 8월 중순\n- AI 교수자 양성, 학생 대상 교수법 체득\n라.\n추진 일정(안)\n기 간 사 업 추 진 일 정 (월)\n세부사업내용 7 8 9 10\n위탁용역 공고\n업체 선정 및 착수\n교직원 역량 강화 교육\nAWS C3 인증센터 구축\n사업 결과보고\n※ 상기 일정 및 계획은 추진 상황에 따라 변동될 수 있음\n- 2 -\n단 계 | 내 용 | 교육 일정\n기초통합교육 | - 클라우드와 AI 의 핵심 개념 이해\n- 최신 Agentic AI 기술 동향 파악 | 8월 중순\nSAA 교육 | - AWS 아키텍처 설계 역량 확보",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.8529
+      },
+      {
+        "source_type": "project",
+        "evidence": {
+          "source_document_id": "task-order:93b2ada7-89c6-469b-ba89-ef659f16969b",
+          "page": null,
+          "section": "chunk 0",
+          "quote": "2026년 AWS C3 인증센터 구축 및\n교직원 역량 강화 교육 용역 과업지시서\n.\n2026.\n7.\n.\n목 차\nⅠ.\n과업 개요 ················································································ 1\nⅡ.\n과업 내용 ················································································ 3\nⅢ.\n과업 수행 지침 ······································································· 7\nⅣ.\n과업 수행 사업자 선정 ······························································· 13\nⅤ.\n제안서 작성 및 제출 ··································································· 18\n[별첨] 제출 서류 양식 ······································································· 26\nⅠ 과업 개요\n1.\n과업 개요\n가.\n과 업 명: 2026년 AWS C3 구축 및 교직원 역량 강화 교육\n나.\n과업기간: 계약체결일로부터 2026.\n10.\n30.까지\n다.\n계약방법: 협상에 의한 계약, 제한경쟁입찰\n라.\n사업예산: 금180,000,000원(금일억팔천만원)(부가가치세 포함)\n2.\n과업 목적\n가.\n지역 디지털 전환의 촉진: 새로운 비즈니스 모델 창출을 지원하는 실무형\n클라우드-AI 역량을 갖춘 인재를 양성\n나.\n글로벌 표준 교육 체계 구축: 대학이 자체적으로 국제 표준 교육 과정을\n설계하고 운영할 수 있는 체계\n다.",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.8463
+      },
+      {
+        "source_type": "project",
+        "evidence": {
+          "source_document_id": "task-order:93b2ada7-89c6-469b-ba89-ef659f16969b",
+          "page": null,
+          "section": "chunk 3",
+          "quote": "S Skill Builder\n학습 플랫폼 라이선스 및\n학습 및 공인 자격증 시험 대비를 - Certi Navigator\nAWS 실습 환경 구축 위한 환경을 구축 - AWS Cloud\nAWS C3 공인인증센터의 효율적\n- 응시자 예약 관리\nAWS C3 운영 시스템 구축 운영을 위한 통합 관리 시스템을\n- 센터 현황 통합 관리\n구축\nAWS와의 파트너십 유지, Tier 관 - AWS Tier 관리\nTier 관리 및 운영 지원\n리, 운영 지원을 위한 환경 구축 - 네트워크 관리\n- 3 -\n구 분 | 목 적 | 내 용\n시험장 인프라 구축 | AWS 공인 자격증 시험을 공정하\n고 안전하게 진행하기 위한 독립\n시험 환경을 구축 | - 1인 독립 시험 부스\n- 부스별 기본 시험 장비 포함\n- AWS 공인시험 운영 기준에\n부합하는 환경 구성\n학습 플랫폼 라이선스 및\nAWS 실습 환경 구축 | AWS가 공식 운영하는 자기주도\n학습 및 공인 자격증 시험 대비를\n위한 환경을 구축 | - AWS Skill Builder\n- Certi Navigator\n- AWS Cloud\nAWS C3 운영 시스템 구축 | AWS C3 공인인증센터의 효율적\n운영을 위한 통합 관리 시스템을\n구축 | - 응시자 예약 관리\n- 센터 현황 통합 관리\nTier 관리 및 운영 지원 | AWS와의 파트너십 유지, Tier 관\n리, 운영 지원을 위한 환경 구축 | - AWS Tier 관리\n- 네트워크 관리\n나.\n교직원 역량 강화 교육\n1) 강사진 구성\n­ 단계별 AWS 공인 전문 강사 프로그램 운영\n­ 교육 이후 교육생이 AI·Cloud 교육을 직접 수행할 수 있는 역량을\n발휘할 수 있도록 전문 역량을 갖춘 강사로 구성\n­ 강사 소개서(이력, 실적, 전문 분야, 성범죄 조회 동의서 등 포함) 제출\n2) 단계별 프로그램 운영",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.8425
+      },
+      {
+        "source_type": "project",
+        "evidence": {
+          "source_document_id": "task-order:93b2ada7-89c6-469b-ba89-ef659f16969b",
+          "page": null,
+          "section": "chunk 4",
+          "quote": "교육생이 AI·Cloud 교육을 직접 수행할 수 있는 역량을\n발휘할 수 있도록 전문 역량을 갖춘 강사로 구성\n­ 강사 소개서(이력, 실적, 전문 분야, 성범죄 조회 동의서 등 포함) 제출\n2) 단계별 프로그램 운영\n단 계 내 용 교육 일정\n- 클라우드와 AI 의 핵심 개념 이해\n기초통합교육 8월 중순\n- 최신 Agentic AI 기술 동향 파악\n- AWS 아키텍처 설계 역량 확보\nSAA 교육 8월 중순\n- SAA-C03 자격증 취득 준비\n- AI 애플리케이션 개발 실습 역량 ,\nAAI 교육 8월 중순\n- AI 교수자 양성, 학생 대상 교수법 체득\n※ 교육 일정은 교내 수요 조사로 인한 확정으로 일정 변경 불가\n­ ILT 정규과정 + AWS Skill Builder 자기주도 학습 + 시험 대비 등 자\n격증 취득 가능 할 수 있도록 교육 프로그램에 반영\n­ 교육 내용과 방법은 학교의 요구사항과 기획한 프로그램을 고려하\n여 사전 협의하며, 협의 결과를 교육 프로그램에 반영\n­ 사전 협의 결과와 AWS 교육 지침에 부합한 교육 자료로 교육 운영\n­ 강사, 교재, 재료, 간식 및 각종 운영비 등은 사업비에 포함\n- 4 -\n단 계 | 내 용 | 교육 일정\n기초통합교육 | - 클라우드와 AI 의 핵심 개념 이해\n- 최신 Agentic AI 기술 동향 파악 | 8월 중순\nSAA 교육 | - AWS 아키텍처 설계 역량 확보\n- SAA-C03 자격증 취득 준비 | 8월 중순\nAAI 교육 | - AI 애플리케이션 개발 실습 역량 ,\n- AI 교수자 양성, 학생 대상 교수법 체득 | 8월 중순\n다.\n프로그램 결과보고\n1) 단계별 보고\n­ 과업의 원활한 수행을 위해 교육 전반적인 사항 발주기관에 보고\n구 분 시 기 내 용 비 고\n교육일\n교육 운영 전 - 교육 운영, 내용 등 사전점검 사항\n7일 전까지",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.7872
+      }
+    ],
+    "instructor_evidence": [
+      {
+        "source_type": "instructor",
+        "evidence": {
+          "source_document_id": "rag:instructor-105:db-c65e7778e818",
+          "page": null,
+          "section": "chunk 49",
+          "quote": "\",\n\"organization\": \"삼성SDS\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 2442\",\n\"quote\": \"프로그래밍\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"자료구조\",\n\"organization\": \"삼성SDS\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 2441\",\n\"quote\": \"자료구조\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"C 프로젝트\",\n\"organization\": \"삼성SDS\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 2440\",\n\"quote\": \"C 프로젝트\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"Service Oriented Architecture\",",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.6894
+      },
+      {
+        "source_type": "instructor",
+        "evidence": {
+          "source_document_id": "rag:instructor-105:db-c65e7778e818",
+          "page": null,
+          "section": "chunk 7",
+          "quote": "ence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 2340\",\n\"quote\": \"SMAC(Social Network, Mobility, Analytics, Cloud) 이해\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"SMAC(Social Network, Mobility, Analytics, Cloud) 이해 2차\",\n\"organization\": \"삼성SDS\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 2339\",\n\"quote\": \"SMAC(Social Network, Mobility, Analytics, Cloud) 이해 2차\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"HTML5\",\n\"organization\": \"SK C&C\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 2342\",\n\"quote\": \"HTML5\",\n\"confidence\": 1.0\n}\n]\n},\n{",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.6878
+      },
+      {
+        "source_type": "instructor",
+        "evidence": {
+          "source_document_id": "rag:instructor-105:db-c65e7778e818",
+          "page": null,
+          "section": "chunk 44",
+          "quote": "방법론\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"SW Design Pattern 일반\",\n\"organization\": \"삼성전자 첨단기술연구소\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 2427\",\n\"quote\": \"SW Design Pattern 일반\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"분석/설계 & 모델링 전문가\",\n\"organization\": \"kt ds University\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 2429\",\n\"quote\": \"분석/설계 & 모델링 전문가\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"신입사원 교육 (C 자료구조, C Programming 기본)\",\n\"organization\": \"삼성전자 첨단기술연구소\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.6845
+      },
+      {
+        "source_type": "instructor",
+        "evidence": {
+          "source_document_id": "rag:instructor-105:db-c65e7778e818",
+          "page": null,
+          "section": "chunk 9",
+          "quote": ",\n{\n\"topic\": \"MongoDB를 이용한 빅데이터 전문가(하둡, python)\",\n\"organization\": \"KT ds\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 2346\",\n\"quote\": \"MongoDB를 이용한 빅데이터 전문가(하둡, python)\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"오픈소스를 이용한 클라우드 컴퓨팅 전문가 과정(오픈스택)\",\n\"organization\": \"삼성멀티캠퍼스\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 2345\",\n\"quote\": \"오픈소스를 이용한 클라우드 컴퓨팅 전문가 과정(오픈스택)\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"기초부터 실전까지 하둡의 모든 것\",\n\"organization\": \"KT ds\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.6836
+      },
+      {
+        "source_type": "instructor",
+        "evidence": {
+          "source_document_id": "rag:instructor-105:db-c65e7778e818",
+          "page": null,
+          "section": "chunk 1",
+          "quote": ",\n\"Web\",\n\"프로그래밍\",\n\"SOA\",\n\"Database\",\n\"IT입문\",\n\"IT\",\n\"XML\",\n\"WebLogic\",\n\"J2ME\",\n\"고교입시배정\",\n\"Swing\",\n\"RMI\",\n\"영상처리\",\n\"사용자인증\",\n\"분산필터링\",\n\"SCJP\",\n\"인터넷쇼핑몰\",\n\"웹프로그래밍\"\n],\n\"summary\": \"빅데이터 및 자바/웹 전문 이학박사 강사\",\n\"delivery_modes\": [],\n\"availability_notes\": null,\n\"vendor_experience\": [\n\"광주시 교육청 - 광주시 교육청 고교입시배정 프로젝트\",\n\"조선대학교 - 자바를 이용한 영상처리 API 개발\",\n\"조선대학교 - RMI를 이용한 온라인 사용자 인증 분산 필터링 시스템 개발\",\n\"광주서방토기 - 인터넷쇼핑몰 개발\",\n\"아이코어이앤씨 - 기업교육팀 강사 (강의)\",\n\"호원대학교 - 사이버수사경찰학부 조교수 (강의 및 연구)\",\n\"현대정보기술 - 자바프로젝트 구축 전문가 과정 강사 (강의)\",\n\"비트교육센터 - Enterprise Java Bean 강사 (강의)\",\n\"우송대학교 - 우송IT교육센터 시간강사 (강의)\",\n\"썬마이크로시스템즈 - 교육사업부 전임강사 (강의)\",\n\"호원대학교 - 컴퓨터학부 / 전자계산학과 객원교원 (강의)\",\n\"순천제일대학교 - 컴퓨터과학과, 멀티미디어학과 겸임전임강사 (강의)\"\n],\n\"vendor_certifications\": [\n\"Spring Web (Reg.\nID 277288912)\",\n\"Core-Spring (Reg.\nID 272911418)\",\n\"SCCD\",\n\"SCJI Professional\",\n\"SCJI\",\n\"SCJP\",\n\"전자계산기기사\",\n\"정보처리기사\"\n],\n\"teaching_items\": [\n{",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.6834
+      }
+    ]
+  }
+}

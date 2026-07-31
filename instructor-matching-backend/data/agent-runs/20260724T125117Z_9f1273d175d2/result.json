@@ -1,0 +1,431 @@
+{
+  "run_id": "20260724T125117Z_9f1273d175d2",
+  "final_score": 92.5,
+  "final_status": "on_hold",
+  "reasons": [
+    "Code validation found an invalid citation or an unmet exact mandatory condition.",
+    "A/B score difference: 15.0",
+    "Evidence coverage: 100%",
+    "Verifier verdict: REVIEW",
+    "Code grounding verdict: FAIL",
+    "Citation accuracy: 57%"
+  ],
+  "analysis": {
+    "total_score": 100.0,
+    "score_items": [
+      {
+        "criterion": "topic_match",
+        "score": 35.0,
+        "max_score": 35.0,
+        "rationale": "강사는 'AI Cloud', 'Network AI', '인공지능 SW 개발자 양성 과정' 등 클라우드 및 인공지능(AI) 관련 핵심 과업 주제를 직접 강의한 경험을 다수 보유하고 있어 요구되는 기술 도메인과의 적합성이 매우 우수합니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:9c66c411-5b62-4d1d-9973-3d2992266302",
+            "page": null,
+            "section": "chunk 0",
+            "quote": "제 안 요 청 서\n클라우드 및 AI 전문 교육과정 운영 용역 입찰\n2026.\n6.\n※ 본 자료는 제안내용의 설명을 위한 배포자료로, 이외 목적으로 무단복제, 전달 및 사용하는 행위를 금함.\nI 입찰 내용\n1.\n입 찰 명 : 클라우드 및 AI 전문 교육과정 운영 용역 입찰\n2.\n사업기간 : 계약체결일 ~ 2026.8.31.까지\n3.\n배정예산 : 금 50,000,000원(금오천만원) 내(부가세 포함)\n4.\n입찰개요\n가.\n교육 목적\n1) 데이터 주권(소버린 AI)의 중요성을 이해하고, 기업 핵심 데이터의 안전한 활용 역량을 갖춘 인재 양성\n2) AI 도구를 활용해 업무 효율을 높이는 실무 기초 역량 배양\n3) 프로젝트 기반 학습을 통해 AI 활용 역량을 강화하고, 클라우드·AI 분야 자격 취득과 취업 연계를\n지원하는 전주기적 교육체계를 구축\n나.\n교육개요\n1) 사 업 명 : 클라우드 및 AI 전문 교육과정 운영\n2) 교육기간 : 2026.7.15.(수) ~ 7.29.(수)\n3) 진행장소 : 순천향대학교 인간사랑관 2층 임베디드 실습실 6205호\n4) 추진방향\n가) 데이터 주권 이해를 바탕으로 안전하고 책임 있는 AI 활용 역량 배양\n나) 이론과 실습을 병행하는 현장 중심 교육을 통해 클라우드·AI 기술의 실무 적용 역량 제고\n다) 프로젝트 기반 학습을 통한 문제 해결 능력 및 협업 역량 강화\n라) 클라우드·AI 분야 자격 취득 지원 및 산업체 연계를 통한 취업 경쟁력 강화\n5) 참여인원 : 약 20명\n6) 주최/주관 : 순천향대학교/AI의료융합혁신교육원 학사지원팀\n다.\n과업내용\n1) 교육 지원 전반사항\n가) 교육과정 기획·지원\n- 클라우드·AI 교육과정에 적합한 이론/실습 병행 현장형 교육과정 기획 및 제안\n- 2026.7.15.~7.29.\n총 50시간 교육 일정 운영, 기획 및 지원",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": [
+          {
+            "source_document_id": "rag:instructor-81:db-3f4c7f8174f1",
+            "page": null,
+            "section": "chunk 4",
+            "quote": "\"topic\": \"미래인재육성프로젝트 AI Cloud\",\n\"organization\": \"KT\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 1840\",\n\"quote\": \"미래인재육성프로젝트 AI Cloud\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"미래인재육성프로젝트 Network AI\",\n\"organization\": \"KT\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 1839\",\n\"quote\": \"미래인재육성프로젝트 Network AI\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"미래인재육성프로젝트 IT/DX B2B Delivery\",\n\"organization\": \"KT\",\n\"target_audience\": [],\n\"delivery_format\": [],\n",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "criterion": "teaching_depth",
+        "score": 30.0,
+        "max_score": 30.0,
+        "rationale": "본 교육과정은 실무 중심의 프로젝트 기반 학습(PBL) 및 멘토링이 핵심 요구 사항입니다. 강사는 플레이데이터에서 수행한 '자율주행 영상처리 인공지능 SW 개발자 양성 과정' 및 '스마트시티 데이터레이크 전문가 양성과정' 등 고도화된 실습/프로젝트 기반 장기 교육과정을 다수 지휘하여 높은 교수 깊이를 확보하고 있습니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:9c66c411-5b62-4d1d-9973-3d2992266302",
+            "page": null,
+            "section": "chunk 1",
+            "quote": "내용\n1) 교육 지원 전반사항\n가) 교육과정 기획·지원\n- 클라우드·AI 교육과정에 적합한 이론/실습 병행 현장형 교육과정 기획 및 제안\n- 2026.7.15.~7.29.\n총 50시간 교육 일정 운영, 기획 및 지원\n나) 강사 섭외 및 지원\n- 클라우드 및 AI 활용 교육 강사 섭외 및 교육 진행(주강사, 보조강사)\n- 클라우드·AI 분야 전문 강사진 포함 지원\n- 현업 전문가 특강(현직자 특강) 운영 및 프로젝트 전문가 피드백 제공\n다) 교육 인프라 지원\n- 교육용 클라우드플랫폼 계정 발급 및 크레딧 운영·관리\n- 실시간 계정 모니상 및 관리\n- 실습 환경(개발 환경, API 연동 등) 구성 및 지원\n라) 교육 인력 지원\n- 전담 인력 배정\n- 온라인 협업 플랫폼을 활용한 과정 운영 및 학생 관리(출결·진도·공지 등)\n- 교육용 계정·자료 지원·관리\n입 | 찰 | 내 | 용\n마) 평가·인증\n- 수강생 평가 체계 운영 및 교육 평가(중간·최종) 진행\n- 클라우드·AI 분야 자격 취득 지원을 위한 모의평가 및 해설 제공\n바) 홍보물 및 교재 제작\n- 현수막 등 홍보물, 안내물, 교육 교재·실습 자료 제작\n- 제작물 사양·디자인·수량은 발주자 승인 후 확정 및 기한 내 납품\n2) 교육 지원 결과 보고서 제출\n3) 기타 교육 지원과 관련된 모든 사항\n5.\n세부 수행 내용(안)\n구분 세부 내용\n- 1~5일차 : AI기초 이해 및 클라우드 AI 서비스 활용\n- 6~9일차 : 실무 활용 프로젝트 진행 및 멘토링\n교육과정 기획\n- 10일차 : 프로젝트 결과 발표·피드백 및 클라우드·AI 분야 자격 취득 대비 모의\n;평가 진행\n- 클라우드 소속 공인 강사 섭외 및 배정(주강사, 보조강사)\n- 홍보물 제작(현수막,포스터,카드뉴스 등)\n- 오리엔테이션 진행\n- 교육용 계정 운영·관리",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": [
+          {
+            "source_document_id": "rag:instructor-81:db-3f4c7f8174f1",
+            "page": null,
+            "section": "chunk 3",
+            "quote": "ence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 1835\",\n\"quote\": \"자율주행 영상처리를 위한 인공지능 SW 개발자 양성 과정\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"스마트시티 국토정보관리 데이터레이크 전문가 양성과정\",\n\"organization\": \"엔코아 교육센터 플레이데이터\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 1836\",\n\"quote\": \"스마트시티 국토정보관리 데이터레이크 전문가 양성과정\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"LG CNS 협력회사 신입사원 U-CAMP JAVA 전문가 과정 33기\",\n\"organization\": \"LG CNS\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 1837\",\n\"quote\": \"LG CNS 협력회사 신입사원 U-CAMP JAVA 전문가 과정 33기\",\n\"confidence\": 1.0\n}\n]\n},\n{",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "criterion": "audience_fit",
+        "score": 15.0,
+        "max_score": 15.0,
+        "rationale": "본 과정은 순천향대학교 대학생들을 대상으로 하고 있습니다. 강사는 인제대학교 취업 연계 IT 전문가 과정, 선문대학교 하계방학 소프트웨어 집중 과정 등 대학생 대상의 전공 및 직무 역량 강화 프로그램을 다수 출강한 풍부한 대학 교육 경험을 확보하고 있어 대상자 눈높이에 맞춘 세심한 학습 지도가 가능합니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:9c66c411-5b62-4d1d-9973-3d2992266302",
+            "page": null,
+            "section": "chunk 0",
+            "quote": "제 안 요 청 서\n클라우드 및 AI 전문 교육과정 운영 용역 입찰\n2026.\n6.\n※ 본 자료는 제안내용의 설명을 위한 배포자료로, 이외 목적으로 무단복제, 전달 및 사용하는 행위를 금함.\nI 입찰 내용\n1.\n입 찰 명 : 클라우드 및 AI 전문 교육과정 운영 용역 입찰\n2.\n사업기간 : 계약체결일 ~ 2026.8.31.까지\n3.\n배정예산 : 금 50,000,000원(금오천만원) 내(부가세 포함)\n4.\n입찰개요\n가.\n교육 목적\n1) 데이터 주권(소버린 AI)의 중요성을 이해하고, 기업 핵심 데이터의 안전한 활용 역량을 갖춘 인재 양성\n2) AI 도구를 활용해 업무 효율을 높이는 실무 기초 역량 배양\n3) 프로젝트 기반 학습을 통해 AI 활용 역량을 강화하고, 클라우드·AI 분야 자격 취득과 취업 연계를\n지원하는 전주기적 교육체계를 구축\n나.\n교육개요\n1) 사 업 명 : 클라우드 및 AI 전문 교육과정 운영\n2) 교육기간 : 2026.7.15.(수) ~ 7.29.(수)\n3) 진행장소 : 순천향대학교 인간사랑관 2층 임베디드 실습실 6205호\n4) 추진방향\n가) 데이터 주권 이해를 바탕으로 안전하고 책임 있는 AI 활용 역량 배양\n나) 이론과 실습을 병행하는 현장 중심 교육을 통해 클라우드·AI 기술의 실무 적용 역량 제고\n다) 프로젝트 기반 학습을 통한 문제 해결 능력 및 협업 역량 강화\n라) 클라우드·AI 분야 자격 취득 지원 및 산업체 연계를 통한 취업 경쟁력 강화\n5) 참여인원 : 약 20명\n6) 주최/주관 : 순천향대학교/AI의료융합혁신교육원 학사지원팀\n다.\n과업내용\n1) 교육 지원 전반사항\n가) 교육과정 기획·지원\n- 클라우드·AI 교육과정에 적합한 이론/실습 병행 현장형 교육과정 기획 및 제안\n- 2026.7.15.~7.29.\n총 50시간 교육 일정 운영, 기획 및 지원",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": [
+          {
+            "source_document_id": "rag:instructor-81:db-3f4c7f8174f1",
+            "page": null,
+            "section": "chunk 7",
+            "quote": "n\": \"2.\n강의 및 프로젝트 이력 row 1844\",\n\"quote\": \"하계방학 소프트웨어 집중 과정\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"취업 연계 IT 전문가 양성 교육과정\",\n\"organization\": \"인제대학교\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": 70,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 1845\",\n\"quote\": \"취업 연계 IT 전문가 양성 교육과정\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"LG CNS 협력회사 신입사원 U-CAMP JAVA 전문가 과정 31기\",\n\"organization\": \"LG CNS\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 1846\",\n\"quote\": \"LG CNS 협력회사 신입사원 U-CAMP JAVA 전문가 과정 31기\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"KT 4차 산업 아카데미 과정 / AI/SW 개발 기술 과정\",\n\"organization\": \"KT\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "criterion": "career_and_certification",
+        "score": 15.0,
+        "max_score": 15.0,
+        "rationale": "강사는 20년 이상의 풍부한 IT 교육 경력을 지녔으며, 데이터 활용 전문성을 입증하는 SQLD 및 프로젝트 관리를 지원하는 PMP 자격증 등을 다수 보유하고 있습니다. 또한 LG CNS U-CAMP 전임강사, 삼성전자 SSAFY 전임강사 등으로 다년간 활동하여 최상위 수준의 역량이 검증되어 제안서 정성 평가(강사진 전문성 등) 요소에 부합합니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:9c66c411-5b62-4d1d-9973-3d2992266302",
+            "page": null,
+            "section": "chunk 5",
+            "quote": "·AI 분야 공인 자격 또는 15점\n전문성을 보유한 강사진 구성\n정성\n[제안업체 전문성 및 조직역량]\n점수\n- 조직 및 인원(전문인력)\n15점\n- 책임자의 능력\n- 전담 인력 구성 및 투입 규모\n[안전관리 및 계획]\n기술 - 참여인원 안전관리 대책 10점\n평가 - 기타 비상시 대책\n(80)\n[최근 3년 실적의 수준]\n10점\n- 2024~2026년 누적 실적 평가\n회사채 또는 기업어음에\n배점\n기업신용평가 한 신용평가\nAAA, AA+, AAO, AA- A1 10\nA+ A2+ 9\n정량\nAO A2O 8\n점수 A- A2- 7\n[기업경영상태]\n10점 BBB+ A3+ 6\n- 기업신용평가 등급에 의함\nBBBO A3O 5\nBBB- A3- 4\nBB+, BB0 B+ 3\nBB- BO 2\nB+, BO, B-이하 B-이하 1\nCCC+이하 C이하 0\n가격\n정량 [제안가격]\n평가 20점 (최저입찰가격/해당입찰가격) X 배점한도\n점수 - 제안가격의 적정성\n(20)\n합 계 100점\n※ 위 평가 기준은 상황에 따라 변경 및 조정될 수 있음\nⅣ 계약 특수조건\n1.\n본 건을 수행하기 위해서 허가·인가·면허·등록·신고 등을 요하거나 자격요건을 갖추어야 할 경우에는 당\n해 허가·인가·면허·등록·신고 등을 받았거나 당해 자격요건에 적합하고, 입찰참가 등록을 정해진 기한\n내에 완료한 자\n2.\n교육 품질 유지를 위해 입찰공고일 기준 다음 각 호의 자격을 모두 갖춘 자 이어야 하며 공동 수급(컨\n소시엄)은 허용하지 않음\n가.\n최근 3년 이내 클라우드 및 인공지능(AI)분야 교육과정을 수행한 실적이 있는 업체\n구분 | 평가항목 | 배점 | 비고\n기술\n평가\n(80) | 정성\n점수 | [사업의 기획력 및 적합성]\n- 교육 취지에 맞는 구성 및 기획\n- 교육 내용의 우수성 | 20점\n[강사진 구성 능력]",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": [
+          {
+            "source_document_id": "rag:instructor-81:db-3f4c7f8174f1",
+            "page": null,
+            "section": "chunk 1",
+            "quote": "\"빅데이터\",\n\"안드로이드\",\n\"eGovFrame\",\n\"클라우드\",\n\"SAP ERP\",\n\"영업분석\",\n\"금융서비스\",\n\"웹 개발\",\n\"S\",\n\"W공학\",\n\"시큐어코딩\",\n\"자바\",\n\"Framework\",\n\"NHN\",\n\"Web Component\",\n\"웹서비스\",\n\"신입사원\",\n\"VCC\",\n\"Web2.0\",\n\"OOAD\",\n\"UML\",\n\"U-CAMP\",\n\"컨설팅\",\n\"OS\",\n\"C\",\n\"Mobile Platform\",\n\"JDBC\",\n\"웹 컴포넌트\",\n\"Java Web\",\n\"Mobile\",\n\"Web Services\",\n\"JWSDP\",\n\"J2ME\",\n\"Wireless\",\n\"차세대기술\"\n],\n\"summary\": \"20년 이상 경력의 Java 및 웹/모바일 전문 강사\",\n\"delivery_modes\": [],\n\"availability_notes\": null,\n\"vendor_experience\": [\n\"삼성전자㈜ - 삼성 청년 SW 아카데미(SSAFY) 7기 ~ 9기 전임강사, 강의\",\n\"㈜LG CNS - 교육사업부 U-CAMP JAVA 전문가과정 전임강사, 강의/교재개발/과정컨설팅\",\n\"㈜LG CNS 기술대학원 - 교육사업부 U-CAMP과정 전임강사, 강의/교재개발/과정컨설팅\",\n\"한국썬마이크로시스템즈㈜ - 교육사업부 전임강사, 강의 및 교재개발\",\n\"SK 건설(주) - IT 기획팀 대리, 분석/설계/개발\"\n],\n\"vendor_certifications\": [\n\"SQLD ( SQL Developer )\",\n\"PMP (Project Management Professional)\",\n\"ITIL Foundation\",\n\"SCNA (Sun Certified Network Administrator)\",\n\"SCSA (Sun Certified System Administrator)\",",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "criterion": "evidence_completeness",
+        "score": 5.0,
+        "max_score": 5.0,
+        "rationale": "모든 핵심 평가 항목에 대해 정확하게 매칭되는 프로젝트 제안요청서 근거와 강사 역량 프로필 정보의 근거를 완벽하게 제시하였습니다.",
+        "project_evidence": [],
+        "instructor_evidence": []
+      }
+    ],
+    "recommendation_reasons": [
+      "20년 이상의 매우 풍부한 IT 교육 설계 및 강의 경력 보유",
+      "KT AI Cloud, KT Network AI 등 기업의 고도화된 클라우드 및 인공지능 실무 프로젝트 수행/교육 실무 경험 보유",
+      "인제대학교, 선문대학교 등 다수의 대학 출강 경험을 바탕으로 순천향대학교 학생들의 눈높이에 부합하는 교육 제공 가능"
+    ],
+    "gaps": [
+      "AWS, Azure, GCP 등 주요 퍼블릭 클라우드 벤더의 최신 공인 자격증 부재",
+      "제안요청서의 핵심 교육 범위 중 하나인 '데이터 주권(소버린 AI)'에 대한 강사의 직접적인 강의 실적 미기재"
+    ],
+    "risks": [
+      "강사의 주 전문 분야가 Java, 웹 및 모바일 아키텍처에 집중되어 있어, 최신 생성형 AI 도구 및 복잡한 소버린 클라우드 아키텍처 멘토링 시 전문 도메인의 깊이 면에서 일부 제한이 발생할 가능성이 있습니다."
+    ],
+    "required_conditions_passed": null,
+    "required_condition_notes": [
+      "제안요청서상의 '최근 3년 이내 클라우드 및 AI 교육 실적 보유', '전문 강사진 2명 이상 보유' 등의 필수 조건은 개별 강사가 아닌 용역 수행 '업체(법인)'에 요구되는 기준이므로, 개인 프로필 검토 대상에서 제외하고 판정을 보류함"
+    ]
+  },
+  "verification": {
+    "independent_score": 85.0,
+    "verdict": "REVIEW",
+    "evidence_coverage": 1.0,
+    "issues": [
+      {
+        "severity": "medium",
+        "category": "required_condition",
+        "description": "강사는 KT 미래인재육성프로젝트 AI Cloud, Network AI 등의 강의 이력이 있으나, 현대적인 클라우드(AWS, Azure, GCP, NCP 등)나 AI 관련 공인 자격증을 보유하고 있지 않습니다. 본 용역의 요구조건 중 \"클라우드 또는 인공지능(AI) 분야 전문 강사진... 관련 자격증 등으로 증빙 가능\" 조건에 대해 자격증 증빙 보완 또는 타 강사와의 연계 구성 검토가 필요합니다.",
+        "related_criterion": "career_and_certification"
+      }
+    ],
+    "corrected_score_items": [
+      {
+        "criterion": "topic_match",
+        "score": 28.0,
+        "max_score": 35.0,
+        "rationale": "강사는 KT의 '미래인재육성프로젝트 AI Cloud' 및 'Network AI', 엔코아의 '자율주행 영상처리를 위한 인공지능 SW 개발자 양성 과정' 등 클라우드 및 AI 분야의 교육을 수행한 명확한 이력을 보유하고 있습니다. 다만, 경력의 주축이 Java/Web Framework와 모바일 개발에 집중되어 있어, 프로젝트의 핵심 주제인 '소버린 AI(데이터 주권)' 및 최신 AI 도구 활용 등의 전문 도메인 매칭률은 부분적인 보완이 필요할 수 있습니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:9c66c411-5b62-4d1d-9973-3d2992266302",
+            "page": null,
+            "section": "chunk 0",
+            "quote": "데이터 주권(소버린 AI)의 중요성을 이해하고, 기업 핵심 데이터의 안전한 활용 역량을 갖춘 인재 양성\n2) AI 도구를 활용해 업무 효율을 높이는 실무 기초 역량 배양",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1840",
+            "quote": "미래인재육성프로젝트 AI Cloud",
+            "confidence": 1.0
+          },
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1835",
+            "quote": "자율주행 영상처리를 위한 인공지능 SW 개발자 양성 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "criterion": "teaching_depth",
+        "score": 26.0,
+        "max_score": 30.0,
+        "rationale": "강사는 삼성 청년 SW 아카데미(SSAFY) 7~9기 전임강사, LG CNS U-CAMP 전임강사 등 다수의 장기 집중 프로젝트형 교육과정 운영 경력을 보유하고 있으며, 50시간 규모의 단기 교육과정에 적합한 이론 및 실습 병행형 교육 역량이 검증되어 있습니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:9c66c411-5b62-4d1d-9973-3d2992266302",
+            "page": null,
+            "section": "chunk 0",
+            "quote": "이론과 실습을 병행하는 현장 중심 교육을 통해 클라우드·AI 기술의 실무 적용 역량 제고\n다) 프로젝트 기반 학습을 통한 문제 해결 능력 및 협업 역량 강화",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1834",
+            "quote": "삼성 청년 SW 아카데미(SSAFY) 7기 ~ 9기",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "criterion": "audience_fit",
+        "score": 15.0,
+        "max_score": 15.0,
+        "rationale": "순천향대학교 대학생들을 대상으로 하는 교육인 만큼 대학생 대상 교육 경험이 중요합니다. 강사는 안동대학교(Java 집중 캠프), 인제대학교(취업 연계 IT 전문가 양성 과정), 서울여자대학교(Android & Web App. 개발), 선문대학교 등 다수의 대학교에서 소프트웨어 집중 캠프 및 취업 연계 과정을 성공적으로 이끈 풍부한 경험을 보유하고 있어 청중 적합성이 매우 우수합니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:9c66c411-5b62-4d1d-9973-3d2992266302",
+            "page": null,
+            "section": "chunk 0",
+            "quote": "진행장소 : 순천향대학교 인간사랑관 2층 임베디드 실습실 6205호",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1841",
+            "quote": "Java 집중 캠프",
+            "confidence": 1.0
+          },
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1845",
+            "quote": "취업 연계 IT 전문가 양성 교육과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "criterion": "career_and_certification",
+        "score": 11.0,
+        "max_score": 15.0,
+        "rationale": "20년 이상의 풍부한 SW 교육 및 개발 경력(LG CNS, 삼성전자, SK건설 등)을 보유하고 있어 경력 측면은 탁월합니다. 다만, 보유하고 있는 자격증이 SQLD, PMP, SCNA, SCSA 등으로 최신 클라우드(AWS, NCP 등) 또는 인공지능 관련 공인 자격증이 부재하여 제안요청서 상의 강사 자격 요건(\"관련 자격증 등으로 증빙 가능\") 충족 여부를 확실히 하기 위해 추가적인 확인이 필요합니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:9c66c411-5b62-4d1d-9973-3d2992266302",
+            "page": null,
+            "section": "chunk 7",
+            "quote": "클라우드 또는 인공지능(AI)분야 전문 강사진 2명 이상을 보유한 업체(재직증명서, 강사확인서, 관련\n자격증 등으로 증빙 가능)",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 802",
+            "quote": "SQLD ( SQL Developer )",
+            "confidence": 1.0
+          },
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 807",
+            "quote": "SCSA (Sun Certified System Administrator)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "criterion": "evidence_completeness",
+        "score": 5.0,
+        "max_score": 5.0,
+        "rationale": "제시된 증거 자료들은 강사의 이력 및 프로젝트 요구사항을 모두 명확하게 뒷받침하고 있어 완결성이 높습니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:9c66c411-5b62-4d1d-9973-3d2992266302",
+            "page": null,
+            "section": "chunk 0",
+            "quote": "클라우드 및 AI 전문 교육과정 운영 용역 입찰",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": [
+          {
+            "source_document_id": "instructor-db:81",
+            "page": null,
+            "section": "instructors",
+            "quote": "20년 이상 경력의 Java 및 웹/모바일 전문 강사",
+            "confidence": 1.0
+          }
+        ]
+      }
+    ],
+    "required_conditions_passed": false
+  },
+  "grounding": {
+    "citation_accuracy": 0.5714285714285714,
+    "invalid_citation_count": 9,
+    "unsupported_positive_score_count": 0,
+    "required_condition_checks": [
+      {
+        "requirement": "클라우드 또는 인공지능(AI)분야 전문 강사진 2명 이상을 보유한 업체(재직증명서, 강사확인서, 관련 자격증 등으로 증빙 가능)",
+        "condition_type": "certification",
+        "status": "failed",
+        "detail": "Required credential not found in instructor profile."
+      },
+      {
+        "requirement": "최근 3년 이내 클라우드 및 인공지능(AI)분야 교육과정을 수행한 실적이 있는 업체",
+        "condition_type": "experience",
+        "status": "not_automatically_verifiable",
+        "detail": "Experience requirements need human or model review unless a numeric rule is configured."
+      }
+    ],
+    "verdict": "FAIL"
+  },
+  "rag_context": {
+    "project_evidence": [
+      {
+        "source_type": "project",
+        "evidence": {
+          "source_document_id": "task-order:9c66c411-5b62-4d1d-9973-3d2992266302",
+          "page": null,
+          "section": "chunk 5",
+          "quote": "·AI 분야 공인 자격 또는 15점\n전문성을 보유한 강사진 구성\n정성\n[제안업체 전문성 및 조직역량]\n점수\n- 조직 및 인원(전문인력)\n15점\n- 책임자의 능력\n- 전담 인력 구성 및 투입 규모\n[안전관리 및 계획]\n기술 - 참여인원 안전관리 대책 10점\n평가 - 기타 비상시 대책\n(80)\n[최근 3년 실적의 수준]\n10점\n- 2024~2026년 누적 실적 평가\n회사채 또는 기업어음에\n배점\n기업신용평가 한 신용평가\nAAA, AA+, AAO, AA- A1 10\nA+ A2+ 9\n정량\nAO A2O 8\n점수 A- A2- 7\n[기업경영상태]\n10점 BBB+ A3+ 6\n- 기업신용평가 등급에 의함\nBBBO A3O 5\nBBB- A3- 4\nBB+, BB0 B+ 3\nBB- BO 2\nB+, BO, B-이하 B-이하 1\nCCC+이하 C이하 0\n가격\n정량 [제안가격]\n평가 20점 (최저입찰가격/해당입찰가격) X 배점한도\n점수 - 제안가격의 적정성\n(20)\n합 계 100점\n※ 위 평가 기준은 상황에 따라 변경 및 조정될 수 있음\nⅣ 계약 특수조건\n1.\n본 건을 수행하기 위해서 허가·인가·면허·등록·신고 등을 요하거나 자격요건을 갖추어야 할 경우에는 당\n해 허가·인가·면허·등록·신고 등을 받았거나 당해 자격요건에 적합하고, 입찰참가 등록을 정해진 기한\n내에 완료한 자\n2.\n교육 품질 유지를 위해 입찰공고일 기준 다음 각 호의 자격을 모두 갖춘 자 이어야 하며 공동 수급(컨\n소시엄)은 허용하지 않음\n가.\n최근 3년 이내 클라우드 및 인공지능(AI)분야 교육과정을 수행한 실적이 있는 업체\n구분 | 평가항목 | 배점 | 비고\n기술\n평가\n(80) | 정성\n점수 | [사업의 기획력 및 적합성]\n- 교육 취지에 맞는 구성 및 기획\n- 교육 내용의 우수성 | 20점\n[강사진 구성 능력]",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.8705
+      },
+      {
+        "source_type": "project",
+        "evidence": {
+          "source_document_id": "task-order:9c66c411-5b62-4d1d-9973-3d2992266302",
+          "page": null,
+          "section": "chunk 6",
+          "quote": "행한 실적이 있는 업체\n구분 | 평가항목 | 배점 | 비고\n기술\n평가\n(80) | 정성\n점수 | [사업의 기획력 및 적합성]\n- 교육 취지에 맞는 구성 및 기획\n- 교육 내용의 우수성 | 20점\n[강사진 구성 능력]\n- 클라우드·AI 분야 공인 자격 또는\n전문성을 보유한 강사진 구성 | 15점\n[제안업체 전문성 및 조직역량]\n- 조직 및 인원(전문인력)\n- 책임자의 능력\n- 전담 인력 구성 및 투입 규모 | 15점\n[안전관리 및 계획]\n- 참여인원 안전관리 대책\n- 기타 비상시 대책 | 10점\n정량\n점수 | [최근 3년 실적의 수준]\n- 2024~2026년 누적 실적 평가 | 10점\n[기업경영상태]\n- 기업신용평가 등급에 의함 | 10점 | 회사채 또는 기업어음에\n배점\n기업신용평가 한 신용평가\nAAA, AA+, AAO, AA- A1 10\nA+ A2+ 9\nAO A2O 8\nA- A2- 7\nBBB+ A3+ 6\nBBBO A3O 5\nBBB- A3- 4\nBB+, BB0 B+ 3\nBB- BO 2\nB+, BO, B-이하 B-이하 1\nCCC+이하 C이하 0\n가격\n평가\n(20) | 정량\n점수 | [제안가격]\n- 제안가격의 적정성 | 20점 | (최저입찰가격/해당입찰가격) X 배점한도\n합 계 | 100점\n회사채 또는\n기업신용평가 | 기업어음에\n한 신용평가 | 배점\nAAA, AA+, AAO, AA- | A1 | 10\nA+ | A2+ | 9\nAO | A2O | 8\nA- | A2- | 7\nBBB+ | A3+ | 6\nBBBO | A3O | 5\nBBB- | A3- | 4\nBB+, BB0 | B+ | 3\nBB- | BO | 2\nB+, BO, B-이하 | B-이하 | 1\nCCC+이하 | C이하 | 0\n계 | 약 | 특 | 수 | 조 | 건\n나.",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.8336
+      },
+      {
+        "source_type": "project",
+        "evidence": {
+          "source_document_id": "task-order:9c66c411-5b62-4d1d-9973-3d2992266302",
+          "page": null,
+          "section": "chunk 0",
+          "quote": "제 안 요 청 서\n클라우드 및 AI 전문 교육과정 운영 용역 입찰\n2026.\n6.\n※ 본 자료는 제안내용의 설명을 위한 배포자료로, 이외 목적으로 무단복제, 전달 및 사용하는 행위를 금함.\nI 입찰 내용\n1.\n입 찰 명 : 클라우드 및 AI 전문 교육과정 운영 용역 입찰\n2.\n사업기간 : 계약체결일 ~ 2026.8.31.까지\n3.\n배정예산 : 금 50,000,000원(금오천만원) 내(부가세 포함)\n4.\n입찰개요\n가.\n교육 목적\n1) 데이터 주권(소버린 AI)의 중요성을 이해하고, 기업 핵심 데이터의 안전한 활용 역량을 갖춘 인재 양성\n2) AI 도구를 활용해 업무 효율을 높이는 실무 기초 역량 배양\n3) 프로젝트 기반 학습을 통해 AI 활용 역량을 강화하고, 클라우드·AI 분야 자격 취득과 취업 연계를\n지원하는 전주기적 교육체계를 구축\n나.\n교육개요\n1) 사 업 명 : 클라우드 및 AI 전문 교육과정 운영\n2) 교육기간 : 2026.7.15.(수) ~ 7.29.(수)\n3) 진행장소 : 순천향대학교 인간사랑관 2층 임베디드 실습실 6205호\n4) 추진방향\n가) 데이터 주권 이해를 바탕으로 안전하고 책임 있는 AI 활용 역량 배양\n나) 이론과 실습을 병행하는 현장 중심 교육을 통해 클라우드·AI 기술의 실무 적용 역량 제고\n다) 프로젝트 기반 학습을 통한 문제 해결 능력 및 협업 역량 강화\n라) 클라우드·AI 분야 자격 취득 지원 및 산업체 연계를 통한 취업 경쟁력 강화\n5) 참여인원 : 약 20명\n6) 주최/주관 : 순천향대학교/AI의료융합혁신교육원 학사지원팀\n다.\n과업내용\n1) 교육 지원 전반사항\n가) 교육과정 기획·지원\n- 클라우드·AI 교육과정에 적합한 이론/실습 병행 현장형 교육과정 기획 및 제안\n- 2026.7.15.~7.29.\n총 50시간 교육 일정 운영, 기획 및 지원",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.8128
+      },
+      {
+        "source_type": "project",
+        "evidence": {
+          "source_document_id": "task-order:9c66c411-5b62-4d1d-9973-3d2992266302",
+          "page": null,
+          "section": "chunk 7",
+          "quote": "A3O | 5\nBBB- | A3- | 4\nBB+, BB0 | B+ | 3\nBB- | BO | 2\nB+, BO, B-이하 | B-이하 | 1\nCCC+이하 | C이하 | 0\n계 | 약 | 특 | 수 | 조 | 건\n나.\n클라우드 또는 인공지능(AI)분야 전문 강사진 2명 이상을 보유한 업체(재직증명서, 강사확인서, 관련\n자격증 등으로 증빙 가능)\n다.\n제안하는 교육과정의 운영에 필요한 전문 인력 및 교육 운영 체계를 갖춘 업체\n3.\n입찰공고일 현재 청산, 합병, 매각 등 정리절차 중이거나 계획 중인 업체, 법원에 화의 또는 법정관리\n(신청 중)중인 업체, Work-out대상기업 및 영업정지 업체는 입찰에 참가 할 수 없음\n4.\n2개 이상의 업체가 컨소시엄을 구성하는 등 공동도급의 방식은 일체 허용하지 않으며, 단일업체여야 함\n5.\n국가를 당사자로 하는 계약에 관한 법률 시행령 제76조에 의한 부정당업자는 입찰참가자격을 제한함\nⅤ 입찰보증금 납부 및 귀속\n1.\n입찰참가자격이 있는 자는 「국가를 당사자로 하는 계약에 관한 법률 시행령」 제37조의 규정에 의하며,\n입찰보증금 납부는 입찰과 동시에 입찰제안 금액의 5%에 해당하는 입찰보증보험증권으로 대체\n2.\n다만, 낙찰자가 정당한 이유 없이 소정의 기한 내에 계약을 체결하지 아니한 때에는 ｢국가를 당사자로\n하는 계약에 관한 법률」 시행령 제38조 규정에 의거 입찰보증금의 납부 확약 내용에 따라 지체없이\n입찰보증금을 현금으로 납부\n3.\n낙찰자가 정당한 사유 없이 10일 이내에 계약을 체결하지 않은 경우, 입찰보증금은 본 대학교로 귀속\nⅥ 입찰 무효\n1.\n｢국가를 당사자로 하는 계약에 관한 법률｣시행령 제39조 제4항, 동 시행규칙 제44조에 해당하는 입찰\n은 무효\n2.\n입찰(평가)기간 동안 “Ⅱ.",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.7993
+      },
+      {
+        "source_type": "project",
+        "evidence": {
+          "source_document_id": "task-order:9c66c411-5b62-4d1d-9973-3d2992266302",
+          "page": null,
+          "section": "chunk 1",
+          "quote": "내용\n1) 교육 지원 전반사항\n가) 교육과정 기획·지원\n- 클라우드·AI 교육과정에 적합한 이론/실습 병행 현장형 교육과정 기획 및 제안\n- 2026.7.15.~7.29.\n총 50시간 교육 일정 운영, 기획 및 지원\n나) 강사 섭외 및 지원\n- 클라우드 및 AI 활용 교육 강사 섭외 및 교육 진행(주강사, 보조강사)\n- 클라우드·AI 분야 전문 강사진 포함 지원\n- 현업 전문가 특강(현직자 특강) 운영 및 프로젝트 전문가 피드백 제공\n다) 교육 인프라 지원\n- 교육용 클라우드플랫폼 계정 발급 및 크레딧 운영·관리\n- 실시간 계정 모니터링 및 관리\n- 실습 환경(개발 환경, API 연동 등) 구성 및 지원\n라) 교육 인력 지원\n- 전담 인력 배정\n- 온라인 협업 플랫폼을 활용한 과정 운영 및 학생 관리(출결·진도·공지 등)\n- 교육용 계정·자료 지원·관리\n입 | 찰 | 내 | 용\n마) 평가·인증\n- 수강생 평가 체계 운영 및 교육 평가(중간·최종) 진행\n- 클라우드·AI 분야 자격 취득 지원을 위한 모의평가 및 해설 제공\n바) 홍보물 및 교재 제작\n- 현수막 등 홍보물, 안내물, 교육 교재·실습 자료 제작\n- 제작물 사양·디자인·수량은 발주자 승인 후 확정 및 기한 내 납품\n2) 교육 지원 결과 보고서 제출\n3) 기타 교육 지원과 관련된 모든 사항\n5.\n세부 수행 내용(안)\n구분 세부 내용\n- 1~5일차 : AI기초 이해 및 클라우드 AI 서비스 활용\n- 6~9일차 : 실무 활용 프로젝트 진행 및 멘토링\n교육과정 기획\n- 10일차 : 프로젝트 결과 발표·피드백 및 클라우드·AI 분야 자격 취득 대비 모의\n;평가 진행\n- 클라우드 소속 공인 강사 섭외 및 배정(주강사, 보조강사)\n- 홍보물 제작(현수막,포스터,카드뉴스 등)\n- 오리엔테이션 진행\n- 교육용 계정 운영·관리",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.7877
+      }
+    ],
+    "instructor_evidence": [
+      {
+        "source_type": "instructor",
+        "evidence": {
+          "source_document_id": "rag:instructor-81:db-3f4c7f8174f1",
+          "page": null,
+          "section": "chunk 1",
+          "quote": "\"빅데이터\",\n\"안드로이드\",\n\"eGovFrame\",\n\"클라우드\",\n\"SAP ERP\",\n\"영업분석\",\n\"금융서비스\",\n\"웹 개발\",\n\"S\",\n\"W공학\",\n\"시큐어코딩\",\n\"자바\",\n\"Framework\",\n\"NHN\",\n\"Web Component\",\n\"웹서비스\",\n\"신입사원\",\n\"VCC\",\n\"Web2.0\",\n\"OOAD\",\n\"UML\",\n\"U-CAMP\",\n\"컨설팅\",\n\"OS\",\n\"C\",\n\"Mobile Platform\",\n\"JDBC\",\n\"웹 컴포넌트\",\n\"Java Web\",\n\"Mobile\",\n\"Web Services\",\n\"JWSDP\",\n\"J2ME\",\n\"Wireless\",\n\"차세대기술\"\n],\n\"summary\": \"20년 이상 경력의 Java 및 웹/모바일 전문 강사\",\n\"delivery_modes\": [],\n\"availability_notes\": null,\n\"vendor_experience\": [\n\"삼성전자㈜ - 삼성 청년 SW 아카데미(SSAFY) 7기 ~ 9기 전임강사, 강의\",\n\"㈜LG CNS - 교육사업부 U-CAMP JAVA 전문가과정 전임강사, 강의/교재개발/과정컨설팅\",\n\"㈜LG CNS 기술대학원 - 교육사업부 U-CAMP과정 전임강사, 강의/교재개발/과정컨설팅\",\n\"한국썬마이크로시스템즈㈜ - 교육사업부 전임강사, 강의 및 교재개발\",\n\"SK 건설(주) - IT 기획팀 대리, 분석/설계/개발\"\n],\n\"vendor_certifications\": [\n\"SQLD ( SQL Developer )\",\n\"PMP (Project Management Professional)\",\n\"ITIL Foundation\",\n\"SCNA (Sun Certified Network Administrator)\",\n\"SCSA (Sun Certified System Administrator)\",",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.7061
+      },
+      {
+        "source_type": "instructor",
+        "evidence": {
+          "source_document_id": "rag:instructor-81:db-3f4c7f8174f1",
+          "page": null,
+          "section": "chunk 4",
+          "quote": "l,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 1837\",\n\"quote\": \"LG CNS 협력회사 신입사원 U-CAMP JAVA 전문가 과정 33기\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"미래인재육성프로젝트 AI Cloud\",\n\"organization\": \"KT\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 1840\",\n\"quote\": \"미래인재육성프로젝트 AI Cloud\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"미래인재육성프로젝트 Network AI\",\n\"organization\": \"KT\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 1839\",\n\"quote\": \"미래인재육성프로젝트 Network AI\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"미래인재육성프로젝트 IT/DX B2B Delivery\",\n\"organization\": \"KT\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.7029
+      },
+      {
+        "source_type": "instructor",
+        "evidence": {
+          "source_document_id": "rag:instructor-81:db-3f4c7f8174f1",
+          "page": null,
+          "section": "chunk 7",
+          "quote": "n\": \"2.\n강의 및 프로젝트 이력 row 1844\",\n\"quote\": \"하계방학 소프트웨어 집중 과정\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"취업 연계 IT 전문가 양성 교육과정\",\n\"organization\": \"인제대학교\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": 70,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 1845\",\n\"quote\": \"취업 연계 IT 전문가 양성 교육과정\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"LG CNS 협력회사 신입사원 U-CAMP JAVA 전문가 과정 31기\",\n\"organization\": \"LG CNS\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 1846\",\n\"quote\": \"LG CNS 협력회사 신입사원 U-CAMP JAVA 전문가 과정 31기\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"KT 4차 산업 아카데미 과정 / AI/SW 개발 기술 과정\",\n\"organization\": \"KT\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.693
+      },
+      {
+        "source_type": "instructor",
+        "evidence": {
+          "source_document_id": "rag:instructor-81:db-3f4c7f8174f1",
+          "page": null,
+          "section": "chunk 3",
+          "quote": "ence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 1835\",\n\"quote\": \"자율주행 영상처리를 위한 인공지능 SW 개발자 양성 과정\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"스마트시티 국토정보관리 데이터레이크 전문가 양성과정\",\n\"organization\": \"엔코아 교육센터 플레이데이터\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 1836\",\n\"quote\": \"스마트시티 국토정보관리 데이터레이크 전문가 양성과정\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"LG CNS 협력회사 신입사원 U-CAMP JAVA 전문가 과정 33기\",\n\"organization\": \"LG CNS\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 1837\",\n\"quote\": \"LG CNS 협력회사 신입사원 U-CAMP JAVA 전문가 과정 33기\",\n\"confidence\": 1.0\n}\n]\n},\n{",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.6913
+      },
+      {
+        "source_type": "instructor",
+        "evidence": {
+          "source_document_id": "rag:instructor-81:db-3f4c7f8174f1",
+          "page": null,
+          "section": "chunk 17",
+          "quote": "on\": \"KSA(한국표준협회) (삼육대학교)\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 1867\",\n\"quote\": \"2017년 청년취업아카데미 빅데이터 기반 안드로이드 프로그래밍 전문 개발자 양성과정\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"클라우드 기반 eGovFrame 프로그래밍 개발자 양성과정\",\n\"organization\": \"KOSTA (한국소프트웨어 기술진흥협회)\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 1866\",\n\"quote\": \"클라우드 기반 eGovFrame 프로그래밍 개발자 양성과정\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"2017년 하반기 신입 IT 입문교육 (Java & Web Programming)\",\n\"organization\": \"롯데정보통신㈜\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.691
+      }
+    ]
+  }
+}

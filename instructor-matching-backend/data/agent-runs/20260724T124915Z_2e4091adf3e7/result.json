@@ -1,0 +1,428 @@
+{
+  "run_id": "20260724T124915Z_2e4091adf3e7",
+  "final_score": 95.0,
+  "final_status": "on_hold",
+  "reasons": [
+    "Code validation found an invalid citation or an unmet exact mandatory condition.",
+    "A/B score difference: 10.0",
+    "Evidence coverage: 100%",
+    "Verifier verdict: REVIEW",
+    "Code grounding verdict: FAIL",
+    "Citation accuracy: 67%"
+  ],
+  "analysis": {
+    "total_score": 100.0,
+    "score_items": [
+      {
+        "criterion": "topic_match",
+        "score": 35.0,
+        "max_score": 35.0,
+        "rationale": "강사는 구글 클라우드 및 AWS 등 주요 클라우드 플랫폼 기반의 인공지능 과정과 머신러닝, AI 서비스 구현 관련 강의를 다수 진행한 경험이 있어, 과업에서 요구하는 클라우드 및 AI 전문 교육 주제와 완벽히 일치합니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:9c66c411-5b62-4d1d-9973-3d2992266302",
+            "page": null,
+            "section": "chunk 0",
+            "quote": "1. 입 찰 명 : 클라우드 및 AI 전문 교육과정 운영 용역 입찰",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 853",
+            "quote": "구글 클라우드 기반 인공지능 개발자 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "criterion": "teaching_depth",
+        "score": 30.0,
+        "max_score": 30.0,
+        "rationale": "과업은 이론/실습 병행 및 프로젝트 기반 학습을 요구하고 있습니다. 강사는 비트교육센터 등에서 4차산업선도인력양성과정의 '융복합 AI 응용서비스 개발 실무' 및 '딥러닝 기반 영상인식 개발 전문가과정' 등 실무 및 프로젝트형 장기 과정을 전담하여 강의한 이력이 풍부하여 깊이 있는 교육을 제공할 수 있습니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:9c66c411-5b62-4d1d-9973-3d2992266302",
+            "page": null,
+            "section": "chunk 0",
+            "quote": "나) 이론과 실습을 병행하는 현장 중심 교육을 통해 클라우드·AI 기술의 실무 적용 역량 제고\n다) 프로젝트 기반 학습을 통한 문제 해결 능력 및 협업 역량 강화",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 856",
+            "quote": "4차산업선도인력양성과정 융복합 AI 응용서비스 개발 실무",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "criterion": "audience_fit",
+        "score": 15.0,
+        "max_score": 15.0,
+        "rationale": "과업의 교육 대상은 순천향대학교 대학생 약 20명이며 자격 취득 및 취업 연계를 목표로 합니다. 강사는 경북대학교에서 인공지능 기본 강의를 진행한 경험이 있으며, 서울 ICT이노베이션스퀘어에서 취업준비생 대상의 AI 과정을 교육한 이력이 있어 대학생 및 구직자 대상의 맞춤형 강의 및 취업 경쟁력 강화 지원에 매우 적합합니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:9c66c411-5b62-4d1d-9973-3d2992266302",
+            "page": null,
+            "section": "chunk 0",
+            "quote": "5) 참여인원 : 약 20명\n6) 주최/주관 : 순천향대학교/AI의료융합혁신교육원 학사지원팀",
+            "confidence": 1.0
+          },
+          {
+            "source_document_id": "task-order:9c66c411-5b62-4d1d-9973-3d2992266302",
+            "page": null,
+            "section": "chunk 0",
+            "quote": "라) 클라우드·AI 분야 자격 취득 지원 및 산업체 연계를 통한 취업 경쟁력 강화",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 871",
+            "quote": "인공지능 기본",
+            "confidence": 1.0
+          },
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 855",
+            "quote": "AI중급과정 및 대구 AI 취업준비생 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "criterion": "career_and_certification",
+        "score": 15.0,
+        "max_score": 15.0,
+        "rationale": "강사는 현재 인공지능/영상인식/생성형AI 전문 기업인 '코딩스퀘어'의 대표이자, 전임강사 및 임베디드/영상처리 분야 책임연구원 등의 경력을 지니고 있어 뛰어난 실무 및 강의 전문성을 보유하고 있습니다. 또한 산업자원부 장관상을 수상한 검증된 기술력을 바탕으로 자격 요건을 충족합니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:9c66c411-5b62-4d1d-9973-3d2992266302",
+            "page": null,
+            "section": "chunk 6",
+            "quote": "- 클라우드·AI 분야 공인 자격 또는\n전문성을 보유한 강사진 구성 | 15점",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 385",
+            "quote": "대표 (인공지능/영상인식/생성형AI)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "criterion": "evidence_completeness",
+        "score": 5.0,
+        "max_score": 5.0,
+        "rationale": "모든 정량적 점수 항목에 대해 과업 요청서의 요구사항 원문과 강사의 실제 강의 및 경력 이력의 원문 근거가 누락 없이 정확하게 매칭되어 제시되었습니다.",
+        "project_evidence": [],
+        "instructor_evidence": []
+      }
+    ],
+    "recommendation_reasons": [
+      "구글 클라우드 및 AWS 등 클라우드 플랫폼 기반의 인공지능 강의 수행 이력이 다수 존재하여 핵심 주제와의 적합도가 우수합니다.",
+      "경북대학교 등 대학생 대상 인공지능 교육 및 취업준비생 과정을 진행한 이력이 있어 순천향대학교 대학생 대상 맞춤형 교육 운영에 최적화되어 있습니다.",
+      "현직 대표 및 풍부한 전임강사 경력을 보유하고 있어 교육의 신뢰도와 전문성이 매우 높습니다."
+    ],
+    "gaps": [
+      "과업 필수 요건 중 '클라우드 또는 AI 분야 전문 강사진 2명 이상 보유' 및 '최근 3년 이내 관련 교육과정 수행 실적' 등 제안업체 자격 요건은 강사 개인의 프로필만으로는 최종 충족 여부를 확인하기 어렵습니다."
+    ],
+    "risks": [],
+    "required_conditions_passed": null,
+    "required_condition_notes": [
+      "강사 개인의 전문성은 자격 요건을 충분히 만족하지만, 입찰 참가 자격으로서의 업체 실적 및 2인 이상의 전문 강사진 확보 여부는 제안업체 단위에서 별도 검증이 필요합니다."
+    ]
+  },
+  "verification": {
+    "independent_score": 90.0,
+    "verdict": "REVIEW",
+    "evidence_coverage": 1.0,
+    "issues": [
+      {
+        "severity": "medium",
+        "category": "required_condition",
+        "description": "세부 과업내용 중 '클라우드 소속 공인 강사 섭외 및 배정' 조건이 명시되어 있으나, 제안된 박희진 강사의 프로필에는 클라우드 제조사(GCP, AWS 등) 공인 자격증 및 공인 강사 인증(Authorized Instructor) 획득 여부가 명시되어 있지 않아 발주처 승인 시 자격 요건 논란이 발생할 소지가 있습니다.",
+        "related_criterion": "career_and_certification"
+      }
+    ],
+    "corrected_score_items": [
+      {
+        "criterion": "topic_match",
+        "score": 32.0,
+        "max_score": 35.0,
+        "rationale": "강사는 구글 클라우드 기반 인공지능 개발자 과정 및 AWS 활용 IoT 개발자 과정 등 클라우드와 AI 융합 교육 분야에서 풍부한 경력을 보유하고 있어 핵심 과업 주제와의 정합성이 매우 높습니다. 다만 과업 명세서의 세부 주제인 '소버린 AI(데이터 주권)' 특화 강의 이력은 구체적으로 명시되어 있지 않아 일부 감점하였습니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:9c66c411-5b62-4d1d-9973-3d2992266302",
+            "page": null,
+            "section": "chunk 0",
+            "quote": "데이터 주권(소버린 AI)의 중요성을 이해하고, 기업 핵심 데이터의 안전한 활용 역량을 갖춘 인재 양성\n2) AI 도구를 활용해 업무 효율을 높이는 실무 기초 역량 배양",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": [
+          {
+            "source_document_id": "rag:instructor-40:db-092b03ae7b9d",
+            "page": null,
+            "section": "chunk 1",
+            "quote": "구글 클라우드 기반 인공지능 개발자 과정",
+            "confidence": 1.0
+          },
+          {
+            "source_document_id": "rag:instructor-40:db-092b03ae7b9d",
+            "page": null,
+            "section": "chunk 5",
+            "quote": "4차산업선도인력양성과정 AWS를 활용한 IoT서비스 개발자 양성과정 2차",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "criterion": "teaching_depth",
+        "score": 28.0,
+        "max_score": 30.0,
+        "rationale": "강사는 4차산업선도인력양성과정 등 실무 프로젝트 기반의 장기 전문 과정을 다수 기획 및 운영한 경험이 있어, 본 과업이 요구하는 '이론/실습 병행 현장 중심 교육' 및 '프로젝트 기반 학습(PBL)'을 성공적으로 이끌어갈 수 있는 충분한 교수 깊이를 가지고 있습니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:9c66c411-5b62-4d1d-9973-3d2992266302",
+            "page": null,
+            "section": "chunk 0",
+            "quote": "나) 이론과 실습을 병행하는 현장 중심 교육을 통해 클라우드·AI 기술의 실무 적용 역량 제고\n다) 프로젝트 기반 학습을 통한 문제 해결 능력 및 협업 역량 강화",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": [
+          {
+            "source_document_id": "rag:instructor-40:db-092b03ae7b9d",
+            "page": null,
+            "section": "chunk 5",
+            "quote": "4차산업선도인력양성과정 융복합 AI 응용서비스 개발 실무",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "criterion": "audience_fit",
+        "score": 14.0,
+        "max_score": 15.0,
+        "rationale": "강사는 경북대학교에서의 '인공지능 기본' 강의 및 대구 지역 '취업준비생 과정' 운영 경력이 있어, 순천향대학교 대학생들을 대상으로 취업 연계 및 역량 강화를 목적으로 하는 본 사업의 교육 대상 적합성에 부합합니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:9c66c411-5b62-4d1d-9973-3d2992266302",
+            "page": null,
+            "section": "chunk 0",
+            "quote": "라) 클라우드·AI 분야 자격 취득 지원 및 산업체 연계를 통한 취업 경쟁력 강화\n5) 참여인원 : 약 20명",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": [
+          {
+            "source_document_id": "rag:instructor-40:db-092b03ae7b9d",
+            "page": null,
+            "section": "chunk 4",
+            "quote": "AI중급과정 및 대구 AI 취업준비생 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "criterion": "career_and_certification",
+        "score": 11.0,
+        "max_score": 15.0,
+        "rationale": "강사는 다년간의 교육 전임강사 및 임베디드/AI 기업 연구원, 대표 경력을 통해 확실한 전문성을 검증받았습니다. 다만, 프로젝트 세부 제안요청서의 '클라우드 소속 공인 강사 섭외' 요건 및 클라우드 분야 공인 자격증 증빙 관점에서 프로필상에 명시적인 국제 벤더 공인 자격이나 강사 인증 정보가 기재되어 있지 않아 감점이 적용되었습니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:9c66c411-5b62-4d1d-9973-3d2992266302",
+            "page": null,
+            "section": "chunk 1",
+            "quote": "- 클라우드 소속 공인 강사 섭외 및 배정(주강사, 보조강사)",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": [
+          {
+            "source_document_id": "rag:instructor-40:db-092b03ae7b9d",
+            "page": null,
+            "section": "chunk 1",
+            "quote": "코딩스퀘어 - 대표 (인공지능/영상인식/생성형AI)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "criterion": "evidence_completeness",
+        "score": 5.0,
+        "max_score": 5.0,
+        "rationale": "평가한 모든 기준에 대해 과업 요구 사양과 강사 이력의 실제 원문 텍스트 근거가 상호 완벽하게 맵핑되어 제시되었습니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:9c66c411-5b62-4d1d-9973-3d2992266302",
+            "page": null,
+            "section": "chunk 0",
+            "quote": "클라우드 및 AI 전문 교육과정 운영 용역 입찰",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": [
+          {
+            "source_document_id": "rag:instructor-40:db-092b03ae7b9d",
+            "page": null,
+            "section": "chunk 1",
+            "quote": "인공지능 및 영상처리 분야 전문 강사",
+            "confidence": 1.0
+          }
+        ]
+      }
+    ],
+    "required_conditions_passed": null
+  },
+  "grounding": {
+    "citation_accuracy": 0.6666666666666666,
+    "invalid_citation_count": 7,
+    "unsupported_positive_score_count": 0,
+    "required_condition_checks": [
+      {
+        "requirement": "클라우드 또는 인공지능(AI)분야 전문 강사진 2명 이상을 보유한 업체(재직증명서, 강사확인서, 관련 자격증 등으로 증빙 가능)",
+        "condition_type": "certification",
+        "status": "failed",
+        "detail": "Required credential not found in instructor profile."
+      },
+      {
+        "requirement": "최근 3년 이내 클라우드 및 인공지능(AI)분야 교육과정을 수행한 실적이 있는 업체",
+        "condition_type": "experience",
+        "status": "not_automatically_verifiable",
+        "detail": "Experience requirements need human or model review unless a numeric rule is configured."
+      }
+    ],
+    "verdict": "FAIL"
+  },
+  "rag_context": {
+    "project_evidence": [
+      {
+        "source_type": "project",
+        "evidence": {
+          "source_document_id": "task-order:9c66c411-5b62-4d1d-9973-3d2992266302",
+          "page": null,
+          "section": "chunk 5",
+          "quote": "·AI 분야 공인 자격 또는 15점\n전문성을 보유한 강사진 구성\n정성\n[제안업체 전문성 및 조직역량]\n점수\n- 조직 및 인원(전문인력)\n15점\n- 책임자의 능력\n- 전담 인력 구성 및 투입 규모\n[안전관리 및 계획]\n기술 - 참여인원 안전관리 대책 10점\n평가 - 기타 비상시 대책\n(80)\n[최근 3년 실적의 수준]\n10점\n- 2024~2026년 누적 실적 평가\n회사채 또는 기업어음에\n배점\n기업신용평가 한 신용평가\nAAA, AA+, AAO, AA- A1 10\nA+ A2+ 9\n정량\nAO A2O 8\n점수 A- A2- 7\n[기업경영상태]\n10점 BBB+ A3+ 6\n- 기업신용평가 등급에 의함\nBBBO A3O 5\nBBB- A3- 4\nBB+, BB0 B+ 3\nBB- BO 2\nB+, BO, B-이하 B-이하 1\nCCC+이하 C이하 0\n가격\n정량 [제안가격]\n평가 20점 (최저입찰가격/해당입찰가격) X 배점한도\n점수 - 제안가격의 적정성\n(20)\n합 계 100점\n※ 위 평가 기준은 상황에 따라 변경 및 조정될 수 있음\nⅣ 계약 특수조건\n1.\n본 건을 수행하기 위해서 허가·인가·면허·등록·신고 등을 요하거나 자격요건을 갖추어야 할 경우에는 당\n해 허가·인가·면허·등록·신고 등을 받았거나 당해 자격요건에 적합하고, 입찰참가 등록을 정해진 기한\n내에 완료한 자\n2.\n교육 품질 유지를 위해 입찰공고일 기준 다음 각 호의 자격을 모두 갖춘 자 이어야 하며 공동 수급(컨\n소시엄)은 허용하지 않음\n가.\n최근 3년 이내 클라우드 및 인공지능(AI)분야 교육과정을 수행한 실적이 있는 업체\n구분 | 평가항목 | 배점 | 비고\n기술\n평가\n(80) | 정성\n점수 | [사업의 기획력 및 적합성]\n- 교육 취지에 맞는 구성 및 기획\n- 교육 내용의 우수성 | 20점\n[강사진 구성 능력]",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.8705
+      },
+      {
+        "source_type": "project",
+        "evidence": {
+          "source_document_id": "task-order:9c66c411-5b62-4d1d-9973-3d2992266302",
+          "page": null,
+          "section": "chunk 6",
+          "quote": "행한 실적이 있는 업체\n구분 | 평가항목 | 배점 | 비고\n기술\n평가\n(80) | 정성\n점수 | [사업의 기획력 및 적합성]\n- 교육 취지에 맞는 구성 및 기획\n- 교육 내용의 우수성 | 20점\n[강사진 구성 능력]\n- 클라우드·AI 분야 공인 자격 또는\n전문성을 보유한 강사진 구성 | 15점\n[제안업체 전문성 및 조직역량]\n- 조직 및 인원(전문인력)\n- 책임자의 능력\n- 전담 인력 구성 및 투입 규모 | 15점\n[안전관리 및 계획]\n- 참여인원 안전관리 대책\n- 기타 비상시 대책 | 10점\n정량\n점수 | [최근 3년 실적의 수준]\n- 2024~2026년 누적 실적 평가 | 10점\n[기업경영상태]\n- 기업신용평가 등급에 의함 | 10점 | 회사채 또는 기업어음에\n배점\n기업신용평가 한 신용평가\nAAA, AA+, AAO, AA- A1 10\nA+ A2+ 9\nAO A2O 8\nA- A2- 7\nBBB+ A3+ 6\nBBBO A3O 5\nBBB- A3- 4\nBB+, BB0 B+ 3\nBB- BO 2\nB+, BO, B-이하 B-이하 1\nCCC+이하 C이하 0\n가격\n평가\n(20) | 정량\n점수 | [제안가격]\n- 제안가격의 적정성 | 20점 | (최저입찰가격/해당입찰가격) X 배점한도\n합 계 | 100점\n회사채 또는\n기업신용평가 | 기업어음에\n한 신용평가 | 배점\nAAA, AA+, AAO, AA- | A1 | 10\nA+ | A2+ | 9\nAO | A2O | 8\nA- | A2- | 7\nBBB+ | A3+ | 6\nBBBO | A3O | 5\nBBB- | A3- | 4\nBB+, BB0 | B+ | 3\nBB- | BO | 2\nB+, BO, B-이하 | B-이하 | 1\nCCC+이하 | C이하 | 0\n계 | 약 | 특 | 수 | 조 | 건\n나.",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.8336
+      },
+      {
+        "source_type": "project",
+        "evidence": {
+          "source_document_id": "task-order:9c66c411-5b62-4d1d-9973-3d2992266302",
+          "page": null,
+          "section": "chunk 0",
+          "quote": "제 안 요 청 서\n클라우드 및 AI 전문 교육과정 운영 용역 입찰\n2026.\n6.\n※ 본 자료는 제안내용의 설명을 위한 배포자료로, 이외 목적으로 무단복제, 전달 및 사용하는 행위를 금함.\nI 입찰 내용\n1.\n입 찰 명 : 클라우드 및 AI 전문 교육과정 운영 용역 입찰\n2.\n사업기간 : 계약체결일 ~ 2026.8.31.까지\n3.\n배정예산 : 금 50,000,000원(금오천만원) 내(부가세 포함)\n4.\n입찰개요\n가.\n교육 목적\n1) 데이터 주권(소버린 AI)의 중요성을 이해하고, 기업 핵심 데이터의 안전한 활용 역량을 갖춘 인재 양성\n2) AI 도구를 활용해 업무 효율을 높이는 실무 기초 역량 배양\n3) 프로젝트 기반 학습을 통해 AI 활용 역량을 강화하고, 클라우드·AI 분야 자격 취득과 취업 연계를\n지원하는 전주기적 교육체계를 구축\n나.\n교육개요\n1) 사 업 명 : 클라우드 및 AI 전문 교육과정 운영\n2) 교육기간 : 2026.7.15.(수) ~ 7.29.(수)\n3) 진행장소 : 순천향대학교 인간사랑관 2층 임베디드 실습실 6205호\n4) 추진방향\n가) 데이터 주권 이해를 바탕으로 안전하고 책임 있는 AI 활용 역량 배양\n나) 이론과 실습을 병행하는 현장 중심 교육을 통해 클라우드·AI 기술의 실무 적용 역량 제고\n다) 프로젝트 기반 학습을 통한 문제 해결 능력 및 협업 역량 강화\n라) 클라우드·AI 분야 자격 취득 지원 및 산업체 연계를 통한 취업 경쟁력 강화\n5) 참여인원 : 약 20명\n6) 주최/주관 : 순천향대학교/AI의료융합혁신교육원 학사지원팀\n다.\n과업내용\n1) 교육 지원 전반사항\n가) 교육과정 기획·지원\n- 클라우드·AI 교육과정에 적합한 이론/실습 병행 현장형 교육과정 기획 및 제안\n- 2026.7.15.~7.29.\n총 50시간 교육 일정 운영, 기획 및 지원",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.8128
+      },
+      {
+        "source_type": "project",
+        "evidence": {
+          "source_document_id": "task-order:9c66c411-5b62-4d1d-9973-3d2992266302",
+          "page": null,
+          "section": "chunk 7",
+          "quote": "A3O | 5\nBBB- | A3- | 4\nBB+, BB0 | B+ | 3\nBB- | BO | 2\nB+, BO, B-이하 | B-이하 | 1\nCCC+이하 | C이하 | 0\n계 | 약 | 특 | 수 | 조 | 건\n나.\n클라우드 또는 인공지능(AI)분야 전문 강사진 2명 이상을 보유한 업체(재직증명서, 강사확인서, 관련\n자격증 등으로 증빙 가능)\n다.\n제안하는 교육과정의 운영에 필요한 전문 인력 및 교육 운영 체계를 갖춘 업체\n3.\n입찰공고일 현재 청산, 합병, 매각 등 정리절차 중이거나 계획 중인 업체, 법원에 화의 또는 법정관리\n(신청 중)중인 업체, Work-out대상기업 및 영업정지 업체는 입찰에 참가 할 수 없음\n4.\n2개 이상의 업체가 컨소시엄을 구성하는 등 공동도급의 방식은 일체 허용하지 않으며, 단일업체여야 함\n5.\n국가를 당사자로 하는 계약에 관한 법률 시행령 제76조에 의한 부정당업자는 입찰참가자격을 제한함\nⅤ 입찰보증금 납부 및 귀속\n1.\n입찰참가자격이 있는 자는 「국가를 당사자로 하는 계약에 관한 법률 시행령」 제37조의 규정에 의하며,\n입찰보증금 납부는 입찰과 동시에 입찰제안 금액의 5%에 해당하는 입찰보증보험증권으로 대체\n2.\n다만, 낙찰자가 정당한 이유 없이 소정의 기한 내에 계약을 체결하지 아니한 때에는 ｢국가를 당사자로\n하는 계약에 관한 법률」 시행령 제38조 규정에 의거 입찰보증금의 납부 확약 내용에 따라 지체없이\n입찰보증금을 현금으로 납부\n3.\n낙찰자가 정당한 사유 없이 10일 이내에 계약을 체결하지 않은 경우, 입찰보증금은 본 대학교로 귀속\nⅥ 입찰 무효\n1.\n｢국가를 당사자로 하는 계약에 관한 법률｣시행령 제39조 제4항, 동 시행규칙 제44조에 해당하는 입찰\n은 무효\n2.\n입찰(평가)기간 동안 “Ⅱ.",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.7993
+      },
+      {
+        "source_type": "project",
+        "evidence": {
+          "source_document_id": "task-order:9c66c411-5b62-4d1d-9973-3d2992266302",
+          "page": null,
+          "section": "chunk 1",
+          "quote": "내용\n1) 교육 지원 전반사항\n가) 교육과정 기획·지원\n- 클라우드·AI 교육과정에 적합한 이론/실습 병행 현장형 교육과정 기획 및 제안\n- 2026.7.15.~7.29.\n총 50시간 교육 일정 운영, 기획 및 지원\n나) 강사 섭외 및 지원\n- 클라우드 및 AI 활용 교육 강사 섭외 및 교육 진행(주강사, 보조강사)\n- 클라우드·AI 분야 전문 강사진 포함 지원\n- 현업 전문가 특강(현직자 특강) 운영 및 프로젝트 전문가 피드백 제공\n다) 교육 인프라 지원\n- 교육용 클라우드플랫폼 계정 발급 및 크레딧 운영·관리\n- 실시간 계정 모니터링 및 관리\n- 실습 환경(개발 환경, API 연동 등) 구성 및 지원\n라) 교육 인력 지원\n- 전담 인력 배정\n- 온라인 협업 플랫폼을 활용한 과정 운영 및 학생 관리(출결·진도·공지 등)\n- 교육용 계정·자료 지원·관리\n입 | 찰 | 내 | 용\n마) 평가·인증\n- 수강생 평가 체계 운영 및 교육 평가(중간·최종) 진행\n- 클라우드·AI 분야 자격 취득 지원을 위한 모의평가 및 해설 제공\n바) 홍보물 및 교재 제작\n- 현수막 등 홍보물, 안내물, 교육 교재·실습 자료 제작\n- 제작물 사양·디자인·수량은 발주자 승인 후 확정 및 기한 내 납품\n2) 교육 지원 결과 보고서 제출\n3) 기타 교육 지원과 관련된 모든 사항\n5.\n세부 수행 내용(안)\n구분 세부 내용\n- 1~5일차 : AI기초 이해 및 클라우드 AI 서비스 활용\n- 6~9일차 : 실무 활용 프로젝트 진행 및 멘토링\n교육과정 기획\n- 10일차 : 프로젝트 결과 발표·피드백 및 클라우드·AI 분야 자격 취득 대비 모의\n;평가 진행\n- 클라우드 소속 공인 강사 섭외 및 배정(주강사, 보조강사)\n- 홍보물 제작(현수막,포스터,카드뉴스 등)\n- 오리엔테이션 진행\n- 교육용 계정 운영·관리",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.7877
+      }
+    ],
+    "instructor_evidence": [
+      {
+        "source_type": "instructor",
+        "evidence": {
+          "source_document_id": "rag:instructor-40:db-092b03ae7b9d",
+          "page": null,
+          "section": "chunk 2",
+          "quote": "클라우드 기반 인공지능 개발자 과정\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"파이썬 기반 머신러닝, AutoML을 활용한 서비스 구현, 인공지능 모델링을 위한 데이터 전처리 (재직자)\",\n\"organization\": \"한국지능형사물인터넷협회\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 852\",\n\"quote\": \"파이썬 기반 머신러닝, AutoML을 활용한 서비스 구현, 인공지능 모델링을 위한 데이터 전처리 (재직자)\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"데이터 분석 엔지니어 과정\",\n\"organization\": \"멀티캠퍼스\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 870\",\n\"quote\": \"데이터 분석 엔지니어 과정\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"인공지능 기본\",\n\"organization\": \"경북대학교\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.7353
+      },
+      {
+        "source_type": "instructor",
+        "evidence": {
+          "source_document_id": "rag:instructor-40:db-092b03ae7b9d",
+          "page": null,
+          "section": "chunk 4",
+          "quote": "rce:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 872\",\n\"quote\": \"IoT 기반 추론\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"인공지능 시각\",\n\"organization\": \"한국도로공사\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 874\",\n\"quote\": \"인공지능 시각\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"AI중급과정 및 대구 AI 취업준비생 과정\",\n\"organization\": \"서울 ICT이노베이션스퀘어\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 855\",\n\"quote\": \"AI중급과정 및 대구 AI 취업준비생 과정\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"인공지능 기본, 중급, 고급 시각, 심화 시각\",\n\"organization\": \"한국IT비즈니스진흥협회\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.7249
+      },
+      {
+        "source_type": "instructor",
+        "evidence": {
+          "source_document_id": "rag:instructor-40:db-092b03ae7b9d",
+          "page": null,
+          "section": "chunk 1",
+          "quote": "콤 - 주임연구원 (연구소/임베디드, Verilog)\",\n\"휴인스 - 연구원 (개발/임베디드, VHDL)\"\n],\n\"vendor_certifications\": [\n\"SoC IP설계 검증 장치(산업자원부 장관상)\"\n],\n\"teaching_items\": [\n{\n\"topic\": \"구글 클라우드 기반 인공지능 개발자 과정\",\n\"organization\": \"서울 소프트웨어 아카데미\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 853\",\n\"quote\": \"구글 클라우드 기반 인공지능 개발자 과정\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"구글 클라우드 기반 인공지능 개발자 과정\",\n\"organization\": \"서울 소프트웨어 아카데미\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 854\",\n\"quote\": \"구글 클라우드 기반 인공지능 개발자 과정\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"파이썬 기반 머신러닝, AutoML을 활용한 서비스 구현, 인공지능 모델링을 위한 데이터 전처리 (재직자)\",",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.7203
+      },
+      {
+        "source_type": "instructor",
+        "evidence": {
+          "source_document_id": "rag:instructor-40:db-092b03ae7b9d",
+          "page": null,
+          "section": "chunk 5",
+          "quote": "시각, 심화 시각\",\n\"organization\": \"한국IT비즈니스진흥협회\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 875\",\n\"quote\": \"인공지능 기본, 중급, 고급 시각, 심화 시각\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"4차산업선도인력양성과정 융복합 AI 응용서비스 개발 실무\",\n\"organization\": \"비트교육센터\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 856\",\n\"quote\": \"4차산업선도인력양성과정 융복합 AI 응용서비스 개발 실무\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"4차산업선도인력양성과정 AWS를 활용한 IoT서비스 개발자 양성과정 2차\",\n\"organization\": \"비트교육센터\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.7093
+      },
+      {
+        "source_type": "instructor",
+        "evidence": {
+          "source_document_id": "rag:instructor-40:db-092b03ae7b9d",
+          "page": null,
+          "section": "chunk 3",
+          "quote": "\",\n\"organization\": \"경북대학교\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 871\",\n\"quote\": \"인공지능 기본\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"인공지능 프로젝트 동영상 제작\",\n\"organization\": \"한국디지털융합진흥원\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 873\",\n\"quote\": \"인공지능 프로젝트 동영상 제작\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"IoT 기반 추론\",\n\"organization\": \"지능정보산업협회\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 872\",\n\"quote\": \"IoT 기반 추론\",\n\"confidence\": 1.0\n}\n]\n},\n{",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.7063
+      }
+    ]
+  }
+}

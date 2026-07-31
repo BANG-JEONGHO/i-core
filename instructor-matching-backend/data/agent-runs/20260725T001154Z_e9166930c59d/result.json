@@ -1,0 +1,374 @@
+{
+  "run_id": "20260725T001154Z_e9166930c59d",
+  "final_score": 25.0,
+  "final_status": "on_hold",
+  "reasons": [
+    "Code validation found an invalid citation or an unmet exact mandatory condition.",
+    "A/B score difference: 20.0",
+    "Evidence coverage: 80%",
+    "Verifier verdict: FAIL",
+    "Code grounding verdict: FAIL",
+    "Citation accuracy: 92%"
+  ],
+  "analysis": {
+    "total_score": 35.0,
+    "score_items": [
+      {
+        "criterion": "topic_match",
+        "score": 10.0,
+        "max_score": 35.0,
+        "rationale": "본 교육 과정은 클라우드서비스 보안, 클라우드 보안인증(CSAP) 등을 다룹니다. 강사는 'SW융합 클라우드 컴퓨팅 서비스 보안강화된 SW개발 과정' 등을 강의한 이력이 있으나, 핵심 주제인 CSAP 자체에 특화된 교육/실무 경험은 부족하여 부분 매칭됩니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:3a50ce72-5e6b-4009-8f84-f09c2141b198",
+            "page": null,
+            "section": "chunk 2",
+            "quote": "지원은 없음\n□ 추진 일정\n氠瑢\n구분\n2026년\nM 월\nM+1 월\nM+2 월\nM+3 월\nM+7 월\n클라우드서비스 보안 교육 운영\n- 연간 교육 계획 수립\n- 교육 커리큘럼 구성\n- 교육 교재 제작\n- 온라인교육 준비\n- 오프라인교육 준비\n- 온라인 영상 사전 교육\n- 교육만족도 설문조사\n- 오프라인 교육\n- 최종 결과보고\n※ 상기 추진일정은 참고용이며 발주기관과 협의 하에 세부일정 조정 가능\n氠瑢\nII\n제안요청사항\n□ 제안요청 개요\n○ 추진배경 및 필요성\n- 클라우드컴퓨팅서비스 보안인증평가원 평가역량 향상 및 인증 보유·희망기업의 효율적인 보안인증 평가준비를 위한 교육 필요\n- AX 가속화로 클라우드 인프라가 AI 핵심 인프라로 자리잡으며 안전한 클라우드 AI 활용을 위한 클라우드 AI 대상 보안 교육 필요\n○ 주요 과업 내용\n- 교육목표: 교육대상(평가원, 인증 보유  희망 기업담당자) 특성과 최신 클라우드 AI 보안 동향을 고려한 온라인 및 오프라인 교육설계\n※ (평가원 교육) 공통 사전교육 ⭢ 오프라인 실습 교육, 클라우드 AI 평가실습 교육\n※ (기업담당자 교육) 공통 사전교육 ⭢ 온  오프라인 실습 교육\n- 교육 준비: 전문 집필  강사진 구성, 교육 보조자료 제작, 온라인사전 교육 및 오프라인 실습 준비, 온  오프라인 교육장 준비\n※ (온라인 사전교육) CSAP제도 및 평가기준, 클라우드 AI(CSAP AI연계 기준 등)\n(평가원 실습) CSAP 인증평가 기준 설명 및 해설서 사례 기준 평가의견 작성 실습, ISMS와 CSAP 인증평가 주안점 차이 설명 및 모의 사례 대상 평가 실습 등",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": []
+      },
+      {
+        "criterion": "teaching_depth",
+        "score": 15.0,
+        "max_score": 30.0,
+        "rationale": "온·오프라인 연계 교육(플립드러닝) 및 오프라인 실습 운영이 요구됩니다. 강사는 기업 및 대학에서 풍부한 IT 교육 경력이 있으며 '기업교육팀 강사' 등으로 활동하여 실무 강의 역량은 뛰어나나, 플립드러닝 방식의 보안 실습 설계 경험이 입증되지 않아 중간 수준으로 평가합니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:3a50ce72-5e6b-4009-8f84-f09c2141b198",
+            "page": null,
+            "section": "chunk 2",
+            "quote": "지원은 없음\n□ 추진 일정\n氠瑢\n구분\n2026년\nM 월\nM+1 월\nM+2 월\nM+3 월\nM+7 월\n클라우드서비스 보안 교육 운영\n- 연간 교육 계획 수립\n- 교육 커리큘럼 구성\n- 교육 교재 제작\n- 온라인교육 준비\n- 오프라인교육 준비\n- 온라인 영상 사전 교육\n- 교육만족도 설문조사\n- 오프라인 교육\n- 최종 결과보고\n※ 상기 추진일정은 참고용이며 발주기관과 협의 하에 세부일정 조정 가능\n氠瑢\nII\n제안요청사항\n□ 제안요청 개요\n○ 추진배경 및 필요성\n- 클라우드컴퓨팅서비스 보안인증평가원 평가역량 향상 및 인증 보유·희망기업의 효율적인 보안인증 평가준비를 위한 교육 필요\n- AX 가속화로 클라우드 인프라가 AI 핵심 인프라로 자리잡으며 안전한 클라우드 AI 활용을 위한 클라우드 AI 대상 보안 교육 필요\n○ 주요 과업 내용\n- 교육목표: 교육대상(평가원, 인증 보유  희망 기업담당자) 특성과 최신 클라우드 AI 보안 동향을 고려한 온라인 및 오프라인 교육설계\n※ (평가원 교육) 공통 사전교육 ⭢ 오프라인 실습 교육, 클라우드 AI 평가실습 교육\n※ (기업담당자 교육) 공통 사전교육 ⭢ 온  오프라인 실습 교육\n- 교육 준비: 전문 집필  강사진 구성, 교육 보조자료 제작, 온라인사전 교육 및 오프라인 실습 준비, 온  오프라인 교육장 준비\n※ (온라인 사전교육) CSAP제도 및 평가기준, 클라우드 AI(CSAP AI연계 기준 등)\n(평가원 실습) CSAP 인증평가 기준 설명 및 해설서 사례 기준 평가의견 작성 실습, ISMS와 CSAP 인증평가 주안점 차이 설명 및 모의 사례 대상 평가 실습 등",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": []
+      },
+      {
+        "criterion": "audience_fit",
+        "score": 5.0,
+        "max_score": 15.0,
+        "rationale": "교육 대상은 클라우드서비스 인증평가원 및 기업담당자입니다. 강사는 대학생 및 일반 기업 재직자 대상 강의 경험(사이버수사경찰학부 조교수, 기업교육 강사 등)은 풍부하나, 보안 인증평가원이나 인증 준비 기업담당자 맞춤형 교육 경험이 명시되지 않아 낮게 평가합니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:3a50ce72-5e6b-4009-8f84-f09c2141b198",
+            "page": null,
+            "section": "chunk 3",
+            "quote": "준, 클라우드 AI(CSAP AI연계 기준 등)\n(평가원 실습) CSAP 인증평가 기준 설명 및 해설서 사례 기준 평가의견 작성 실습, ISMS와 CSAP 인증평가 주안점 차이 설명 및 모의 사례 대상 평가 실습 등\n(클라우드AI 실습) AI 기반으로 제작된 부적합 시나리오 실습 교육 및 해설, 인증평가 시 AI 활용 방법, 클라우드 AI 활용 대상 인증평가 주안점(클라우드 보안인증 AI연계 기준 등), 클라우드 AI 대상 평가방법론 실습 등\n(기업담당자 실습) 안전한 클라우드 AI 활용 방안, 신청서류 작성 실습 등\n- 교육 운영: 교육 접수인원 대상 온라인교육/오프라인 교육, 시험(퀴즈, AI 기반 문제 제작 등), 만족도조사 후 각 교육과정별 결과보고서 제출\n- 교육 결과: 수료관리, 만족도조사 후 교육과정별 결과보고서 제출\n□ 제안요청 내용\n○ (교육 준비) 교육대상(평가원, 인증 보유  희망 기업담당자) 특성과 최신 클라우드 AI 보안 동향을 고려한 온라인 및 오프라인 교육설계\n- 강사진 구성: 클라우드 보안인증 실무 관련 질의응답이 가능한 경력자\n※ (강사 필수요건) 클라우드서비스 보안인증(CSAP) 평가 다수(10회 이상) 평가 경험자\n- 집필진 구성: 섭외한 전문 강사진을 포함한 보안교육 위원회를 구성하고 교재 집필 및 검수 단계에서 설명회와 의견수렴 진행 필수\n- 교육 보조자료 제작: 법령, 안내서, 해설서, 신청서류 등을 참조하여 교육 보조자료 개발 및 감수, 디자인, 인쇄(평가원 교육 인원별 배부)\n※ (공통 주교재) 클라우드컴퓨팅서비스 보안인증제도 안내서 및 해설서, 기존 클라우드보안인증 교육용역 교재 및 강의자료 등 발주기관 제공 자료 활용\n※ (평가원 보조자료) AI 활용하여 해설서 안내 사례가 아닌 새로운 부적합 사례 제작 후 문제집 형태로 해설과 함께 제작",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": []
+      },
+      {
+        "criterion": "career_and_certification",
+        "score": 0.0,
+        "max_score": 15.0,
+        "rationale": "강사 필수 요건인 '클라우드서비스 보안인증(CSAP) 평가 다수(10회 이상) 평가 경험자' 조건을 충족하지 못합니다. 강사는 SCJP, Spring Web 등 개발 관련 자격증은 있으나 CSAP 평가 경력이 없습니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:3a50ce72-5e6b-4009-8f84-f09c2141b198",
+            "page": null,
+            "section": "chunk 3",
+            "quote": "준, 클라우드 AI(CSAP AI연계 기준 등)\n(평가원 실습) CSAP 인증평가 기준 설명 및 해설서 사례 기준 평가의견 작성 실습, ISMS와 CSAP 인증평가 주안점 차이 설명 및 모의 사례 대상 평가 실습 등\n(클라우드AI 실습) AI 기반으로 제작된 부적합 시나리오 실습 교육 및 해설, 인증평가 시 AI 활용 방법, 클라우드 AI 활용 대상 인증평가 주안점(클라우드 보안인증 AI연계 기준 등), 클라우드 AI 대상 평가방법론 실습 등\n(기업담당자 실습) 안전한 클라우드 AI 활용 방안, 신청서류 작성 실습 등\n- 교육 운영: 교육 접수인원 대상 온라인교육/오프라인 교육, 시험(퀴즈, AI 기반 문제 제작 등), 만족도조사 후 각 교육과정별 결과보고서 제출\n- 교육 결과: 수료관리, 만족도조사 후 교육과정별 결과보고서 제출\n□ 제안요청 내용\n○ (교육 준비) 교육대상(평가원, 인증 보유  희망 기업담당자) 특성과 최신 클라우드 AI 보안 동향을 고려한 온라인 및 오프라인 교육설계\n- 강사진 구성: 클라우드 보안인증 실무 관련 질의응답이 가능한 경력자\n※ (강사 필수요건) 클라우드서비스 보안인증(CSAP) 평가 다수(10회 이상) 평가 경험자\n- 집필진 구성: 섭외한 전문 강사진을 포함한 보안교육 위원회를 구성하고 교재 집필 및 검수 단계에서 설명회와 의견수렴 진행 필수\n- 교육 보조자료 제작: 법령, 안내서, 해설서, 신청서류 등을 참조하여 교육 보조자료 개발 및 감수, 디자인, 인쇄(평가원 교육 인원별 배부)\n※ (공통 주교재) 클라우드컴퓨팅서비스 보안인증제도 안내서 및 해설서, 기존 클라우드보안인증 교육용역 교재 및 강의자료 등 발주기관 제공 자료 활용\n※ (평가원 보조자료) AI 활용하여 해설서 안내 사례가 아닌 새로운 부적합 사례 제작 후 문제집 형태로 해설과 함께 제작",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": []
+      },
+      {
+        "criterion": "evidence_completeness",
+        "score": 5.0,
+        "max_score": 5.0,
+        "rationale": "제공된 RAG 데이터에 근거하여 객관적으로 점수를 매겼으며, 인용문 매칭 및 소스 문서 매핑이 정확히 수행되었습니다.",
+        "project_evidence": [],
+        "instructor_evidence": []
+      }
+    ],
+    "recommendation_reasons": [
+      "다양한 IT 및 웹 애플리케이션 보안 분야 강의 경력을 보유하고 있음"
+    ],
+    "gaps": [
+      "클라우드서비스 보안인증(CSAP) 10회 이상 평가 경험 부재",
+      "CSAP 및 클라우드 AI 보안 교육 관련 실무/교재 집필 경험 부족"
+    ],
+    "risks": [
+      "필수 자격 요건 미달로 인해 사업 수행 인력으로서 부적합 판정을 받거나 입찰 시 감점 요인 혹은 자격 미달로 제외될 수 있음"
+    ],
+    "required_conditions_passed": false,
+    "required_condition_notes": [
+      "강사 필수 조건인 '클라우드서비스 보안인증(CSAP) 평가 다수(10회 이상) 평가 경험자' 요건을 미충족함"
+    ]
+  },
+  "verification": {
+    "independent_score": 15.0,
+    "verdict": "FAIL",
+    "evidence_coverage": 0.8,
+    "issues": [
+      {
+        "severity": "high",
+        "category": "required_condition",
+        "description": "제안요청서 상의 강사 필수요건인 '클라우드서비스 보안인증(CSAP) 평가 다수(10회 이상) 평가 경험자'를 증빙하는 경력이 강사 이력 내에 전혀 기재되어 있지 않습니다. 관련 필수 요건 미충족으로 FAIL에 해당합니다.",
+        "related_criterion": "career_and_certification"
+      }
+    ],
+    "corrected_score_items": [
+      {
+        "criterion": "topic_match",
+        "score": 5.0,
+        "max_score": 35.0,
+        "rationale": "본 사업의 핵심 교육 주제는 '클라우드 보안인증(CSAP)' 및 '클라우드 AI 보안'입니다. 그러나 강사의 전문 분야는 빅데이터 및 자바/웹 프로그래밍이며, 클라우드 관련 강의는 '오픈스택을 이용한 클라우드 컴퓨팅'과 같은 인프라 기초 수준에 그치고, 보안 분야에서도 일반 '시큐어코딩' 및 '웹 어플리케이션 보안' 강의에 머물러 CSAP 핵심 주제와의 매칭성이 매우 떨어집니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:3a50ce72-5e6b-4009-8f84-f09c2141b198",
+            "page": null,
+            "section": "chunk 2",
+            "quote": "- 클라우드컴퓨팅서비스 보안인증평가원 평가역량 향상 및 인증 보유·희망기업의 효율적인 보안인증 평가준비를 위한 교육 필요\n- AX 가속화로 클라우드 인프라가 AI 핵심 인프라로 자리잡으며 안전한 클라우드 AI 활용을 위한 클라우드 AI 대상 보안 교육 필요",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": [
+          {
+            "source_document_id": "rag:instructor-105:db-c65e7778e818",
+            "page": null,
+            "section": "chunk 32",
+            "quote": "\"topic\": \"SW융합 클라우드 컴퓨팅 서비스 보안강화된 SW개발 과정(빅데이터(Hadoop & R))\"",
+            "confidence": 0.9
+          }
+        ]
+      },
+      {
+        "criterion": "teaching_depth",
+        "score": 5.0,
+        "max_score": 30.0,
+        "rationale": "과업은 CSAP 평가 기준 실습, AI 기반 부적합 시나리오 모의 평가 등 고도화된 실무 방법론 강의를 요구합니다. 반면 강사의 이력은 자바 및 빅데이터 분석 기술 교육에 편중되어 있어 CSAP 평가 실무를 깊이 있게 지도하기 어렵습니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:3a50ce72-5e6b-4009-8f84-f09c2141b198",
+            "page": null,
+            "section": "chunk 3",
+            "quote": "CSAP 인증평가 기준 설명 및 해설서 사례 기준 평가의견 작성 실습, ISMS와 CSAP 인증평가 주안점 차이 설명 및 모의 사례 대상 평가 실습 등\n(클라우드AI 실습) AI 기반으로 제작된 부적합 시나리오 실습 교육 및 해설, 인증평가 시 AI 활용 방법, 클라우드 AI 활용 대상 인증평가 주안점",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": [
+          {
+            "source_document_id": "rag:instructor-105:db-c65e7778e818",
+            "page": null,
+            "section": "chunk 29",
+            "quote": "\"topic\": \"웹 어플리케이션 보안\"",
+            "confidence": 0.9
+          }
+        ]
+      },
+      {
+        "criterion": "audience_fit",
+        "score": 3.0,
+        "max_score": 15.0,
+        "rationale": "교육 대상은 전문적인 '클라우드서비스 인증평가원' 및 '기업 보안 담당자'입니다. 강사는 주로 대학생, 일반 IT 개발자, 신입사원 위주의 교육 경험을 가지고 있어, 실제 평가 업무를 수행하는 평가원과 기업 보안 책임자의 눈높이에 맞춘 강의 수행력을 확보하기에 미흡합니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:3a50ce72-5e6b-4009-8f84-f09c2141b198",
+            "page": null,
+            "section": "chunk 3",
+            "quote": "교육대상(평가원, 인증 보유  희망 기업담당자) 특성과 최신 클라우드 AI 보안 동향을 고려한 온라인 및 오프라인 교육설계",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": [
+          {
+            "source_document_id": "rag:instructor-105:db-c65e7778e818",
+            "page": null,
+            "section": "chunk 1",
+            "quote": "\"아이코어이앤씨 - 기업교육팀 강사 (강의)\",\n\"호원대학교 - 사이버수사경찰학부 조교수 (강의 및 연구)\",\n\"현대정보기술 - 자바프로젝트 구축 전문가 과정 강사 (강의)\"",
+            "confidence": 0.9
+          }
+        ]
+      },
+      {
+        "criterion": "career_and_certification",
+        "score": 0.0,
+        "max_score": 15.0,
+        "rationale": "본 사업의 핵심 필수요건인 '클라우드서비스 보안인증(CSAP) 평가 다수(10회 이상) 평가 경험자' 기준을 만족하는 이력 및 인증 사항이 강사의 프로필과 증빙자료 어디에서도 전혀 발견되지 않아 0점 처리합니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:3a50ce72-5e6b-4009-8f84-f09c2141b198",
+            "page": null,
+            "section": "chunk 3",
+            "quote": "※ (강사 필수요건) 클라우드서비스 보안인증(CSAP) 평가 다수(10회 이상) 평가 경험자",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": []
+      },
+      {
+        "criterion": "evidence_completeness",
+        "score": 2.0,
+        "max_score": 5.0,
+        "rationale": "강사의 기본적인 인적 사항과 이전 강의 이력 정보는 구체적으로 주어졌으나, 이번 과업에서 핵심적으로 요구하는 CSAP 실적이나 보안 인증 관련 필수 경력의 실재 여부를 입증해주는 근거는 전혀 확보되지 못하여 낮은 점수를 부여합니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:3a50ce72-5e6b-4009-8f84-f09c2141b198",
+            "page": null,
+            "section": "chunk 3",
+            "quote": "- 강사진 구성: 클라우드 보안인증 실무 관련 질의응답이 가능한 경력자\n※ (강사 필수요건) 클라우드서비스 보안인증(CSAP) 평가 다수(10회 이상) 평가 경험자",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": [
+          {
+            "source_document_id": "rag:instructor-105:db-c65e7778e818",
+            "page": null,
+            "section": "chunk 1",
+            "quote": "\"vendor_certifications\": [\n\"Spring Web (Reg.\nID 277288912)\",\n\"Core-Spring (Reg.\nID 272911418)\",\n\"SCCD\",\n\"SCJI Professional\",\n\"SCJI\",\n\"SCJP\",\n\"전자계산기기사\",\n\"정보처리기사\"\n]",
+            "confidence": 0.9
+          }
+        ]
+      }
+    ],
+    "required_conditions_passed": false
+  },
+  "grounding": {
+    "citation_accuracy": 0.9230769230769231,
+    "invalid_citation_count": 1,
+    "unsupported_positive_score_count": 3,
+    "required_condition_checks": [
+      {
+        "requirement": "클라우드서비스 보안인증(CSAP) 평가 다수(10회 이상) 평가 경험자 (강사 필수요건)",
+        "condition_type": "certification",
+        "status": "failed",
+        "detail": "Required credential not found in instructor profile."
+      },
+      {
+        "requirement": "클라우드서비스 보안인증(CSAP) 평가 다수(10회 이상) 평가 경험자 (강사 필수요건)",
+        "condition_type": "experience",
+        "status": "not_automatically_verifiable",
+        "detail": "Experience requirements need human or model review unless a numeric rule is configured."
+      },
+      {
+        "requirement": "관련 용역 수행 경력이 있는 전문 인력 (PM)",
+        "condition_type": "experience",
+        "status": "not_automatically_verifiable",
+        "detail": "Experience requirements need human or model review unless a numeric rule is configured."
+      }
+    ],
+    "verdict": "FAIL"
+  },
+  "rag_context": {
+    "project_evidence": [
+      {
+        "source_type": "project",
+        "evidence": {
+          "source_document_id": "task-order:3a50ce72-5e6b-4009-8f84-f09c2141b198",
+          "page": null,
+          "section": "chunk 3",
+          "quote": "준, 클라우드 AI(CSAP AI연계 기준 등)\n(평가원 실습) CSAP 인증평가 기준 설명 및 해설서 사례 기준 평가의견 작성 실습, ISMS와 CSAP 인증평가 주안점 차이 설명 및 모의 사례 대상 평가 실습 등\n(클라우드AI 실습) AI 기반으로 제작된 부적합 시나리오 실습 교육 및 해설, 인증평가 시 AI 활용 방법, 클라우드 AI 활용 대상 인증평가 주안점(클라우드 보안인증 AI연계 기준 등), 클라우드 AI 대상 평가방법론 실습 등\n(기업담당자 실습) 안전한 클라우드 AI 활용 방안, 신청서류 작성 실습 등\n- 교육 운영: 교육 접수인원 대상 온라인교육/오프라인 교육, 시험(퀴즈, AI 기반 문제 제작 등), 만족도조사 후 각 교육과정별 결과보고서 제출\n- 교육 결과: 수료관리, 만족도조사 후 교육과정별 결과보고서 제출\n□ 제안요청 내용\n○ (교육 준비) 교육대상(평가원, 인증 보유  희망 기업담당자) 특성과 최신 클라우드 AI 보안 동향을 고려한 온라인 및 오프라인 교육설계\n- 강사진 구성: 클라우드 보안인증 실무 관련 질의응답이 가능한 경력자\n※ (강사 필수요건) 클라우드서비스 보안인증(CSAP) 평가 다수(10회 이상) 평가 경험자\n- 집필진 구성: 섭외한 전문 강사진을 포함한 보안교육 위원회를 구성하고 교재 집필 및 검수 단계에서 설명회와 의견수렴 진행 필수\n- 교육 보조자료 제작: 법령, 안내서, 해설서, 신청서류 등을 참조하여 교육 보조자료 개발 및 감수, 디자인, 인쇄(평가원 교육 인원별 배부)\n※ (공통 주교재) 클라우드컴퓨팅서비스 보안인증제도 안내서 및 해설서, 기존 클라우드보안인증 교육용역 교재 및 강의자료 등 발주기관 제공 자료 활용\n※ (평가원 보조자료) AI 활용하여 해설서 안내 사례가 아닌 새로운 부적합 사례 제작 후 문제집 형태로 해설과 함께 제작",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.8327
+      },
+      {
+        "source_type": "project",
+        "evidence": {
+          "source_document_id": "task-order:3a50ce72-5e6b-4009-8f84-f09c2141b198",
+          "page": null,
+          "section": "chunk 2",
+          "quote": "지원은 없음\n□ 추진 일정\n氠瑢\n구분\n2026년\nM 월\nM+1 월\nM+2 월\nM+3 월\nM+7 월\n클라우드서비스 보안 교육 운영\n- 연간 교육 계획 수립\n- 교육 커리큘럼 구성\n- 교육 교재 제작\n- 온라인교육 준비\n- 오프라인교육 준비\n- 온라인 영상 사전 교육\n- 교육만족도 설문조사\n- 오프라인 교육\n- 최종 결과보고\n※ 상기 추진일정은 참고용이며 발주기관과 협의 하에 세부일정 조정 가능\n氠瑢\nII\n제안요청사항\n□ 제안요청 개요\n○ 추진배경 및 필요성\n- 클라우드컴퓨팅서비스 보안인증평가원 평가역량 향상 및 인증 보유·희망기업의 효율적인 보안인증 평가준비를 위한 교육 필요\n- AX 가속화로 클라우드 인프라가 AI 핵심 인프라로 자리잡으며 안전한 클라우드 AI 활용을 위한 클라우드 AI 대상 보안 교육 필요\n○ 주요 과업 내용\n- 교육목표: 교육대상(평가원, 인증 보유  희망 기업담당자) 특성과 최신 클라우드 AI 보안 동향을 고려한 온라인 및 오프라인 교육설계\n※ (평가원 교육) 공통 사전교육 ⭢ 오프라인 실습 교육, 클라우드 AI 평가실습 교육\n※ (기업담당자 교육) 공통 사전교육 ⭢ 온  오프라인 실습 교육\n- 교육 준비: 전문 집필  강사진 구성, 교육 보조자료 제작, 온라인사전 교육 및 오프라인 실습 준비, 온  오프라인 교육장 준비\n※ (온라인 사전교육) CSAP제도 및 평가기준, 클라우드 AI(CSAP AI연계 기준 등)\n(평가원 실습) CSAP 인증평가 기준 설명 및 해설서 사례 기준 평가의견 작성 실습, ISMS와 CSAP 인증평가 주안점 차이 설명 및 모의 사례 대상 평가 실습 등",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.8079
+      },
+      {
+        "source_type": "project",
+        "evidence": {
+          "source_document_id": "task-order:3a50ce72-5e6b-4009-8f84-f09c2141b198",
+          "page": null,
+          "section": "chunk 0",
+          "quote": "捤獥汤捯湰灧氠瑢\n氠瑢\n2026년 클라우드서비스 보안\n교육 운영 제안요청서\n氠瑢\n담당자 소속\n담당자 성명\n연락처\n클라우드인증팀\n나경준\n061-820-3843\n桤灧漠杳湯湷\n捤獥汤捯목 차\n氠瑢\nI.\n사업개요\t誄ȃ\t1\n1.\n사업명 \t記ȃ\t1\n2.\n목적\t鄠ȃ\t1\n3.\n사업기간\t蟀ȃ\t1\n4.\n사업금액\t蟀ȃ\t1\n5.\n주요 내용\t蕨ȃ\t1\n6.\n사업 결과물\t肸ȃ\t2\n7.\n추진 일정\t蕨ȃ\t2\nⅡ.\n제안요청사항 \t碰ȃ\t3\n1.\n제안요청 개요\t簈ȃ\t3\n2.\n제안요청 내용\t簈ȃ\t4\n3.\n기타 요청사항\t簈ȃ\t7\nⅢ.\n기타 안내사항\t碰ȃ\t9\n1.\n지식재산권 귀속\t睘ȃ\t9\n2.\n안전 및 보건 준수사항\t楈ȃ\t9\nⅣ.\n제안서 작성 안내\t淄ȃ\t11\n1.\n제안서 효력\t繤ȃ\t11\n2.\n제안서 작성지침 및 유의사항\t壤ȃ\t11\n3.\n제안서 목차 및 작성 방법\t忬ȃ\t12\nⅤ.\n입찰 및 제안 안내\t欈ȃ\t14\n桤灧1.\n입찰 방법\t茔ȃ\t14\n2.\n제안서 제출 및 방법\t殤ȃ\t17\n3.\n제안서 평가\t繤ȃ\t17\n4.\n기술평가 기준\t禴ȃ\t18\n5.\n기술평가 방법\t禴ȃ\t19\n6.\n협상대상자 선정 및 협상 기준\t嚌ȃ\t19\nⅥ.\n제안 관련 별첨 서식\t斐ȃ\t21\nⅦ.\n입찰 및 계약 관련 서식\t嵜ȃ\t26\n氠瑢\n湯湷I\n사업 개요\n□ 사업명 : 2026년 클라우드서비스 보안 교육 운영\n□ 목  적\n○ 클라우드서비스 인증평가원 평가역량 강화 및 인증 보유  희망 기업담당자 인증제도 대응역량 강화 목적 교육과정 개설 및 운영\n□ 사업기간 : 계약체결일로부터 2026년 12월 11일\n□ 사업금액 : 80,000,000원(부가세 포함)\n○ 대금지급방법 : 선금(총 계약금액의 70%), 잔금(총 계약금액의 30%)\n○ 추진방법: 자체발주(제한경쟁입찰), 협상에 의한 계약(기술 80%, 가격 20%)\n□ 주요 내용 : 세부내용은‘Ⅱ.\n제안요청 내용’참조",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.8027
+      },
+      {
+        "source_type": "project",
+        "evidence": {
+          "source_document_id": "task-order:3a50ce72-5e6b-4009-8f84-f09c2141b198",
+          "page": null,
+          "section": "chunk 4",
+          "quote": "서 및 해설서, 기존 클라우드보안인증 교육용역 교재 및 강의자료 등 발주기관 제공 자료 활용\n※ (평가원 보조자료) AI 활용하여 해설서 안내 사례가 아닌 새로운 부적합 사례 제작 후 문제집 형태로 해설과 함께 제작\n※ (클라우드AI 보조자료) 모의 담당자 인터뷰 및 증적 자료 등 실습 자료 제작(10개*48분=8시간 내외), AI 기반 평가원 실습에 활용 목적 CSAP 관련 공개자료를 기계가 읽기 쉬운 형태(JSON, MD 등)로 제작\n※ (기업담당자 보조자료) AI 활용하여 특정 시스템 사례 제시와 신청서류 작성 실습지와 해설\n※ (제작 필수요건) 클라우드 AI 보안(클라우드 보안인증 AI연계 기준 평가 방법론 등) 부적합 사례, ISMS와 CSAP 평가 주안점 차이, 온오프라인 실습을 고려 지필\n※ (제작 참고자료) 클라우드컴퓨팅서비스 보안인증에 관한 고시, 클라우드컴퓨팅서비스 보안인증제도 안내서, 클라우드서비스 보안인증기준 해설서, 클라우드컴퓨팅서비스 보안운영 명세서(전자우편_화상회의_생성형AI연계_해당시), ISMS-P 인증제도 안내서, ISMS-P 세부점검항목 공지 등\n- 온라인 사전교육: CSAP제도안내, 인증평가 기준, 클라우드 AI 보안(CSAP AI연계 기준 등) 등 이론 중심 사전 교육방안 수립(4시간 내외)\n※ (강의 자료) 커리큘럼에 맞춰 영상 촬영 또는 발주기관 제공 자료 활용(4강*1시간=4시간)\n※ (사전교육 필수기능) 수강생별 아이디 부여, 커리큘럼별 영상 업로드, 학습자료 다운로드, 수강생 진도에 따른 학습시간·수료 관리, 교육설문, 퀴즈 등\n※ 온라인 강의 플랫폼, 온라인 강의에 필요한 장비(마이크, 카메라 등) 등 온라인 교육 제반 비용은 사업비에 포함되어 있음",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.7961
+      },
+      {
+        "source_type": "project",
+        "evidence": {
+          "source_document_id": "task-order:3a50ce72-5e6b-4009-8f84-f09c2141b198",
+          "page": null,
+          "section": "chunk 1",
+          "quote": "대금지급방법 : 선금(총 계약금액의 70%), 잔금(총 계약금액의 30%)\n○ 추진방법: 자체발주(제한경쟁입찰), 협상에 의한 계약(기술 80%, 가격 20%)\n□ 주요 내용 : 세부내용은‘Ⅱ.\n제안요청 내용’참조\n○ (목표) AI 활용 등 실습 중심 플립드러닝*(Flipped Learning) 기반 교육* 플립드러닝: 온라인 등으로 사전 학습 후 교실에서 토론, 실습 등 심화 학습\n○ (교육준비) 평가원와 기업담당자 대상에 적합한 교육 커리큘럼, 집필·강사진, 자료·온라인교육 영상, 클라우드 AI 등 평가 실습 환경 구성\n○ (교육운영) 온라인교육(인증기준 등 사전 이론 교육), 오프라인교육(평가주안점, 클라우드 AI 평가기준, AI 평가활용 등 사례 중심 교육) 제작·운영\n氠瑢\n교육 구분\n사전교육\n평가원 교육\n(2회차 연계교육)\n기업 담당자 교육\n(인증 보유  희망)\n온라인\n오프라인\n클라우드AI\n평가실습\n온오프라인 병행\n시간\n4시간\n(4강*1시간=4시간)\n8시간\n8시간\n8시간\n횟수\n상시\n4회\n5회\n인원\n약 1000명\n약 50명/회\n□ 사업 결과물\n○ 클라우드 보안인증 교육 운영 결과보고서 1종\n○ 클라우드 보안인증 교육 운영 관련 수행 자료 일체\n※ 교육 보조자료, 교육 준비 및 운영 자료, 홍보 및 참여 사업자 관리, 교육 운영 만족도 조사 결과·분석 상세 내용 등 용역 수행 중 발생한 결과물 포함\n※ 계약종료 이후에도 용역 수행 자료 일체는 발주기관이 지속 활용할 수 있도록 협조 필요 단, 용역 종료 이후 교육 제공 플랫폼 등 제안사의 제반환경비용 등 지원은 없음\n□ 추진 일정\n氠瑢\n구분\n2026년\nM 월\nM+1 월\nM+2 월\nM+3 월\nM+7 월\n클라우드서비스 보안 교육 운영\n- 연간 교육 계획 수립\n- 교육 커리큘럼 구성\n- 교육 교재 제작\n- 온라인교육 준비",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.7682
+      }
+    ],
+    "instructor_evidence": [
+      {
+        "source_type": "instructor",
+        "evidence": {
+          "source_document_id": "rag:instructor-105:db-c65e7778e818",
+          "page": null,
+          "section": "chunk 1",
+          "quote": ",\n\"Web\",\n\"프로그래밍\",\n\"SOA\",\n\"Database\",\n\"IT입문\",\n\"IT\",\n\"XML\",\n\"WebLogic\",\n\"J2ME\",\n\"고교입시배정\",\n\"Swing\",\n\"RMI\",\n\"영상처리\",\n\"사용자인증\",\n\"분산필터링\",\n\"SCJP\",\n\"인터넷쇼핑몰\",\n\"웹프로그래밍\"\n],\n\"summary\": \"빅데이터 및 자바/웹 전문 이학박사 강사\",\n\"delivery_modes\": [],\n\"availability_notes\": null,\n\"vendor_experience\": [\n\"광주시 교육청 - 광주시 교육청 고교입시배정 프로젝트\",\n\"조선대학교 - 자바를 이용한 영상처리 API 개발\",\n\"조선대학교 - RMI를 이용한 온라인 사용자 인증 분산 필터링 시스템 개발\",\n\"광주서방토기 - 인터넷쇼핑몰 개발\",\n\"아이코어이앤씨 - 기업교육팀 강사 (강의)\",\n\"호원대학교 - 사이버수사경찰학부 조교수 (강의 및 연구)\",\n\"현대정보기술 - 자바프로젝트 구축 전문가 과정 강사 (강의)\",\n\"비트교육센터 - Enterprise Java Bean 강사 (강의)\",\n\"우송대학교 - 우송IT교육센터 시간강사 (강의)\",\n\"썬마이크로시스템즈 - 교육사업부 전임강사 (강의)\",\n\"호원대학교 - 컴퓨터학부 / 전자계산학과 객원교원 (강의)\",\n\"순천제일대학교 - 컴퓨터과학과, 멀티미디어학과 겸임전임강사 (강의)\"\n],\n\"vendor_certifications\": [\n\"Spring Web (Reg.\nID 277288912)\",\n\"Core-Spring (Reg.\nID 272911418)\",\n\"SCCD\",\n\"SCJI Professional\",\n\"SCJI\",\n\"SCJP\",\n\"전자계산기기사\",\n\"정보처리기사\"\n],\n\"teaching_items\": [\n{",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.6911
+      },
+      {
+        "source_type": "instructor",
+        "evidence": {
+          "source_document_id": "rag:instructor-105:db-c65e7778e818",
+          "page": null,
+          "section": "chunk 29",
+          "quote": ",\n\"section\": \"2.\n강의 및 프로젝트 이력 row 2392\",\n\"quote\": \"웹 어플리케이션 보안\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"빅데이터(Hadoop)(야간)\",\n\"organization\": \"kt ds\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 2391\",\n\"quote\": \"빅데이터(Hadoop)(야간)\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"안드로이드 App 개발 기본\",\n\"organization\": \"kt ds\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 2390\",\n\"quote\": \"안드로이드 App 개발 기본\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"안드로이드 보안프로그래밍\",\n\"organization\": \"삼성전자\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.6901
+      },
+      {
+        "source_type": "instructor",
+        "evidence": {
+          "source_document_id": "rag:instructor-105:db-c65e7778e818",
+          "page": null,
+          "section": "chunk 79",
+          "quote": "source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"3.\n자격 및 경력 row 1094\",\n\"quote\": \"SCCD\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"name\": \"SCJI Professional\",\n\"issuer\": \"오라클\",\n\"expires_at\": null,\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"3.\n자격 및 경력 row 1093\",\n\"quote\": \"SCJI Professional\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"name\": \"SCJI\",\n\"issuer\": \"오라클\",\n\"expires_at\": null,\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"3.\n자격 및 경력 row 1095\",\n\"quote\": \"SCJI\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"name\": \"SCJP\",\n\"issuer\": \"오라클\",\n\"expires_at\": null,\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"3.\n자격 및 경력 row 1096\",\n\"quote\": \"SCJP\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"name\": \"전자계산기기사\",\n\"issuer\": \"산업인력관리공단\",\n\"expires_at\": null,",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.6842
+      },
+      {
+        "source_type": "instructor",
+        "evidence": {
+          "source_document_id": "rag:instructor-105:db-c65e7778e818",
+          "page": null,
+          "section": "chunk 78",
+          "quote": "부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"3.\n자격 및 경력 row 1113\",\n\"quote\": \"컴퓨터과학과, 멀티미디어학과 겸임전임강사 (강의)\",\n\"confidence\": 1.0\n}\n]\n}\n],\n\"certifications\": [\n{\n\"name\": \"Spring Web (Reg.\nID 277288912)\",\n\"issuer\": \"Pivotal\",\n\"expires_at\": null,\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"3.\n자격 및 경력 row 1091\",\n\"quote\": \"Spring Web (Reg.\nID 277288912)\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"name\": \"Core-Spring (Reg.\nID 272911418)\",\n\"issuer\": \"Pivotal\",\n\"expires_at\": null,\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"3.\n자격 및 경력 row 1092\",\n\"quote\": \"Core-Spring (Reg.\nID 272911418)\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"name\": \"SCCD\",\n\"issuer\": \"오라클\",\n\"expires_at\": null,\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"3.\n자격 및 경력 row 1094\",\n\"quote\": \"SCCD\",",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.68
+      },
+      {
+        "source_type": "instructor",
+        "evidence": {
+          "source_document_id": "rag:instructor-105:db-c65e7778e818",
+          "page": null,
+          "section": "chunk 32",
+          "quote": "l,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 2400\",\n\"quote\": \"OCP 자격증 과정(Oracle Admin Workshop I, II)\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"SW융합 클라우드 컴퓨팅 서비스 보안강화된 SW개발 과정(빅데이터(Hadoop & R))\",\n\"organization\": \"아이티뱅크\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 2399\",\n\"quote\": \"SW융합 클라우드 컴퓨팅 서비스 보안강화된 SW개발 과정(빅데이터(Hadoop & R))\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"OCP 자격증 과정(Oracle Admin Workshop I)\",\n\"organization\": \"금오공과대학교\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 2402\",\n\"quote\": \"OCP 자격증 과정(Oracle Admin Workshop I)\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"Servlet/JSP 웹프로그래밍\",",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.6753
+      }
+    ]
+  }
+}

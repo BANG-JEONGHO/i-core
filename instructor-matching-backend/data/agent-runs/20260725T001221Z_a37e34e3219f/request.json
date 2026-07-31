@@ -1,0 +1,1520 @@
+{
+  "project": {
+    "schema_version": "education_project_v1",
+    "service_type": "education_program",
+    "program_type": "vocational_training",
+    "classification_confidence": 1.0,
+    "base": {
+      "project_name": "[제안요청서] 2026년 클라우드서비스 보안 교육 운영.hwp",
+      "client_organization": null,
+      "purpose": [
+        "클라우드서비스 인증평가원의 평가 역량 및 기업담당자의 인증제도 대응 역량을 강화하기 위해 온·오프라인 연계(플립드러닝) 방식의 클라우드서비스 보안 교육 과정을 설계하고 운영하는 사업",
+        "교육 커리큘럼 및 교재 제작",
+        "온라인 사전 교육(이론 중심) 운영",
+        "오프라인 실습 교육 운영",
+        "교육생 모집, 안내 및 수료 관리",
+        "만족도 조사 및 교육 효과 측정",
+        "결과 보고",
+        "클라우드서비스 인증평가원 평가역량 강화",
+        "인증 보유·희망 기업담당자 인증제도 대응역량 강화"
+      ],
+      "contract_method": null,
+      "start_date": null,
+      "end_date": null,
+      "budget_krw": null,
+      "vat_included": null,
+      "deliverables": [
+        "교육 커리큘럼 및 교재 제작",
+        "온라인 사전 교육(이론 중심) 운영",
+        "오프라인 실습 교육 운영",
+        "교육생 모집, 안내 및 수료 관리",
+        "만족도 조사 및 교육 효과 측정",
+        "결과 보고",
+        "클라우드서비스 인증평가원 평가역량 강화",
+        "인증 보유·희망 기업담당자 인증제도 대응역량 강화"
+      ],
+      "proposal_requirements": [
+        "클라우드서비스 보안인증(CSAP) 평가 다수(10회 이상) 평가 경험자 (강사 필수요건)",
+        "관련 용역 수행 경력이 있는 전문 인력 (PM)",
+        "교육 설계",
+        "교재 집필 및 검수",
+        "교육 운영 및 관리",
+        "강사진 구성",
+        "교육생 모집 및 홍보"
+      ],
+      "compliance_requirements": [
+        "기술능력평가 배점",
+        "입찰가격평가 배점"
+      ]
+    },
+    "education": {
+      "technology_domains": [
+        "클라우드서비스 보안",
+        "클라우드 보안인증(CSAP)",
+        "클라우드 AI 보안",
+        "CSAP",
+        "평가 경험",
+        "강사",
+        "PM",
+        "용역 수행",
+        "경력",
+        "기술평가",
+        "협상에 의한 계약",
+        "가격평가",
+        "입찰가격"
+      ],
+      "program_topics": [
+        "클라우드서비스 보안",
+        "클라우드 보안인증(CSAP)",
+        "클라우드 AI 보안",
+        "기술평가",
+        "협상에 의한 계약",
+        "가격평가",
+        "입찰가격",
+        "CSAP",
+        "평가 경험",
+        "강사",
+        "PM",
+        "용역 수행",
+        "경력"
+      ],
+      "target_audience": [
+        "클라우드서비스 인증평가원",
+        "인증 보유 및 희망 기업담당자"
+      ],
+      "participant_capacity": null,
+      "delivery_format": [
+        "온라인",
+        "오프라인",
+        "플립드러닝(Flipped Learning)",
+        "실습"
+      ],
+      "education_hours": null,
+      "schedule": [],
+      "required_roles": [
+        "교육 설계",
+        "교재 집필 및 검수",
+        "교육 운영 및 관리",
+        "강사진 구성",
+        "교육생 모집 및 홍보"
+      ],
+      "instructor_requirements": {
+        "required_experience": [
+          "클라우드서비스 보안인증(CSAP) 평가 다수(10회 이상) 평가 경험자 (강사 필수요건)",
+          "관련 용역 수행 경력이 있는 전문 인력 (PM)"
+        ],
+        "required_certifications": [
+          "클라우드서비스 보안인증(CSAP) 평가 다수(10회 이상) 평가 경험자 (강사 필수요건)"
+        ],
+        "required_vendor_credentials": [],
+        "similar_project_experience": []
+      },
+      "curriculum_requirements": [],
+      "operational_requirements": [],
+      "practical_project_requirements": [
+        "교육 커리큘럼 및 교재 제작",
+        "온라인 사전 교육(이론 중심) 운영",
+        "오프라인 실습 교육 운영",
+        "교육생 모집, 안내 및 수료 관리",
+        "만족도 조사 및 교육 효과 측정",
+        "결과 보고",
+        "교육 설계",
+        "교재 집필 및 검수",
+        "교육 운영 및 관리",
+        "강사진 구성",
+        "교육생 모집 및 홍보"
+      ],
+      "assessment_requirements": [
+        "기술능력평가 배점",
+        "입찰가격평가 배점"
+      ],
+      "outcome_requirements": [
+        "클라우드서비스 인증평가원 평가역량 강화",
+        "인증 보유·희망 기업담당자 인증제도 대응역량 강화"
+      ]
+    },
+    "extensions": {
+      "source_task_order_id": "3a50ce72-5e6b-4009-8f84-f09c2141b198",
+      "normalized_qualifications": [
+        {
+          "category": "인력 요건",
+          "description": "클라우드서비스 보안인증(CSAP) 평가 다수(10회 이상) 평가 경험자 (강사 필수요건)",
+          "is_mandatory": true,
+          "keywords": [
+            "CSAP",
+            "평가 경험",
+            "강사"
+          ]
+        },
+        {
+          "category": "인력 요건",
+          "description": "관련 용역 수행 경력이 있는 전문 인력 (PM)",
+          "is_mandatory": true,
+          "keywords": [
+            "PM",
+            "용역 수행",
+            "경력"
+          ]
+        }
+      ],
+      "normalized_evaluation_criteria": [
+        {
+          "category": "기술평가",
+          "description": "기술능력평가 배점",
+          "weight": 80,
+          "keywords": [
+            "기술평가",
+            "협상에 의한 계약"
+          ]
+        },
+        {
+          "category": "가격평가",
+          "description": "입찰가격평가 배점",
+          "weight": 20,
+          "keywords": [
+            "가격평가",
+            "입찰가격"
+          ]
+        }
+      ],
+      "overview": {
+        "section_titles": [
+          "사업 개요",
+          "○ 추진배경 및 필요성",
+          "1. 개요",
+          "제안요청 개요"
+        ],
+        "summary": "클라우드서비스 인증평가원의 평가 역량 및 기업담당자의 인증제도 대응 역량을 강화하기 위해 온·오프라인 연계(플립드러닝) 방식의 클라우드서비스 보안 교육 과정을 설계하고 운영하는 사업",
+        "core_topics": [
+          "클라우드서비스 보안",
+          "클라우드 보안인증(CSAP)",
+          "클라우드 AI 보안"
+        ],
+        "target_audience": [
+          "클라우드서비스 인증평가원",
+          "인증 보유 및 희망 기업담당자"
+        ],
+        "delivery_formats": [
+          "온라인",
+          "오프라인",
+          "플립드러닝(Flipped Learning)",
+          "실습"
+        ],
+        "required_roles": [
+          "교육 설계",
+          "교재 집필 및 검수",
+          "교육 운영 및 관리",
+          "강사진 구성",
+          "교육생 모집 및 홍보"
+        ],
+        "scope": [
+          "교육 커리큘럼 및 교재 제작",
+          "온라인 사전 교육(이론 중심) 운영",
+          "오프라인 실습 교육 운영",
+          "교육생 모집, 안내 및 수료 관리",
+          "만족도 조사 및 교육 효과 측정",
+          "결과 보고"
+        ],
+        "expected_outcomes": [
+          "클라우드서비스 인증평가원 평가역량 강화",
+          "인증 보유·희망 기업담당자 인증제도 대응역량 강화"
+        ],
+        "preferred_experience": [],
+        "source_excerpt": "사업 개요\n□ 사업명 : 2026년 클라우드서비스 보안 교육 운영\n\n○ 추진배경 및 필요성\n- 클라우드컴퓨팅서비스 보안인증평가원 평가역량 향상 및 인증 보유·희망기업의 효율적인 보안인증 평가준비를 위한 교육 필요\n- AX 가속화로 클라우드 인프라가 AI 핵심 인프라로 자리잡으며 안전한 클라우드 AI 활용을 위한 클라우드 AI 대상 보안 교육 필요\n\n1. 개요\no 본 사업의 수행에 관한 대략적인 개요를 기술\n\n사 업 개 요\n참 여 기 간\n(년월일∼년월일)\n담당 업무\n발주처",
+        "matching_rules": [
+          {
+            "key": "core_topics",
+            "label": "핵심 교육 주제",
+            "values": [
+              "클라우드서비스 보안",
+              "클라우드 보안인증(CSAP)",
+              "클라우드 AI 보안"
+            ]
+          },
+          {
+            "key": "target_audience",
+            "label": "교육 대상",
+            "values": [
+              "클라우드서비스 인증평가원",
+              "인증 보유 및 희망 기업담당자"
+            ]
+          },
+          {
+            "key": "delivery_formats",
+            "label": "운영 방식",
+            "values": [
+              "온라인",
+              "오프라인",
+              "플립드러닝(Flipped Learning)",
+              "실습"
+            ]
+          },
+          {
+            "key": "required_roles",
+            "label": "요구 역할",
+            "values": [
+              "교육 설계",
+              "교재 집필 및 검수",
+              "교육 운영 및 관리",
+              "강사진 구성",
+              "교육생 모집 및 홍보"
+            ]
+          },
+          {
+            "key": "scope",
+            "label": "업무 범위",
+            "values": [
+              "교육 커리큘럼 및 교재 제작",
+              "온라인 사전 교육(이론 중심) 운영",
+              "오프라인 실습 교육 운영",
+              "교육생 모집, 안내 및 수료 관리",
+              "만족도 조사 및 교육 효과 측정",
+              "결과 보고"
+            ]
+          },
+          {
+            "key": "expected_outcomes",
+            "label": "기대 성과",
+            "values": [
+              "클라우드서비스 인증평가원 평가역량 강화",
+              "인증 보유·희망 기업담당자 인증제도 대응역량 강화"
+            ]
+          }
+        ]
+      }
+    },
+    "evidence": [
+      {
+        "source_document_id": "task-order:3a50ce72-5e6b-4009-8f84-f09c2141b198",
+        "page": null,
+        "section": "normalized task-order requirements",
+        "quote": "捤獥汤捯湰灧氠瑢\n氠瑢\n2026년 클라우드서비스 보안\n교육 운영 제안요청서\n氠瑢\n담당자 소속\n담당자 성명\n연락처\n클라우드인증팀\n나경준\n061-820-3843\n桤灧漠杳湯湷\n捤獥汤捯목 차\n氠瑢\nI. 사업개요\t誄ȃ\t1\n1. 사업명 \t記ȃ\t1\n2. 목적\t鄠ȃ\t1\n3. 사업기간\t蟀ȃ\t1\n4. 사업금액\t蟀ȃ\t1\n5. 주요 내용\t蕨ȃ\t1\n6. 사업 결과물\t肸ȃ\t2\n7. 추진 일정\t蕨ȃ\t2\nⅡ. 제안요청사항 \t碰ȃ\t3\n1. 제안요청 개요\t簈ȃ\t3\n2. 제안요청 내용\t簈ȃ\t4\n3. 기타 요청사항\t簈ȃ\t7\nⅢ. 기타 안내사항\t碰ȃ\t9\n1. 지식재산권 귀속\t睘ȃ\t9\n2. 안전 및 보건 준수사항\t楈ȃ\t9\nⅣ. 제안서 작성 안내\t淄ȃ\t11\n1. 제안서 효력\t繤ȃ\t11\n2. 제안서 작성지침 및 유의사항\t壤ȃ\t11\n3. 제안서 목차 및 작성 방법\t忬ȃ\t12\nⅤ. 입찰 및 제안 안내\t欈ȃ\t14\n桤灧1. 입찰 방법\t茔ȃ\t14\n2. 제안서 제출 및 방법\t殤ȃ\t17\n3. 제안서 평가\t繤ȃ\t17\n4. 기술평가 기준\t禴ȃ\t18\n5. 기술평가 방법\t禴ȃ\t19\n6. 협상대상자 선정 및 협상 기준\t嚌ȃ\t19\nⅥ. 제안 관련 별첨 서식\t斐ȃ\t21\nⅦ. 입찰 및 계약 관련 서식\t嵜ȃ\t26\n氠瑢\n湯湷I\n사업 개요\n□ 사업명 : 2026년 클라우드서비스 보안 교육 운영\n□ 목  적\n○ 클라우드서비스 인증평가원 평가역량 강화 및 인증 보유  희망 기업담당자 인증제도 대응역량 강화 목적 교육과정 개설 및 운영\n□ 사업기간 : 계약체결일로부터 2026년 12월 11일\n□ 사업금액 : 80,000,000원(부가세 포함)\n○ 대금지급방법 : 선금(총 계약금액의 70%), 잔금(총 계약금액의 30%)\n○ 추진방법: 자체발주(제한경쟁입찰), 협상에 의한 계약(기술 80%, 가격 20%)\n□ 주요 내용 : 세부내용은‘Ⅱ. 제안요청 내용’참조\n○ (목표) AI 활용 등 실습 중심 플립드러닝*(Flipped Learning) 기반 교육* 플립드러닝: 온라인 등으로 사전 학습 후 교실에서 토론, 실습 등 심화 학습\n○ (교육준비)",
+        "confidence": 1.0
+      }
+    ],
+    "review_status": "unreviewed"
+  },
+  "instructor": {
+    "instructor_id": "instructor-35",
+    "profile_version": "db-8ac78a0e204e",
+    "display_name": "박주석",
+    "expertise_tags": [
+      "ISO",
+      "IEC 27000",
+      "CobIT",
+      "eSCM",
+      "SSE-CMM",
+      "IEC 20000",
+      "ITIL",
+      "CMMI_SVC",
+      "ISO 9001",
+      "TickIT",
+      "CMMI_DEV",
+      "MIL_STD",
+      "SPICE",
+      "PMBOK",
+      "CSQA",
+      "IEC 25000",
+      "IEC",
+      "IEEE 29119",
+      "정보보안경영체제(ISMS) 프로세스 혁신",
+      "IT서비스관리(ITSM) 프로세스 혁신",
+      "소프트웨어",
+      "시스템 개발 프로세스 혁신",
+      "시스템 품질평가 및 테스팅 혁신",
+      "SW공학 전문가 양성",
+      "SP Level 2",
+      "SW공학기술",
+      "WBS",
+      "품질점검",
+      "산업보안",
+      "위험평가",
+      "통제방법론",
+      "중소기업",
+      "기술보호",
+      "보안통제",
+      "산업보안진단사",
+      "양성과정",
+      "성과평가",
+      "보안관제",
+      "위기관리",
+      "품질평가모델",
+      "운영시스템",
+      "IT서비스관리",
+      "운영",
+      "보안관리",
+      "가용성",
+      "연속성",
+      "SW공학",
+      "전문강사",
+      "IT품질모니터링",
+      "내부감리",
+      "보안부문",
+      "품질경영시스템",
+      "통합",
+      "품질경영",
+      "중장기전략",
+      "C코드",
+      "품질혁신",
+      "품질관리체제",
+      "CMMI L3",
+      "SW품질관리",
+      "CMMI Level 3",
+      "BS 15000",
+      "보안경영체제",
+      "패키지SW",
+      "실태조사",
+      "프로세스진단",
+      "요구공학분석가",
+      "양성",
+      "단말SW",
+      "CMMI Level 2",
+      "ISO 17799",
+      "SW개발",
+      "프로세스혁신",
+      "CMM Level 2",
+      "CMM Level 4",
+      "CMM Level 3",
+      "품질보증",
+      "통합시스템",
+      "개발시스템",
+      "프로젝트관리체계",
+      "BI",
+      "평가모델",
+      "ISO 9126",
+      "TQM",
+      "중장기발전계획",
+      "품질경영체제",
+      "QMS",
+      "ISO 9000",
+      "개선"
+    ],
+    "summary": "SW공학 및 정보보안/품질관리 프로세스 혁신 전문가",
+    "delivery_modes": [],
+    "availability_notes": null,
+    "vendor_experience": [
+      "NIPA - KCC정보통신 SP Level 2 수준의 SW공학기술 혁신",
+      "NIPA - WBS 3차 Seed형 프로젝트 품질점검 수행",
+      "산업기술보호협회 - 산업보안 위험 평가 및 통제 방법론 개발",
+      "지식경제부 - 중소기업의 기술보호를 위한 세부 보안통제실행G/L개발",
+      "KOSCOM - IT서비스 성과평가 및 ISO/IEC 20000 인증",
+      "KOSCOM - 보안관제 부문 위기관리 체제 구축",
+      "KOSCOM - 운영시스템 품질평가 모델 정립 및 실행",
+      "KOSCOM - IT서비스관리 개선 및 운영",
+      "KOSCOM - 보안/가용성/연속성 관리 체제 구축",
+      "POSCO ICT - IT품질모니터링을 위한 내부감리 체제 구축 및 시범적용",
+      "POSCO ICT - 보안부문 내부감리제도 정립 및 시범감리",
+      "KOSCOM - 개발 및 운영 부문 품질경영시스템 통합/효율화",
+      "POSCO ICT - SM부문 품질경영 Visioning 및 중장기 전략 수립",
+      "휴맥스 - C코드 품질혁신 컨설팅",
+      "대구은행 - 품질관리체제/ITMS 구축 및 CMMI L3 인증",
+      "SK텔레텍 - 단말연구소 SW품질관리 혁신 (CMMI Level 3)",
+      "현대정보기술 - BS 15000 기반 보안경영체제 구축 및 인증",
+      "SW진흥원 - 중소기업 패키지SW 상품화 실태 조사",
+      "토탈솔루션뱅크 - 정보시스템구축 프로세스 진단 (CMMI Level 3)",
+      "부산은행 - 품질관리체제/PMS 구축 및 CMMI L3 인증",
+      "LG전자 - 단말SW 품질평가 모델 정립",
+      "LG전자 - CDMA연구소 SW품질관리 혁신 (CMMI Level 2)",
+      "산업자원부 - ISO 17799 위험평가 Packaged SW(RA-Keeper) 개발",
+      "한진정보통신 - 정보시스템구축 프로세스 혁신 (CMMI Level 3)",
+      "LG이노텍 - 중앙연구소 SW품질관리 혁신 (CMM Level 2)",
+      "POSCO ICT - 정보시스템구축 프로세스 혁신 (CMM Level 4)",
+      "산업자원부 - ISO 17799 위험평가 Packaged SW(RA-DB) 개발",
+      "현대정보기술 - 정보시스템구축 프로세스 혁신 (CMM Level 3)",
+      "SH공사 - 통합시스템 구축 품질 보증 및 평가",
+      "현대정보기술 - 개발시스템 품질평가 모델 정립 및 실행",
+      "현대정보기술 - 프로젝트관리체계 구축 및 브랜드강화(BI) 추진",
+      "핸디소프트 - 정보시스템구축 프로세스 혁신 (CMM Level 2)",
+      "POSCO ICT - 프로세스 및 제품 평가 모델 정립 (ISO 9126, 14598)",
+      "POSCO ICT - 정보시스템구축 프로세스 혁신 (CMM Level 3)",
+      "현대정보기술 - TQM중장기발전계획수립",
+      "현대정보기술 - 품질경영체제 특별감사 및 QMS 고도화",
+      "산업자원부 - ISO 9000 Packaged SW(품질나라) 개발",
+      "노틸러스효성 - 품질경영체제 개선 및 운영",
+      "SQ테크놀로지 - 품질경영체제 개선 및 운영",
+      "㈜아이코어 - 전문강사",
+      "㈜이오컨설팅 - 대표컨설턴트",
+      "비즈피어㈜ - 대표컨설턴트, 컨설팅본부장, 품질아카데미원장, 기술연구소장",
+      "POSCO ICT - 프로젝트관리자, 컴퓨터 프로그래머, 품질보증관리자, 사내기술대학원교수",
+      "포스코건설 - 프로젝트관리자, 컴퓨터 프로그래머"
+    ],
+    "vendor_certifications": [
+      "정보보안경영시스템(ISO 27000) BSI 인증심사원 22318-57550",
+      "품질관리기사 1급 (자격번호: 87204010036H)",
+      "정보처리기사 1급 (자격번호: 87206010148C)"
+    ],
+    "teaching_items": [
+      {
+        "topic": "산업보안진단사 양성과정 개발 및 교육",
+        "organization": "산업기술보호협회",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 731",
+            "quote": "산업보안진단사 양성과정 개발 및 교육",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "SW공학 부문 전문강사",
+        "organization": "SK C&C",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 739",
+            "quote": "SW공학 부문 전문강사",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "SW공학 부문 전문강사",
+        "organization": "KT",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 740",
+            "quote": "SW공학 부문 전문강사",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "IT서비스관리 전문강사",
+        "organization": "POSCO ICT",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 742",
+            "quote": "IT서비스관리 전문강사",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "요구공학분석가 양성",
+        "organization": "LG전자",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 761",
+            "quote": "요구공학분석가 양성",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "교육센타 품질경영분야 전문 강사",
+        "organization": "현대정보기술",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 748",
+            "quote": "교육센타 품질경영분야 전문 강사",
+            "confidence": 1.0
+          }
+        ]
+      }
+    ],
+    "project_items": [
+      {
+        "title": "KCC정보통신 SP Level 2 수준의 SW공학기술 혁신",
+        "client_organization": "NIPA",
+        "role": "컨설턴트",
+        "start_date": "2012-04-01",
+        "end_date": "2012-11-01",
+        "keywords": [
+          "SP Level 2",
+          "SW공학기술"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 736",
+            "quote": "KCC정보통신 SP Level 2 수준의 SW공학기술 혁신",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "WBS 3차 Seed형 프로젝트 품질점검 수행",
+        "client_organization": "NIPA",
+        "role": "컨설턴트",
+        "start_date": "2012-02-01",
+        "end_date": "2012-11-01",
+        "keywords": [
+          "WBS",
+          "품질점검"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 764",
+            "quote": "WBS 3차 Seed형 프로젝트 품질점검 수행",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "산업보안 위험 평가 및 통제 방법론 개발",
+        "client_organization": "산업기술보호협회",
+        "role": "컨설턴트",
+        "start_date": "2011-01-01",
+        "end_date": "2011-07-01",
+        "keywords": [
+          "산업보안",
+          "위험평가",
+          "통제방법론"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 729",
+            "quote": "산업보안 위험 평가 및 통제 방법론 개발",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "중소기업의 기술보호를 위한 세부 보안통제실행G/L개발",
+        "client_organization": "지식경제부",
+        "role": "컨설턴트",
+        "start_date": "2010-10-01",
+        "end_date": "2010-12-01",
+        "keywords": [
+          "중소기업",
+          "기술보호",
+          "보안통제"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 730",
+            "quote": "중소기업의 기술보호를 위한 세부 보안통제실행G/L개발",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "IT서비스 성과평가 및 ISO/IEC 20000 인증",
+        "client_organization": "KOSCOM",
+        "role": "컨설턴트",
+        "start_date": "2009-02-01",
+        "end_date": "2010-01-01",
+        "keywords": [
+          "성과평가",
+          "ISO",
+          "IEC 20000"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 737",
+            "quote": "IT서비스 성과평가 및 ISO/IEC 20000 인증",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "보안관제 부문 위기관리 체제 구축",
+        "client_organization": "KOSCOM",
+        "role": "컨설턴트",
+        "start_date": "2009-02-01",
+        "end_date": "2010-01-01",
+        "keywords": [
+          "보안관제",
+          "위기관리"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 732",
+            "quote": "보안관제 부문 위기관리 체제 구축",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "운영시스템 품질평가 모델 정립 및 실행",
+        "client_organization": "KOSCOM",
+        "role": "컨설턴트",
+        "start_date": "2008-01-01",
+        "end_date": "2009-01-01",
+        "keywords": [
+          "품질평가모델",
+          "운영시스템"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 765",
+            "quote": "운영시스템 품질평가 모델 정립 및 실행",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "IT서비스관리 개선 및 운영",
+        "client_organization": "KOSCOM",
+        "role": "컨설턴트",
+        "start_date": "2008-01-01",
+        "end_date": "2009-01-01",
+        "keywords": [
+          "IT서비스관리",
+          "운영"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 738",
+            "quote": "IT서비스관리 개선 및 운영",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "보안/가용성/연속성 관리 체제 구축",
+        "client_organization": "KOSCOM",
+        "role": "컨설턴트",
+        "start_date": "2008-01-01",
+        "end_date": "2009-01-01",
+        "keywords": [
+          "보안관리",
+          "가용성",
+          "연속성"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 733",
+            "quote": "보안/가용성/연속성 관리 체제 구축",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "IT품질모니터링을 위한 내부감리 체제 구축 및 시범적용",
+        "client_organization": "POSCO ICT",
+        "role": "컨설턴트",
+        "start_date": "2007-11-01",
+        "end_date": "2008-01-01",
+        "keywords": [
+          "IT품질모니터링",
+          "내부감리"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 741",
+            "quote": "IT품질모니터링을 위한 내부감리 체제 구축 및 시범적용",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "보안부문 내부감리제도 정립 및 시범감리",
+        "client_organization": "POSCO ICT",
+        "role": "컨설턴트",
+        "start_date": "2007-11-01",
+        "end_date": "2008-01-01",
+        "keywords": [
+          "내부감리",
+          "보안부문"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 734",
+            "quote": "보안부문 내부감리제도 정립 및 시범감리",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "개발 및 운영 부문 품질경영시스템 통합/효율화",
+        "client_organization": "KOSCOM",
+        "role": "컨설턴트",
+        "start_date": "2006-09-01",
+        "end_date": "2006-12-01",
+        "keywords": [
+          "품질경영시스템",
+          "통합"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 744",
+            "quote": "개발 및 운영 부문 품질경영시스템 통합/효율화",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "SM부문 품질경영 Visioning 및 중장기 전략 수립",
+        "client_organization": "POSCO ICT",
+        "role": "컨설턴트",
+        "start_date": "2006-08-01",
+        "end_date": "2006-12-01",
+        "keywords": [
+          "품질경영",
+          "중장기전략"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 743",
+            "quote": "SM부문 품질경영 Visioning 및 중장기 전략 수립",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "C코드 품질혁신 컨설팅",
+        "client_organization": "휴맥스",
+        "role": "컨설턴트",
+        "start_date": "2005-09-01",
+        "end_date": "2005-11-01",
+        "keywords": [
+          "C코드",
+          "품질혁신"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 759",
+            "quote": "C코드 품질혁신 컨설팅",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "품질관리체제/ITMS 구축 및 CMMI L3 인증",
+        "client_organization": "대구은행",
+        "role": "컨설턴트",
+        "start_date": "2005-05-01",
+        "end_date": "2006-08-01",
+        "keywords": [
+          "품질관리체제",
+          "CMMI L3"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 745",
+            "quote": "품질관리체제/ITMS 구축 및 CMMI L3 인증",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "단말연구소 SW품질관리 혁신 (CMMI Level 3)",
+        "client_organization": "SK텔레텍",
+        "role": "컨설턴트",
+        "start_date": "2005-04-01",
+        "end_date": "2005-11-01",
+        "keywords": [
+          "SW품질관리",
+          "CMMI Level 3"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 760",
+            "quote": "단말연구소 SW품질관리 혁신 (CMMI Level 3)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "BS 15000 기반 보안경영체제 구축 및 인증",
+        "client_organization": "현대정보기술",
+        "role": "컨설턴트",
+        "start_date": "2005-04-01",
+        "end_date": "2005-06-01",
+        "keywords": [
+          "BS 15000",
+          "보안경영체제"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 735",
+            "quote": "BS 15000 기반 보안경영체제 구축 및 인증",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "중소기업 패키지SW 상품화 실태 조사",
+        "client_organization": "SW진흥원",
+        "role": "컨설턴트",
+        "start_date": "2004-11-01",
+        "end_date": "2004-12-01",
+        "keywords": [
+          "패키지SW",
+          "실태조사"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 770",
+            "quote": "중소기업 패키지SW 상품화 실태 조사",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "정보시스템구축 프로세스 진단 (CMMI Level 3)",
+        "client_organization": "토탈솔루션뱅크",
+        "role": "컨설턴트",
+        "start_date": "2004-01-01",
+        "end_date": "2004-03-01",
+        "keywords": [
+          "프로세스진단",
+          "CMMI Level 3"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 753",
+            "quote": "정보시스템구축 프로세스 진단 (CMMI Level 3)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "품질관리체제/PMS 구축 및 CMMI L3 인증",
+        "client_organization": "부산은행",
+        "role": "컨설턴트",
+        "start_date": "2004-01-01",
+        "end_date": "2005-06-01",
+        "keywords": [
+          "품질관리체제",
+          "CMMI L3"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 746",
+            "quote": "품질관리체제/PMS 구축 및 CMMI L3 인증",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "단말SW 품질평가 모델 정립",
+        "client_organization": "LG전자",
+        "role": "컨설턴트",
+        "start_date": "2003-07-01",
+        "end_date": "2004-02-01",
+        "keywords": [
+          "품질평가모델",
+          "단말SW"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 766",
+            "quote": "단말SW 품질평가 모델 정립",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "CDMA연구소 SW품질관리 혁신 (CMMI Level 2)",
+        "client_organization": "LG전자",
+        "role": "컨설턴트",
+        "start_date": "2003-07-01",
+        "end_date": "2004-02-01",
+        "keywords": [
+          "SW품질관리",
+          "CMMI Level 2"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 762",
+            "quote": "CDMA연구소 SW품질관리 혁신 (CMMI Level 2)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "ISO 17799 위험평가 Packaged SW(RA-Keeper) 개발",
+        "client_organization": "산업자원부",
+        "role": "개발자",
+        "start_date": "2003",
+        "end_date": "2003",
+        "keywords": [
+          "ISO 17799",
+          "위험평가",
+          "SW개발"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 771",
+            "quote": "ISO 17799 위험평가 Packaged SW(RA-Keeper) 개발",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "정보시스템구축 프로세스 혁신 (CMMI Level 3)",
+        "client_organization": "한진정보통신",
+        "role": "컨설턴트",
+        "start_date": "2002-11-01",
+        "end_date": "2003-03-01",
+        "keywords": [
+          "프로세스혁신",
+          "CMMI Level 3"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 754",
+            "quote": "정보시스템구축 프로세스 혁신 (CMMI Level 3)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "중앙연구소 SW품질관리 혁신 (CMM Level 2)",
+        "client_organization": "LG이노텍",
+        "role": "컨설턴트",
+        "start_date": "2002-04-01",
+        "end_date": "2002-05-01",
+        "keywords": [
+          "SW품질관리",
+          "CMM Level 2"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 763",
+            "quote": "중앙연구소 SW품질관리 혁신 (CMM Level 2)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "정보시스템구축 프로세스 혁신 (CMM Level 4)",
+        "client_organization": "POSCO ICT",
+        "role": "컨설턴트",
+        "start_date": "2002-04-01",
+        "end_date": "2002-11-01",
+        "keywords": [
+          "프로세스혁신",
+          "CMM Level 4"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 755",
+            "quote": "정보시스템구축 프로세스 혁신 (CMM Level 4)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "ISO 17799 위험평가 Packaged SW(RA-DB) 개발",
+        "client_organization": "산업자원부",
+        "role": "개발자",
+        "start_date": "2002",
+        "end_date": "2002",
+        "keywords": [
+          "ISO 17799",
+          "위험평가",
+          "SW개발"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 772",
+            "quote": "ISO 17799 위험평가 Packaged SW(RA-DB) 개발",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "정보시스템구축 프로세스 혁신 (CMM Level 3)",
+        "client_organization": "현대정보기술",
+        "role": "컨설턴트",
+        "start_date": "2001-10-01",
+        "end_date": "2003-02-01",
+        "keywords": [
+          "프로세스혁신",
+          "CMM Level 3"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 756",
+            "quote": "정보시스템구축 프로세스 혁신 (CMM Level 3)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "통합시스템 구축 품질 보증 및 평가",
+        "client_organization": "SH공사",
+        "role": "컨설턴트",
+        "start_date": "2001-01-01",
+        "end_date": "2001-05-01",
+        "keywords": [
+          "품질보증",
+          "통합시스템"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 768",
+            "quote": "통합시스템 구축 품질 보증 및 평가",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "개발시스템 품질평가 모델 정립 및 실행",
+        "client_organization": "현대정보기술",
+        "role": "컨설턴트",
+        "start_date": "2001-01-01",
+        "end_date": "2001-12-01",
+        "keywords": [
+          "품질평가모델",
+          "개발시스템"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 767",
+            "quote": "개발시스템 품질평가 모델 정립 및 실행",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "프로젝트관리체계 구축 및 브랜드강화(BI) 추진",
+        "client_organization": "현대정보기술",
+        "role": "컨설턴트",
+        "start_date": "2001-01-01",
+        "end_date": "2001-12-01",
+        "keywords": [
+          "프로젝트관리체계",
+          "BI"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 747",
+            "quote": "프로젝트관리체계 구축 및 브랜드강화(BI) 추진",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "정보시스템구축 프로세스 혁신 (CMM Level 2)",
+        "client_organization": "핸디소프트",
+        "role": "컨설턴트",
+        "start_date": "2000-10-01",
+        "end_date": "2001-02-01",
+        "keywords": [
+          "프로세스혁신",
+          "CMM Level 2"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 757",
+            "quote": "정보시스템구축 프로세스 혁신 (CMM Level 2)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "프로세스 및 제품 평가 모델 정립 (ISO 9126, 14598)",
+        "client_organization": "POSCO ICT",
+        "role": "컨설턴트",
+        "start_date": "1999-03-01",
+        "end_date": "1999-12-01",
+        "keywords": [
+          "평가모델",
+          "ISO 9126"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 769",
+            "quote": "프로세스 및 제품 평가 모델 정립 (ISO 9126, 14598)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "정보시스템구축 프로세스 혁신 (CMM Level 3)",
+        "client_organization": "POSCO ICT",
+        "role": "컨설턴트",
+        "start_date": "1999-03-01",
+        "end_date": "2001-10-01",
+        "keywords": [
+          "프로세스혁신",
+          "CMM Level 3"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 758",
+            "quote": "정보시스템구축 프로세스 혁신 (CMM Level 3)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "TQM중장기발전계획수립",
+        "client_organization": "현대정보기술",
+        "role": "컨설턴트",
+        "start_date": "1999-01-01",
+        "end_date": "1999-12-01",
+        "keywords": [
+          "TQM",
+          "중장기발전계획"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 749",
+            "quote": "TQM중장기발전계획수립",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "품질경영체제 특별감사 및 QMS 고도화",
+        "client_organization": "현대정보기술",
+        "role": "컨설턴트",
+        "start_date": "1998-01-01",
+        "end_date": "1998-12-01",
+        "keywords": [
+          "품질경영체제",
+          "QMS"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 750",
+            "quote": "품질경영체제 특별감사 및 QMS 고도화",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "ISO 9000 Packaged SW(품질나라) 개발",
+        "client_organization": "산업자원부",
+        "role": "개발자",
+        "start_date": "1998",
+        "end_date": "1998",
+        "keywords": [
+          "ISO 9000",
+          "SW개발"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 773",
+            "quote": "ISO 9000 Packaged SW(품질나라) 개발",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "품질경영체제 개선 및 운영",
+        "client_organization": "노틸러스효성",
+        "role": "컨설턴트",
+        "start_date": "1997-10-01",
+        "end_date": "1999-12-01",
+        "keywords": [
+          "품질경영체제",
+          "개선"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 752",
+            "quote": "품질경영체제 개선 및 운영",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "품질경영체제 개선 및 운영",
+        "client_organization": "SQ테크놀로지",
+        "role": "컨설턴트",
+        "start_date": "1997-10-01",
+        "end_date": "1999-12-01",
+        "keywords": [
+          "품질경영체제",
+          "개선"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 751",
+            "quote": "품질경영체제 개선 및 운영",
+            "confidence": 1.0
+          }
+        ]
+      }
+    ],
+    "work_experience_items": [
+      {
+        "organization": "㈜아이코어",
+        "summary": "전문강사",
+        "start_date": "2012-01-01",
+        "end_date": "재직중",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 329",
+            "quote": "전문강사",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "organization": "㈜이오컨설팅",
+        "summary": "대표컨설턴트",
+        "start_date": "2009-08-01",
+        "end_date": "2011-12-01",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 330",
+            "quote": "대표컨설턴트",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "organization": "비즈피어㈜",
+        "summary": "대표컨설턴트, 컨설팅본부장, 품질아카데미원장, 기술연구소장",
+        "start_date": "1997-10-01",
+        "end_date": "2009-06-01",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 331",
+            "quote": "대표컨설턴트, 컨설팅본부장, 품질아카데미원장, 기술연구소장",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "organization": "POSCO ICT",
+        "summary": "프로젝트관리자, 컴퓨터 프로그래머, 품질보증관리자, 사내기술대학원교수",
+        "start_date": "1989-11-01",
+        "end_date": "1997-09-01",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 332",
+            "quote": "프로젝트관리자, 컴퓨터 프로그래머, 품질보증관리자, 사내기술대학원교수",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "organization": "포스코건설",
+        "summary": "프로젝트관리자, 컴퓨터 프로그래머",
+        "start_date": "1987-11-01",
+        "end_date": "1989-11-01",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 333",
+            "quote": "프로젝트관리자, 컴퓨터 프로그래머",
+            "confidence": 1.0
+          }
+        ]
+      }
+    ],
+    "certifications": [
+      {
+        "name": "정보보안경영시스템(ISO 27000) BSI 인증심사원 22318-57550",
+        "issuer": "BSI",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 340",
+            "quote": "정보보안경영시스템(ISO 27000) BSI 인증심사원 22318-57550",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "품질관리기사 1급 (자격번호: 87204010036H)",
+        "issuer": null,
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 341",
+            "quote": "품질관리기사 1급 (자격번호: 87204010036H)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "정보처리기사 1급 (자격번호: 87206010148C)",
+        "issuer": null,
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 342",
+            "quote": "정보처리기사 1급 (자격번호: 87206010148C)",
+            "confidence": 1.0
+          }
+        ]
+      }
+    ],
+    "source_document_ids": [
+      "instructor-source:내부 강사 정보.xlsx",
+      "instructor-db:35"
+    ],
+    "extensions": {
+      "other_records": [
+        {
+          "category": "교육이수",
+          "detail": "SEI공인 ‘Introduction to CMMI’ 과정",
+          "organization": "SEI",
+          "start_date": "2008-11-01",
+          "end_date": null
+        },
+        {
+          "category": "교육이수",
+          "detail": "유럽소프트웨어협회 주관 ‘Introduction to CMM’ 과정",
+          "organization": "유럽소프트웨어협회",
+          "start_date": "2001-06-01",
+          "end_date": null
+        },
+        {
+          "category": "교육이수",
+          "detail": "정보보안경영시스템(ISO 27000) 심사원 양성 과정",
+          "organization": null,
+          "start_date": "2000-07-01",
+          "end_date": null
+        },
+        {
+          "category": "교육이수",
+          "detail": "LRQA주관 TickIT Auditor 양성 과정",
+          "organization": "LRQA",
+          "start_date": "1995-06-01",
+          "end_date": null
+        },
+        {
+          "category": "교육이수",
+          "detail": "㈜앨리스 주관 내부품질감사자 양성 과정",
+          "organization": "㈜앨리스",
+          "start_date": "1995-02-01",
+          "end_date": null
+        },
+        {
+          "category": "교육이수",
+          "detail": "정보처리기사1급 양성과정(6개월) 수료",
+          "organization": null,
+          "start_date": "1987-08-01",
+          "end_date": null
+        }
+      ]
+    },
+    "evidence": [
+      {
+        "source_document_id": "instructor-db:35",
+        "page": null,
+        "section": "instructors",
+        "quote": "SW공학 및 정보보안/품질관리 프로세스 혁신 전문가",
+        "confidence": 1.0
+      }
+    ],
+    "review_status": "unreviewed"
+  }
+}

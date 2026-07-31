@@ -1,0 +1,2215 @@
+{
+  "project": {
+    "schema_version": "education_project_v1",
+    "service_type": "education_program",
+    "program_type": "vocational_training",
+    "classification_confidence": 1.0,
+    "base": {
+      "project_name": "[제안요청서] 2026년 클라우드서비스 보안 교육 운영.hwp",
+      "client_organization": null,
+      "purpose": [
+        "클라우드서비스 인증평가원의 평가 역량 및 기업담당자의 인증제도 대응 역량을 강화하기 위해 온·오프라인 연계(플립드러닝) 방식의 클라우드서비스 보안 교육 과정을 설계하고 운영하는 사업",
+        "교육 커리큘럼 및 교재 제작",
+        "온라인 사전 교육(이론 중심) 운영",
+        "오프라인 실습 교육 운영",
+        "교육생 모집, 안내 및 수료 관리",
+        "만족도 조사 및 교육 효과 측정",
+        "결과 보고",
+        "클라우드서비스 인증평가원 평가역량 강화",
+        "인증 보유·희망 기업담당자 인증제도 대응역량 강화"
+      ],
+      "contract_method": null,
+      "start_date": null,
+      "end_date": null,
+      "budget_krw": null,
+      "vat_included": null,
+      "deliverables": [
+        "교육 커리큘럼 및 교재 제작",
+        "온라인 사전 교육(이론 중심) 운영",
+        "오프라인 실습 교육 운영",
+        "교육생 모집, 안내 및 수료 관리",
+        "만족도 조사 및 교육 효과 측정",
+        "결과 보고",
+        "클라우드서비스 인증평가원 평가역량 강화",
+        "인증 보유·희망 기업담당자 인증제도 대응역량 강화"
+      ],
+      "proposal_requirements": [
+        "클라우드서비스 보안인증(CSAP) 평가 다수(10회 이상) 평가 경험자 (강사 필수요건)",
+        "관련 용역 수행 경력이 있는 전문 인력 (PM)",
+        "교육 설계",
+        "교재 집필 및 검수",
+        "교육 운영 및 관리",
+        "강사진 구성",
+        "교육생 모집 및 홍보"
+      ],
+      "compliance_requirements": [
+        "기술능력평가 배점",
+        "입찰가격평가 배점"
+      ]
+    },
+    "education": {
+      "technology_domains": [
+        "클라우드서비스 보안",
+        "클라우드 보안인증(CSAP)",
+        "클라우드 AI 보안",
+        "CSAP",
+        "평가 경험",
+        "강사",
+        "PM",
+        "용역 수행",
+        "경력",
+        "기술평가",
+        "협상에 의한 계약",
+        "가격평가",
+        "입찰가격"
+      ],
+      "program_topics": [
+        "클라우드서비스 보안",
+        "클라우드 보안인증(CSAP)",
+        "클라우드 AI 보안",
+        "기술평가",
+        "협상에 의한 계약",
+        "가격평가",
+        "입찰가격",
+        "CSAP",
+        "평가 경험",
+        "강사",
+        "PM",
+        "용역 수행",
+        "경력"
+      ],
+      "target_audience": [
+        "클라우드서비스 인증평가원",
+        "인증 보유 및 희망 기업담당자"
+      ],
+      "participant_capacity": null,
+      "delivery_format": [
+        "온라인",
+        "오프라인",
+        "플립드러닝(Flipped Learning)",
+        "실습"
+      ],
+      "education_hours": null,
+      "schedule": [],
+      "required_roles": [
+        "교육 설계",
+        "교재 집필 및 검수",
+        "교육 운영 및 관리",
+        "강사진 구성",
+        "교육생 모집 및 홍보"
+      ],
+      "instructor_requirements": {
+        "required_experience": [
+          "클라우드서비스 보안인증(CSAP) 평가 다수(10회 이상) 평가 경험자 (강사 필수요건)",
+          "관련 용역 수행 경력이 있는 전문 인력 (PM)"
+        ],
+        "required_certifications": [
+          "클라우드서비스 보안인증(CSAP) 평가 다수(10회 이상) 평가 경험자 (강사 필수요건)"
+        ],
+        "required_vendor_credentials": [],
+        "similar_project_experience": []
+      },
+      "curriculum_requirements": [],
+      "operational_requirements": [],
+      "practical_project_requirements": [
+        "교육 커리큘럼 및 교재 제작",
+        "온라인 사전 교육(이론 중심) 운영",
+        "오프라인 실습 교육 운영",
+        "교육생 모집, 안내 및 수료 관리",
+        "만족도 조사 및 교육 효과 측정",
+        "결과 보고",
+        "교육 설계",
+        "교재 집필 및 검수",
+        "교육 운영 및 관리",
+        "강사진 구성",
+        "교육생 모집 및 홍보"
+      ],
+      "assessment_requirements": [
+        "기술능력평가 배점",
+        "입찰가격평가 배점"
+      ],
+      "outcome_requirements": [
+        "클라우드서비스 인증평가원 평가역량 강화",
+        "인증 보유·희망 기업담당자 인증제도 대응역량 강화"
+      ]
+    },
+    "extensions": {
+      "source_task_order_id": "3a50ce72-5e6b-4009-8f84-f09c2141b198",
+      "normalized_qualifications": [
+        {
+          "category": "인력 요건",
+          "description": "클라우드서비스 보안인증(CSAP) 평가 다수(10회 이상) 평가 경험자 (강사 필수요건)",
+          "is_mandatory": true,
+          "keywords": [
+            "CSAP",
+            "평가 경험",
+            "강사"
+          ]
+        },
+        {
+          "category": "인력 요건",
+          "description": "관련 용역 수행 경력이 있는 전문 인력 (PM)",
+          "is_mandatory": true,
+          "keywords": [
+            "PM",
+            "용역 수행",
+            "경력"
+          ]
+        }
+      ],
+      "normalized_evaluation_criteria": [
+        {
+          "category": "기술평가",
+          "description": "기술능력평가 배점",
+          "weight": 80,
+          "keywords": [
+            "기술평가",
+            "협상에 의한 계약"
+          ]
+        },
+        {
+          "category": "가격평가",
+          "description": "입찰가격평가 배점",
+          "weight": 20,
+          "keywords": [
+            "가격평가",
+            "입찰가격"
+          ]
+        }
+      ],
+      "overview": {
+        "section_titles": [
+          "사업 개요",
+          "○ 추진배경 및 필요성",
+          "1. 개요",
+          "제안요청 개요"
+        ],
+        "summary": "클라우드서비스 인증평가원의 평가 역량 및 기업담당자의 인증제도 대응 역량을 강화하기 위해 온·오프라인 연계(플립드러닝) 방식의 클라우드서비스 보안 교육 과정을 설계하고 운영하는 사업",
+        "core_topics": [
+          "클라우드서비스 보안",
+          "클라우드 보안인증(CSAP)",
+          "클라우드 AI 보안"
+        ],
+        "target_audience": [
+          "클라우드서비스 인증평가원",
+          "인증 보유 및 희망 기업담당자"
+        ],
+        "delivery_formats": [
+          "온라인",
+          "오프라인",
+          "플립드러닝(Flipped Learning)",
+          "실습"
+        ],
+        "required_roles": [
+          "교육 설계",
+          "교재 집필 및 검수",
+          "교육 운영 및 관리",
+          "강사진 구성",
+          "교육생 모집 및 홍보"
+        ],
+        "scope": [
+          "교육 커리큘럼 및 교재 제작",
+          "온라인 사전 교육(이론 중심) 운영",
+          "오프라인 실습 교육 운영",
+          "교육생 모집, 안내 및 수료 관리",
+          "만족도 조사 및 교육 효과 측정",
+          "결과 보고"
+        ],
+        "expected_outcomes": [
+          "클라우드서비스 인증평가원 평가역량 강화",
+          "인증 보유·희망 기업담당자 인증제도 대응역량 강화"
+        ],
+        "preferred_experience": [],
+        "source_excerpt": "사업 개요\n□ 사업명 : 2026년 클라우드서비스 보안 교육 운영\n\n○ 추진배경 및 필요성\n- 클라우드컴퓨팅서비스 보안인증평가원 평가역량 향상 및 인증 보유·희망기업의 효율적인 보안인증 평가준비를 위한 교육 필요\n- AX 가속화로 클라우드 인프라가 AI 핵심 인프라로 자리잡으며 안전한 클라우드 AI 활용을 위한 클라우드 AI 대상 보안 교육 필요\n\n1. 개요\no 본 사업의 수행에 관한 대략적인 개요를 기술\n\n사 업 개 요\n참 여 기 간\n(년월일∼년월일)\n담당 업무\n발주처",
+        "matching_rules": [
+          {
+            "key": "core_topics",
+            "label": "핵심 교육 주제",
+            "values": [
+              "클라우드서비스 보안",
+              "클라우드 보안인증(CSAP)",
+              "클라우드 AI 보안"
+            ]
+          },
+          {
+            "key": "target_audience",
+            "label": "교육 대상",
+            "values": [
+              "클라우드서비스 인증평가원",
+              "인증 보유 및 희망 기업담당자"
+            ]
+          },
+          {
+            "key": "delivery_formats",
+            "label": "운영 방식",
+            "values": [
+              "온라인",
+              "오프라인",
+              "플립드러닝(Flipped Learning)",
+              "실습"
+            ]
+          },
+          {
+            "key": "required_roles",
+            "label": "요구 역할",
+            "values": [
+              "교육 설계",
+              "교재 집필 및 검수",
+              "교육 운영 및 관리",
+              "강사진 구성",
+              "교육생 모집 및 홍보"
+            ]
+          },
+          {
+            "key": "scope",
+            "label": "업무 범위",
+            "values": [
+              "교육 커리큘럼 및 교재 제작",
+              "온라인 사전 교육(이론 중심) 운영",
+              "오프라인 실습 교육 운영",
+              "교육생 모집, 안내 및 수료 관리",
+              "만족도 조사 및 교육 효과 측정",
+              "결과 보고"
+            ]
+          },
+          {
+            "key": "expected_outcomes",
+            "label": "기대 성과",
+            "values": [
+              "클라우드서비스 인증평가원 평가역량 강화",
+              "인증 보유·희망 기업담당자 인증제도 대응역량 강화"
+            ]
+          }
+        ]
+      }
+    },
+    "evidence": [
+      {
+        "source_document_id": "task-order:3a50ce72-5e6b-4009-8f84-f09c2141b198",
+        "page": null,
+        "section": "normalized task-order requirements",
+        "quote": "捤獥汤捯湰灧氠瑢\n氠瑢\n2026년 클라우드서비스 보안\n교육 운영 제안요청서\n氠瑢\n담당자 소속\n담당자 성명\n연락처\n클라우드인증팀\n나경준\n061-820-3843\n桤灧漠杳湯湷\n捤獥汤捯목 차\n氠瑢\nI. 사업개요\t誄ȃ\t1\n1. 사업명 \t記ȃ\t1\n2. 목적\t鄠ȃ\t1\n3. 사업기간\t蟀ȃ\t1\n4. 사업금액\t蟀ȃ\t1\n5. 주요 내용\t蕨ȃ\t1\n6. 사업 결과물\t肸ȃ\t2\n7. 추진 일정\t蕨ȃ\t2\nⅡ. 제안요청사항 \t碰ȃ\t3\n1. 제안요청 개요\t簈ȃ\t3\n2. 제안요청 내용\t簈ȃ\t4\n3. 기타 요청사항\t簈ȃ\t7\nⅢ. 기타 안내사항\t碰ȃ\t9\n1. 지식재산권 귀속\t睘ȃ\t9\n2. 안전 및 보건 준수사항\t楈ȃ\t9\nⅣ. 제안서 작성 안내\t淄ȃ\t11\n1. 제안서 효력\t繤ȃ\t11\n2. 제안서 작성지침 및 유의사항\t壤ȃ\t11\n3. 제안서 목차 및 작성 방법\t忬ȃ\t12\nⅤ. 입찰 및 제안 안내\t欈ȃ\t14\n桤灧1. 입찰 방법\t茔ȃ\t14\n2. 제안서 제출 및 방법\t殤ȃ\t17\n3. 제안서 평가\t繤ȃ\t17\n4. 기술평가 기준\t禴ȃ\t18\n5. 기술평가 방법\t禴ȃ\t19\n6. 협상대상자 선정 및 협상 기준\t嚌ȃ\t19\nⅥ. 제안 관련 별첨 서식\t斐ȃ\t21\nⅦ. 입찰 및 계약 관련 서식\t嵜ȃ\t26\n氠瑢\n湯湷I\n사업 개요\n□ 사업명 : 2026년 클라우드서비스 보안 교육 운영\n□ 목  적\n○ 클라우드서비스 인증평가원 평가역량 강화 및 인증 보유  희망 기업담당자 인증제도 대응역량 강화 목적 교육과정 개설 및 운영\n□ 사업기간 : 계약체결일로부터 2026년 12월 11일\n□ 사업금액 : 80,000,000원(부가세 포함)\n○ 대금지급방법 : 선금(총 계약금액의 70%), 잔금(총 계약금액의 30%)\n○ 추진방법: 자체발주(제한경쟁입찰), 협상에 의한 계약(기술 80%, 가격 20%)\n□ 주요 내용 : 세부내용은‘Ⅱ. 제안요청 내용’참조\n○ (목표) AI 활용 등 실습 중심 플립드러닝*(Flipped Learning) 기반 교육* 플립드러닝: 온라인 등으로 사전 학습 후 교실에서 토론, 실습 등 심화 학습\n○ (교육준비)",
+        "confidence": 1.0
+      }
+    ],
+    "review_status": "unreviewed"
+  },
+  "instructor": {
+    "instructor_id": "instructor-78",
+    "profile_version": "db-cbd66e52e897",
+    "display_name": "이준화",
+    "expertise_tags": [
+      "Python",
+      "R",
+      "C",
+      "C++",
+      "Oracle",
+      "Java",
+      "정보보안",
+      "개인정보보호",
+      "빅데이터",
+      "머신러닝",
+      "블록체인",
+      "CPPG",
+      "정보보호",
+      "감리",
+      "이행검증",
+      "정보보호관리체계",
+      "개인정보보호체계",
+      "FIDO인증",
+      "파이썬",
+      "웹크롤링",
+      "딥러닝",
+      "보안인증",
+      "기술사례",
+      "내부통제",
+      "회원관리",
+      "개인정보관리체계",
+      "사물보안",
+      "실무구축",
+      "인증컨설팅",
+      "온라인교육",
+      "ISO27001",
+      "개인정보영향평가",
+      "의료보안",
+      "스마트폰보안",
+      "콜센터보안",
+      "R활용",
+      "데이터분석",
+      "사물인터넷",
+      "금융보안",
+      "연금시스템",
+      "PIA",
+      "취약점점검",
+      "모바일앱",
+      "현금IC카드",
+      "관리체계",
+      "실태점검",
+      "개인정보유출",
+      "방지대책",
+      "주정차관리",
+      "외환펀드",
+      "IT융합",
+      "복지카드",
+      "전자결재",
+      "IT컴플라이언스",
+      "CISM",
+      "번역",
+      "BPM시스템",
+      "콜센터",
+      "ISP",
+      "정보화전략계획",
+      "컴퓨터구조",
+      "프로그래밍",
+      "감사",
+      "기술적보호조치",
+      "CISSP",
+      "보안감사",
+      "모니터링",
+      "모니터링시스템",
+      "중장기전략",
+      "내부감사",
+      "보안",
+      "정보보호체계",
+      "RiskIT",
+      "프레임워크",
+      "라이프사이클",
+      "원격의료",
+      "의료영상시스템",
+      "유닉스",
+      "리눅스",
+      "네트워크",
+      "병원보안",
+      "암센터",
+      "내시경시스템",
+      "처방시스템",
+      "초음파시스템",
+      "의료동영상",
+      "PACS",
+      "정보보호시스템"
+    ],
+    "summary": "정보보안 및 개인정보보호 전문가",
+    "delivery_modes": [],
+    "availability_notes": null,
+    "vendor_experience": [
+      "시청자미디어재단 - 장애인방송 의무제공 이행검증시스템 구축 감리",
+      "한국경영정보연구소 - 블록체인을 활용한 FIDO 인증 솔루션 개발",
+      "KB생명보험 - 정보호보호관리체계와 내부통제 강화",
+      "대한소방공제회 - 회원관리시스템 통합구축 및 고도화 사업 감리",
+      "에이블씨엔씨 - 정보호보호관리체계 및 개인정보관리체계 컨설팅",
+      "엠제이앤앰 - 정보호보호관리체계 인증(최초)컨설팅",
+      "에이블씨엔씨 - 정보호보호관리체계 인증(최초)컨설팅",
+      "이트너스 - 정보호보호관리체계(ISO27001) 컨설팅",
+      "에스에스엘케이에이치 - 정보호보호관리체계 인증(최초)컨설팅",
+      "가톨릭중앙의료원 - 가톨릭중앙의료원 정보보호관리체계",
+      "새마을금고 - 스마트폰 Push시스템 개인정보 영향평가",
+      "화성시 - 콜센터 상담시스템 개인정보영향평가",
+      "중소기업유통센터 - AS센터콜상담시스템 개인정보영향평가",
+      "국민연금공사 - 연금정보연계시스템 개인정보영향평가",
+      "새마을금고 - 체크카드 모바일 App 구축 PIA 및 취약점 점검",
+      "새마을금고 - 현금IC카드 개인정보영향평가",
+      "KOBACO - 개인정보보호관리실태점검",
+      "만안구청 - 주정차관리시스템 개인정보영향평가",
+      "외환펀드 - 외환펀드 정보보호관리체계 컨설팅",
+      "새마을금고 - 복지카드시스템 개인정보영향평가",
+      "새마을금고 - 전자결재시스템 구축 개인정보영향평가",
+      "ISACA Korea - CISM Review manual 번역 수행",
+      "새마을금고 - 공제이미지 BPM시스템 및 심사전문시스템 PIA",
+      "이스트소프트&줌인터넷 - 정보보호관리체계 구축 및 인증 컨설팅",
+      "새마을금고 - 콜센터 서비스에 대한 개인정보영향평가",
+      "한국장애인고용공단 - 정보화 전략계획 수립 용역(보안ISP부분)",
+      "한국자산관리공사 - 한국자산관리공사 개인정보영향평가",
+      "예금보험공사 - 정보보호관리체계 및 기술적 보호조치 강화",
+      "씨에이에스 - 상시보안 감사 및 모니터링 개발 및 구축",
+      "씨에이에스 - 개인정보보호 상시 모니터링 시스템 개발",
+      "동아닷컴 - 정보보호관리체계 인증 컨설팅",
+      "공정거래위원회 - 정보보안 중장기 전략계획 수립",
+      "하얏트리젠시 인천 - ISO27001 인증컨설팅 및 개인정보관리체계",
+      "한국주택금융공사 - 정보보호체계 및 개인정보보호 구축",
+      "보훈병원, 을지병원, 서울대병원 - 원격의료영상시스템 개발 및 구축",
+      "분당서울대병원 - 원격의료영상시스템 개발 및 구축",
+      "옵티멈솔루션 - 병원 정보보안 및 개인정보보호 개발 및 관리",
+      "삼성서울병원 - 암센터의료영상시스템 개발 및 구축",
+      "삼성서울병원 - 내시경시스템(처방시스템포함) 개발 및 구축",
+      "삼성서울병원 - 초음파시스템(의료동영상) 개발 및 구축",
+      "삼성서울병원 - 의료영상시스템(PACS 및 인터페이스) 개발",
+      "삼성의료원 - 병원 정보보호 시스템 개발 및 관리",
+      "한국휴렛팩커드 교육센터 - 한국휴렛팩커드 교육센터 교육사업부 IT 전임강사",
+      "한국정보보안원 - 한국정보보안원 연구소장 정보보호연구 및 컨설팅",
+      "KCA부설 정보보호연구소 - KCA부설 정보보호연구소 소장 정보보호연구 및 컨설팅",
+      "씨에이에스㈜ - 씨에이에스㈜ 팀장 보안솔루션 개발 및 컨설팅",
+      "옵티멈솔루션㈜ - 옵티멈솔루션㈜ 부장 병원System 개발 및 관리",
+      "삼성의료원 - 삼성의료원 정보전략팀 5급 병원System 개발 및 관리"
+    ],
+    "vendor_certifications": [
+      "SW보안약점진단원",
+      "컴퓨터공학과 겸임교수",
+      "ISMS심사원, PIMS심사원, ISO27001",
+      "사이버포렌식학과 겸임교수",
+      "정보통신컴퓨터공학과 겸임교수",
+      "ITILv3, ITIL Expert, CPPG, BS10012",
+      "산업보안관리사(ISE)",
+      "개인정보보호 전문강사위원",
+      "CISA, CISM, CDPSE",
+      "OCP, JAVA, SCSA, SCJD",
+      "정보시스템 감리원",
+      "CISSP, PMP, CCFP"
+    ],
+    "teaching_items": [
+      {
+        "topic": "개인정보보호관리사(CPPG) 전문 과정",
+        "organization": "멀티캠퍼스",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1753",
+            "quote": "개인정보보호관리사(CPPG) 전문 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "정보보호 및 개인정보보호",
+        "organization": "다수의 공공기관 및 기업",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1749",
+            "quote": "정보보호 및 개인정보보호",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "정보보안 및 개인정보보호 강의",
+        "organization": "다수의 공공기관 및 기업",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1746",
+            "quote": "정보보안 및 개인정보보호 강의",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "정보보호관리체계 및 개인정보보호체계 강의",
+        "organization": "멀티캠퍼스",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1747",
+            "quote": "정보보호관리체계 및 개인정보보호체계 강의",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "파이썬을 활용한 웹크롤링 및 머신러닝 딥러링",
+        "organization": "SK하이닉스(HP)",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1751",
+            "quote": "파이썬을 활용한 웹크롤링 및 머신러닝 딥러링",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "보안 인증 기술과 사례",
+        "organization": "금융연수원",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1748",
+            "quote": "보안 인증 기술과 사례",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "블록체인과 사물보안",
+        "organization": "다수의 금융기관",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1752",
+            "quote": "블록체인과 사물보안",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "머신러닝과 딥러닝 활용과 실무 구축",
+        "organization": "다수의 공공기관 및 기업",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1750",
+            "quote": "머신러닝과 딥러닝 활용과 실무 구축",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "개인정보보호 및 위반사항 온라인 교육 제작",
+        "organization": "보건복지부",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1775",
+            "quote": "개인정보보호 및 위반사항 온라인 교육 제작",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "보안인증과 보안인증 기술 강의",
+        "organization": "다수의 금융기관",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1760",
+            "quote": "보안인증과 보안인증 기술 강의",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "개인정보영향평가 교육",
+        "organization": "한국인터넷진흥원",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1756",
+            "quote": "개인정보영향평가 교육",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "초보자를 위한 R활용 및 Big Data 분석 기술",
+        "organization": "다수의 공공기관",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1755",
+            "quote": "초보자를 위한 R활용 및 Big Data 분석 기술",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "빅데이터와 사물인터넷 강의",
+        "organization": "다수의 공공기관",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1754",
+            "quote": "빅데이터와 사물인터넷 강의",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "금융기관이 지켜야 할 개인정보보호 온라인 교육",
+        "organization": "KG패스원",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1777",
+            "quote": "금융기관이 지켜야 할 개인정보보호 온라인 교육",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "개인정보보호 및 정보보안 관리체계 강의",
+        "organization": "한국인터넷진흥원",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1761",
+            "quote": "개인정보보호 및 정보보안 관리체계 강의",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "개인정보 유출 사례 및 방지대책 강의",
+        "organization": "공무원 인재개발원",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1762",
+            "quote": "개인정보 유출 사례 및 방지대책 강의",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "개인정보보호 및 정보보안 강의",
+        "organization": "다수의 금융기관",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1759",
+            "quote": "개인정보보호 및 정보보안 강의",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "사물인터넷(IOT), IT융합기술 강의",
+        "organization": "서울디지털대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1758",
+            "quote": "사물인터넷(IOT), IT융합기술 강의",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "개인정보보호 및 정보보안 강의",
+        "organization": "다수의 공공기관 및 기업",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1757",
+            "quote": "개인정보보호 및 정보보안 강의",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "개인정보보호 온라인 교육 제작",
+        "organization": "KG패스원",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1776",
+            "quote": "개인정보보호 온라인 교육 제작",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "IT컴플라이언스(개인정보보호 및 정보보안) 강의",
+        "organization": "신한생명",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1765",
+            "quote": "IT컴플라이언스(개인정보보호 및 정보보안) 강의",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "정보보호 및 개인정보보호 특강",
+        "organization": "교육청 및 교육지원청",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1764",
+            "quote": "정보보호 및 개인정보보호 특강",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "컴퓨터의 구조 및 프로그램",
+        "organization": "강원대",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1766",
+            "quote": "컴퓨터의 구조 및 프로그램",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "감사와 보안인증",
+        "organization": "기술사 협회",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1767",
+            "quote": "감사와 보안인증",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "국제 정보보호 전문가 자격증(CISSP) 소개",
+        "organization": "ISC2 Korea",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1768",
+            "quote": "국제 정보보호 전문가 자격증(CISSP) 소개",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "내부감사와 보안",
+        "organization": "ISACA Korea",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1771",
+            "quote": "내부감사와 보안",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Risk IT 프레임워크",
+        "organization": "ISACA Korea",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1770",
+            "quote": "Risk IT 프레임워크",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Life Cycle에 따른 개인정보보호",
+        "organization": "ISACA Korea",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1769",
+            "quote": "Life Cycle에 따른 개인정보보호",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "개인정보 얼마나 알고 있나?",
+        "organization": "ISC2 Korea",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1772",
+            "quote": "개인정보 얼마나 알고 있나?",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "유닉스 환경에서 C와 C++ 프로그램 실무 적용",
+        "organization": "지멘스",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1774",
+            "quote": "유닉스 환경에서 C와 C++ 프로그램 실무 적용",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "리눅스와 네트워크 프로그램",
+        "organization": "테크하임",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1773",
+            "quote": "리눅스와 네트워크 프로그램",
+            "confidence": 1.0
+          }
+        ]
+      }
+    ],
+    "project_items": [
+      {
+        "title": "장애인방송 의무제공 이행검증시스템 구축 감리",
+        "client_organization": "시청자미디어재단",
+        "role": "감리원",
+        "start_date": "2018-12-01",
+        "end_date": "2018-12-01",
+        "keywords": [
+          "감리",
+          "이행검증"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1778",
+            "quote": "장애인방송 의무제공 이행검증시스템 구축 감리",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "블록체인을 활용한 FIDO 인증 솔루션 개발",
+        "client_organization": "한국경영정보연구소",
+        "role": "개발자",
+        "start_date": "2018-07-01",
+        "end_date": "2019-04-01",
+        "keywords": [
+          "블록체인",
+          "FIDO인증"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1818",
+            "quote": "블록체인을 활용한 FIDO 인증 솔루션 개발",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "정보호보호관리체계와 내부통제 강화",
+        "client_organization": "KB생명보험",
+        "role": "컨설턴트",
+        "start_date": "2018-05-01",
+        "end_date": "2018-10-01",
+        "keywords": [
+          "정보보호관리체계",
+          "내부통제"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1780",
+            "quote": "정보호보호관리체계와 내부통제 강화",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "회원관리시스템 통합구축 및 고도화 사업 감리",
+        "client_organization": "대한소방공제회",
+        "role": "감리원",
+        "start_date": "2018-05-01",
+        "end_date": "2018-05-01",
+        "keywords": [
+          "감리",
+          "회원관리"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1779",
+            "quote": "회원관리시스템 통합구축 및 고도화 사업 감리",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "정보호보호관리체계 및 개인정보관리체계 컨설팅",
+        "client_organization": "에이블씨엔씨",
+        "role": "컨설턴트",
+        "start_date": "2018-03-01",
+        "end_date": "2018-05-01",
+        "keywords": [
+          "정보보호관리체계",
+          "개인정보관리체계"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1781",
+            "quote": "정보호보호관리체계 및 개인정보관리체계 컨설팅",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "정보호보호관리체계 인증(최초)컨설팅",
+        "client_organization": "엠제이앤앰",
+        "role": "컨설턴트",
+        "start_date": "2017-11-01",
+        "end_date": "2017-11-01",
+        "keywords": [
+          "정보보호관리체계",
+          "인증컨설팅"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1782",
+            "quote": "정보호보호관리체계 인증(최초)컨설팅",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "정보호보호관리체계 인증(최초)컨설팅",
+        "client_organization": "에이블씨엔씨",
+        "role": "컨설턴트",
+        "start_date": "2017-08-01",
+        "end_date": "2017-10-01",
+        "keywords": [
+          "정보보호관리체계",
+          "인증컨설팅"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1783",
+            "quote": "정보호보호관리체계 인증(최초)컨설팅",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "정보호보호관리체계(ISO27001) 컨설팅",
+        "client_organization": "이트너스",
+        "role": "컨설턴트",
+        "start_date": "2017-05-01",
+        "end_date": "2017-07-01",
+        "keywords": [
+          "정보보호관리체계",
+          "ISO27001"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1784",
+            "quote": "정보호보호관리체계(ISO27001) 컨설팅",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "정보호보호관리체계 인증(최초)컨설팅",
+        "client_organization": "에스에스엘케이에이치",
+        "role": "컨설턴트",
+        "start_date": "2017-04-01",
+        "end_date": "2017-05-01",
+        "keywords": [
+          "정보보호관리체계",
+          "인증컨설팅"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1785",
+            "quote": "정보호보호관리체계 인증(최초)컨설팅",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "가톨릭중앙의료원 정보보호관리체계",
+        "client_organization": "가톨릭중앙의료원",
+        "role": "컨설턴트",
+        "start_date": "2016-07-01",
+        "end_date": "2016-11-01",
+        "keywords": [
+          "정보보호관리체계",
+          "의료보안"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1786",
+            "quote": "가톨릭중앙의료원 정보보호관리체계",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "스마트폰 Push시스템 개인정보 영향평가",
+        "client_organization": "새마을금고",
+        "role": "평가원",
+        "start_date": "2016-06-01",
+        "end_date": "2016-06-01",
+        "keywords": [
+          "개인정보영향평가",
+          "스마트폰보안"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1787",
+            "quote": "스마트폰 Push시스템 개인정보 영향평가",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "콜센터 상담시스템 개인정보영향평가",
+        "client_organization": "화성시",
+        "role": "평가원",
+        "start_date": "2016-02-01",
+        "end_date": "2016-03-01",
+        "keywords": [
+          "개인정보영향평가",
+          "콜센터보안"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1788",
+            "quote": "콜센터 상담시스템 개인정보영향평가",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "AS센터콜상담시스템 개인정보영향평가",
+        "client_organization": "중소기업유통센터",
+        "role": "평가원",
+        "start_date": "2015-12-01",
+        "end_date": "2016-01-01",
+        "keywords": [
+          "개인정보영향평가",
+          "콜센터보안"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1789",
+            "quote": "AS센터콜상담시스템 개인정보영향평가",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "연금정보연계시스템 개인정보영향평가",
+        "client_organization": "국민연금공사",
+        "role": "평가원",
+        "start_date": "2015-11-01",
+        "end_date": "2015-12-01",
+        "keywords": [
+          "개인정보영향평가",
+          "연금시스템"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1790",
+            "quote": "연금정보연계시스템 개인정보영향평가",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "체크카드 모바일 App 구축 PIA 및 취약점 점검",
+        "client_organization": "새마을금고",
+        "role": "평가원",
+        "start_date": "2015-10-01",
+        "end_date": "2015-11-01",
+        "keywords": [
+          "PIA",
+          "취약점점검",
+          "모바일앱"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1791",
+            "quote": "체크카드 모바일 App 구축 PIA 및 취약점 점검",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "현금IC카드 개인정보영향평가",
+        "client_organization": "새마을금고",
+        "role": "평가원",
+        "start_date": "2015-08-01",
+        "end_date": "2015-10-01",
+        "keywords": [
+          "개인정보영향평가",
+          "현금IC카드"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1792",
+            "quote": "현금IC카드 개인정보영향평가",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "개인정보보호관리실태점검",
+        "client_organization": "KOBACO",
+        "role": "점검원",
+        "start_date": "2015-06-01",
+        "end_date": "2015-08-01",
+        "keywords": [
+          "실태점검",
+          "개인정보보호"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1793",
+            "quote": "개인정보보호관리실태점검",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "주정차관리시스템 개인정보영향평가",
+        "client_organization": "만안구청",
+        "role": "평가원",
+        "start_date": "2015-04-01",
+        "end_date": "2015-07-01",
+        "keywords": [
+          "개인정보영향평가",
+          "주정차관리"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1794",
+            "quote": "주정차관리시스템 개인정보영향평가",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "외환펀드 정보보호관리체계 컨설팅",
+        "client_organization": "외환펀드",
+        "role": "컨설턴트",
+        "start_date": "2015-03-01",
+        "end_date": "2015-04-01",
+        "keywords": [
+          "정보보호관리체계",
+          "외환펀드"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1795",
+            "quote": "외환펀드 정보보호관리체계 컨설팅",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "복지카드시스템 개인정보영향평가",
+        "client_organization": "새마을금고",
+        "role": "평가원",
+        "start_date": "2014-12-01",
+        "end_date": "2015-02-01",
+        "keywords": [
+          "개인정보영향평가",
+          "복지카드"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1796",
+            "quote": "복지카드시스템 개인정보영향평가",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "전자결재시스템 구축 개인정보영향평가",
+        "client_organization": "새마을금고",
+        "role": "평가원",
+        "start_date": "2014-10-01",
+        "end_date": "2014-11-01",
+        "keywords": [
+          "개인정보영향평가",
+          "전자결재"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1797",
+            "quote": "전자결재시스템 구축 개인정보영향평가",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "CISM Review manual 번역 수행",
+        "client_organization": "ISACA Korea",
+        "role": "번역자",
+        "start_date": "2014-06-01",
+        "end_date": "2014-12-01",
+        "keywords": [
+          "CISM",
+          "번역"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1763",
+            "quote": "CISM Review manual 번역 수행",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "공제이미지 BPM시스템 및 심사전문시스템 PIA",
+        "client_organization": "새마을금고",
+        "role": "평가원",
+        "start_date": "2014-05-01",
+        "end_date": "2014-07-01",
+        "keywords": [
+          "PIA",
+          "BPM시스템"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1798",
+            "quote": "공제이미지 BPM시스템 및 심사전문시스템 PIA",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "정보보호관리체계 구축 및 인증 컨설팅",
+        "client_organization": "이스트소프트&줌인터넷",
+        "role": "컨설턴트",
+        "start_date": "2014-02-01",
+        "end_date": "2014-04-01",
+        "keywords": [
+          "정보보호관리체계",
+          "인증컨설팅"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1799",
+            "quote": "정보보호관리체계 구축 및 인증 컨설팅",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "콜센터 서비스에 대한 개인정보영향평가",
+        "client_organization": "새마을금고",
+        "role": "평가원",
+        "start_date": "2013-12-01",
+        "end_date": "2014-01-01",
+        "keywords": [
+          "개인정보영향평가",
+          "콜센터"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1800",
+            "quote": "콜센터 서비스에 대한 개인정보영향평가",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "정보화 전략계획 수립 용역(보안ISP부분)",
+        "client_organization": "한국장애인고용공단",
+        "role": "컨설턴트",
+        "start_date": "2013-10-01",
+        "end_date": "2013-11-01",
+        "keywords": [
+          "ISP",
+          "정보화전략계획"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1801",
+            "quote": "정보화 전략계획 수립 용역(보안ISP부분)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "한국자산관리공사 개인정보영향평가",
+        "client_organization": "한국자산관리공사",
+        "role": "평가원",
+        "start_date": "2013-04-01",
+        "end_date": "2013-06-01",
+        "keywords": [
+          "개인정보영향평가"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1802",
+            "quote": "한국자산관리공사 개인정보영향평가",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "정보보호관리체계 및 기술적 보호조치 강화",
+        "client_organization": "예금보험공사",
+        "role": "컨설턴트",
+        "start_date": "2012-09-01",
+        "end_date": "2013-01-01",
+        "keywords": [
+          "정보보호관리체계",
+          "기술적보호조치"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1803",
+            "quote": "정보보호관리체계 및 기술적 보호조치 강화",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "상시보안 감사 및 모니터링 개발 및 구축",
+        "client_organization": "씨에이에스",
+        "role": "개발자",
+        "start_date": "2012-07-01",
+        "end_date": "2013-07-01",
+        "keywords": [
+          "보안감사",
+          "모니터링"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1817",
+            "quote": "상시보안 감사 및 모니터링 개발 및 구축",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "개인정보보호 상시 모니터링 시스템 개발",
+        "client_organization": "씨에이에스",
+        "role": "개발자",
+        "start_date": "2012-07-01",
+        "end_date": "2013-07-01",
+        "keywords": [
+          "모니터링시스템",
+          "개인정보보호"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1808",
+            "quote": "개인정보보호 상시 모니터링 시스템 개발",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "정보보호관리체계 인증 컨설팅",
+        "client_organization": "동아닷컴",
+        "role": "컨설턴트",
+        "start_date": "2012-06-01",
+        "end_date": "2012-08-01",
+        "keywords": [
+          "정보보호관리체계",
+          "인증컨설팅"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1804",
+            "quote": "정보보호관리체계 인증 컨설팅",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "정보보안 중장기 전략계획 수립",
+        "client_organization": "공정거래위원회",
+        "role": "컨설턴트",
+        "start_date": "2012-04-01",
+        "end_date": "2012-08-01",
+        "keywords": [
+          "정보보안",
+          "중장기전략"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1805",
+            "quote": "정보보안 중장기 전략계획 수립",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "ISO27001 인증컨설팅 및 개인정보관리체계",
+        "client_organization": "하얏트리젠시 인천",
+        "role": "컨설턴트",
+        "start_date": "2012-02-01",
+        "end_date": "2012-04-01",
+        "keywords": [
+          "ISO27001",
+          "개인정보관리체계"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1806",
+            "quote": "ISO27001 인증컨설팅 및 개인정보관리체계",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "정보보호체계 및 개인정보보호 구축",
+        "client_organization": "한국주택금융공사",
+        "role": "컨설턴트",
+        "start_date": "2011-11-01",
+        "end_date": "2012-02-01",
+        "keywords": [
+          "정보보호체계",
+          "개인정보보호"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1807",
+            "quote": "정보보호체계 및 개인정보보호 구축",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "원격의료영상시스템 개발 및 구축",
+        "client_organization": "보훈병원, 을지병원, 서울대병원",
+        "role": "개발자",
+        "start_date": "2011-01-01",
+        "end_date": "2012-06-01",
+        "keywords": [
+          "원격의료",
+          "의료영상시스템"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1816",
+            "quote": "원격의료영상시스템 개발 및 구축",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "원격의료영상시스템 개발 및 구축",
+        "client_organization": "분당서울대병원",
+        "role": "개발자",
+        "start_date": "2009-12-01",
+        "end_date": "2010-12-01",
+        "keywords": [
+          "원격의료",
+          "의료영상시스템"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1815",
+            "quote": "원격의료영상시스템 개발 및 구축",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "병원 정보보안 및 개인정보보호 개발 및 관리",
+        "client_organization": "옵티멈솔루션",
+        "role": "개발자",
+        "start_date": "2008-12-01",
+        "end_date": "2012-06-01",
+        "keywords": [
+          "병원보안",
+          "개인정보보호"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1809",
+            "quote": "병원 정보보안 및 개인정보보호 개발 및 관리",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "암센터의료영상시스템 개발 및 구축",
+        "client_organization": "삼성서울병원",
+        "role": "개발자",
+        "start_date": "2005-01-01",
+        "end_date": "2007-12-01",
+        "keywords": [
+          "암센터",
+          "의료영상시스템"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1814",
+            "quote": "암센터의료영상시스템 개발 및 구축",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "내시경시스템(처방시스템포함) 개발 및 구축",
+        "client_organization": "삼성서울병원",
+        "role": "개발자",
+        "start_date": "2004-01-01",
+        "end_date": "2004-12-01",
+        "keywords": [
+          "내시경시스템",
+          "처방시스템"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1813",
+            "quote": "내시경시스템(처방시스템포함) 개발 및 구축",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "초음파시스템(의료동영상) 개발 및 구축",
+        "client_organization": "삼성서울병원",
+        "role": "개발자",
+        "start_date": "2002-01-01",
+        "end_date": "2003-12-01",
+        "keywords": [
+          "초음파시스템",
+          "의료동영상"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1812",
+            "quote": "초음파시스템(의료동영상) 개발 및 구축",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "의료영상시스템(PACS 및 인터페이스) 개발",
+        "client_organization": "삼성서울병원",
+        "role": "개발자",
+        "start_date": "2000-01-01",
+        "end_date": "2001-12-01",
+        "keywords": [
+          "PACS",
+          "의료영상시스템"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1811",
+            "quote": "의료영상시스템(PACS 및 인터페이스) 개발",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "병원 정보보호 시스템 개발 및 관리",
+        "client_organization": "삼성의료원",
+        "role": "개발자",
+        "start_date": "1999-09-01",
+        "end_date": "2008-11-01",
+        "keywords": [
+          "병원보안",
+          "정보보호시스템"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1810",
+            "quote": "병원 정보보호 시스템 개발 및 관리",
+            "confidence": 1.0
+          }
+        ]
+      }
+    ],
+    "work_experience_items": [
+      {
+        "organization": "한국휴렛팩커드 교육센터",
+        "summary": "한국휴렛팩커드 교육센터 교육사업부 IT 전임강사",
+        "start_date": "2017-03-01",
+        "end_date": "재직중",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 749",
+            "quote": "한국휴렛팩커드 교육센터 교육사업부 IT 전임강사",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "organization": "한국정보보안원",
+        "summary": "한국정보보안원 연구소장 정보보호연구 및 컨설팅",
+        "start_date": "2016-04-01",
+        "end_date": "재직중",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 748",
+            "quote": "한국정보보안원 연구소장 정보보호연구 및 컨설팅",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "organization": "KCA부설 정보보호연구소",
+        "summary": "KCA부설 정보보호연구소 소장 정보보호연구 및 컨설팅",
+        "start_date": "2013-08-01",
+        "end_date": "2016-03-01",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 747",
+            "quote": "KCA부설 정보보호연구소 소장 정보보호연구 및 컨설팅",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "organization": "씨에이에스㈜",
+        "summary": "씨에이에스㈜ 팀장 보안솔루션 개발 및 컨설팅",
+        "start_date": "2012-07-01",
+        "end_date": "2013-07-01",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 746",
+            "quote": "씨에이에스㈜ 팀장 보안솔루션 개발 및 컨설팅",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "organization": "옵티멈솔루션㈜",
+        "summary": "옵티멈솔루션㈜ 부장 병원System 개발 및 관리",
+        "start_date": "2008-12-01",
+        "end_date": "2012-06-01",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 745",
+            "quote": "옵티멈솔루션㈜ 부장 병원System 개발 및 관리",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "organization": "삼성의료원",
+        "summary": "삼성의료원 정보전략팀 5급 병원System 개발 및 관리",
+        "start_date": "1999-09-01",
+        "end_date": "2008-11-01",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 744",
+            "quote": "삼성의료원 정보전략팀 5급 병원System 개발 및 관리",
+            "confidence": 1.0
+          }
+        ]
+      }
+    ],
+    "certifications": [
+      {
+        "name": "SW보안약점진단원",
+        "issuer": "한국인터넷진단원",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 760",
+            "quote": "SW보안약점진단원",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "컴퓨터공학과 겸임교수",
+        "issuer": "서울디지털대학교",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 759",
+            "quote": "컴퓨터공학과 겸임교수",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "ISMS심사원, PIMS심사원, ISO27001",
+        "issuer": "한국인터넷진흥원, SGS",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 756",
+            "quote": "ISMS심사원, PIMS심사원, ISO27001",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "사이버포렌식학과 겸임교수",
+        "issuer": "동국대학교",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 757",
+            "quote": "사이버포렌식학과 겸임교수",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "정보통신컴퓨터공학과 겸임교수",
+        "issuer": "강원대학교",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 758",
+            "quote": "정보통신컴퓨터공학과 겸임교수",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "ITILv3, ITIL Expert, CPPG, BS10012",
+        "issuer": "OGC, KCPO, SGS",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 754",
+            "quote": "ITILv3, ITIL Expert, CPPG, BS10012",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "산업보안관리사(ISE)",
+        "issuer": "한국산업기술보호협회",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 753",
+            "quote": "산업보안관리사(ISE)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "개인정보보호 전문강사위원",
+        "issuer": "행정안전부",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 755",
+            "quote": "개인정보보호 전문강사위원",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "CISA, CISM, CDPSE",
+        "issuer": "ISACA",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 750",
+            "quote": "CISA, CISM, CDPSE",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "OCP, JAVA, SCSA, SCJD",
+        "issuer": "오라클, SUN",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 761",
+            "quote": "OCP, JAVA, SCSA, SCJD",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "정보시스템 감리원",
+        "issuer": "행정안전부",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 752",
+            "quote": "정보시스템 감리원",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "CISSP, PMP, CCFP",
+        "issuer": "ISC2, PMI",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 751",
+            "quote": "CISSP, PMP, CCFP",
+            "confidence": 1.0
+          }
+        ]
+      }
+    ],
+    "source_document_ids": [
+      "instructor-source:내부 강사 정보.xlsx",
+      "instructor-db:78"
+    ],
+    "extensions": {
+      "other_records": [
+        {
+          "category": "교육이수",
+          "detail": "빅데이터 기획과 분석",
+          "organization": "한국데이터진흥원",
+          "start_date": "2017-03-01",
+          "end_date": "2017-04-01"
+        },
+        {
+          "category": "저서",
+          "detail": "개인정보 보안 매뉴얼",
+          "organization": "인포더북스",
+          "start_date": "2017",
+          "end_date": null
+        },
+        {
+          "category": "교육이수",
+          "detail": "PIPL 심사원, PIMS 심사원 교육",
+          "organization": "NIA, KISA",
+          "start_date": "2014-03-01",
+          "end_date": "2014-09-01"
+        },
+        {
+          "category": "교육이수",
+          "detail": "SW보안약점 진단원 양성 교육",
+          "organization": "안전행정부",
+          "start_date": "2013-10-01",
+          "end_date": "2013-10-01"
+        },
+        {
+          "category": "교육이수",
+          "detail": "개인정보영향평가 전문가 교육",
+          "organization": "한국정보화진흥원",
+          "start_date": "2013-03-01",
+          "end_date": "2013-03-01"
+        },
+        {
+          "category": "교육이수",
+          "detail": "ISMS 인증심사원 양성 교육",
+          "organization": "한국인터넷진흥원",
+          "start_date": "2012-05-01",
+          "end_date": "2012-05-01"
+        },
+        {
+          "category": "교육이수",
+          "detail": "ISO27001 국제심사원 교육 과정",
+          "organization": "SGS",
+          "start_date": "2012-03-01",
+          "end_date": "2012-03-01"
+        },
+        {
+          "category": "교육이수",
+          "detail": "BS10012 국제심사원 교육 과정",
+          "organization": "SGS",
+          "start_date": "2011-11-01",
+          "end_date": "2011-11-01"
+        },
+        {
+          "category": "교육이수",
+          "detail": "제4기 지식정보보안 시니어 컨설턴트 과정",
+          "organization": "한국인터넷진흥원",
+          "start_date": "2011-10-01",
+          "end_date": "2011-11-01"
+        },
+        {
+          "category": "교육이수",
+          "detail": "제16기 디지털 포랜식 과정",
+          "organization": "한국인터넷진흥원",
+          "start_date": "2011-06-01",
+          "end_date": "2011-08-01"
+        },
+        {
+          "category": "교육이수",
+          "detail": "제23기 사이버 포렌식 조사전문가 교육",
+          "organization": "한국생산성본부",
+          "start_date": "2010-10-01",
+          "end_date": "2010-12-01"
+        },
+        {
+          "category": "교육이수",
+          "detail": "개인정보 영향평가 전문교육(제2차)",
+          "organization": "한국인터넷진흥원",
+          "start_date": "2010-06-01",
+          "end_date": "2010-06-01"
+        },
+        {
+          "category": "교육이수",
+          "detail": "오라클 교육",
+          "organization": "오라클",
+          "start_date": "2001-02-01",
+          "end_date": "2001-03-01"
+        },
+        {
+          "category": "저서",
+          "detail": "엑셀 97 플러스 원",
+          "organization": "도서출판대림",
+          "start_date": "1998",
+          "end_date": null
+        },
+        {
+          "category": "저서",
+          "detail": "한글 액세스97 플러스 원",
+          "organization": "도서출판대림",
+          "start_date": "1997",
+          "end_date": null
+        }
+      ]
+    },
+    "evidence": [
+      {
+        "source_document_id": "instructor-db:78",
+        "page": null,
+        "section": "instructors",
+        "quote": "정보보안 및 개인정보보호 전문가",
+        "confidence": 1.0
+      }
+    ],
+    "review_status": "unreviewed"
+  }
+}

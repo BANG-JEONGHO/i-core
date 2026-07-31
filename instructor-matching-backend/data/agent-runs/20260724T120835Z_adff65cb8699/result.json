@@ -1,0 +1,414 @@
+{
+  "run_id": "20260724T120835Z_adff65cb8699",
+  "final_score": 75.0,
+  "final_status": "on_hold",
+  "reasons": [
+    "Code validation found an invalid citation or an unmet exact mandatory condition.",
+    "A/B score difference: 24.0",
+    "Evidence coverage: 100%",
+    "Verifier verdict: REVIEW",
+    "Code grounding verdict: FAIL",
+    "Citation accuracy: 32%"
+  ],
+  "analysis": {
+    "total_score": 87.0,
+    "score_items": [
+      {
+        "criterion": "topic_match",
+        "score": 28.0,
+        "max_score": 35.0,
+        "rationale": "강사는 도커, 쿠버네티스, AWS 등 클라우드 인프라 구축 및 가상화 분야에서 매우 풍부한 강의 이력을 보유하고 있어 클라우드 교육 요구 사항을 완벽히 충족합니다. 다만, 과업의 주요 주제 중 하나인 인공지능(AI) 실무 활용 및 데이터 주권(소버린 AI) 분야의 구체적인 강의나 프로젝트 수행 이력이 직접적으로 확인되지 않아 일부 감점하였습니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:2ef242ea-8f76-44e4-ac23-f200142c5c61",
+            "page": null,
+            "section": "chunk 0",
+            "quote": "나.\n교육개요\n1) 사 업 명 : 클라우드 및 AI 전문 교육과정 운영\n2) 교육기간 : 2026.7.15.(수) ~ 7.29.(수)\n3) 진행장소 : 순천향대학교 인간사랑관 2층 임베디드 실습실 6205호\n4) 추진방향\n가) 데이터 주권 이해를 바탕으로 안전하고 책임 있는 AI 활용 역량 배양\n나) 이론과 실습을 병행하는 현장 중심 교육을 통해 클라우드·AI 기술의 실무 적용 역량 제고\n다) 프로젝트 기반 학습을 통한 문제 해결 능력 및 협업 역량 강화\n라) 클라우드·AI 분야 자격 취득 지원 및 산업체 연계를 통한 취업 경쟁력 강화",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1286",
+            "quote": "클라우드 환경의 이해, 도커, 쿠버네티스 구현, 리눅스 시스템 운영 및 보안",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "criterion": "teaching_depth",
+        "score": 24.0,
+        "max_score": 30.0,
+        "rationale": "강사는 가상화 서버 인프라 구축, 쿠버네티스 구현 등 다수의 고도화된 실습형 장기 교육(맞춤형 인재양성사업, 4차산업인력양성 등)을 주도한 경험이 있어 실습 환경 운영 능력이 탁월합니다. 그러나 본 과업에서 중요한 비중을 차지하는 프로젝트 기반 학습(PBL) 멘토링 및 피드백, 모의평가 해설 등의 구체적인 수행 이력은 다소 부족하여 일부 감점되었습니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:2ef242ea-8f76-44e4-ac23-f200142c5c61",
+            "page": null,
+            "section": "chunk 1",
+            "quote": "- 1~5일차 : AI기초 이해 및 클라우드 AI 서비스 활용\n- 6~9일차 : 실무 활용 프로젝트 진행 및 멘토링\n교육과정 기획\n- 10일차 : 프로젝트 결과 발표·피드백 및 클라우드·AI 분야 자격 취득 대비 모의",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1285",
+            "quote": "맞춤형 인재양성사업 (컨테이너 기반 서버 가상화, 리눅스 서버 인프라 구축)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "criterion": "audience_fit",
+        "score": 15.0,
+        "max_score": 15.0,
+        "rationale": "과업 대상인 순천향대학교 대학생들과 유사한 타겟인 한국외국어대학교, 강원대학교 등 대학 내 특강 및 정규 실습 강의를 여러 차례 성공적으로 진행한 이력이 확인되어 학습자 수준 및 대학생 교육 환경에 대한 깊은 이해도를 갖추고 있습니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:2ef242ea-8f76-44e4-ac23-f200142c5c61",
+            "page": null,
+            "section": "chunk 0",
+            "quote": "5) 참여인원 : 약 20명\n6) 주최/주관 : 순천향대학교/AI의료융합혁신교육원 학사지원팀",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1301",
+            "quote": "Linux 기초 및 System Programming",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "criterion": "career_and_certification",
+        "score": 15.0,
+        "max_score": 15.0,
+        "rationale": "클라우드 및 인프라 분야에서 높은 인지도를 가진 공인 자격인 CKA(Certified Kubernetes Administrator)를 보유하고 있으며, 2004년부터 현재까지 한국HPE교육센터 등 공인 교육기관에서 장기 재직하며 뛰어난 전문성과 강사 자격을 검증받았습니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:2ef242ea-8f76-44e4-ac23-f200142c5c61",
+            "page": null,
+            "section": "chunk 6",
+            "quote": "[강사진 구성 능력]\n- 클라우드·AI 분야 공인 자격 또는\n전문성을 보유한 강사진 구성 | 15점",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 555",
+            "quote": "Certified Kubernetes Administrator(CKA)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "criterion": "evidence_completeness",
+        "score": 5.0,
+        "max_score": 5.0,
+        "rationale": "모든 정량/정성 평가 항목에 대해 과업 요구 조건과 강사의 자격 요건을 증명할 수 있는 구체적인 원문 근거가 정확하게 매핑 및 인용되었습니다.",
+        "project_evidence": [],
+        "instructor_evidence": []
+      }
+    ],
+    "recommendation_reasons": [
+      "AWS, 도커, 쿠버네티스 등 클라우드 인프라 핵심 기술에 대한 풍부한 교육 실적과 CKA 자격을 보유하여 클라우드 핵심 교육 세션 수행에 최적화된 역량을 보입니다.",
+      "강원대학교 및 한국외국어대학교 등 대학생 대상 강의 이력이 다수 있어 순천향대학교 대학생 수강생들의 눈높이에 맞춘 효율적인 교수 설계 및 운영이 가능합니다."
+    ],
+    "gaps": [
+      "강사의 강의 이력 중 '인공지능(AI)' 및 '데이터 주권(소버린 AI)'과 관련된 직접적인 강의 경험 또는 프로젝트 수행 이력이 누락되어 있습니다.",
+      "제안요청서상 요구되는 '최근 3년 이내 클라우드 및 인공지능(AI)분야 교육과정 수행 실적을 가진 업체', '전문 강사진 2명 이상 보유' 등 기업(기관) 단위의 필수 자격 요건은 개별 강사 1인의 프로필만으로는 충족 여부를 최종 확인할 수 없습니다."
+    ],
+    "risks": [
+      "AI(인공지능) 기초 이해 및 서비스 활용, 소버린 AI 등 AI 중심의 교육 파트 진행 시 강사의 해당 실적 부족으로 인해 강의 깊이가 제한될 수 있으므로, AI 전문 보조 강사 배치나 사전 교안 검수가 권장됩니다."
+    ],
+    "required_conditions_passed": null,
+    "required_condition_notes": [
+      "최근 3년 이내의 교육과정 수행 실적(업체 기준) 및 2명 이상의 강사진 보유 증빙(재직증명서, 강사확인서 등)은 제안사 차원의 추가 제출 및 검증이 필요합니다."
+    ]
+  },
+  "verification": {
+    "independent_score": 63.0,
+    "verdict": "REVIEW",
+    "evidence_coverage": 1.0,
+    "issues": [
+      {
+        "severity": "medium",
+        "category": "omission",
+        "description": "본 교육과정은 '클라우드 및 AI 전문 교육과정'으로 AI 및 데이터 주권(소버린 AI)을 중요한 축으로 다루고 있으나, 강사는 순수한 리눅스/유닉스/클라우드 인프라 전문가로서 AI 관련 개발, 프로젝트 멘토링, 강의 이력이 전무합니다. AI 파트를 전담할 공동 강사나 보조 인력의 배치가 계획상 보완되어야 합니다.",
+        "related_criterion": "topic_match"
+      }
+    ],
+    "corrected_score_items": [
+      {
+        "criterion": "topic_match",
+        "score": 18.0,
+        "max_score": 35.0,
+        "rationale": "강사는 클라우드 컴퓨팅, AWS, 도커, 쿠버네티스 등 클라우드 인프라 분야의 전문 강의를 진행한 이력이 풍부하여 클라우드 도메인에는 부합합니다. 하지만 본 과업의 핵심 주제인 'AI (인공지능)' 및 '데이터 주권(소버린 AI)'에 관한 강의 실적이나 관련 지식 증빙이 전혀 확인되지 않아, 주제 매칭도가 절반 수준으로 제한됩니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:2ef242ea-8f76-44e4-ac23-f200142c5c61",
+            "page": null,
+            "section": "chunk 0",
+            "quote": "1) 데이터 주권(소버린 AI)의 중요성을 이해하고, 기업 핵심 데이터의 안전한 활용 역량을 갖춘 인재 양성\n2) AI 도구를 활용해 업무 효율을 높이는 실무 기초 역량 배양\n3) 프로젝트 기반 학습을 통해 AI 활용 역량을 강화하고, 클라우드·AI 분야 자격 취득과 취업 연계를\n지원하는 전주기적 교육체계를 구축",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1286",
+            "quote": "클라우드 환경의 이해, 도커, 쿠버네티스 구현, 리눅스 시스템 운영 및 보안",
+            "confidence": 1.0
+          },
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1300",
+            "quote": "AWS Solution Architect Associate",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "criterion": "teaching_depth",
+        "score": 15.0,
+        "max_score": 30.0,
+        "rationale": "강사는 다양한 대기업 및 기관에서 가상화 시스템 및 클라우드 인프라 구축에 관련된 실습형 장기 강의를 성공적으로 진행한 경험이 있습니다. 하지만 과업에서 구체적으로 명시하고 있는 'AI 실무 활용 프로젝트 및 멘토링'과 '클라우드·AI 자격증 취득 대비 모의평가 해설'을 주도하기에는 인공지능 분야의 교수 설계 및 실무 프로젝트 경험 부족으로 인해 한계가 존재합니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:2ef242ea-8f76-44e4-ac23-f200142c5c61",
+            "page": null,
+            "section": "chunk 1",
+            "quote": "- 6~9일차 : 실무 활용 프로젝트 진행 및 멘토링\n- 10일차 : 프로젝트 결과 발표·피드백 및 클라우드·AI 분야 자격 취득 대비 모의\n;평가 진행",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1297",
+            "quote": "Cloud Computing & Docker Container / Container Orchestration with Kubernetes",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "criterion": "audience_fit",
+        "score": 15.0,
+        "max_score": 15.0,
+        "rationale": "과업의 교육 대상은 순천향대학교 학생(대학생 약 20명)입니다. 강사는 강원대학교, 한국외국어대학교 등 실제 대학교 특강 경험을 보유하고 있으며, 청년취업아카데미 및 혁신성장청년인재 등 청년층 대상 교육과정을 다수 진행해왔기에 눈높이 맞춤 및 커리어 연계형 지도가 매우 원활하게 이루어질 것으로 판단됩니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:2ef242ea-8f76-44e4-ac23-f200142c5c61",
+            "page": null,
+            "section": "chunk 0",
+            "quote": "3) 진행장소 : 순천향대학교 인간사랑관 2층 임베디드 실습실 6205호\n... 5) 참여인원 : 약 20명",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1288",
+            "quote": "아이코어 E&C 아두이노(IoT) 특강",
+            "confidence": 1.0
+          },
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1301",
+            "quote": "Linux 기초 및 System Programming",
+            "confidence": 1.0
+          },
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1287",
+            "quote": "청년취업아카데미 아두이노(IoT)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "criterion": "career_and_certification",
+        "score": 10.0,
+        "max_score": 15.0,
+        "rationale": "강사는 Certified Kubernetes Administrator(CKA), CompTIA Linux+ 등 클라우드 및 시스템 인프라 구축의 핵심 공인 자격을 보유하고 있고, 관련 교육 경력도 20년 이상으로 매우 탄탄합니다. 단, AI 분야와 관련된 전문 자격이나 직무 수행 경력은 식별되지 않으므로 5점 감점하여 10점을 부여합니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:2ef242ea-8f76-44e4-ac23-f200142c5c61",
+            "page": null,
+            "section": "chunk 6",
+            "quote": "[강사진 구성 능력]\n- 클라우드·AI 분야 공인 자격 또는\n전문성을 보유한 강사진 구성 | 15점",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 555",
+            "quote": "Certified Kubernetes Administrator(CKA)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "criterion": "evidence_completeness",
+        "score": 5.0,
+        "max_score": 5.0,
+        "rationale": "제시된 강사 데이터베이스 정보와 RFP 내 핵심 요구사항 간의 상호 매칭 분석을 정교하게 진행할 수 있도록 모든 필수 이력 데이터와 조건 매칭 근거가 빈틈없이 활용되었습니다.",
+        "project_evidence": [],
+        "instructor_evidence": []
+      }
+    ],
+    "required_conditions_passed": null
+  },
+  "grounding": {
+    "citation_accuracy": 0.3157894736842105,
+    "invalid_citation_count": 13,
+    "unsupported_positive_score_count": 0,
+    "required_condition_checks": [
+      {
+        "requirement": "클라우드 또는 인공지능(AI)분야 전문 강사진 2명 이상을 보유한 업체(재직증명서, 강사확인서, 관련 자격증 등으로 증빙 가능)",
+        "condition_type": "certification",
+        "status": "failed",
+        "detail": "Required credential not found in instructor profile."
+      },
+      {
+        "requirement": "최근 3년 이내 클라우드 및 인공지능(AI)분야 교육과정을 수행한 실적이 있는 업체",
+        "condition_type": "experience",
+        "status": "not_automatically_verifiable",
+        "detail": "Experience requirements need human or model review unless a numeric rule is configured."
+      }
+    ],
+    "verdict": "FAIL"
+  },
+  "rag_context": {
+    "project_evidence": [
+      {
+        "source_type": "project",
+        "evidence": {
+          "source_document_id": "task-order:2ef242ea-8f76-44e4-ac23-f200142c5c61",
+          "page": null,
+          "section": "chunk 5",
+          "quote": "·AI 분야 공인 자격 또는 15점\n전문성을 보유한 강사진 구성\n정성\n[제안업체 전문성 및 조직역량]\n점수\n- 조직 및 인원(전문인력)\n15점\n- 책임자의 능력\n- 전담 인력 구성 및 투입 규모\n[안전관리 및 계획]\n기술 - 참여인원 안전관리 대책 10점\n평가 - 기타 비상시 대책\n(80)\n[최근 3년 실적의 수준]\n10점\n- 2024~2026년 누적 실적 평가\n회사채 또는 기업어음에\n배점\n기업신용평가 한 신용평가\nAAA, AA+, AAO, AA- A1 10\nA+ A2+ 9\n정량\nAO A2O 8\n점수 A- A2- 7\n[기업경영상태]\n10점 BBB+ A3+ 6\n- 기업신용평가 등급에 의함\nBBBO A3O 5\nBBB- A3- 4\nBB+, BB0 B+ 3\nBB- BO 2\nB+, BO, B-이하 B-이하 1\nCCC+이하 C이하 0\n가격\n정량 [제안가격]\n평가 20점 (최저입찰가격/해당입찰가격) X 배점한도\n점수 - 제안가격의 적정성\n(20)\n합 계 100점\n※ 위 평가 기준은 상황에 따라 변경 및 조정될 수 있음\nⅣ 계약 특수조건\n1.\n본 건을 수행하기 위해서 허가·인가·면허·등록·신고 등을 요하거나 자격요건을 갖추어야 할 경우에는 당\n해 허가·인가·면허·등록·신고 등을 받았거나 당해 자격요건에 적합하고, 입찰참가 등록을 정해진 기한\n내에 완료한 자\n2.\n교육 품질 유지를 위해 입찰공고일 기준 다음 각 호의 자격을 모두 갖춘 자 이어야 하며 공동 수급(컨\n소시엄)은 허용하지 않음\n가.\n최근 3년 이내 클라우드 및 인공지능(AI)분야 교육과정을 수행한 실적이 있는 업체\n구분 | 평가항목 | 배점 | 비고\n기술\n평가\n(80) | 정성\n점수 | [사업의 기획력 및 적합성]\n- 교육 취지에 맞는 구성 및 기획\n- 교육 내용의 우수성 | 20점\n[강사진 구성 능력]",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.8919
+      },
+      {
+        "source_type": "project",
+        "evidence": {
+          "source_document_id": "task-order:2ef242ea-8f76-44e4-ac23-f200142c5c61",
+          "page": null,
+          "section": "chunk 6",
+          "quote": "행한 실적이 있는 업체\n구분 | 평가항목 | 배점 | 비고\n기술\n평가\n(80) | 정성\n점수 | [사업의 기획력 및 적합성]\n- 교육 취지에 맞는 구성 및 기획\n- 교육 내용의 우수성 | 20점\n[강사진 구성 능력]\n- 클라우드·AI 분야 공인 자격 또는\n전문성을 보유한 강사진 구성 | 15점\n[제안업체 전문성 및 조직역량]\n- 조직 및 인원(전문인력)\n- 책임자의 능력\n- 전담 인력 구성 및 투입 규모 | 15점\n[안전관리 및 계획]\n- 참여인원 안전관리 대책\n- 기타 비상시 대책 | 10점\n정량\n점수 | [최근 3년 실적의 수준]\n- 2024~2026년 누적 실적 평가 | 10점\n[기업경영상태]\n- 기업신용평가 등급에 의함 | 10점 | 회사채 또는 기업어음에\n배점\n기업신용평가 한 신용평가\nAAA, AA+, AAO, AA- A1 10\nA+ A2+ 9\nAO A2O 8\nA- A2- 7\nBBB+ A3+ 6\nBBBO A3O 5\nBBB- A3- 4\nBB+, BB0 B+ 3\nBB- BO 2\nB+, BO, B-이하 B-이하 1\nCCC+이하 C이하 0\n가격\n평가\n(20) | 정량\n점수 | [제안가격]\n- 제안가격의 적정성 | 20점 | (최저입찰가격/해당입찰가격) X 배점한도\n합 계 | 100점\n회사채 또는\n기업신용평가 | 기업어음에\n한 신용평가 | 배점\nAAA, AA+, AAO, AA- | A1 | 10\nA+ | A2+ | 9\nAO | A2O | 8\nA- | A2- | 7\nBBB+ | A3+ | 6\nBBBO | A3O | 5\nBBB- | A3- | 4\nBB+, BB0 | B+ | 3\nBB- | BO | 2\nB+, BO, B-이하 | B-이하 | 1\nCCC+이하 | C이하 | 0\n계 | 약 | 특 | 수 | 조 | 건\n나.",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.8719
+      },
+      {
+        "source_type": "project",
+        "evidence": {
+          "source_document_id": "task-order:2ef242ea-8f76-44e4-ac23-f200142c5c61",
+          "page": null,
+          "section": "chunk 0",
+          "quote": "제 안 요 청 서\n클라우드 및 AI 전문 교육과정 운영 용역 입찰\n2026.\n6.\n※ 본 자료는 제안내용의 설명을 위한 배포자료로, 이외 목적으로 무단복제, 전달 및 사용하는 행위를 금함.\nI 입찰 내용\n1.\n입 찰 명 : 클라우드 및 AI 전문 교육과정 운영 용역 입찰\n2.\n사업기간 : 계약체결일 ~ 2026.8.31.까지\n3.\n배정예산 : 금 50,000,000원(금오천만원) 내(부가세 포함)\n4.\n입찰개요\n가.\n교육 목적\n1) 데이터 주권(소버린 AI)의 중요성을 이해하고, 기업 핵심 데이터의 안전한 활용 역량을 갖춘 인재 양성\n2) AI 도구를 활용해 업무 효율을 높이는 실무 기초 역량 배양\n3) 프로젝트 기반 학습을 통해 AI 활용 역량을 강화하고, 클라우드·AI 분야 자격 취득과 취업 연계를\n지원하는 전주기적 교육체계를 구축\n나.\n교육개요\n1) 사 업 명 : 클라우드 및 AI 전문 교육과정 운영\n2) 교육기간 : 2026.7.15.(수) ~ 7.29.(수)\n3) 진행장소 : 순천향대학교 인간사랑관 2층 임베디드 실습실 6205호\n4) 추진방향\n가) 데이터 주권 이해를 바탕으로 안전하고 책임 있는 AI 활용 역량 배양\n나) 이론과 실습을 병행하는 현장 중심 교육을 통해 클라우드·AI 기술의 실무 적용 역량 제고\n다) 프로젝트 기반 학습을 통한 문제 해결 능력 및 협업 역량 강화\n라) 클라우드·AI 분야 자격 취득 지원 및 산업체 연계를 통한 취업 경쟁력 강화\n5) 참여인원 : 약 20명\n6) 주최/주관 : 순천향대학교/AI의료융합혁신교육원 학사지원팀\n다.\n과업내용\n1) 교육 지원 전반사항\n가) 교육과정 기획·지원\n- 클라우드·AI 교육과정에 적합한 이론/실습 병행 현장형 교육과정 기획 및 제안\n- 2026.7.15.~7.29.\n총 50시간 교육 일정 운영, 기획 및 지원",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.8301
+      },
+      {
+        "source_type": "project",
+        "evidence": {
+          "source_document_id": "task-order:2ef242ea-8f76-44e4-ac23-f200142c5c61",
+          "page": null,
+          "section": "chunk 1",
+          "quote": "내용\n1) 교육 지원 전반사항\n가) 교육과정 기획·지원\n- 클라우드·AI 교육과정에 적합한 이론/실습 병행 현장형 교육과정 기획 및 제안\n- 2026.7.15.~7.29.\n총 50시간 교육 일정 운영, 기획 및 지원\n나) 강사 섭외 및 지원\n- 클라우드 및 AI 활용 교육 강사 섭외 및 교육 진행(주강사, 보조강사)\n- 클라우드·AI 분야 전문 강사진 포함 지원\n- 현업 전문가 특강(현직자 특강) 운영 및 프로젝트 전문가 피드백 제공\n다) 교육 인프라 지원\n- 교육용 클라우드플랫폼 계정 발급 및 크레딧 운영·관리\n- 실시간 계정 모니터링 및 관리\n- 실습 환경(개발 환경, API 연동 등) 구성 및 지원\n라) 교육 인력 지원\n- 전담 인력 배정\n- 온라인 협업 플랫폼을 활용한 과정 운영 및 학생 관리(출결·진도·공지 등)\n- 교육용 계정·자료 지원·관리\n입 | 찰 | 내 | 용\n마) 평가·인증\n- 수강생 평가 체계 운영 및 교육 평가(중간·최종) 진행\n- 클라우드·AI 분야 자격 취득 지원을 위한 모의평가 및 해설 제공\n바) 홍보물 및 교재 제작\n- 현수막 등 홍보물, 안내물, 교육 교재·실습 자료 제작\n- 제작물 사양·디자인·수량은 발주자 승인 후 확정 및 기한 내 납품\n2) 교육 지원 결과 보고서 제출\n3) 기타 교육 지원과 관련된 모든 사항\n5.\n세부 수행 내용(안)\n구분 세부 내용\n- 1~5일차 : AI기초 이해 및 클라우드 AI 서비스 활용\n- 6~9일차 : 실무 활용 프로젝트 진행 및 멘토링\n교육과정 기획\n- 10일차 : 프로젝트 결과 발표·피드백 및 클라우드·AI 분야 자격 취득 대비 모의\n;평가 진행\n- 클라우드 소속 공인 강사 섭외 및 배정(주강사, 보조강사)\n- 홍보물 제작(현수막,포스터,카드뉴스 등)\n- 오리엔테이션 진행\n- 교육용 계정 운영·관리",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.8251
+      },
+      {
+        "source_type": "project",
+        "evidence": {
+          "source_document_id": "task-order:2ef242ea-8f76-44e4-ac23-f200142c5c61",
+          "page": null,
+          "section": "chunk 4",
+          "quote": "화) 10:00 / 순천향대학교 학생회관 2층 S218호실(회의실), 입찰\n참가업체 별도 안내\n2.\n제안서 발표평가 기준\n가.\n기술평가 80%와 가격평가 20%의 비율을 적용하고 정량적 및 정성적 평가로 구분함\n나.\n제안서 발표평가에 참여하지 않을 경우 입찰 참가를 포기하는 것으로 간주하여 탈락 처리함\n다.\n입찰참가자격에 결격사항이 있는 업체는 제안서 발표평가에서 제외하여 탈락 처리함\n라.\n제안서 발표평가 평가위원 평가점수 및 우선협상대상 업체는 공개하지 않음\n마.\n각 평가항목별 내용을 토대로 객관화된 배점표에 의한 평가 실시\n제 | 안 | 서 | 작 | 성\n평가항목 | 내용\nⅠ.\n제안 개요 | 1.\n목차\n2.\n제안 개괄 내용\n3.\n제안 특징 및 장점\nⅡ.\n제안사 현황 | 1.\n일반현황 : 대표자, 설립연도, 연혁 등\n2.\n조직 및 인원 현황\n3.\n주요 사업 분야\n4.\n최근 3년(2024 ~ 2026년) 매출액\n5.\n최근 3년(2024 ~ 2026년) 수행 실적\nⅢ.\n교육지원 제안 | 1.\n기본 계획\n2.\n세부 프로그램 계획\n3.\n일정 계획\n4.\n인원 계획 : 투입 인력, 전문성, 이력사항\n5.\n예산 활용 계획(입찰서 및 세부산출내역과 동일)\nⅣ.\n기타 사항 | 1.\n교육 지원 결과 보고 계획\n2.\n기타 제안 및 운영사항\n제 | 안 | 서 | 발 | 표 | 평 | 가\n3.\n제안서 발표평가 배점표\n구분 평가항목 배점 비고\n[사업의 기획력 및 적합성]\n- 교육 취지에 맞는 구성 및 기획 20점\n- 교육 내용의 우수성\n[강사진 구성 능력]\n- 클라우드·AI 분야 공인 자격 또는 15점\n전문성을 보유한 강사진 구성\n정성\n[제안업체 전문성 및 조직역량]\n점수\n- 조직 및 인원(전문인력)\n15점\n- 책임자의 능력\n- 전담 인력 구성 및 투입 규모\n[안전관리 및 계획]",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.8124
+      }
+    ],
+    "instructor_evidence": [
+      {
+        "source_type": "instructor",
+        "evidence": {
+          "source_document_id": "rag:instructor-57:db-bd2bf8f29d5e",
+          "page": null,
+          "section": "chunk 2",
+          "quote": "\"클라우드 환경의 이해, 도커, 쿠버네티스 구현, 리눅스 시스템 운영 및 보안\",\n\"organization\": \"신한글로벌영챌린지\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 1286\",\n\"quote\": \"클라우드 환경의 이해, 도커, 쿠버네티스 구현, 리눅스 시스템 운영 및 보안\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"리눅스 시스템 운영 관리 (서울/경기 지역산업)\",\n\"organization\": \"GKN\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 1284\",\n\"quote\": \"리눅스 시스템 운영 관리 (서울/경기 지역산업)\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"Linux 기초 및 System Programming\",\n\"organization\": \"한국외국어대학교\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.7326
+      },
+      {
+        "source_type": "instructor",
+        "evidence": {
+          "source_document_id": "rag:instructor-57:db-bd2bf8f29d5e",
+          "page": null,
+          "section": "chunk 5",
+          "quote": "ence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 1297\",\n\"quote\": \"Cloud Computing & Docker Container / Container Orchestration with Kubernetes\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"혁신성장청년인재 리눅스 시스템 및 운영체제\",\n\"organization\": \"멀티캠퍼스\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 1290\",\n\"quote\": \"혁신성장청년인재 리눅스 시스템 및 운영체제\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"리눅스 시스템 운영\",\n\"organization\": \"서울산업진흥원\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 1289\",\n\"quote\": \"리눅스 시스템 운영\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"리눅스 시스템 운영\",",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.7225
+      },
+      {
+        "source_type": "instructor",
+        "evidence": {
+          "source_document_id": "rag:instructor-57:db-bd2bf8f29d5e",
+          "page": null,
+          "section": "chunk 9",
+          "quote": "age\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 1283\",\n\"quote\": \"컨테이너 기반의 서버 가상화 및 IBM AIX UNIX\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"중소기업 핵심직무사업 (유닉스 볼륨 관리, VM 기반의 하드웨어 가상화)\",\n\"organization\": \"한국HPE교육센터\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 1294\",\n\"quote\": \"중소기업 핵심직무사업 (유닉스 볼륨 관리, VM 기반의 하드웨어 가상화)\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"리눅스 시스템 관리 및 운영 관리\",\n\"organization\": \"한국HPE교육센터\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 1282\",\n\"quote\": \"리눅스 시스템 관리 및 운영 관리\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"HPE UNIX 시스템 관리\",\n\"organization\": \"한국HPE교육센터\",\n\"target_audience\": [],",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.7157
+      },
+      {
+        "source_type": "instructor",
+        "evidence": {
+          "source_document_id": "rag:instructor-57:db-bd2bf8f29d5e",
+          "page": null,
+          "section": "chunk 1",
+          "quote": "Foundation\",\n\"HP-CSA\",\n\"SCSA\",\n\"OCP 8i\"\n],\n\"teaching_items\": [\n{\n\"topic\": \"맞춤형 인재양성사업 (컨테이너 기반 서버 가상화, 리눅스 서버 인프라 구축)\",\n\"organization\": \"한국HPE교육센터\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 1285\",\n\"quote\": \"맞춤형 인재양성사업 (컨테이너 기반 서버 가상화, 리눅스 서버 인프라 구축)\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"아이코어 E&C 아두이노(IoT) 특강\",\n\"organization\": \"강원대학교\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 1288\",\n\"quote\": \"아이코어 E&C 아두이노(IoT) 특강\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"클라우드 환경의 이해, 도커, 쿠버네티스 구현, 리눅스 시스템 운영 및 보안\",\n\"organization\": \"신한글로벌영챌린지\",\n\"target_audience\": [],\n\"delivery_format\": [],",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.7149
+      },
+      {
+        "source_type": "instructor",
+        "evidence": {
+          "source_document_id": "rag:instructor-57:db-bd2bf8f29d5e",
+          "page": null,
+          "section": "chunk 4",
+          "quote": "l,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 1299\",\n\"quote\": \"Docker & Kubernetes\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"ICT COG Academy AWS 특강\",\n\"organization\": \"KOIPA (한국IT비즈니스진흥협회)\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 1298\",\n\"quote\": \"ICT COG Academy AWS 특강\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"Cloud Computing & Docker Container / Container Orchestration with Kubernetes\",\n\"organization\": \"LG전자\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 1297\",",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.7113
+      }
+    ]
+  }
+}

@@ -1,0 +1,400 @@
+{
+  "run_id": "20260724T080407Z_19301ed626b5",
+  "final_score": 81.5,
+  "final_status": "on_hold",
+  "reasons": [
+    "Code validation found an invalid citation or an unmet exact mandatory condition.",
+    "A/B score difference: 23.0",
+    "Evidence coverage: 100%",
+    "Verifier verdict: PASS",
+    "Code grounding verdict: FAIL",
+    "Citation accuracy: 47%"
+  ],
+  "analysis": {
+    "total_score": 70.0,
+    "score_items": [
+      {
+        "criterion": "topic_match",
+        "score": 30.0,
+        "max_score": 35.0,
+        "rationale": "강사는 클라우드 및 생성형 AI 분야의 전문 지식을 지닌 전문가로, 챗GPT 활용법 및 생성형 AI를 활용한 NFT 개발, 쿠버네티스 등의 교육 이력이 있어 클라우드 및 AI 전문 교육이라는 본 과업의 핵심 주제에 잘 부합합니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:2ef242ea-8f76-44e4-ac23-f200142c5c61",
+            "page": null,
+            "section": "chunk 0",
+            "quote": "제 안 요 청 서\n클라우드 및 AI 전문 교육과정 운영 용역 입찰\n2026.\n6.\n※ 본 자료는 제안내용의 설명을 위한 배포자료로, 이외 목적으로 무단복제, 전달 및 사용하는 행위를 금함.\nI 입찰 내용\n1.\n입 찰 명 : 클라우드 및 AI 전문 교육과정 운영 용역 입찰\n2.\n사업기간 : 계약체결일 ~ 2026.8.31.까지\n3.\n배정예산 : 금 50,000,000원(금오천만원) 내(부가세 포함)\n4.\n입찰개요\n가.\n교육 목적\n1) 데이터 주권(소버린 AI)의 중요성을 이해하고, 기업 핵심 데이터의 안전한 활용 역량을 갖춘 인재 양성\n2) AI 도구를 활용해 업무 효율을 높이는 실무 기초 역량 배양\n3) 프로젝트 기반 학습을 통해 AI 활용 역량을 강화하고, 클라우드·AI 분야 자격 취득과 취업 연계를\n지원하는 전주기적 교육체계를 구축\n나.\n교육개요\n1) 사 업 명 : 클라우드 및 AI 전문 교육과정 운영\n2) 교육기간 : 2026.7.15.(수) ~ 7.29.(수)\n3) 진행장소 : 순천향대학교 인간사랑관 2층 임베디드 실습실 6205호\n4) 추진방향\n가) 데이터 주권 이해를 바탕으로 안전하고 책임 있는 AI 활용 역량 배양\n나) 이론과 실습을 병행하는 현장 중심 교육을 통해 클라우드·AI 기술의 실무 적용 역량 제고\n다) 프로젝트 기반 학습을 통한 문제 해결 능력 및 협업 역량 강화\n라) 클라우드·AI 분야 자격 취득 지원 및 산업체 연계를 통한 취업 경쟁력 강화\n5) 참여인원 : 약 20명\n6) 주최/주관 : 순천향대학교/AI의료융합혁신교육원 학사지원팀\n다.\n과업내용\n1) 교육 지원 전반사항\n가) 교육과정 기획·지원\n- 클라우드·AI 교육과정에 적합한 이론/실습 병행 현장형 교육과정 기획 및 제안\n- 2026.7.15.~7.29.\n총 50시간 교육 일정 운영, 기획 및 지원",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": []
+      },
+      {
+        "criterion": "teaching_depth",
+        "score": 25.0,
+        "max_score": 30.0,
+        "rationale": "과업에서 요구하는 '이론/실습 병행', '실무 프로젝트 멘토링' 및 '피드백 제공'에 부합하여 강사는 생성형 AI를 활용한 NFT 개발이나 블록체인 심화 실습 등 실무 중심의 개발 및 실습 과정을 전문적으로 다뤄왔습니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:2ef242ea-8f76-44e4-ac23-f200142c5c61",
+            "page": null,
+            "section": "chunk 1",
+            "quote": "내용\n1) 교육 지원 전반사항\n가) 교육과정 기획·지원\n- 클라우드·AI 교육과정에 적합한 이론/실습 병행 현장형 교육과정 기획 및 제안\n- 2026.7.15.~7.29.\n총 50시간 교육 일정 운영, 기획 및 지원\n나) 강사 섭외 및 지원\n- 클라우드 및 AI 활용 교육 강사 섭외 및 교육 진행(주강사, 보조강사)\n- 클라우드·AI 분야 전문 강사진 포함 지원\n- 현업 전문가 특강(현직자 특강) 운영 및 프로젝트 전문가 피드백 제공\n다) 교육 인프라 지원\n- 교육용 클라우드플랫폼 계정 발급 및 크레딧 운영·관리\n- 실시간 계정 모니터링 및 관리\n- 실습 환경(개발 환경, API 연동 등) 구성 및 지원\n라) 교육 인력 지원\n- 전담 인력 배정\n- 온라인 협업 플랫폼을 활용한 과정 운영 및 학생 관리(출결·진도·공지 등)\n- 교육용 계정·자료 지원·관리\n입 | 찰 | 내 | 옹\n마) 평가·인증\n- 수강생 평가 체계 운영 및 교육 평가(중간·최종) 진행\n- 클라우드·AI 분야 자격 취득 지원을 위한 모의평가 및 해설 제공\n바) 홍보물 및 교재 제작\n- 현수막 등 홍보물, 안내물, 교육 교재·실습 자료 제작\n- 제작물 사양·디자인·수량은 발주자 승인 후 확정 및 기한 내 납품\n2) 교육 지원 결과 보고서 제출\n3) 기타 교육 지원과 관련된 모든 사항\n5.\n세부 수행 내용(안)\n구분 세부 내용\n- 1~5일차 : AI기초 이해 및 클라우드 AI 서비스 활용\n- 6~9일차 : 실무 활용 프로젝트 진행 및 멘토링\n교육과정 기획\n- 10일차 : 프로젝트 결과 발표·피드백 및 클라우드·AI 분야 자격 취득 대비 모의\n;평가 진행\n- 클라우드 소속 공인 강사 섭외 및 배정(주강사, 보조강사)\n- 홍보물 제작(현수막,포스터,카드뉴스 등)\n- 오리엔테이션 진행\n- 교육용 계정 운영·관리",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": []
+      },
+      {
+        "criterion": "audience_fit",
+        "score": 0.0,
+        "max_score": 15.0,
+        "rationale": "본 교육의 대상은 대학생(순천향대학교 학생 약 20명)이나, 검색된 강사 증거(RETRIEVED_EVIDENCE) 내에 강사의 대학생 혹은 청년 대상 교육 경험을 구체적으로 증빙할 수 있는 원문 텍스트가 포함되어 있지 않아 안전 수칙에 따라 0점 처리했습니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:2ef242ea-8f76-44e4-ac23-f200142c5c61",
+            "page": null,
+            "section": "chunk 0",
+            "quote": "제 안 요 청 서\n클라우드 및 AI 전문 교육과정 운영 용역 입찰\n2026.\n6.\n※ 본 자료는 제안내용의 설명을 위한 배포자료로, 이외 목적으로 무단복제, 전달 및 사용하는 행위를 금함.\nI 입찰 내용\n1.\n입 찰 명 : 클라우드 및 AI 전문 교육과정 운영 용역 입찰\n2.\n사업기간 : 계약체결일 ~ 2026.8.31.까지\n3.\n배정예산 : 금 50,000,000원(금오천만원) 내(부가세 포함)\n4.\n입찰개요\n가.\n교육 목적\n1) 데이터 주권(소버린 AI)의 중요성을 이해하고, 기업 핵심 데이터의 안전한 활용 역량을 갖춘 인재 양성\n2) AI 도구를 활용해 업무 효율을 높이는 실무 기초 역량 배양\n3) 프로젝트 기반 학습을 통해 AI 활용 역량을 강화하고, 클라우드·AI 분야 자격 취득과 취업 연계를\n지원하는 전주기적 교육체계를 구축\n나.\n교육개요\n1) 사 업 명 : 클라우드 및 AI 전문 교육과정 운영\n2) 교육기간 : 2026.7.15.(수) ~ 7.29.(수)\n3) 진행장소 : 순천향대학교 인간사랑관 2층 임베디드 실습실 6205호\n4) 추진방향\n가) 데이터 주권 이해를 바탕으로 안전하고 책임 있는 AI 활용 역량 배양\n나) 이론과 실습을 병행하는 현장 중심 교육을 통해 클라우드·AI 기술의 실무 적용 역량 제고\n다) 프로젝트 기반 학습을 통한 문제 해결 능력 및 협업 역량 강화\n라) 클라우드·AI 분야 자격 취득 지원 및 산업체 연계를 통한 취업 경쟁력 강화\n5) 참여인원 : 약 20명\n6) 주최/주관 : 순천향대학교/AI의료융합혁신교육원 학사지원팀\n다.\n과업내용\n1) 교육 지원 전반사항\n가) 교육과정 기획·지원\n- 클라우드·AI 교육과정에 적합한 이론/실습 병행 현장형 교육과정 기획 및 제안\n- 2026.7.15.~7.29.\n총 50시간 교육 일정 운영, 기획 및 지원",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": []
+      },
+      {
+        "criterion": "career_and_certification",
+        "score": 10.0,
+        "max_score": 15.0,
+        "rationale": "과업은 '클라우드·AI 분야 공인 자격 또는 전문성 보유'를 평가하나, 검색된 강사의 자격증 원문 증거에는 구체적인 자격 명칭이 포함되어 있지 않아 일부 감점하였습니다. 다만 강사는 '블록체인 및 클라우드 아키텍처 전문가'로 표기되어 전문성을 충분히 갖추고 있습니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:2ef242ea-8f76-44e4-ac23-f200142c5c61",
+            "page": null,
+            "section": "chunk 6",
+            "quote": "행한 실적이 있는 업체\n구분 | 평가항목 | 배점 | 비고\n기술\n평가\n(80) | 정성\n점수 | [사업의 기획력 및 적합성]\n- 교육 취지에 맞는 구성 및 기획\n- 교육 내용의 우수성 | 20점\n[강사진 구성 능력]\n- 클라우드·AI 분야 공인 자격 또는\n전문성을 보유한 강사진 구성 | 15점\n[제안업체 전문성 및 조직역량]\n- 조직 및 인원(전문인력)\n- 책임자의 능력\n- 전담 인력 구성 및 투입 규모 | 15점\n[안전관리 및 계획]\n- 참여인원 안전관리 대책\n- 기타 비상시 대책 | 10점\n정량\n점수 | [최근 3년 실적의 수준]\n- 2024~2026년 누적 실적 평가 | 10점\n[기업경영상태]\n- 기업신용평가 등급에 의함 | 10점 | 회사채 또는 기업어음에\n배점\n기업신용평가 한 신용평가\nAAA, AA+, AAO, AA- A1 10\nA+ A2+ 9\nAO A2O 8\nA- A2- 7\nBBB+ A3+ 6\nBBBO A3O 5\nBBB- A3- 4\nBB+, BB0 B+ 3\nBB- BO 2\nB+, BO, B-이하 B-이하 1\nCCC+이하 C이하 0\n가격\n평가\n(20) | 정량\n점수 | [제안가격]\n- 제안가격의 적정성 | 20점 | (최저입찰가격/해당입찰가격) X 배점한도\n합 계 | 100점\n회사채 또는\n기업신용평가 | 기업어음에\n한 신용평가 | 배점\nAAA, AA+, AAO, AA- | A1 | 10\nA+ | A2+ | 9\nAO | A2O | 8\nA- | A2- | 7\nBBB+ | A3+ | 6\nBBBO | A3O | 5\nBBB- | A3- | 4\nBB+, BB0 | B+ | 3\nBB- | BO | 2\nB+, BO, B-이하 | B-이하 | 1\nCCC+이하 | C이하 | 0\n계 | 약 | 특 | 수 | 조 | 건\n나.",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": []
+      },
+      {
+        "criterion": "evidence_completeness",
+        "score": 5.0,
+        "max_score": 5.0,
+        "rationale": "자료가 존재하지 않는 audience_fit(대학생 교육 이력 증빙 원문 누락)을 명확하게 0점 처리하고, 근거가 존재하는 타 항목들은 RETRIEVED_EVIDENCE의 원문 텍스트와 ID를 정확하게 인용하여 평가 신뢰성을 확보하였습니다.",
+        "project_evidence": [],
+        "instructor_evidence": []
+      }
+    ],
+    "recommendation_reasons": [
+      "클라우드 아키텍처 및 생성형 AI 분야(챗GPT 활용법, NFT 개발 등)에 대한 다년간의 실무 지향적 강의 이력을 보유하고 있어 본 교육 과정의 주요 과제 수행에 적합합니다.",
+      "블록체인 실무 개발 및 다양한 실습 교육 과정을 운영해본 노하우를 바탕으로 과업이 지향하는 실무 프로젝트 중심 교육 및 피드백 수행이 원활히 가능합니다."
+    ],
+    "gaps": [
+      "강사의 소속 업체가 최근 3년 이내 클라우드 및 인공지능 분야 교육과정을 수행한 실적 및 전문 강사진 2명 이상을 보유했는지에 대한 명확한 증빙 자료가 검색된 정보 내에 포함되어 있지 않습니다.",
+      "교육 대상인 대학생(순천향대학교 학생 약 20명)에 맞는 맞춤형 강의 및 교육 운영 경험을 입증할 구체적인 강의 이력 텍스트가 검색된 강사 정보(RETRIEVED_EVIDENCE) 내에 부재합니다."
+    ],
+    "risks": [
+      "RETRIEVED_EVIDENCE 내에 강사의 구체적인 클라우드 관련 공인 자격증 상세 텍스트가 명시되어 있지 않아, 제안서 작성 시 공식 자격 증빙 제출에 어려움이 따를 수 있습니다.",
+      "대학생 대상 강의 이력에 대한 명시적 입증이 어려워 발표 평가 시 대상 적합성에 대한 소명 준비가 필요합니다."
+    ],
+    "required_conditions_passed": null,
+    "required_condition_notes": [
+      "클라우드 및 인공지능 분야 전문 강사진 2명 이상 보유 여부 및 해당 강사들의 자격 요건(재직증명서, 강사확인서 등) 제출 필요.",
+      "최근 3년 이내 클라우드 및 인공지능 분야 교육 수행 실적 증빙 문서 보완 필요."
+    ]
+  },
+  "verification": {
+    "independent_score": 93.0,
+    "verdict": "PASS",
+    "evidence_coverage": 1.0,
+    "issues": [
+      {
+        "severity": "low",
+        "category": "required_condition",
+        "description": "제안요청서상 '클라우드 또는 인공지능(AI)분야 전문 강사진 2명 이상을 보유한 업체' 조건을 요구하고 있습니다. 허강욱 강사는 주강사 또는 핵심 강사로서 충분한 자격을 갖추고 있으나, 제안 시 최소 1명의 추가 강사 매칭 및 증빙 제출이 필요합니다.",
+        "related_criterion": "career_and_certification"
+      }
+    ],
+    "corrected_score_items": [
+      {
+        "criterion": "topic_match",
+        "score": 32.0,
+        "max_score": 35.0,
+        "rationale": "강사는 클라우드(IBM Cloud Essentials, Red Hat 아키텍트 경력 등)와 인공지능(Python for Data Science and AI, 챗GPT 활용법 및 생성형 AI 강의 경력) 분야 전반에서 강력한 매칭성을 보입니다. 다만, 데이터 주권(소버린 AI)과 같은 특수 주제에 대한 직접적인 강의 경험은 명시되어 있지 않아 소폭 감점하였습니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:2ef242ea-8f76-44e4-ac23-f200142c5c61",
+            "page": null,
+            "section": "chunk 0",
+            "quote": "1. 입 찰 명 : 클라우드 및 AI 전문 교육과정 운영 용역 입찰",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 2301",
+            "quote": "챗GPT활용법 및 서비스 기획",
+            "confidence": 1.0
+          },
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 1074",
+            "quote": "IBM Cloud Essentials",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "criterion": "teaching_depth",
+        "score": 27.0,
+        "max_score": 30.0,
+        "rationale": "강사는 IBM, Red Hat 등 글로벌 IT 기업에서 기술 아키텍트 및 컨설턴트로 다년간 근무하여 기술적 깊이가 매우 우수하며, 다수의 실무 중심 강의 경험을 보유하고 있습니다. 다만, 50시간 이상의 장기 PBL(프로젝트 기반 학습) 멘토링에 대한 구체적인 운영 이력은 간접적이어서 소폭 감점하였습니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:2ef242ea-8f76-44e4-ac23-f200142c5c61",
+            "page": null,
+            "section": "chunk 0",
+            "quote": "3) 프로젝트 기반 학습을 통해 AI 활용 역량을 강화하고, 클라우드·AI 분야 자격 취득과 취업 연계를 지원하는 전주기적 교육체계를 구축",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 1041",
+            "quote": "Red Hat - 차장, 기술 컨설팅, 아키텍처",
+            "confidence": 1.0
+          },
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 2303",
+            "quote": "생성형 AI를 활용한 NFT 개발",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "criterion": "audience_fit",
+        "score": 14.0,
+        "max_score": 15.0,
+        "rationale": "본 과정의 교육 대상은 대학생(순천향대학교 학생)입니다. 강사는 동아대학교에서 '파이썬 프로그래밍' 강의를 진행한 경험이 있어 대학생 대상의 눈높이 교육이 가능하므로 타깃 적합성이 높습니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:2ef242ea-8f76-44e4-ac23-f200142c5c61",
+            "page": null,
+            "section": "chunk 0",
+            "quote": "5) 참여인원 : 약 20명\n6) 주최/주관 : 순천향대학교/AI의료융합혁신교육원 학사지원팀",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 2306",
+            "quote": "파이썬 프로그래밍",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "criterion": "career_and_certification",
+        "score": 15.0,
+        "max_score": 15.0,
+        "rationale": "강사는 IBM Cloud Essentials, Python for Data Science and AI, Machine Learning with Python 등 클라우드 및 AI 관련 다수의 전문 자격증을 보유하고 있으며, Red Hat과 IBM 등에서 기술 컨설팅 및 아키텍처 업무를 수행하여 사업에서 요구하는 강사 전문성 및 공인 자격 요건을 완벽하게 충족합니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:2ef242ea-8f76-44e4-ac23-f200142c5c61",
+            "page": null,
+            "section": "chunk 6",
+            "quote": "[강사진 구성 능력]\n- 클라우드·AI 분야 공인 자격 또는\n전문성을 보유한 강사진 구성 | 15점",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 1074",
+            "quote": "IBM Cloud Essentials",
+            "confidence": 1.0
+          },
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 1063",
+            "quote": "Python for Data Science and AI",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "criterion": "evidence_completeness",
+        "score": 5.0,
+        "max_score": 5.0,
+        "rationale": "제안요청서의 핵심 요구사항과 강사 프로필의 핵심 경력 및 자격 사항을 증명할 수 있는 구체적인 근거가 명확히 제시되어 있어 감점 요인이 없습니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:2ef242ea-8f76-44e4-ac23-f200142c5c61",
+            "page": null,
+            "section": "chunk 0",
+            "quote": "클라우드 및 AI 전문 교육과정 운영 용역 입찰",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": [
+          {
+            "source_document_id": "instructor-db:104",
+            "page": null,
+            "section": "instructors",
+            "quote": "블록체인 및 클라우드 아키텍처 전문가",
+            "confidence": 1.0
+          }
+        ]
+      }
+    ],
+    "required_conditions_passed": true
+  },
+  "grounding": {
+    "citation_accuracy": 0.47058823529411764,
+    "invalid_citation_count": 9,
+    "unsupported_positive_score_count": 3,
+    "required_condition_checks": [
+      {
+        "requirement": "클라우드 또는 인공지능(AI)분야 전문 강사진 2명 이상을 보유한 업체(재직증명서, 강사확인서, 관련 자격증 등으로 증빙 가능)",
+        "condition_type": "certification",
+        "status": "failed",
+        "detail": "Required credential not found in instructor profile."
+      },
+      {
+        "requirement": "최근 3년 이내 클라우드 및 인공지능(AI)분야 교육과정을 수행한 실적이 있는 업체",
+        "condition_type": "experience",
+        "status": "not_automatically_verifiable",
+        "detail": "Experience requirements need human or model review unless a numeric rule is configured."
+      }
+    ],
+    "verdict": "FAIL"
+  },
+  "rag_context": {
+    "project_evidence": [
+      {
+        "source_type": "project",
+        "evidence": {
+          "source_document_id": "task-order:2ef242ea-8f76-44e4-ac23-f200142c5c61",
+          "page": null,
+          "section": "chunk 5",
+          "quote": "·AI 분야 공인 자격 또는 15점\n전문성을 보유한 강사진 구성\n정성\n[제안업체 전문성 및 조직역량]\n점수\n- 조직 및 인원(전문인력)\n15점\n- 책임자의 능력\n- 전담 인력 구성 및 투입 규모\n[안전관리 및 계획]\n기술 - 참여인원 안전관리 대책 10점\n평가 - 기타 비상시 대책\n(80)\n[최근 3년 실적의 수준]\n10점\n- 2024~2026년 누적 실적 평가\n회사채 또는 기업어음에\n배점\n기업신용평가 한 신용평가\nAAA, AA+, AAO, AA- A1 10\nA+ A2+ 9\n정량\nAO A2O 8\n점수 A- A2- 7\n[기업경영상태]\n10점 BBB+ A3+ 6\n- 기업신용평가 등급에 의함\nBBBO A3O 5\nBBB- A3- 4\nBB+, BB0 B+ 3\nBB- BO 2\nB+, BO, B-이하 B-이하 1\nCCC+이하 C이하 0\n가격\n정량 [제안가격]\n평가 20점 (최저입찰가격/해당입찰가격) X 배점한도\n점수 - 제안가격의 적정성\n(20)\n합 계 100점\n※ 위 평가 기준은 상황에 따라 변경 및 조정될 수 있음\nⅣ 계약 특수조건\n1.\n본 건을 수행하기 위해서 허가·인가·면허·등록·신고 등을 요하거나 자격요건을 갖추어야 할 경우에는 당\n해 허가·인가·면허·등록·신고 등을 받았거나 당해 자격요건에 적합하고, 입찰참가 등록을 정해진 기한\n내에 완료한 자\n2.\n교육 품질 유지를 위해 입찰공고일 기준 다음 각 호의 자격을 모두 갖춘 자 이어야 하며 공동 수급(컨\n소시엄)은 허용하지 않음\n가.\n최근 3년 이내 클라우드 및 인공지능(AI)분야 교육과정을 수행한 실적이 있는 업체\n구분 | 평가항목 | 배점 | 비고\n기술\n평가\n(80) | 정성\n점수 | [사업의 기획력 및 적합성]\n- 교육 취지에 맞는 구성 및 기획\n- 교육 내용의 우수성 | 20점\n[강사진 구성 능력]",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.8919
+      },
+      {
+        "source_type": "project",
+        "evidence": {
+          "source_document_id": "task-order:2ef242ea-8f76-44e4-ac23-f200142c5c61",
+          "page": null,
+          "section": "chunk 6",
+          "quote": "행한 실적이 있는 업체\n구분 | 평가항목 | 배점 | 비고\n기술\n평가\n(80) | 정성\n점수 | [사업의 기획력 및 적합성]\n- 교육 취지에 맞는 구성 및 기획\n- 교육 내용의 우수성 | 20점\n[강사진 구성 능력]\n- 클라우드·AI 분야 공인 자격 또는\n전문성을 보유한 강사진 구성 | 15점\n[제안업체 전문성 및 조직역량]\n- 조직 및 인원(전문인력)\n- 책임자의 능력\n- 전담 인력 구성 및 투입 규모 | 15점\n[안전관리 및 계획]\n- 참여인원 안전관리 대책\n- 기타 비상시 대책 | 10점\n정량\n점수 | [최근 3년 실적의 수준]\n- 2024~2026년 누적 실적 평가 | 10점\n[기업경영상태]\n- 기업신용평가 등급에 의함 | 10점 | 회사채 또는 기업어음에\n배점\n기업신용평가 한 신용평가\nAAA, AA+, AAO, AA- A1 10\nA+ A2+ 9\nAO A2O 8\nA- A2- 7\nBBB+ A3+ 6\nBBBO A3O 5\nBBB- A3- 4\nBB+, BB0 B+ 3\nBB- BO 2\nB+, BO, B-이하 B-이하 1\nCCC+이하 C이하 0\n가격\n평가\n(20) | 정량\n점수 | [제안가격]\n- 제안가격의 적정성 | 20점 | (최저입찰가격/해당입찰가격) X 배점한도\n합 계 | 100점\n회사채 또는\n기업신용평가 | 기업어음에\n한 신용평가 | 배점\nAAA, AA+, AAO, AA- | A1 | 10\nA+ | A2+ | 9\nAO | A2O | 8\nA- | A2- | 7\nBBB+ | A3+ | 6\nBBBO | A3O | 5\nBBB- | A3- | 4\nBB+, BB0 | B+ | 3\nBB- | BO | 2\nB+, BO, B-이하 | B-이하 | 1\nCCC+이하 | C이하 | 0\n계 | 약 | 특 | 수 | 조 | 건\n나.",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.8719
+      },
+      {
+        "source_type": "project",
+        "evidence": {
+          "source_document_id": "task-order:2ef242ea-8f76-44e4-ac23-f200142c5c61",
+          "page": null,
+          "section": "chunk 0",
+          "quote": "제 안 요 청 서\n클라우드 및 AI 전문 교육과정 운영 용역 입찰\n2026.\n6.\n※ 본 자료는 제안내용의 설명을 위한 배포자료로, 이외 목적으로 무단복제, 전달 및 사용하는 행위를 금함.\nI 입찰 내용\n1.\n입 찰 명 : 클라우드 및 AI 전문 교육과정 운영 용역 입찰\n2.\n사업기간 : 계약체결일 ~ 2026.8.31.까지\n3.\n배정예산 : 금 50,000,000원(금오천만원) 내(부가세 포함)\n4.\n입찰개요\n가.\n교육 목적\n1) 데이터 주권(소버린 AI)의 중요성을 이해하고, 기업 핵심 데이터의 안전한 활용 역량을 갖춘 인재 양성\n2) AI 도구를 활용해 업무 효율을 높이는 실무 기초 역량 배양\n3) 프로젝트 기반 학습을 통해 AI 활용 역량을 강화하고, 클라우드·AI 분야 자격 취득과 취업 연계를\n지원하는 전주기적 교육체계를 구축\n나.\n교육개요\n1) 사 업 명 : 클라우드 및 AI 전문 교육과정 운영\n2) 교육기간 : 2026.7.15.(수) ~ 7.29.(수)\n3) 진행장소 : 순천향대학교 인간사랑관 2층 임베디드 실습실 6205호\n4) 추진방향\n가) 데이터 주권 이해를 바탕으로 안전하고 책임 있는 AI 활용 역량 배양\n나) 이론과 실습을 병행하는 현장 중심 교육을 통해 클라우드·AI 기술의 실무 적용 역량 제고\n다) 프로젝트 기반 학습을 통한 문제 해결 능력 및 협업 역량 강화\n라) 클라우드·AI 분야 자격 취득 지원 및 산업체 연계를 통한 취업 경쟁력 강화\n5) 참여인원 : 약 20명\n6) 주최/주관 : 순천향대학교/AI의료융합혁신교육원 학사지원팀\n다.\n과업내용\n1) 교육 지원 전반사항\n가) 교육과정 기획·지원\n- 클라우드·AI 교육과정에 적합한 이론/실습 병행 현장형 교육과정 기획 및 제안\n- 2026.7.15.~7.29.\n총 50시간 교육 일정 운영, 기획 및 지원",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.8301
+      },
+      {
+        "source_type": "project",
+        "evidence": {
+          "source_document_id": "task-order:2ef242ea-8f76-44e4-ac23-f200142c5c61",
+          "page": null,
+          "section": "chunk 1",
+          "quote": "내용\n1) 교육 지원 전반사항\n가) 교육과정 기획·지원\n- 클라우드·AI 교육과정에 적합한 이론/실습 병행 현장형 교육과정 기획 및 제안\n- 2026.7.15.~7.29.\n총 50시간 교육 일정 운영, 기획 및 지원\n나) 강사 섭외 및 지원\n- 클라우드 및 AI 활용 교육 강사 섭외 및 교육 진행(주강사, 보조강사)\n- 클라우드·AI 분야 전문 강사진 포함 지원\n- 현업 전문가 특강(현직자 특강) 운영 및 프로젝트 전문가 피드백 제공\n다) 교육 인프라 지원\n- 교육용 클라우드플랫폼 계정 발급 및 크레딧 운영·관리\n- 실시간 계정 모니터링 및 관리\n- 실습 환경(개발 환경, API 연동 등) 구성 및 지원\n라) 교육 인력 지원\n- 전담 인력 배정\n- 온라인 협업 플랫폼을 활용한 과정 운영 및 학생 관리(출결·진도·공지 등)\n- 교육용 계정·자료 지원·관리\n입 | 찰 | 내 | 용\n마) 평가·인증\n- 수강생 평가 체계 운영 및 교육 평가(중간·최종) 진행\n- 클라우드·AI 분야 자격 취득 지원을 위한 모의평가 및 해설 제공\n바) 홍보물 및 교재 제작\n- 현수막 등 홍보물, 안내물, 교육 교재·실습 자료 제작\n- 제작물 사양·디자인·수량은 발주자 승인 후 확정 및 기한 내 납품\n2) 교육 지원 결과 보고서 제출\n3) 기타 교육 지원과 관련된 모든 사항\n5.\n세부 수행 내용(안)\n구분 세부 내용\n- 1~5일차 : AI기초 이해 및 클라우드 AI 서비스 활용\n- 6~9일차 : 실무 활용 프로젝트 진행 및 멘토링\n교육과정 기획\n- 10일차 : 프로젝트 결과 발표·피드백 및 클라우드·AI 분야 자격 취득 대비 모의\n;평가 진행\n- 클라우드 소속 공인 강사 섭외 및 배정(주강사, 보조강사)\n- 홍보물 제작(현수막,포스터,카드뉴스 등)\n- 오리엔테이션 진행\n- 교육용 계정 운영·관리",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.8251
+      },
+      {
+        "source_type": "project",
+        "evidence": {
+          "source_document_id": "task-order:2ef242ea-8f76-44e4-ac23-f200142c5c61",
+          "page": null,
+          "section": "chunk 4",
+          "quote": "화) 10:00 / 순천향대학교 학생회관 2층 S218호실(회의실), 입찰\n참가업체 별도 안내\n2.\n제안서 발표평가 기준\n가.\n기술평가 80%와 가격평가 20%의 비율을 적용하고 정량적 및 정성적 평가로 구분함\n나.\n제안서 발표평가에 참여하지 않을 경우 입찰 참가를 포기하는 것으로 간주하여 탈락 처리함\n다.\n입찰참가자격에 결격사항이 있는 업체는 제안서 발표평가에서 제외하여 탈락 처리함\n라.\n제안서 발표평가 평가위원 평가점수 및 우선협상대상 업체는 공개하지 않음\n마.\n각 평가항목별 내용을 토대로 객관화된 배점표에 의한 평가 실시\n제 | 안 | 서 | 작 | 성\n평가항목 | 내용\nⅠ.\n제안 개요 | 1.\n목차\n2.\n제안 개괄 내용\n3.\n제안 특징 및 장점\nⅡ.\n제안사 현황 | 1.\n일반현황 : 대표자, 설립연도, 연혁 등\n2.\n조직 및 인원 현황\n3.\n주요 사업 분야\n4.\n최근 3년(2024 ~ 2026년) 매출액\n5.\n최근 3년(2024 ~ 2026년) 수행 실적\nⅢ.\n교육지원 제안 | 1.\n기본 계획\n2.\n세부 프로그램 계획\n3.\n일정 계획\n4.\n인원 계획 : 투입 인력, 전문성, 이력사항\n5.\n예산 활용 계획(입찰서 및 세부산출내역과 동일)\nⅣ.\n기타 사항 | 1.\n교육 지원 결과 보고 계획\n2.\n기타 제안 및 운영사항\n제 | 안 | 서 | 발 | 표 | 평 | 가\n3.\n제안서 발표평가 배점표\n구분 평가항목 배점 비고\n[사업의 기획력 및 적합성]\n- 교육 취지에 맞는 구성 및 기획 20점\n- 교육 내용의 우수성\n[강사진 구성 능력]\n- 클라우드·AI 분야 공인 자격 또는 15점\n전문성을 보유한 강사진 구성\n정성\n[제안업체 전문성 및 조직역량]\n점수\n- 조직 및 인원(전문인력)\n15점\n- 책임자의 능력\n- 전담 인력 구성 및 투입 규모\n[안전관리 및 계획]",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.8124
+      }
+    ],
+    "instructor_evidence": [
+      {
+        "source_type": "instructor",
+        "evidence": {
+          "source_document_id": "rag:instructor-104:db-b2052502252a",
+          "page": null,
+          "section": "chunk 5",
+          "quote": "],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 2301\",\n\"quote\": \"챗GPT활용법 및 서비스 기획\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"생성형 AI를 활용한 NFT 개발\",\n\"organization\": \"한국표준협회\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 2303\",\n\"quote\": \"생성형 AI를 활용한 NFT 개발\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"쿠버네티스\",\n\"organization\": \"한국IT비즈니스진흥협회\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 2305\",\n\"quote\": \"쿠버네티스\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"블록체인 중급 서비스 기획\",\n\"organization\": \"한국표준협회\",",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.7213
+      },
+      {
+        "source_type": "instructor",
+        "evidence": {
+          "source_document_id": "rag:instructor-104:db-b2052502252a",
+          "page": null,
+          "section": "chunk 36",
+          "quote": "콘텍트 시대, 블록체인 기술 활용 및 기술 변화\",\n\"organization\": \"마이크로소프트웨어\",\n\"start_date\": \"2020\",\n\"end_date\": null\n},\n{\n\"category\": \"저서\",\n\"detail\": \"프라이빗 블록체인 기반 자산형 토큰 엔터프라이즈 블록체인 플랫폼을 제공하는 IBM\",\n\"organization\": \"ZDNet\",\n\"start_date\": \"2019\",\n\"end_date\": null\n},\n{\n\"category\": \"저서\",\n\"detail\": \"하이퍼레저 패브릭\",\n\"organization\": \"마이크로소프트웨어\",\n\"start_date\": \"2018\",\n\"end_date\": null\n},\n{\n\"category\": \"저서\",\n\"detail\": \"블록체인 기반 프로젝트 시작하기 전, 알아야 할 사항들\",\n\"organization\": \"IDG\",\n\"start_date\": \"2018\",\n\"end_date\": null\n},\n{\n\"category\": \"저서\",\n\"detail\": \"블록체인 기반 프로젝트 진행 시 알아야 할 사항과 유즈케이스\",\n\"organization\": \"IDG\",\n\"start_date\": \"2018\",\n\"end_date\": null\n}\n]\n},\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-db:104\",\n\"page\": null,\n\"section\": \"instructors\",\n\"quote\": \"블록체인 및 클라우드 아키텍처 전문가\",\n\"confidence\": 1.0\n}\n],\n\"review_status\": \"unreviewed\"\n}\n블록체인 및 클라우드 아키텍처 전문가",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.7202
+      },
+      {
+        "source_type": "instructor",
+        "evidence": {
+          "source_document_id": "rag:instructor-104:db-b2052502252a",
+          "page": null,
+          "section": "chunk 4",
+          "quote": "f Computer skill 2급\"\n],\n\"teaching_items\": [\n{\n\"topic\": \"IT포트폴리오 작성법 특강\",\n\"organization\": \"멀티캠퍼스\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 2300\",\n\"quote\": \"IT포트폴리오 작성법 특강\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"블록체인 중급 개발 과정\",\n\"organization\": \"한국디지털융합진흥원\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 2302\",\n\"quote\": \"블록체인 중급 개발 과정\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"챗GPT활용법 및 서비스 기획\",\n\"organization\": \"한국IT비즈니스진흥협회\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.7176
+      },
+      {
+        "source_type": "instructor",
+        "evidence": {
+          "source_document_id": "rag:instructor-104:db-b2052502252a",
+          "page": null,
+          "section": "chunk 10",
+          "quote": "d\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 2315\",\n\"quote\": \"블록체인 전문가 양성 교육과정\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"블록체인 전문 교육 과정\",\n\"organization\": \"국민은행\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 2314\",\n\"quote\": \"블록체인 전문 교육 과정\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"블록체인 컨설팅 교육 과정\",\n\"organization\": \"한화그룹 / 임원대상\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 2313\",\n\"quote\": \"블록체인 컨설팅 교육 과정\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"블록체인 전문가 과정 (Fintech Ground-up Program)\",\n\"organization\": \"KISA\",\n\"target_audience\": [],\n\"delivery_format\": [],",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.7155
+      },
+      {
+        "source_type": "instructor",
+        "evidence": {
+          "source_document_id": "rag:instructor-104:db-b2052502252a",
+          "page": null,
+          "section": "chunk 9",
+          "quote": "육\",\n\"organization\": \"하나은행\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 2310\",\n\"quote\": \"블록체인 개념 및 유즈케이스 교육\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"블록체인 심화 실습 교육 과정\",\n\"organization\": \"삼성멀티캠퍼스\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 2316\",\n\"quote\": \"블록체인 심화 실습 교육 과정\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"블록체인 전문가 양성 교육과정\",\n\"organization\": \"코스콤\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 2315\",\n\"quote\": \"블록체인 전문가 양성 교육과정\",",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.7125
+      }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "20260731T062604Z_a86ad7fe0a72",
+  "created_at": "2026-07-31T06:26:04.860021+00:00",
+  "status": "completed",
+  "storage_schema_version": "match_run_v1",
+  "model": "gemini-3.5-flash",
+  "project_source_document_ids": [
+    "task-order:93b2ada7-89c6-469b-ba89-ef659f16969b"
+  ],
+  "instructor_id": "instructor-74",
+  "instructor_profile_version": "db-765b1f86035b",
+  "rag_project_evidence_count": 5,
+  "rag_instructor_evidence_count": 5,
+  "grounding_verdict": "FAIL"
+}

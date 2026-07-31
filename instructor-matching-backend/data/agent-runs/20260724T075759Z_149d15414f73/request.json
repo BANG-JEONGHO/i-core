@@ -1,0 +1,1905 @@
+{
+  "project": {
+    "schema_version": "education_project_v1",
+    "service_type": "education_program",
+    "program_type": "vocational_training",
+    "classification_confidence": 1.0,
+    "base": {
+      "project_name": "(붙임2)_제안요청서.pdf",
+      "client_organization": null,
+      "purpose": [
+        "안전하고 책임 있는 AI 활용 역량을 강화하고, 클라우드 및 AI 분야 자격 취득과 취업 연계를 지원하기 위해 이론·실습 병행 교육 및 프로젝트 기반 학습(PBL) 과정을 위탁 운영하는 사업",
+        "교육과정 기획 및 지원 (총 50시간)",
+        "전문 강사 및 현업 전문가 특강 섭외",
+        "교육용 클라우드플랫폼 계정 및 크레딧 운영·관리",
+        "실습 환경 구성 및 온라인 협업 플랫폼 활용 전담 인력 배정",
+        "수강생 평가 및 자격증 취득 지원 모의평가 해설",
+        "홍보물 및 교육 교재·실습 자료 제작",
+        "데이터 주권(소버린 AI) 중요성 이해 및 데이터 활용 역량 강화",
+        "실무 적용 역량 및 문제 해결 능력 제고",
+        "클라우드·AI 분야 자격 취득 지원 및 취업 경쟁력 강화"
+      ],
+      "contract_method": null,
+      "start_date": null,
+      "end_date": null,
+      "budget_krw": null,
+      "vat_included": null,
+      "deliverables": [
+        "교육과정 기획 및 지원 (총 50시간)",
+        "전문 강사 및 현업 전문가 특강 섭외",
+        "교육용 클라우드플랫폼 계정 및 크레딧 운영·관리",
+        "실습 환경 구성 및 온라인 협업 플랫폼 활용 전담 인력 배정",
+        "수강생 평가 및 자격증 취득 지원 모의평가 해설",
+        "홍보물 및 교육 교재·실습 자료 제작",
+        "데이터 주권(소버린 AI) 중요성 이해 및 데이터 활용 역량 강화",
+        "실무 적용 역량 및 문제 해결 능력 제고",
+        "클라우드·AI 분야 자격 취득 지원 및 취업 경쟁력 강화"
+      ],
+      "proposal_requirements": [
+        "최근 3년 이내 클라우드 및 인공지능(AI)분야 교육과정을 수행한 실적이 있는 업체",
+        "클라우드 또는 인공지능(AI)분야 전문 강사진 2명 이상을 보유한 업체(재직증명서, 강사확인서, 관련 자격증 등으로 증빙 가능)",
+        "제안하는 교육과정의 운영에 필요한 전문 인력 및 교육 운영 체계를 갖춘 업체",
+        "공동 수급(컨소시엄)은 허용하지 않으며 단일업체여야 함",
+        "강의",
+        "보조강사 지원",
+        "프로젝트 멘토링 및 피드백",
+        "출결 및 학생 관리",
+        "모의평가 진행"
+      ],
+      "compliance_requirements": [
+        "[사업의 기획력 및 적합성] 교육 취지에 맞는 구성 및 기획, 교육 내용의 우수성",
+        "[강사진 구성 능력] 클라우드·AI 분야 공인 자격 또는 전문성을 보유한 강사진 구성",
+        "[제안업체 전문성 및 조직역량] 조직 및 인원(전문인력), 책임자의 능력, 전담 인력 구성 및 투입 규모",
+        "[안전관리 및 계획] 참여인원 안전관리 대책, 기타 비상시 대책",
+        "[최근 3년 실적의 수준] 2024~2026년 누적 실적 평가",
+        "[기업경영상태] 기업신용평가 등급에 의함",
+        "[제안가격] 제안가격의 적정성"
+      ]
+    },
+    "education": {
+      "technology_domains": [
+        "클라우드",
+        "AI (인공지능)",
+        "데이터 주권(소버린 AI)",
+        "프로젝트 기반 학습",
+        "자격 취득",
+        "클라우드 교육 실적",
+        "인공지능 교육 실적",
+        "최근 3년 이내",
+        "전문 강사진",
+        "2명 이상 보유",
+        "강사 증빙",
+        "전문 인력",
+        "교육 운영 체계",
+        "공동 수급 불가",
+        "단일업체",
+        "기획력",
+        "적합성",
+        "교육 내용 우수성",
+        "강사진 구성 능력",
+        "공인 자격",
+        "전문성 강사",
+        "조직역량",
+        "전문인력",
+        "투입 규모",
+        "안전관리",
+        "비상 대책",
+        "실적 수준",
+        "누적 실적",
+        "기업경영상태",
+        "신용평가등급",
+        "제안가격",
+        "가격평가"
+      ],
+      "program_topics": [
+        "클라우드",
+        "AI (인공지능)",
+        "데이터 주권(소버린 AI)",
+        "프로젝트 기반 학습",
+        "자격 취득",
+        "기획력",
+        "적합성",
+        "교육 내용 우수성",
+        "강사진 구성 능력",
+        "공인 자격",
+        "전문성 강사",
+        "조직역량",
+        "전문인력",
+        "투입 규모",
+        "안전관리",
+        "비상 대책",
+        "실적 수준",
+        "누적 실적",
+        "기업경영상태",
+        "신용평가등급",
+        "제안가격",
+        "가격평가",
+        "클라우드 교육 실적",
+        "인공지능 교육 실적",
+        "최근 3년 이내",
+        "전문 강사진",
+        "2명 이상 보유",
+        "강사 증빙",
+        "전문 인력",
+        "교육 운영 체계",
+        "공동 수급 불가",
+        "단일업체"
+      ],
+      "target_audience": [
+        "약 20명",
+        "순천향대학교 학생"
+      ],
+      "participant_capacity": null,
+      "delivery_format": [
+        "오프라인",
+        "실습형",
+        "이론과 실습 병행",
+        "프로젝트 기반"
+      ],
+      "education_hours": null,
+      "schedule": [],
+      "required_roles": [
+        "강의",
+        "보조강사 지원",
+        "프로젝트 멘토링 및 피드백",
+        "출결 및 학생 관리",
+        "모의평가 진행"
+      ],
+      "instructor_requirements": {
+        "required_experience": [
+          "최근 3년 이내 클라우드 및 인공지능(AI)분야 교육과정을 수행한 실적이 있는 업체"
+        ],
+        "required_certifications": [
+          "클라우드 또는 인공지능(AI)분야 전문 강사진 2명 이상을 보유한 업체(재직증명서, 강사확인서, 관련 자격증 등으로 증빙 가능)"
+        ],
+        "required_vendor_credentials": [],
+        "similar_project_experience": [
+          "최근 3년 이내 클라우드 및 인공지능(AI)분야 교육과정 수행 실적"
+        ]
+      },
+      "curriculum_requirements": [],
+      "operational_requirements": [],
+      "practical_project_requirements": [
+        "교육과정 기획 및 지원 (총 50시간)",
+        "전문 강사 및 현업 전문가 특강 섭외",
+        "교육용 클라우드플랫폼 계정 및 크레딧 운영·관리",
+        "실습 환경 구성 및 온라인 협업 플랫폼 활용 전담 인력 배정",
+        "수강생 평가 및 자격증 취득 지원 모의평가 해설",
+        "홍보물 및 교육 교재·실습 자료 제작",
+        "강의",
+        "보조강사 지원",
+        "프로젝트 멘토링 및 피드백",
+        "출결 및 학생 관리",
+        "모의평가 진행"
+      ],
+      "assessment_requirements": [
+        "[사업의 기획력 및 적합성] 교육 취지에 맞는 구성 및 기획, 교육 내용의 우수성",
+        "[강사진 구성 능력] 클라우드·AI 분야 공인 자격 또는 전문성을 보유한 강사진 구성",
+        "[제안업체 전문성 및 조직역량] 조직 및 인원(전문인력), 책임자의 능력, 전담 인력 구성 및 투입 규모",
+        "[안전관리 및 계획] 참여인원 안전관리 대책, 기타 비상시 대책",
+        "[최근 3년 실적의 수준] 2024~2026년 누적 실적 평가",
+        "[기업경영상태] 기업신용평가 등급에 의함",
+        "[제안가격] 제안가격의 적정성"
+      ],
+      "outcome_requirements": [
+        "데이터 주권(소버린 AI) 중요성 이해 및 데이터 활용 역량 강화",
+        "실무 적용 역량 및 문제 해결 능력 제고",
+        "클라우드·AI 분야 자격 취득 지원 및 취업 경쟁력 강화"
+      ]
+    },
+    "extensions": {
+      "source_task_order_id": "2ef242ea-8f76-44e4-ac23-f200142c5c61",
+      "normalized_qualifications": [
+        {
+          "category": "실적",
+          "description": "최근 3년 이내 클라우드 및 인공지능(AI)분야 교육과정을 수행한 실적이 있는 업체",
+          "is_mandatory": true,
+          "keywords": [
+            "클라우드 교육 실적",
+            "인공지능 교육 실적",
+            "최근 3년 이내"
+          ]
+        },
+        {
+          "category": "인력",
+          "description": "클라우드 또는 인공지능(AI)분야 전문 강사진 2명 이상을 보유한 업체(재직증명서, 강사확인서, 관련 자격증 등으로 증빙 가능)",
+          "is_mandatory": true,
+          "keywords": [
+            "전문 강사진",
+            "2명 이상 보유",
+            "강사 증빙"
+          ]
+        },
+        {
+          "category": "운영 역량",
+          "description": "제안하는 교육과정의 운영에 필요한 전문 인력 및 교육 운영 체계를 갖춘 업체",
+          "is_mandatory": true,
+          "keywords": [
+            "전문 인력",
+            "교육 운영 체계"
+          ]
+        },
+        {
+          "category": "공동수급 제한",
+          "description": "공동 수급(컨소시엄)은 허용하지 않으며 단일업체여야 함",
+          "is_mandatory": true,
+          "keywords": [
+            "공동 수급 불가",
+            "단일업체"
+          ]
+        }
+      ],
+      "normalized_evaluation_criteria": [
+        {
+          "category": "기술평가",
+          "description": "[사업의 기획력 및 적합성] 교육 취지에 맞는 구성 및 기획, 교육 내용의 우수성",
+          "weight": 20,
+          "keywords": [
+            "기획력",
+            "적합성",
+            "교육 내용 우수성"
+          ]
+        },
+        {
+          "category": "기술평가",
+          "description": "[강사진 구성 능력] 클라우드·AI 분야 공인 자격 또는 전문성을 보유한 강사진 구성",
+          "weight": 15,
+          "keywords": [
+            "강사진 구성 능력",
+            "공인 자격",
+            "전문성 강사"
+          ]
+        },
+        {
+          "category": "기술평가",
+          "description": "[제안업체 전문성 및 조직역량] 조직 및 인원(전문인력), 책임자의 능력, 전담 인력 구성 및 투입 규모",
+          "weight": 15,
+          "keywords": [
+            "조직역량",
+            "전문인력",
+            "투입 규모"
+          ]
+        },
+        {
+          "category": "기술평가",
+          "description": "[안전관리 및 계획] 참여인원 안전관리 대책, 기타 비상시 대책",
+          "weight": 10,
+          "keywords": [
+            "안전관리",
+            "비상 대책"
+          ]
+        },
+        {
+          "category": "기술평가",
+          "description": "[최근 3년 실적의 수준] 2024~2026년 누적 실적 평가",
+          "weight": 10,
+          "keywords": [
+            "실적 수준",
+            "누적 실적"
+          ]
+        },
+        {
+          "category": "기술평가",
+          "description": "[기업경영상태] 기업신용평가 등급에 의함",
+          "weight": 10,
+          "keywords": [
+            "기업경영상태",
+            "신용평가등급"
+          ]
+        },
+        {
+          "category": "가격평가",
+          "description": "[제안가격] 제안가격의 적정성",
+          "weight": 20,
+          "keywords": [
+            "제안가격",
+            "가격평가"
+          ]
+        }
+      ],
+      "overview": {
+        "section_titles": [
+          "나. 교육개요",
+          "추진내용",
+          "추진내용 | 작업 프로세스",
+          "교육 목적",
+          "교육개요",
+          "과업내용"
+        ],
+        "summary": "안전하고 책임 있는 AI 활용 역량을 강화하고, 클라우드 및 AI 분야 자격 취득과 취업 연계를 지원하기 위해 이론·실습 병행 교육 및 프로젝트 기반 학습(PBL) 과정을 위탁 운영하는 사업",
+        "core_topics": [
+          "클라우드",
+          "AI (인공지능)",
+          "데이터 주권(소버린 AI)",
+          "프로젝트 기반 학습",
+          "자격 취득"
+        ],
+        "target_audience": [
+          "약 20명",
+          "순천향대학교 학생"
+        ],
+        "delivery_formats": [
+          "오프라인",
+          "실습형",
+          "이론과 실습 병행",
+          "프로젝트 기반"
+        ],
+        "required_roles": [
+          "강의",
+          "보조강사 지원",
+          "프로젝트 멘토링 및 피드백",
+          "출결 및 학생 관리",
+          "모의평가 진행"
+        ],
+        "scope": [
+          "교육과정 기획 및 지원 (총 50시간)",
+          "전문 강사 및 현업 전문가 특강 섭외",
+          "교육용 클라우드플랫폼 계정 및 크레딧 운영·관리",
+          "실습 환경 구성 및 온라인 협업 플랫폼 활용 전담 인력 배정",
+          "수강생 평가 및 자격증 취득 지원 모의평가 해설",
+          "홍보물 및 교육 교재·실습 자료 제작"
+        ],
+        "expected_outcomes": [
+          "데이터 주권(소버린 AI) 중요성 이해 및 데이터 활용 역량 강화",
+          "실무 적용 역량 및 문제 해결 능력 제고",
+          "클라우드·AI 분야 자격 취득 지원 및 취업 경쟁력 강화"
+        ],
+        "preferred_experience": [
+          "최근 3년 이내 클라우드 및 인공지능(AI)분야 교육과정 수행 실적"
+        ],
+        "source_excerpt": "나. 교육개요\n1) 사 업 명 : 클라우드 및 AI 전문 교육과정 운영\n\n추진내용\n1주 2주 3주 4주 5주 6주\n\n추진내용 | 작업 프로세스\n1주 | 2주 | 3주 | 4주 | 5주 | 6주",
+        "matching_rules": [
+          {
+            "key": "core_topics",
+            "label": "핵심 교육 주제",
+            "values": [
+              "클라우드",
+              "AI (인공지능)",
+              "데이터 주권(소버린 AI)",
+              "프로젝트 기반 학습",
+              "자격 취득"
+            ]
+          },
+          {
+            "key": "target_audience",
+            "label": "교육 대상",
+            "values": [
+              "약 20명",
+              "순천향대학교 학생"
+            ]
+          },
+          {
+            "key": "delivery_formats",
+            "label": "운영 방식",
+            "values": [
+              "오프라인",
+              "실습형",
+              "이론과 실습 병행",
+              "프로젝트 기반"
+            ]
+          },
+          {
+            "key": "required_roles",
+            "label": "요구 역할",
+            "values": [
+              "강의",
+              "보조강사 지원",
+              "프로젝트 멘토링 및 피드백",
+              "출결 및 학생 관리",
+              "모의평가 진행"
+            ]
+          },
+          {
+            "key": "scope",
+            "label": "업무 범위",
+            "values": [
+              "교육과정 기획 및 지원 (총 50시간)",
+              "전문 강사 및 현업 전문가 특강 섭외",
+              "교육용 클라우드플랫폼 계정 및 크레딧 운영·관리",
+              "실습 환경 구성 및 온라인 협업 플랫폼 활용 전담 인력 배정",
+              "수강생 평가 및 자격증 취득 지원 모의평가 해설",
+              "홍보물 및 교육 교재·실습 자료 제작"
+            ]
+          },
+          {
+            "key": "expected_outcomes",
+            "label": "기대 성과",
+            "values": [
+              "데이터 주권(소버린 AI) 중요성 이해 및 데이터 활용 역량 강화",
+              "실무 적용 역량 및 문제 해결 능력 제고",
+              "클라우드·AI 분야 자격 취득 지원 및 취업 경쟁력 강화"
+            ]
+          },
+          {
+            "key": "preferred_experience",
+            "label": "우대 경험",
+            "values": [
+              "최근 3년 이내 클라우드 및 인공지능(AI)분야 교육과정 수행 실적"
+            ]
+          }
+        ]
+      }
+    },
+    "evidence": [
+      {
+        "source_document_id": "task-order:2ef242ea-8f76-44e4-ac23-f200142c5c61",
+        "page": null,
+        "section": "normalized task-order requirements",
+        "quote": "제 안 요 청 서\n클라우드 및 AI 전문 교육과정 운영 용역 입찰\n2026. 6.\n※ 본 자료는 제안내용의 설명을 위한 배포자료로, 이외 목적으로 무단복제, 전달 및 사용하는 행위를 금함.\nI 입찰 내용\n1. 입 찰 명 : 클라우드 및 AI 전문 교육과정 운영 용역 입찰\n2. 사업기간 : 계약체결일 ~ 2026.8.31.까지\n3. 배정예산 : 금 50,000,000원(금오천만원) 내(부가세 포함)\n4. 입찰개요\n가. 교육 목적\n1) 데이터 주권(소버린 AI)의 중요성을 이해하고, 기업 핵심 데이터의 안전한 활용 역량을 갖춘 인재 양성\n2) AI 도구를 활용해 업무 효율을 높이는 실무 기초 역량 배양\n3) 프로젝트 기반 학습을 통해 AI 활용 역량을 강화하고, 클라우드·AI 분야 자격 취득과 취업 연계를\n지원하는 전주기적 교육체계를 구축\n나. 교육개요\n1) 사 업 명 : 클라우드 및 AI 전문 교육과정 운영\n2) 교육기간 : 2026.7.15.(수) ~ 7.29.(수)\n3) 진행장소 : 순천향대학교 인간사랑관 2층 임베디드 실습실 6205호\n4) 추진방향\n가) 데이터 주권 이해를 바탕으로 안전하고 책임 있는 AI 활용 역량 배양\n나) 이론과 실습을 병행하는 현장 중심 교육을 통해 클라우드·AI 기술의 실무 적용 역량 제고\n다) 프로젝트 기반 학습을 통한 문제 해결 능력 및 협업 역량 강화\n라) 클라우드·AI 분야 자격 취득 지원 및 산업체 연계를 통한 취업 경쟁력 강화\n5) 참여인원 : 약 20명\n6) 주최/주관 : 순천향대학교/AI의료융합혁신교육원 학사지원팀\n다. 과업내용\n1) 교육 지원 전반사항\n가) 교육과정 기획·지원\n- 클라우드·AI 교육과정에 적합한 이론/실습 병행 현장형 교육과정 기획 및 제안\n- 2026.7.15.~7.29. 총 50시간 교육 일정 운영, 기획 및 지원\n나) 강사 섭외 및 지원\n- 클라우드 및 AI 활용 교육 강사 섭외 및 교육 진행(주강사, 보조강사)\n- 클라우드·AI 분야 전문 강사진 포함 지원\n- 현업 전문가 특강(현직자 특강)",
+        "confidence": 1.0
+      }
+    ],
+    "review_status": "unreviewed"
+  },
+  "instructor": {
+    "instructor_id": "instructor-75",
+    "profile_version": "db-77870534adbf",
+    "display_name": "이원재",
+    "expertise_tags": [
+      "Python",
+      "R",
+      "Scratch",
+      "OpenCV",
+      "파이썬",
+      "빅데이터",
+      "머신러닝",
+      "딥러닝",
+      "데이터분석",
+      "마케팅분석",
+      "AR",
+      "아바타",
+      "얼굴합성",
+      "클라우드",
+      "AI",
+      "Speaker",
+      "홈페이지제작",
+      "이벤트",
+      "플랫폼",
+      "자연어처리",
+      "기업가치분석",
+      "부트캠프",
+      "자동필기",
+      "Kaggle",
+      "추천시스템",
+      "Digital Learning",
+      "프로그래밍",
+      "핀테크",
+      "Object Detection",
+      "분석프로젝트",
+      "실습프로젝트",
+      "금융데이터",
+      "로보어드바이저",
+      "예측시스템",
+      "영상처리",
+      "스크래치",
+      "코딩",
+      "Portal",
+      "사물인터넷",
+      "Collaborative Filtering"
+    ],
+    "summary": "머신러닝 및 빅데이터 분석 전문 강사",
+    "delivery_modes": [],
+    "availability_notes": null,
+    "vendor_experience": [
+      "알디노 - 사용자 얼굴 합성 AR 아바타 생성 시스템 - 쇼바타 개발",
+      "서울시 - 서울도보해설관광 이벤트 홈페이지 제작",
+      "다올(스타트업) - 데이터분석 플랫폼 - 데이터덕 데이터분석프로젝트 다수 제작",
+      "알디노 - 자연어처리 기반 수업내용 자동 필기 서비스 - 필기선생 개발",
+      "SK Telecom - SKT프로젝트 - Digital Learning Portal ExpertMate 추천시스템 구현",
+      "SK Telecom - SKT프로젝트 - Digital Learning Portal 구축",
+      "성균관대학교 빅데이터연구실 - Cluster-based Collaborative Filtering for Robust Recommender System",
+      "아시아경제 - 강사 (데이터분석/머신러닝 강의)",
+      "(주)포세듀 - 사외이사 (데이터분석/머신러닝 기술자문)",
+      "핀인사이트 인사이트캠퍼스 - 강의교수 (머신러닝/빅데이터 분야 강의)",
+      "㈜제이디사운드 - R&D 책임연구원 (제품 기획 및 개발/ 머신러닝)",
+      "알디노 - 대표 (머신러닝 개발 / 운영)",
+      "라이트크리에이터 - 대표 (총괄)"
+    ],
+    "vendor_certifications": [
+      "사람,인체,자세 3D AI 데이터를 활용한 온라인 Fitting System 해커톤 장려상",
+      "2017 대한민국 인재상(교육부 장관상)",
+      "2014 타이페이 국제 발명전시회 은상"
+    ],
+    "teaching_items": [
+      {
+        "topic": "서울대학교 머신러닝 겨울방학 특강",
+        "organization": "렉토피아",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1657",
+            "quote": "서울대학교 머신러닝 겨울방학 특강",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "서울대학교 데이터분석 겨울방학 특강",
+        "organization": "렉토피아",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1656",
+            "quote": "서울대학교 데이터분석 겨울방학 특강",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "아시아경제 빅데이터 전문가 과정 - 마케팅 분석 프로젝트",
+        "organization": "고용노동부/아시아경제",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1682",
+            "quote": "아시아경제 빅데이터 전문가 과정 - 마케팅 분석 프로젝트",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "부산진흥원 클라우드 기반 머신러닝 구현 과정",
+        "organization": "부산진흥원",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1684",
+            "quote": "부산진흥원 클라우드 기반 머신러닝 구현 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "BNK은행 클라우드 기반 머신러닝 구현 과정",
+        "organization": "BNK은행",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1683",
+            "quote": "BNK은행 클라우드 기반 머신러닝 구현 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "전남대학교 빅데이터 전문가과정",
+        "organization": "전남대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1659",
+            "quote": "전남대학교 빅데이터 전문가과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "성균관대학교 AI-Speaker 과정",
+        "organization": "성균관대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1658",
+            "quote": "성균관대학교 AI-Speaker 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "공간정보학회 딥러닝 세미나",
+        "organization": "공간정보학회",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1686",
+            "quote": "공간정보학회 딥러닝 세미나",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "멀티캠퍼스 자연어처리를 활용한 기업가치분석 과정 - 실전프로젝트",
+        "organization": "과학기술정보통신부/멀티캠퍼스",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1685",
+            "quote": "멀티캠퍼스 자연어처리를 활용한 기업가치분석 과정 - 실전프로젝트",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "머신러닝 부트캠프",
+        "organization": "IDEC/성균관대학교 정보통신대학",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1663",
+            "quote": "머신러닝 부트캠프",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "딥러닝 부트캠프",
+        "organization": "IDEC/성균관대학교 정보통신대학",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1662",
+            "quote": "딥러닝 부트캠프",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "충남대학교 SW중심사업단 AI 부트캠프",
+        "organization": "충남대학교 SW중심사업단",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1661",
+            "quote": "충남대학교 SW중심사업단 AI 부트캠프",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "서울대학교 농업생명과학대학 딥러닝 특강",
+        "organization": "서울대학교 농업생명과학대학",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1660",
+            "quote": "서울대학교 농업생명과학대학 딥러닝 특강",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "부산진흥원 클라우드 기반 머신러닝 구현 과정",
+        "organization": "부산진흥원",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1687",
+            "quote": "부산진흥원 클라우드 기반 머신러닝 구현 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "서울대학교 머신러닝 / 딥러닝 입문",
+        "organization": "서울대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1666",
+            "quote": "서울대학교 머신러닝 / 딥러닝 입문",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "서울대학교 파이썬 프로그래밍 & 데이터분석 입문",
+        "organization": "서울대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1665",
+            "quote": "서울대학교 파이썬 프로그래밍 & 데이터분석 입문",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "서울대학교 Kaggle을 활용한 실무 머신러닝 분석",
+        "organization": "서울대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1664",
+            "quote": "서울대학교 Kaggle을 활용한 실무 머신러닝 분석",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "멀티캠퍼스 자연어처리를 활용한 기업가치분석 과정 - 데이터분석",
+        "organization": "과학기술정보통신부/멀티캠퍼스",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1688",
+            "quote": "멀티캠퍼스 자연어처리를 활용한 기업가치분석 과정 - 데이터분석",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "영남대학교 파이썬 기반 빅데이터 분석 교육",
+        "organization": "영남대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1667",
+            "quote": "영남대학교 파이썬 기반 빅데이터 분석 교육",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "R을 활용한 실무 데이터분석",
+        "organization": "필립모리스 코리아/다이나믹러닝",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1706",
+            "quote": "R을 활용한 실무 데이터분석",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "멀티캠퍼스 자연어처리를 활용한 기업가치분석 과정 - 프로그래밍 기초",
+        "organization": "과학기술정보통신부/멀티캠퍼스",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1689",
+            "quote": "멀티캠퍼스 자연어처리를 활용한 기업가치분석 과정 - 프로그래밍 기초",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "세종 메이크 업 스테이션 빅데이터 전문가 양성 과정",
+        "organization": "포세듀",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1707",
+            "quote": "세종 메이크 업 스테이션 빅데이터 전문가 양성 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "서울대학교 Kaggle을 활용한 실무 머신러닝 분석",
+        "organization": "서울대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1668",
+            "quote": "서울대학교 Kaggle을 활용한 실무 머신러닝 분석",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "청년취업아카데미 핀테크 빅데이터 금융 사이언티스트 양성과정(D) - 머신러닝",
+        "organization": "고용노동부/아시아경제신문",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1690",
+            "quote": "청년취업아카데미 핀테크 빅데이터 금융 사이언티스트 양성과정(D) - 머신러닝",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "서울대학교 머신러닝 / 딥러닝 입문",
+        "organization": "서울대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1670",
+            "quote": "서울대학교 머신러닝 / 딥러닝 입문",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "서울대학교 파이썬 프로그래밍 & 데이터분석 입문",
+        "organization": "서울대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1669",
+            "quote": "서울대학교 파이썬 프로그래밍 & 데이터분석 입문",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Deep-learning for Object Detection 과정",
+        "organization": "다이나믹러닝",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1708",
+            "quote": "Deep-learning for Object Detection 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "대전 빅데이터 전문가 과정 - 머신러닝/딥러닝 강의",
+        "organization": "대전정보문화산업진흥원",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1692",
+            "quote": "대전 빅데이터 전문가 과정 - 머신러닝/딥러닝 강의",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "청년취업아카데미 핀테크 빅데이터 금융 사이언티스트 양성과정(C) - 머신러닝/딥러닝",
+        "organization": "고용노동부/아시아경제신문",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1691",
+            "quote": "청년취업아카데미 핀테크 빅데이터 금융 사이언티스트 양성과정(C) - 머신러닝/딥러닝",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "성균관대학교 머신러닝 기반 데이터 분석 과정",
+        "organization": "성균관대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1671",
+            "quote": "성균관대학교 머신러닝 기반 데이터 분석 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "달성군 빅데이터 활용 역량강화 교육",
+        "organization": "달성군청",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1694",
+            "quote": "달성군 빅데이터 활용 역량강화 교육",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "다이나믹러닝 파이썬 및 데이터분석 과정",
+        "organization": "다이나믹러닝",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1709",
+            "quote": "다이나믹러닝 파이썬 및 데이터분석 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "울산창조경제혁신센터 머신러닝/딥러닝 과정",
+        "organization": "울산창조경제혁신센터",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1696",
+            "quote": "울산창조경제혁신센터 머신러닝/딥러닝 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "울산창조경제혁신센터 빅데이터 분석 프로젝트",
+        "organization": "울산창조경제혁신센터",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1695",
+            "quote": "울산창조경제혁신센터 빅데이터 분석 프로젝트",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "멀티캠퍼스 자연어처리를 활용한 기업가치분석 과정 - 실습프로젝트",
+        "organization": "과학기술정보통신부/멀티캠퍼스",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1693",
+            "quote": "멀티캠퍼스 자연어처리를 활용한 기업가치분석 과정 - 실습프로젝트",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "서울대학교 파이썬을 활용한 데이터분석 과정",
+        "organization": "서울대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1675",
+            "quote": "서울대학교 파이썬을 활용한 데이터분석 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "서울대학교 파이썬 라이브러리와 Kaggle을 활용한 실전 머신러닝 과정",
+        "organization": "서울대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1674",
+            "quote": "서울대학교 파이썬 라이브러리와 Kaggle을 활용한 실전 머신러닝 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "숭실대학교 파이썬 프로그래밍 & 데이터 분석 과정",
+        "organization": "숭실대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1673",
+            "quote": "숭실대학교 파이썬 프로그래밍 & 데이터 분석 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "숭실대학교 파이썬을 활용한 머신러닝 과정",
+        "organization": "숭실대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1672",
+            "quote": "숭실대학교 파이썬을 활용한 머신러닝 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "멀티캠퍼스 자연어처리를 활용한 기업가치분석 과정 - 파이썬/데이터분석/머신러닝",
+        "organization": "과학기술정보통신부/멀티캠퍼스",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1697",
+            "quote": "멀티캠퍼스 자연어처리를 활용한 기업가치분석 과정 - 파이썬/데이터분석/머신러닝",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "파이썬 라이브러리를 활용한 금융 데이터 분석 강의",
+        "organization": "미래에셋",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1710",
+            "quote": "파이썬 라이브러리를 활용한 금융 데이터 분석 강의",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "청년취업아카데미 금융 데이터 사이언티스트 양성과정 - 머신러닝",
+        "organization": "고용노동부/아시아경제신문",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1698",
+            "quote": "청년취업아카데미 금융 데이터 사이언티스트 양성과정 - 머신러닝",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "파이썬 라이브러리를 활용한 머신러닝 강의",
+        "organization": "핀인사이트",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1711",
+            "quote": "파이썬 라이브러리를 활용한 머신러닝 강의",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "로보어드바이저 전문가 양성 과정",
+        "organization": "고용노동부/생산성본부",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1699",
+            "quote": "로보어드바이저 전문가 양성 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Kaggle을 활용한 실전 머신러닝 강의",
+        "organization": "렉토피아",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1713",
+            "quote": "Kaggle을 활용한 실전 머신러닝 강의",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "실제 데이터 예측 시스템 구현을 통한 머신러닝 강의",
+        "organization": "인사이트 캠퍼스",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1712",
+            "quote": "실제 데이터 예측 시스템 구현을 통한 머신러닝 강의",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "금융데이터 분석을 위한 파이썬 강의",
+        "organization": "숭실대학교 금융학부",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1676",
+            "quote": "금융데이터 분석을 위한 파이썬 강의",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Open CV로 배우는 영상처리 강의",
+        "organization": "포세듀",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1714",
+            "quote": "Open CV로 배우는 영상처리 강의",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "울산 빅데이터 전문가 중급 과정 - 머신러닝/딥러닝 강의",
+        "organization": "울산창조경제혁신센터",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1700",
+            "quote": "울산 빅데이터 전문가 중급 과정 - 머신러닝/딥러닝 강의",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "대전 빅데이터 전문가 과정 - 머신러닝 강의",
+        "organization": "대전정보문화산업진흥원",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1702",
+            "quote": "대전 빅데이터 전문가 과정 - 머신러닝 강의",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "데이터 분석 전문가 과정 - 머신러닝 강의",
+        "organization": "서울산업진흥원",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1701",
+            "quote": "데이터 분석 전문가 과정 - 머신러닝 강의",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "SK이노베이션 주니어 코딩캠프 - 스크래치 코딩",
+        "organization": "SK이노베이션",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1715",
+            "quote": "SK이노베이션 주니어 코딩캠프 - 스크래치 코딩",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "울산 빅데이터 전문가 과정 - 데이터분석 강의",
+        "organization": "울산창조경제혁신센터",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1703",
+            "quote": "울산 빅데이터 전문가 과정 - 데이터분석 강의",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "울산 빅데이터 전문가과정 - 파이썬 강의",
+        "organization": "울산창조경제혁신센터",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1704",
+            "quote": "울산 빅데이터 전문가과정 - 파이썬 강의",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "신한은행 머신러닝 특강",
+        "organization": "신한은행",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1716",
+            "quote": "신한은행 머신러닝 특강",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "숭실대학교 머신러닝 강의",
+        "organization": "숭실대학교 금융학부",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1677",
+            "quote": "숭실대학교 머신러닝 강의",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "SK플래닛 머신러닝 강의 [판교본사, 서울]",
+        "organization": "SK플래닛",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1717",
+            "quote": "SK플래닛 머신러닝 강의 [판교본사, 서울]",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "성신여자대학교 창업 캠프 사물인터넷 특강",
+        "organization": "성신여자대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1679",
+            "quote": "성신여자대학교 창업 캠프 사물인터넷 특강",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "포항공대 사물인터넷 전문가 과정",
+        "organization": "포항공과대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1678",
+            "quote": "포항공대 사물인터넷 전문가 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "인사이트 캠퍼스 머신러닝 강의",
+        "organization": "인사이트캠퍼스",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1718",
+            "quote": "인사이트 캠퍼스 머신러닝 강의",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "알디노 추천시스템 특강",
+        "organization": "알디노",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1719",
+            "quote": "알디노 추천시스템 특강",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "성균관대학교 딥러닝 기초 특강",
+        "organization": "성균관대학교 LINC사업단",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1680",
+            "quote": "성균관대학교 딥러닝 기초 특강",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "KDB 머신러닝 특강",
+        "organization": "한국 청년기업가정신재단",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1705",
+            "quote": "KDB 머신러닝 특강",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "알디노 머신러닝 강의 1-3기",
+        "organization": "알디노",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1720",
+            "quote": "알디노 머신러닝 강의 1-3기",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "성균관대학교 머신러닝 입문 특강",
+        "organization": "성균관대학교 LINC사업단",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1681",
+            "quote": "성균관대학교 머신러닝 입문 특강",
+            "confidence": 1.0
+          }
+        ]
+      }
+    ],
+    "project_items": [
+      {
+        "title": "사용자 얼굴 합성 AR 아바타 생성 시스템 - 쇼바타 개발",
+        "client_organization": "알디노",
+        "role": "개발자",
+        "start_date": "2020-11-01",
+        "end_date": null,
+        "keywords": [
+          "AR",
+          "아바타",
+          "얼굴합성"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1721",
+            "quote": "사용자 얼굴 합성 AR 아바타 생성 시스템 - 쇼바타 개발",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "서울도보해설관광 이벤트 홈페이지 제작",
+        "client_organization": "서울시",
+        "role": "개발자",
+        "start_date": "2020-10-01",
+        "end_date": "2020-10-01",
+        "keywords": [
+          "홈페이지제작",
+          "이벤트"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1724",
+            "quote": "서울도보해설관광 이벤트 홈페이지 제작",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "데이터분석 플랫폼 - 데이터덕 데이터분석프로젝트 다수 제작",
+        "client_organization": "다올(스타트업)",
+        "role": "개발자",
+        "start_date": "2020-09-01",
+        "end_date": null,
+        "keywords": [
+          "데이터분석",
+          "플랫폼"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1722",
+            "quote": "데이터분석 플랫폼 - 데이터덕 데이터분석프로젝트 다수 제작",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "자연어처리 기반 수업내용 자동 필기 서비스 - 필기선생 개발",
+        "client_organization": "알디노",
+        "role": "개발자",
+        "start_date": "2020-07-01",
+        "end_date": null,
+        "keywords": [
+          "자연어처리",
+          "자동필기"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1723",
+            "quote": "자연어처리 기반 수업내용 자동 필기 서비스 - 필기선생 개발",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "SKT프로젝트 - Digital Learning Portal ExpertMate 추천시스템 구현",
+        "client_organization": "SK Telecom",
+        "role": "개발자",
+        "start_date": "2020-06-01",
+        "end_date": "2020-10-01",
+        "keywords": [
+          "추천시스템",
+          "Digital Learning"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1725",
+            "quote": "SKT프로젝트 - Digital Learning Portal ExpertMate 추천시스템 구현",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "SKT프로젝트 - Digital Learning Portal 구축",
+        "client_organization": "SK Telecom",
+        "role": "개발자",
+        "start_date": "2018-06-01",
+        "end_date": "2018-09-01",
+        "keywords": [
+          "Digital Learning",
+          "Portal"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1726",
+            "quote": "SKT프로젝트 - Digital Learning Portal 구축",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "Cluster-based Collaborative Filtering for Robust Recommender System",
+        "client_organization": "성균관대학교 빅데이터연구실",
+        "role": "연구원",
+        "start_date": "2016-09-01",
+        "end_date": "2018-02-01",
+        "keywords": [
+          "추천시스템",
+          "Collaborative Filtering"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1727",
+            "quote": "Cluster-based Collaborative Filtering for Robust Recommender System",
+            "confidence": 1.0
+          }
+        ]
+      }
+    ],
+    "work_experience_items": [
+      {
+        "organization": "아시아경제",
+        "summary": "강사 (데이터분석/머신러닝 강의)",
+        "start_date": "2019-06-01",
+        "end_date": "재직중",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 703",
+            "quote": "강사 (데이터분석/머신러닝 강의)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "organization": "(주)포세듀",
+        "summary": "사외이사 (데이터분석/머신러닝 기술자문)",
+        "start_date": "2019-02-01",
+        "end_date": "재직중",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 704",
+            "quote": "사외이사 (데이터분석/머신러닝 기술자문)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "organization": "핀인사이트 인사이트캠퍼스",
+        "summary": "강의교수 (머신러닝/빅데이터 분야 강의)",
+        "start_date": "2018-03-01",
+        "end_date": "재직중",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 705",
+            "quote": "강의교수 (머신러닝/빅데이터 분야 강의)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "organization": "㈜제이디사운드",
+        "summary": "R&D 책임연구원 (제품 기획 및 개발/ 머신러닝)",
+        "start_date": "2017-09-01",
+        "end_date": "2018-06-01",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 706",
+            "quote": "R&D 책임연구원 (제품 기획 및 개발/ 머신러닝)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "organization": "알디노",
+        "summary": "대표 (머신러닝 개발 / 운영)",
+        "start_date": "2017-08-01",
+        "end_date": "재직중",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 702",
+            "quote": "대표 (머신러닝 개발 / 운영)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "organization": "라이트크리에이터",
+        "summary": "대표 (총괄)",
+        "start_date": "2015-05-01",
+        "end_date": "2017-07-01",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 707",
+            "quote": "대표 (총괄)",
+            "confidence": 1.0
+          }
+        ]
+      }
+    ],
+    "certifications": [
+      {
+        "name": "사람,인체,자세 3D AI 데이터를 활용한 온라인 Fitting System 해커톤 장려상",
+        "issuer": "한국디자인진흥원",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 708",
+            "quote": "사람,인체,자세 3D AI 데이터를 활용한 온라인 Fitting System 해커톤 장려상",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "2017 대한민국 인재상(교육부 장관상)",
+        "issuer": "대한민국 교육부",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 709",
+            "quote": "2017 대한민국 인재상(교육부 장관상)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "2014 타이페이 국제 발명전시회 은상",
+        "issuer": "대만 특허청",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 710",
+            "quote": "2014 타이페이 국제 발명전시회 은상",
+            "confidence": 1.0
+          }
+        ]
+      }
+    ],
+    "source_document_ids": [
+      "instructor-source:내부 강사 정보.xlsx",
+      "instructor-db:75"
+    ],
+    "extensions": {},
+    "evidence": [
+      {
+        "source_document_id": "instructor-db:75",
+        "page": null,
+        "section": "instructors",
+        "quote": "머신러닝 및 빅데이터 분석 전문 강사",
+        "confidence": 1.0
+      }
+    ],
+    "review_status": "unreviewed"
+  }
+}

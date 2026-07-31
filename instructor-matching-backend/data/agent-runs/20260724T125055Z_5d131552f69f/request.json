@@ -1,0 +1,1113 @@
+{
+  "project": {
+    "schema_version": "education_project_v1",
+    "service_type": "education_program",
+    "program_type": "vocational_training",
+    "classification_confidence": 1.0,
+    "base": {
+      "project_name": "(붙임2)_제안요청서.pdf",
+      "client_organization": null,
+      "purpose": [
+        "순천향대학교에서 약 20명의 학생을 대상으로 이론과 실습 및 프로젝트 기반 학습을 병행하여 클라우드 및 AI 전문 실무 역량을 배양하고, 자격 취득과 취업을 연계 지원하는 50시간 규모의 교육과정을 기획·운영하는 용역",
+        "총 50시간의 교육과정 기획 및 운영",
+        "클라우드·AI 전문 강사진 배정 및 지원",
+        "교육용 클라우드 플랫폼 계정/크레딧 운영 및 관리",
+        "온라인 협업 플랫폼 활용 학생 관리",
+        "교재 및 홍보물(현수막, 포스터, 카드뉴스 등) 제작",
+        "결과 보고서 제출",
+        "안전하고 책임 있는 AI 활용 역량 배양",
+        "실무 적용 역량 및 문제 해결/협업 역량 강화",
+        "클라우드·AI 분야 자격 취득 및 취업 경쟁력 강화"
+      ],
+      "contract_method": null,
+      "start_date": null,
+      "end_date": null,
+      "budget_krw": null,
+      "vat_included": null,
+      "deliverables": [
+        "총 50시간의 교육과정 기획 및 운영",
+        "클라우드·AI 전문 강사진 배정 및 지원",
+        "교육용 클라우드 플랫폼 계정/크레딧 운영 및 관리",
+        "온라인 협업 플랫폼 활용 학생 관리",
+        "교재 및 홍보물(현수막, 포스터, 카드뉴스 등) 제작",
+        "결과 보고서 제출",
+        "안전하고 책임 있는 AI 활용 역량 배양",
+        "실무 적용 역량 및 문제 해결/협업 역량 강화",
+        "클라우드·AI 분야 자격 취득 및 취업 경쟁력 강화"
+      ],
+      "proposal_requirements": [
+        "최근 3년 이내 클라우드 및 인공지능(AI)분야 교육과정을 수행한 실적이 있는 업체",
+        "클라우드 또는 인공지능(AI)분야 전문 강사진 2명 이상을 보유한 업체(재직증명서, 강사확인서, 관련 자격증 등으로 증빙 가능)",
+        "제안하는 교육과정의 운영에 필요한 전문 인력 및 교육 운영 체계를 갖춘 업체",
+        "공동 수급(컨소시엄)은 허용하지 않으며 단일업체여야 함",
+        "국가를 당사자로 하는 계약에 관한 법률 시행령 제76조에 의한 부정당업자가 아닌 자",
+        "교육과정 기획 및 지원",
+        "강사(주강사, 보조강사) 및 현업 전문가 섭외",
+        "교육 인프라(클라우드 계정 및 크레딧) 지원 및 모니터링",
+        "전담 인력 배정 및 학생 관리",
+        "수강생 평가 및 공인 자격증 취득 모의평가 지원",
+        "홍보물 및 교재 제작"
+      ],
+      "compliance_requirements": [
+        "사업의 기획력 및 적합성 (교육 취지에 맞는 구성 및 기획, 교육 내용의 우수성)",
+        "강사진 구성 능력 (클라우드·AI 분야 공인 자격 또는 전문성을 보유한 강사진 구성)",
+        "제안업체 전문성 및 조직역량 (조직 및 인원, 책임자의 능력, 전담 인력 구성 및 투입 규모)",
+        "안전관리 및 계획 (참여인원 안전관리 대책, 기타 비상시 대책)",
+        "최근 3년 실적의 수준 (2024~2026년 누적 실적 평가)",
+        "기업경영상태 (기업신용평가 등급에 의함)",
+        "제안가격의 적정성 (정량평가)"
+      ]
+    },
+    "education": {
+      "technology_domains": [
+        "데이터 주권(소버린 AI)",
+        "클라우드",
+        "인공지능(AI)",
+        "AI 도구",
+        "인공지능",
+        "AI",
+        "교육과정",
+        "실적",
+        "전문 강사진",
+        "강사 보유",
+        "전문 인력",
+        "교육 운영 체계",
+        "단일업체",
+        "공동수급 불가",
+        "컨소시엄 제한",
+        "부정당업자",
+        "국가계약법",
+        "기획력",
+        "적합성",
+        "교육 내용",
+        "우수성",
+        "강사진 구성",
+        "공인 자격",
+        "전문성",
+        "조직역량",
+        "전담 인력",
+        "책임자 능력",
+        "안전관리",
+        "비상대책",
+        "누적 실적",
+        "수행 실적",
+        "기업경영상태",
+        "신용평가등급",
+        "제안가격",
+        "가격평가"
+      ],
+      "program_topics": [
+        "데이터 주권(소버린 AI)",
+        "클라우드",
+        "인공지능(AI)",
+        "AI 도구",
+        "기획력",
+        "적합성",
+        "교육 내용",
+        "우수성",
+        "강사진 구성",
+        "공인 자격",
+        "전문성",
+        "조직역량",
+        "전담 인력",
+        "책임자 능력",
+        "안전관리",
+        "비상대책",
+        "누적 실적",
+        "수행 실적",
+        "기업경영상태",
+        "신용평가등급",
+        "제안가격",
+        "가격평가",
+        "인공지능",
+        "AI",
+        "교육과정",
+        "실적",
+        "전문 강사진",
+        "강사 보유",
+        "전문 인력",
+        "교육 운영 체계",
+        "단일업체",
+        "공동수급 불가",
+        "컨소시엄 제한",
+        "부정당업자",
+        "국가계약법"
+      ],
+      "target_audience": [
+        "순천향대학교 학생 및 참여인원 약 20명"
+      ],
+      "participant_capacity": null,
+      "delivery_format": [
+        "이론/실습 병행 현장 중심 교육",
+        "프로젝트 기반 학습",
+        "오프라인 교육 (순천향대학교 인간사랑관)"
+      ],
+      "education_hours": null,
+      "schedule": [],
+      "required_roles": [
+        "교육과정 기획 및 지원",
+        "강사(주강사, 보조강사) 및 현업 전문가 섭외",
+        "교육 인프라(클라우드 계정 및 크레딧) 지원 및 모니터링",
+        "전담 인력 배정 및 학생 관리",
+        "수강생 평가 및 공인 자격증 취득 모의평가 지원",
+        "홍보물 및 교재 제작"
+      ],
+      "instructor_requirements": {
+        "required_experience": [
+          "최근 3년 이내 클라우드 및 인공지능(AI)분야 교육과정을 수행한 실적이 있는 업체"
+        ],
+        "required_certifications": [
+          "클라우드 또는 인공지능(AI)분야 전문 강사진 2명 이상을 보유한 업체(재직증명서, 강사확인서, 관련 자격증 등으로 증빙 가능)"
+        ],
+        "required_vendor_credentials": [],
+        "similar_project_experience": []
+      },
+      "curriculum_requirements": [],
+      "operational_requirements": [],
+      "practical_project_requirements": [
+        "총 50시간의 교육과정 기획 및 운영",
+        "클라우드·AI 전문 강사진 배정 및 지원",
+        "교육용 클라우드 플랫폼 계정/크레딧 운영 및 관리",
+        "온라인 협업 플랫폼 활용 학생 관리",
+        "교재 및 홍보물(현수막, 포스터, 카드뉴스 등) 제작",
+        "결과 보고서 제출",
+        "교육과정 기획 및 지원",
+        "강사(주강사, 보조강사) 및 현업 전문가 섭외",
+        "교육 인프라(클라우드 계정 및 크레딧) 지원 및 모니터링",
+        "전담 인력 배정 및 학생 관리",
+        "수강생 평가 및 공인 자격증 취득 모의평가 지원",
+        "홍보물 및 교재 제작"
+      ],
+      "assessment_requirements": [
+        "사업의 기획력 및 적합성 (교육 취지에 맞는 구성 및 기획, 교육 내용의 우수성)",
+        "강사진 구성 능력 (클라우드·AI 분야 공인 자격 또는 전문성을 보유한 강사진 구성)",
+        "제안업체 전문성 및 조직역량 (조직 및 인원, 책임자의 능력, 전담 인력 구성 및 투입 규모)",
+        "안전관리 및 계획 (참여인원 안전관리 대책, 기타 비상시 대책)",
+        "최근 3년 실적의 수준 (2024~2026년 누적 실적 평가)",
+        "기업경영상태 (기업신용평가 등급에 의함)",
+        "제안가격의 적정성 (정량평가)"
+      ],
+      "outcome_requirements": [
+        "안전하고 책임 있는 AI 활용 역량 배양",
+        "실무 적용 역량 및 문제 해결/협업 역량 강화",
+        "클라우드·AI 분야 자격 취득 및 취업 경쟁력 강화"
+      ]
+    },
+    "extensions": {
+      "source_task_order_id": "9c66c411-5b62-4d1d-9973-3d2992266302",
+      "normalized_qualifications": [
+        {
+          "category": "실적 요건",
+          "description": "최근 3년 이내 클라우드 및 인공지능(AI)분야 교육과정을 수행한 실적이 있는 업체",
+          "is_mandatory": true,
+          "keywords": [
+            "클라우드",
+            "인공지능",
+            "AI",
+            "교육과정",
+            "실적"
+          ]
+        },
+        {
+          "category": "인력 요건",
+          "description": "클라우드 또는 인공지능(AI)분야 전문 강사진 2명 이상을 보유한 업체(재직증명서, 강사확인서, 관련 자격증 등으로 증빙 가능)",
+          "is_mandatory": true,
+          "keywords": [
+            "전문 강사진",
+            "클라우드",
+            "인공지능",
+            "강사 보유"
+          ]
+        },
+        {
+          "category": "운영 체계",
+          "description": "제안하는 교육과정의 운영에 필요한 전문 인력 및 교육 운영 체계를 갖춘 업체",
+          "is_mandatory": true,
+          "keywords": [
+            "전문 인력",
+            "교육 운영 체계"
+          ]
+        },
+        {
+          "category": "참여 제한",
+          "description": "공동 수급(컨소시엄)은 허용하지 않으며 단일업체여야 함",
+          "is_mandatory": true,
+          "keywords": [
+            "단일업체",
+            "공동수급 불가",
+            "컨소시엄 제한"
+          ]
+        },
+        {
+          "category": "법적 요건",
+          "description": "국가를 당사자로 하는 계약에 관한 법률 시행령 제76조에 의한 부정당업자가 아닌 자",
+          "is_mandatory": true,
+          "keywords": [
+            "부정당업자",
+            "국가계약법"
+          ]
+        }
+      ],
+      "normalized_evaluation_criteria": [
+        {
+          "category": "기술평가(정성)",
+          "description": "사업의 기획력 및 적합성 (교육 취지에 맞는 구성 및 기획, 교육 내용의 우수성)",
+          "weight": 20,
+          "keywords": [
+            "기획력",
+            "적합성",
+            "교육 내용",
+            "우수성"
+          ]
+        },
+        {
+          "category": "기술평가(정성)",
+          "description": "강사진 구성 능력 (클라우드·AI 분야 공인 자격 또는 전문성을 보유한 강사진 구성)",
+          "weight": 15,
+          "keywords": [
+            "강사진 구성",
+            "공인 자격",
+            "전문성"
+          ]
+        },
+        {
+          "category": "기술평가(정성)",
+          "description": "제안업체 전문성 및 조직역량 (조직 및 인원, 책임자의 능력, 전담 인력 구성 및 투입 규모)",
+          "weight": 15,
+          "keywords": [
+            "전문성",
+            "조직역량",
+            "전담 인력",
+            "책임자 능력"
+          ]
+        },
+        {
+          "category": "기술평가(정성)",
+          "description": "안전관리 및 계획 (참여인원 안전관리 대책, 기타 비상시 대책)",
+          "weight": 10,
+          "keywords": [
+            "안전관리",
+            "비상대책"
+          ]
+        },
+        {
+          "category": "기술평가(정량)",
+          "description": "최근 3년 실적의 수준 (2024~2026년 누적 실적 평가)",
+          "weight": 10,
+          "keywords": [
+            "누적 실적",
+            "수행 실적"
+          ]
+        },
+        {
+          "category": "기술평가(정량)",
+          "description": "기업경영상태 (기업신용평가 등급에 의함)",
+          "weight": 10,
+          "keywords": [
+            "기업경영상태",
+            "신용평가등급"
+          ]
+        },
+        {
+          "category": "가격평가",
+          "description": "제안가격의 적정성 (정량평가)",
+          "weight": 20,
+          "keywords": [
+            "제안가격",
+            "가격평가"
+          ]
+        }
+      ],
+      "overview": {
+        "section_titles": [
+          "나. 교육개요",
+          "추진내용",
+          "추진내용 | 작업 프로세스",
+          "교육 목적",
+          "교육개요",
+          "과업내용",
+          "세부 수행 내용(안)"
+        ],
+        "summary": "순천향대학교에서 약 20명의 학생을 대상으로 이론과 실습 및 프로젝트 기반 학습을 병행하여 클라우드 및 AI 전문 실무 역량을 배양하고, 자격 취득과 취업을 연계 지원하는 50시간 규모의 교육과정을 기획·운영하는 용역",
+        "core_topics": [
+          "데이터 주권(소버린 AI)",
+          "클라우드",
+          "인공지능(AI)",
+          "AI 도구"
+        ],
+        "target_audience": [
+          "순천향대학교 학생 및 참여인원 약 20명"
+        ],
+        "delivery_formats": [
+          "이론/실습 병행 현장 중심 교육",
+          "프로젝트 기반 학습",
+          "오프라인 교육 (순천향대학교 인간사랑관)"
+        ],
+        "required_roles": [
+          "교육과정 기획 및 지원",
+          "강사(주강사, 보조강사) 및 현업 전문가 섭외",
+          "교육 인프라(클라우드 계정 및 크레딧) 지원 및 모니터링",
+          "전담 인력 배정 및 학생 관리",
+          "수강생 평가 및 공인 자격증 취득 모의평가 지원",
+          "홍보물 및 교재 제작"
+        ],
+        "scope": [
+          "총 50시간의 교육과정 기획 및 운영",
+          "클라우드·AI 전문 강사진 배정 및 지원",
+          "교육용 클라우드 플랫폼 계정/크레딧 운영 및 관리",
+          "온라인 협업 플랫폼 활용 학생 관리",
+          "교재 및 홍보물(현수막, 포스터, 카드뉴스 등) 제작",
+          "결과 보고서 제출"
+        ],
+        "expected_outcomes": [
+          "안전하고 책임 있는 AI 활용 역량 배양",
+          "실무 적용 역량 및 문제 해결/협업 역량 강화",
+          "클라우드·AI 분야 자격 취득 및 취업 경쟁력 강화"
+        ],
+        "preferred_experience": [],
+        "source_excerpt": "나. 교육개요\n1) 사 업 명 : 클라우드 및 AI 전문 교육과정 운영\n\n추진내용\n1주 2주 3주 4주 5주 6주\n\n추진내용 | 작업 프로세스\n1주 | 2주 | 3주 | 4주 | 5주 | 6주",
+        "matching_rules": [
+          {
+            "key": "core_topics",
+            "label": "핵심 교육 주제",
+            "values": [
+              "데이터 주권(소버린 AI)",
+              "클라우드",
+              "인공지능(AI)",
+              "AI 도구"
+            ]
+          },
+          {
+            "key": "target_audience",
+            "label": "교육 대상",
+            "values": [
+              "순천향대학교 학생 및 참여인원 약 20명"
+            ]
+          },
+          {
+            "key": "delivery_formats",
+            "label": "운영 방식",
+            "values": [
+              "이론/실습 병행 현장 중심 교육",
+              "프로젝트 기반 학습",
+              "오프라인 교육 (순천향대학교 인간사랑관)"
+            ]
+          },
+          {
+            "key": "required_roles",
+            "label": "요구 역할",
+            "values": [
+              "교육과정 기획 및 지원",
+              "강사(주강사, 보조강사) 및 현업 전문가 섭외",
+              "교육 인프라(클라우드 계정 및 크레딧) 지원 및 모니터링",
+              "전담 인력 배정 및 학생 관리",
+              "수강생 평가 및 공인 자격증 취득 모의평가 지원",
+              "홍보물 및 교재 제작"
+            ]
+          },
+          {
+            "key": "scope",
+            "label": "업무 범위",
+            "values": [
+              "총 50시간의 교육과정 기획 및 운영",
+              "클라우드·AI 전문 강사진 배정 및 지원",
+              "교육용 클라우드 플랫폼 계정/크레딧 운영 및 관리",
+              "온라인 협업 플랫폼 활용 학생 관리",
+              "교재 및 홍보물(현수막, 포스터, 카드뉴스 등) 제작",
+              "결과 보고서 제출"
+            ]
+          },
+          {
+            "key": "expected_outcomes",
+            "label": "기대 성과",
+            "values": [
+              "안전하고 책임 있는 AI 활용 역량 배양",
+              "실무 적용 역량 및 문제 해결/협업 역량 강화",
+              "클라우드·AI 분야 자격 취득 및 취업 경쟁력 강화"
+            ]
+          }
+        ]
+      }
+    },
+    "evidence": [
+      {
+        "source_document_id": "task-order:9c66c411-5b62-4d1d-9973-3d2992266302",
+        "page": null,
+        "section": "normalized task-order requirements",
+        "quote": "제 안 요 청 서\n클라우드 및 AI 전문 교육과정 운영 용역 입찰\n2026. 6.\n※ 본 자료는 제안내용의 설명을 위한 배포자료로, 이외 목적으로 무단복제, 전달 및 사용하는 행위를 금함.\nI 입찰 내용\n1. 입 찰 명 : 클라우드 및 AI 전문 교육과정 운영 용역 입찰\n2. 사업기간 : 계약체결일 ~ 2026.8.31.까지\n3. 배정예산 : 금 50,000,000원(금오천만원) 내(부가세 포함)\n4. 입찰개요\n가. 교육 목적\n1) 데이터 주권(소버린 AI)의 중요성을 이해하고, 기업 핵심 데이터의 안전한 활용 역량을 갖춘 인재 양성\n2) AI 도구를 활용해 업무 효율을 높이는 실무 기초 역량 배양\n3) 프로젝트 기반 학습을 통해 AI 활용 역량을 강화하고, 클라우드·AI 분야 자격 취득과 취업 연계를\n지원하는 전주기적 교육체계를 구축\n나. 교육개요\n1) 사 업 명 : 클라우드 및 AI 전문 교육과정 운영\n2) 교육기간 : 2026.7.15.(수) ~ 7.29.(수)\n3) 진행장소 : 순천향대학교 인간사랑관 2층 임베디드 실습실 6205호\n4) 추진방향\n가) 데이터 주권 이해를 바탕으로 안전하고 책임 있는 AI 활용 역량 배양\n나) 이론과 실습을 병행하는 현장 중심 교육을 통해 클라우드·AI 기술의 실무 적용 역량 제고\n다) 프로젝트 기반 학습을 통한 문제 해결 능력 및 협업 역량 강화\n라) 클라우드·AI 분야 자격 취득 지원 및 산업체 연계를 통한 취업 경쟁력 강화\n5) 참여인원 : 약 20명\n6) 주최/주관 : 순천향대학교/AI의료융합혁신교육원 학사지원팀\n다. 과업내용\n1) 교육 지원 전반사항\n가) 교육과정 기획·지원\n- 클라우드·AI 교육과정에 적합한 이론/실습 병행 현장형 교육과정 기획 및 제안\n- 2026.7.15.~7.29. 총 50시간 교육 일정 운영, 기획 및 지원\n나) 강사 섭외 및 지원\n- 클라우드 및 AI 활용 교육 강사 섭외 및 교육 진행(주강사, 보조강사)\n- 클라우드·AI 분야 전문 강사진 포함 지원\n- 현업 전문가 특강(현직자 특강)",
+        "confidence": 1.0
+      }
+    ],
+    "review_status": "unreviewed"
+  },
+  "instructor": {
+    "instructor_id": "instructor-93",
+    "profile_version": "db-c9edb6201a39",
+    "display_name": "조영태",
+    "expertise_tags": [
+      "C",
+      "C++",
+      "Java",
+      "JSP",
+      "Servlet",
+      "Android",
+      "Oracle",
+      "MS-SQL",
+      "MySQL",
+      "ASP",
+      "ASP.NET",
+      "HTML5",
+      "JavaScript",
+      "Python",
+      "Spring Framework",
+      "Linux",
+      "Windows Server",
+      "컴퓨터공학",
+      "데이터베이스",
+      "웹 프로그래밍",
+      "안드로이드 앱 개발",
+      "인공지능 및 빅데이터",
+      "데이터분석",
+      "금융",
+      "인공지능",
+      "ICT",
+      "데이터사이언스",
+      "자바",
+      "풀스택",
+      "웹서비스",
+      "K-Digital",
+      "Framework",
+      "디지털컨버전스",
+      "시각화",
+      "파이썬",
+      "응용SW",
+      "KOSA",
+      "C언어",
+      "자료구조",
+      "프로그래밍",
+      "안드로이드",
+      "SQLite",
+      "영한사전",
+      "게임",
+      "정보화",
+      "교육",
+      "MVC",
+      "웹사이트",
+      "자바빈",
+      "회원관리",
+      "네트워크",
+      "웹프로그래밍",
+      "컴퓨터구조",
+      "정보처리",
+      "웹마스터",
+      "홈페이지",
+      "알고리즘",
+      "원격교육",
+      "화이트보드"
+    ],
+    "summary": "20년 이상 경력의 IT 및 AI/빅데이터 전문 강사",
+    "delivery_modes": [],
+    "availability_notes": null,
+    "vendor_experience": [
+      "경북대학교 - SQLite를 이용한 영한사전 개발 프로젝트(안드로이드)",
+      "경북대학교 - 기억력 게임 프로젝트(안드로이드)",
+      "카이스트 EMDEC - 모델2와 MVC패턴을 이용한 웹사이트 개발 프로젝트(JAVA)",
+      "카이스트 EMDEC - 자바빈을 활용한 회원관리시스템 프로젝트(JAVA)",
+      "계명대학교 - 화이트보드를 이용한 원격교육시스템 프로젝트(JAVA)",
+      "㈜아이코어이앤씨 - 기업교육팀 전임강사 (웹 분야 강의)",
+      "대구디자인 - 개발팀 프로그래머 (설계 및 구축, 웹사이트 구축, 웹프로그래밍)",
+      "제로원컴퓨터학원 - 제로원컴퓨터학원 원장 (운영 및 강의)"
+    ],
+    "vendor_certifications": [
+      "1종 보통 운전 면허증 취득",
+      "직업능력개발훈련교사자격증(정보처리 3급) 취득",
+      "정교사 2급 자격증 취득",
+      "정보처리기사 1급 자격증 취득"
+    ],
+    "teaching_items": [
+      {
+        "topic": "IM뱅크 데이터 분석 전문가 양성과정",
+        "organization": "IM뱅크",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 2066",
+            "quote": "IM뱅크 데이터 분석 전문가 양성과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "ICT 인공지능 중급과정 강의",
+        "organization": "ICT인공지능교육센터",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 2067",
+            "quote": "ICT 인공지능 중급과정 강의",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "데이터 사이언스 강의",
+        "organization": "메디치 교육센터",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 2068",
+            "quote": "데이터 사이언스 강의",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "자바 풀스택 과정 강의",
+        "organization": "삼성멀티캠퍼스",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 2069",
+            "quote": "자바 풀스택 과정 강의",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "인공지능웹서비스 전문가과정",
+        "organization": "광주인공지능사관학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 2070",
+            "quote": "인공지능웹서비스 전문가과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "대구 Kdigital 인공지능 과정",
+        "organization": "멀티캠퍼스",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 2071",
+            "quote": "대구 Kdigital 인공지능 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "ICT 인공지능 기본/중급과정",
+        "organization": "멀티캠퍼스",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 2072",
+            "quote": "ICT 인공지능 기본/중급과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "디지털 컨버전스 기반 Framework 전문 개발자 양성과정",
+        "organization": "비트캠프",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 2073",
+            "quote": "디지털 컨버전스 기반 Framework 전문 개발자 양성과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "데이터 분석 및 시각화",
+        "organization": "기상기후인재개발원",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 2074",
+            "quote": "데이터 분석 및 시각화",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "파이썬 기반 인공지능 전문기술과정",
+        "organization": "한성대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 2075",
+            "quote": "파이썬 기반 인공지능 전문기술과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "KOSA 응용SW엔지니어 양성과정",
+        "organization": "한국소프트웨어산업협회",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 2076",
+            "quote": "KOSA 응용SW엔지니어 양성과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "사원연수 자료구조 In C강의",
+        "organization": "LG전자",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 2077",
+            "quote": "사원연수 자료구조 In C강의",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "신입사원 Java Programming",
+        "organization": "삼성전자",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 2078",
+            "quote": "신입사원 Java Programming",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "차세대 시스템 사원연수 Java/Jsp/Oracle 교육",
+        "organization": "현대라이프",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 2079",
+            "quote": "차세대 시스템 사원연수 Java/Jsp/Oracle 교육",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Android For JAVA Programming",
+        "organization": "경북대학교 IT융복합센터",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 2080",
+            "quote": "Android For JAVA Programming",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "학교별 정보화 전문요원과정",
+        "organization": "대구시교육청",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 2081",
+            "quote": "학교별 정보화 전문요원과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "컴퓨터공학부 초빙교수 강의 (네트워크프로그래밍, 웹프로그래밍, 컴퓨터구조)",
+        "organization": "경일대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 2082",
+            "quote": "컴퓨터공학부 초빙교수 강의 (네트워크프로그래밍, 웹프로그래밍, 컴퓨터구조)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "C, C++, 정보처리, 웹마스터 과정 강의",
+        "organization": "제로원컴퓨터학원",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 2084",
+            "quote": "C, C++, 정보처리, 웹마스터 과정 강의",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "행정전산과 출강 (홈페이지 제작, 정보처리, 알고리즘)",
+        "organization": "대구보건대학",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 2083",
+            "quote": "행정전산과 출강 (홈페이지 제작, 정보처리, 알고리즘)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "C, C++, 정보처리 강의",
+        "organization": "현대전산직업전문학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 2085",
+            "quote": "C, C++, 정보처리 강의",
+            "confidence": 1.0
+          }
+        ]
+      }
+    ],
+    "project_items": [
+      {
+        "title": "SQLite를 이용한 영한사전 개발 프로젝트(안드로이드)",
+        "client_organization": "경북대학교",
+        "role": "개발자",
+        "start_date": "2011",
+        "end_date": "2011",
+        "keywords": [
+          "안드로이드",
+          "SQLite",
+          "영한사전"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 2062",
+            "quote": "SQLite를 이용한 영한사전 개발 프로젝트(안드로이드)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "기억력 게임 프로젝트(안드로이드)",
+        "client_organization": "경북대학교",
+        "role": "개발자",
+        "start_date": "2011",
+        "end_date": "2011",
+        "keywords": [
+          "안드로이드",
+          "게임"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 2061",
+            "quote": "기억력 게임 프로젝트(안드로이드)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "모델2와 MVC패턴을 이용한 웹사이트 개발 프로젝트(JAVA)",
+        "client_organization": "카이스트 EMDEC",
+        "role": "개발자",
+        "start_date": "2007",
+        "end_date": "2007",
+        "keywords": [
+          "JAVA",
+          "MVC",
+          "웹사이트"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 2064",
+            "quote": "모델2와 MVC패턴을 이용한 웹사이트 개발 프로젝트(JAVA)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "자바빈을 활용한 회원관리시스템 프로젝트(JAVA)",
+        "client_organization": "카이스트 EMDEC",
+        "role": "개발자",
+        "start_date": "2007",
+        "end_date": "2007",
+        "keywords": [
+          "JAVA",
+          "자바빈",
+          "회원관리"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 2063",
+            "quote": "자바빈을 활용한 회원관리시스템 프로젝트(JAVA)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "화이트보드를 이용한 원격교육시스템 프로젝트(JAVA)",
+        "client_organization": "계명대학교",
+        "role": "개발자",
+        "start_date": "1998",
+        "end_date": "1998",
+        "keywords": [
+          "JAVA",
+          "원격교육",
+          "화이트보드"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 2065",
+            "quote": "화이트보드를 이용한 원격교육시스템 프로젝트(JAVA)",
+            "confidence": 1.0
+          }
+        ]
+      }
+    ],
+    "work_experience_items": [
+      {
+        "organization": "㈜아이코어이앤씨",
+        "summary": "기업교육팀 전임강사 (웹 분야 강의)",
+        "start_date": "2010-10-01",
+        "end_date": "재직중",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 924",
+            "quote": "기업교육팀 전임강사 (웹 분야 강의)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "organization": "대구디자인",
+        "summary": "개발팀 프로그래머 (설계 및 구축, 웹사이트 구축, 웹프로그래밍)",
+        "start_date": "2009-07-01",
+        "end_date": "2011-11-01",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 925",
+            "quote": "개발팀 프로그래머 (설계 및 구축, 웹사이트 구축, 웹프로그래밍)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "organization": "제로원컴퓨터학원",
+        "summary": "제로원컴퓨터학원 원장 (운영 및 강의)",
+        "start_date": "2000-02-01",
+        "end_date": "2003-11-01",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 926",
+            "quote": "제로원컴퓨터학원 원장 (운영 및 강의)",
+            "confidence": 1.0
+          }
+        ]
+      }
+    ],
+    "certifications": [
+      {
+        "name": "1종 보통 운전 면허증 취득",
+        "issuer": "대구지방경찰청",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 921",
+            "quote": "1종 보통 운전 면허증 취득",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "직업능력개발훈련교사자격증(정보처리 3급) 취득",
+        "issuer": "대구지방노동청",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 920",
+            "quote": "직업능력개발훈련교사자격증(정보처리 3급) 취득",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "정교사 2급 자격증 취득",
+        "issuer": "계명대학교",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 919",
+            "quote": "정교사 2급 자격증 취득",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "정보처리기사 1급 자격증 취득",
+        "issuer": "한국산업인력공단",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 918",
+            "quote": "정보처리기사 1급 자격증 취득",
+            "confidence": 1.0
+          }
+        ]
+      }
+    ],
+    "source_document_ids": [
+      "instructor-source:내부 강사 정보.xlsx",
+      "instructor-db:93"
+    ],
+    "extensions": {
+      "other_records": [
+        {
+          "category": "저서",
+          "detail": "TCP IP 프로토콜 및 소켓프로그래밍 교재 출간",
+          "organization": "경일대학교",
+          "start_date": "2008-02-01",
+          "end_date": null
+        },
+        {
+          "category": "저서",
+          "detail": "정보처리기사 기본서 출간",
+          "organization": "제로원컴퓨터학원",
+          "start_date": null,
+          "end_date": null
+        }
+      ]
+    },
+    "evidence": [
+      {
+        "source_document_id": "instructor-db:93",
+        "page": null,
+        "section": "instructors",
+        "quote": "20년 이상 경력의 IT 및 AI/빅데이터 전문 강사",
+        "confidence": 1.0
+      }
+    ],
+    "review_status": "unreviewed"
+  }
+}

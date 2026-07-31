@@ -1,0 +1,450 @@
+{
+  "run_id": "20260726T000936Z_c921372f02c3",
+  "final_score": 56.5,
+  "final_status": "on_hold",
+  "reasons": [
+    "Code validation found an invalid citation or an unmet exact mandatory condition.",
+    "A/B score difference: 13.0",
+    "Evidence coverage: 100%",
+    "Verifier verdict: FAIL",
+    "Code grounding verdict: FAIL",
+    "Citation accuracy: 67%"
+  ],
+  "analysis": {
+    "total_score": 63.0,
+    "score_items": [
+      {
+        "criterion": "topic_match",
+        "score": 20.0,
+        "max_score": 35.0,
+        "rationale": "강사는 파이썬 머신러닝, 생성형 AI, 데이터 분석 등 다양한 인공지능 관련 과목의 강의 이력을 보유하고 있습니다. 그러나 본 사업에서 핵심 교육 주제로 요구하는 AWS 클라우드, AWS SageMaker, Bedrock 활용 및 AWS Skill Builder 연계 등 클라우드 아키텍처 및 AWS 기반 AI 기술 전문성을 뒷받침할 만한 경력이나 강의 이력은 다소 부족합니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:6bdd3cb4-1844-4eea-818c-efb1047a9c53",
+            "page": null,
+            "section": "chunk 3",
+            "quote": "AWS 클라우드\n･ AWS 클라우드 개념, 서비스, 보안, 컴퓨팅, 데이터베이스, 스토리지 등 AWS 학습\n･ AWS 아키텍쳐 설계 학습\n･ SAA 자격증 과정(Architecting on AWS) 학습\nML/DL\n･ 기계 학습(ML) 및 딥러닝 개념 학습\n･ Amazon SageMaker 및 Bedrock 활용법 학습\n･ 데이터 분석 및 모델 배포 실습\n･ AI/ML 필수과정 이수 후 AP 자격증 취득 연계\n생성형 AI\n･ Generative AI 개념\n･ AWS 기반 애플리케이션 설계 학습\n･ 파운데이션 모델 활용\n데이터 분석",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": [
+          {
+            "source_document_id": "rag:instructor-10:db-054cece0eef2",
+            "page": null,
+            "section": "chunk 1",
+            "quote": "\"topic\": \"Python 머신러닝 모델링과 데이터 분석 과정\"",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "criterion": "teaching_depth",
+        "score": 20.0,
+        "max_score": 30.0,
+        "rationale": "강사는 파이썬 및 AI/IoT 분야에서 9년 이상의 풍부한 교육 경력을 가지고 있으며, 다수의 장기 교육 과정(개발자 양성 과정 등)을 운영한 역량이 확인됩니다. 다만, 이번 과업의 특성인 AWS 인프라와 AWS Skill Builder를 연계한 300시간 이상의 장기 실습 및 프로젝트 중심 교육을 전담하기에는 AWS 실습 강의 경력이 상대적으로 한정적입니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:6bdd3cb4-1844-4eea-818c-efb1047a9c53",
+            "page": null,
+            "section": "chunk 3",
+            "quote": "- AI․빅데이터 기술 전문가로서 본 과정에 관한 이론 및 실습교육이 가능한 전문지식을 보유하고, 실무 및 강의경력이 풍부한 강사를 선발하여 수준 높은 교육과정을 진행할 수 있어야 함",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": [
+          {
+            "source_document_id": "rag:instructor-10:db-054cece0eef2",
+            "page": null,
+            "section": "chunk 0",
+            "quote": "\"summary\": \"파이썬 및 AI/IoT 분야 9년 경력의 전문 코딩 강사\"",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "criterion": "audience_fit",
+        "score": 13.0,
+        "max_score": 15.0,
+        "rationale": "본 과정의 주 교육 대상은 대학(원)생 및 미취업 청년입니다. 강사는 서울경제진흥원의 청년취업사관학교 인공지능 개발자 과정, 세종대학교, 경북대학교 등 대학생 및 구직 청년층을 대상으로 한 AI/데이터 교육 실적을 풍부하게 보유하고 있어 대상자 눈높이에 맞춘 교육 설계 및 멘토링이 가능합니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:6bdd3cb4-1844-4eea-818c-efb1047a9c53",
+            "page": null,
+            "section": "chunk 1",
+            "quote": "나.\n교육대상\n∙ 만 39세 이하 경기도 소재 대학(원) 재학생 및 졸업생\n∙ 만 39세 이하 도내 거주 미취업 청년 및 재취업 희망자",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": [
+          {
+            "source_document_id": "rag:instructor-10:db-054cece0eef2",
+            "page": null,
+            "section": "chunk 6",
+            "quote": "청년취업사관학교 GoogleCloud 기반 인공지능 개발자 과정 3기",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "criterion": "career_and_certification",
+        "score": 5.0,
+        "max_score": 15.0,
+        "rationale": "과업이행요청서에서는 AWS 클라우드 및 AWS Skill Builder 교육 시 이를 증빙할 수 있는 경력 및 AWS 관련 공인 자격증 이력 제출을 필수로 제시하고 있습니다. 그러나 강사는 데이터분석준전문가(ADsP), COS Pro, 정보처리산업기사 등의 자격증은 보유하고 있으나, AWS 관련 공인 자격증(AWS SAA 등) 및 전문 자격 이력이 확인되지 않습니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:6bdd3cb4-1844-4eea-818c-efb1047a9c53",
+            "page": null,
+            "section": "chunk 3",
+            "quote": "- AWS 클라우드, AWS Skill Builder 활용 교육의 경우 AWS Skill Builder 강의가 가능한 전문 강사(경력, AWS 자격증 등 이력 제출)",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": [
+          {
+            "source_document_id": "rag:instructor-10:db-054cece0eef2",
+            "page": null,
+            "section": "chunk 1",
+            "quote": "\"vendor_certifications\": [\n\"데이터분석준전문가(ADsP) 최종합격\",\n\"COS Pro(Python) 1급 최종합격\",\n\"정보처리산업기사 최종합격\"\n]",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "criterion": "evidence_completeness",
+        "score": 5.0,
+        "max_score": 5.0,
+        "rationale": "모든 평가 항목에 대하여 과업이행요청서 및 강사 프로필 데이터에 근거한 객관적인 증빙 데이터와 인용구를 누락 없이 매칭하여 평가를 진행하였습니다.",
+        "project_evidence": [],
+        "instructor_evidence": []
+      }
+    ],
+    "recommendation_reasons": [
+      "9년간의 풍부한 코딩 및 인공지능/머신러닝 이론 및 실습 교육 노하우 보유",
+      "청년취업사관학교 및 대학생 대상 다수의 장기 교육 과정을 이끌며 뛰어난 대상 적합성 확보",
+      "데이터 분석(ADsP 자격 보유) 및 파이썬 프로그래밍 실습 교육에 강점을 지님"
+    ],
+    "gaps": [
+      "AWS 공인 자격증(SAA: Solution Architect Associate 등) 미보유",
+      "AWS Skill Builder를 활용한 공식 교육 및 프로젝트 가이드 경험 부재"
+    ],
+    "risks": [
+      "과업에 명시된 필수 조건인 AWS 공인 자격증이 없어 주강사 배치 시 자격 요건 미달 리스크가 존재함",
+      "본 과정의 실무 프로젝트인 AWS Skill Builder 활용 교육 및 SAA 자격증 취득 대비 과정을 독자적으로 수행하기 어려우며, 별도의 AWS 전문 강사와의 협업 또는 보조적 역할 수행이 필요할 수 있음"
+    ],
+    "required_conditions_passed": false,
+    "required_condition_notes": [
+      "본 과업에서 명시한 'AWS 클라우드 및 AWS Skill Builder 활용 교육이 가능한 전문 강사(AWS 자격증 필수 제출)' 조건을 충족하지 못함"
+    ]
+  },
+  "verification": {
+    "independent_score": 50.0,
+    "verdict": "FAIL",
+    "evidence_coverage": 1.0,
+    "issues": [
+      {
+        "severity": "high",
+        "category": "required_condition",
+        "description": "프로젝트 요구사항에서 AWS 클라우드 교육 강사의 경우 AWS 자격증 제출이 필수적이나, 제안된 강사는 AWS 관련 자격증을 보유하고 있지 않으며 취득 증빙이 없습니다.",
+        "related_criterion": "career_and_certification"
+      },
+      {
+        "severity": "high",
+        "category": "overclaim",
+        "description": "본 과업은 AWS 클라우드와 AWS Skill Builder 기반의 AI 전문인력 양성이나, 강사의 주요 경력은 구글 클라우드(Google Cloud) 기반 AI 개발자 과정에 편중되어 있어 과업 핵심 주제와 부합하지 않습니다.",
+        "related_criterion": "topic_match"
+      }
+    ],
+    "corrected_score_items": [
+      {
+        "criterion": "topic_match",
+        "score": 15.0,
+        "max_score": 35.0,
+        "rationale": "본 과업은 AWS 클라우드, AWS Skill Builder, SAA 자격증 취득 및 AWS 기반 AI/ML을 주요 주제로 하나, 강사의 강의 이력은 주로 구글 클라우드(Google Cloud) 기반 AI 개발자 과정 및 파이썬 데이터 분석에 집중되어 있습니다. AWS 관련 강의는 Flask 활용 웹페이지 배포 수준에 그쳐 과업 주제와의 매치도가 매우 낮습니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:6bdd3cb4-1844-4eea-818c-efb1047a9c53",
+            "page": null,
+            "section": "chunk 3",
+            "quote": "AWS 클라우드, AWS Skill Builder 활용 교육의 경우 AWS Skill Builder 강의가 가능한 전문 강사(경력, AWS 자격증 등 이력 제출)",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 168",
+            "quote": "flask 활용 백엔드 과정 (AWS, Flask 사용한 웹페이지 배포)",
+            "confidence": 1.0
+          },
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 171",
+            "quote": "청년취업사관학교 GoogleCloud 기반 인공지능 개발자 과정 3기",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "criterion": "teaching_depth",
+        "score": 15.0,
+        "max_score": 30.0,
+        "rationale": "강사는 9년 경력의 코딩 강사로 청년취업사관학교 등에서 인공지능 개발자 과정을 다수 진행하였으나, 본 과업이 요구하는 AWS 아키텍처 설계, Amazon SageMaker 및 Bedrock 활용, SAA 자격증 취득 연계 등 고도의 AWS 기반 AI/ML 강의 깊이를 검증할 수 있는 이력이 부재합니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:6bdd3cb4-1844-4eea-818c-efb1047a9c53",
+            "page": null,
+            "section": "chunk 3",
+            "quote": "Amazon SageMaker 및 Bedrock 활용법 학습\n･ 데이터 분석 및 모델 배포 실습\n･ AI/ML 필수과정 이수 후 AP 자격증 취득 연계",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 176",
+            "quote": "Cloud 기반 Multi Modal AI 개발자 양성 과정 With Google Cloud",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "criterion": "audience_fit",
+        "score": 13.0,
+        "max_score": 15.0,
+        "rationale": "과업 대상인 대학생 및 취업 준비 청년층(만 39세 이하)에 부합하는 청년취업사관학교(SBA) 인공지능 개발자 과정 및 다수 대학교(세종대, 성균관대 등) 특강 경험을 풍부하게 보유하고 있어 대상 적합성은 매우 우수합니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:6bdd3cb4-1844-4eea-818c-efb1047a9c53",
+            "page": null,
+            "section": "chunk 2",
+            "quote": "대상 : 만 39세 이하 도내 거주 미취업 청년 및 재취업 희망자, 만 39세 이하 경기도 소재 대학(원) 재학생 및 졸업생",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 171",
+            "quote": "청년취업사관학교 GoogleCloud 기반 인공지능 개발자 과정 3기",
+            "confidence": 1.0
+          },
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 181",
+            "quote": "Python 머신러닝 모델링과 데이터 분석 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "criterion": "career_and_certification",
+        "score": 3.0,
+        "max_score": 15.0,
+        "rationale": "과업 수행을 위해 AWS 자격증(SAA 등) 제출이 필수 요건으로 지정되어 있으나, 강사는 데이터분석준전문가(ADsP), COS Pro 1급, 정보처리산업기사 자격만 보유하고 있으며 AWS 관련 공인 자격증이 전혀 없습니다. 필수 자격 요건을 충족하지 못합니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:6bdd3cb4-1844-4eea-818c-efb1047a9c53",
+            "page": null,
+            "section": "chunk 3",
+            "quote": "AWS 클라우드, AWS Skill Builder 활용 교육의 경우 AWS Skill Builder 강의가 가능한 전문 강사(경력, AWS 자격증 등 이력 제출)",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 80",
+            "quote": "데이터분석준전문가(ADsP) 최종합격",
+            "confidence": 1.0
+          },
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 82",
+            "quote": "COS Pro(Python) 1급 최종합격",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "criterion": "evidence_completeness",
+        "score": 4.0,
+        "max_score": 5.0,
+        "rationale": "강사의 프로필과 강의 이력, 자격 정보 등이 상세히 제시되어 있으나, 과업의 핵심 요구 조건인 AWS 자격증 소지 여부를 증빙할 수 있는 서류가 누락되어 검증할 수 없습니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:6bdd3cb4-1844-4eea-818c-efb1047a9c53",
+            "page": null,
+            "section": "chunk 3",
+            "quote": "AWS 클라우드, AWS Skill Builder 활용 교육의 경우 AWS Skill Builder 강의가 가능한 전문 강사(경력, AWS 자격증 등 이력 제출)",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": [
+          {
+            "source_document_id": "rag:instructor-10:db-054cece0eef2",
+            "page": null,
+            "section": "chunk 0",
+            "quote": "파이썬 및 AI/IoT 분야 9년 경력의 전문 코딩 강사",
+            "confidence": 1.0
+          }
+        ]
+      }
+    ],
+    "required_conditions_passed": false
+  },
+  "grounding": {
+    "citation_accuracy": 0.6666666666666666,
+    "invalid_citation_count": 7,
+    "unsupported_positive_score_count": 0,
+    "required_condition_checks": [
+      {
+        "requirement": "AI·빅데이터 기술 전문가로서 본 과정에 관한 이론 및 실습교육이 가능한 전문지식을 보유하고, 실무 및 강의경력이 풍부한 강사 확보 필요",
+        "condition_type": "certification",
+        "status": "failed",
+        "detail": "Required credential not found in instructor profile."
+      },
+      {
+        "requirement": "AWS 클라우드, AWS Skill Builder 활용 교육의 경우 AWS Skill Builder 강의가 가능한 전문 강사(경력, AWS 자격증 등 이력 제출 필수)",
+        "condition_type": "certification",
+        "status": "failed",
+        "detail": "Required credential not found in instructor profile."
+      },
+      {
+        "requirement": "AI·빅데이터 기술 전문가로서 본 과정에 관한 이론 및 실습교육이 가능한 전문지식을 보유하고, 실무 및 강의경력이 풍부한 강사 확보 필요",
+        "condition_type": "experience",
+        "status": "not_automatically_verifiable",
+        "detail": "Experience requirements need human or model review unless a numeric rule is configured."
+      },
+      {
+        "requirement": "AWS 클라우드, AWS Skill Builder 활용 교육의 경우 AWS Skill Builder 강의가 가능한 전문 강사(경력, AWS 자격증 등 이력 제출 필수)",
+        "condition_type": "experience",
+        "status": "not_automatically_verifiable",
+        "detail": "Experience requirements need human or model review unless a numeric rule is configured."
+      }
+    ],
+    "verdict": "FAIL"
+  },
+  "rag_context": {
+    "project_evidence": [
+      {
+        "source_type": "project",
+        "evidence": {
+          "source_document_id": "task-order:6bdd3cb4-1844-4eea-818c-efb1047a9c53",
+          "page": null,
+          "section": "chunk 3",
+          "quote": "을 위해 정원의 1.25배수 이상(25명 이상) 교육생 모집\n※ 전체 교육생 중 여성 참여자 비율 50% 내외로 충족하도록 선발 권고\n∙ 교육생 선정 및 발표, 향후 진행사항 안내 등\n나.\n교육역량 확보\n∙ 강사선정\n- AI․빅데이터 기술 전문가로서 본 과정에 관한 이론 및 실습교육이 가능한 전문지식을 보유하고, 실무 및 강의경력이 풍부한 강사를 선발하여 수준 높은 교육과정을 진행할 수 있어야 함\n- AWS 클라우드, AWS Skill Builder 활용 교육의 경우 AWS Skill Builder 강의가 가능한 전문 강사(경력, AWS 자격증 등 이력 제출)\n- 참여강사는 교육품질 제고 및 교육의 질 향상을 위하여 노력하여야 함\n- 참여강사는 교육일정에 다른 강의활동, 실습 및 멘토링 등이 가능하여야 함\n- 강사 활용 계획 및 강사 POOL을 제출하여야 함\n- 각 과정별 부득이한 경우를 대비, 예비강사를 확보하여 차질 없이 교육을 운영해야 함\n- 참여강사는 참여여부가 확정된 후, 본 과업의 참여동의서와 이력서 각각 첨부하여 제출하여야 함\n∙ 교육 과정 준비\n氠瑢\n구  분\n내  용\nAWS 클라우드\n･ AWS 클라우드 개념, 서비스, 보안, 컴퓨팅, 데이터베이스, 스토리지 등 AWS 학습\n･ AWS 아키텍쳐 설계 학습\n･ SAA 자격증 과정(Architecting on AWS) 학습\nML/DL\n･ 기계 학습(ML) 및 딥러닝 개념 학습\n･ Amazon SageMaker 및 Bedrock 활용법 학습\n･ 데이터 분석 및 모델 배포 실습\n･ AI/ML 필수과정 이수 후 AP 자격증 취득 연계\n생성형 AI\n･ Generative AI 개념\n･ AWS 기반 애플리케이션 설계 학습\n･ 파운데이션 모델 활용\n데이터 분석",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.8579
+      },
+      {
+        "source_type": "project",
+        "evidence": {
+          "source_document_id": "task-order:6bdd3cb4-1844-4eea-818c-efb1047a9c53",
+          "page": null,
+          "section": "chunk 4",
+          "quote": "･ 데이터 분석 및 모델 배포 실습\n･ AI/ML 필수과정 이수 후 AP 자격증 취득 연계\n생성형 AI\n･ Generative AI 개념\n･ AWS 기반 애플리케이션 설계 학습\n･ 파운데이션 모델 활용\n데이터 분석\n･ 분석 솔루션 설계 및 유지 관리 학습, 데이커 기반 빠른 답변 제공 방법 학습\n･ 서버리스 솔루션 설계 및 실행 방법 학습\n교육 과정 관련 자격증 취득\n･ AWS 공인 자격증 준비 과정 제공\n･ 인공지능, 클라우드 등 자격증 취득 모의고사 및 시험 지원\nAWS AI 커리어 점프업(Jump-up) 프로젝트\n･ 인공지능 기반 데이터 분석\n･ 프로젝트 주제별 기획안 작성 및 적용 방안 검토\n･ 프로젝트 평가와 기획안 발표\n- 커리큘럼에 위 교육 과정 내용이 포함되어야 하며, 적절한 이론과 실습 교육이 제공되어야 함\n- 학습자가 실무현장에서 AI 및 데이터를 활용할 수 있는 현장 맞춤형 인재양성 교육을 구성하여야 함\n- 온‧오프라인 교육시간 및 교육 일수를 준수하여 교육 과정을 구성해야 함\n- 학습자가 교육 내용을 충분히 이해하고 진도를 따라갈 수 있도록 단계별 교육 과정이 제시되어야 함\n- 교육 과정에 적합한 자격증 취득 코스를 제안해야 하며, 수강생들의 자격증 취득 응시료는 본 사업의 예산에 포함하여야 함\n- 교육 과정에 적합한 교육 운영을 위해 교육자료 자체제작(개발) 후, 교육 시작 전 교육생에게 배포하여야 함\n- 용역 수행사는 취업 맞춤형 커리큘럼을 적극 반영하여 구성하도록 함\n- 강사진 자문 등을 반영하여 커리큘럼을 최종 확정하며, 커리큘럼의 세부내용을 포함한 온라인 자료로 준비하여야 함 ※ 교육 시 활용하는 교육자료는 발주기관의 사전확인을 통해 확정\n다.\n교육 인프라 확보 및 운영\n1) 오프라인 교육장 ※ 오프라인 교육 미진행 시 무관",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.8227
+      },
+      {
+        "source_type": "project",
+        "evidence": {
+          "source_document_id": "task-order:6bdd3cb4-1844-4eea-818c-efb1047a9c53",
+          "page": null,
+          "section": "chunk 2",
+          "quote": "라우드 컴퓨팅 이론 및 머신러닝 등 학습\n∙ 생성형 AI 및 클라우드 기반 AWS Open AI 이론 및 실습 교육 과정\n∙ AWS Skill Builder 활용 AI, 데이터분석 및 응용 서비스 개발 프로젝트 과정\n∙ AWS 현장 견학(멘토링) 및 정부/기관 공모전 참여 지원 등\n∙ AWS 자격증(SAA : Architecting on AWS) 등 AWS 발급 자격증(AI, 클라우드 등) 취득 지원\n※ 세부 내용은 연계 기업, 교육 운영 사정 등에 따라 변경될 수 있음\n※ 세부 교육 과정은 전문교육 기관 위탁 시 과업 내용에 교육 커리큘럼 제안 포함\n∙ 향후 연계되는 빅테크기업 테크데이를 위한 대표팀 선발 및 지원\n- 교육 수료 후에도 선발된 대표팀 대상 테크데이 발표를 위한 지원 필수\n- 테크데이 행사 진행 시 교육생 관련 지원사항이 필요할 경우 지원 필수\n2.\n과업 세부내용\n가.\n교육생 모집·홍보\n∙ 대상 : 만 39세 이하 도내 거주 미취업 청년 및 재취업 희망자, 만 39세 이하 경기도 소재 대학(원) 재학생 및 졸업생\n※ 교육생 모집 방안에 대하여 경기도경제과학진흥원과 사전 협의 必\n∙ 방법 : 온·오프라인 홍보를 통한 신청서 접수 및 모집\n∙ 내용 : 온라인 홍보물 제작, 포스터·현수막·카드뉴스 등 홍보물 제작, 경기스타트업플랫폼(gsp.or.kr) 등 활용 모집 및 게시 K-Startup 창업지원포탈, 온오프믹스, SNS채널 등 온·오프라인 홍보\n※ 모집인원: 수료생 달성을 위해 정원의 1.25배수 이상(25명 이상) 교육생 모집\n※ 전체 교육생 중 여성 참여자 비율 50% 내외로 충족하도록 선발 권고\n∙ 교육생 선정 및 발표, 향후 진행사항 안내 등\n나.\n교육역량 확보\n∙ 강사선정",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.8056
+      },
+      {
+        "source_type": "project",
+        "evidence": {
+          "source_document_id": "task-order:6bdd3cb4-1844-4eea-818c-efb1047a9c53",
+          "page": null,
+          "section": "chunk 0",
+          "quote": "捤獥汤捯湰灧桤灧湰灧桤灧氠瑢\n漠杳\n桤灧\n氠瑢\nAWS 인공지능(AI) 전문인력 양성과정\n운영 용역 과업이행요청서\n2025년  4월\n漠杳\n氠瑢\nⅠ\n과업개요\n과 업 명 : AWS 인공지능(AI) 전문인력 양성과정 운영 용역\n과업목적 :湯湷 AWS 교육 과정을 활용한 실무 중심의 AI 전문인력 양성\n과업내용\n∙ 지원대상 : 도내 만 39세 이하 도내 거주 미취업 청년 및 재취업희망자,\n경기도 소재 대학(원) 재학생 및 졸업생\n∙ 지원목표 : ‘AWS AI 커리어 점프업(Jump-up) 교육’ 교육생 20명 수료\n∙ 지원내용 : AWS AI 커리어 점프업(Jump-up) 교육 과정 제안 및 운영\n과업기간 : 계약체결일 ~ 2025년 11월 30일\n과업예산 : 금120,000,000원(금일억이천만원, VAT포함)\n계약방법 : 일반경쟁입찰(협상에 의한 계약)\n※ 지방자치단체를 당사자로 하는 계약에 관한 법률 시행령 제43조 제2항(협상에 의한 계약체결)\n과업 주요내용\n∙ 교육 온·오프라인 홍보, 교육생 모집/선정 등 전반\n∙ 교육 과정/일정관리 및 멘토링·코칭 등 교육 운영 전반\n※세부 교육 계획 및 커리큘럼에 대해 경기도경제과학진흥원과 협의 必\n∙ 교육 전문강사 섭외·선정 및 운영관리 등\n∙ 교육장, 온라인 학습관리시스템, 전용 도메인 등 교육 인프라 확보 및 운영\n∙ 최신 트렌드에 맞춘 온·오프라인 교육 커리큘럼안 제시\n∙ 현업 사용 툴 활용 실습, 실무 관련 특강 주제 선정 등 콘텐츠 구성\n∙ AWS 현장견학 및 실무진 특강 등 교육생 취업 연계를 위한 업무 지원\n∙ 교육 과정에 적합한 자격시험 응시 지원 및 비용 지급\n∙ 교육 스케치 영상 제작(5분 이내) 및 제출\n∙ 교육 추진성과 관리 및 사후관리(만족도 조사 및 수료생 추적관리) 실시",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.802
+      },
+      {
+        "source_type": "project",
+        "evidence": {
+          "source_document_id": "task-order:6bdd3cb4-1844-4eea-818c-efb1047a9c53",
+          "page": null,
+          "section": "chunk 1",
+          "quote": "교육생 취업 연계를 위한 업무 지원\n∙ 교육 과정에 적합한 자격시험 응시 지원 및 비용 지급\n∙ 교육 스케치 영상 제작(5분 이내) 및 제출\n∙ 교육 추진성과 관리 및 사후관리(만족도 조사 및 수료생 추적관리) 실시\n∙ 수시 보고 및 사업운영보고서(최종보고서) 작성 보고, 기타 교육 관련 제반 업무\n∙ 빅테크기업 교육 연계 테크데이 행사를 위한 교육생 지원 업무\n∙ 기타 본 과업의 수행을 위한 업무\n氠瑢\nII\n과업 세부내용\n1.\n교육개요\n가.\n교육목표 : 20명 수료 (교육생 25명 이상 모집)\n나.\n교육대상\n∙ 만 39세 이하 경기도 소재 대학(원) 재학생 및 졸업생\n∙ 만 39세 이하 도내 거주 미취업 청년 및 재취업 희망자\n다.\n교육방식 : 온라인 및 오프라인 집체교육\n라.\n교육과정 : 총 300시간 이상\n∙ 교육과정(안)\n氠瑢\n과정명\n수료생\n교육 일정 및 시간\nAWS\n인공지능(AI) 전문인력 양성과정\n20명\n교육일정\n7월 ~ 8월\n교육시간\n총 300시간 이상\n※ 교육일정 등 세부사항은 발주기관과 협의에 따라 조정 가능하며 일정에 네트워킹 데이 등 필수 반영\n※ 온라인·오프라인 집체교육 방식으로 운영하며, 온오프라인 교육 비율 조정 가능\n※ 교육장소는 온라인(Zoom 등) 또는 오프라인 (AI캠퍼스 등) 활용\n※ 수료생 달성을 위해 목표 수료생(20명)의 1.25배수 이상(25명 이상) 교육생 모집\n마.\n교육 커리큘럼\n∙ 클라우드 기반 AI, 머신러닝, 데이터 분석, 딥러닝 등 학습\n∙ AWS 클라우드 등 활용 클라우드 컴퓨팅 이론 및 머신러닝 등 학습\n∙ 생성형 AI 및 클라우드 기반 AWS Open AI 이론 및 실습 교육 과정\n∙ AWS Skill Builder 활용 AI, 데이터분석 및 응용 서비스 개발 프로젝트 과정",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.7865
+      }
+    ],
+    "instructor_evidence": [
+      {
+        "source_type": "instructor",
+        "evidence": {
+          "source_document_id": "rag:instructor-10:db-054cece0eef2",
+          "page": null,
+          "section": "chunk 1",
+          "quote": "강의)\",\n\"프리랜서 - 프리랜서 활동 (코딩 강의 출강 및 교육 콘텐츠 제작)\",\n\"소프트웨어놀이터 - 기획.교육 · 기획 팀장 (코딩 온/오프라인 강의, 교육 콘텐츠 기획 제작, 유튜브 채널 운영 관리)\"\n],\n\"vendor_certifications\": [\n\"데이터분석준전문가(ADsP) 최종합격\",\n\"COS Pro(Python) 1급 최종합격\",\n\"정보처리산업기사 최종합격\"\n],\n\"teaching_items\": [\n{\n\"topic\": \"Python 머신러닝 모델링과 데이터 분석 과정\",\n\"organization\": \"한국AI사물인터넷협회 세종대학교\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 181\",\n\"quote\": \"Python 머신러닝 모델링과 데이터 분석 과정\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"소상공인을 위한 생성형 AI 활용 특강 (콘텐츠 제작, 마케팅, 기획 등)\",\n\"organization\": \"서울패션허브\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 180\",",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.7178
+      },
+      {
+        "source_type": "instructor",
+        "evidence": {
+          "source_document_id": "rag:instructor-10:db-054cece0eef2",
+          "page": null,
+          "section": "chunk 0",
+          "quote": "{\n\"instructor_id\": \"instructor-10\",\n\"profile_version\": \"db-054cece0eef2\",\n\"display_name\": \"김민주\",\n\"expertise_tags\": [\n\"Python\",\n\"LLM\",\n\"Flask\",\n\"AWS\",\n\"AppSheet\",\n\"Google Cloud\",\n\"Gemini\",\n\"Arduino\",\n\"3D Printing\",\n\"Scratch\",\n\"App Inventor\",\n\"C\",\n\"코딩 교육\",\n\"사물인터넷(IoT)\",\n\"인공지능(AI)\",\n\"데이터 분석\",\n\"생성형 AI\",\n\"머신러닝\",\n\"데이터분석\",\n\"생성형AI\",\n\"마케팅\",\n\"컨설팅\",\n\"문서자동화\",\n\"앱시트\",\n\"부트캠프\",\n\"MultiModal\",\n\"AI\",\n\"GoogleCloud\",\n\"보조강사\",\n\"구글자동화툴\",\n\"노코딩\",\n\"인공지능\",\n\"구글AI\",\n\"백엔드\",\n\"파이썬\",\n\"코딩테스트\",\n\"알고리즘\",\n\"비접촉체온계\",\n\"메이커\",\n\"사물인터넷\",\n\"IoT\",\n\"줌\",\n\"메이커튜터\",\n\"코딩강사\",\n\"마스터과정\",\n\"유튜브\",\n\"코딩강사양성\",\n\"아두이노\",\n\"프로젝트\",\n\"해커톤\",\n\"코딩교육\",\n\"기초과정\",\n\"창업교육\",\n\"메이커캠프\",\n\"프로그래밍\",\n\"3D프린팅\"\n],\n\"summary\": \"파이썬 및 AI/IoT 분야 9년 경력의 전문 코딩 강사\",\n\"delivery_modes\": [],\n\"availability_notes\": null,\n\"vendor_experience\": [\n\"아이코어이앤씨 - 강사 · 교육컨설턴트 (교육 운영 및 강의)\",\n\"프리랜서 - 프리랜서 활동 (코딩 강의 출강 및 교육 콘텐츠 제작)\",\n\"소프트웨어놀이터 - 기획.교육 · 기획 팀장 (코딩 온/오프라인 강의, 교육 콘텐츠 기획 제작, 유튜브 채널 운영 관리)\"\n],",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.7108
+      },
+      {
+        "source_type": "instructor",
+        "evidence": {
+          "source_document_id": "rag:instructor-10:db-054cece0eef2",
+          "page": null,
+          "section": "chunk 6",
+          "quote": "ull,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 171\",\n\"quote\": \"청년취업사관학교 GoogleCloud 기반 인공지능 개발자 과정 3기\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"구글 AI 글로벌 인재 양성 과정\",\n\"organization\": \"제주도 지역혁신플랫폼\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 170\",\n\"quote\": \"구글 AI 글로벌 인재 양성 과정\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"청년취업사관학교 GoogleCloud 기반 인공지능 개발자 과정 2기\",\n\"organization\": \"서울경제진흥원\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 169\",\n\"quote\": \"청년취업사관학교 GoogleCloud 기반 인공지능 개발자 과정 2기\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"flask 활용 백엔드 과정 (AWS, Flask 사용한 웹페이지 배포)\",\n\"organization\": \"세명컴퓨터고등학교\",",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.7058
+      },
+      {
+        "source_type": "instructor",
+        "evidence": {
+          "source_document_id": "rag:instructor-10:db-054cece0eef2",
+          "page": null,
+          "section": "chunk 7",
+          "quote": "개발자 과정 2기\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"flask 활용 백엔드 과정 (AWS, Flask 사용한 웹페이지 배포)\",\n\"organization\": \"세명컴퓨터고등학교\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 168\",\n\"quote\": \"flask 활용 백엔드 과정 (AWS, Flask 사용한 웹페이지 배포)\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"인공지능 활용 특강\",\n\"organization\": \"은평메디텍고등학교\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 167\",\n\"quote\": \"인공지능 활용 특강\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"데이터분석.인공지능 특강\",\n\"organization\": \"충남과학고등학교\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.6967
+      },
+      {
+        "source_type": "instructor",
+        "evidence": {
+          "source_document_id": "rag:instructor-10:db-054cece0eef2",
+          "page": null,
+          "section": "chunk 8",
+          "quote": "\"organization\": \"충남과학고등학교\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 166\",\n\"quote\": \"데이터분석.인공지능 특강\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"파이썬을 활용한 데이터분석 & 머신러닝\",\n\"organization\": \"한겨레 신문사\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 165\",\n\"quote\": \"파이썬을 활용한 데이터분석 & 머신러닝\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"코딩테스트를 위한 필수 알고리즘 정복&기출 문제 풀이 강의 제작\",\n\"organization\": \"러닝스푼즈\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 164\",",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.6955
+      }
+    ]
+  }
+}

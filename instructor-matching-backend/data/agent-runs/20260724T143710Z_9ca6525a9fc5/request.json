@@ -1,0 +1,983 @@
+{
+  "project": {
+    "schema_version": "education_project_v1",
+    "service_type": "education_program",
+    "program_type": "vocational_training",
+    "classification_confidence": 1.0,
+    "base": {
+      "project_name": "2. 2025년 빅데이터혁신융합대학사업 동계 AWS 교육_용역 제안요청서.hwp",
+      "client_organization": null,
+      "purpose": [
+        "경기과학기술대학교 2025년 빅데이터혁신융합대학사업의 일환으로 대학생 대상의 동계 AWS 교육 프로그램(AWS Certified Cloud Practitioner 자격 취득 및 실무 능력 함양)을 구성 및 운영하는 용역 사업",
+        "교육 프로그램 전체 구성 및 운영 기획",
+        "공인 AWS 전문가 기반 교육 구성 및 강의 계획서 작성",
+        "AWS Certified Cloud Practitioner 자격 시험 대비 교육 및 모의고사 세션 운영",
+        "교육 참가자 30명 모집 및 관리",
+        "교육 실습용 데이터 및 라이센스 제공",
+        "장소 대관, 현수막/배너 제작 및 식사/다과 제공",
+        "만족도 설문조사 및 최종 결과 보고",
+        "AWS 클라우드의 기본적 글로벌 인프라 이해",
+        "AWS Certified Cloud Practitioner 자격증 취득",
+        "컴퓨터 네트워크, 데이터베이스, 스토리지 등 핵심 AWS 서비스 이해",
+        "산업체에서 요구하는 SW 기초 실무 능력 함양"
+      ],
+      "contract_method": null,
+      "start_date": null,
+      "end_date": null,
+      "budget_krw": null,
+      "vat_included": null,
+      "deliverables": [
+        "교육 프로그램 전체 구성 및 운영 기획",
+        "공인 AWS 전문가 기반 교육 구성 및 강의 계획서 작성",
+        "AWS Certified Cloud Practitioner 자격 시험 대비 교육 및 모의고사 세션 운영",
+        "교육 참가자 30명 모집 및 관리",
+        "교육 실습용 데이터 및 라이센스 제공",
+        "장소 대관, 현수막/배너 제작 및 식사/다과 제공",
+        "만족도 설문조사 및 최종 결과 보고",
+        "AWS 클라우드의 기본적 글로벌 인프라 이해",
+        "AWS Certified Cloud Practitioner 자격증 취득",
+        "컴퓨터 네트워크, 데이터베이스, 스토리지 등 핵심 AWS 서비스 이해",
+        "산업체에서 요구하는 SW 기초 실무 능력 함양"
+      ],
+      "proposal_requirements": [
+        "공인 AWS 교육 전문가를 활용하여 교육과정을 제공해야 함",
+        "사업의 성공적인 추진을 위해 사업 총괄 책임자(PM)를 두어 사업을 책임지고 수행해야 함",
+        "최근 3년 간 동등용역(교육 운영) 수행실적 (단일 건으로 2천만원 이상 수행실적 평가)",
+        "교육 기획 및 구성",
+        "전문 교육 강사 섭외",
+        "강의 진행 및 실습 지도",
+        "학생 관리 및 안전 관리",
+        "대관 및 운영 지원",
+        "결과 보고 및 만족도 설문조사"
+      ],
+      "compliance_requirements": [
+        "제안업체 경영상태 (신용평가등급)",
+        "최근 3년간 유사과제 수행 실적",
+        "과업의 이해도 (사업 목적 파악 및 수행내용 이해도)",
+        "참여인력 현황 (책임자의 적정성 및 활동 계획)",
+        "전문성 (교육 운영 전문성 및 구체성)",
+        "과업 수행 방법 (제안요청서 기반 제안내용의 충실도, 적정성 및 접근 방법)",
+        "일정계획 및 목표 (과업수행일정의 적정성, 효율성 및 실효성)",
+        "기타부문 (사업기간 내 중간보고 및 최종보고 계획 제시 등)",
+        "나라장터 시스템을 통한 가격평가"
+      ]
+    },
+    "education": {
+      "technology_domains": [
+        "AWS 클라우드",
+        "AWS Certified Cloud Practitioner",
+        "컴퓨터 네트워크",
+        "데이터베이스",
+        "스토리지",
+        "Amazon EC2",
+        "AWS Lambda",
+        "AWS Well Architected Framework",
+        "공인 AWS 교육 전문가",
+        "강사",
+        "사업 총괄 책임자",
+        "PM",
+        "수행실적",
+        "동등용역",
+        "실적",
+        "경영상태",
+        "신용평가등급",
+        "유사과제",
+        "과업 이해도",
+        "사업 목적",
+        "참여인력",
+        "책임자 적정성",
+        "전문성",
+        "교육 운영",
+        "과업 수행 방법",
+        "충실도",
+        "일정계획",
+        "효율성",
+        "보고 계획",
+        "기타부문",
+        "가격평가",
+        "나라장터"
+      ],
+      "program_topics": [
+        "AWS 클라우드",
+        "AWS Certified Cloud Practitioner",
+        "컴퓨터 네트워크",
+        "데이터베이스",
+        "스토리지",
+        "Amazon EC2",
+        "AWS Lambda",
+        "AWS Well Architected Framework",
+        "경영상태",
+        "신용평가등급",
+        "유사과제",
+        "수행실적",
+        "과업 이해도",
+        "사업 목적",
+        "참여인력",
+        "책임자 적정성",
+        "전문성",
+        "교육 운영",
+        "과업 수행 방법",
+        "충실도",
+        "일정계획",
+        "효율성",
+        "보고 계획",
+        "기타부문",
+        "가격평가",
+        "나라장터",
+        "공인 AWS 교육 전문가",
+        "강사",
+        "사업 총괄 책임자",
+        "PM",
+        "동등용역",
+        "실적"
+      ],
+      "target_audience": [
+        "빅데이터 컨소시엄 재학생 (30명)"
+      ],
+      "participant_capacity": null,
+      "delivery_format": [
+        "집체교육",
+        "오프라인"
+      ],
+      "education_hours": null,
+      "schedule": [],
+      "required_roles": [
+        "교육 기획 및 구성",
+        "전문 교육 강사 섭외",
+        "강의 진행 및 실습 지도",
+        "학생 관리 및 안전 관리",
+        "대관 및 운영 지원",
+        "결과 보고 및 만족도 설문조사"
+      ],
+      "instructor_requirements": {
+        "required_experience": [],
+        "required_certifications": [],
+        "required_vendor_credentials": [],
+        "similar_project_experience": [
+          "최근 3년 간 동등용역(교육 운영) 수행실적"
+        ]
+      },
+      "curriculum_requirements": [],
+      "operational_requirements": [],
+      "practical_project_requirements": [
+        "교육 프로그램 전체 구성 및 운영 기획",
+        "공인 AWS 전문가 기반 교육 구성 및 강의 계획서 작성",
+        "AWS Certified Cloud Practitioner 자격 시험 대비 교육 및 모의고사 세션 운영",
+        "교육 참가자 30명 모집 및 관리",
+        "교육 실습용 데이터 및 라이센스 제공",
+        "장소 대관, 현수막/배너 제작 및 식사/다과 제공",
+        "만족도 설문조사 및 최종 결과 보고",
+        "교육 기획 및 구성",
+        "전문 교육 강사 섭외",
+        "강의 진행 및 실습 지도",
+        "학생 관리 및 안전 관리",
+        "대관 및 운영 지원",
+        "결과 보고 및 만족도 설문조사"
+      ],
+      "assessment_requirements": [
+        "제안업체 경영상태 (신용평가등급)",
+        "최근 3년간 유사과제 수행 실적",
+        "과업의 이해도 (사업 목적 파악 및 수행내용 이해도)",
+        "참여인력 현황 (책임자의 적정성 및 활동 계획)",
+        "전문성 (교육 운영 전문성 및 구체성)",
+        "과업 수행 방법 (제안요청서 기반 제안내용의 충실도, 적정성 및 접근 방법)",
+        "일정계획 및 목표 (과업수행일정의 적정성, 효율성 및 실효성)",
+        "기타부문 (사업기간 내 중간보고 및 최종보고 계획 제시 등)",
+        "나라장터 시스템을 통한 가격평가"
+      ],
+      "outcome_requirements": [
+        "AWS 클라우드의 기본적 글로벌 인프라 이해",
+        "AWS Certified Cloud Practitioner 자격증 취득",
+        "컴퓨터 네트워크, 데이터베이스, 스토리지 등 핵심 AWS 서비스 이해",
+        "산업체에서 요구하는 SW 기초 실무 능력 함양"
+      ]
+    },
+    "extensions": {
+      "source_task_order_id": "82af1d47-38fe-4891-a698-b2bfb6da4bbf",
+      "normalized_qualifications": [
+        {
+          "category": "인력 요건",
+          "description": "공인 AWS 교육 전문가를 활용하여 교육과정을 제공해야 함",
+          "is_mandatory": true,
+          "keywords": [
+            "공인 AWS 교육 전문가",
+            "강사"
+          ]
+        },
+        {
+          "category": "인력 요건",
+          "description": "사업의 성공적인 추진을 위해 사업 총괄 책임자(PM)를 두어 사업을 책임지고 수행해야 함",
+          "is_mandatory": true,
+          "keywords": [
+            "사업 총괄 책임자",
+            "PM"
+          ]
+        },
+        {
+          "category": "실적 요건",
+          "description": "최근 3년 간 동등용역(교육 운영) 수행실적 (단일 건으로 2천만원 이상 수행실적 평가)",
+          "is_mandatory": false,
+          "keywords": [
+            "수행실적",
+            "동등용역",
+            "실적"
+          ]
+        }
+      ],
+      "normalized_evaluation_criteria": [
+        {
+          "category": "기술평가(정량평가)",
+          "description": "제안업체 경영상태 (신용평가등급)",
+          "weight": 10,
+          "keywords": [
+            "경영상태",
+            "신용평가등급"
+          ]
+        },
+        {
+          "category": "기술평가(정량평가)",
+          "description": "최근 3년간 유사과제 수행 실적",
+          "weight": 10,
+          "keywords": [
+            "유사과제",
+            "수행실적"
+          ]
+        },
+        {
+          "category": "기술평가(정성평가)",
+          "description": "과업의 이해도 (사업 목적 파악 및 수행내용 이해도)",
+          "weight": 20,
+          "keywords": [
+            "과업 이해도",
+            "사업 목적"
+          ]
+        },
+        {
+          "category": "기술평가(정성평가)",
+          "description": "참여인력 현황 (책임자의 적정성 및 활동 계획)",
+          "weight": 5,
+          "keywords": [
+            "참여인력",
+            "책임자 적정성"
+          ]
+        },
+        {
+          "category": "기술평가(정성평가)",
+          "description": "전문성 (교육 운영 전문성 및 구체성)",
+          "weight": 15,
+          "keywords": [
+            "전문성",
+            "교육 운영"
+          ]
+        },
+        {
+          "category": "기술평가(정성평가)",
+          "description": "과업 수행 방법 (제안요청서 기반 제안내용의 충실도, 적정성 및 접근 방법)",
+          "weight": 15,
+          "keywords": [
+            "과업 수행 방법",
+            "충실도"
+          ]
+        },
+        {
+          "category": "기술평가(정성평가)",
+          "description": "일정계획 및 목표 (과업수행일정의 적정성, 효율성 및 실효성)",
+          "weight": 10,
+          "keywords": [
+            "일정계획",
+            "효율성"
+          ]
+        },
+        {
+          "category": "기술평가(정성평가)",
+          "description": "기타부문 (사업기간 내 중간보고 및 최종보고 계획 제시 등)",
+          "weight": 5,
+          "keywords": [
+            "보고 계획",
+            "기타부문"
+          ]
+        },
+        {
+          "category": "가격평가",
+          "description": "나라장터 시스템을 통한 가격평가",
+          "weight": 10,
+          "keywords": [
+            "가격평가",
+            "나라장터"
+          ]
+        }
+      ],
+      "overview": {
+        "section_titles": [
+          "사업개요",
+          "1. 과업개요",
+          "Ⅰ 사업개요",
+          "Ⅱ 제안 요청 사항 - 1. 과업개요"
+        ],
+        "summary": "경기과학기술대학교 2025년 빅데이터혁신융합대학사업의 일환으로 대학생 대상의 동계 AWS 교육 프로그램(AWS Certified Cloud Practitioner 자격 취득 및 실무 능력 함양)을 구성 및 운영하는 용역 사업",
+        "core_topics": [
+          "AWS 클라우드",
+          "AWS Certified Cloud Practitioner",
+          "컴퓨터 네트워크",
+          "데이터베이스",
+          "스토리지",
+          "Amazon EC2",
+          "AWS Lambda",
+          "AWS Well Architected Framework"
+        ],
+        "target_audience": [
+          "빅데이터 컨소시엄 재학생 (30명)"
+        ],
+        "delivery_formats": [
+          "집체교육",
+          "오프라인"
+        ],
+        "required_roles": [
+          "교육 기획 및 구성",
+          "전문 교육 강사 섭외",
+          "강의 진행 및 실습 지도",
+          "학생 관리 및 안전 관리",
+          "대관 및 운영 지원",
+          "결과 보고 및 만족도 설문조사"
+        ],
+        "scope": [
+          "교육 프로그램 전체 구성 및 운영 기획",
+          "공인 AWS 전문가 기반 교육 구성 및 강의 계획서 작성",
+          "AWS Certified Cloud Practitioner 자격 시험 대비 교육 및 모의고사 세션 운영",
+          "교육 참가자 30명 모집 및 관리",
+          "교육 실습용 데이터 및 라이센스 제공",
+          "장소 대관, 현수막/배너 제작 및 식사/다과 제공",
+          "만족도 설문조사 및 최종 결과 보고"
+        ],
+        "expected_outcomes": [
+          "AWS 클라우드의 기본적 글로벌 인프라 이해",
+          "AWS Certified Cloud Practitioner 자격증 취득",
+          "컴퓨터 네트워크, 데이터베이스, 스토리지 등 핵심 AWS 서비스 이해",
+          "산업체에서 요구하는 SW 기초 실무 능력 함양"
+        ],
+        "preferred_experience": [
+          "최근 3년 간 동등용역(교육 운영) 수행실적"
+        ],
+        "source_excerpt": "사업개요\n1. 과업명 : 경기과학기술대학교 2025년 빅데이터혁신융합대학사업\n\n1. 과업개요\n가. 사업명 : 경기과학기술대학교 2025년 빅데이터혁신융합대학사업\n\n사업 개요\n참여기간\n발주기관\n참여 당시\n담당업무\n소속회사\n직위\n* 투입 인력은 반드시 본 사업에 투입 가능한 인력으로 구성하여야 하며, 개인별 경력 사항이 허위사실로 판명될 경우 계약업체 선정을 무효화 함.\n* 참여 사업명은 대학, 공공기관, 일반업체 순으로 작성함.\n\n사업개요\n사업기간\n(완료구분)",
+        "matching_rules": [
+          {
+            "key": "core_topics",
+            "label": "핵심 교육 주제",
+            "values": [
+              "AWS 클라우드",
+              "AWS Certified Cloud Practitioner",
+              "컴퓨터 네트워크",
+              "데이터베이스",
+              "스토리지",
+              "Amazon EC2",
+              "AWS Lambda",
+              "AWS Well Architected Framework"
+            ]
+          },
+          {
+            "key": "target_audience",
+            "label": "교육 대상",
+            "values": [
+              "빅데이터 컨소시엄 재학생 (30명)"
+            ]
+          },
+          {
+            "key": "delivery_formats",
+            "label": "운영 방식",
+            "values": [
+              "집체교육",
+              "오프라인"
+            ]
+          },
+          {
+            "key": "required_roles",
+            "label": "요구 역할",
+            "values": [
+              "교육 기획 및 구성",
+              "전문 교육 강사 섭외",
+              "강의 진행 및 실습 지도",
+              "학생 관리 및 안전 관리",
+              "대관 및 운영 지원",
+              "결과 보고 및 만족도 설문조사"
+            ]
+          },
+          {
+            "key": "scope",
+            "label": "업무 범위",
+            "values": [
+              "교육 프로그램 전체 구성 및 운영 기획",
+              "공인 AWS 전문가 기반 교육 구성 및 강의 계획서 작성",
+              "AWS Certified Cloud Practitioner 자격 시험 대비 교육 및 모의고사 세션 운영",
+              "교육 참가자 30명 모집 및 관리",
+              "교육 실습용 데이터 및 라이센스 제공",
+              "장소 대관, 현수막/배너 제작 및 식사/다과 제공",
+              "만족도 설문조사 및 최종 결과 보고"
+            ]
+          },
+          {
+            "key": "expected_outcomes",
+            "label": "기대 성과",
+            "values": [
+              "AWS 클라우드의 기본적 글로벌 인프라 이해",
+              "AWS Certified Cloud Practitioner 자격증 취득",
+              "컴퓨터 네트워크, 데이터베이스, 스토리지 등 핵심 AWS 서비스 이해",
+              "산업체에서 요구하는 SW 기초 실무 능력 함양"
+            ]
+          },
+          {
+            "key": "preferred_experience",
+            "label": "우대 경험",
+            "values": [
+              "최근 3년 간 동등용역(교육 운영) 수행실적"
+            ]
+          }
+        ]
+      }
+    },
+    "evidence": [
+      {
+        "source_document_id": "task-order:82af1d47-38fe-4891-a698-b2bfb6da4bbf",
+        "page": null,
+        "section": "normalized task-order requirements",
+        "quote": "捤獥汤捯氠瑢\n경기과학기술대학교\n2025년 빅데이터혁신융합대학사업\n동계 AWS 교육 제안요청서\n氠瑢\nⅠ\n사업개요\n1. 과업명 : 경기과학기술대학교 2025년 빅데이터혁신융합대학사업\n동계 AWS 교육 프로그램 운영 용역\n2. 과업의 목적\n○ AWS 클라우드의 기본적 글로벌 인프라 이해\n○ AWS Certified Cloud Practitioner 자격증 취득\n○ 컴퓨터 네트워크, 데이터베이스, 스토리지 등 핵심 AWS 서비스 이해\n○ 집체교육을 통하여 산업체에서 요구하는 SW 기초 실무 능력 함양\n3. 과업 기간 : 계약체결일로부터 캠프종료일 까지\n4. 사업금액 : 금 25,792,000 원(VAT포함)\n* 강사료, 교육라이센스 이용료, 운영비 등 교육 운영에 필요한 모든 비용 포함\n5. 프로그램 기간 : 2026.01.14.(수) ~ 2026.01.16.(금)\n6. 주요 과업 내용\n가. 교육인원 : 30명\n나. 기획 : 교육과정 구성, 프로그램 운영, 참여학생 모집을 위한 홍보물 제작, 식사예약 등\n다. 교육 운영 :\n- 공인 AWS 교육 전문가를 활용한 교육 진행\n- 오프라인 교육을 통한 교육 수료증 제공\n라. 학생 관리 : 학생 관리를 위한 전반적인 사항\n마. 사후관리 : 프로그램 운영 결과보고 및 학생 만족도 조사 등 피드백 환류\n바. 기타 : 프로그램 운영에 필요한 모든 사항\n氠瑢\nⅡ\n제안 요청 사항\n1. 과업개요\n가. 사업명 : 경기과학기술대학교 2025년 빅데이터혁신융합대학사업\n동계 AWS 교육 프로그램 운영 용역\n나. 사업기간 : 계약일로부터 캠프종료일까지\n다. 계약방법 : 제한경쟁입찰, 협상에 의한 계약\n라. 사업예산 : 금 25,792,000 원(VAT포함)\n마. 교육목표\n○ 교육 일정 : 2026.01.14.(수)~2026.01.16.(금)\n○ 모집 : 30명 선발\n바. 모집대상 : 빅데이터 컨소시엄 재학생 30명\n사. 운영장소 : 집체 교육이 가능한 강의실 대여\n2. 세부 과업 범위\n가. 과업 내용氠瑢\n구분\n과업 내용\n프로그램 홍보\n가. 프로",
+        "confidence": 1.0
+      }
+    ],
+    "review_status": "unreviewed"
+  },
+  "instructor": {
+    "instructor_id": "instructor-21",
+    "profile_version": "db-1d0fbfd16e3a",
+    "display_name": "김일한",
+    "expertise_tags": [
+      "Java",
+      "C",
+      "C++",
+      "C#",
+      "Python",
+      "HTML5",
+      "JavaScript",
+      "React",
+      "Spring Framework",
+      "Oracle DB",
+      "Spark",
+      "TensorFlow",
+      "Android",
+      "iOS",
+      "MFC",
+      "Win32API",
+      "ASP.Net",
+      "Node.js",
+      "Angular",
+      "Flask",
+      "SQLD",
+      "Azure",
+      "Cloud",
+      "프로그래밍",
+      "모바일 프로그래밍",
+      "안드로이드",
+      "AI & BigData",
+      "Database",
+      "파이썬",
+      "인공지능",
+      "클라우드",
+      "애플리케이션",
+      "서버",
+      "OS",
+      "스토리지",
+      "네트워크",
+      "데이터베이스",
+      "KT Cloud",
+      "컨설팅",
+      "머신러닝",
+      "Preprocessing",
+      "영업관리시스템",
+      "모바일",
+      "운전자관리",
+      "PDA",
+      "와이브로",
+      "전자결재"
+    ],
+    "summary": "모바일 및 AI/빅데이터/클라우드 분야 전문 강사",
+    "delivery_modes": [],
+    "availability_notes": null,
+    "vendor_experience": [
+      "KT Cloud - KT Cloud 전문 컨설턴트 양성 프로젝트",
+      "이오니아 - 이오니아정수기(이오니아영업관리시스템)",
+      "SK 네트웍스 - 운전자관리시스템(SK모바일드림서비스개발)",
+      "KT - PDA 와이브로전자결재",
+      "아이코어이앤씨 - 기업교육팀 전임강사 (모바일 개발분야 강의)",
+      "㈜모바일랩기술연구소 - 개발 연구소장 (스마트폰 및 윈도우모바일개발)",
+      "모바일랩 정보 - 개발교육 팀장 (개발 및 강의)",
+      "경실련하이텔 - 개발,강의 팀장 (소프트웨어 개발 및 강의)",
+      "SKT 사내벤처(CoNet) - 개발 대리 (CDMA 2000 관련, SMS service 개발)"
+    ],
+    "vendor_certifications": [
+      "인터넷정보검색사"
+    ],
+    "teaching_items": [
+      {
+        "topic": "파이썬 기반 인공지능 기본",
+        "organization": "한국IT서비스산업협회",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 383",
+            "quote": "파이썬 기반 인공지능 기본",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Microsoft Azure 기초 과정",
+        "organization": "디지털 +X 산업기술지원 및 데이터 전문인력 양성 사업",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": 44,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 382",
+            "quote": "Microsoft Azure 기초 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "클라우드 110%활용 나만의 애플리케이션 만들기",
+        "organization": "한국디지털융합진흥원",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": 120,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 381",
+            "quote": "클라우드 110%활용 나만의 애플리케이션 만들기",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "온보딩 과정 – 서버, OS, 스토리지의 이해",
+        "organization": "ktds",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": 18,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 380",
+            "quote": "온보딩 과정 – 서버, OS, 스토리지의 이해",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "클라우드 중급과정",
+        "organization": "한국금융연수원",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": 24,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 379",
+            "quote": "클라우드 중급과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "클라우드 네트워크",
+        "organization": "상지대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": 40,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 378",
+            "quote": "클라우드 네트워크",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "SQLD 자격증 과정",
+        "organization": "한국IT서비스산업협회",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": 80,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 377",
+            "quote": "SQLD 자격증 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "퇴근하고 스킬업 with kt cloud",
+        "organization": "한국IT서비스산업협회",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": 80,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 376",
+            "quote": "퇴근하고 스킬업 with kt cloud",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "데이터베이스",
+        "organization": "KGITBANK",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": 126,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 375",
+            "quote": "데이터베이스",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "데이터베이스",
+        "organization": "삼성전자",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": 80,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 374",
+            "quote": "데이터베이스",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "KT Cloud Basic",
+        "organization": "KT Cloud",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": 21,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 373",
+            "quote": "KT Cloud Basic",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "데이터베이스 이해",
+        "organization": "대검찰청",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": 35,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 372",
+            "quote": "데이터베이스 이해",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "데이터베이스 이해",
+        "organization": "대검찰청",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": 35,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 371",
+            "quote": "데이터베이스 이해",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "클라우드 기초",
+        "organization": "대구SW마이스터고등학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": 35,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 370",
+            "quote": "클라우드 기초",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "머신러닝을 활용한 Preprocessing",
+        "organization": "LG전자",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 385",
+            "quote": "머신러닝을 활용한 Preprocessing",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Python Programming",
+        "organization": "LG전자",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 384",
+            "quote": "Python Programming",
+            "confidence": 1.0
+          }
+        ]
+      }
+    ],
+    "project_items": [
+      {
+        "title": "KT Cloud 전문 컨설턴트 양성 프로젝트",
+        "client_organization": "KT Cloud",
+        "role": "컨설턴트",
+        "start_date": "2022-11-01",
+        "end_date": "2024-07-01",
+        "keywords": [
+          "KT Cloud",
+          "컨설팅"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 386",
+            "quote": "KT Cloud 전문 컨설턴트 양성 프로젝트",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "이오니아정수기(이오니아영업관리시스템)",
+        "client_organization": "이오니아",
+        "role": "개발자",
+        "start_date": "2011-01-01",
+        "end_date": "2011-02-01",
+        "keywords": [
+          "영업관리시스템"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 387",
+            "quote": "이오니아정수기(이오니아영업관리시스템)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "운전자관리시스템(SK모바일드림서비스개발)",
+        "client_organization": "SK 네트웍스",
+        "role": "개발자",
+        "start_date": "2010-10-01",
+        "end_date": "2010-12-01",
+        "keywords": [
+          "모바일",
+          "운전자관리"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 388",
+            "quote": "운전자관리시스템(SK모바일드림서비스개발)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "PDA 와이브로전자결재",
+        "client_organization": "KT",
+        "role": "PM",
+        "start_date": "2005-07-01",
+        "end_date": "2005-12-01",
+        "keywords": [
+          "PDA",
+          "와이브로",
+          "전자결재"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 389",
+            "quote": "PDA 와이브로전자결재",
+            "confidence": 1.0
+          }
+        ]
+      }
+    ],
+    "work_experience_items": [
+      {
+        "organization": "아이코어이앤씨",
+        "summary": "기업교육팀 전임강사 (모바일 개발분야 강의)",
+        "start_date": "2011-06-01",
+        "end_date": "재직중",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 200",
+            "quote": "기업교육팀 전임강사 (모바일 개발분야 강의)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "organization": "㈜모바일랩기술연구소",
+        "summary": "개발 연구소장 (스마트폰 및 윈도우모바일개발)",
+        "start_date": "2005-01-01",
+        "end_date": "재직중",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 201",
+            "quote": "개발 연구소장 (스마트폰 및 윈도우모바일개발)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "organization": "모바일랩 정보",
+        "summary": "개발교육 팀장 (개발 및 강의)",
+        "start_date": "2003-07-01",
+        "end_date": "2004-12-01",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 202",
+            "quote": "개발교육 팀장 (개발 및 강의)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "organization": "경실련하이텔",
+        "summary": "개발,강의 팀장 (소프트웨어 개발 및 강의)",
+        "start_date": "2001-10-01",
+        "end_date": "2003-02-01",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 203",
+            "quote": "개발,강의 팀장 (소프트웨어 개발 및 강의)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "organization": "SKT 사내벤처(CoNet)",
+        "summary": "개발 대리 (CDMA 2000 관련, SMS service 개발)",
+        "start_date": "1999-01-01",
+        "end_date": "2001-06-01",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 204",
+            "quote": "개발 대리 (CDMA 2000 관련, SMS service 개발)",
+            "confidence": 1.0
+          }
+        ]
+      }
+    ],
+    "certifications": [
+      {
+        "name": "인터넷정보검색사",
+        "issuer": "한국정보통신진흥협회",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 199",
+            "quote": "인터넷정보검색사",
+            "confidence": 1.0
+          }
+        ]
+      }
+    ],
+    "source_document_ids": [
+      "instructor-source:내부 강사 정보.xlsx",
+      "instructor-db:21"
+    ],
+    "extensions": {},
+    "evidence": [
+      {
+        "source_document_id": "instructor-db:21",
+        "page": null,
+        "section": "instructors",
+        "quote": "모바일 및 AI/빅데이터/클라우드 분야 전문 강사",
+        "confidence": 1.0
+      }
+    ],
+    "review_status": "unreviewed"
+  }
+}

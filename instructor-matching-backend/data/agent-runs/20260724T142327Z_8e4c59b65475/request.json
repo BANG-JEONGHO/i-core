@@ -1,0 +1,1312 @@
+{
+  "project": {
+    "schema_version": "education_project_v1",
+    "service_type": "education_program",
+    "program_type": "vocational_training",
+    "classification_confidence": 1.0,
+    "base": {
+      "project_name": "(제안요청서) 2026년 서울 서남권 IT 취업연계 및 직무교육 지원사업 취업캠프 및 교육 운영 대행.hwp",
+      "client_organization": null,
+      "purpose": [
+        "서울 서남권의 IT 일자리 매칭을 활성화하기 위해 관악구 중심의 청년 구직자 대상 취업캠프와 구로·금천 G밸리 IT 기업 신규채용인력 및 재직자 대상의 맞춤형 직무적응 및 직무역량 강화 교육을 기획하고 운영하는 사업",
+        "청년 구직자 150명 대상 취업캠프 3회 운영 (1박 2일 합숙, 행사장 및 숙식 제공 포함)",
+        "캠프 종료 후 미취업 청년 50명 대상 1:1 추가 취업지원 컨설팅 수행",
+        "신규채용인력 100명 대상 직무적응 교육 운영 (5일 과정)",
+        "재직자 100명 대상 직무역량 강화 교육 운영 (AI, 데이터 분석 등 트랙 설계)",
+        "교육 인프라 지원 (노트북 임차, AI/디자인 툴 라이선스, 교재 등 제공)",
+        "참여자 전원 대상 재해보험 의무 가입 및 성과관리",
+        "생활권 기반의 안정적인 구인 파이프라인 조성 및 채용 연계 확대",
+        "신규채용인력의 현장 조기 안착을 통한 초기 이탈 방지",
+        "기존 재직자의 실무역량 강화를 통한 기업 현장 대응력 향상"
+      ],
+      "contract_method": null,
+      "start_date": null,
+      "end_date": null,
+      "budget_krw": null,
+      "vat_included": null,
+      "deliverables": [
+        "청년 구직자 150명 대상 취업캠프 3회 운영 (1박 2일 합숙, 행사장 및 숙식 제공 포함)",
+        "캠프 종료 후 미취업 청년 50명 대상 1:1 추가 취업지원 컨설팅 수행",
+        "신규채용인력 100명 대상 직무적응 교육 운영 (5일 과정)",
+        "재직자 100명 대상 직무역량 강화 교육 운영 (AI, 데이터 분석 등 트랙 설계)",
+        "교육 인프라 지원 (노트북 임차, AI/디자인 툴 라이선스, 교재 등 제공)",
+        "참여자 전원 대상 재해보험 의무 가입 및 성과관리",
+        "생활권 기반의 안정적인 구인 파이프라인 조성 및 채용 연계 확대",
+        "신규채용인력의 현장 조기 안착을 통한 초기 이탈 방지",
+        "기존 재직자의 실무역량 강화를 통한 기업 현장 대응력 향상"
+      ],
+      "proposal_requirements": [
+        "“국가를 당사자로 하는 계약에 관한 법률 시행령”에 의거 경쟁입찰 참가자격이 있는 등록업체",
+        "국가종합전자조달시스템(나라장터) 경쟁입찰참가자격 등록증 보유 업체",
+        "컨소시엄 등 공동수급(공동이행방식) 응모 가능",
+        "취업캠프 기획 및 운영",
+        "맞춤형 직무 교육 기획 및 운영",
+        "교육 인프라 제공",
+        "사후관리 지원",
+        "운영 관리 및 안전사고 대비"
+      ],
+      "compliance_requirements": [
+        "제안사 일반현황 및 주요연혁, 자본금 및 매출액 등",
+        "제안사의 조직 및 인원현황",
+        "수행조직 및 업무분장, 활용방안 및 이력사항",
+        "본 사업과 명확하게 관련되는 사업실적",
+        "과업의 이해도 (추진배경, 사업목적, 기대효과 등)",
+        "사업 추진전략 제시",
+        "세부 추진계획 (단계별 또는 내역사업별 계획)",
+        "사업 관리·운영 방안 및 사후관리 방안",
+        "총 사업비 범위 내 가격 제안"
+      ]
+    },
+    "education": {
+      "technology_domains": [
+        "IT 취업연계",
+        "직무적응 교육",
+        "재직자 직무역량 강화",
+        "AI·디지털 전환",
+        "데이터 분석",
+        "클라우드",
+        "국가계약법",
+        "경쟁입찰",
+        "등록업체",
+        "나라장터",
+        "경쟁입찰참가자격",
+        "공동수급",
+        "컨소시엄",
+        "공동이행방식",
+        "일반현황",
+        "자본금",
+        "매출액",
+        "조직",
+        "인원",
+        "수행조직",
+        "업무분장",
+        "인력이력",
+        "사업실적",
+        "유사실적",
+        "과업이해도",
+        "추진배경",
+        "사업목적",
+        "기대효과",
+        "추진전략",
+        "세부추진계획",
+        "단계별계획",
+        "사업운영",
+        "사후관리",
+        "제안가격",
+        "가격평가"
+      ],
+      "program_topics": [
+        "IT 취업연계",
+        "직무적응 교육",
+        "재직자 직무역량 강화",
+        "AI·디지털 전환",
+        "데이터 분석",
+        "클라우드",
+        "일반현황",
+        "자본금",
+        "매출액",
+        "조직",
+        "인원",
+        "수행조직",
+        "업무분장",
+        "인력이력",
+        "사업실적",
+        "유사실적",
+        "과업이해도",
+        "추진배경",
+        "사업목적",
+        "기대효과",
+        "추진전략",
+        "세부추진계획",
+        "단계별계획",
+        "사업운영",
+        "사후관리",
+        "제안가격",
+        "가격평가",
+        "국가계약법",
+        "경쟁입찰",
+        "등록업체",
+        "나라장터",
+        "경쟁입찰참가자격",
+        "공동수급",
+        "컨소시엄",
+        "공동이행방식"
+      ],
+      "target_audience": [
+        "청년 구직자",
+        "IT 기업 신규채용인력",
+        "IT 기업 재직자"
+      ],
+      "participant_capacity": null,
+      "delivery_format": [
+        "오프라인",
+        "합숙형(1박 2일)",
+        "집합교육",
+        "1:1 코칭",
+        "5일 과정"
+      ],
+      "education_hours": null,
+      "schedule": [],
+      "required_roles": [
+        "취업캠프 기획 및 운영",
+        "맞춤형 직무 교육 기획 및 운영",
+        "교육 인프라 제공",
+        "사후관리 지원",
+        "운영 관리 및 안전사고 대비"
+      ],
+      "instructor_requirements": {
+        "required_experience": [],
+        "required_certifications": [
+          "“국가를 당사자로 하는 계약에 관한 법률 시행령”에 의거 경쟁입찰 참가자격이 있는 등록업체",
+          "국가종합전자조달시스템(나라장터) 경쟁입찰참가자격 등록증 보유 업체"
+        ],
+        "required_vendor_credentials": [],
+        "similar_project_experience": []
+      },
+      "curriculum_requirements": [],
+      "operational_requirements": [],
+      "practical_project_requirements": [
+        "청년 구직자 150명 대상 취업캠프 3회 운영 (1박 2일 합숙, 행사장 및 숙식 제공 포함)",
+        "캠프 종료 후 미취업 청년 50명 대상 1:1 추가 취업지원 컨설팅 수행",
+        "신규채용인력 100명 대상 직무적응 교육 운영 (5일 과정)",
+        "재직자 100명 대상 직무역량 강화 교육 운영 (AI, 데이터 분석 등 트랙 설계)",
+        "교육 인프라 지원 (노트북 임차, AI/디자인 툴 라이선스, 교재 등 제공)",
+        "참여자 전원 대상 재해보험 의무 가입 및 성과관리",
+        "취업캠프 기획 및 운영",
+        "맞춤형 직무 교육 기획 및 운영",
+        "교육 인프라 제공",
+        "사후관리 지원",
+        "운영 관리 및 안전사고 대비"
+      ],
+      "assessment_requirements": [
+        "제안사 일반현황 및 주요연혁, 자본금 및 매출액 등",
+        "제안사의 조직 및 인원현황",
+        "수행조직 및 업무분장, 활용방안 및 이력사항",
+        "본 사업과 명확하게 관련되는 사업실적",
+        "과업의 이해도 (추진배경, 사업목적, 기대효과 등)",
+        "사업 추진전략 제시",
+        "세부 추진계획 (단계별 또는 내역사업별 계획)",
+        "사업 관리·운영 방안 및 사후관리 방안",
+        "총 사업비 범위 내 가격 제안"
+      ],
+      "outcome_requirements": [
+        "생활권 기반의 안정적인 구인 파이프라인 조성 및 채용 연계 확대",
+        "신규채용인력의 현장 조기 안착을 통한 초기 이탈 방지",
+        "기존 재직자의 실무역량 강화를 통한 기업 현장 대응력 향상"
+      ]
+    },
+    "extensions": {
+      "source_task_order_id": "2bdad205-d4eb-48c0-b875-b442e02b99d2",
+      "normalized_qualifications": [
+        {
+          "category": "일반자격",
+          "description": "“국가를 당사자로 하는 계약에 관한 법률 시행령”에 의거 경쟁입찰 참가자격이 있는 등록업체",
+          "is_mandatory": true,
+          "keywords": [
+            "국가계약법",
+            "경쟁입찰",
+            "등록업체"
+          ]
+        },
+        {
+          "category": "등록자격",
+          "description": "국가종합전자조달시스템(나라장터) 경쟁입찰참가자격 등록증 보유 업체",
+          "is_mandatory": true,
+          "keywords": [
+            "나라장터",
+            "경쟁입찰참가자격"
+          ]
+        },
+        {
+          "category": "공동수급",
+          "description": "컨소시엄 등 공동수급(공동이행방식) 응모 가능",
+          "is_mandatory": false,
+          "keywords": [
+            "공동수급",
+            "컨소시엄",
+            "공동이행방식"
+          ]
+        }
+      ],
+      "normalized_evaluation_criteria": [
+        {
+          "category": "정량적 기술평가",
+          "description": "제안사 일반현황 및 주요연혁, 자본금 및 매출액 등",
+          "weight": 5,
+          "keywords": [
+            "일반현황",
+            "자본금",
+            "매출액"
+          ]
+        },
+        {
+          "category": "정량적 기술평가",
+          "description": "제안사의 조직 및 인원현황",
+          "weight": 5,
+          "keywords": [
+            "조직",
+            "인원"
+          ]
+        },
+        {
+          "category": "정량적 기술평가",
+          "description": "수행조직 및 업무분장, 활용방안 및 이력사항",
+          "weight": 5,
+          "keywords": [
+            "수행조직",
+            "업무분장",
+            "인력이력"
+          ]
+        },
+        {
+          "category": "정량적 기술평가",
+          "description": "본 사업과 명확하게 관련되는 사업실적",
+          "weight": 5,
+          "keywords": [
+            "사업실적",
+            "유사실적"
+          ]
+        },
+        {
+          "category": "정성적 기술평가",
+          "description": "과업의 이해도 (추진배경, 사업목적, 기대효과 등)",
+          "weight": 15,
+          "keywords": [
+            "과업이해도",
+            "추진배경",
+            "사업목적",
+            "기대효과"
+          ]
+        },
+        {
+          "category": "정성적 기술평가",
+          "description": "사업 추진전략 제시",
+          "weight": 20,
+          "keywords": [
+            "추진전략"
+          ]
+        },
+        {
+          "category": "정성적 기술평가",
+          "description": "세부 추진계획 (단계별 또는 내역사업별 계획)",
+          "weight": 20,
+          "keywords": [
+            "세부추진계획",
+            "단계별계획"
+          ]
+        },
+        {
+          "category": "정성적 기술평가",
+          "description": "사업 관리·운영 방안 및 사후관리 방안",
+          "weight": 15,
+          "keywords": [
+            "사업운영",
+            "사후관리"
+          ]
+        },
+        {
+          "category": "가격평가",
+          "description": "총 사업비 범위 내 가격 제안",
+          "weight": 10,
+          "keywords": [
+            "제안가격",
+            "가격평가"
+          ]
+        }
+      ],
+      "overview": {
+        "section_titles": [
+          "Ⅰ. 사업개요",
+          "□ 사업목적",
+          "□ 사업개요",
+          "□ 용역개요",
+          "Ⅱ. 과업의 내용"
+        ],
+        "summary": "서울 서남권의 IT 일자리 매칭을 활성화하기 위해 관악구 중심의 청년 구직자 대상 취업캠프와 구로·금천 G밸리 IT 기업 신규채용인력 및 재직자 대상의 맞춤형 직무적응 및 직무역량 강화 교육을 기획하고 운영하는 사업",
+        "core_topics": [
+          "IT 취업연계",
+          "직무적응 교육",
+          "재직자 직무역량 강화",
+          "AI·디지털 전환",
+          "데이터 분석",
+          "클라우드"
+        ],
+        "target_audience": [
+          "청년 구직자",
+          "IT 기업 신규채용인력",
+          "IT 기업 재직자"
+        ],
+        "delivery_formats": [
+          "오프라인",
+          "합숙형(1박 2일)",
+          "집합교육",
+          "1:1 코칭",
+          "5일 과정"
+        ],
+        "required_roles": [
+          "취업캠프 기획 및 운영",
+          "맞춤형 직무 교육 기획 및 운영",
+          "교육 인프라 제공",
+          "사후관리 지원",
+          "운영 관리 및 안전사고 대비"
+        ],
+        "scope": [
+          "청년 구직자 150명 대상 취업캠프 3회 운영 (1박 2일 합숙, 행사장 및 숙식 제공 포함)",
+          "캠프 종료 후 미취업 청년 50명 대상 1:1 추가 취업지원 컨설팅 수행",
+          "신규채용인력 100명 대상 직무적응 교육 운영 (5일 과정)",
+          "재직자 100명 대상 직무역량 강화 교육 운영 (AI, 데이터 분석 등 트랙 설계)",
+          "교육 인프라 지원 (노트북 임차, AI/디자인 툴 라이선스, 교재 등 제공)",
+          "참여자 전원 대상 재해보험 의무 가입 및 성과관리"
+        ],
+        "expected_outcomes": [
+          "생활권 기반의 안정적인 구인 파이프라인 조성 및 채용 연계 확대",
+          "신규채용인력의 현장 조기 안착을 통한 초기 이탈 방지",
+          "기존 재직자의 실무역량 강화를 통한 기업 현장 대응력 향상"
+        ],
+        "preferred_experience": [],
+        "source_excerpt": "Ⅰ. 사업개요\n□ 사업목적\nㅇ 관악 청년 구직자와 구로·금천 G밸리 IT 일자리를 잇는 채용 및 안착 연계 모델 실증을 위한 지역산업맞춤형 일자리사업 취업캠프 및 교육 제공\nㅇ 청년과 기업 간 단기 집중 매칭을 지원하는 집합형 취업캠프 운영을 통한 생활권 기반의 안정적인 구인 파이프라인 조성 및 채용 연계 확대\nㅇ 신규채용인력의 현장 조기 안착을 위한 직무적응 교육 및 기존 재직자의 실무역량 강화를 위한 맞춤형 교육 지원을 통해 초기 이탈 방지 및 기업 현장 대응력 향상 지원\n\n□ 사업목적\nㅇ 관악 청년 구직자와 구로·금천 G밸리 IT 일자리를 잇는 채용 및 안착 연계 모델 실증을 위한 지역산업맞춤형 일자리사업 취업캠프 및 교육 제공\nㅇ 청년과 기업 간 단기 집중 매칭을 지원하는 집합형 취업캠프 운영을 통한 생활권 기반의 안정적인 구인 파이프라인 조성 및 채용 연계 확대\nㅇ 신규채용인력의 현장 조기 안착을 위한 직무적응 교육 및 기존 재직자의 실무역량 강화를 위한 맞춤형 교육 지원을 통해 초기 이탈 방지 및 기업 현장 대응력 향상 지원\n\n□ 사업개요\nㅇ 사 업 명 : 2026년 서울 서남권 IT 취업연계 및 직무교육 지원사업 취업캠프 및 교육 운영",
+        "matching_rules": [
+          {
+            "key": "core_topics",
+            "label": "핵심 교육 주제",
+            "values": [
+              "IT 취업연계",
+              "직무적응 교육",
+              "재직자 직무역량 강화",
+              "AI·디지털 전환",
+              "데이터 분석",
+              "클라우드"
+            ]
+          },
+          {
+            "key": "target_audience",
+            "label": "교육 대상",
+            "values": [
+              "청년 구직자",
+              "IT 기업 신규채용인력",
+              "IT 기업 재직자"
+            ]
+          },
+          {
+            "key": "delivery_formats",
+            "label": "운영 방식",
+            "values": [
+              "오프라인",
+              "합숙형(1박 2일)",
+              "집합교육",
+              "1:1 코칭",
+              "5일 과정"
+            ]
+          },
+          {
+            "key": "required_roles",
+            "label": "요구 역할",
+            "values": [
+              "취업캠프 기획 및 운영",
+              "맞춤형 직무 교육 기획 및 운영",
+              "교육 인프라 제공",
+              "사후관리 지원",
+              "운영 관리 및 안전사고 대비"
+            ]
+          },
+          {
+            "key": "scope",
+            "label": "업무 범위",
+            "values": [
+              "청년 구직자 150명 대상 취업캠프 3회 운영 (1박 2일 합숙, 행사장 및 숙식 제공 포함)",
+              "캠프 종료 후 미취업 청년 50명 대상 1:1 추가 취업지원 컨설팅 수행",
+              "신규채용인력 100명 대상 직무적응 교육 운영 (5일 과정)",
+              "재직자 100명 대상 직무역량 강화 교육 운영 (AI, 데이터 분석 등 트랙 설계)",
+              "교육 인프라 지원 (노트북 임차, AI/디자인 툴 라이선스, 교재 등 제공)",
+              "참여자 전원 대상 재해보험 의무 가입 및 성과관리"
+            ]
+          },
+          {
+            "key": "expected_outcomes",
+            "label": "기대 성과",
+            "values": [
+              "생활권 기반의 안정적인 구인 파이프라인 조성 및 채용 연계 확대",
+              "신규채용인력의 현장 조기 안착을 통한 초기 이탈 방지",
+              "기존 재직자의 실무역량 강화를 통한 기업 현장 대응력 향상"
+            ]
+          }
+        ]
+      }
+    },
+    "evidence": [
+      {
+        "source_document_id": "task-order:2bdad205-d4eb-48c0-b875-b442e02b99d2",
+        "page": null,
+        "section": "normalized task-order requirements",
+        "quote": "捤獥汤捯湰灧慤桥湯湷氠瑢\n漠杳\n氠瑢\n제 안 요 청 서\n- 2026년 서울 서남권 IT 취업연계 및 직무교육 지원사업 취업캠프 및 교육 운영 -\n2026.  7.桤灧\n漠杳\n氠瑢\nⅠ. 사업개요\n□ 사업목적\nㅇ 관악 청년 구직자와 구로·금천 G밸리 IT 일자리를 잇는 채용 및 안착 연계 모델 실증을 위한 지역산업맞춤형 일자리사업 취업캠프 및 교육 제공\nㅇ 청년과 기업 간 단기 집중 매칭을 지원하는 집합형 취업캠프 운영을 통한 생활권 기반의 안정적인 구인 파이프라인 조성 및 채용 연계 확대\nㅇ 신규채용인력의 현장 조기 안착을 위한 직무적응 교육 및 기존 재직자의 실무역량 강화를 위한 맞춤형 교육 지원을 통해 초기 이탈 방지 및 기업 현장 대응력 향상 지원\n□ 사업개요\nㅇ 사 업 명 : 2026년 서울 서남권 IT 취업연계 및 직무교육 지원사업 취업캠프 및 교육 운영\nㅇ 사업기간 : 계약일로부터 ~ 2026년 11월 30일\nㅇ 사업예산 : 60,000,000원 (VAT 포함)\n- 세부예산1 : 취업캠프 운영 보조 지원 30,000,000원 (VAT 포함)\n- 세부예산2 : 재직자 교육 보조 지원 30,000,000원 (VAT 포함)\nㅇ 선정방식 : 협상에 의한 계약\n□ 용역개요\nㅇ 취업캠프 : 관악구 중심 청년 구직자 총 150명(50명씩 3회)을 대상으로 1박 2일 합숙형 교육, 직무 코칭 및 현장 매칭 운영\nㅇ 교육운영 : 구로·금천 G밸리 IT기업의 신규채용인력 100명 및 기존 재직자 100명(총 200명)을 대상으로 기업 수요 반영 직무적응 및 직무역량 강화 교육 운영\n氠瑢\n汤捯Ⅱ. 과업의 내용\n□ 과업 내용\n氠瑢\n과업\n대상\n규모\n시기\n주요 내용\n방식\n취업캠프 기획 및 운영\n청년 구직자\n150명\n7~11월\n관악구 중심 청년 구직자 150명 대상, 50명씩 3회 1박2일 취업캠프 운영\n오프라인\n맞춤형 직무 교육 운영\n신규채용인력 및 재직자\n200명\n7~11월\n신규채용인력 및 구로·금천 G밸리 IT 기업 기존 재직자 대상\n신규인력 직무적응 교육 100명 및 재직자 ",
+        "confidence": 1.0
+      }
+    ],
+    "review_status": "unreviewed"
+  },
+  "instructor": {
+    "instructor_id": "instructor-10",
+    "profile_version": "db-054cece0eef2",
+    "display_name": "김민주",
+    "expertise_tags": [
+      "Python",
+      "LLM",
+      "Flask",
+      "AWS",
+      "AppSheet",
+      "Google Cloud",
+      "Gemini",
+      "Arduino",
+      "3D Printing",
+      "Scratch",
+      "App Inventor",
+      "C",
+      "코딩 교육",
+      "사물인터넷(IoT)",
+      "인공지능(AI)",
+      "데이터 분석",
+      "생성형 AI",
+      "머신러닝",
+      "데이터분석",
+      "생성형AI",
+      "마케팅",
+      "컨설팅",
+      "문서자동화",
+      "앱시트",
+      "부트캠프",
+      "MultiModal",
+      "AI",
+      "GoogleCloud",
+      "보조강사",
+      "구글자동화툴",
+      "노코딩",
+      "인공지능",
+      "구글AI",
+      "백엔드",
+      "파이썬",
+      "코딩테스트",
+      "알고리즘",
+      "비접촉체온계",
+      "메이커",
+      "사물인터넷",
+      "IoT",
+      "줌",
+      "메이커튜터",
+      "코딩강사",
+      "마스터과정",
+      "유튜브",
+      "코딩강사양성",
+      "아두이노",
+      "프로젝트",
+      "해커톤",
+      "코딩교육",
+      "기초과정",
+      "창업교육",
+      "메이커캠프",
+      "프로그래밍",
+      "3D프린팅"
+    ],
+    "summary": "파이썬 및 AI/IoT 분야 9년 경력의 전문 코딩 강사",
+    "delivery_modes": [],
+    "availability_notes": null,
+    "vendor_experience": [
+      "아이코어이앤씨 - 강사 · 교육컨설턴트 (교육 운영 및 강의)",
+      "프리랜서 - 프리랜서 활동 (코딩 강의 출강 및 교육 콘텐츠 제작)",
+      "소프트웨어놀이터 - 기획.교육 · 기획 팀장 (코딩 온/오프라인 강의, 교육 콘텐츠 기획 제작, 유튜브 채널 운영 관리)"
+    ],
+    "vendor_certifications": [
+      "데이터분석준전문가(ADsP) 최종합격",
+      "COS Pro(Python) 1급 최종합격",
+      "정보처리산업기사 최종합격"
+    ],
+    "teaching_items": [
+      {
+        "topic": "Python 머신러닝 모델링과 데이터 분석 과정",
+        "organization": "한국AI사물인터넷협회 세종대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 181",
+            "quote": "Python 머신러닝 모델링과 데이터 분석 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "소상공인을 위한 생성형 AI 활용 특강 (콘텐츠 제작, 마케팅, 기획 등)",
+        "organization": "서울패션허브",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 180",
+            "quote": "소상공인을 위한 생성형 AI 활용 특강 (콘텐츠 제작, 마케팅, 기획 등)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "패션 기업 생성형 AI 활용 출강 & 컨설팅",
+        "organization": "한국패션협회",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 179",
+            "quote": "패션 기업 생성형 AI 활용 출강 & 컨설팅",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "데이터 분석 및 문서 자동화",
+        "organization": "서울교육청",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 178",
+            "quote": "데이터 분석 및 문서 자동화",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Google 앱시트를 활용한 일일 부트캠프",
+        "organization": "천안여자상업고등학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 177",
+            "quote": "Google 앱시트를 활용한 일일 부트캠프",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Cloud 기반 Multi Modal AI 개발자 양성 과정 With Google Cloud",
+        "organization": "서울경제진흥원",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 176",
+            "quote": "Cloud 기반 Multi Modal AI 개발자 양성 과정 With Google Cloud",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Python Programming",
+        "organization": "서울경제진흥원",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 175",
+            "quote": "Python Programming",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "구글 Gemini로 업무 혁신하기",
+        "organization": "한국생산성본부",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 174",
+            "quote": "구글 Gemini로 업무 혁신하기",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Google 자동화툴 앱시트 재직자 특강",
+        "organization": "성균관대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 173",
+            "quote": "Google 자동화툴 앱시트 재직자 특강",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "앱시트를 이용한 노코딩 앱 만들기",
+        "organization": "경남교육청",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 172",
+            "quote": "앱시트를 이용한 노코딩 앱 만들기",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "청년취업사관학교 GoogleCloud 기반 인공지능 개발자 과정 3기",
+        "organization": "서울경제진흥원",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 171",
+            "quote": "청년취업사관학교 GoogleCloud 기반 인공지능 개발자 과정 3기",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "구글 AI 글로벌 인재 양성 과정",
+        "organization": "제주도 지역혁신플랫폼",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 170",
+            "quote": "구글 AI 글로벌 인재 양성 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "청년취업사관학교 GoogleCloud 기반 인공지능 개발자 과정 2기",
+        "organization": "서울경제진흥원",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 169",
+            "quote": "청년취업사관학교 GoogleCloud 기반 인공지능 개발자 과정 2기",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "flask 활용 백엔드 과정 (AWS, Flask 사용한 웹페이지 배포)",
+        "organization": "세명컴퓨터고등학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 168",
+            "quote": "flask 활용 백엔드 과정 (AWS, Flask 사용한 웹페이지 배포)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "인공지능 활용 특강",
+        "organization": "은평메디텍고등학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 167",
+            "quote": "인공지능 활용 특강",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "데이터분석.인공지능 특강",
+        "organization": "충남과학고등학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 166",
+            "quote": "데이터분석.인공지능 특강",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "파이썬을 활용한 데이터분석 & 머신러닝",
+        "organization": "한겨레 신문사",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 165",
+            "quote": "파이썬을 활용한 데이터분석 & 머신러닝",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "코딩테스트를 위한 필수 알고리즘 정복&기출 문제 풀이 강의 제작",
+        "organization": "러닝스푼즈",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 164",
+            "quote": "코딩테스트를 위한 필수 알고리즘 정복&기출 문제 풀이 강의 제작",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "비접촉체온계 만들기 과정",
+        "organization": "크리에이티브팩토리",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 163",
+            "quote": "비접촉체온계 만들기 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "사물인터넷(IOT)융합 기초 과정",
+        "organization": "서일대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 162",
+            "quote": "사물인터넷(IOT)융합 기초 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "줌 활용 메이커튜더양성과정",
+        "organization": "크리에이티브팩토리",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 161",
+            "quote": "줌 활용 메이커튜더양성과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "사물인터넷(IOT)융합 중급과정",
+        "organization": "서일대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 160",
+            "quote": "사물인터넷(IOT)융합 중급과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "코딩강사 마스터과정",
+        "organization": "크리에이티브팩토리",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 159",
+            "quote": "코딩강사 마스터과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "사물인터넷(IOT)융합 기초과정",
+        "organization": "서일대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 158",
+            "quote": "사물인터넷(IOT)융합 기초과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "유튜브 홍보 마케팅 과정",
+        "organization": "포항창조경제혁신센터",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 157",
+            "quote": "유튜브 홍보 마케팅 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "코딩강사양성과정",
+        "organization": "영남이공대 평생교육원",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 156",
+            "quote": "코딩강사양성과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "아두이노 프로젝트",
+        "organization": "부산과학기술인협의회",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 155",
+            "quote": "아두이노 프로젝트",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "유튜브 홍보 마케팅",
+        "organization": "포항창조경제혁신센터",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 154",
+            "quote": "유튜브 홍보 마케팅",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "아두이노 기초 과정",
+        "organization": "호서대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 153",
+            "quote": "아두이노 기초 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "아두이노 기초 및 프로젝트 과정",
+        "organization": "경북대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 152",
+            "quote": "아두이노 기초 및 프로젝트 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "HOOK!IOT 해커톤 캠프",
+        "organization": "K-ICT 디바이스랩",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 151",
+            "quote": "HOOK!IOT 해커톤 캠프",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "IoT 초중급 과정",
+        "organization": "울산대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 150",
+            "quote": "IoT 초중급 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "사물인터넷 초중고급 과정",
+        "organization": "영남대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 149",
+            "quote": "사물인터넷 초중고급 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "코딩교육 기초 과정",
+        "organization": "부산과학기술협의회",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 148",
+            "quote": "코딩교육 기초 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "아두이노 기초 과정 (창업교육)",
+        "organization": "한성대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 147",
+            "quote": "아두이노 기초 과정 (창업교육)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "여름방학 메이커 캠프",
+        "organization": "K-ICT 디바이스랩",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 146",
+            "quote": "여름방학 메이커 캠프",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "코딩강사양성과정 3기",
+        "organization": "포항창조혁신센터",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 145",
+            "quote": "코딩강사양성과정 3기",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "코딩강사양성과정 1기",
+        "organization": "영남이공대 평생교육원",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 144",
+            "quote": "코딩강사양성과정 1기",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "아두이노 프로그래밍",
+        "organization": "한국로봇산업진흥원",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 143",
+            "quote": "아두이노 프로그래밍",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "아두이노 프로그래밍 및 3D 프린팅",
+        "organization": "크리에이티브팩토리 경북대산학협력단",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 142",
+            "quote": "아두이노 프로그래밍 및 3D 프린팅",
+            "confidence": 1.0
+          }
+        ]
+      }
+    ],
+    "project_items": [],
+    "work_experience_items": [
+      {
+        "organization": "아이코어이앤씨",
+        "summary": "강사 · 교육컨설턴트 (교육 운영 및 강의)",
+        "start_date": "2023-11-01",
+        "end_date": "2025-01-01",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 77",
+            "quote": "강사 · 교육컨설턴트 (교육 운영 및 강의)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "organization": "프리랜서",
+        "summary": "프리랜서 활동 (코딩 강의 출강 및 교육 콘텐츠 제작)",
+        "start_date": "2022-01-01",
+        "end_date": "2023-12-01",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 78",
+            "quote": "프리랜서 활동 (코딩 강의 출강 및 교육 콘텐츠 제작)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "organization": "소프트웨어놀이터",
+        "summary": "기획.교육 · 기획 팀장 (코딩 온/오프라인 강의, 교육 콘텐츠 기획 제작, 유튜브 채널 운영 관리)",
+        "start_date": "2015-10-01",
+        "end_date": "2021-12-01",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 79",
+            "quote": "기획.교육 · 기획 팀장 (코딩 온/오프라인 강의, 교육 콘텐츠 기획 제작, 유튜브 채널 운영 관리)",
+            "confidence": 1.0
+          }
+        ]
+      }
+    ],
+    "certifications": [
+      {
+        "name": "데이터분석준전문가(ADsP) 최종합격",
+        "issuer": "한국데이터베이스진흥원",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 80",
+            "quote": "데이터분석준전문가(ADsP) 최종합격",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "COS Pro(Python) 1급 최종합격",
+        "issuer": "YBM",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 82",
+            "quote": "COS Pro(Python) 1급 최종합격",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "정보처리산업기사 최종합격",
+        "issuer": "한국산업인력공단",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 81",
+            "quote": "정보처리산업기사 최종합격",
+            "confidence": 1.0
+          }
+        ]
+      }
+    ],
+    "source_document_ids": [
+      "instructor-source:내부 강사 정보.xlsx",
+      "instructor-db:10"
+    ],
+    "extensions": {},
+    "evidence": [
+      {
+        "source_document_id": "instructor-db:10",
+        "page": null,
+        "section": "instructors",
+        "quote": "파이썬 및 AI/IoT 분야 9년 경력의 전문 코딩 강사",
+        "confidence": 1.0
+      }
+    ],
+    "review_status": "unreviewed"
+  }
+}

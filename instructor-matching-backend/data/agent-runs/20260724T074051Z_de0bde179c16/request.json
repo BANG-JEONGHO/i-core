@@ -1,0 +1,1880 @@
+{
+  "project": {
+    "schema_version": "education_project_v1",
+    "service_type": "education_program",
+    "program_type": "vocational_training",
+    "classification_confidence": 1.0,
+    "base": {
+      "project_name": "(붙임2)_제안요청서.pdf",
+      "client_organization": null,
+      "purpose": [
+        "안전하고 책임 있는 AI 활용 역량을 강화하고, 클라우드 및 AI 분야 자격 취득과 취업 연계를 지원하기 위해 이론·실습 병행 교육 및 프로젝트 기반 학습(PBL) 과정을 위탁 운영하는 사업",
+        "교육과정 기획 및 지원 (총 50시간)",
+        "전문 강사 및 현업 전문가 특강 섭외",
+        "교육용 클라우드플랫폼 계정 및 크레딧 운영·관리",
+        "실습 환경 구성 및 온라인 협업 플랫폼 활용 전담 인력 배정",
+        "수강생 평가 및 자격증 취득 지원 모의평가 해설",
+        "홍보물 및 교육 교재·실습 자료 제작",
+        "데이터 주권(소버린 AI) 중요성 이해 및 데이터 활용 역량 강화",
+        "실무 적용 역량 및 문제 해결 능력 제고",
+        "클라우드·AI 분야 자격 취득 지원 및 취업 경쟁력 강화"
+      ],
+      "contract_method": null,
+      "start_date": null,
+      "end_date": null,
+      "budget_krw": null,
+      "vat_included": null,
+      "deliverables": [
+        "교육과정 기획 및 지원 (총 50시간)",
+        "전문 강사 및 현업 전문가 특강 섭외",
+        "교육용 클라우드플랫폼 계정 및 크레딧 운영·관리",
+        "실습 환경 구성 및 온라인 협업 플랫폼 활용 전담 인력 배정",
+        "수강생 평가 및 자격증 취득 지원 모의평가 해설",
+        "홍보물 및 교육 교재·실습 자료 제작",
+        "데이터 주권(소버린 AI) 중요성 이해 및 데이터 활용 역량 강화",
+        "실무 적용 역량 및 문제 해결 능력 제고",
+        "클라우드·AI 분야 자격 취득 지원 및 취업 경쟁력 강화"
+      ],
+      "proposal_requirements": [
+        "최근 3년 이내 클라우드 및 인공지능(AI)분야 교육과정을 수행한 실적이 있는 업체",
+        "클라우드 또는 인공지능(AI)분야 전문 강사진 2명 이상을 보유한 업체(재직증명서, 강사확인서, 관련 자격증 등으로 증빙 가능)",
+        "제안하는 교육과정의 운영에 필요한 전문 인력 및 교육 운영 체계를 갖춘 업체",
+        "공동 수급(컨소시엄)은 허용하지 않으며 단일업체여야 함",
+        "강의",
+        "보조강사 지원",
+        "프로젝트 멘토링 및 피드백",
+        "출결 및 학생 관리",
+        "모의평가 진행"
+      ],
+      "compliance_requirements": [
+        "[사업의 기획력 및 적합성] 교육 취지에 맞는 구성 및 기획, 교육 내용의 우수성",
+        "[강사진 구성 능력] 클라우드·AI 분야 공인 자격 또는 전문성을 보유한 강사진 구성",
+        "[제안업체 전문성 및 조직역량] 조직 및 인원(전문인력), 책임자의 능력, 전담 인력 구성 및 투입 규모",
+        "[안전관리 및 계획] 참여인원 안전관리 대책, 기타 비상시 대책",
+        "[최근 3년 실적의 수준] 2024~2026년 누적 실적 평가",
+        "[기업경영상태] 기업신용평가 등급에 의함",
+        "[제안가격] 제안가격의 적정성"
+      ]
+    },
+    "education": {
+      "technology_domains": [
+        "클라우드",
+        "AI (인공지능)",
+        "데이터 주권(소버린 AI)",
+        "프로젝트 기반 학습",
+        "자격 취득",
+        "클라우드 교육 실적",
+        "인공지능 교육 실적",
+        "최근 3년 이내",
+        "전문 강사진",
+        "2명 이상 보유",
+        "강사 증빙",
+        "전문 인력",
+        "교육 운영 체계",
+        "공동 수급 불가",
+        "단일업체",
+        "기획력",
+        "적합성",
+        "교육 내용 우수성",
+        "강사진 구성 능력",
+        "공인 자격",
+        "전문성 강사",
+        "조직역량",
+        "전문인력",
+        "투입 규모",
+        "안전관리",
+        "비상 대책",
+        "실적 수준",
+        "누적 실적",
+        "기업경영상태",
+        "신용평가등급",
+        "제안가격",
+        "가격평가"
+      ],
+      "program_topics": [
+        "클라우드",
+        "AI (인공지능)",
+        "데이터 주권(소버린 AI)",
+        "프로젝트 기반 학습",
+        "자격 취득",
+        "기획력",
+        "적합성",
+        "교육 내용 우수성",
+        "강사진 구성 능력",
+        "공인 자격",
+        "전문성 강사",
+        "조직역량",
+        "전문인력",
+        "투입 규모",
+        "안전관리",
+        "비상 대책",
+        "실적 수준",
+        "누적 실적",
+        "기업경영상태",
+        "신용평가등급",
+        "제안가격",
+        "가격평가",
+        "클라우드 교육 실적",
+        "인공지능 교육 실적",
+        "최근 3년 이내",
+        "전문 강사진",
+        "2명 이상 보유",
+        "강사 증빙",
+        "전문 인력",
+        "교육 운영 체계",
+        "공동 수급 불가",
+        "단일업체"
+      ],
+      "target_audience": [
+        "약 20명",
+        "순천향대학교 학생"
+      ],
+      "participant_capacity": null,
+      "delivery_format": [
+        "오프라인",
+        "실습형",
+        "이론과 실습 병행",
+        "프로젝트 기반"
+      ],
+      "education_hours": null,
+      "schedule": [],
+      "required_roles": [
+        "강의",
+        "보조강사 지원",
+        "프로젝트 멘토링 및 피드백",
+        "출결 및 학생 관리",
+        "모의평가 진행"
+      ],
+      "instructor_requirements": {
+        "required_experience": [
+          "최근 3년 이내 클라우드 및 인공지능(AI)분야 교육과정을 수행한 실적이 있는 업체"
+        ],
+        "required_certifications": [
+          "클라우드 또는 인공지능(AI)분야 전문 강사진 2명 이상을 보유한 업체(재직증명서, 강사확인서, 관련 자격증 등으로 증빙 가능)"
+        ],
+        "required_vendor_credentials": [],
+        "similar_project_experience": [
+          "최근 3년 이내 클라우드 및 인공지능(AI)분야 교육과정 수행 실적"
+        ]
+      },
+      "curriculum_requirements": [],
+      "operational_requirements": [],
+      "practical_project_requirements": [
+        "교육과정 기획 및 지원 (총 50시간)",
+        "전문 강사 및 현업 전문가 특강 섭외",
+        "교육용 클라우드플랫폼 계정 및 크레딧 운영·관리",
+        "실습 환경 구성 및 온라인 협업 플랫폼 활용 전담 인력 배정",
+        "수강생 평가 및 자격증 취득 지원 모의평가 해설",
+        "홍보물 및 교육 교재·실습 자료 제작",
+        "강의",
+        "보조강사 지원",
+        "프로젝트 멘토링 및 피드백",
+        "출결 및 학생 관리",
+        "모의평가 진행"
+      ],
+      "assessment_requirements": [
+        "[사업의 기획력 및 적합성] 교육 취지에 맞는 구성 및 기획, 교육 내용의 우수성",
+        "[강사진 구성 능력] 클라우드·AI 분야 공인 자격 또는 전문성을 보유한 강사진 구성",
+        "[제안업체 전문성 및 조직역량] 조직 및 인원(전문인력), 책임자의 능력, 전담 인력 구성 및 투입 규모",
+        "[안전관리 및 계획] 참여인원 안전관리 대책, 기타 비상시 대책",
+        "[최근 3년 실적의 수준] 2024~2026년 누적 실적 평가",
+        "[기업경영상태] 기업신용평가 등급에 의함",
+        "[제안가격] 제안가격의 적정성"
+      ],
+      "outcome_requirements": [
+        "데이터 주권(소버린 AI) 중요성 이해 및 데이터 활용 역량 강화",
+        "실무 적용 역량 및 문제 해결 능력 제고",
+        "클라우드·AI 분야 자격 취득 지원 및 취업 경쟁력 강화"
+      ]
+    },
+    "extensions": {
+      "source_task_order_id": "2ef242ea-8f76-44e4-ac23-f200142c5c61",
+      "normalized_qualifications": [
+        {
+          "category": "실적",
+          "description": "최근 3년 이내 클라우드 및 인공지능(AI)분야 교육과정을 수행한 실적이 있는 업체",
+          "is_mandatory": true,
+          "keywords": [
+            "클라우드 교육 실적",
+            "인공지능 교육 실적",
+            "최근 3년 이내"
+          ]
+        },
+        {
+          "category": "인력",
+          "description": "클라우드 또는 인공지능(AI)분야 전문 강사진 2명 이상을 보유한 업체(재직증명서, 강사확인서, 관련 자격증 등으로 증빙 가능)",
+          "is_mandatory": true,
+          "keywords": [
+            "전문 강사진",
+            "2명 이상 보유",
+            "강사 증빙"
+          ]
+        },
+        {
+          "category": "운영 역량",
+          "description": "제안하는 교육과정의 운영에 필요한 전문 인력 및 교육 운영 체계를 갖춘 업체",
+          "is_mandatory": true,
+          "keywords": [
+            "전문 인력",
+            "교육 운영 체계"
+          ]
+        },
+        {
+          "category": "공동수급 제한",
+          "description": "공동 수급(컨소시엄)은 허용하지 않으며 단일업체여야 함",
+          "is_mandatory": true,
+          "keywords": [
+            "공동 수급 불가",
+            "단일업체"
+          ]
+        }
+      ],
+      "normalized_evaluation_criteria": [
+        {
+          "category": "기술평가",
+          "description": "[사업의 기획력 및 적합성] 교육 취지에 맞는 구성 및 기획, 교육 내용의 우수성",
+          "weight": 20,
+          "keywords": [
+            "기획력",
+            "적합성",
+            "교육 내용 우수성"
+          ]
+        },
+        {
+          "category": "기술평가",
+          "description": "[강사진 구성 능력] 클라우드·AI 분야 공인 자격 또는 전문성을 보유한 강사진 구성",
+          "weight": 15,
+          "keywords": [
+            "강사진 구성 능력",
+            "공인 자격",
+            "전문성 강사"
+          ]
+        },
+        {
+          "category": "기술평가",
+          "description": "[제안업체 전문성 및 조직역량] 조직 및 인원(전문인력), 책임자의 능력, 전담 인력 구성 및 투입 규모",
+          "weight": 15,
+          "keywords": [
+            "조직역량",
+            "전문인력",
+            "투입 규모"
+          ]
+        },
+        {
+          "category": "기술평가",
+          "description": "[안전관리 및 계획] 참여인원 안전관리 대책, 기타 비상시 대책",
+          "weight": 10,
+          "keywords": [
+            "안전관리",
+            "비상 대책"
+          ]
+        },
+        {
+          "category": "기술평가",
+          "description": "[최근 3년 실적의 수준] 2024~2026년 누적 실적 평가",
+          "weight": 10,
+          "keywords": [
+            "실적 수준",
+            "누적 실적"
+          ]
+        },
+        {
+          "category": "기술평가",
+          "description": "[기업경영상태] 기업신용평가 등급에 의함",
+          "weight": 10,
+          "keywords": [
+            "기업경영상태",
+            "신용평가등급"
+          ]
+        },
+        {
+          "category": "가격평가",
+          "description": "[제안가격] 제안가격의 적정성",
+          "weight": 20,
+          "keywords": [
+            "제안가격",
+            "가격평가"
+          ]
+        }
+      ],
+      "overview": {
+        "section_titles": [
+          "나. 교육개요",
+          "추진내용",
+          "추진내용 | 작업 프로세스",
+          "교육 목적",
+          "교육개요",
+          "과업내용"
+        ],
+        "summary": "안전하고 책임 있는 AI 활용 역량을 강화하고, 클라우드 및 AI 분야 자격 취득과 취업 연계를 지원하기 위해 이론·실습 병행 교육 및 프로젝트 기반 학습(PBL) 과정을 위탁 운영하는 사업",
+        "core_topics": [
+          "클라우드",
+          "AI (인공지능)",
+          "데이터 주권(소버린 AI)",
+          "프로젝트 기반 학습",
+          "자격 취득"
+        ],
+        "target_audience": [
+          "약 20명",
+          "순천향대학교 학생"
+        ],
+        "delivery_formats": [
+          "오프라인",
+          "실습형",
+          "이론과 실습 병행",
+          "프로젝트 기반"
+        ],
+        "required_roles": [
+          "강의",
+          "보조강사 지원",
+          "프로젝트 멘토링 및 피드백",
+          "출결 및 학생 관리",
+          "모의평가 진행"
+        ],
+        "scope": [
+          "교육과정 기획 및 지원 (총 50시간)",
+          "전문 강사 및 현업 전문가 특강 섭외",
+          "교육용 클라우드플랫폼 계정 및 크레딧 운영·관리",
+          "실습 환경 구성 및 온라인 협업 플랫폼 활용 전담 인력 배정",
+          "수강생 평가 및 자격증 취득 지원 모의평가 해설",
+          "홍보물 및 교육 교재·실습 자료 제작"
+        ],
+        "expected_outcomes": [
+          "데이터 주권(소버린 AI) 중요성 이해 및 데이터 활용 역량 강화",
+          "실무 적용 역량 및 문제 해결 능력 제고",
+          "클라우드·AI 분야 자격 취득 지원 및 취업 경쟁력 강화"
+        ],
+        "preferred_experience": [
+          "최근 3년 이내 클라우드 및 인공지능(AI)분야 교육과정 수행 실적"
+        ],
+        "source_excerpt": "나. 교육개요\n1) 사 업 명 : 클라우드 및 AI 전문 교육과정 운영\n\n추진내용\n1주 2주 3주 4주 5주 6주\n\n추진내용 | 작업 프로세스\n1주 | 2주 | 3주 | 4주 | 5주 | 6주",
+        "matching_rules": [
+          {
+            "key": "core_topics",
+            "label": "핵심 교육 주제",
+            "values": [
+              "클라우드",
+              "AI (인공지능)",
+              "데이터 주권(소버린 AI)",
+              "프로젝트 기반 학습",
+              "자격 취득"
+            ]
+          },
+          {
+            "key": "target_audience",
+            "label": "교육 대상",
+            "values": [
+              "약 20명",
+              "순천향대학교 학생"
+            ]
+          },
+          {
+            "key": "delivery_formats",
+            "label": "운영 방식",
+            "values": [
+              "오프라인",
+              "실습형",
+              "이론과 실습 병행",
+              "프로젝트 기반"
+            ]
+          },
+          {
+            "key": "required_roles",
+            "label": "요구 역할",
+            "values": [
+              "강의",
+              "보조강사 지원",
+              "프로젝트 멘토링 및 피드백",
+              "출결 및 학생 관리",
+              "모의평가 진행"
+            ]
+          },
+          {
+            "key": "scope",
+            "label": "업무 범위",
+            "values": [
+              "교육과정 기획 및 지원 (총 50시간)",
+              "전문 강사 및 현업 전문가 특강 섭외",
+              "교육용 클라우드플랫폼 계정 및 크레딧 운영·관리",
+              "실습 환경 구성 및 온라인 협업 플랫폼 활용 전담 인력 배정",
+              "수강생 평가 및 자격증 취득 지원 모의평가 해설",
+              "홍보물 및 교육 교재·실습 자료 제작"
+            ]
+          },
+          {
+            "key": "expected_outcomes",
+            "label": "기대 성과",
+            "values": [
+              "데이터 주권(소버린 AI) 중요성 이해 및 데이터 활용 역량 강화",
+              "실무 적용 역량 및 문제 해결 능력 제고",
+              "클라우드·AI 분야 자격 취득 지원 및 취업 경쟁력 강화"
+            ]
+          },
+          {
+            "key": "preferred_experience",
+            "label": "우대 경험",
+            "values": [
+              "최근 3년 이내 클라우드 및 인공지능(AI)분야 교육과정 수행 실적"
+            ]
+          }
+        ]
+      }
+    },
+    "evidence": [
+      {
+        "source_document_id": "task-order:2ef242ea-8f76-44e4-ac23-f200142c5c61",
+        "page": null,
+        "section": "normalized task-order requirements",
+        "quote": "제 안 요 청 서\n클라우드 및 AI 전문 교육과정 운영 용역 입찰\n2026. 6.\n※ 본 자료는 제안내용의 설명을 위한 배포자료로, 이외 목적으로 무단복제, 전달 및 사용하는 행위를 금함.\nI 입찰 내용\n1. 입 찰 명 : 클라우드 및 AI 전문 교육과정 운영 용역 입찰\n2. 사업기간 : 계약체결일 ~ 2026.8.31.까지\n3. 배정예산 : 금 50,000,000원(금오천만원) 내(부가세 포함)\n4. 입찰개요\n가. 교육 목적\n1) 데이터 주권(소버린 AI)의 중요성을 이해하고, 기업 핵심 데이터의 안전한 활용 역량을 갖춘 인재 양성\n2) AI 도구를 활용해 업무 효율을 높이는 실무 기초 역량 배양\n3) 프로젝트 기반 학습을 통해 AI 활용 역량을 강화하고, 클라우드·AI 분야 자격 취득과 취업 연계를\n지원하는 전주기적 교육체계를 구축\n나. 교육개요\n1) 사 업 명 : 클라우드 및 AI 전문 교육과정 운영\n2) 교육기간 : 2026.7.15.(수) ~ 7.29.(수)\n3) 진행장소 : 순천향대학교 인간사랑관 2층 임베디드 실습실 6205호\n4) 추진방향\n가) 데이터 주권 이해를 바탕으로 안전하고 책임 있는 AI 활용 역량 배양\n나) 이론과 실습을 병행하는 현장 중심 교육을 통해 클라우드·AI 기술의 실무 적용 역량 제고\n다) 프로젝트 기반 학습을 통한 문제 해결 능력 및 협업 역량 강화\n라) 클라우드·AI 분야 자격 취득 지원 및 산업체 연계를 통한 취업 경쟁력 강화\n5) 참여인원 : 약 20명\n6) 주최/주관 : 순천향대학교/AI의료융합혁신교육원 학사지원팀\n다. 과업내용\n1) 교육 지원 전반사항\n가) 교육과정 기획·지원\n- 클라우드·AI 교육과정에 적합한 이론/실습 병행 현장형 교육과정 기획 및 제안\n- 2026.7.15.~7.29. 총 50시간 교육 일정 운영, 기획 및 지원\n나) 강사 섭외 및 지원\n- 클라우드 및 AI 활용 교육 강사 섭외 및 교육 진행(주강사, 보조강사)\n- 클라우드·AI 분야 전문 강사진 포함 지원\n- 현업 전문가 특강(현직자 특강)",
+        "confidence": 1.0
+      }
+    ],
+    "review_status": "unreviewed"
+  },
+  "instructor": {
+    "instructor_id": "instructor-104",
+    "profile_version": "db-b2052502252a",
+    "display_name": "허강욱",
+    "expertise_tags": [
+      "Java",
+      "Python",
+      "Golang",
+      "Rust",
+      "Spring",
+      "MSA",
+      "HTML",
+      "CSS",
+      "Javascript",
+      "React",
+      "Node.js",
+      "Docker",
+      "Kubernetes",
+      "블록체인 기획 및 개발",
+      "프로그래밍",
+      "웹 개발",
+      "클라우드 및 인프라",
+      "IT포트폴리오",
+      "특강",
+      "블록체인",
+      "개발",
+      "챗GPT",
+      "서비스 기획",
+      "생성형 AI",
+      "NFT",
+      "쿠버네티스",
+      "인프라",
+      "파이썬",
+      "디지털 자산거래소",
+      "대출 플랫폼",
+      "공인전자문서센터",
+      "암호화폐",
+      "트레이딩",
+      "미납통행료 정산",
+      "미술품 조각거래",
+      "사업기획",
+      "CBDC",
+      "기술검증",
+      "개념",
+      "사례",
+      "전자무역",
+      "컨설팅",
+      "전문가",
+      "실습",
+      "유즈케이스",
+      "제조 프로세스",
+      "CDF 상품 플랫폼",
+      "전자계약",
+      "GLN",
+      "핀테크",
+      "골드바 안심 서비스"
+    ],
+    "summary": "블록체인 및 클라우드 아키텍처 전문가",
+    "delivery_modes": [],
+    "availability_notes": null,
+    "vendor_experience": [
+      "NHN - 블록체인 기반 디지털 자산거래소, 대출 플랫폼, 공인전자문서센터 기획, 기술 총괄",
+      "한국도로공사 - 블록체인 기반 미납통행료 정산 서비스, 블록체인 기술 총괄",
+      "하나은행 - NFT기반 미술품 조각거래 서비스, 사업기획 및 블록체인 총괄",
+      "하나은행 - CBDC 기술검증 Project, 사업기획 및 블록체인 총괄",
+      "한국무역정보통신 - 전자무역기반 블록체인 Project, 사업기획 및 블록체인 기술 총괄",
+      "IBK - 블록체인 Consulting Project",
+      "네이버 - 블록체인 Consulting Project, 사업기획 및 블록체인 기술 총괄",
+      "SKHynix - 제조 프로세스 기반 서비스, 사업기획 및 블록체인 기술 총괄, PM",
+      "현대커머셜 - CDF 상품 플랫폼 구축 Project, 사업기획 및 블록체인 기술 총괄",
+      "신한지주 - 그룹총괄 전자계약 서비스, 사업기획 및 프로젝트 총괄",
+      "하나은행 - GLN, First Project, 사업기획 및 블록체인 기술 총괄",
+      "신한은행 - 골드바 안심 서비스, 서비스 총괄",
+      "NHN - 이사, 블록체인 사업기획 총괄",
+      "㈜알고링크 - 강사, 강의",
+      "Blue Prism - 이사, Digital Strategy Specialist, Consultant",
+      "Hana Bank - 차장, 블록체인 사업 기획, 블록체인 아키텍처, 블록체인 기술 총괄",
+      "IBM - 차장, 블록체인 아키텍처, 블록체인 기술 리더, Client Technical Leader",
+      "Shinhan DS - 차장, 블록체인 사업기획, 신기술 기획, 프로젝트 PM, 블록체인 전문 아키텍처",
+      "Red Hat - 차장, 기술 컨설팅, 아키텍처",
+      "KTDS - 과장, 아키텍처, 서비스 운영팀 리딩",
+      "DesignComm - 팀장, 기술컨설팅, 아키텍처",
+      "Oracle - Senior Consultant, 컨설팅, 플랫폼 개발",
+      "Comas - 대리, 컨설팅, 기술지원",
+      "Nexzone - 대리, 프로젝트 PM, 솔루션 기술지원, 개발",
+      "FutureInfornet - 사원, 개발"
+    ],
+    "vendor_certifications": [
+      "Data Analysis with Python",
+      "Data Science Foundations Specialist",
+      "Data Visualization with Python",
+      "Machine Learning with Python",
+      "Smart Contracts",
+      "Python for Data Science and AI",
+      "Microservice – Fundamentals",
+      "IBM Quantum Conversations",
+      "IBM Microservices Specialist",
+      "IBM Microservice",
+      "Deploying Microservices with Kubernetes",
+      "Decentralized Applications (Dapps)",
+      "Data Science Methodology",
+      "Blockchain Basics",
+      "IBM Blockchain Essentials V2",
+      "Blockchain Platforms",
+      "Blockchain",
+      "IBM Recognized Teacher / Educator",
+      "IBM Recognized Speaker / Presenter",
+      "IBM Design Thinking Practitioner",
+      "Cognitive Practitioner",
+      "Enterprise Design Thinking Practitioner",
+      "IBM Architectural Thinking",
+      "IBM Blockchain Foundation Developer",
+      "IBM Blockchain Essentials",
+      "IBM Blockchain Consulting",
+      "IBM Cloud Essentials",
+      "Watson Conversation Service Foundations",
+      "Watson Discovery Service Foundations",
+      "International certification of Sun certified Developer (SCJD)",
+      "Certification of Craftsman Information Equipment Operation (정보기기운용기능사)",
+      "International certification of Microsoft certified Professional (MCP)",
+      "International certification of sun certified Web Component Developer (SCWCD)",
+      "International certification of Sun certified Programmer (SCJP)",
+      "Certification of Computer skill 2급"
+    ],
+    "teaching_items": [
+      {
+        "topic": "IT포트폴리오 작성법 특강",
+        "organization": "멀티캠퍼스",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 2300",
+            "quote": "IT포트폴리오 작성법 특강",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "블록체인 중급 개발 과정",
+        "organization": "한국디지털융합진흥원",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 2302",
+            "quote": "블록체인 중급 개발 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "챗GPT활용법 및 서비스 기획",
+        "organization": "한국IT비즈니스진흥협회",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 2301",
+            "quote": "챗GPT활용법 및 서비스 기획",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "생성형 AI를 활용한 NFT 개발",
+        "organization": "한국표준협회",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 2303",
+            "quote": "생성형 AI를 활용한 NFT 개발",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "쿠버네티스",
+        "organization": "한국IT비즈니스진흥협회",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 2305",
+            "quote": "쿠버네티스",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "블록체인 중급 서비스 기획",
+        "organization": "한국표준협회",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 2304",
+            "quote": "블록체인 중급 서비스 기획",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "파이썬 프로그래밍",
+        "organization": "동아대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 2306",
+            "quote": "파이썬 프로그래밍",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "블록체인 교육 과정",
+        "organization": "우리FIS",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 2307",
+            "quote": "블록체인 교육 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "블록체인 암호화폐 트레이딩 교육",
+        "organization": "코스콤",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 2308",
+            "quote": "블록체인 암호화폐 트레이딩 교육",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "블록체인 개념 및 사례 교육 과정",
+        "organization": "하나은행",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 2309",
+            "quote": "블록체인 개념 및 사례 교육 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "블록체인 전문 교육 과정",
+        "organization": "코스콤",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 2312",
+            "quote": "블록체인 전문 교육 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "블록체인 전문가 과정 / 블록체인 심화 실습 교육 과정",
+        "organization": "국민은행",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 2311",
+            "quote": "블록체인 전문가 과정 / 블록체인 심화 실습 교육 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "블록체인 개념 및 유즈케이스 교육",
+        "organization": "하나은행",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 2310",
+            "quote": "블록체인 개념 및 유즈케이스 교육",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "블록체인 심화 실습 교육 과정",
+        "organization": "삼성멀티캠퍼스",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 2316",
+            "quote": "블록체인 심화 실습 교육 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "블록체인 전문가 양성 교육과정",
+        "organization": "코스콤",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 2315",
+            "quote": "블록체인 전문가 양성 교육과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "블록체인 전문 교육 과정",
+        "organization": "국민은행",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 2314",
+            "quote": "블록체인 전문 교육 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "블록체인 컨설팅 교육 과정",
+        "organization": "한화그룹 / 임원대상",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 2313",
+            "quote": "블록체인 컨설팅 교육 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "블록체인 전문가 과정 (Fintech Ground-up Program)",
+        "organization": "KISA",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 2317",
+            "quote": "블록체인 전문가 과정 (Fintech Ground-up Program)",
+            "confidence": 1.0
+          }
+        ]
+      }
+    ],
+    "project_items": [
+      {
+        "title": "블록체인 기반 디지털 자산거래소, 대출 플랫폼, 공인전자문서센터 기획, 기술 총괄",
+        "client_organization": "NHN",
+        "role": "기술 총괄",
+        "start_date": "2022",
+        "end_date": "2022",
+        "keywords": [
+          "디지털 자산거래소",
+          "대출 플랫폼",
+          "공인전자문서센터",
+          "블록체인"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 2318",
+            "quote": "블록체인 기반 디지털 자산거래소, 대출 플랫폼, 공인전자문서센터 기획, 기술 총괄",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "블록체인 기반 미납통행료 정산 서비스, 블록체인 기술 총괄",
+        "client_organization": "한국도로공사",
+        "role": "블록체인 기술 총괄",
+        "start_date": "2020",
+        "end_date": "2020",
+        "keywords": [
+          "미납통행료 정산",
+          "블록체인"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 2321",
+            "quote": "블록체인 기반 미납통행료 정산 서비스, 블록체인 기술 총괄",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "NFT기반 미술품 조각거래 서비스, 사업기획 및 블록체인 총괄",
+        "client_organization": "하나은행",
+        "role": "블록체인 총괄",
+        "start_date": "2020",
+        "end_date": "2021",
+        "keywords": [
+          "NFT",
+          "미술품 조각거래",
+          "사업기획"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 2320",
+            "quote": "NFT기반 미술품 조각거래 서비스, 사업기획 및 블록체인 총괄",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "CBDC 기술검증 Project, 사업기획 및 블록체인 총괄",
+        "client_organization": "하나은행",
+        "role": "블록체인 총괄",
+        "start_date": "2020",
+        "end_date": "2021",
+        "keywords": [
+          "CBDC",
+          "기술검증",
+          "사업기획"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 2319",
+            "quote": "CBDC 기술검증 Project, 사업기획 및 블록체인 총괄",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "전자무역기반 블록체인 Project, 사업기획 및 블록체인 기술 총괄",
+        "client_organization": "한국무역정보통신",
+        "role": "블록체인 기술 총괄",
+        "start_date": "2019",
+        "end_date": "2019",
+        "keywords": [
+          "전자무역",
+          "블록체인",
+          "사업기획"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 2323",
+            "quote": "전자무역기반 블록체인 Project, 사업기획 및 블록체인 기술 총괄",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "블록체인 Consulting Project",
+        "client_organization": "IBK",
+        "role": "컨설턴트",
+        "start_date": "2019",
+        "end_date": "2019",
+        "keywords": [
+          "블록체인",
+          "컨설팅"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 2322",
+            "quote": "블록체인 Consulting Project",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "블록체인 Consulting Project, 사업기획 및 블록체인 기술 총괄",
+        "client_organization": "네이버",
+        "role": "블록체인 기술 총괄",
+        "start_date": "2018",
+        "end_date": "2018",
+        "keywords": [
+          "블록체인",
+          "컨설팅",
+          "사업기획"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 2326",
+            "quote": "블록체인 Consulting Project, 사업기획 및 블록체인 기술 총괄",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "제조 프로세스 기반 서비스, 사업기획 및 블록체인 기술 총괄, PM",
+        "client_organization": "SKHynix",
+        "role": "PM",
+        "start_date": "2018",
+        "end_date": "2018",
+        "keywords": [
+          "제조 프로세스",
+          "블록체인",
+          "사업기획"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 2325",
+            "quote": "제조 프로세스 기반 서비스, 사업기획 및 블록체인 기술 총괄, PM",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "CDF 상품 플랫폼 구축 Project, 사업기획 및 블록체인 기술 총괄",
+        "client_organization": "현대커머셜",
+        "role": "블록체인 기술 총괄",
+        "start_date": "2018",
+        "end_date": "2018",
+        "keywords": [
+          "CDF 상품 플랫폼",
+          "블록체인",
+          "사업기획"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 2324",
+            "quote": "CDF 상품 플랫폼 구축 Project, 사업기획 및 블록체인 기술 총괄",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "그룹총괄 전자계약 서비스, 사업기획 및 프로젝트 총괄",
+        "client_organization": "신한지주",
+        "role": "프로젝트 총괄",
+        "start_date": "2017",
+        "end_date": "2017",
+        "keywords": [
+          "전자계약",
+          "사업기획"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 2328",
+            "quote": "그룹총괄 전자계약 서비스, 사업기획 및 프로젝트 총괄",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "GLN, First Project, 사업기획 및 블록체인 기술 총괄",
+        "client_organization": "하나은행",
+        "role": "블록체인 기술 총괄",
+        "start_date": "2017",
+        "end_date": "2017",
+        "keywords": [
+          "GLN",
+          "블록체인",
+          "사업기획"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 2327",
+            "quote": "GLN, First Project, 사업기획 및 블록체인 기술 총괄",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "골드바 안심 서비스, 서비스 총괄",
+        "client_organization": "신한은행",
+        "role": "서비스 총괄",
+        "start_date": "2016",
+        "end_date": "2016",
+        "keywords": [
+          "골드바 안심 서비스"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 2329",
+            "quote": "골드바 안심 서비스, 서비스 총괄",
+            "confidence": 1.0
+          }
+        ]
+      }
+    ],
+    "work_experience_items": [
+      {
+        "organization": "NHN",
+        "summary": "이사, 블록체인 사업기획 총괄",
+        "start_date": "2022",
+        "end_date": "2022",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 1035",
+            "quote": "이사, 블록체인 사업기획 총괄",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "organization": "㈜알고링크",
+        "summary": "강사, 강의",
+        "start_date": "2021-04-01",
+        "end_date": "재직중",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 1037",
+            "quote": "강사, 강의",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "organization": "Blue Prism",
+        "summary": "이사, Digital Strategy Specialist, Consultant",
+        "start_date": "2021",
+        "end_date": "2022",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 1036",
+            "quote": "이사, Digital Strategy Specialist, Consultant",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "organization": "Hana Bank",
+        "summary": "차장, 블록체인 사업 기획, 블록체인 아키텍처, 블록체인 기술 총괄",
+        "start_date": "2020",
+        "end_date": "2021",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 1038",
+            "quote": "차장, 블록체인 사업 기획, 블록체인 아키텍처, 블록체인 기술 총괄",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "organization": "IBM",
+        "summary": "차장, 블록체인 아키텍처, 블록체인 기술 리더, Client Technical Leader",
+        "start_date": "2017",
+        "end_date": "2020",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 1039",
+            "quote": "차장, 블록체인 아키텍처, 블록체인 기술 리더, Client Technical Leader",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "organization": "Shinhan DS",
+        "summary": "차장, 블록체인 사업기획, 신기술 기획, 프로젝트 PM, 블록체인 전문 아키텍처",
+        "start_date": "2016",
+        "end_date": "2017",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 1040",
+            "quote": "차장, 블록체인 사업기획, 신기술 기획, 프로젝트 PM, 블록체인 전문 아키텍처",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "organization": "Red Hat",
+        "summary": "차장, 기술 컨설팅, 아키텍처",
+        "start_date": "2014",
+        "end_date": "2015",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 1041",
+            "quote": "차장, 기술 컨설팅, 아키텍처",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "organization": "KTDS",
+        "summary": "과장, 아키텍처, 서비스 운영팀 리딩",
+        "start_date": "2013",
+        "end_date": "2014",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 1042",
+            "quote": "과장, 아키텍처, 서비스 운영팀 리딩",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "organization": "DesignComm",
+        "summary": "팀장, 기술컨설팅, 아키텍처",
+        "start_date": "2012",
+        "end_date": "2013",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 1043",
+            "quote": "팀장, 기술컨설팅, 아키텍처",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "organization": "Oracle",
+        "summary": "Senior Consultant, 컨설팅, 플랫폼 개발",
+        "start_date": "2008",
+        "end_date": "2012",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 1044",
+            "quote": "Senior Consultant, 컨설팅, 플랫폼 개발",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "organization": "Comas",
+        "summary": "대리, 컨설팅, 기술지원",
+        "start_date": "2006",
+        "end_date": "2008",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 1045",
+            "quote": "대리, 컨설팅, 기술지원",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "organization": "Nexzone",
+        "summary": "대리, 프로젝트 PM, 솔루션 기술지원, 개발",
+        "start_date": "2005",
+        "end_date": "2006",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 1046",
+            "quote": "대리, 프로젝트 PM, 솔루션 기술지원, 개발",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "organization": "FutureInfornet",
+        "summary": "사원, 개발",
+        "start_date": "2003",
+        "end_date": "2005",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 1047",
+            "quote": "사원, 개발",
+            "confidence": 1.0
+          }
+        ]
+      }
+    ],
+    "certifications": [
+      {
+        "name": "Data Analysis with Python",
+        "issuer": "Coursera",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 1051",
+            "quote": "Data Analysis with Python",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "Data Science Foundations Specialist",
+        "issuer": "Coursera",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 1050",
+            "quote": "Data Science Foundations Specialist",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "Data Visualization with Python",
+        "issuer": "Coursera",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 1049",
+            "quote": "Data Visualization with Python",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "Machine Learning with Python",
+        "issuer": "Coursera",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 1048",
+            "quote": "Machine Learning with Python",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "Smart Contracts",
+        "issuer": "Coursera",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 1064",
+            "quote": "Smart Contracts",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "Python for Data Science and AI",
+        "issuer": "Coursera",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 1063",
+            "quote": "Python for Data Science and AI",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "Microservice – Fundamentals",
+        "issuer": "IBM",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 1062",
+            "quote": "Microservice – Fundamentals",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "IBM Quantum Conversations",
+        "issuer": "IBM",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 1061",
+            "quote": "IBM Quantum Conversations",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "IBM Microservices Specialist",
+        "issuer": "IBM",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 1060",
+            "quote": "IBM Microservices Specialist",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "IBM Microservice",
+        "issuer": "Coursera",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 1059",
+            "quote": "IBM Microservice",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "Deploying Microservices with Kubernetes",
+        "issuer": "Coursera",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 1058",
+            "quote": "Deploying Microservices with Kubernetes",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "Decentralized Applications (Dapps)",
+        "issuer": "Coursera",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 1057",
+            "quote": "Decentralized Applications (Dapps)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "Data Science Methodology",
+        "issuer": "Coursera",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 1056",
+            "quote": "Data Science Methodology",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "Blockchain Basics",
+        "issuer": "Coursera",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 1055",
+            "quote": "Blockchain Basics",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "IBM Blockchain Essentials V2",
+        "issuer": "IBM",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 1054",
+            "quote": "IBM Blockchain Essentials V2",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "Blockchain Platforms",
+        "issuer": "Coursera",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 1053",
+            "quote": "Blockchain Platforms",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "Blockchain",
+        "issuer": "Coursera",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 1052",
+            "quote": "Blockchain",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "IBM Recognized Teacher / Educator",
+        "issuer": "IBM",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 1066",
+            "quote": "IBM Recognized Teacher / Educator",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "IBM Recognized Speaker / Presenter",
+        "issuer": "IBM",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 1065",
+            "quote": "IBM Recognized Speaker / Presenter",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "IBM Design Thinking Practitioner",
+        "issuer": "IBM",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 1070",
+            "quote": "IBM Design Thinking Practitioner",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "Cognitive Practitioner",
+        "issuer": "IBM",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 1069",
+            "quote": "Cognitive Practitioner",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "Enterprise Design Thinking Practitioner",
+        "issuer": "IBM",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 1068",
+            "quote": "Enterprise Design Thinking Practitioner",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "IBM Architectural Thinking",
+        "issuer": "IBM",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 1067",
+            "quote": "IBM Architectural Thinking",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "IBM Blockchain Foundation Developer",
+        "issuer": "IBM",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 1071",
+            "quote": "IBM Blockchain Foundation Developer",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "IBM Blockchain Essentials",
+        "issuer": "IBM",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 1076",
+            "quote": "IBM Blockchain Essentials",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "IBM Blockchain Consulting",
+        "issuer": "IBM",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 1075",
+            "quote": "IBM Blockchain Consulting",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "IBM Cloud Essentials",
+        "issuer": "IBM",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 1074",
+            "quote": "IBM Cloud Essentials",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "Watson Conversation Service Foundations",
+        "issuer": "IBM",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 1073",
+            "quote": "Watson Conversation Service Foundations",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "Watson Discovery Service Foundations",
+        "issuer": "IBM",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 1072",
+            "quote": "Watson Discovery Service Foundations",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "International certification of Sun certified Developer (SCJD)",
+        "issuer": "SUN",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 1077",
+            "quote": "International certification of Sun certified Developer (SCJD)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "Certification of Craftsman Information Equipment Operation (정보기기운용기능사)",
+        "issuer": "한국산업인력공단",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 1078",
+            "quote": "Certification of Craftsman Information Equipment Operation (정보기기운용기능사)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "International certification of Microsoft certified Professional (MCP)",
+        "issuer": "SUN",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 1079",
+            "quote": "International certification of Microsoft certified Professional (MCP)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "International certification of sun certified Web Component Developer (SCWCD)",
+        "issuer": "SUN",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 1080",
+            "quote": "International certification of sun certified Web Component Developer (SCWCD)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "International certification of Sun certified Programmer (SCJP)",
+        "issuer": "SUN",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 1081",
+            "quote": "International certification of Sun certified Programmer (SCJP)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "Certification of Computer skill 2급",
+        "issuer": "대한상공회의소",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 1082",
+            "quote": "Certification of Computer skill 2급",
+            "confidence": 1.0
+          }
+        ]
+      }
+    ],
+    "source_document_ids": [
+      "instructor-source:내부 강사 정보.xlsx",
+      "instructor-db:104"
+    ],
+    "extensions": {
+      "other_records": [
+        {
+          "category": "저서",
+          "detail": "디지털화폐(CBDC) 바이블 (약350페이지)",
+          "organization": "부크크",
+          "start_date": "2024-05-01",
+          "end_date": null
+        },
+        {
+          "category": "저서",
+          "detail": "Web 3.0은 블록체인인가? (약337페이지)",
+          "organization": "부크크",
+          "start_date": "2024-04-01",
+          "end_date": null
+        },
+        {
+          "category": "저서",
+          "detail": "블록체인 기반 CBDC 아키텍처 및 트랜잭션 키 관리 시스템 설계",
+          "organization": "포스텍",
+          "start_date": "2021",
+          "end_date": null
+        },
+        {
+          "category": "저서",
+          "detail": "디지털 콘텍트 시대, 블록체인 기술 활용 및 기술 변화",
+          "organization": "마이크로소프트웨어",
+          "start_date": "2020",
+          "end_date": null
+        },
+        {
+          "category": "저서",
+          "detail": "프라이빗 블록체인 기반 자산형 토큰 엔터프라이즈 블록체인 플랫폼을 제공하는 IBM",
+          "organization": "ZDNet",
+          "start_date": "2019",
+          "end_date": null
+        },
+        {
+          "category": "저서",
+          "detail": "하이퍼레저 패브릭",
+          "organization": "마이크로소프트웨어",
+          "start_date": "2018",
+          "end_date": null
+        },
+        {
+          "category": "저서",
+          "detail": "블록체인 기반 프로젝트 시작하기 전, 알아야 할 사항들",
+          "organization": "IDG",
+          "start_date": "2018",
+          "end_date": null
+        },
+        {
+          "category": "저서",
+          "detail": "블록체인 기반 프로젝트 진행 시 알아야 할 사항과 유즈케이스",
+          "organization": "IDG",
+          "start_date": "2018",
+          "end_date": null
+        }
+      ]
+    },
+    "evidence": [
+      {
+        "source_document_id": "instructor-db:104",
+        "page": null,
+        "section": "instructors",
+        "quote": "블록체인 및 클라우드 아키텍처 전문가",
+        "confidence": 1.0
+      }
+    ],
+    "review_status": "unreviewed"
+  }
+}

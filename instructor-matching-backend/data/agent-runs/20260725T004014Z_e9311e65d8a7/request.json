@@ -1,0 +1,1054 @@
+{
+  "project": {
+    "schema_version": "education_project_v1",
+    "service_type": "education_program",
+    "program_type": "vocational_training",
+    "classification_confidence": 1.0,
+    "base": {
+      "project_name": "2. 2025년 빅데이터혁신융합대학사업 동계 AWS 교육_용역 제안요청서.hwp",
+      "client_organization": null,
+      "purpose": [
+        "경기과학기술대학교 빅데이터혁신융합대학사업의 일환으로, 재학생들에게 AWS 클라우드 인프라 이해 및 AWS Certified Cloud Practitioner 자격증 취득을 지원하기 위한 3일간의 동계 집체 교육 프로그램을 기획, 운영 및 관리하는 용역 과업입니다.",
+        "교육 프로그램 구성 및 기획",
+        "강의 계획 및 강의(안) 제작",
+        "교육 참가자 모집 및 안전 관리",
+        "교육 실습용 데이터 및 라이센스 제공",
+        "장소 대관 및 참가자 식사/다과 제공",
+        "만족도 조사 및 결과 보고",
+        "AWS 클라우드의 기본적 글로벌 인프라 이해",
+        "AWS Certified Cloud Practitioner 자격증 취득",
+        "산업체 요구 SW 기초 실무 능력 함양"
+      ],
+      "contract_method": null,
+      "start_date": null,
+      "end_date": null,
+      "budget_krw": null,
+      "vat_included": null,
+      "deliverables": [
+        "교육 프로그램 구성 및 기획",
+        "강의 계획 및 강의(안) 제작",
+        "교육 참가자 모집 및 안전 관리",
+        "교육 실습용 데이터 및 라이센스 제공",
+        "장소 대관 및 참가자 식사/다과 제공",
+        "만족도 조사 및 결과 보고",
+        "AWS 클라우드의 기본적 글로벌 인프라 이해",
+        "AWS Certified Cloud Practitioner 자격증 취득",
+        "산업체 요구 SW 기초 실무 능력 함양"
+      ],
+      "proposal_requirements": [
+        "공인 AWS 교육 전문가 활용 (교육과정 제공 및 강의 진행)",
+        "최근 3년 간 동등용역 수행실적 (단일 건으로 2,000만 원 이상, 교육 운영 실적에 한함)",
+        "사업 총괄 책임자(PM) 지정 및 배치",
+        "공인 AWS 교육 전문가(강사)",
+        "사업 총괄 책임자",
+        "운영진"
+      ],
+      "compliance_requirements": [
+        "제안업체 경영상태 (신용평가등급)",
+        "최근 3년간 유사과제 수행 실적 (단일 건 2천만원 이상 동등용역)",
+        "과업의 이해도 (사업 목적 파악 및 수행내용 이해도)",
+        "참여인력 현황 (책임자의 적정성 및 활동 계획)",
+        "전문성 (교육 운영 전문성 및 구체성)",
+        "과업 수행 방법 (제안내용 충실도 및 접근 방법)",
+        "일정계획 및 목표 (일정의 적정성 및 실효성)",
+        "기타부문 (중간보고 및 최종보고 계획 등)",
+        "나라장터 시스템을 통한 가격평가"
+      ]
+    },
+    "education": {
+      "technology_domains": [
+        "AWS 클라우드",
+        "AWS Certified Cloud Practitioner 자격증",
+        "Amazon EC2",
+        "AWS Lambda",
+        "AWS Well Architected Framework",
+        "공인 AWS 교육 전문가",
+        "강사",
+        "동등용역",
+        "수행실적",
+        "교육 운영",
+        "사업 총괄 책임자",
+        "PM",
+        "경영상태",
+        "신용평가등급",
+        "과업 이해도",
+        "사업 목적",
+        "참여인력",
+        "책임자",
+        "전문성",
+        "과업 수행 방법",
+        "제안내용",
+        "일정계획",
+        "적정성",
+        "보고 계획",
+        "최종보고",
+        "가격평가",
+        "나라장터"
+      ],
+      "program_topics": [
+        "AWS 클라우드",
+        "AWS Certified Cloud Practitioner 자격증",
+        "Amazon EC2",
+        "AWS Lambda",
+        "AWS Well Architected Framework",
+        "경영상태",
+        "신용평가등급",
+        "수행실적",
+        "동등용역",
+        "과업 이해도",
+        "사업 목적",
+        "참여인력",
+        "책임자",
+        "전문성",
+        "교육 운영",
+        "과업 수행 방법",
+        "제안내용",
+        "일정계획",
+        "적정성",
+        "보고 계획",
+        "최종보고",
+        "가격평가",
+        "나라장터",
+        "공인 AWS 교육 전문가",
+        "강사",
+        "사업 총괄 책임자",
+        "PM"
+      ],
+      "target_audience": [
+        "빅데이터 컨소시엄 재학생"
+      ],
+      "participant_capacity": null,
+      "delivery_format": [
+        "집체교육",
+        "오프라인 교육"
+      ],
+      "education_hours": null,
+      "schedule": [],
+      "required_roles": [
+        "공인 AWS 교육 전문가(강사)",
+        "사업 총괄 책임자",
+        "운영진"
+      ],
+      "instructor_requirements": {
+        "required_experience": [],
+        "required_certifications": [],
+        "required_vendor_credentials": [],
+        "similar_project_experience": [
+          "최근 3년 이내 대학, 공공기관, 일반업체 등에서 발주한 교육 운영 해당 동등용역 수행 실적"
+        ]
+      },
+      "curriculum_requirements": [],
+      "operational_requirements": [],
+      "practical_project_requirements": [
+        "교육 프로그램 구성 및 기획",
+        "강의 계획 및 강의(안) 제작",
+        "교육 참가자 모집 및 안전 관리",
+        "교육 실습용 데이터 및 라이센스 제공",
+        "장소 대관 및 참가자 식사/다과 제공",
+        "만족도 조사 및 결과 보고",
+        "공인 AWS 교육 전문가(강사)",
+        "사업 총괄 책임자",
+        "운영진"
+      ],
+      "assessment_requirements": [
+        "제안업체 경영상태 (신용평가등급)",
+        "최근 3년간 유사과제 수행 실적 (단일 건 2천만원 이상 동등용역)",
+        "과업의 이해도 (사업 목적 파악 및 수행내용 이해도)",
+        "참여인력 현황 (책임자의 적정성 및 활동 계획)",
+        "전문성 (교육 운영 전문성 및 구체성)",
+        "과업 수행 방법 (제안내용 충실도 및 접근 방법)",
+        "일정계획 및 목표 (일정의 적정성 및 실효성)",
+        "기타부문 (중간보고 및 최종보고 계획 등)",
+        "나라장터 시스템을 통한 가격평가"
+      ],
+      "outcome_requirements": [
+        "AWS 클라우드의 기본적 글로벌 인프라 이해",
+        "AWS Certified Cloud Practitioner 자격증 취득",
+        "산업체 요구 SW 기초 실무 능력 함양"
+      ]
+    },
+    "extensions": {
+      "source_task_order_id": "4c3fea27-9584-47b7-acdb-b6895a8fea52",
+      "normalized_qualifications": [
+        {
+          "category": "인력요건",
+          "description": "공인 AWS 교육 전문가 활용 (교육과정 제공 및 강의 진행)",
+          "is_mandatory": true,
+          "keywords": [
+            "공인 AWS 교육 전문가",
+            "강사"
+          ]
+        },
+        {
+          "category": "수행실적",
+          "description": "최근 3년 간 동등용역 수행실적 (단일 건으로 2,000만 원 이상, 교육 운영 실적에 한함)",
+          "is_mandatory": false,
+          "keywords": [
+            "동등용역",
+            "수행실적",
+            "교육 운영"
+          ]
+        },
+        {
+          "category": "인력요건",
+          "description": "사업 총괄 책임자(PM) 지정 및 배치",
+          "is_mandatory": true,
+          "keywords": [
+            "사업 총괄 책임자",
+            "PM"
+          ]
+        }
+      ],
+      "normalized_evaluation_criteria": [
+        {
+          "category": "기술평가(정량)",
+          "description": "제안업체 경영상태 (신용평가등급)",
+          "weight": 10,
+          "keywords": [
+            "경영상태",
+            "신용평가등급"
+          ]
+        },
+        {
+          "category": "기술평가(정량)",
+          "description": "최근 3년간 유사과제 수행 실적 (단일 건 2천만원 이상 동등용역)",
+          "weight": 10,
+          "keywords": [
+            "수행실적",
+            "동등용역"
+          ]
+        },
+        {
+          "category": "기술평가(정성)",
+          "description": "과업의 이해도 (사업 목적 파악 및 수행내용 이해도)",
+          "weight": 20,
+          "keywords": [
+            "과업 이해도",
+            "사업 목적"
+          ]
+        },
+        {
+          "category": "기술평가(정성)",
+          "description": "참여인력 현황 (책임자의 적정성 및 활동 계획)",
+          "weight": 5,
+          "keywords": [
+            "참여인력",
+            "책임자"
+          ]
+        },
+        {
+          "category": "기술평가(정성)",
+          "description": "전문성 (교육 운영 전문성 및 구체성)",
+          "weight": 15,
+          "keywords": [
+            "전문성",
+            "교육 운영"
+          ]
+        },
+        {
+          "category": "기술평가(정성)",
+          "description": "과업 수행 방법 (제안내용 충실도 및 접근 방법)",
+          "weight": 15,
+          "keywords": [
+            "과업 수행 방법",
+            "제안내용"
+          ]
+        },
+        {
+          "category": "기술평가(정성)",
+          "description": "일정계획 및 목표 (일정의 적정성 및 실효성)",
+          "weight": 10,
+          "keywords": [
+            "일정계획",
+            "적정성"
+          ]
+        },
+        {
+          "category": "기술평가(정성)",
+          "description": "기타부문 (중간보고 및 최종보고 계획 등)",
+          "weight": 5,
+          "keywords": [
+            "보고 계획",
+            "최종보고"
+          ]
+        },
+        {
+          "category": "가격평가",
+          "description": "나라장터 시스템을 통한 가격평가",
+          "weight": 10,
+          "keywords": [
+            "가격평가",
+            "나라장터"
+          ]
+        }
+      ],
+      "overview": {
+        "section_titles": [
+          "사업개요",
+          "1. 과업개요",
+          "Ⅰ 사업개요",
+          "Ⅱ 제안 요청 사항 - 1. 과업개요"
+        ],
+        "summary": "경기과학기술대학교 빅데이터혁신융합대학사업의 일환으로, 재학생들에게 AWS 클라우드 인프라 이해 및 AWS Certified Cloud Practitioner 자격증 취득을 지원하기 위한 3일간의 동계 집체 교육 프로그램을 기획, 운영 및 관리하는 용역 과업입니다.",
+        "core_topics": [
+          "AWS 클라우드",
+          "AWS Certified Cloud Practitioner 자격증",
+          "Amazon EC2",
+          "AWS Lambda",
+          "AWS Well Architected Framework"
+        ],
+        "target_audience": [
+          "빅데이터 컨소시엄 재학생"
+        ],
+        "delivery_formats": [
+          "집체교육",
+          "오프라인 교육"
+        ],
+        "required_roles": [
+          "공인 AWS 교육 전문가(강사)",
+          "사업 총괄 책임자",
+          "운영진"
+        ],
+        "scope": [
+          "교육 프로그램 구성 및 기획",
+          "강의 계획 및 강의(안) 제작",
+          "교육 참가자 모집 및 안전 관리",
+          "교육 실습용 데이터 및 라이센스 제공",
+          "장소 대관 및 참가자 식사/다과 제공",
+          "만족도 조사 및 결과 보고"
+        ],
+        "expected_outcomes": [
+          "AWS 클라우드의 기본적 글로벌 인프라 이해",
+          "AWS Certified Cloud Practitioner 자격증 취득",
+          "산업체 요구 SW 기초 실무 능력 함양"
+        ],
+        "preferred_experience": [
+          "최근 3년 이내 대학, 공공기관, 일반업체 등에서 발주한 교육 운영 해당 동등용역 수행 실적"
+        ],
+        "source_excerpt": "사업개요\n1. 과업명 : 경기과학기술대학교 2025년 빅데이터혁신융합대학사업\n\n1. 과업개요\n가. 사업명 : 경기과학기술대학교 2025년 빅데이터혁신융합대학사업\n\n사업 개요\n참여기간\n발주기관\n참여 당시\n담당업무\n소속회사\n직위\n* 투입 인력은 반드시 본 사업에 투입 가능한 인력으로 구성하여야 하며, 개인별 경력 사항이 허위사실로 판명될 경우 계약업체 선정을 무효화 함.\n* 참여 사업명은 대학, 공공기관, 일반업체 순으로 작성함.\n\n사업개요\n사업기간\n(완료구분)",
+        "matching_rules": [
+          {
+            "key": "core_topics",
+            "label": "핵심 교육 주제",
+            "values": [
+              "AWS 클라우드",
+              "AWS Certified Cloud Practitioner 자격증",
+              "Amazon EC2",
+              "AWS Lambda",
+              "AWS Well Architected Framework"
+            ]
+          },
+          {
+            "key": "target_audience",
+            "label": "교육 대상",
+            "values": [
+              "빅데이터 컨소시엄 재학생"
+            ]
+          },
+          {
+            "key": "delivery_formats",
+            "label": "운영 방식",
+            "values": [
+              "집체교육",
+              "오프라인 교육"
+            ]
+          },
+          {
+            "key": "required_roles",
+            "label": "요구 역할",
+            "values": [
+              "공인 AWS 교육 전문가(강사)",
+              "사업 총괄 책임자",
+              "운영진"
+            ]
+          },
+          {
+            "key": "scope",
+            "label": "업무 범위",
+            "values": [
+              "교육 프로그램 구성 및 기획",
+              "강의 계획 및 강의(안) 제작",
+              "교육 참가자 모집 및 안전 관리",
+              "교육 실습용 데이터 및 라이센스 제공",
+              "장소 대관 및 참가자 식사/다과 제공",
+              "만족도 조사 및 결과 보고"
+            ]
+          },
+          {
+            "key": "expected_outcomes",
+            "label": "기대 성과",
+            "values": [
+              "AWS 클라우드의 기본적 글로벌 인프라 이해",
+              "AWS Certified Cloud Practitioner 자격증 취득",
+              "산업체 요구 SW 기초 실무 능력 함양"
+            ]
+          },
+          {
+            "key": "preferred_experience",
+            "label": "우대 경험",
+            "values": [
+              "최근 3년 이내 대학, 공공기관, 일반업체 등에서 발주한 교육 운영 해당 동등용역 수행 실적"
+            ]
+          }
+        ]
+      }
+    },
+    "evidence": [
+      {
+        "source_document_id": "task-order:4c3fea27-9584-47b7-acdb-b6895a8fea52",
+        "page": null,
+        "section": "normalized task-order requirements",
+        "quote": "捤獥汤捯氠瑢\n경기과학기술대학교\n2025년 빅데이터혁신융합대학사업\n동계 AWS 교육 제안요청서\n氠瑢\nⅠ\n사업개요\n1. 과업명 : 경기과학기술대학교 2025년 빅데이터혁신융합대학사업\n동계 AWS 교육 프로그램 운영 용역\n2. 과업의 목적\n○ AWS 클라우드의 기본적 글로벌 인프라 이해\n○ AWS Certified Cloud Practitioner 자격증 취득\n○ 컴퓨터 네트워크, 데이터베이스, 스토리지 등 핵심 AWS 서비스 이해\n○ 집체교육을 통하여 산업체에서 요구하는 SW 기초 실무 능력 함양\n3. 과업 기간 : 계약체결일로부터 캠프종료일 까지\n4. 사업금액 : 금 25,792,000 원(VAT포함)\n* 강사료, 교육라이센스 이용료, 운영비 등 교육 운영에 필요한 모든 비용 포함\n5. 프로그램 기간 : 2026.01.14.(수) ~ 2026.01.16.(금)\n6. 주요 과업 내용\n가. 교육인원 : 30명\n나. 기획 : 교육과정 구성, 프로그램 운영, 참여학생 모집을 위한 홍보물 제작, 식사예약 등\n다. 교육 운영 :\n- 공인 AWS 교육 전문가를 활용한 교육 진행\n- 오프라인 교육을 통한 교육 수료증 제공\n라. 학생 관리 : 학생 관리를 위한 전반적인 사항\n마. 사후관리 : 프로그램 운영 결과보고 및 학생 만족도 조사 등 피드백 환류\n바. 기타 : 프로그램 운영에 필요한 모든 사항\n氠瑢\nⅡ\n제안 요청 사항\n1. 과업개요\n가. 사업명 : 경기과학기술대학교 2025년 빅데이터혁신융합대학사업\n동계 AWS 교육 프로그램 운영 용역\n나. 사업기간 : 계약일로부터 캠프종료일까지\n다. 계약방법 : 제한경쟁입찰, 협상에 의한 계약\n라. 사업예산 : 금 25,792,000 원(VAT포함)\n마. 교육목표\n○ 교육 일정 : 2026.01.14.(수)~2026.01.16.(금)\n○ 모집 : 30명 선발\n바. 모집대상 : 빅데이터 컨소시엄 재학생 30명\n사. 운영장소 : 집체 교육이 가능한 강의실 대여\n2. 세부 과업 범위\n가. 과업 내용氠瑢\n구분\n과업 내용\n프로그램 홍보\n가. 프로",
+        "confidence": 1.0
+      }
+    ],
+    "review_status": "unreviewed"
+  },
+  "instructor": {
+    "instructor_id": "instructor-40",
+    "profile_version": "db-092b03ae7b9d",
+    "display_name": "박희진",
+    "expertise_tags": [
+      "Python",
+      "TensorFlow",
+      "OpenCV",
+      "Verilog",
+      "VHDL",
+      "AWS",
+      "Google Cloud",
+      "Linux",
+      "인공지능",
+      "영상처리",
+      "IoT",
+      "임베디드",
+      "생성형 AI",
+      "데이터 분석",
+      "데이터 전처리",
+      "인공지능 모델링",
+      "구글 클라우드",
+      "파이썬",
+      "머신러닝",
+      "AutoML",
+      "동영상 제작",
+      "추론",
+      "시각",
+      "AI중급",
+      "취업준비생",
+      "사이킷런",
+      "텐서플로",
+      "딥러닝",
+      "이미지영상처리",
+      "영상 인식",
+      "리눅스",
+      "네트워크 프로그래밍",
+      "영상인식",
+      "리눅스 시스템API"
+    ],
+    "summary": "인공지능 및 영상처리 분야 전문 강사",
+    "delivery_modes": [],
+    "availability_notes": null,
+    "vendor_experience": [
+      "아이코어이앤씨 - 전임강사 (강의)",
+      "코딩스퀘어 - 대표 (인공지능/영상인식/생성형AI)",
+      "비트교육센터 - 전임강사 (IoT/인공지능/영상처리)",
+      "메이저 - 책임연구원 (개발팀/임베디드/영상처리)",
+      "코아로직 - 선임연구원 (IP & chip verification)",
+      "온칩솔루션 - 선임연구원 (개발팀/임베디드, Verilog)",
+      "바이오넷 - 주임연구원 (개발팀/임베디드)",
+      "넥스지텔레콤 - 주임연구원 (연구소/임베디드, Verilog)",
+      "휴인스 - 연구원 (개발/임베디드, VHDL)"
+    ],
+    "vendor_certifications": [
+      "SoC IP설계 검증 장치(산업자원부 장관상)"
+    ],
+    "teaching_items": [
+      {
+        "topic": "구글 클라우드 기반 인공지능 개발자 과정",
+        "organization": "서울 소프트웨어 아카데미",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 853",
+            "quote": "구글 클라우드 기반 인공지능 개발자 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "구글 클라우드 기반 인공지능 개발자 과정",
+        "organization": "서울 소프트웨어 아카데미",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 854",
+            "quote": "구글 클라우드 기반 인공지능 개발자 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "파이썬 기반 머신러닝, AutoML을 활용한 서비스 구현, 인공지능 모델링을 위한 데이터 전처리 (재직자)",
+        "organization": "한국지능형사물인터넷협회",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 852",
+            "quote": "파이썬 기반 머신러닝, AutoML을 활용한 서비스 구현, 인공지능 모델링을 위한 데이터 전처리 (재직자)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "데이터 분석 엔지니어 과정",
+        "organization": "멀티캠퍼스",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 870",
+            "quote": "데이터 분석 엔지니어 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "인공지능 기본",
+        "organization": "경북대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 871",
+            "quote": "인공지능 기본",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "인공지능 프로젝트 동영상 제작",
+        "organization": "한국디지털융합진흥원",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 873",
+            "quote": "인공지능 프로젝트 동영상 제작",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "IoT 기반 추론",
+        "organization": "지능정보산업협회",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 872",
+            "quote": "IoT 기반 추론",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "인공지능 시각",
+        "organization": "한국도로공사",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 874",
+            "quote": "인공지능 시각",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "AI중급과정 및 대구 AI 취업준비생 과정",
+        "organization": "서울 ICT이노베이션스퀘어",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 855",
+            "quote": "AI중급과정 및 대구 AI 취업준비생 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "인공지능 기본, 중급, 고급 시각, 심화 시각",
+        "organization": "한국IT비즈니스진흥협회",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 875",
+            "quote": "인공지능 기본, 중급, 고급 시각, 심화 시각",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "4차산업선도인력양성과정 융복합 AI 응용서비스 개발 실무",
+        "organization": "비트교육센터",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 856",
+            "quote": "4차산업선도인력양성과정 융복합 AI 응용서비스 개발 실무",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "4차산업선도인력양성과정 AWS를 활용한 IoT서비스 개발자 양성과정 2차",
+        "organization": "비트교육센터",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 857",
+            "quote": "4차산업선도인력양성과정 AWS를 활용한 IoT서비스 개발자 양성과정 2차",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "국방AI융합비니지스 전문인력양성 교육과정",
+        "organization": "비트교육센터",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 858",
+            "quote": "국방AI융합비니지스 전문인력양성 교육과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "4차산업선도인력양성과정 AWS를 활용한 IoT서비스 개발자 양성과정 1차",
+        "organization": "비트교육센터",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 859",
+            "quote": "4차산업선도인력양성과정 AWS를 활용한 IoT서비스 개발자 양성과정 1차",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "텐서플로 기반 딥러닝 프로그래밍 재직자 과정(주말)",
+        "organization": "비트교육센터",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 860",
+            "quote": "텐서플로 기반 딥러닝 프로그래밍 재직자 과정(주말)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "4차산업선도인력양성과정 딥러닝 기반 영상인식 개발 전문가과정 1~3차",
+        "organization": "비트교육센터",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 862",
+            "quote": "4차산업선도인력양성과정 딥러닝 기반 영상인식 개발 전문가과정 1~3차",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "4차산업선도인력양성과정 영상인식기반 자율주행 전문가과정",
+        "organization": "비트교육센터",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 861",
+            "quote": "4차산업선도인력양성과정 영상인식기반 자율주행 전문가과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "임베디드 기반 IoT SW개발 고급인력 양성과정",
+        "organization": "비트교육센터",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 863",
+            "quote": "임베디드 기반 IoT SW개발 고급인력 양성과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "라즈베리파이를 활용한 IoT서비스 고급인력 양성 과정",
+        "organization": "비트교육센터",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 864",
+            "quote": "라즈베리파이를 활용한 IoT서비스 고급인력 양성 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "4차산업선도인력양성과정 AI 기반 IoT자율주행과정",
+        "organization": "비트교육센터",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 865",
+            "quote": "4차산업선도인력양성과정 AI 기반 IoT자율주행과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "4차산업선도인력양성과정 AI 기반 IoT 자율주행과정",
+        "organization": "비트교육센터",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 866",
+            "quote": "4차산업선도인력양성과정 AI 기반 IoT 자율주행과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "임베디드 리눅스 전문가과정 ((주)경신 신입사원 위탁교육)",
+        "organization": "비트교육센터",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 867",
+            "quote": "임베디드 리눅스 전문가과정 ((주)경신 신입사원 위탁교육)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "임베디드 리눅스 시스템 고급 인력 양성과정",
+        "organization": "비트교육센터",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 868",
+            "quote": "임베디드 리눅스 시스템 고급 인력 양성과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "임베디드 기반 IoT 전문가과정",
+        "organization": "비트교육센터",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 869",
+            "quote": "임베디드 기반 IoT 전문가과정",
+            "confidence": 1.0
+          }
+        ]
+      }
+    ],
+    "project_items": [],
+    "work_experience_items": [
+      {
+        "organization": "아이코어이앤씨",
+        "summary": "전임강사 (강의)",
+        "start_date": "2023-04-01",
+        "end_date": "재직중",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 386",
+            "quote": "전임강사 (강의)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "organization": "코딩스퀘어",
+        "summary": "대표 (인공지능/영상인식/생성형AI)",
+        "start_date": "2021-11-01",
+        "end_date": "재직중",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 385",
+            "quote": "대표 (인공지능/영상인식/생성형AI)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "organization": "비트교육센터",
+        "summary": "전임강사 (IoT/인공지능/영상처리)",
+        "start_date": "2017-07-01",
+        "end_date": "2021-10-01",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 387",
+            "quote": "전임강사 (IoT/인공지능/영상처리)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "organization": "메이저",
+        "summary": "책임연구원 (개발팀/임베디드/영상처리)",
+        "start_date": "2012-03-01",
+        "end_date": "2016-12-01",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 388",
+            "quote": "책임연구원 (개발팀/임베디드/영상처리)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "organization": "코아로직",
+        "summary": "선임연구원 (IP & chip verification)",
+        "start_date": "2009-09-01",
+        "end_date": "2012-01-01",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 389",
+            "quote": "선임연구원 (IP & chip verification)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "organization": "온칩솔루션",
+        "summary": "선임연구원 (개발팀/임베디드, Verilog)",
+        "start_date": "2008-10-01",
+        "end_date": "2009-08-01",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 390",
+            "quote": "선임연구원 (개발팀/임베디드, Verilog)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "organization": "바이오넷",
+        "summary": "주임연구원 (개발팀/임베디드)",
+        "start_date": "2007-02-01",
+        "end_date": "2008-09-01",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 391",
+            "quote": "주임연구원 (개발팀/임베디드)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "organization": "넥스지텔레콤",
+        "summary": "주임연구원 (연구소/임베디드, Verilog)",
+        "start_date": "2004-08-01",
+        "end_date": "2006-11-01",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 392",
+            "quote": "주임연구원 (연구소/임베디드, Verilog)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "organization": "휴인스",
+        "summary": "연구원 (개발/임베디드, VHDL)",
+        "start_date": "2002-05-01",
+        "end_date": "2003-05-01",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 393",
+            "quote": "연구원 (개발/임베디드, VHDL)",
+            "confidence": 1.0
+          }
+        ]
+      }
+    ],
+    "certifications": [
+      {
+        "name": "SoC IP설계 검증 장치(산업자원부 장관상)",
+        "issuer": "한국산업기술대",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 394",
+            "quote": "SoC IP설계 검증 장치(산업자원부 장관상)",
+            "confidence": 1.0
+          }
+        ]
+      }
+    ],
+    "source_document_ids": [
+      "instructor-source:내부 강사 정보.xlsx",
+      "instructor-db:40"
+    ],
+    "extensions": {
+      "other_records": [
+        {
+          "category": "저서",
+          "detail": "AHB-PCI브릿지 설계 및 구현(석사 논문)",
+          "organization": "한국산업기술대",
+          "start_date": "2005-01-01",
+          "end_date": null
+        }
+      ]
+    },
+    "evidence": [
+      {
+        "source_document_id": "instructor-db:40",
+        "page": null,
+        "section": "instructors",
+        "quote": "인공지능 및 영상처리 분야 전문 강사",
+        "confidence": 1.0
+      }
+    ],
+    "review_status": "unreviewed"
+  }
+}

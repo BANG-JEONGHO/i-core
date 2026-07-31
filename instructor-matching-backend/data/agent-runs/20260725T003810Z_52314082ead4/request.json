@@ -1,0 +1,1272 @@
+{
+  "project": {
+    "schema_version": "education_project_v1",
+    "service_type": "education_program",
+    "program_type": "vocational_training",
+    "classification_confidence": 1.0,
+    "base": {
+      "project_name": "2. 2025년 빅데이터혁신융합대학사업 동계 AWS 교육_용역 제안요청서.hwp",
+      "client_organization": null,
+      "purpose": [
+        "경기과학기술대학교 빅데이터혁신융합대학사업의 일환으로, 재학생들에게 AWS 클라우드 인프라 이해 및 AWS Certified Cloud Practitioner 자격증 취득을 지원하기 위한 3일간의 동계 집체 교육 프로그램을 기획, 운영 및 관리하는 용역 과업입니다.",
+        "교육 프로그램 구성 및 기획",
+        "강의 계획 및 강의(안) 제작",
+        "교육 참가자 모집 및 안전 관리",
+        "교육 실습용 데이터 및 라이센스 제공",
+        "장소 대관 및 참가자 식사/다과 제공",
+        "만족도 조사 및 결과 보고",
+        "AWS 클라우드의 기본적 글로벌 인프라 이해",
+        "AWS Certified Cloud Practitioner 자격증 취득",
+        "산업체 요구 SW 기초 실무 능력 함양"
+      ],
+      "contract_method": null,
+      "start_date": null,
+      "end_date": null,
+      "budget_krw": null,
+      "vat_included": null,
+      "deliverables": [
+        "교육 프로그램 구성 및 기획",
+        "강의 계획 및 강의(안) 제작",
+        "교육 참가자 모집 및 안전 관리",
+        "교육 실습용 데이터 및 라이센스 제공",
+        "장소 대관 및 참가자 식사/다과 제공",
+        "만족도 조사 및 결과 보고",
+        "AWS 클라우드의 기본적 글로벌 인프라 이해",
+        "AWS Certified Cloud Practitioner 자격증 취득",
+        "산업체 요구 SW 기초 실무 능력 함양"
+      ],
+      "proposal_requirements": [
+        "공인 AWS 교육 전문가 활용 (교육과정 제공 및 강의 진행)",
+        "최근 3년 간 동등용역 수행실적 (단일 건으로 2,000만 원 이상, 교육 운영 실적에 한함)",
+        "사업 총괄 책임자(PM) 지정 및 배치",
+        "공인 AWS 교육 전문가(강사)",
+        "사업 총괄 책임자",
+        "운영진"
+      ],
+      "compliance_requirements": [
+        "제안업체 경영상태 (신용평가등급)",
+        "최근 3년간 유사과제 수행 실적 (단일 건 2천만원 이상 동등용역)",
+        "과업의 이해도 (사업 목적 파악 및 수행내용 이해도)",
+        "참여인력 현황 (책임자의 적정성 및 활동 계획)",
+        "전문성 (교육 운영 전문성 및 구체성)",
+        "과업 수행 방법 (제안내용 충실도 및 접근 방법)",
+        "일정계획 및 목표 (일정의 적정성 및 실효성)",
+        "기타부문 (중간보고 및 최종보고 계획 등)",
+        "나라장터 시스템을 통한 가격평가"
+      ]
+    },
+    "education": {
+      "technology_domains": [
+        "AWS 클라우드",
+        "AWS Certified Cloud Practitioner 자격증",
+        "Amazon EC2",
+        "AWS Lambda",
+        "AWS Well Architected Framework",
+        "공인 AWS 교육 전문가",
+        "강사",
+        "동등용역",
+        "수행실적",
+        "교육 운영",
+        "사업 총괄 책임자",
+        "PM",
+        "경영상태",
+        "신용평가등급",
+        "과업 이해도",
+        "사업 목적",
+        "참여인력",
+        "책임자",
+        "전문성",
+        "과업 수행 방법",
+        "제안내용",
+        "일정계획",
+        "적정성",
+        "보고 계획",
+        "최종보고",
+        "가격평가",
+        "나라장터"
+      ],
+      "program_topics": [
+        "AWS 클라우드",
+        "AWS Certified Cloud Practitioner 자격증",
+        "Amazon EC2",
+        "AWS Lambda",
+        "AWS Well Architected Framework",
+        "경영상태",
+        "신용평가등급",
+        "수행실적",
+        "동등용역",
+        "과업 이해도",
+        "사업 목적",
+        "참여인력",
+        "책임자",
+        "전문성",
+        "교육 운영",
+        "과업 수행 방법",
+        "제안내용",
+        "일정계획",
+        "적정성",
+        "보고 계획",
+        "최종보고",
+        "가격평가",
+        "나라장터",
+        "공인 AWS 교육 전문가",
+        "강사",
+        "사업 총괄 책임자",
+        "PM"
+      ],
+      "target_audience": [
+        "빅데이터 컨소시엄 재학생"
+      ],
+      "participant_capacity": null,
+      "delivery_format": [
+        "집체교육",
+        "오프라인 교육"
+      ],
+      "education_hours": null,
+      "schedule": [],
+      "required_roles": [
+        "공인 AWS 교육 전문가(강사)",
+        "사업 총괄 책임자",
+        "운영진"
+      ],
+      "instructor_requirements": {
+        "required_experience": [],
+        "required_certifications": [],
+        "required_vendor_credentials": [],
+        "similar_project_experience": [
+          "최근 3년 이내 대학, 공공기관, 일반업체 등에서 발주한 교육 운영 해당 동등용역 수행 실적"
+        ]
+      },
+      "curriculum_requirements": [],
+      "operational_requirements": [],
+      "practical_project_requirements": [
+        "교육 프로그램 구성 및 기획",
+        "강의 계획 및 강의(안) 제작",
+        "교육 참가자 모집 및 안전 관리",
+        "교육 실습용 데이터 및 라이센스 제공",
+        "장소 대관 및 참가자 식사/다과 제공",
+        "만족도 조사 및 결과 보고",
+        "공인 AWS 교육 전문가(강사)",
+        "사업 총괄 책임자",
+        "운영진"
+      ],
+      "assessment_requirements": [
+        "제안업체 경영상태 (신용평가등급)",
+        "최근 3년간 유사과제 수행 실적 (단일 건 2천만원 이상 동등용역)",
+        "과업의 이해도 (사업 목적 파악 및 수행내용 이해도)",
+        "참여인력 현황 (책임자의 적정성 및 활동 계획)",
+        "전문성 (교육 운영 전문성 및 구체성)",
+        "과업 수행 방법 (제안내용 충실도 및 접근 방법)",
+        "일정계획 및 목표 (일정의 적정성 및 실효성)",
+        "기타부문 (중간보고 및 최종보고 계획 등)",
+        "나라장터 시스템을 통한 가격평가"
+      ],
+      "outcome_requirements": [
+        "AWS 클라우드의 기본적 글로벌 인프라 이해",
+        "AWS Certified Cloud Practitioner 자격증 취득",
+        "산업체 요구 SW 기초 실무 능력 함양"
+      ]
+    },
+    "extensions": {
+      "source_task_order_id": "4c3fea27-9584-47b7-acdb-b6895a8fea52",
+      "normalized_qualifications": [
+        {
+          "category": "인력요건",
+          "description": "공인 AWS 교육 전문가 활용 (교육과정 제공 및 강의 진행)",
+          "is_mandatory": true,
+          "keywords": [
+            "공인 AWS 교육 전문가",
+            "강사"
+          ]
+        },
+        {
+          "category": "수행실적",
+          "description": "최근 3년 간 동등용역 수행실적 (단일 건으로 2,000만 원 이상, 교육 운영 실적에 한함)",
+          "is_mandatory": false,
+          "keywords": [
+            "동등용역",
+            "수행실적",
+            "교육 운영"
+          ]
+        },
+        {
+          "category": "인력요건",
+          "description": "사업 총괄 책임자(PM) 지정 및 배치",
+          "is_mandatory": true,
+          "keywords": [
+            "사업 총괄 책임자",
+            "PM"
+          ]
+        }
+      ],
+      "normalized_evaluation_criteria": [
+        {
+          "category": "기술평가(정량)",
+          "description": "제안업체 경영상태 (신용평가등급)",
+          "weight": 10,
+          "keywords": [
+            "경영상태",
+            "신용평가등급"
+          ]
+        },
+        {
+          "category": "기술평가(정량)",
+          "description": "최근 3년간 유사과제 수행 실적 (단일 건 2천만원 이상 동등용역)",
+          "weight": 10,
+          "keywords": [
+            "수행실적",
+            "동등용역"
+          ]
+        },
+        {
+          "category": "기술평가(정성)",
+          "description": "과업의 이해도 (사업 목적 파악 및 수행내용 이해도)",
+          "weight": 20,
+          "keywords": [
+            "과업 이해도",
+            "사업 목적"
+          ]
+        },
+        {
+          "category": "기술평가(정성)",
+          "description": "참여인력 현황 (책임자의 적정성 및 활동 계획)",
+          "weight": 5,
+          "keywords": [
+            "참여인력",
+            "책임자"
+          ]
+        },
+        {
+          "category": "기술평가(정성)",
+          "description": "전문성 (교육 운영 전문성 및 구체성)",
+          "weight": 15,
+          "keywords": [
+            "전문성",
+            "교육 운영"
+          ]
+        },
+        {
+          "category": "기술평가(정성)",
+          "description": "과업 수행 방법 (제안내용 충실도 및 접근 방법)",
+          "weight": 15,
+          "keywords": [
+            "과업 수행 방법",
+            "제안내용"
+          ]
+        },
+        {
+          "category": "기술평가(정성)",
+          "description": "일정계획 및 목표 (일정의 적정성 및 실효성)",
+          "weight": 10,
+          "keywords": [
+            "일정계획",
+            "적정성"
+          ]
+        },
+        {
+          "category": "기술평가(정성)",
+          "description": "기타부문 (중간보고 및 최종보고 계획 등)",
+          "weight": 5,
+          "keywords": [
+            "보고 계획",
+            "최종보고"
+          ]
+        },
+        {
+          "category": "가격평가",
+          "description": "나라장터 시스템을 통한 가격평가",
+          "weight": 10,
+          "keywords": [
+            "가격평가",
+            "나라장터"
+          ]
+        }
+      ],
+      "overview": {
+        "section_titles": [
+          "사업개요",
+          "1. 과업개요",
+          "Ⅰ 사업개요",
+          "Ⅱ 제안 요청 사항 - 1. 과업개요"
+        ],
+        "summary": "경기과학기술대학교 빅데이터혁신융합대학사업의 일환으로, 재학생들에게 AWS 클라우드 인프라 이해 및 AWS Certified Cloud Practitioner 자격증 취득을 지원하기 위한 3일간의 동계 집체 교육 프로그램을 기획, 운영 및 관리하는 용역 과업입니다.",
+        "core_topics": [
+          "AWS 클라우드",
+          "AWS Certified Cloud Practitioner 자격증",
+          "Amazon EC2",
+          "AWS Lambda",
+          "AWS Well Architected Framework"
+        ],
+        "target_audience": [
+          "빅데이터 컨소시엄 재학생"
+        ],
+        "delivery_formats": [
+          "집체교육",
+          "오프라인 교육"
+        ],
+        "required_roles": [
+          "공인 AWS 교육 전문가(강사)",
+          "사업 총괄 책임자",
+          "운영진"
+        ],
+        "scope": [
+          "교육 프로그램 구성 및 기획",
+          "강의 계획 및 강의(안) 제작",
+          "교육 참가자 모집 및 안전 관리",
+          "교육 실습용 데이터 및 라이센스 제공",
+          "장소 대관 및 참가자 식사/다과 제공",
+          "만족도 조사 및 결과 보고"
+        ],
+        "expected_outcomes": [
+          "AWS 클라우드의 기본적 글로벌 인프라 이해",
+          "AWS Certified Cloud Practitioner 자격증 취득",
+          "산업체 요구 SW 기초 실무 능력 함양"
+        ],
+        "preferred_experience": [
+          "최근 3년 이내 대학, 공공기관, 일반업체 등에서 발주한 교육 운영 해당 동등용역 수행 실적"
+        ],
+        "source_excerpt": "사업개요\n1. 과업명 : 경기과학기술대학교 2025년 빅데이터혁신융합대학사업\n\n1. 과업개요\n가. 사업명 : 경기과학기술대학교 2025년 빅데이터혁신융합대학사업\n\n사업 개요\n참여기간\n발주기관\n참여 당시\n담당업무\n소속회사\n직위\n* 투입 인력은 반드시 본 사업에 투입 가능한 인력으로 구성하여야 하며, 개인별 경력 사항이 허위사실로 판명될 경우 계약업체 선정을 무효화 함.\n* 참여 사업명은 대학, 공공기관, 일반업체 순으로 작성함.\n\n사업개요\n사업기간\n(완료구분)",
+        "matching_rules": [
+          {
+            "key": "core_topics",
+            "label": "핵심 교육 주제",
+            "values": [
+              "AWS 클라우드",
+              "AWS Certified Cloud Practitioner 자격증",
+              "Amazon EC2",
+              "AWS Lambda",
+              "AWS Well Architected Framework"
+            ]
+          },
+          {
+            "key": "target_audience",
+            "label": "교육 대상",
+            "values": [
+              "빅데이터 컨소시엄 재학생"
+            ]
+          },
+          {
+            "key": "delivery_formats",
+            "label": "운영 방식",
+            "values": [
+              "집체교육",
+              "오프라인 교육"
+            ]
+          },
+          {
+            "key": "required_roles",
+            "label": "요구 역할",
+            "values": [
+              "공인 AWS 교육 전문가(강사)",
+              "사업 총괄 책임자",
+              "운영진"
+            ]
+          },
+          {
+            "key": "scope",
+            "label": "업무 범위",
+            "values": [
+              "교육 프로그램 구성 및 기획",
+              "강의 계획 및 강의(안) 제작",
+              "교육 참가자 모집 및 안전 관리",
+              "교육 실습용 데이터 및 라이센스 제공",
+              "장소 대관 및 참가자 식사/다과 제공",
+              "만족도 조사 및 결과 보고"
+            ]
+          },
+          {
+            "key": "expected_outcomes",
+            "label": "기대 성과",
+            "values": [
+              "AWS 클라우드의 기본적 글로벌 인프라 이해",
+              "AWS Certified Cloud Practitioner 자격증 취득",
+              "산업체 요구 SW 기초 실무 능력 함양"
+            ]
+          },
+          {
+            "key": "preferred_experience",
+            "label": "우대 경험",
+            "values": [
+              "최근 3년 이내 대학, 공공기관, 일반업체 등에서 발주한 교육 운영 해당 동등용역 수행 실적"
+            ]
+          }
+        ]
+      }
+    },
+    "evidence": [
+      {
+        "source_document_id": "task-order:4c3fea27-9584-47b7-acdb-b6895a8fea52",
+        "page": null,
+        "section": "normalized task-order requirements",
+        "quote": "捤獥汤捯氠瑢\n경기과학기술대학교\n2025년 빅데이터혁신융합대학사업\n동계 AWS 교육 제안요청서\n氠瑢\nⅠ\n사업개요\n1. 과업명 : 경기과학기술대학교 2025년 빅데이터혁신융합대학사업\n동계 AWS 교육 프로그램 운영 용역\n2. 과업의 목적\n○ AWS 클라우드의 기본적 글로벌 인프라 이해\n○ AWS Certified Cloud Practitioner 자격증 취득\n○ 컴퓨터 네트워크, 데이터베이스, 스토리지 등 핵심 AWS 서비스 이해\n○ 집체교육을 통하여 산업체에서 요구하는 SW 기초 실무 능력 함양\n3. 과업 기간 : 계약체결일로부터 캠프종료일 까지\n4. 사업금액 : 금 25,792,000 원(VAT포함)\n* 강사료, 교육라이센스 이용료, 운영비 등 교육 운영에 필요한 모든 비용 포함\n5. 프로그램 기간 : 2026.01.14.(수) ~ 2026.01.16.(금)\n6. 주요 과업 내용\n가. 교육인원 : 30명\n나. 기획 : 교육과정 구성, 프로그램 운영, 참여학생 모집을 위한 홍보물 제작, 식사예약 등\n다. 교육 운영 :\n- 공인 AWS 교육 전문가를 활용한 교육 진행\n- 오프라인 교육을 통한 교육 수료증 제공\n라. 학생 관리 : 학생 관리를 위한 전반적인 사항\n마. 사후관리 : 프로그램 운영 결과보고 및 학생 만족도 조사 등 피드백 환류\n바. 기타 : 프로그램 운영에 필요한 모든 사항\n氠瑢\nⅡ\n제안 요청 사항\n1. 과업개요\n가. 사업명 : 경기과학기술대학교 2025년 빅데이터혁신융합대학사업\n동계 AWS 교육 프로그램 운영 용역\n나. 사업기간 : 계약일로부터 캠프종료일까지\n다. 계약방법 : 제한경쟁입찰, 협상에 의한 계약\n라. 사업예산 : 금 25,792,000 원(VAT포함)\n마. 교육목표\n○ 교육 일정 : 2026.01.14.(수)~2026.01.16.(금)\n○ 모집 : 30명 선발\n바. 모집대상 : 빅데이터 컨소시엄 재학생 30명\n사. 운영장소 : 집체 교육이 가능한 강의실 대여\n2. 세부 과업 범위\n가. 과업 내용氠瑢\n구분\n과업 내용\n프로그램 홍보\n가. 프로",
+        "confidence": 1.0
+      }
+    ],
+    "review_status": "unreviewed"
+  },
+  "instructor": {
+    "instructor_id": "instructor-10",
+    "profile_version": "db-054cece0eef2",
+    "display_name": "김민주",
+    "expertise_tags": [
+      "Python",
+      "LLM",
+      "Flask",
+      "AWS",
+      "AppSheet",
+      "Google Cloud",
+      "Gemini",
+      "Arduino",
+      "3D Printing",
+      "Scratch",
+      "App Inventor",
+      "C",
+      "코딩 교육",
+      "사물인터넷(IoT)",
+      "인공지능(AI)",
+      "데이터 분석",
+      "생성형 AI",
+      "머신러닝",
+      "데이터분석",
+      "생성형AI",
+      "마케팅",
+      "컨설팅",
+      "문서자동화",
+      "앱시트",
+      "부트캠프",
+      "MultiModal",
+      "AI",
+      "GoogleCloud",
+      "보조강사",
+      "구글자동화툴",
+      "노코딩",
+      "인공지능",
+      "구글AI",
+      "백엔드",
+      "파이썬",
+      "코딩테스트",
+      "알고리즘",
+      "비접촉체온계",
+      "메이커",
+      "사물인터넷",
+      "IoT",
+      "줌",
+      "메이커튜터",
+      "코딩강사",
+      "마스터과정",
+      "유튜브",
+      "코딩강사양성",
+      "아두이노",
+      "프로젝트",
+      "해커톤",
+      "코딩교육",
+      "기초과정",
+      "창업교육",
+      "메이커캠프",
+      "프로그래밍",
+      "3D프린팅"
+    ],
+    "summary": "파이썬 및 AI/IoT 분야 9년 경력의 전문 코딩 강사",
+    "delivery_modes": [],
+    "availability_notes": null,
+    "vendor_experience": [
+      "아이코어이앤씨 - 강사 · 교육컨설턴트 (교육 운영 및 강의)",
+      "프리랜서 - 프리랜서 활동 (코딩 강의 출강 및 교육 콘텐츠 제작)",
+      "소프트웨어놀이터 - 기획.교육 · 기획 팀장 (코딩 온/오프라인 강의, 교육 콘텐츠 기획 제작, 유튜브 채널 운영 관리)"
+    ],
+    "vendor_certifications": [
+      "데이터분석준전문가(ADsP) 최종합격",
+      "COS Pro(Python) 1급 최종합격",
+      "정보처리산업기사 최종합격"
+    ],
+    "teaching_items": [
+      {
+        "topic": "Python 머신러닝 모델링과 데이터 분석 과정",
+        "organization": "한국AI사물인터넷협회 세종대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 181",
+            "quote": "Python 머신러닝 모델링과 데이터 분석 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "소상공인을 위한 생성형 AI 활용 특강 (콘텐츠 제작, 마케팅, 기획 등)",
+        "organization": "서울패션허브",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 180",
+            "quote": "소상공인을 위한 생성형 AI 활용 특강 (콘텐츠 제작, 마케팅, 기획 등)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "패션 기업 생성형 AI 활용 출강 & 컨설팅",
+        "organization": "한국패션협회",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 179",
+            "quote": "패션 기업 생성형 AI 활용 출강 & 컨설팅",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "데이터 분석 및 문서 자동화",
+        "organization": "서울교육청",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 178",
+            "quote": "데이터 분석 및 문서 자동화",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Google 앱시트를 활용한 일일 부트캠프",
+        "organization": "천안여자상업고등학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 177",
+            "quote": "Google 앱시트를 활용한 일일 부트캠프",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Cloud 기반 Multi Modal AI 개발자 양성 과정 With Google Cloud",
+        "organization": "서울경제진흥원",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 176",
+            "quote": "Cloud 기반 Multi Modal AI 개발자 양성 과정 With Google Cloud",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Python Programming",
+        "organization": "서울경제진흥원",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 175",
+            "quote": "Python Programming",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "구글 Gemini로 업무 혁신하기",
+        "organization": "한국생산성본부",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 174",
+            "quote": "구글 Gemini로 업무 혁신하기",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Google 자동화툴 앱시트 재직자 특강",
+        "organization": "성균관대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 173",
+            "quote": "Google 자동화툴 앱시트 재직자 특강",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "앱시트를 이용한 노코딩 앱 만들기",
+        "organization": "경남교육청",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 172",
+            "quote": "앱시트를 이용한 노코딩 앱 만들기",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "청년취업사관학교 GoogleCloud 기반 인공지능 개발자 과정 3기",
+        "organization": "서울경제진흥원",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 171",
+            "quote": "청년취업사관학교 GoogleCloud 기반 인공지능 개발자 과정 3기",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "구글 AI 글로벌 인재 양성 과정",
+        "organization": "제주도 지역혁신플랫폼",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 170",
+            "quote": "구글 AI 글로벌 인재 양성 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "청년취업사관학교 GoogleCloud 기반 인공지능 개발자 과정 2기",
+        "organization": "서울경제진흥원",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 169",
+            "quote": "청년취업사관학교 GoogleCloud 기반 인공지능 개발자 과정 2기",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "flask 활용 백엔드 과정 (AWS, Flask 사용한 웹페이지 배포)",
+        "organization": "세명컴퓨터고등학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 168",
+            "quote": "flask 활용 백엔드 과정 (AWS, Flask 사용한 웹페이지 배포)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "인공지능 활용 특강",
+        "organization": "은평메디텍고등학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 167",
+            "quote": "인공지능 활용 특강",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "데이터분석.인공지능 특강",
+        "organization": "충남과학고등학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 166",
+            "quote": "데이터분석.인공지능 특강",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "파이썬을 활용한 데이터분석 & 머신러닝",
+        "organization": "한겨레 신문사",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 165",
+            "quote": "파이썬을 활용한 데이터분석 & 머신러닝",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "코딩테스트를 위한 필수 알고리즘 정복&기출 문제 풀이 강의 제작",
+        "organization": "러닝스푼즈",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 164",
+            "quote": "코딩테스트를 위한 필수 알고리즘 정복&기출 문제 풀이 강의 제작",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "비접촉체온계 만들기 과정",
+        "organization": "크리에이티브팩토리",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 163",
+            "quote": "비접촉체온계 만들기 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "사물인터넷(IOT)융합 기초 과정",
+        "organization": "서일대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 162",
+            "quote": "사물인터넷(IOT)융합 기초 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "줌 활용 메이커튜더양성과정",
+        "organization": "크리에이티브팩토리",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 161",
+            "quote": "줌 활용 메이커튜더양성과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "사물인터넷(IOT)융합 중급과정",
+        "organization": "서일대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 160",
+            "quote": "사물인터넷(IOT)융합 중급과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "코딩강사 마스터과정",
+        "organization": "크리에이티브팩토리",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 159",
+            "quote": "코딩강사 마스터과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "사물인터넷(IOT)융합 기초과정",
+        "organization": "서일대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 158",
+            "quote": "사물인터넷(IOT)융합 기초과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "유튜브 홍보 마케팅 과정",
+        "organization": "포항창조경제혁신센터",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 157",
+            "quote": "유튜브 홍보 마케팅 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "코딩강사양성과정",
+        "organization": "영남이공대 평생교육원",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 156",
+            "quote": "코딩강사양성과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "아두이노 프로젝트",
+        "organization": "부산과학기술인협의회",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 155",
+            "quote": "아두이노 프로젝트",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "유튜브 홍보 마케팅",
+        "organization": "포항창조경제혁신센터",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 154",
+            "quote": "유튜브 홍보 마케팅",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "아두이노 기초 과정",
+        "organization": "호서대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 153",
+            "quote": "아두이노 기초 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "아두이노 기초 및 프로젝트 과정",
+        "organization": "경북대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 152",
+            "quote": "아두이노 기초 및 프로젝트 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "HOOK!IOT 해커톤 캠프",
+        "organization": "K-ICT 디바이스랩",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 151",
+            "quote": "HOOK!IOT 해커톤 캠프",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "IoT 초중급 과정",
+        "organization": "울산대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 150",
+            "quote": "IoT 초중급 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "사물인터넷 초중고급 과정",
+        "organization": "영남대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 149",
+            "quote": "사물인터넷 초중고급 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "코딩교육 기초 과정",
+        "organization": "부산과학기술협의회",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 148",
+            "quote": "코딩교육 기초 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "아두이노 기초 과정 (창업교육)",
+        "organization": "한성대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 147",
+            "quote": "아두이노 기초 과정 (창업교육)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "여름방학 메이커 캠프",
+        "organization": "K-ICT 디바이스랩",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 146",
+            "quote": "여름방학 메이커 캠프",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "코딩강사양성과정 3기",
+        "organization": "포항창조혁신센터",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 145",
+            "quote": "코딩강사양성과정 3기",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "코딩강사양성과정 1기",
+        "organization": "영남이공대 평생교육원",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 144",
+            "quote": "코딩강사양성과정 1기",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "아두이노 프로그래밍",
+        "organization": "한국로봇산업진흥원",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 143",
+            "quote": "아두이노 프로그래밍",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "아두이노 프로그래밍 및 3D 프린팅",
+        "organization": "크리에이티브팩토리 경북대산학협력단",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 142",
+            "quote": "아두이노 프로그래밍 및 3D 프린팅",
+            "confidence": 1.0
+          }
+        ]
+      }
+    ],
+    "project_items": [],
+    "work_experience_items": [
+      {
+        "organization": "아이코어이앤씨",
+        "summary": "강사 · 교육컨설턴트 (교육 운영 및 강의)",
+        "start_date": "2023-11-01",
+        "end_date": "2025-01-01",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 77",
+            "quote": "강사 · 교육컨설턴트 (교육 운영 및 강의)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "organization": "프리랜서",
+        "summary": "프리랜서 활동 (코딩 강의 출강 및 교육 콘텐츠 제작)",
+        "start_date": "2022-01-01",
+        "end_date": "2023-12-01",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 78",
+            "quote": "프리랜서 활동 (코딩 강의 출강 및 교육 콘텐츠 제작)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "organization": "소프트웨어놀이터",
+        "summary": "기획.교육 · 기획 팀장 (코딩 온/오프라인 강의, 교육 콘텐츠 기획 제작, 유튜브 채널 운영 관리)",
+        "start_date": "2015-10-01",
+        "end_date": "2021-12-01",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 79",
+            "quote": "기획.교육 · 기획 팀장 (코딩 온/오프라인 강의, 교육 콘텐츠 기획 제작, 유튜브 채널 운영 관리)",
+            "confidence": 1.0
+          }
+        ]
+      }
+    ],
+    "certifications": [
+      {
+        "name": "데이터분석준전문가(ADsP) 최종합격",
+        "issuer": "한국데이터베이스진흥원",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 80",
+            "quote": "데이터분석준전문가(ADsP) 최종합격",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "COS Pro(Python) 1급 최종합격",
+        "issuer": "YBM",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 82",
+            "quote": "COS Pro(Python) 1급 최종합격",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "정보처리산업기사 최종합격",
+        "issuer": "한국산업인력공단",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 81",
+            "quote": "정보처리산업기사 최종합격",
+            "confidence": 1.0
+          }
+        ]
+      }
+    ],
+    "source_document_ids": [
+      "instructor-source:내부 강사 정보.xlsx",
+      "instructor-db:10"
+    ],
+    "extensions": {},
+    "evidence": [
+      {
+        "source_document_id": "instructor-db:10",
+        "page": null,
+        "section": "instructors",
+        "quote": "파이썬 및 AI/IoT 분야 9년 경력의 전문 코딩 강사",
+        "confidence": 1.0
+      }
+    ],
+    "review_status": "unreviewed"
+  }
+}

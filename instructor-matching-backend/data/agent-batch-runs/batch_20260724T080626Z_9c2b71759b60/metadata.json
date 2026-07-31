@@ -1,0 +1,31 @@
+{
+  "batch_run_id": "batch_20260724T080626Z_9c2b71759b60",
+  "created_at": "2026-07-24T08:06:26.332583+00:00",
+  "status": "completed",
+  "storage_schema_version": "batch_match_run_v1",
+  "total_instructors": 108,
+  "reviewed_instructor_ids": [
+    34,
+    75,
+    104,
+    93,
+    74,
+    42,
+    50,
+    57,
+    20,
+    83
+  ],
+  "reviewed_match_run_ids": [
+    "20260724T080338Z_b633726d54ed",
+    "20260724T080353Z_e4f7c735c8ce",
+    "20260724T080407Z_19301ed626b5",
+    "20260724T080507Z_2b58ad3d76e9",
+    "20260724T080440Z_5dcb16ac1fd1",
+    "20260724T080523Z_19e5c46f0349",
+    "20260724T080604Z_d85fbae7ce64",
+    "20260724T080540Z_821b148e6efe",
+    "20260724T080611Z_488ab696c2af",
+    "20260724T080626Z_34100175bfbe"
+  ]
+}

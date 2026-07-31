@@ -1,0 +1,326 @@
+{
+  "run_id": "20260731T062555Z_e5796ac53f72",
+  "final_score": 2.5,
+  "final_status": "on_hold",
+  "reasons": [
+    "Code validation found an invalid citation or an unmet exact mandatory condition.",
+    "A/B score difference: 5.0",
+    "Evidence coverage: 0%",
+    "Verifier verdict: FAIL",
+    "Code grounding verdict: FAIL",
+    "Citation accuracy: 50%"
+  ],
+  "analysis": {
+    "total_score": 5.0,
+    "score_items": [
+      {
+        "criterion": "topic_match",
+        "score": 0.0,
+        "max_score": 35.0,
+        "rationale": "본 과업은 AWS C3 인증센터 구축 및 클라우드/AI(CLF, AIF, SAA 등) 교육 운영을 핵심 주제로 하고 있으나, 강사는 SW공학, 프로세스 혁신 및 정보보안(ISO 27000, CMMI) 분야의 전문가로 클라우드 및 AI 관련 프로젝트 이력이나 강의 전문성이 확인되지 않아 0점 처리합니다.",
+        "project_evidence": [],
+        "instructor_evidence": []
+      },
+      {
+        "criterion": "teaching_depth",
+        "score": 0.0,
+        "max_score": 30.0,
+        "rationale": "과업에서는 실습형 교육과 AWS Skill Builder 자기주도 학습 등 클라우드 실습 환경 기반의 교육 운영을 요구하고 있으나, 강사의 전문 분야인 SW공학이나 품질경영 등의 강의 이력으로는 본 과업이 요구하는 기술 교육의 깊이를 충족할 수 없어 0점 처리합니다.",
+        "project_evidence": [],
+        "instructor_evidence": []
+      },
+      {
+        "criterion": "audience_fit",
+        "score": 0.0,
+        "max_score": 15.0,
+        "rationale": "과업의 교육 대상은 대학의 교직원 및 교원이지만, 강사의 강의 이력에서는 대학 교직원 혹은 교원 대상의 맞춤형 강의 경험을 뒷받침할 구체적인 근거가 발견되지 않아 0점 처리합니다.",
+        "project_evidence": [],
+        "instructor_evidence": []
+      },
+      {
+        "criterion": "career_and_certification",
+        "score": 0.0,
+        "max_score": 15.0,
+        "rationale": "과업 수행을 위해서는 'AWS 공인 전문 강사' 자격 요건이 필수적이나, 강사는 정보보안경영시스템(ISO 27000) BSI 인증심사원, 품질관리기사, 정보처리기사 자격만 보유하고 있으며 AWS 공인 자격증을 보유하고 있지 않아 0점 처리합니다.",
+        "project_evidence": [],
+        "instructor_evidence": []
+      },
+      {
+        "criterion": "evidence_completeness",
+        "score": 5.0,
+        "max_score": 5.0,
+        "rationale": "강사의 프로필 정보(경력, 자격증, 상세 프로젝트 이력)는 누락 없이 충실하게 작성되어 있으므로, 데이터 완결성에 대해 만점을 부여합니다.",
+        "project_evidence": [],
+        "instructor_evidence": []
+      }
+    ],
+    "recommendation_reasons": [
+      "강사 본연의 SW공학 품질관리 및 정보보안 프로세스 혁신 분야에서는 풍부한 컨설팅과 강의 이력을 가지고 있으나, AWS 클라우드 인프라 구축 및 기술 교육을 전담하기에는 전문 분야가 일치하지 않아 추천하지 않습니다."
+    ],
+    "gaps": [
+      "AWS 및 클라우드/AI 분야의 실무 경력 및 프로젝트 이력 부재",
+      "AWS 공인 강사 자격증 및 관련 테크니컬 인증 부재",
+      "대학 교원 및 교직원 대상의 맞춤형 교육 설계 및 운영 이력 부재"
+    ],
+    "risks": [
+      "AWS 공인 강사 자격 미달로 인한 계약 불이행 및 입찰 자격 박탈 위험",
+      "클라우드/AI 실습 교육 역량 부족으로 인한 교육 만족도 저하 및 사업 성과 달성 실패 위험"
+    ],
+    "required_conditions_passed": false,
+    "required_condition_notes": [
+      "과업지시서 상 필수 요건인 '전문 역량을 갖춘 단계별 AWS 공인 전문 강사' 기준을 충족하지 못합니다."
+    ]
+  },
+  "verification": {
+    "independent_score": 0.0,
+    "verdict": "FAIL",
+    "evidence_coverage": 0.0,
+    "issues": [
+      {
+        "severity": "high",
+        "category": "required_condition",
+        "description": "과업 지시서에서는 '단계별 AWS 공인 전문 강사로 구성'을 명확한 강사 자격 요건으로 규정하고 있으나, 본 강사는 AWS 관련 공인 자격증이나 교육 이력이 전혀 없으며 ISO 27000 및 품질관리 기사 등 소프트웨어 공학/품질 관리 이력만 보유하고 있어 필수 요구 조건을 충족하지 못합니다.",
+        "related_criterion": "career_and_certification"
+      }
+    ],
+    "corrected_score_items": [
+      {
+        "criterion": "topic_match",
+        "score": 0.0,
+        "max_score": 35.0,
+        "rationale": "과업의 핵심 주제는 AWS C3 구축, 클라우드, AI, SAA-C03 자격증 등이나, 강사의 전문 분야는 SW공학, 정보보안 및 품질관리(CMMI, ISO 등)로 클라우드 및 AI 주제와의 매칭이 전혀 되지 않습니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:93b2ada7-89c6-469b-ba89-ef659f16969b",
+            "page": null,
+            "section": "chunk 0",
+            "quote": "가. 과 업 명: 2026년 AWS C3 구축 및 교직원 역량 강화 교육\n나. 과업기간: 계약체결일로부터 2026. 10. 30.까지",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": [
+          {
+            "source_document_id": "instructor-db:35",
+            "page": null,
+            "section": "instructors",
+            "quote": "SW공학 및 정보보안/품질관리 프로세스 혁신 전문가",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "criterion": "teaching_depth",
+        "score": 0.0,
+        "max_score": 30.0,
+        "rationale": "기초통합교육(CLF + AIF), SAA 교육, AAI 교육 등 AWS 클라우드 및 AI 교육을 수행하기 위한 기술적 전문성과 교수 설계 역량을 뒷받침할 강의 이력이나 개발 이력이 전무합니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:93b2ada7-89c6-469b-ba89-ef659f16969b",
+            "page": null,
+            "section": "chunk 2",
+            "quote": "기초통합교육 | - 클라우드와 AI 의 핵심 개념 이해\n- 최신 Agentic AI 기술 동향 파악 | 8월 중순\nSAA 교육 | - AWS 아키텍처 설계 역량 확보\n- SAA-C03 자격증 취득 준비 | 8월 중순\nAAI 교육 | - AI 애플리케이션 개발 실습 역량 ,\n- AI 교수자 양성, 학생 대상 교수법 체득 | 8월 중순",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": []
+      },
+      {
+        "criterion": "audience_fit",
+        "score": 0.0,
+        "max_score": 15.0,
+        "rationale": "대학 교직원 및 교원을 대상으로 AWS 기반 클라우드 및 AI 교수자를 양성하기 위한 맞춤형 강의 경험이나 역량이 확인되지 않습니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:93b2ada7-89c6-469b-ba89-ef659f16969b",
+            "page": null,
+            "section": "chunk 2",
+            "quote": "가.\n과업대상: 본교 교직원 및 교원",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": []
+      },
+      {
+        "criterion": "career_and_certification",
+        "score": 0.0,
+        "max_score": 15.0,
+        "rationale": "과업 지시서에서 필수로 요구하는 'AWS 공인 전문 강사' 자격 요건을 갖추지 못했으며, 강사 프로필 상 AWS 공인 자격증 및 관련 경력이 존재하지 않습니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:93b2ada7-89c6-469b-ba89-ef659f16969b",
+            "page": null,
+            "section": "normalized task-order requirements",
+            "quote": "전문 역량을 갖춘 단계별 AWS 공인 전문 강사로 구성 및 성범죄 경력, 아동학대 전력 등이 없는 강사",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 340",
+            "quote": "정보보안경영시스템(ISO 27000) BSI 인증심사원 22318-57550",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "criterion": "evidence_completeness",
+        "score": 0.0,
+        "max_score": 5.0,
+        "rationale": "과업에서 요구하는 강사 자격 기준(AWS 공인 강사)을 증빙할 수 있는 필수 자격 및 경력 정보가 완전히 결여되어 있습니다.",
+        "project_evidence": [],
+        "instructor_evidence": []
+      }
+    ],
+    "required_conditions_passed": false
+  },
+  "grounding": {
+    "citation_accuracy": 0.5,
+    "invalid_citation_count": 3,
+    "unsupported_positive_score_count": 0,
+    "required_condition_checks": [
+      {
+        "requirement": "「국가를 당사자로 하는 계약에 관한 법률 시행령」 제12조 및 「동법 시행규칙」 제14조에 의한 자격요건을 갖춘 업체",
+        "condition_type": "certification",
+        "status": "failed",
+        "detail": "Required credential not found in instructor profile."
+      },
+      {
+        "requirement": "전문 역량을 갖춘 단계별 AWS 공인 전문 강사로 구성 및 성범죄 경력, 아동학대 전력 등이 없는 강사",
+        "condition_type": "certification",
+        "status": "failed",
+        "detail": "Required credential not found in instructor profile."
+      },
+      {
+        "requirement": "공고일 기준 최근 3년 이내 국내 대학 및 전문대학 또는 공공기관에서 유사한 위탁운영 실적이 단일건수 기준 5천만원 이상 1건 이상 실행한 업체(사업완료 건수)",
+        "condition_type": "experience",
+        "status": "not_automatically_verifiable",
+        "detail": "Experience requirements need human or model review unless a numeric rule is configured."
+      },
+      {
+        "requirement": "전문 역량을 갖춘 단계별 AWS 공인 전문 강사로 구성 및 성범죄 경력, 아동학대 전력 등이 없는 강사",
+        "condition_type": "experience",
+        "status": "not_automatically_verifiable",
+        "detail": "Experience requirements need human or model review unless a numeric rule is configured."
+      }
+    ],
+    "verdict": "FAIL"
+  },
+  "rag_context": {
+    "project_evidence": [
+      {
+        "source_type": "project",
+        "evidence": {
+          "source_document_id": "task-order:93b2ada7-89c6-469b-ba89-ef659f16969b",
+          "page": null,
+          "section": "chunk 2",
+          "quote": "있음\n- 2 -\n단 계 | 내 용 | 교육 일정\n기초통합교육 | - 클라우드와 AI 의 핵심 개념 이해\n- 최신 Agentic AI 기술 동향 파악 | 8월 중순\nSAA 교육 | - AWS 아키텍처 설계 역량 확보\n- SAA-C03 자격증 취득 준비 | 8월 중순\nAAI 교육 | - AI 애플리케이션 개발 실습 역량 ,\n- AI 교수자 양성, 학생 대상 교수법 체득 | 8월 중순\n기 간\n세부사업내용 | 사 업 추 진 일 정 (월)\n7 | 8 | 9 | 10\n위탁용역 공고\n업체 선정 및 착수\n교직원 역량 강화 교육\nAWS C3 인증센터 구축\n사업 결과보고\nⅡ 과업 내용\n1.\n과업 수행범위\n가.\n과업대상: 본교 교직원 및 교원\n나.\n과업기간: 2026.\n7.\n~ 2026.\n10.\n다.\n과업장소: 울산과학대학교 동부캠퍼스\n라.\n과업방법: AWS C3 인증센터 구축 및 교직원 역량강화 교육\n마.\n과업내용\n­ AWS C3 센터 운영에 필요한 4개 영역을 통합 구축\n­ 교직원 및 교원 수준을 고려한 질 높은 맞춤형 프로그램 개발 및 운영\n­ 프로그램 운영 후 설문조사를 통한 교육 효과성 분석 및 공유\n2.\n과업 세부내용\n가.\nAWS C3인증센터 구축\n­ AWS C3 센터 운영에 필요한 4개 영역을 통합 구축\n구 분 목 적 내 용\n- 1인 독립 시험 부스\nAWS 공인 자격증 시험을 공정하\n- 부스별 기본 시험 장비 포함\n시험장 인프라 구축 고 안전하게 진행하기 위한 독립\n- AWS 공인시험 운영 기준에\n시험 환경을 구축\n부합하는 환경 구성\nAWS가 공식 운영하는 자기주도 - AWS Skill Builder\n학습 플랫폼 라이선스 및\n학습 및 공인 자격증 시험 대비를 - Certi Navigator\nAWS 실습 환경 구축 위한 환경을 구축 - AWS Cloud\nAWS C3 공인인증센터의 효율적",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.865
+      },
+      {
+        "source_type": "project",
+        "evidence": {
+          "source_document_id": "task-order:93b2ada7-89c6-469b-ba89-ef659f16969b",
+          "page": null,
+          "section": "chunk 1",
+          "quote": "지털 전환의 촉진: 새로운 비즈니스 모델 창출을 지원하는 실무형\n클라우드-AI 역량을 갖춘 인재를 양성\n나.\n글로벌 표준 교육 체계 구축: 대학이 자체적으로 국제 표준 교육 과정을\n설계하고 운영할 수 있는 체계\n다.\n사회적 가치 창출: 지역 인재의 일자리 창출과 기업의 디지털 전환 성공\n사례를 확대함으로써 디지털 혁신 기여도 상승취업 마인드 함양, 자기주도\n적 취업진로 설계 등 학생 취업인식 개선\n3.\n주요 내용\n가.\nAWS C3 구축\n­ 시험장 인프라 구축(1인 독립부스)\n­ 학습 플랫폼 라이선스 및 AWS 실습 환경 구축\n­ AWS C3 운영 시스템 구축\n­ Tier 관리 및 운영 지원\n- 1 -\n나.\nAWS 교직원 역량 강화 교육\n­ 기초 통합 교육(CLF + AIF)과정 운영\n­ SAA 교육과정 및 AAI 교육과정 운영\n­ AWS 공인 강사 선정 시험 및 인터뷰\n다.\n교육 운영 일정\n단 계 내 용 교육 일정\n- 클라우드와 AI 의 핵심 개념 이해\n기초통합교육 8월 중순\n- 최신 Agentic AI 기술 동향 파악\n- AWS 아키텍처 설계 역량 확보\nSAA 교육 8월 중순\n- SAA-C03 자격증 취득 준비\n- AI 애플리케이션 개발 실습 역량 ,\nAAI 교육 8월 중순\n- AI 교수자 양성, 학생 대상 교수법 체득\n라.\n추진 일정(안)\n기 간 사 업 추 진 일 정 (월)\n세부사업내용 7 8 9 10\n위탁용역 공고\n업체 선정 및 착수\n교직원 역량 강화 교육\nAWS C3 인증센터 구축\n사업 결과보고\n※ 상기 일정 및 계획은 추진 상황에 따라 변동될 수 있음\n- 2 -\n단 계 | 내 용 | 교육 일정\n기초통합교육 | - 클라우드와 AI 의 핵심 개념 이해\n- 최신 Agentic AI 기술 동향 파악 | 8월 중순\nSAA 교육 | - AWS 아키텍처 설계 역량 확보",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.8529
+      },
+      {
+        "source_type": "project",
+        "evidence": {
+          "source_document_id": "task-order:93b2ada7-89c6-469b-ba89-ef659f16969b",
+          "page": null,
+          "section": "chunk 0",
+          "quote": "2026년 AWS C3 인증센터 구축 및\n교직원 역량 강화 교육 용역 과업지시서\n.\n2026.\n7.\n.\n목 차\nⅠ.\n과업 개요 ················································································ 1\nⅡ.\n과업 내용 ················································································ 3\nⅢ.\n과업 수행 지침 ······································································· 7\nⅣ.\n과업 수행 사업자 선정 ······························································· 13\nⅤ.\n제안서 작성 및 제출 ··································································· 18\n[별첨] 제출 서류 양식 ······································································· 26\nⅠ 과업 개요\n1.\n과업 개요\n가.\n과 업 명: 2026년 AWS C3 구축 및 교직원 역량 강화 교육\n나.\n과업기간: 계약체결일로부터 2026.\n10.\n30.까지\n다.\n계약방법: 협상에 의한 계약, 제한경쟁입찰\n라.\n사업예산: 금180,000,000원(금일억팔천만원)(부가가치세 포함)\n2.\n과업 목적\n가.\n지역 디지털 전환의 촉진: 새로운 비즈니스 모델 창출을 지원하는 실무형\n클라우드-AI 역량을 갖춘 인재를 양성\n나.\n글로벌 표준 교육 체계 구축: 대학이 자체적으로 국제 표준 교육 과정을\n설계하고 운영할 수 있는 체계\n다.",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.8463
+      },
+      {
+        "source_type": "project",
+        "evidence": {
+          "source_document_id": "task-order:93b2ada7-89c6-469b-ba89-ef659f16969b",
+          "page": null,
+          "section": "chunk 3",
+          "quote": "S Skill Builder\n학습 플랫폼 라이선스 및\n학습 및 공인 자격증 시험 대비를 - Certi Navigator\nAWS 실습 환경 구축 위한 환경을 구축 - AWS Cloud\nAWS C3 공인인증센터의 효율적\n- 응시자 예약 관리\nAWS C3 운영 시스템 구축 운영을 위한 통합 관리 시스템을\n- 센터 현황 통합 관리\n구축\nAWS와의 파트너십 유지, Tier 관 - AWS Tier 관리\nTier 관리 및 운영 지원\n리, 운영 지원을 위한 환경 구축 - 네트워크 관리\n- 3 -\n구 분 | 목 적 | 내 용\n시험장 인프라 구축 | AWS 공인 자격증 시험을 공정하\n고 안전하게 진행하기 위한 독립\n시험 환경을 구축 | - 1인 독립 시험 부스\n- 부스별 기본 시험 장비 포함\n- AWS 공인시험 운영 기준에\n부합하는 환경 구성\n학습 플랫폼 라이선스 및\nAWS 실습 환경 구축 | AWS가 공식 운영하는 자기주도\n학습 및 공인 자격증 시험 대비를\n위한 환경을 구축 | - AWS Skill Builder\n- Certi Navigator\n- AWS Cloud\nAWS C3 운영 시스템 구축 | AWS C3 공인인증센터의 효율적\n운영을 위한 통합 관리 시스템을\n구축 | - 응시자 예약 관리\n- 센터 현황 통합 관리\nTier 관리 및 운영 지원 | AWS와의 파트너십 유지, Tier 관\n리, 운영 지원을 위한 환경 구축 | - AWS Tier 관리\n- 네트워크 관리\n나.\n교직원 역량 강화 교육\n1) 강사진 구성\n­ 단계별 AWS 공인 전문 강사 프로그램 운영\n­ 교육 이후 교육생이 AI·Cloud 교육을 직접 수행할 수 있는 역량을\n발휘할 수 있도록 전문 역량을 갖춘 강사로 구성\n­ 강사 소개서(이력, 실적, 전문 분야, 성범죄 조회 동의서 등 포함) 제출\n2) 단계별 프로그램 운영",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.8425
+      },
+      {
+        "source_type": "project",
+        "evidence": {
+          "source_document_id": "task-order:93b2ada7-89c6-469b-ba89-ef659f16969b",
+          "page": null,
+          "section": "chunk 4",
+          "quote": "교육생이 AI·Cloud 교육을 직접 수행할 수 있는 역량을\n발휘할 수 있도록 전문 역량을 갖춘 강사로 구성\n­ 강사 소개서(이력, 실적, 전문 분야, 성범죄 조회 동의서 등 포함) 제출\n2) 단계별 프로그램 운영\n단 계 내 용 교육 일정\n- 클라우드와 AI 의 핵심 개념 이해\n기초통합교육 8월 중순\n- 최신 Agentic AI 기술 동향 파악\n- AWS 아키텍처 설계 역량 확보\nSAA 교육 8월 중순\n- SAA-C03 자격증 취득 준비\n- AI 애플리케이션 개발 실습 역량 ,\nAAI 교육 8월 중순\n- AI 교수자 양성, 학생 대상 교수법 체득\n※ 교육 일정은 교내 수요 조사로 인한 확정으로 일정 변경 불가\n­ ILT 정규과정 + AWS Skill Builder 자기주도 학습 + 시험 대비 등 자\n격증 취득 가능 할 수 있도록 교육 프로그램에 반영\n­ 교육 내용과 방법은 학교의 요구사항과 기획한 프로그램을 고려하\n여 사전 협의하며, 협의 결과를 교육 프로그램에 반영\n­ 사전 협의 결과와 AWS 교육 지침에 부합한 교육 자료로 교육 운영\n­ 강사, 교재, 재료, 간식 및 각종 운영비 등은 사업비에 포함\n- 4 -\n단 계 | 내 용 | 교육 일정\n기초통합교육 | - 클라우드와 AI 의 핵심 개념 이해\n- 최신 Agentic AI 기술 동향 파악 | 8월 중순\nSAA 교육 | - AWS 아키텍처 설계 역량 확보\n- SAA-C03 자격증 취득 준비 | 8월 중순\nAAI 교육 | - AI 애플리케이션 개발 실습 역량 ,\n- AI 교수자 양성, 학생 대상 교수법 체득 | 8월 중순\n다.\n프로그램 결과보고\n1) 단계별 보고\n­ 과업의 원활한 수행을 위해 교육 전반적인 사항 발주기관에 보고\n구 분 시 기 내 용 비 고\n교육일\n교육 운영 전 - 교육 운영, 내용 등 사전점검 사항\n7일 전까지",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.7872
+      }
+    ],
+    "instructor_evidence": [
+      {
+        "source_type": "instructor",
+        "evidence": {
+          "source_document_id": "rag:instructor-35:db-8ac78a0e204e",
+          "page": null,
+          "section": "chunk 4",
+          "quote": "l,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 731\",\n\"quote\": \"산업보안진단사 양성과정 개발 및 교육\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"SW공학 부문 전문강사\",\n\"organization\": \"SK C&C\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 739\",\n\"quote\": \"SW공학 부문 전문강사\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"SW공학 부문 전문강사\",\n\"organization\": \"KT\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 740\",\n\"quote\": \"SW공학 부문 전문강사\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"IT서비스관리 전문강사\",\n\"organization\": \"POSCO ICT\",\n\"target_audience\": [],",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.693
+      },
+      {
+        "source_type": "instructor",
+        "evidence": {
+          "source_document_id": "rag:instructor-35:db-8ac78a0e204e",
+          "page": null,
+          "section": "chunk 1",
+          "quote": "\"실태조사\",\n\"프로세스진단\",\n\"요구공학분석가\",\n\"양성\",\n\"단말SW\",\n\"CMMI Level 2\",\n\"ISO 17799\",\n\"SW개발\",\n\"프로세스혁신\",\n\"CMM Level 2\",\n\"CMM Level 4\",\n\"CMM Level 3\",\n\"품질보증\",\n\"통합시스템\",\n\"개발시스템\",\n\"프로젝트관리체계\",\n\"BI\",\n\"평가모델\",\n\"ISO 9126\",\n\"TQM\",\n\"중장기발전계획\",\n\"품질경영체제\",\n\"QMS\",\n\"ISO 9000\",\n\"개선\"\n],\n\"summary\": \"SW공학 및 정보보안/품질관리 프로세스 혁신 전문가\",\n\"delivery_modes\": [],\n\"availability_notes\": null,\n\"vendor_experience\": [\n\"NIPA - KCC정보통신 SP Level 2 수준의 SW공학기술 혁신\",\n\"NIPA - WBS 3차 Seed형 프로젝트 품질점검 수행\",\n\"산업기술보호협회 - 산업보안 위험 평가 및 통제 방법론 개발\",\n\"지식경제부 - 중소기업의 기술보호를 위한 세부 보안통제실행G/L개발\",\n\"KOSCOM - IT서비스 성과평가 및 ISO/IEC 20000 인증\",\n\"KOSCOM - 보안관제 부문 위기관리 체제 구축\",\n\"KOSCOM - 운영시스템 품질평가 모델 정립 및 실행\",\n\"KOSCOM - IT서비스관리 개선 및 운영\",\n\"KOSCOM - 보안/가용성/연속성 관리 체제 구축\",\n\"POSCO ICT - IT품질모니터링을 위한 내부감리 체제 구축 및 시범적용\",\n\"POSCO ICT - 보안부문 내부감리제도 정립 및 시범감리\",\n\"KOSCOM - 개발 및 운영 부문 품질경영시스템 통합/효율화\",\n\"POSCO ICT - SM부문 품질경영 Visioning 및 중장기 전략 수립\",\n\"휴맥스 - C코드 품질혁신 컨설팅\",",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.6912
+      },
+      {
+        "source_type": "instructor",
+        "evidence": {
+          "source_document_id": "rag:instructor-35:db-8ac78a0e204e",
+          "page": null,
+          "section": "chunk 5",
+          "quote": "\"SW공학 부문 전문강사\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"IT서비스관리 전문강사\",\n\"organization\": \"POSCO ICT\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 742\",\n\"quote\": \"IT서비스관리 전문강사\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"요구공학분석가 양성\",\n\"organization\": \"LG전자\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 761\",\n\"quote\": \"요구공학분석가 양성\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"교육센타 품질경영분야 전문 강사\",\n\"organization\": \"현대정보기술\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.691
+      },
+      {
+        "source_type": "instructor",
+        "evidence": {
+          "source_document_id": "rag:instructor-35:db-8ac78a0e204e",
+          "page": null,
+          "section": "chunk 3",
+          "quote": "로젝트관리체계 구축 및 브랜드강화(BI) 추진\",\n\"핸디소프트 - 정보시스템구축 프로세스 혁신 (CMM Level 2)\",\n\"POSCO ICT - 프로세스 및 제품 평가 모델 정립 (ISO 9126, 14598)\",\n\"POSCO ICT - 정보시스템구축 프로세스 혁신 (CMM Level 3)\",\n\"현대정보기술 - TQM중장기발전계획수립\",\n\"현대정보기술 - 품질경영체제 특별감사 및 QMS 고도화\",\n\"산업자원부 - ISO 9000 Packaged SW(품질나라) 개발\",\n\"노틸러스효성 - 품질경영체제 개선 및 운영\",\n\"SQ테크놀로지 - 품질경영체제 개선 및 운영\",\n\"㈜아이코어 - 전문강사\",\n\"㈜이오컨설팅 - 대표컨설턴트\",\n\"비즈피어㈜ - 대표컨설턴트, 컨설팅본부장, 품질아카데미원장, 기술연구소장\",\n\"POSCO ICT - 프로젝트관리자, 컴퓨터 프로그래머, 품질보증관리자, 사내기술대학원교수\",\n\"포스코건설 - 프로젝트관리자, 컴퓨터 프로그래머\"\n],\n\"vendor_certifications\": [\n\"정보보안경영시스템(ISO 27000) BSI 인증심사원 22318-57550\",\n\"품질관리기사 1급 (자격번호: 87204010036H)\",\n\"정보처리기사 1급 (자격번호: 87206010148C)\"\n],\n\"teaching_items\": [\n{\n\"topic\": \"산업보안진단사 양성과정 개발 및 교육\",\n\"organization\": \"산업기술보호협회\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.6887
+      },
+      {
+        "source_type": "instructor",
+        "evidence": {
+          "source_document_id": "rag:instructor-35:db-8ac78a0e204e",
+          "page": null,
+          "section": "chunk 22",
+          "quote": "eywords\": [\n\"평가모델\",\n\"ISO 9126\"\n],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 769\",\n\"quote\": \"프로세스 및 제품 평가 모델 정립 (ISO 9126, 14598)\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"title\": \"정보시스템구축 프로세스 혁신 (CMM Level 3)\",\n\"client_organization\": \"POSCO ICT\",\n\"role\": \"컨설턴트\",\n\"start_date\": \"1999-03-01\",\n\"end_date\": \"2001-10-01\",\n\"keywords\": [\n\"프로세스혁신\",\n\"CMM Level 3\"\n],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 758\",\n\"quote\": \"정보시스템구축 프로세스 혁신 (CMM Level 3)\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"title\": \"TQM중장기발전계획수립\",\n\"client_organization\": \"현대정보기술\",\n\"role\": \"컨설턴트\",\n\"start_date\": \"1999-01-01\",\n\"end_date\": \"1999-12-01\",\n\"keywords\": [\n\"TQM\",\n\"중장기발전계획\"\n],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.6786
+      }
+    ]
+  }
+}

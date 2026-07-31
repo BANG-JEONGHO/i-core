@@ -1,0 +1,1621 @@
+{
+  "project": {
+    "schema_version": "education_project_v1",
+    "service_type": "education_program",
+    "program_type": "vocational_training",
+    "classification_confidence": 1.0,
+    "base": {
+      "project_name": "2. 2025년 빅데이터혁신융합대학사업 동계 AWS 교육_용역 제안요청서.hwp",
+      "client_organization": null,
+      "purpose": [
+        "경기과학기술대학교 2025년 빅데이터혁신융합대학사업의 일환으로 대학생 대상의 동계 AWS 교육 프로그램(AWS Certified Cloud Practitioner 자격 취득 및 실무 능력 함양)을 구성 및 운영하는 용역 사업",
+        "교육 프로그램 전체 구성 및 운영 기획",
+        "공인 AWS 전문가 기반 교육 구성 및 강의 계획서 작성",
+        "AWS Certified Cloud Practitioner 자격 시험 대비 교육 및 모의고사 세션 운영",
+        "교육 참가자 30명 모집 및 관리",
+        "교육 실습용 데이터 및 라이센스 제공",
+        "장소 대관, 현수막/배너 제작 및 식사/다과 제공",
+        "만족도 설문조사 및 최종 결과 보고",
+        "AWS 클라우드의 기본적 글로벌 인프라 이해",
+        "AWS Certified Cloud Practitioner 자격증 취득",
+        "컴퓨터 네트워크, 데이터베이스, 스토리지 등 핵심 AWS 서비스 이해",
+        "산업체에서 요구하는 SW 기초 실무 능력 함양"
+      ],
+      "contract_method": null,
+      "start_date": null,
+      "end_date": null,
+      "budget_krw": null,
+      "vat_included": null,
+      "deliverables": [
+        "교육 프로그램 전체 구성 및 운영 기획",
+        "공인 AWS 전문가 기반 교육 구성 및 강의 계획서 작성",
+        "AWS Certified Cloud Practitioner 자격 시험 대비 교육 및 모의고사 세션 운영",
+        "교육 참가자 30명 모집 및 관리",
+        "교육 실습용 데이터 및 라이센스 제공",
+        "장소 대관, 현수막/배너 제작 및 식사/다과 제공",
+        "만족도 설문조사 및 최종 결과 보고",
+        "AWS 클라우드의 기본적 글로벌 인프라 이해",
+        "AWS Certified Cloud Practitioner 자격증 취득",
+        "컴퓨터 네트워크, 데이터베이스, 스토리지 등 핵심 AWS 서비스 이해",
+        "산업체에서 요구하는 SW 기초 실무 능력 함양"
+      ],
+      "proposal_requirements": [
+        "공인 AWS 교육 전문가를 활용하여 교육과정을 제공해야 함",
+        "사업의 성공적인 추진을 위해 사업 총괄 책임자(PM)를 두어 사업을 책임지고 수행해야 함",
+        "최근 3년 간 동등용역(교육 운영) 수행실적 (단일 건으로 2천만원 이상 수행실적 평가)",
+        "교육 기획 및 구성",
+        "전문 교육 강사 섭외",
+        "강의 진행 및 실습 지도",
+        "학생 관리 및 안전 관리",
+        "대관 및 운영 지원",
+        "결과 보고 및 만족도 설문조사"
+      ],
+      "compliance_requirements": [
+        "제안업체 경영상태 (신용평가등급)",
+        "최근 3년간 유사과제 수행 실적",
+        "과업의 이해도 (사업 목적 파악 및 수행내용 이해도)",
+        "참여인력 현황 (책임자의 적정성 및 활동 계획)",
+        "전문성 (교육 운영 전문성 및 구체성)",
+        "과업 수행 방법 (제안요청서 기반 제안내용의 충실도, 적정성 및 접근 방법)",
+        "일정계획 및 목표 (과업수행일정의 적정성, 효율성 및 실효성)",
+        "기타부문 (사업기간 내 중간보고 및 최종보고 계획 제시 등)",
+        "나라장터 시스템을 통한 가격평가"
+      ]
+    },
+    "education": {
+      "technology_domains": [
+        "AWS 클라우드",
+        "AWS Certified Cloud Practitioner",
+        "컴퓨터 네트워크",
+        "데이터베이스",
+        "스토리지",
+        "Amazon EC2",
+        "AWS Lambda",
+        "AWS Well Architected Framework",
+        "공인 AWS 교육 전문가",
+        "강사",
+        "사업 총괄 책임자",
+        "PM",
+        "수행실적",
+        "동등용역",
+        "실적",
+        "경영상태",
+        "신용평가등급",
+        "유사과제",
+        "과업 이해도",
+        "사업 목적",
+        "참여인력",
+        "책임자 적정성",
+        "전문성",
+        "교육 운영",
+        "과업 수행 방법",
+        "충실도",
+        "일정계획",
+        "효율성",
+        "보고 계획",
+        "기타부문",
+        "가격평가",
+        "나라장터"
+      ],
+      "program_topics": [
+        "AWS 클라우드",
+        "AWS Certified Cloud Practitioner",
+        "컴퓨터 네트워크",
+        "데이터베이스",
+        "스토리지",
+        "Amazon EC2",
+        "AWS Lambda",
+        "AWS Well Architected Framework",
+        "경영상태",
+        "신용평가등급",
+        "유사과제",
+        "수행실적",
+        "과업 이해도",
+        "사업 목적",
+        "참여인력",
+        "책임자 적정성",
+        "전문성",
+        "교육 운영",
+        "과업 수행 방법",
+        "충실도",
+        "일정계획",
+        "효율성",
+        "보고 계획",
+        "기타부문",
+        "가격평가",
+        "나라장터",
+        "공인 AWS 교육 전문가",
+        "강사",
+        "사업 총괄 책임자",
+        "PM",
+        "동등용역",
+        "실적"
+      ],
+      "target_audience": [
+        "빅데이터 컨소시엄 재학생 (30명)"
+      ],
+      "participant_capacity": null,
+      "delivery_format": [
+        "집체교육",
+        "오프라인"
+      ],
+      "education_hours": null,
+      "schedule": [],
+      "required_roles": [
+        "교육 기획 및 구성",
+        "전문 교육 강사 섭외",
+        "강의 진행 및 실습 지도",
+        "학생 관리 및 안전 관리",
+        "대관 및 운영 지원",
+        "결과 보고 및 만족도 설문조사"
+      ],
+      "instructor_requirements": {
+        "required_experience": [],
+        "required_certifications": [],
+        "required_vendor_credentials": [],
+        "similar_project_experience": [
+          "최근 3년 간 동등용역(교육 운영) 수행실적"
+        ]
+      },
+      "curriculum_requirements": [],
+      "operational_requirements": [],
+      "practical_project_requirements": [
+        "교육 프로그램 전체 구성 및 운영 기획",
+        "공인 AWS 전문가 기반 교육 구성 및 강의 계획서 작성",
+        "AWS Certified Cloud Practitioner 자격 시험 대비 교육 및 모의고사 세션 운영",
+        "교육 참가자 30명 모집 및 관리",
+        "교육 실습용 데이터 및 라이센스 제공",
+        "장소 대관, 현수막/배너 제작 및 식사/다과 제공",
+        "만족도 설문조사 및 최종 결과 보고",
+        "교육 기획 및 구성",
+        "전문 교육 강사 섭외",
+        "강의 진행 및 실습 지도",
+        "학생 관리 및 안전 관리",
+        "대관 및 운영 지원",
+        "결과 보고 및 만족도 설문조사"
+      ],
+      "assessment_requirements": [
+        "제안업체 경영상태 (신용평가등급)",
+        "최근 3년간 유사과제 수행 실적",
+        "과업의 이해도 (사업 목적 파악 및 수행내용 이해도)",
+        "참여인력 현황 (책임자의 적정성 및 활동 계획)",
+        "전문성 (교육 운영 전문성 및 구체성)",
+        "과업 수행 방법 (제안요청서 기반 제안내용의 충실도, 적정성 및 접근 방법)",
+        "일정계획 및 목표 (과업수행일정의 적정성, 효율성 및 실효성)",
+        "기타부문 (사업기간 내 중간보고 및 최종보고 계획 제시 등)",
+        "나라장터 시스템을 통한 가격평가"
+      ],
+      "outcome_requirements": [
+        "AWS 클라우드의 기본적 글로벌 인프라 이해",
+        "AWS Certified Cloud Practitioner 자격증 취득",
+        "컴퓨터 네트워크, 데이터베이스, 스토리지 등 핵심 AWS 서비스 이해",
+        "산업체에서 요구하는 SW 기초 실무 능력 함양"
+      ]
+    },
+    "extensions": {
+      "source_task_order_id": "82af1d47-38fe-4891-a698-b2bfb6da4bbf",
+      "normalized_qualifications": [
+        {
+          "category": "인력 요건",
+          "description": "공인 AWS 교육 전문가를 활용하여 교육과정을 제공해야 함",
+          "is_mandatory": true,
+          "keywords": [
+            "공인 AWS 교육 전문가",
+            "강사"
+          ]
+        },
+        {
+          "category": "인력 요건",
+          "description": "사업의 성공적인 추진을 위해 사업 총괄 책임자(PM)를 두어 사업을 책임지고 수행해야 함",
+          "is_mandatory": true,
+          "keywords": [
+            "사업 총괄 책임자",
+            "PM"
+          ]
+        },
+        {
+          "category": "실적 요건",
+          "description": "최근 3년 간 동등용역(교육 운영) 수행실적 (단일 건으로 2천만원 이상 수행실적 평가)",
+          "is_mandatory": false,
+          "keywords": [
+            "수행실적",
+            "동등용역",
+            "실적"
+          ]
+        }
+      ],
+      "normalized_evaluation_criteria": [
+        {
+          "category": "기술평가(정량평가)",
+          "description": "제안업체 경영상태 (신용평가등급)",
+          "weight": 10,
+          "keywords": [
+            "경영상태",
+            "신용평가등급"
+          ]
+        },
+        {
+          "category": "기술평가(정량평가)",
+          "description": "최근 3년간 유사과제 수행 실적",
+          "weight": 10,
+          "keywords": [
+            "유사과제",
+            "수행실적"
+          ]
+        },
+        {
+          "category": "기술평가(정성평가)",
+          "description": "과업의 이해도 (사업 목적 파악 및 수행내용 이해도)",
+          "weight": 20,
+          "keywords": [
+            "과업 이해도",
+            "사업 목적"
+          ]
+        },
+        {
+          "category": "기술평가(정성평가)",
+          "description": "참여인력 현황 (책임자의 적정성 및 활동 계획)",
+          "weight": 5,
+          "keywords": [
+            "참여인력",
+            "책임자 적정성"
+          ]
+        },
+        {
+          "category": "기술평가(정성평가)",
+          "description": "전문성 (교육 운영 전문성 및 구체성)",
+          "weight": 15,
+          "keywords": [
+            "전문성",
+            "교육 운영"
+          ]
+        },
+        {
+          "category": "기술평가(정성평가)",
+          "description": "과업 수행 방법 (제안요청서 기반 제안내용의 충실도, 적정성 및 접근 방법)",
+          "weight": 15,
+          "keywords": [
+            "과업 수행 방법",
+            "충실도"
+          ]
+        },
+        {
+          "category": "기술평가(정성평가)",
+          "description": "일정계획 및 목표 (과업수행일정의 적정성, 효율성 및 실효성)",
+          "weight": 10,
+          "keywords": [
+            "일정계획",
+            "효율성"
+          ]
+        },
+        {
+          "category": "기술평가(정성평가)",
+          "description": "기타부문 (사업기간 내 중간보고 및 최종보고 계획 제시 등)",
+          "weight": 5,
+          "keywords": [
+            "보고 계획",
+            "기타부문"
+          ]
+        },
+        {
+          "category": "가격평가",
+          "description": "나라장터 시스템을 통한 가격평가",
+          "weight": 10,
+          "keywords": [
+            "가격평가",
+            "나라장터"
+          ]
+        }
+      ],
+      "overview": {
+        "section_titles": [
+          "사업개요",
+          "1. 과업개요",
+          "Ⅰ 사업개요",
+          "Ⅱ 제안 요청 사항 - 1. 과업개요"
+        ],
+        "summary": "경기과학기술대학교 2025년 빅데이터혁신융합대학사업의 일환으로 대학생 대상의 동계 AWS 교육 프로그램(AWS Certified Cloud Practitioner 자격 취득 및 실무 능력 함양)을 구성 및 운영하는 용역 사업",
+        "core_topics": [
+          "AWS 클라우드",
+          "AWS Certified Cloud Practitioner",
+          "컴퓨터 네트워크",
+          "데이터베이스",
+          "스토리지",
+          "Amazon EC2",
+          "AWS Lambda",
+          "AWS Well Architected Framework"
+        ],
+        "target_audience": [
+          "빅데이터 컨소시엄 재학생 (30명)"
+        ],
+        "delivery_formats": [
+          "집체교육",
+          "오프라인"
+        ],
+        "required_roles": [
+          "교육 기획 및 구성",
+          "전문 교육 강사 섭외",
+          "강의 진행 및 실습 지도",
+          "학생 관리 및 안전 관리",
+          "대관 및 운영 지원",
+          "결과 보고 및 만족도 설문조사"
+        ],
+        "scope": [
+          "교육 프로그램 전체 구성 및 운영 기획",
+          "공인 AWS 전문가 기반 교육 구성 및 강의 계획서 작성",
+          "AWS Certified Cloud Practitioner 자격 시험 대비 교육 및 모의고사 세션 운영",
+          "교육 참가자 30명 모집 및 관리",
+          "교육 실습용 데이터 및 라이센스 제공",
+          "장소 대관, 현수막/배너 제작 및 식사/다과 제공",
+          "만족도 설문조사 및 최종 결과 보고"
+        ],
+        "expected_outcomes": [
+          "AWS 클라우드의 기본적 글로벌 인프라 이해",
+          "AWS Certified Cloud Practitioner 자격증 취득",
+          "컴퓨터 네트워크, 데이터베이스, 스토리지 등 핵심 AWS 서비스 이해",
+          "산업체에서 요구하는 SW 기초 실무 능력 함양"
+        ],
+        "preferred_experience": [
+          "최근 3년 간 동등용역(교육 운영) 수행실적"
+        ],
+        "source_excerpt": "사업개요\n1. 과업명 : 경기과학기술대학교 2025년 빅데이터혁신융합대학사업\n\n1. 과업개요\n가. 사업명 : 경기과학기술대학교 2025년 빅데이터혁신융합대학사업\n\n사업 개요\n참여기간\n발주기관\n참여 당시\n담당업무\n소속회사\n직위\n* 투입 인력은 반드시 본 사업에 투입 가능한 인력으로 구성하여야 하며, 개인별 경력 사항이 허위사실로 판명될 경우 계약업체 선정을 무효화 함.\n* 참여 사업명은 대학, 공공기관, 일반업체 순으로 작성함.\n\n사업개요\n사업기간\n(완료구분)",
+        "matching_rules": [
+          {
+            "key": "core_topics",
+            "label": "핵심 교육 주제",
+            "values": [
+              "AWS 클라우드",
+              "AWS Certified Cloud Practitioner",
+              "컴퓨터 네트워크",
+              "데이터베이스",
+              "스토리지",
+              "Amazon EC2",
+              "AWS Lambda",
+              "AWS Well Architected Framework"
+            ]
+          },
+          {
+            "key": "target_audience",
+            "label": "교육 대상",
+            "values": [
+              "빅데이터 컨소시엄 재학생 (30명)"
+            ]
+          },
+          {
+            "key": "delivery_formats",
+            "label": "운영 방식",
+            "values": [
+              "집체교육",
+              "오프라인"
+            ]
+          },
+          {
+            "key": "required_roles",
+            "label": "요구 역할",
+            "values": [
+              "교육 기획 및 구성",
+              "전문 교육 강사 섭외",
+              "강의 진행 및 실습 지도",
+              "학생 관리 및 안전 관리",
+              "대관 및 운영 지원",
+              "결과 보고 및 만족도 설문조사"
+            ]
+          },
+          {
+            "key": "scope",
+            "label": "업무 범위",
+            "values": [
+              "교육 프로그램 전체 구성 및 운영 기획",
+              "공인 AWS 전문가 기반 교육 구성 및 강의 계획서 작성",
+              "AWS Certified Cloud Practitioner 자격 시험 대비 교육 및 모의고사 세션 운영",
+              "교육 참가자 30명 모집 및 관리",
+              "교육 실습용 데이터 및 라이센스 제공",
+              "장소 대관, 현수막/배너 제작 및 식사/다과 제공",
+              "만족도 설문조사 및 최종 결과 보고"
+            ]
+          },
+          {
+            "key": "expected_outcomes",
+            "label": "기대 성과",
+            "values": [
+              "AWS 클라우드의 기본적 글로벌 인프라 이해",
+              "AWS Certified Cloud Practitioner 자격증 취득",
+              "컴퓨터 네트워크, 데이터베이스, 스토리지 등 핵심 AWS 서비스 이해",
+              "산업체에서 요구하는 SW 기초 실무 능력 함양"
+            ]
+          },
+          {
+            "key": "preferred_experience",
+            "label": "우대 경험",
+            "values": [
+              "최근 3년 간 동등용역(교육 운영) 수행실적"
+            ]
+          }
+        ]
+      }
+    },
+    "evidence": [
+      {
+        "source_document_id": "task-order:82af1d47-38fe-4891-a698-b2bfb6da4bbf",
+        "page": null,
+        "section": "normalized task-order requirements",
+        "quote": "捤獥汤捯氠瑢\n경기과학기술대학교\n2025년 빅데이터혁신융합대학사업\n동계 AWS 교육 제안요청서\n氠瑢\nⅠ\n사업개요\n1. 과업명 : 경기과학기술대학교 2025년 빅데이터혁신융합대학사업\n동계 AWS 교육 프로그램 운영 용역\n2. 과업의 목적\n○ AWS 클라우드의 기본적 글로벌 인프라 이해\n○ AWS Certified Cloud Practitioner 자격증 취득\n○ 컴퓨터 네트워크, 데이터베이스, 스토리지 등 핵심 AWS 서비스 이해\n○ 집체교육을 통하여 산업체에서 요구하는 SW 기초 실무 능력 함양\n3. 과업 기간 : 계약체결일로부터 캠프종료일 까지\n4. 사업금액 : 금 25,792,000 원(VAT포함)\n* 강사료, 교육라이센스 이용료, 운영비 등 교육 운영에 필요한 모든 비용 포함\n5. 프로그램 기간 : 2026.01.14.(수) ~ 2026.01.16.(금)\n6. 주요 과업 내용\n가. 교육인원 : 30명\n나. 기획 : 교육과정 구성, 프로그램 운영, 참여학생 모집을 위한 홍보물 제작, 식사예약 등\n다. 교육 운영 :\n- 공인 AWS 교육 전문가를 활용한 교육 진행\n- 오프라인 교육을 통한 교육 수료증 제공\n라. 학생 관리 : 학생 관리를 위한 전반적인 사항\n마. 사후관리 : 프로그램 운영 결과보고 및 학생 만족도 조사 등 피드백 환류\n바. 기타 : 프로그램 운영에 필요한 모든 사항\n氠瑢\nⅡ\n제안 요청 사항\n1. 과업개요\n가. 사업명 : 경기과학기술대학교 2025년 빅데이터혁신융합대학사업\n동계 AWS 교육 프로그램 운영 용역\n나. 사업기간 : 계약일로부터 캠프종료일까지\n다. 계약방법 : 제한경쟁입찰, 협상에 의한 계약\n라. 사업예산 : 금 25,792,000 원(VAT포함)\n마. 교육목표\n○ 교육 일정 : 2026.01.14.(수)~2026.01.16.(금)\n○ 모집 : 30명 선발\n바. 모집대상 : 빅데이터 컨소시엄 재학생 30명\n사. 운영장소 : 집체 교육이 가능한 강의실 대여\n2. 세부 과업 범위\n가. 과업 내용氠瑢\n구분\n과업 내용\n프로그램 홍보\n가. 프로",
+        "confidence": 1.0
+      }
+    ],
+    "review_status": "unreviewed"
+  },
+  "instructor": {
+    "instructor_id": "instructor-16",
+    "profile_version": "db-f109739b7b2d",
+    "display_name": "김연홍",
+    "expertise_tags": [
+      "Windows Server",
+      "MS-SQL Server",
+      "BPMN",
+      "SQL Server 2005",
+      "SQL Server 2008",
+      "SQL Server 2012",
+      "SharePoint 2010",
+      "데이터베이스 모델링",
+      "고도화",
+      "데이터베이스 튜닝",
+      "데이터베이스 마이그레이션",
+      "시스템 진단",
+      "컨설팅",
+      "SQL Server",
+      "튜닝",
+      "최적화",
+      "데이터베이스 설계",
+      "교육",
+      ".Net",
+      "데이터베이스",
+      "DB",
+      "ERP",
+      "데이터베이스설계",
+      "DataBase 튜닝",
+      "웹사이트 구축",
+      "전산화",
+      "정보교육",
+      "NT",
+      "MIS",
+      "DB Modeling",
+      "사무자동화"
+    ],
+    "summary": "MS-SQL 및 DB 모델링 전문가",
+    "delivery_modes": [],
+    "availability_notes": null,
+    "vendor_experience": [
+      "국민은행 - 메신저 고도화 프로젝트",
+      "국민은행 - 메신저 개발 데이터베이스 튜닝",
+      "㈜오티스 엘리베이터 - 데이터베이스 마이그레이션",
+      "㈜진합 - 시스템 진단 및 컨설팅",
+      "포스코 - 제선 시스템 최적화",
+      "포스코 - 보소 시스템 최적화",
+      "포스코 - 신제강 시스템 튜닝",
+      "인텍 정보통신 - 데이터베이스 튜닝",
+      "포스코 - 제선 시스템 튜닝 (2차)",
+      "포스코 - 제선 시스템 튜닝 (1차)",
+      "LG 이노텍 - LED 생산라인 데이터베이스 설계 프로젝트",
+      "한국 생산성본부 - 데이터베이스 3차튜닝",
+      "포스코 - 조강 시스템 교육 및 컨설팅",
+      "한국 생산성본부 - 데이터베이스 2차튜닝",
+      "한국통신 - 콜 센터 데이터베이스 튜닝",
+      "㈜ 대교 - 데이터베이스 컨설팅",
+      "LG DA연구소 - 에어컨 체킹시스템 DB 프로젝트",
+      "한국 생산성본부 - 데이터베이스 튜닝",
+      "㈜델코 - ERP 데이터베이스설계 및 컨설팅",
+      "신한은행 - 채권추심 DataBase 튜닝",
+      "Book2.Com - 웹사이트 구축 프로젝트",
+      "웰컴북 - 웹사이트 구축 프로젝트",
+      "플러스학원 - 전산화 프로젝트",
+      "삼영기공 - MIS 프로젝트",
+      "케미스 - ERP 패키지 DB Modeling 작업",
+      "LG산전 - 자판기 공장 사무자동화 프로젝트",
+      "아이티포럼 - 대표",
+      "시퀄로 - 수석 컨설턴트",
+      "디비바다 - 대표",
+      "다우데이터 시스템 - 데이터베이스 사업부 자문위원",
+      "필라넷 - 데이터베이스 사업부 수석 컨설턴트",
+      "중앙정보처리학원 - 사원",
+      "케미스 시스템 - 사원"
+    ],
+    "vendor_certifications": [
+      "MCP (Microsoft Certified Professional)"
+    ],
+    "teaching_items": [
+      {
+        "topic": "데이터베이스 모델링 강의",
+        "organization": "KTDS",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 285",
+            "quote": "데이터베이스 모델링 강의",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "IT 강의",
+        "organization": "아이코어이앤시",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 283",
+            "quote": "IT 강의",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "IT 강의",
+        "organization": "삼성전자 첨단기술 연수소",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 284",
+            "quote": "IT 강의",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "IT 강의",
+        "organization": "러닝웨이코리아",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 282",
+            "quote": "IT 강의",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "전산실 SQL Server 튜닝 과정 강의",
+        "organization": "우리은행",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 281",
+            "quote": "전산실 SQL Server 튜닝 과정 강의",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "IT 강의",
+        "organization": "웹타임 교육센터",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 280",
+            "quote": "IT 강의",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "IT 강의",
+        "organization": "삼성 멀티 캠퍼스",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 279",
+            "quote": "IT 강의",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "IT 강의",
+        "organization": "Training Partners Korea",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 278",
+            "quote": "IT 강의",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "IT 강의",
+        "organization": "시엔토트(MS공인)교육센터",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 277",
+            "quote": "IT 강의",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "2006 .Net Briefing 세션 강의",
+        "organization": "마이크로소프트",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 276",
+            "quote": "2006 .Net Briefing 세션 강의",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "IT 강의",
+        "organization": "트라이콤(MS공인) 교육센터",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 275",
+            "quote": "IT 강의",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": ".NET 세미나 대학 투어 강의",
+        "organization": "마이크로소프트",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 274",
+            "quote": ".NET 세미나 대학 투어 강의",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "IT 강의",
+        "organization": "필라넷(MS공인)교육센터",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 273",
+            "quote": "IT 강의",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "IT 강의",
+        "organization": "우송대학교 IT아카데미",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 272",
+            "quote": "IT 강의",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "IT 강의",
+        "organization": "새롬IT 교육센터",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 270",
+            "quote": "IT 강의",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "컨설팅 및 강의",
+        "organization": "한국 생산성 본부",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 271",
+            "quote": "컨설팅 및 강의",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "IT 강의",
+        "organization": "시스원, 소프트뱅크 코리아",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 269",
+            "quote": "IT 강의",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "IT 강의",
+        "organization": "현대정보기술 교육원",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 268",
+            "quote": "IT 강의",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "IT 강의",
+        "organization": "한국 HP 교육센터",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 267",
+            "quote": "IT 강의",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "IT 강의",
+        "organization": "KCC정보 교육원",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 266",
+            "quote": "IT 강의",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "정보교육 강의",
+        "organization": "경실련 하이텔 정보교육원",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 265",
+            "quote": "정보교육 강의",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "NT 강의",
+        "organization": "MC SoftWare Center",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 264",
+            "quote": "NT 강의",
+            "confidence": 1.0
+          }
+        ]
+      }
+    ],
+    "project_items": [
+      {
+        "title": "메신저 고도화 프로젝트",
+        "client_organization": "국민은행",
+        "role": "개발자",
+        "start_date": "2015-07-01",
+        "end_date": "2015-07-01",
+        "keywords": [
+          "고도화"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 312",
+            "quote": "메신저 고도화 프로젝트",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "메신저 개발 데이터베이스 튜닝",
+        "client_organization": "국민은행",
+        "role": "개발자",
+        "start_date": "2014-07-01",
+        "end_date": "2014-07-01",
+        "keywords": [
+          "데이터베이스 튜닝"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 311",
+            "quote": "메신저 개발 데이터베이스 튜닝",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "데이터베이스 마이그레이션",
+        "client_organization": "㈜오티스 엘리베이터",
+        "role": "개발자",
+        "start_date": "2013-07-01",
+        "end_date": "2013-07-01",
+        "keywords": [
+          "데이터베이스 마이그레이션"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 310",
+            "quote": "데이터베이스 마이그레이션",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "시스템 진단 및 컨설팅",
+        "client_organization": "㈜진합",
+        "role": "컨설턴트",
+        "start_date": "2013-01-01",
+        "end_date": "2013-01-01",
+        "keywords": [
+          "시스템 진단",
+          "컨설팅"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 309",
+            "quote": "시스템 진단 및 컨설팅",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "제선 시스템 최적화",
+        "client_organization": "포스코",
+        "role": "개발자",
+        "start_date": "2011-08-01",
+        "end_date": "2011-08-01",
+        "keywords": [
+          "최적화"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 308",
+            "quote": "제선 시스템 최적화",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "보소 시스템 최적화",
+        "client_organization": "포스코",
+        "role": "개발자",
+        "start_date": "2011-03-01",
+        "end_date": "2011-03-01",
+        "keywords": [
+          "최적화"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 307",
+            "quote": "보소 시스템 최적화",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "신제강 시스템 튜닝",
+        "client_organization": "포스코",
+        "role": "개발자",
+        "start_date": "2010-12-01",
+        "end_date": "2010-12-01",
+        "keywords": [
+          "튜닝"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 306",
+            "quote": "신제강 시스템 튜닝",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "데이터베이스 튜닝",
+        "client_organization": "인텍 정보통신",
+        "role": "개발자",
+        "start_date": "2010-11-01",
+        "end_date": "2010-11-01",
+        "keywords": [
+          "데이터베이스 튜닝"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 305",
+            "quote": "데이터베이스 튜닝",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "제선 시스템 튜닝 (2차)",
+        "client_organization": "포스코",
+        "role": "개발자",
+        "start_date": "2010-10-01",
+        "end_date": "2010-10-01",
+        "keywords": [
+          "튜닝"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 304",
+            "quote": "제선 시스템 튜닝 (2차)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "제선 시스템 튜닝 (1차)",
+        "client_organization": "포스코",
+        "role": "개발자",
+        "start_date": "2010-08-01",
+        "end_date": "2010-08-01",
+        "keywords": [
+          "튜닝"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 303",
+            "quote": "제선 시스템 튜닝 (1차)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "LED 생산라인 데이터베이스 설계 프로젝트",
+        "client_organization": "LG 이노텍",
+        "role": "개발자",
+        "start_date": "2010-01-01",
+        "end_date": "2010-02-01",
+        "keywords": [
+          "데이터베이스 설계"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 302",
+            "quote": "LED 생산라인 데이터베이스 설계 프로젝트",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "데이터베이스 튜닝",
+        "client_organization": "인텍 정보통신",
+        "role": "개발자",
+        "start_date": "2009-06-01",
+        "end_date": "2009-06-01",
+        "keywords": [
+          "데이터베이스 튜닝"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 301",
+            "quote": "데이터베이스 튜닝",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "데이터베이스 3차튜닝",
+        "client_organization": "한국 생산성본부",
+        "role": "개발자",
+        "start_date": "2009-03-01",
+        "end_date": "2009-03-01",
+        "keywords": [
+          "데이터베이스 튜닝"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 300",
+            "quote": "데이터베이스 3차튜닝",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "조강 시스템 교육 및 컨설팅",
+        "client_organization": "포스코",
+        "role": "컨설턴트",
+        "start_date": "2008-03-01",
+        "end_date": "2008-03-01",
+        "keywords": [
+          "교육",
+          "컨설팅"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 299",
+            "quote": "조강 시스템 교육 및 컨설팅",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "데이터베이스 2차튜닝",
+        "client_organization": "한국 생산성본부",
+        "role": "개발자",
+        "start_date": "2007-05-01",
+        "end_date": "2007-05-01",
+        "keywords": [
+          "데이터베이스 튜닝"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 298",
+            "quote": "데이터베이스 2차튜닝",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "콜 센터 데이터베이스 튜닝",
+        "client_organization": "한국통신",
+        "role": "개발자",
+        "start_date": "2006-10-01",
+        "end_date": "2006-10-01",
+        "keywords": [
+          "데이터베이스 튜닝"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 297",
+            "quote": "콜 센터 데이터베이스 튜닝",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "데이터베이스 컨설팅",
+        "client_organization": "㈜ 대교",
+        "role": "컨설턴트",
+        "start_date": "2006-04-01",
+        "end_date": "2006-04-01",
+        "keywords": [
+          "데이터베이스",
+          "컨설팅"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 296",
+            "quote": "데이터베이스 컨설팅",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "에어컨 체킹시스템 DB 프로젝트",
+        "client_organization": "LG DA연구소",
+        "role": "개발자",
+        "start_date": "2005-08-01",
+        "end_date": "2005-08-01",
+        "keywords": [
+          "DB"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 295",
+            "quote": "에어컨 체킹시스템 DB 프로젝트",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "데이터베이스 튜닝",
+        "client_organization": "한국 생산성본부",
+        "role": "개발자",
+        "start_date": "2005-04-01",
+        "end_date": "2005-04-01",
+        "keywords": [
+          "데이터베이스 튜닝"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 294",
+            "quote": "데이터베이스 튜닝",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "ERP 데이터베이스설계 및 컨설팅",
+        "client_organization": "㈜델코",
+        "role": "컨설턴트",
+        "start_date": "2005-03-01",
+        "end_date": "2005-03-01",
+        "keywords": [
+          "ERP",
+          "데이터베이스설계",
+          "컨설팅"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 293",
+            "quote": "ERP 데이터베이스설계 및 컨설팅",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "채권추심 DataBase 튜닝",
+        "client_organization": "신한은행",
+        "role": "개발자",
+        "start_date": "2004-07-01",
+        "end_date": "2004-07-01",
+        "keywords": [
+          "DataBase 튜닝"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 292",
+            "quote": "채권추심 DataBase 튜닝",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "웹사이트 구축 프로젝트",
+        "client_organization": "Book2.Com",
+        "role": "개발자",
+        "start_date": "2000-10-01",
+        "end_date": "2000-12-01",
+        "keywords": [
+          "웹사이트 구축"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 291",
+            "quote": "웹사이트 구축 프로젝트",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "웹사이트 구축 프로젝트",
+        "client_organization": "웰컴북",
+        "role": "개발자",
+        "start_date": "2000-02-01",
+        "end_date": "2000-05-01",
+        "keywords": [
+          "웹사이트 구축"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 290",
+            "quote": "웹사이트 구축 프로젝트",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "전산화 프로젝트",
+        "client_organization": "플러스학원",
+        "role": "개발자",
+        "start_date": "1999-07-01",
+        "end_date": "1999-11-01",
+        "keywords": [
+          "전산화"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 289",
+            "quote": "전산화 프로젝트",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "MIS 프로젝트",
+        "client_organization": "삼영기공",
+        "role": "개발자",
+        "start_date": "1998-03-01",
+        "end_date": "1998-03-01",
+        "keywords": [
+          "MIS"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 288",
+            "quote": "MIS 프로젝트",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "ERP 패키지 DB Modeling 작업",
+        "client_organization": "케미스",
+        "role": "개발자",
+        "start_date": "1998-02-01",
+        "end_date": "1998-02-01",
+        "keywords": [
+          "ERP",
+          "DB Modeling"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 287",
+            "quote": "ERP 패키지 DB Modeling 작업",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "자판기 공장 사무자동화 프로젝트",
+        "client_organization": "LG산전",
+        "role": "개발자",
+        "start_date": "1997-10-01",
+        "end_date": "1998-01-01",
+        "keywords": [
+          "사무자동화"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 286",
+            "quote": "자판기 공장 사무자동화 프로젝트",
+            "confidence": 1.0
+          }
+        ]
+      }
+    ],
+    "work_experience_items": [
+      {
+        "organization": "아이티포럼",
+        "summary": "대표",
+        "start_date": "2012-02-01",
+        "end_date": "재직중",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 145",
+            "quote": "대표",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "organization": "시퀄로",
+        "summary": "수석 컨설턴트",
+        "start_date": "2009-06-01",
+        "end_date": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 144",
+            "quote": "수석 컨설턴트",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "organization": "디비바다",
+        "summary": "대표",
+        "start_date": "2007-01-01",
+        "end_date": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 143",
+            "quote": "대표",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "organization": "다우데이터 시스템",
+        "summary": "데이터베이스 사업부 자문위원",
+        "start_date": "2007-01-01",
+        "end_date": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 142",
+            "quote": "데이터베이스 사업부 자문위원",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "organization": "필라넷",
+        "summary": "데이터베이스 사업부 수석 컨설턴트",
+        "start_date": "2005-06-01",
+        "end_date": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 141",
+            "quote": "데이터베이스 사업부 수석 컨설턴트",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "organization": "중앙정보처리학원",
+        "summary": "사원",
+        "start_date": "1998-11-01",
+        "end_date": "1999-06-01",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 140",
+            "quote": "사원",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "organization": "케미스 시스템",
+        "summary": "사원",
+        "start_date": "1997-10-01",
+        "end_date": "1998-02-01",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 139",
+            "quote": "사원",
+            "confidence": 1.0
+          }
+        ]
+      }
+    ],
+    "certifications": [
+      {
+        "name": "MCP (Microsoft Certified Professional)",
+        "issuer": "Microsoft",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 130",
+            "quote": "MCP (Microsoft Certified Professional)",
+            "confidence": 1.0
+          }
+        ]
+      }
+    ],
+    "source_document_ids": [
+      "instructor-source:내부 강사 정보.xlsx",
+      "instructor-db:16"
+    ],
+    "extensions": {
+      "other_records": [
+        {
+          "category": "저서",
+          "detail": "SQL Server 2012 BI(Business Intelligence) (감수)",
+          "organization": "아이티포럼 출판사",
+          "start_date": "2013-11-01",
+          "end_date": null
+        },
+        {
+          "category": "저서",
+          "detail": "SQL Server 2012 운영과 개발 (감수)",
+          "organization": "아이티포럼 출판사",
+          "start_date": "2012-08-01",
+          "end_date": null
+        },
+        {
+          "category": "저서",
+          "detail": "SharePoint 2010 Development with VS 2010 (감수)",
+          "organization": "아이티포럼 출판사",
+          "start_date": "2012-07-01",
+          "end_date": null
+        },
+        {
+          "category": "저서",
+          "detail": "BPMN 2.0(Business Process Modeling and Notation) (감수)",
+          "organization": "디비바다 출판사",
+          "start_date": "2010-12-01",
+          "end_date": null
+        },
+        {
+          "category": "저서",
+          "detail": "함께하는 SQL Server 2008 개발자 Part 2",
+          "organization": "디비바다 출판사",
+          "start_date": "2010-07-01",
+          "end_date": null
+        },
+        {
+          "category": "저서",
+          "detail": "함께하는 SQL Server 2008 개발자 Part 1",
+          "organization": "디비바다 출판사",
+          "start_date": "2009-07-01",
+          "end_date": null
+        },
+        {
+          "category": "저서",
+          "detail": "SQL Server 2005를 위한 데이터베이스 모델링",
+          "organization": "디비바다 출판사",
+          "start_date": "2007-01-01",
+          "end_date": null
+        },
+        {
+          "category": "저서",
+          "detail": "알기 쉽게 해설한 데이터베이스 모델링 - 공저",
+          "organization": "프리렉 출판사",
+          "start_date": "2002-07-01",
+          "end_date": null
+        }
+      ]
+    },
+    "evidence": [
+      {
+        "source_document_id": "instructor-db:16",
+        "page": null,
+        "section": "instructors",
+        "quote": "MS-SQL 및 DB 모델링 전문가",
+        "confidence": 1.0
+      }
+    ],
+    "review_status": "unreviewed"
+  }
+}

@@ -1,0 +1,3042 @@
+{
+  "project": {
+    "schema_version": "education_project_v1",
+    "service_type": "education_program",
+    "program_type": "vocational_training",
+    "classification_confidence": 1.0,
+    "base": {
+      "project_name": "(과업지시서) [RISE사업] AWS C3 인증센터 구축 및 교직원 역량 강화 교육 운영.pdf",
+      "client_organization": null,
+      "purpose": [
+        "울산과학대학교 동부캠퍼스 내에 AWS C3 인증센터(시험장 인프라, 실습 환경, 운영 시스템 등)를 구축하고, 대학 교직원 및 교원을 대상으로 맞춤형 클라우드 및 AI 역량 강화 교육(기초통합교육, SAA 교육, AAI 교육)을 운영하는 용역 사업입니다.",
+        "AWS C3 시험장 인프라 구축 (1인 독립 부스 및 장비)",
+        "AWS Skill Builder 라이선스 및 실습 환경 구축",
+        "AWS C3 운영 시스템 구축 및 Tier 관리 지원",
+        "기초통합교육(CLF + AIF), SAA 교육, AAI 교육 운영",
+        "프로그램 결과보고 및 만족도 조사",
+        "지역 디지털 전환 촉진 및 실무형 클라우드-AI 인재 양성",
+        "대학 자체적인 국제 표준 교육 과정 설계 및 운영 체계 구축",
+        "교육생의 SAA-C03 자격증 취득 및 AI 교수자 양성"
+      ],
+      "contract_method": null,
+      "start_date": null,
+      "end_date": null,
+      "budget_krw": null,
+      "vat_included": null,
+      "deliverables": [
+        "AWS C3 시험장 인프라 구축 (1인 독립 부스 및 장비)",
+        "AWS Skill Builder 라이선스 및 실습 환경 구축",
+        "AWS C3 운영 시스템 구축 및 Tier 관리 지원",
+        "기초통합교육(CLF + AIF), SAA 교육, AAI 교육 운영",
+        "프로그램 결과보고 및 만족도 조사",
+        "지역 디지털 전환 촉진 및 실무형 클라우드-AI 인재 양성",
+        "대학 자체적인 국제 표준 교육 과정 설계 및 운영 체계 구축",
+        "교육생의 SAA-C03 자격증 취득 및 AI 교수자 양성"
+      ],
+      "proposal_requirements": [
+        "「국가를 당사자로 하는 계약에 관한 법률 시행령」 제12조 및 「동법 시행규칙」 제14조에 의한 자격요건을 갖춘 업체",
+        "「동법시행규칙」 제76조의 규정에 의한 부정당업자로 등록되거나 제재받은 사실이 없는 업체",
+        "공고일 기준 사업장의 소재지가 울산광역시 또는 부산광역시에 위치한 업체",
+        "공고일 기준 최근 3년 이내 국내 대학 및 전문대학 또는 공공기관에서 유사한 위탁운영 실적이 단일건수 기준 5천만원 이상 1건 이상 실행한 업체(사업완료 건수)",
+        "전문 역량을 갖춘 단계별 AWS 공인 전문 강사로 구성 및 성범죄 경력, 아동학대 전력 등이 없는 강사",
+        "AWS C3 인증센터 통합 구축 및 운영 지원",
+        "단계별 AWS 공인 전문 강사 구성 및 교육 운영",
+        "교육 효과성 분석 및 최종 성과물 제출"
+      ],
+      "compliance_requirements": [
+        "교육과정 개발",
+        "교육 컨텐츠 개발 프로세스 및 연구의 전문성과 독창성",
+        "사업목적에 부합하는 교육 컨텐츠 구성"
+      ]
+    },
+    "education": {
+      "technology_domains": [
+        "AWS C3 구축",
+        "클라우드",
+        "AI",
+        "교직원 역량 강화",
+        "SAA-C03 자격증",
+        "국가계약법",
+        "자격요건",
+        "부정당업자",
+        "제재",
+        "울산광역시",
+        "부산광역시",
+        "소재지",
+        "위탁운영 실적",
+        "5천만원 이상",
+        "최근 3년",
+        "AWS 공인 강사",
+        "성범죄 경력",
+        "아동학대 전력",
+        "교육과정 개발",
+        "교육 컨텐츠",
+        "개발 프로세스",
+        "전문성",
+        "독창성",
+        "사업목적",
+        "교육 컨텐츠 구성"
+      ],
+      "program_topics": [
+        "AWS C3 구축",
+        "클라우드",
+        "AI",
+        "교직원 역량 강화",
+        "SAA-C03 자격증",
+        "교육과정 개발",
+        "교육 컨텐츠",
+        "개발 프로세스",
+        "전문성",
+        "독창성",
+        "사업목적",
+        "교육 컨텐츠 구성",
+        "국가계약법",
+        "자격요건",
+        "부정당업자",
+        "제재",
+        "울산광역시",
+        "부산광역시",
+        "소재지",
+        "위탁운영 실적",
+        "5천만원 이상",
+        "최근 3년",
+        "AWS 공인 강사",
+        "성범죄 경력",
+        "아동학대 전력"
+      ],
+      "target_audience": [
+        "교직원",
+        "교원"
+      ],
+      "participant_capacity": null,
+      "delivery_format": [
+        "오프라인 (울산과학대학교 동부캠퍼스)",
+        "실습형",
+        "자기주도 학습 (AWS Skill Builder)"
+      ],
+      "education_hours": null,
+      "schedule": [],
+      "required_roles": [
+        "AWS C3 인증센터 통합 구축 및 운영 지원",
+        "단계별 AWS 공인 전문 강사 구성 및 교육 운영",
+        "교육 효과성 분석 및 최종 성과물 제출"
+      ],
+      "instructor_requirements": {
+        "required_experience": [
+          "공고일 기준 최근 3년 이내 국내 대학 및 전문대학 또는 공공기관에서 유사한 위탁운영 실적이 단일건수 기준 5천만원 이상 1건 이상 실행한 업체(사업완료 건수)",
+          "전문 역량을 갖춘 단계별 AWS 공인 전문 강사로 구성 및 성범죄 경력, 아동학대 전력 등이 없는 강사"
+        ],
+        "required_certifications": [
+          "「국가를 당사자로 하는 계약에 관한 법률 시행령」 제12조 및 「동법 시행규칙」 제14조에 의한 자격요건을 갖춘 업체",
+          "전문 역량을 갖춘 단계별 AWS 공인 전문 강사로 구성 및 성범죄 경력, 아동학대 전력 등이 없는 강사"
+        ],
+        "required_vendor_credentials": [],
+        "similar_project_experience": [
+          "최근 3년 이내 국내 대학 및 전문대학 또는 공공기관 유사 위탁운영 실적 (단일건 5천만원 이상)"
+        ]
+      },
+      "curriculum_requirements": [],
+      "operational_requirements": [],
+      "practical_project_requirements": [
+        "AWS C3 시험장 인프라 구축 (1인 독립 부스 및 장비)",
+        "AWS Skill Builder 라이선스 및 실습 환경 구축",
+        "AWS C3 운영 시스템 구축 및 Tier 관리 지원",
+        "기초통합교육(CLF + AIF), SAA 교육, AAI 교육 운영",
+        "프로그램 결과보고 및 만족도 조사",
+        "AWS C3 인증센터 통합 구축 및 운영 지원",
+        "단계별 AWS 공인 전문 강사 구성 및 교육 운영",
+        "교육 효과성 분석 및 최종 성과물 제출"
+      ],
+      "assessment_requirements": [
+        "교육과정 개발",
+        "교육 컨텐츠 개발 프로세스 및 연구의 전문성과 독창성",
+        "사업목적에 부합하는 교육 컨텐츠 구성"
+      ],
+      "outcome_requirements": [
+        "지역 디지털 전환 촉진 및 실무형 클라우드-AI 인재 양성",
+        "대학 자체적인 국제 표준 교육 과정 설계 및 운영 체계 구축",
+        "교육생의 SAA-C03 자격증 취득 및 AI 교수자 양성"
+      ]
+    },
+    "extensions": {
+      "source_task_order_id": "93b2ada7-89c6-469b-ba89-ef659f16969b",
+      "normalized_qualifications": [
+        {
+          "category": "일반자격",
+          "description": "「국가를 당사자로 하는 계약에 관한 법률 시행령」 제12조 및 「동법 시행규칙」 제14조에 의한 자격요건을 갖춘 업체",
+          "is_mandatory": true,
+          "keywords": [
+            "국가계약법",
+            "자격요건"
+          ]
+        },
+        {
+          "category": "부정당업자",
+          "description": "「동법시행규칙」 제76조의 규정에 의한 부정당업자로 등록되거나 제재받은 사실이 없는 업체",
+          "is_mandatory": true,
+          "keywords": [
+            "부정당업자",
+            "제재"
+          ]
+        },
+        {
+          "category": "소재지 제한",
+          "description": "공고일 기준 사업장의 소재지가 울산광역시 또는 부산광역시에 위치한 업체",
+          "is_mandatory": true,
+          "keywords": [
+            "울산광역시",
+            "부산광역시",
+            "소재지"
+          ]
+        },
+        {
+          "category": "수행실적",
+          "description": "공고일 기준 최근 3년 이내 국내 대학 및 전문대학 또는 공공기관에서 유사한 위탁운영 실적이 단일건수 기준 5천만원 이상 1건 이상 실행한 업체(사업완료 건수)",
+          "is_mandatory": true,
+          "keywords": [
+            "위탁운영 실적",
+            "5천만원 이상",
+            "최근 3년"
+          ]
+        },
+        {
+          "category": "강사자격",
+          "description": "전문 역량을 갖춘 단계별 AWS 공인 전문 강사로 구성 및 성범죄 경력, 아동학대 전력 등이 없는 강사",
+          "is_mandatory": true,
+          "keywords": [
+            "AWS 공인 강사",
+            "성범죄 경력",
+            "아동학대 전력"
+          ]
+        }
+      ],
+      "normalized_evaluation_criteria": [
+        {
+          "category": "기술평가",
+          "description": "교육과정 개발",
+          "weight": 20,
+          "keywords": [
+            "교육과정 개발"
+          ]
+        },
+        {
+          "category": "기술평가",
+          "description": "교육 컨텐츠 개발 프로세스 및 연구의 전문성과 독창성",
+          "weight": 20,
+          "keywords": [
+            "교육 컨텐츠",
+            "개발 프로세스",
+            "전문성",
+            "독창성"
+          ]
+        },
+        {
+          "category": "기술평가",
+          "description": "사업목적에 부합하는 교육 컨텐츠 구성",
+          "weight": 10,
+          "keywords": [
+            "사업목적",
+            "교육 컨텐츠 구성"
+          ]
+        }
+      ],
+      "overview": {
+        "section_titles": [
+          "Ⅰ. 과업 개요 ················································································ 1",
+          "Ⅰ 과업 개요",
+          "1. 과업 개요",
+          "2. 과업 목적",
+          "사업목적 달성을 위해 적극 협조하여야 한다.",
+          "­사업목적에 부합하는 교육 컨텐츠 구성",
+          "- 사업목적에 부합하는 교육 컨텐츠 구성",
+          "2. 사업내용",
+          "사업 개요",
+          "3. 주요 내용",
+          "Ⅱ 과업 내용",
+          "1. 과업 수행범위"
+        ],
+        "summary": "울산과학대학교 동부캠퍼스 내에 AWS C3 인증센터(시험장 인프라, 실습 환경, 운영 시스템 등)를 구축하고, 대학 교직원 및 교원을 대상으로 맞춤형 클라우드 및 AI 역량 강화 교육(기초통합교육, SAA 교육, AAI 교육)을 운영하는 용역 사업입니다.",
+        "core_topics": [
+          "AWS C3 구축",
+          "클라우드",
+          "AI",
+          "교직원 역량 강화",
+          "SAA-C03 자격증"
+        ],
+        "target_audience": [
+          "교직원",
+          "교원"
+        ],
+        "delivery_formats": [
+          "오프라인 (울산과학대학교 동부캠퍼스)",
+          "실습형",
+          "자기주도 학습 (AWS Skill Builder)"
+        ],
+        "required_roles": [
+          "AWS C3 인증센터 통합 구축 및 운영 지원",
+          "단계별 AWS 공인 전문 강사 구성 및 교육 운영",
+          "교육 효과성 분석 및 최종 성과물 제출"
+        ],
+        "scope": [
+          "AWS C3 시험장 인프라 구축 (1인 독립 부스 및 장비)",
+          "AWS Skill Builder 라이선스 및 실습 환경 구축",
+          "AWS C3 운영 시스템 구축 및 Tier 관리 지원",
+          "기초통합교육(CLF + AIF), SAA 교육, AAI 교육 운영",
+          "프로그램 결과보고 및 만족도 조사"
+        ],
+        "expected_outcomes": [
+          "지역 디지털 전환 촉진 및 실무형 클라우드-AI 인재 양성",
+          "대학 자체적인 국제 표준 교육 과정 설계 및 운영 체계 구축",
+          "교육생의 SAA-C03 자격증 취득 및 AI 교수자 양성"
+        ],
+        "preferred_experience": [
+          "최근 3년 이내 국내 대학 및 전문대학 또는 공공기관 유사 위탁운영 실적 (단일건 5천만원 이상)"
+        ],
+        "source_excerpt": "Ⅰ. 과업 개요 ················································································ 1\nⅡ. 과업 내용 ················································································ 3\nⅢ. 과업 수행 지침 ······································································· 7\nⅣ. 과업 수행 사업자 선정 ······························································· 13\nⅤ. 제안서 작성 및 제출 ··································································· 18\n[별첨] 제출 서류 양식 ······································································· 26\n\nⅠ 과업 개요\n1. 과업 개요\n\n1. 과업 개요\n가. 과 업 명: 2026년 AWS C3 구축 및 교직원 역량 강화 교육\n\n2. 과업 목적\n가. 지역 디지털 전환의 촉진: 새로운 비즈니스 모델 창출을 지원하는 실무형\n클라우드-AI 역량을 갖춘 인재를 양성\n\n사업목적 달성을 위해 적극 협조하여야 한다.\n9) 과업지시서와 관련하여 문구, 용어의 해석 및 과업의 범위 등에 대\n하여 이견이 있을 때는 발주기관의 해석과 지시에 따른다.\n\n­사업목적에 부합하는 교육 컨텐츠 구성\n평가 교육과정 개발 20\n\n­사업목적에 부합하는 교육 컨텐츠 구성\n­교육 컨텐츠 개발 프로세스 및 연구의 전문성과\n독창성 | 20\n\n- 사업목적에 부합하는 교육 컨텐츠 구성\n10\n\n- 사업목적에 부합하는 교육 컨텐츠 구성\n- 교육 목적에 맞는 프로그램 구성 및 내용의 충실성\n\n2. 사업내용\n방법, 교재 등), 창의적 제안 등 사업수행 내용 제시\n\n사업 개요\n계약 번호 | 계약일자 | 계약기간 | 계약금액\n(VAT포함) | 이행실적\n완료일자 | 비율(%) | 실적(원)\n증명서\n발급\n기관 | 위 사실을 증명함",
+        "matching_rules": [
+          {
+            "key": "core_topics",
+            "label": "핵심 교육 주제",
+            "values": [
+              "AWS C3 구축",
+              "클라우드",
+              "AI",
+              "교직원 역량 강화",
+              "SAA-C03 자격증"
+            ]
+          },
+          {
+            "key": "target_audience",
+            "label": "교육 대상",
+            "values": [
+              "교직원",
+              "교원"
+            ]
+          },
+          {
+            "key": "delivery_formats",
+            "label": "운영 방식",
+            "values": [
+              "오프라인 (울산과학대학교 동부캠퍼스)",
+              "실습형",
+              "자기주도 학습 (AWS Skill Builder)"
+            ]
+          },
+          {
+            "key": "required_roles",
+            "label": "요구 역할",
+            "values": [
+              "AWS C3 인증센터 통합 구축 및 운영 지원",
+              "단계별 AWS 공인 전문 강사 구성 및 교육 운영",
+              "교육 효과성 분석 및 최종 성과물 제출"
+            ]
+          },
+          {
+            "key": "scope",
+            "label": "업무 범위",
+            "values": [
+              "AWS C3 시험장 인프라 구축 (1인 독립 부스 및 장비)",
+              "AWS Skill Builder 라이선스 및 실습 환경 구축",
+              "AWS C3 운영 시스템 구축 및 Tier 관리 지원",
+              "기초통합교육(CLF + AIF), SAA 교육, AAI 교육 운영",
+              "프로그램 결과보고 및 만족도 조사"
+            ]
+          },
+          {
+            "key": "expected_outcomes",
+            "label": "기대 성과",
+            "values": [
+              "지역 디지털 전환 촉진 및 실무형 클라우드-AI 인재 양성",
+              "대학 자체적인 국제 표준 교육 과정 설계 및 운영 체계 구축",
+              "교육생의 SAA-C03 자격증 취득 및 AI 교수자 양성"
+            ]
+          },
+          {
+            "key": "preferred_experience",
+            "label": "우대 경험",
+            "values": [
+              "최근 3년 이내 국내 대학 및 전문대학 또는 공공기관 유사 위탁운영 실적 (단일건 5천만원 이상)"
+            ]
+          }
+        ]
+      }
+    },
+    "evidence": [
+      {
+        "source_document_id": "task-order:93b2ada7-89c6-469b-ba89-ef659f16969b",
+        "page": null,
+        "section": "normalized task-order requirements",
+        "quote": "2026년 AWS C3 인증센터 구축 및\n교직원 역량 강화 교육 용역 과업지시서\n.\n2026. 7. .\n목 차\nⅠ. 과업 개요 ················································································ 1\nⅡ. 과업 내용 ················································································ 3\nⅢ. 과업 수행 지침 ······································································· 7\nⅣ. 과업 수행 사업자 선정 ······························································· 13\nⅤ. 제안서 작성 및 제출 ··································································· 18\n[별첨] 제출 서류 양식 ······································································· 26\nⅠ 과업 개요\n1. 과업 개요\n가. 과 업 명: 2026년 AWS C3 구축 및 교직원 역량 강화 교육\n나. 과업기간: 계약체결일로부터 2026. 10. 30.까지\n다. 계약방법: 협상에 의한 계약, 제한경쟁입찰\n라. 사업예산: 금180,000,000원(금일억팔천만원)(부가가치세 포함)\n2. 과업 목적\n가. 지역 디지털 전환의 촉진: 새로운 비즈니스 모델 창출을 지원하는 실무형\n클라우드-AI 역량을 갖춘 인재를 양성\n나. 글로벌 표준 교육 체계 구축: 대학이 자체적으로 국제 표준 교육 과정을\n설계하고 운영할 수 있는 체계\n다. 사회적 가치 창출: 지역 인재의 일자리 창출과 기업의 디지털 전환 성공\n사례를 확대함으로써 디지털 혁신 기여도 상승취업 마인드 함양, 자기주도\n적 취업진로 설계 등 학생 취업인식 개선\n3. 주요 내용\n",
+        "confidence": 1.0
+      }
+    ],
+    "review_status": "unreviewed"
+  },
+  "instructor": {
+    "instructor_id": "instructor-28",
+    "profile_version": "db-156d65bca80f",
+    "display_name": "문성훈",
+    "expertise_tags": [
+      "Java",
+      "JavaScript",
+      "HTML5",
+      "CSS3",
+      "Node.js",
+      "Vue.js",
+      "Python",
+      "Tensorflow",
+      "R",
+      "Oracle",
+      "Servlet",
+      "JSP",
+      "Spring Boot",
+      "Spring Framework",
+      "Android",
+      "C",
+      "C++",
+      "EJB",
+      "AJAX",
+      "JDBC",
+      "웹 개발",
+      "인공지능",
+      "빅데이터",
+      "IoT",
+      "소프트웨어 설계 및 개발",
+      "KOSA",
+      "SW 캠프",
+      "KCC정보통신",
+      "현대 IT&E",
+      "솔트룩스",
+      "ECMAScript",
+      "신입사원교육",
+      "클라우드",
+      "카카오",
+      "개발자과정",
+      "프로젝트형",
+      "디지털핵심",
+      "딥러닝",
+      "K-Digital",
+      "AI",
+      "융복합",
+      "4차산업",
+      "스마트시티",
+      "머신러닝",
+      "데이터분석",
+      "커넥티드카",
+      "서버",
+      "국가초고성능컴퓨팅",
+      "시행계획심의",
+      "신입사원",
+      "통계분석",
+      "엣지클라우드",
+      "모빌리티",
+      "역량평가",
+      "문항개발",
+      "Hybrid App",
+      "Network",
+      "Cordova",
+      "Front-End",
+      "Project",
+      "Spring",
+      "Wearable",
+      "jQuery",
+      "CSS",
+      "NCS",
+      "Gamification",
+      "MOOC",
+      "Design Pattern",
+      "UI",
+      "jQuery Mobile",
+      "Web",
+      "Sencha Touch2",
+      "알고리즘",
+      "HTML",
+      "Swing",
+      "인터넷",
+      "데이터베이스",
+      "컴퓨터과학",
+      "시스템프로그래밍",
+      "Linux",
+      "컴퓨터프로그래밍",
+      "정보과학",
+      "웹정보시스템",
+      "컴퓨터이해",
+      "시뮬레이션",
+      "교양전산",
+      "컴퓨터입문",
+      "Database"
+    ],
+    "summary": "분산시스템 박사 학위의 풀스택 및 AI/빅데이터 전문 강사",
+    "delivery_modes": [],
+    "availability_notes": null,
+    "vendor_experience": [
+      "과학기술정보통신부 - 국가초고성능컴퓨터 시행계획 심의 및 추진실적 평가",
+      "과학기술정보통신부 - 커넥티드카 모빌리티 실시간 서비스를 위한 엣지 클라우드 플랫폼개발",
+      "중소기업청 - NCS기반 게임화 된 대규모 온라인 SW개발학습 솔루션개발",
+      "과학기술정보통신부 - 국가초고성능 컴퓨팅위원회 실무위원회 실무위원 (기본계획·육성시책, 예산, 자원 도입 및 배분, 인력정책 등 심의)",
+      "㈜에이티지랩 - 이사 (직무교육, IT Consulting, SW 설계, 개발)",
+      "서경대학교 - 겸임교수 (강의 및 Project 지도)"
+    ],
+    "vendor_certifications": [],
+    "teaching_items": [
+      {
+        "topic": "KOSA 기업 맵버쉽 SW 캠프(KCC 정보통신 협약과정)",
+        "organization": "한국소프트웨어산업협회",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 499",
+            "quote": "KOSA 기업 맵버쉽 SW 캠프(KCC 정보통신 협약과정)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "KOSA 기업 맵버쉽 SW 캠프(현대 IT&E 협약과정)",
+        "organization": "한국소프트웨어산업협회",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 500",
+            "quote": "KOSA 기업 맵버쉽 SW 캠프(현대 IT&E 협약과정)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "KOSA 기업 멤버쉽 SW 캠프(솔트룩스 협약과정)",
+        "organization": "한국소프트웨어산업협회",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 501",
+            "quote": "KOSA 기업 멤버쉽 SW 캠프(솔트룩스 협약과정)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "삼성SDS 신입사원 직무교육(ECMAScript, Vue.js)",
+        "organization": "삼성SDS",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 502",
+            "quote": "삼성SDS 신입사원 직무교육(ECMAScript, Vue.js)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "카카오 클라우드 스쿨 1기 개발자과정",
+        "organization": "한국전파진흥협회",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 503",
+            "quote": "카카오 클라우드 스쿨 1기 개발자과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "[디지털 핵심 실무인재양성] 프로젝트형 인공지능 서비스 개발(유형2)",
+        "organization": "멀티캠퍼스",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 504",
+            "quote": "[디지털 핵심 실무인재양성] 프로젝트형 인공지능 서비스 개발(유형2)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "[K-Digital Training] 딥러닝을 활용한 빅데이터 서비스 개발실무",
+        "organization": "비트컴퓨터",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 505",
+            "quote": "[K-Digital Training] 딥러닝을 활용한 빅데이터 서비스 개발실무",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "[K-Digital Training] 융복합 프로젝트형 AI 서비스 개발과정",
+        "organization": "멀티캠퍼스",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 506",
+            "quote": "[K-Digital Training] 융복합 프로젝트형 AI 서비스 개발과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "[디지털 핵심 실무인재양성] 프로젝트형 인공지능 서비스 개발(유형2)",
+        "organization": "멀티캠퍼스",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 507",
+            "quote": "[디지털 핵심 실무인재양성] 프로젝트형 인공지능 서비스 개발(유형2)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "4차산업선도인력양성 융복합 프로젝트형 AI 서비스 개발과정",
+        "organization": "멀티캠퍼스",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 508",
+            "quote": "4차산업선도인력양성 융복합 프로젝트형 AI 서비스 개발과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "4차산업선도인력양성 빅데이터를 활용한 IoT 시스템 개발(Feat. 스마트시티 프로젝트)",
+        "organization": "멀티캠퍼스",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 509",
+            "quote": "4차산업선도인력양성 빅데이터를 활용한 IoT 시스템 개발(Feat. 스마트시티 프로젝트)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "인공지능 기술을 위한 머신러닝&딥러닝 이해와 활용",
+        "organization": "KEA 한국전자정보통신산업진흥회",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 510",
+            "quote": "인공지능 기술을 위한 머신러닝&딥러닝 이해와 활용",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "4차산업선도인력양성 서비스 산업 데이터를 활용한 머신러닝 분석",
+        "organization": "멀티캠퍼스",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 511",
+            "quote": "4차산업선도인력양성 서비스 산업 데이터를 활용한 머신러닝 분석",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "4차산업선도인력양성 빅데이터를 활용한 IoT 시스템 개발(feat. 커넥티드카)",
+        "organization": "멀티캠퍼스",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 512",
+            "quote": "4차산업선도인력양성 빅데이터를 활용한 IoT 시스템 개발(feat. 커넥티드카)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "클라우드 서버과정",
+        "organization": "삼성전자",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 513",
+            "quote": "클라우드 서버과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "4차산업선도인력양성 지능형 IoT 봇을 활용한 빅데이터 개발 전문가 과정",
+        "organization": "멀티캠퍼스",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 514",
+            "quote": "4차산업선도인력양성 지능형 IoT 봇을 활용한 빅데이터 개발 전문가 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "신입사원과정 - Machine Learning & Big Data",
+        "organization": "한화시스템/ICT",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 515",
+            "quote": "신입사원과정 - Machine Learning & Big Data",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Tensorflow 기법의 딥러닝 실전 with python",
+        "organization": "광주은행",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 517",
+            "quote": "Tensorflow 기법의 딥러닝 실전 with python",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Node.js 기반의 빅데이터 분석",
+        "organization": "한국기술교육대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 516",
+            "quote": "Node.js 기반의 빅데이터 분석",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Tensorflow 기법의 딥러닝 실전 with python",
+        "organization": "한국 ICT 융합협동조합",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 519",
+            "quote": "Tensorflow 기법의 딥러닝 실전 with python",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "R을 활용한 통계분석",
+        "organization": "한국 ICT 융합협동조합",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 518",
+            "quote": "R을 활용한 통계분석",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Java Programming 기본",
+        "organization": "삼성전자",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 521",
+            "quote": "Java Programming 기본",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "LGCNS 전사 역량평가 문항개발 Project",
+        "organization": "LGCNS",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 520",
+            "quote": "LGCNS 전사 역량평가 문항개발 Project",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "JavaScript & Node.js",
+        "organization": "KTDS",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 524",
+            "quote": "JavaScript & Node.js",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Java Advanced Programming",
+        "organization": "롯데정보통신",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 523",
+            "quote": "Java Advanced Programming",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "R언어와 빅데이터 처리 Python을 이용한 Machine Learning",
+        "organization": "고려대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 522",
+            "quote": "R언어와 빅데이터 처리 Python을 이용한 Machine Learning",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "객체지향 JavaScript & Node.js",
+        "organization": "대우정보통신",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 525",
+            "quote": "객체지향 JavaScript & Node.js",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Hybrid & Android App 개발",
+        "organization": "CJ올리브네트웍스",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 526",
+            "quote": "Hybrid & Android App 개발",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Java, Java Network",
+        "organization": "고려대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 527",
+            "quote": "Java, Java Network",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Android Development",
+        "organization": "KTDS",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 529",
+            "quote": "Android Development",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "App 개발, Cordova Hybrid App 개발",
+        "organization": "CJ올리브네트웍스",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 528",
+            "quote": "App 개발, Cordova Hybrid App 개발",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "특성화 교육 (Spring Boot)",
+        "organization": "한국기술교육대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 531",
+            "quote": "특성화 교육 (Spring Boot)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Java, Front-End Web App, HTML5",
+        "organization": "고려대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 530",
+            "quote": "Java, Front-End Web App, HTML5",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Project 신입사원 교육",
+        "organization": "CJ올리브네트웍스",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 535",
+            "quote": "Project 신입사원 교육",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Spring Framework 신입사원 교육",
+        "organization": "CJ올리브네트웍스",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 534",
+            "quote": "Spring Framework 신입사원 교육",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Front-End Web Application 특성화 교육",
+        "organization": "한국기술교육대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 533",
+            "quote": "Front-End Web Application 특성화 교육",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Android Wearable 특성화 교육",
+        "organization": "대구가톨릭대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 532",
+            "quote": "Android Wearable 특성화 교육",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "jQuery ( Front-End Web ) 직무교육",
+        "organization": "CJ올리브네트웍스",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 538",
+            "quote": "jQuery ( Front-End Web ) 직무교육",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "JavaScript & CSS 신입사원 교육",
+        "organization": "CJ올리브네트웍스",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 537",
+            "quote": "JavaScript & CSS 신입사원 교육",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "jQuery 신입사원 교육",
+        "organization": "CJ올리브네트웍스",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 536",
+            "quote": "jQuery 신입사원 교육",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Java, CSS",
+        "organization": "CJ올리브네트웍스",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 539",
+            "quote": "Java, CSS",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Java Project",
+        "organization": "고려대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 540",
+            "quote": "Java Project",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Android기반 하이브리드앱 개발",
+        "organization": "CJ올리브네트웍스",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 542",
+            "quote": "Android기반 하이브리드앱 개발",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Java, Design Pattern, Network",
+        "organization": "고려대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 541",
+            "quote": "Java, Design Pattern, Network",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "하이브리드앱 개발",
+        "organization": "CJ올리브네트웍스",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 543",
+            "quote": "하이브리드앱 개발",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "객체지향 JavaScript",
+        "organization": "CJ올리브네트웍스",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 544",
+            "quote": "객체지향 JavaScript",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Servlet & JSP 신입사원 교육",
+        "organization": "KB데이터시스템",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 545",
+            "quote": "Servlet & JSP 신입사원 교육",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Java",
+        "organization": "고려대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 546",
+            "quote": "Java",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Front-End Web 개발",
+        "organization": "한국기술교육대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 548",
+            "quote": "Front-End Web 개발",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Java, Design Pattern, Network",
+        "organization": "고려대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 547",
+            "quote": "Java, Design Pattern, Network",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "jQuery 실무",
+        "organization": "KT 직무교육",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 550",
+            "quote": "jQuery 실무",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Node.js",
+        "organization": "대구가톨릭대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 549",
+            "quote": "Node.js",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "UI Programming",
+        "organization": "KT 직무교육",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 552",
+            "quote": "UI Programming",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Servlet & JSP (신입사원교육)",
+        "organization": "롯데정보통신",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 551",
+            "quote": "Servlet & JSP (신입사원교육)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Java Programming",
+        "organization": "KT 직무교육",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 554",
+            "quote": "Java Programming",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "특성화교육(jQuery)",
+        "organization": "대구가톨릭대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 553",
+            "quote": "특성화교육(jQuery)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Node.js",
+        "organization": "한국기술교육대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 555",
+            "quote": "Node.js",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Node.js",
+        "organization": "LG CNS 직무교육",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 557",
+            "quote": "Node.js",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Java, Network, Node.js",
+        "organization": "고려대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 556",
+            "quote": "Java, Network, Node.js",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "jQuery Mobile",
+        "organization": "LG CNS 직무교육",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 558",
+            "quote": "jQuery Mobile",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Node.js",
+        "organization": "CJ 올리브 네트웍스",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 559",
+            "quote": "Node.js",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "jQuery Mobile",
+        "organization": "LG CNS 직무교육",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 560",
+            "quote": "jQuery Mobile",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "HTML5",
+        "organization": "SK C&C 직무교육",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 561",
+            "quote": "HTML5",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "특성화 교육(Front End Web App)",
+        "organization": "대구 가톨릭대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 562",
+            "quote": "특성화 교육(Front End Web App)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "HTM5 & jQuery Mobile",
+        "organization": "LG CNS 직무교육",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 563",
+            "quote": "HTM5 & jQuery Mobile",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "JavaScript & jQuery",
+        "organization": "삼성전자 직무교육",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 565",
+            "quote": "JavaScript & jQuery",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Node.js",
+        "organization": "LG CNS 직무교육",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 564",
+            "quote": "Node.js",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "HTML5",
+        "organization": "LG CNS 직무교육",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 568",
+            "quote": "HTML5",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "HTML5 (핵심직무사업)",
+        "organization": "고용노동부",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 567",
+            "quote": "HTML5 (핵심직무사업)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Java Web Programming",
+        "organization": "KT 직무교육",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 566",
+            "quote": "Java Web Programming",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Node.js",
+        "organization": "LG CNS 직무교육",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 571",
+            "quote": "Node.js",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "HTML5 UI Programming",
+        "organization": "KT 직무교육",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 570",
+            "quote": "HTML5 UI Programming",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "jQuery Mobile",
+        "organization": "LG CNS 직무교육",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 569",
+            "quote": "jQuery Mobile",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "HTML5 (핵심직무사업)",
+        "organization": "고용노동부",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 574",
+            "quote": "HTML5 (핵심직무사업)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "실전 jQuery",
+        "organization": "CJ Systems",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 573",
+            "quote": "실전 jQuery",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Sencha Touch2",
+        "organization": "IBM",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 572",
+            "quote": "Sencha Touch2",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "jQuery Mobile",
+        "organization": "LG CNS 직무교육",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 577",
+            "quote": "jQuery Mobile",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "HTML5 (핵심직무사업)",
+        "organization": "고용노동부",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 576",
+            "quote": "HTML5 (핵심직무사업)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "HTML5 & jQuery",
+        "organization": "삼성전자 직무교육",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 575",
+            "quote": "HTML5 & jQuery",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "HTML5 (핵심직무사업)",
+        "organization": "고용노동부",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 580",
+            "quote": "HTML5 (핵심직무사업)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Sencha Touch2",
+        "organization": "LG CNS 직무교육",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 579",
+            "quote": "Sencha Touch2",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "HTML5 Programming",
+        "organization": "CJ Systems",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 578",
+            "quote": "HTML5 Programming",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "HTML5 Programming (핵심직무사업)",
+        "organization": "고용노동부",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 583",
+            "quote": "HTML5 Programming (핵심직무사업)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "HTML5",
+        "organization": "LG CNS 직무교육",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 582",
+            "quote": "HTML5",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "HTML5 UI Programming",
+        "organization": "KT 직무교육",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 581",
+            "quote": "HTML5 UI Programming",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "jQuery",
+        "organization": "삼성전자 직무교육",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 585",
+            "quote": "jQuery",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "jQuery Mobile",
+        "organization": "LG CNS 직무교육",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 584",
+            "quote": "jQuery Mobile",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "jQuery Mobile",
+        "organization": "LG CNS 직무교육",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 586",
+            "quote": "jQuery Mobile",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "HTML5 & jQuery Mobile",
+        "organization": "LG CNS 직무교육",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 587",
+            "quote": "HTML5 & jQuery Mobile",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "HTML5 & jQuery Mobile",
+        "organization": "RAPA (한국전파진흥협회)",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 590",
+            "quote": "HTML5 & jQuery Mobile",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "HTML5 & Sencha Touch2",
+        "organization": "KISA (한국인터넷진흥원)",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 589",
+            "quote": "HTML5 & Sencha Touch2",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Sencha Touch2",
+        "organization": "LG CNS 직무교육",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 588",
+            "quote": "Sencha Touch2",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "JavaScript & jQuery",
+        "organization": "삼성전자 직무교육",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 592",
+            "quote": "JavaScript & jQuery",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "HTML5 & Sencha Touch2",
+        "organization": "KISA (한국인터넷진흥원)",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 591",
+            "quote": "HTML5 & Sencha Touch2",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "JavaScript & jQuery",
+        "organization": "삼성전자 직무교육",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 595",
+            "quote": "JavaScript & jQuery",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "HTML5",
+        "organization": "RAPA (한국전파진흥협회)",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 594",
+            "quote": "HTML5",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "HTML5",
+        "organization": "KISA (한국인터넷진흥원)",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 593",
+            "quote": "HTML5",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Android App 개발",
+        "organization": "KT 직무교육",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 597",
+            "quote": "Android App 개발",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "HTML5",
+        "organization": "KISA (한국인터넷진흥원)",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 596",
+            "quote": "HTML5",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "HTML5, CSS3, JavaScript, JQuery",
+        "organization": "RAPA (한국전파진흥협회)",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 599",
+            "quote": "HTML5, CSS3, JavaScript, JQuery",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Android 신입사원 강의",
+        "organization": "LG전자",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 598",
+            "quote": "Android 신입사원 강의",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "C, 알고리즘, Java 신입사원 교육",
+        "organization": "삼성전자 Mobile",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 601",
+            "quote": "C, 알고리즘, Java 신입사원 교육",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "HTML5, CSS3, Web 표준, Web Programming",
+        "organization": "LG CNS VCC Phase2",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 600",
+            "quote": "HTML5, CSS3, Web 표준, Web Programming",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "HTML, JavaScript, Web Programming 신입사원 강의",
+        "organization": "LG CNS",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 602",
+            "quote": "HTML, JavaScript, Web Programming 신입사원 강의",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "HTML, JavaScript, Web Programming 신입사원 교육",
+        "organization": "삼성전자 Mobile",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 603",
+            "quote": "HTML, JavaScript, Web Programming 신입사원 교육",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "HTML5, JavaScript, AJAX, Web programming 신입사원 강의",
+        "organization": "KTDS",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 604",
+            "quote": "HTML5, JavaScript, AJAX, Web programming 신입사원 강의",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "HTML5, CSS3 (VCC 교육과정 개편 2차)",
+        "organization": "LG CNS VCC Phase2",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 606",
+            "quote": "HTML5, CSS3 (VCC 교육과정 개편 2차)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "HTML, CSS, JavaScript, JAVA (VCC 교육과정 개편)",
+        "organization": "LG CNS VCC Phase1",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 605",
+            "quote": "HTML, CSS, JavaScript, JAVA (VCC 교육과정 개편)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "신입사원 교육과정 개편(Servlet & JSP)",
+        "organization": "LG CNS VCC Phase2",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 607",
+            "quote": "신입사원 교육과정 개편(Servlet & JSP)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Java, Oracle, Servlet & JSP (신입사원 교육)",
+        "organization": "LG CNS VCC Phase1",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 608",
+            "quote": "Java, Oracle, Servlet & JSP (신입사원 교육)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "신입사원 교육과정 개편",
+        "organization": "LG CNS VCC Phase2",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 609",
+            "quote": "신입사원 교육과정 개편",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Java, Web Programming, Project (IT frontier 교육)",
+        "organization": "SK C&C",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 610",
+            "quote": "Java, Web Programming, Project (IT frontier 교육)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Java, Oracle, Servlet, JDBC (신입사원 교육)",
+        "organization": "LG CNS",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 611",
+            "quote": "Java, Oracle, Servlet, JDBC (신입사원 교육)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Java, Oracle, Servlet & JDBC, Project, C++, Android platform",
+        "organization": "KITRI (한국정보기술연구원)",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 612",
+            "quote": "Java, Oracle, Servlet & JDBC, Project, C++, Android platform",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Java, Oracle, Servlet, JDBC (신입사원 교육)",
+        "organization": "LG CNS",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 613",
+            "quote": "Java, Oracle, Servlet, JDBC (신입사원 교육)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Java, Oracle, JDBC",
+        "organization": "삼성 SDS",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 614",
+            "quote": "Java, Oracle, JDBC",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Swing, Servlet & JSP, Android, Project",
+        "organization": "KITRI (한국정보기술연구원)",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 615",
+            "quote": "Swing, Servlet & JSP, Android, Project",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Java, Oracle, Servlet, JDBC (신입사원 교육)",
+        "organization": "LG CNS",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 616",
+            "quote": "Java, Oracle, Servlet, JDBC (신입사원 교육)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "인터넷 활용 및 실습 (1학기)",
+        "organization": "고려대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 618",
+            "quote": "인터넷 활용 및 실습 (1학기)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "데이터베이스 개론 (2학기)",
+        "organization": "동덕여자대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 617",
+            "quote": "데이터베이스 개론 (2학기)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "컴퓨터과학 및 연습 (Java) (겨울학기)",
+        "organization": "고려대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 620",
+            "quote": "컴퓨터과학 및 연습 (Java) (겨울학기)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "시스템 프로그래밍(Linux) (1학기)",
+        "organization": "동덕여자대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 619",
+            "quote": "시스템 프로그래밍(Linux) (1학기)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "컴퓨터 프로그래밍 2 (2학기)",
+        "organization": "동덕여자대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 621",
+            "quote": "컴퓨터 프로그래밍 2 (2학기)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "컴퓨터과학 및 실습I (Java) (여름학기)",
+        "organization": "고려대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 622",
+            "quote": "컴퓨터과학 및 실습I (Java) (여름학기)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "인터넷 입문 및 실습 (1학기)",
+        "organization": "고려대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 623",
+            "quote": "인터넷 입문 및 실습 (1학기)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "정보과학개론(HTML, CSS, JavaScript) (겨울학기)",
+        "organization": "고려대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 626",
+            "quote": "정보과학개론(HTML, CSS, JavaScript) (겨울학기)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "웹 정보시스템 설계와 구축 (1학기)",
+        "organization": "동덕여자대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 625",
+            "quote": "웹 정보시스템 설계와 구축 (1학기)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "데이터베이스 개론 (1학기)",
+        "organization": "광운대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 624",
+            "quote": "데이터베이스 개론 (1학기)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "정보과학개론(HTML, CSS, JavaScript) (2학기)",
+        "organization": "고려대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 627",
+            "quote": "정보과학개론(HTML, CSS, JavaScript) (2학기)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "컴퓨터 이해와 활용(C, C++) (1학기)",
+        "organization": "서경대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 629",
+            "quote": "컴퓨터 이해와 활용(C, C++) (1학기)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "시뮬레이션 (java web project) (2학기)",
+        "organization": "동덕여자대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 628",
+            "quote": "시뮬레이션 (java web project) (2학기)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "정보과학개론(HTML, CSS, JavaScript) (겨울학기)",
+        "organization": "고려대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 632",
+            "quote": "정보과학개론(HTML, CSS, JavaScript) (겨울학기)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "교양전산 (HTML, CSS, JavaScript) (1학기)",
+        "organization": "동덕여자대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 631",
+            "quote": "교양전산 (HTML, CSS, JavaScript) (1학기)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "정보과학개론(HTML, CSS, JavaScript) (1학기)",
+        "organization": "고려대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 630",
+            "quote": "정보과학개론(HTML, CSS, JavaScript) (1학기)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "컴퓨터입문(C, C++) (2학기)",
+        "organization": "서경대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 633",
+            "quote": "컴퓨터입문(C, C++) (2학기)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Java, Database, HTML, JavaScript (여름학기)",
+        "organization": "삼육보건대학",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 635",
+            "quote": "Java, Database, HTML, JavaScript (여름학기)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "데이터베이스 개론 (2학기)",
+        "organization": "동덕여자대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 634",
+            "quote": "데이터베이스 개론 (2학기)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "컴퓨터입문(C, C++) (1학기)",
+        "organization": "서경대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 636",
+            "quote": "컴퓨터입문(C, C++) (1학기)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "인터넷 활용 및 실습(javascript) (1학기)",
+        "organization": "고려대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 638",
+            "quote": "인터넷 활용 및 실습(javascript) (1학기)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "정보과학개론 (1학기)",
+        "organization": "고려대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 637",
+            "quote": "정보과학개론 (1학기)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Java Programming, JDBC, Network, Oracle, Servlet & JSP, EJB",
+        "organization": "현대정보기술(HIT)",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 641",
+            "quote": "Java Programming, JDBC, Network, Oracle, Servlet & JSP, EJB",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "컴퓨터과학실험II(C programming) (2학기)",
+        "organization": "고려대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 640",
+            "quote": "컴퓨터과학실험II(C programming) (2학기)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "컴퓨터 프로그래밍(Java) (2학기)",
+        "organization": "성신여자대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 639",
+            "quote": "컴퓨터 프로그래밍(Java) (2학기)",
+            "confidence": 1.0
+          }
+        ]
+      }
+    ],
+    "project_items": [
+      {
+        "title": "국가초고성능컴퓨터 시행계획 심의 및 추진실적 평가",
+        "client_organization": "과학기술정보통신부",
+        "role": "실무위원",
+        "start_date": "2019-03-01",
+        "end_date": "2021-02-01",
+        "keywords": [
+          "국가초고성능컴퓨팅",
+          "시행계획심의"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 642",
+            "quote": "국가초고성능컴퓨터 시행계획 심의 및 추진실적 평가",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "커넥티드카 모빌리티 실시간 서비스를 위한 엣지 클라우드 플랫폼개발",
+        "client_organization": "과학기술정보통신부",
+        "role": "참여연구원",
+        "start_date": "2018-04-01",
+        "end_date": "2020-12-01",
+        "keywords": [
+          "커넥티드카",
+          "엣지클라우드",
+          "모빌리티"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 643",
+            "quote": "커넥티드카 모빌리티 실시간 서비스를 위한 엣지 클라우드 플랫폼개발",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "title": "NCS기반 게임화 된 대규모 온라인 SW개발학습 솔루션개발",
+        "client_organization": "중소기업청",
+        "role": "참여연구원",
+        "start_date": "2016-07-01",
+        "end_date": "2017-06-01",
+        "keywords": [
+          "NCS",
+          "Gamification",
+          "MOOC"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 644",
+            "quote": "NCS기반 게임화 된 대규모 온라인 SW개발학습 솔루션개발",
+            "confidence": 1.0
+          }
+        ]
+      }
+    ],
+    "work_experience_items": [
+      {
+        "organization": "과학기술정보통신부",
+        "summary": "국가초고성능 컴퓨팅위원회 실무위원회 실무위원 (기본계획·육성시책, 예산, 자원 도입 및 배분, 인력정책 등 심의)",
+        "start_date": "2019-02-01",
+        "end_date": "2021-02-01",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 261",
+            "quote": "국가초고성능 컴퓨팅위원회 실무위원회 실무위원 (기본계획·육성시책, 예산, 자원 도입 및 배분, 인력정책 등 심의)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "organization": "㈜에이티지랩",
+        "summary": "이사 (직무교육, IT Consulting, SW 설계, 개발)",
+        "start_date": "2013-02-01",
+        "end_date": "재직중",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 260",
+            "quote": "이사 (직무교육, IT Consulting, SW 설계, 개발)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "organization": "서경대학교",
+        "summary": "겸임교수 (강의 및 Project 지도)",
+        "start_date": "2009-03-01",
+        "end_date": "2012-03-01",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 262",
+            "quote": "겸임교수 (강의 및 Project 지도)",
+            "confidence": 1.0
+          }
+        ]
+      }
+    ],
+    "certifications": [],
+    "source_document_ids": [
+      "instructor-source:내부 강사 정보.xlsx",
+      "instructor-db:28"
+    ],
+    "extensions": {},
+    "evidence": [
+      {
+        "source_document_id": "instructor-db:28",
+        "page": null,
+        "section": "instructors",
+        "quote": "분산시스템 박사 학위의 풀스택 및 AI/빅데이터 전문 강사",
+        "confidence": 1.0
+      }
+    ],
+    "review_status": "unreviewed"
+  }
+}

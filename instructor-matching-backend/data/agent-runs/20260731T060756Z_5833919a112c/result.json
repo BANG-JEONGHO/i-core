@@ -1,0 +1,389 @@
+{
+  "run_id": "20260731T060756Z_5833919a112c",
+  "final_score": 38.0,
+  "final_status": "on_hold",
+  "reasons": [
+    "Code validation found an invalid citation or an unmet exact mandatory condition.",
+    "A/B score difference: 10.0",
+    "Evidence coverage: 100%",
+    "Verifier verdict: FAIL",
+    "Code grounding verdict: FAIL",
+    "Citation accuracy: 31%"
+  ],
+  "analysis": {
+    "total_score": 43.0,
+    "score_items": [
+      {
+        "criterion": "topic_match",
+        "score": 15.0,
+        "max_score": 35.0,
+        "rationale": "본 과업은 클라우드 및 AI 역량 강화를 목적으로 하며, 기초통합 CLF+AIF, SAA, AAI 등의 교육을 요구합니다. 강사는 한국전자통신연구원의 'AI 전문 인력 양성 과정' 등 AI, 머신러닝, 딥러닝 분야에 대한 교육 역량은 충분히 갖추고 있으나, AWS 클라우드 아키텍처(SAA) 설계 및 C3 구축과 관련된 핵심 기술 분야의 전문성과 실적은 확인하기 어렵습니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:b9d3de08-ba1f-45c3-861a-fa7590cdf078",
+            "page": null,
+            "section": "chunk 1",
+            "quote": "나.\nAWS 교직원 역량 강화 교육\n­ 기초 통합 교육(CLF + AIF)과정 운영\n­ SAA 교육과정 및 AAI 교육과정 운영\n­ AWS 공인 강사 선정 시험 및 인터뷰",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": []
+      },
+      {
+        "criterion": "teaching_depth",
+        "score": 15.0,
+        "max_score": 30.0,
+        "rationale": "과업은 AI 애플리케이션 개발 실습 및 교수법 습득 등 실습형 교육을 강조하고 있습니다. 강사는 군산대학교의 '라이프케어IoT프로젝트개발과정' 등 프로젝트형 실무 교육을 운영한 다수의 실적이 있어 실습형 강의 수행 능력은 입증되나, AWS 실습 환경이나 플랫폼 도구를 연계한 교육 설계 경험은 확인되지 않습니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:b9d3de08-ba1f-45c3-861a-fa7590cdf078",
+            "page": null,
+            "section": "chunk 2",
+            "quote": "AAI 교육 | - AI 애플리케이션 개발 실습 역량 ,\n- AI 교수자 양성, student 대상 교수법 체득 | 8월 중순",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": []
+      },
+      {
+        "criterion": "audience_fit",
+        "score": 8.0,
+        "max_score": 15.0,
+        "rationale": "본 과업의 핵심 교육 대상은 대학의 교직원 및 교원입니다. 강사는 한성대학교 등 대학 기관을 대상으로 다수의 교육을 진행하여 대학 교육 체계에 대한 이해도는 확보하고 있으나, 학생이 아닌 '교원 및 교직원'을 타겟으로 전문 교수법이나 직무 역량을 교육한 직접적인 실적은 명확하게 확인되지 않습니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:b9d3de08-ba1f-45c3-861a-fa7590cdf078",
+            "page": null,
+            "section": "chunk 2",
+            "quote": "1.\n과업 수행범위\n가.\n과업대상: 본교 교직원 및 교원",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": []
+      },
+      {
+        "criterion": "career_and_certification",
+        "score": 0.0,
+        "max_score": 15.0,
+        "rationale": "과업지시서에서는 '단계별 AWS 공인 전문 강사'로 강사진을 구성하도록 필수 자격 요건을 명시하고 있습니다. 그러나 강사의 프로필상에는 어떠한 AWS 공인 인증 자격증이나 AWS 공인 강사 자격이 기재되어 있지 않아, 필수 자격 요건을 충족하지 못하므로 0점 처리합니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:b9d3de08-ba1f-45c3-861a-fa7590cdf078",
+            "page": null,
+            "section": "chunk 3",
+            "quote": "나.\n교직원 역량 강화 교육\n1) 강사진 구성\n­ 단계별 AWS 공인 전문 강사 프로그램 운영\n­ 교육 이후 교육생이 AI·Cloud 교육을 직접 수행할 수 있는 역량을\n발휘할 수 있도록 전문 역량을 갖춘 강사로 구성",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": []
+      },
+      {
+        "criterion": "evidence_completeness",
+        "score": 5.0,
+        "max_score": 5.0,
+        "rationale": "제시된 과업지시서의 내용과 강사의 정보(이력, 강의 이력 등)를 바탕으로 상호 누락 없이 객관적으로 매칭 및 평가를 완료하였습니다.",
+        "project_evidence": [],
+        "instructor_evidence": []
+      }
+    ],
+    "recommendation_reasons": [
+      "한국전자통신연구원 및 군산대학교 등 공공·학계 대상의 풍부한 AI 및 빅데이터 실무 교육 경험 보유",
+      "임베디드 및 딥러닝, 데이터 분석 전반의 박사급 학위 및 높은 기술적 배경 지식 보유"
+    ],
+    "gaps": [
+      "AWS 공인 자격증(CLF, AIF, SAA 등) 및 AWS 공인 강사 자격 미보유",
+      "AWS 클라우드 아키텍처 설계(SAA) 및 실습 교육 관련 경력 부재",
+      "대학 교원 및 교직원을 대상으로 특화된 교육 과정 운영 이력 부재"
+    ],
+    "risks": [
+      "AWS 공인 자격 미달로 인한 계약 조건 불이행 및 입찰 자격 미달 우려",
+      "AWS 전문 영역(SAA, AWS C3 구축 지원 등)의 실무 및 교수 경험 부족으로 인한 교육 품질 저하 위험"
+    ],
+    "required_conditions_passed": false,
+    "required_condition_notes": [
+      "과업 필수 요건인 '단계별 AWS 공인 전문 강사' 기준을 충족하는 공인 자격 증빙이 불가함"
+    ]
+  },
+  "verification": {
+    "independent_score": 33.0,
+    "verdict": "FAIL",
+    "evidence_coverage": 1.0,
+    "issues": [
+      {
+        "severity": "high",
+        "category": "required_condition",
+        "description": "과업지시서상 '단계별 AWS 공인 전문 강사'로 구성되어야 함이 명시되어 있으나, 강사는 AWS 관련 공인 자격증 및 강사 인증(AAI 등)을 보유하고 있지 않아 필수 요건을 위배합니다.",
+        "related_criterion": "career_and_certification"
+      },
+      {
+        "severity": "high",
+        "category": "evidence",
+        "description": "AWS SAA, CLF, AIF, AAI 등 본 교육 과정의 핵심 도메인인 AWS 인프라 및 클라우드 아키텍처 교육과 관련한 강의 실적이나 프로젝트 수행 이력이 강사 정보에 전혀 기재되어 있지 않습니다.",
+        "related_criterion": "topic_match"
+      }
+    ],
+    "corrected_score_items": [
+      {
+        "criterion": "topic_match",
+        "score": 10.0,
+        "max_score": 35.0,
+        "rationale": "과업은 AWS C3 구축 및 SAA, AAI 등 AWS 전문 교육 과정 설계를 요구하고 있습니다. 그러나 강사는 임베디드, 머신러닝, AI 분석 분야의 박사급 전문가임에도 불구하고 AWS 클라우드 기술 분야의 매칭도가 낮으며 관련 교육이나 프로젝트 경험이 부족합니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:b9d3de08-ba1f-45c3-861a-fa7590cdf078",
+            "page": null,
+            "section": "chunk 1",
+            "quote": "나.\nAWS 교직원 역량 강화 교육\n\u0000 기초 통합 교육(CLF + AIF)과정 운영\n\u0000 SAA 교육과정 및 AAI 교육과정 운영",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 2230",
+            "quote": "AI 전문 인력 양성 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "criterion": "teaching_depth",
+        "score": 10.0,
+        "max_score": 30.0,
+        "rationale": "강사는 AI 및 빅데이터 분야의 고급 기술 역량과 강의 역량을 갖추고 있으나, 과업에서 요구하는 AWS 정규 과정 및 자격증(SAA-C03 등) 취득 대비를 위한 실전적인 AWS 아키텍처 실습 중심의 교육을 전담하기에는 기술적 연관성을 증명할 근거가 미흡합니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:b9d3de08-ba1f-45c3-861a-fa7590cdf078",
+            "page": null,
+            "section": "chunk 4",
+            "quote": "\u0000 ILT 정규과정 + AWS Skill Builder 자기주도 학습 + 시험 대비 등 자\n격증 취득 가능 할 수 있도록 교육 프로그램에 반영",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": [
+          {
+            "source_document_id": "instructor-db:102",
+            "page": null,
+            "section": "instructors",
+            "quote": "임베디드 및 AI\u0000빅데이터 분석 전문 박사급 강사",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "criterion": "audience_fit",
+        "score": 10.0,
+        "max_score": 15.0,
+        "rationale": "과업 대상은 대학의 교직원 및 교원이며 교육생이 향후 직접 지도할 수 있도록 하는 교수법 학습이 포함되어 있습니다. 강사는 군산대학교, 한성대학교 등 대학 강의 경험 및 재직자 아카데미 운영 경험을 풍부하게 보유하여 대상 적합성은 양호합니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:b9d3de08-ba1f-45c3-861a-fa7590cdf078",
+            "page": null,
+            "section": "chunk 2",
+            "quote": "가.\n과업대상: 본교 교직원 및 교원",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 2229",
+            "quote": "라이프케어IoT프로젝트개발과정 등",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "criterion": "career_and_certification",
+        "score": 0.0,
+        "max_score": 15.0,
+        "rationale": "과업 지시서에서 명시한 핵심 요건인 '단계별 AWS 공인 전문 강사' 조건에 부합하는 AWS 관련 자격증이나 공식 AWS 공인 강사 인증(AAI 등)이 프로필상에 존재하지 않아 해당 기준을 충족하지 못하므로 0점 처리합니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:b9d3de08-ba1f-45c3-861a-fa7590cdf078",
+            "page": null,
+            "section": "chunk 3",
+            "quote": "\u0000 단계별 AWS 공인 전문 강사 프로그램 운영",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": []
+      },
+      {
+        "criterion": "evidence_completeness",
+        "score": 3.0,
+        "max_score": 5.0,
+        "rationale": "강사의 일반적인 AI 및 빅데이터 경력에 대한 증빙자료는 충실히 갖춰져 있으나, 본 과업의 필수 제약 조건인 AWS 공인 강사 자격 증빙이 원천적으로 부재합니다.",
+        "project_evidence": [
+          {
+            "source_document_id": "task-order:b9d3de08-ba1f-45c3-861a-fa7590cdf078",
+            "page": null,
+            "section": "chunk 3",
+            "quote": "\u0000 강사 소개서(이력, 실적, 전문 분야, 성범죄 조회 동의서 등 포함) 제출",
+            "confidence": 1.0
+          }
+        ],
+        "instructor_evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 1019",
+            "quote": "대표 (전. 한길소프트웨어)",
+            "confidence": 1.0
+          }
+        ]
+      }
+    ],
+    "required_conditions_passed": false
+  },
+  "grounding": {
+    "citation_accuracy": 0.3076923076923077,
+    "invalid_citation_count": 9,
+    "unsupported_positive_score_count": 3,
+    "required_condition_checks": [
+      {
+        "requirement": "국가를 당사자로 하는 계약에 관한 법률 시행령 제12조 및 동법 시행규칙 제14조에 의한 자격요건을 갖추고, 동법 시행규칙 제76조의 규정에 의한 부정당업자 제재를 받지 않은 업체",
+        "condition_type": "certification",
+        "status": "failed",
+        "detail": "Required credential not found in instructor profile."
+      },
+      {
+        "requirement": "성범죄 경력, 아동학대 전력 등에 의해 과업 수행에 자격이 없는 강사 배제 및 전력 조회 협조",
+        "condition_type": "certification",
+        "status": "failed",
+        "detail": "Required credential not found in instructor profile."
+      },
+      {
+        "requirement": "공고일 기준 최근 3년 이내 국내 대학 및 전문대학 또는 공공기관에서 유사한 위탁운영 실적이 단일건수 기준 5천만원 이상 1건 이상 실행한 업체",
+        "condition_type": "experience",
+        "status": "not_automatically_verifiable",
+        "detail": "Experience requirements need human or model review unless a numeric rule is configured."
+      },
+      {
+        "requirement": "성범죄 경력, 아동학대 전력 등에 의해 과업 수행에 자격이 없는 강사 배제 및 전력 조회 협조",
+        "condition_type": "experience",
+        "status": "not_automatically_verifiable",
+        "detail": "Experience requirements need human or model review unless a numeric rule is configured."
+      }
+    ],
+    "verdict": "FAIL"
+  },
+  "rag_context": {
+    "project_evidence": [
+      {
+        "source_type": "project",
+        "evidence": {
+          "source_document_id": "task-order:b9d3de08-ba1f-45c3-861a-fa7590cdf078",
+          "page": null,
+          "section": "chunk 2",
+          "quote": "있음\n- 2 -\n단 계 | 내 용 | 교육 일정\n기초통합교육 | - 클라우드와 AI 의 핵심 개념 이해\n- 최신 Agentic AI 기술 동향 파악 | 8월 중순\nSAA 교육 | - AWS 아키텍처 설계 역량 확보\n- SAA-C03 자격증 취득 준비 | 8월 중순\nAAI 교육 | - AI 애플리케이션 개발 실습 역량 ,\n- AI 교수자 양성, 학생 대상 교수법 체득 | 8월 중순\n기 간\n세부사업내용 | 사 업 추 진 일 정 (월)\n7 | 8 | 9 | 10\n위탁용역 공고\n업체 선정 및 착수\n교직원 역량 강화 교육\nAWS C3 인증센터 구축\n사업 결과보고\nⅡ 과업 내용\n1.\n과업 수행범위\n가.\n과업대상: 본교 교직원 및 교원\n나.\n과업기간: 2026.\n7.\n~ 2026.\n10.\n다.\n과업장소: 울산과학대학교 동부캠퍼스\n라.\n과업방법: AWS C3 인증센터 구축 및 교직원 역량강화 교육\n마.\n과업내용\n­ AWS C3 센터 운영에 필요한 4개 영역을 통합 구축\n­ 교직원 및 교원 수준을 고려한 질 높은 맞춤형 프로그램 개발 및 운영\n­ 프로그램 운영 후 설문조사를 통한 교육 효과성 분석 및 공유\n2.\n과업 세부내용\n가.\nAWS C3인증센터 구축\n­ AWS C3 센터 운영에 필요한 4개 영역을 통합 구축\n구 분 목 적 내 용\n- 1인 독립 시험 부스\nAWS 공인 자격증 시험을 공정하\n- 부스별 기본 시험 장비 포함\n시험장 인프라 구축 고 안전하게 진행하기 위한 독립\n- AWS 공인시험 운영 기준에\n시험 환경을 구축\n부합하는 환경 구성\nAWS가 공식 운영하는 자기주도 - AWS Skill Builder\n학습 플랫폼 라이선스 및\n학습 및 공인 자격증 시험 대비를 - Certi Navigator\nAWS 실습 환경 구축 위한 환경을 구축 - AWS Cloud\nAWS C3 공인인증센터의 효율적",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.8641
+      },
+      {
+        "source_type": "project",
+        "evidence": {
+          "source_document_id": "task-order:b9d3de08-ba1f-45c3-861a-fa7590cdf078",
+          "page": null,
+          "section": "chunk 1",
+          "quote": "지털 전환의 촉진: 새로운 비즈니스 모델 창출을 지원하는 실무형\n클라우드-AI 역량을 갖춘 인재를 양성\n나.\n글로벌 표준 교육 체계 구축: 대학이 자체적으로 국제 표준 교육 과정을\n설계하고 운영할 수 있는 체계\n다.\n사회적 가치 창출: 지역 인재의 일자리 창출과 기업의 디지털 전환 성공\n사례를 확대함으로써 디지털 혁신 기여도 상승취업 마인드 함양, 자기주도\n적 취업진로 설계 등 학생 취업인식 개선\n3.\n주요 내용\n가.\nAWS C3 구축\n­ 시험장 인프라 구축(1인 독립부스)\n­ 학습 플랫폼 라이선스 및 AWS 실습 환경 구축\n­ AWS C3 운영 시스템 구축\n­ Tier 관리 및 운영 지원\n- 1 -\n나.\nAWS 교직원 역량 강화 교육\n­ 기초 통합 교육(CLF + AIF)과정 운영\n­ SAA 교육과정 및 AAI 교육과정 운영\n­ AWS 공인 강사 선정 시험 및 인터뷰\n다.\n교육 운영 일정\n단 계 내 용 교육 일정\n- 클라우드와 AI 의 핵심 개념 이해\n기초통합교육 8월 중순\n- 최신 Agentic AI 기술 동향 파악\n- AWS 아키텍처 설계 역량 확보\nSAA 교육 8월 중순\n- SAA-C03 자격증 취득 준비\n- AI 애플리케이션 개발 실습 역량 ,\nAAI 교육 8월 중순\n- AI 교수자 양성, 학생 대상 교수법 체득\n라.\n추진 일정(안)\n기 간 사 업 추 진 일 정 (월)\n세부사업내용 7 8 9 10\n위탁용역 공고\n업체 선정 및 착수\n교직원 역량 강화 교육\nAWS C3 인증센터 구축\n사업 결과보고\n※ 상기 일정 및 계획은 추진 상황에 따라 변동될 수 있음\n- 2 -\n단 계 | 내 용 | 교육 일정\n기초통합교육 | - 클라우드와 AI 의 핵심 개념 이해\n- 최신 Agentic AI 기술 동향 파악 | 8월 중순\nSAA 교육 | - AWS 아키텍처 설계 역량 확보",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.8369
+      },
+      {
+        "source_type": "project",
+        "evidence": {
+          "source_document_id": "task-order:b9d3de08-ba1f-45c3-861a-fa7590cdf078",
+          "page": null,
+          "section": "chunk 0",
+          "quote": "2026년 AWS C3 인증센터 구축 및\n교직원 역량 강화 교육 용역 과업지시서\n.\n2026.\n7.\n.\n목 차\nⅠ.\n과업 개요 ················································································ 1\nⅡ.\n과업 내용 ················································································ 3\nⅢ.\n과업 수행 지침 ······································································· 7\nⅣ.\n과업 수행 사업자 선정 ······························································· 13\nⅤ.\n제안서 작성 및 제출 ··································································· 18\n[별첨] 제출 서류 양식 ······································································· 26\nⅠ 과업 개요\n1.\n과업 개요\n가.\n과 업 명: 2026년 AWS C3 구축 및 교직원 역량 강화 교육\n나.\n과업기간: 계약체결일로부터 2026.\n10.\n30.까지\n다.\n계약방법: 협상에 의한 계약, 제한경쟁입찰\n라.\n사업예산: 금180,000,000원(금일억팔천만원)(부가가치세 포함)\n2.\n과업 목적\n가.\n지역 디지털 전환의 촉진: 새로운 비즈니스 모델 창출을 지원하는 실무형\n클라우드-AI 역량을 갖춘 인재를 양성\n나.\n글로벌 표준 교육 체계 구축: 대학이 자체적으로 국제 표준 교육 과정을\n설계하고 운영할 수 있는 체계\n다.",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.8313
+      },
+      {
+        "source_type": "project",
+        "evidence": {
+          "source_document_id": "task-order:b9d3de08-ba1f-45c3-861a-fa7590cdf078",
+          "page": null,
+          "section": "chunk 3",
+          "quote": "S Skill Builder\n학습 플랫폼 라이선스 및\n학습 및 공인 자격증 시험 대비를 - Certi Navigator\nAWS 실습 환경 구축 위한 환경을 구축 - AWS Cloud\nAWS C3 공인인증센터의 효율적\n- 응시자 예약 관리\nAWS C3 운영 시스템 구축 운영을 위한 통합 관리 시스템을\n- 센터 현황 통합 관리\n구축\nAWS와의 파트너십 유지, Tier 관 - AWS Tier 관리\nTier 관리 및 운영 지원\n리, 운영 지원을 위한 환경 구축 - 네트워크 관리\n- 3 -\n구 분 | 목 적 | 내 용\n시험장 인프라 구축 | AWS 공인 자격증 시험을 공정하\n고 안전하게 진행하기 위한 독립\n시험 환경을 구축 | - 1인 독립 시험 부스\n- 부스별 기본 시험 장비 포함\n- AWS 공인시험 운영 기준에\n부합하는 환경 구성\n학습 플랫폼 라이선스 및\nAWS 실습 환경 구축 | AWS가 공식 운영하는 자기주도\n학습 및 공인 자격증 시험 대비를\n위한 환경을 구축 | - AWS Skill Builder\n- Certi Navigator\n- AWS Cloud\nAWS C3 운영 시스템 구축 | AWS C3 공인인증센터의 효율적\n운영을 위한 통합 관리 시스템을\n구축 | - 응시자 예약 관리\n- 센터 현황 통합 관리\nTier 관리 및 운영 지원 | AWS와의 파트너십 유지, Tier 관\n리, 운영 지원을 위한 환경 구축 | - AWS Tier 관리\n- 네트워크 관리\n나.\n교직원 역량 강화 교육\n1) 강사진 구성\n­ 단계별 AWS 공인 전문 강사 프로그램 운영\n­ 교육 이후 교육생이 AI·Cloud 교육을 직접 수행할 수 있는 역량을\n발휘할 수 있도록 전문 역량을 갖춘 강사로 구성\n­ 강사 소개서(이력, 실적, 전문 분야, 성범죄 조회 동의서 등 포함) 제출\n2) 단계별 프로그램 운영",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.8198
+      },
+      {
+        "source_type": "project",
+        "evidence": {
+          "source_document_id": "task-order:b9d3de08-ba1f-45c3-861a-fa7590cdf078",
+          "page": null,
+          "section": "chunk 4",
+          "quote": "교육생이 AI·Cloud 교육을 직접 수행할 수 있는 역량을\n발휘할 수 있도록 전문 역량을 갖춘 강사로 구성\n­ 강사 소개서(이력, 실적, 전문 분야, 성범죄 조회 동의서 등 포함) 제출\n2) 단계별 프로그램 운영\n단 계 내 용 교육 일정\n- 클라우드와 AI 의 핵심 개념 이해\n기초통합교육 8월 중순\n- 최신 Agentic AI 기술 동향 파악\n- AWS 아키텍처 설계 역량 확보\nSAA 교육 8월 중순\n- SAA-C03 자격증 취득 준비\n- AI 애플리케이션 개발 실습 역량 ,\nAAI 교육 8월 중순\n- AI 교수자 양성, 학생 대상 교수법 체득\n※ 교육 일정은 교내 수요 조사로 인한 확정으로 일정 변경 불가\n­ ILT 정규과정 + AWS Skill Builder 자기주도 학습 + 시험 대비 등 자\n격증 취득 가능 할 수 있도록 교육 프로그램에 반영\n­ 교육 내용과 방법은 학교의 요구사항과 기획한 프로그램을 고려하\n여 사전 협의하며, 협의 결과를 교육 프로그램에 반영\n­ 사전 협의 결과와 AWS 교육 지침에 부합한 교육 자료로 교육 운영\n­ 강사, 교재, 재료, 간식 및 각종 운영비 등은 사업비에 포함\n- 4 -\n단 계 | 내 용 | 교육 일정\n기초통합교육 | - 클라우드와 AI 의 핵심 개념 이해\n- 최신 Agentic AI 기술 동향 파악 | 8월 중순\nSAA 교육 | - AWS 아키텍처 설계 역량 확보\n- SAA-C03 자격증 취득 준비 | 8월 중순\nAAI 교육 | - AI 애플리케이션 개발 실습 역량 ,\n- AI 교수자 양성, 학생 대상 교수법 체득 | 8월 중순\n다.\n프로그램 결과보고\n1) 단계별 보고\n­ 과업의 원활한 수행을 위해 교육 전반적인 사항 발주기관에 보고\n구 분 시 기 내 용 비 고\n교육일\n교육 운영 전 - 교육 운영, 내용 등 사전점검 사항\n7일 전까지",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.8075
+      }
+    ],
+    "instructor_evidence": [
+      {
+        "source_type": "instructor",
+        "evidence": {
+          "source_document_id": "rag:instructor-102:db-42b07bc61166",
+          "page": null,
+          "section": "chunk 1",
+          "quote": "s\": [],\n\"availability_notes\": null,\n\"vendor_experience\": [\n\"프리랜서 - 야구 선수 인디케이터 예측 모델 개발\",\n\"프리랜서 - 선박 엔진 및 발전기 고장 예측 모델\",\n\"프리랜서 - 선박 손상 이미지 분석을 위한 딥러닝 모델 개발 및 모델링 및 드론 어플리케이션 개발\",\n\"프리랜서 - 기류분석을 위한 딥러닝 모델링\",\n\"연구원 - 모션 인식을 위한 딥러닝 모델링\",\n\"프리랜서 - IoT 데이터 수집 및 분석 프레임워크 개발\",\n\"연구원 - 심혈관 질환 예측을 위한 데이터마이닝 기술 접목\",\n\"연구원 - 산림 데이터 기반 헬스케어 플랫폼 개발\",\n\"프리랜서 - 연구자와 평가자 자동 매칭 시스템 개발\",\n\"연구원 - 의료 빅데이터 기반 지식 마이닝 엔진 개발\",\n\"연구원 - 빅데이터 기반 스마트 라이프 케어 서비스 개발\",\n\"연구원 - 과학과 예술 접목\",\n\"모토로라 - 안드로이드 시스템 포팅 및 테스팅\",\n\"프리랜서 - 지능형 경매 시스템 개발\",\n\"프리랜서 - 비교 쇼핑시스템 개발\",\n\"프리랜서 - 유무선 통합 거래정보 중개 및 통보시스템 개발\",\n\"프리랜서 - 무선인터넷 BBS, E-mail 시스템 개발\",\n\"프리랜서 - 유무선 통합 경매 시스템 개발\",\n\"(주)켈라웨이브 - 대표 (전.\n한길소프트웨어)\",\n\"Motorola Mobility Inc - Software Product Team 책임연구원\",\n\"TELSON Electronics Co.\n- Software Development Team 선임연구원\"\n],\n\"vendor_certifications\": [],\n\"teaching_items\": [\n{\n\"topic\": \"AI 전문 인력 양성 과정\",\n\"organization\": \"한국전자통신연구원\",",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.6929
+      },
+      {
+        "source_type": "instructor",
+        "evidence": {
+          "source_document_id": "rag:instructor-102:db-42b07bc61166",
+          "page": null,
+          "section": "chunk 3",
+          "quote": "\",\n\"organization\": \"LGCNS\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 2226\",\n\"quote\": \"데이터사이언티스트 신입/재직자 양성 교육\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"자동차/이동체 AI 역량 플러스 아카데미 등\",\n\"organization\": \"한성대학교\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 2228\",\n\"quote\": \"자동차/이동체 AI 역량 플러스 아카데미 등\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"신입과정_Embedded Linux, Project, C++ Programming\",\n\"organization\": \"LG전자\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.6852
+      },
+      {
+        "source_type": "instructor",
+        "evidence": {
+          "source_document_id": "rag:instructor-102:db-42b07bc61166",
+          "page": null,
+          "section": "chunk 7",
+          "quote": "\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"title\": \"선박 손상 이미지 분석을 위한 딥러닝 모델 개발 및 모델링 및 드론 어플리케이션 개발\",\n\"client_organization\": \"프리랜서\",\n\"role\": \"컨설팅\",\n\"start_date\": \"2020-10-01\",\n\"end_date\": \"2020-12-01\",\n\"keywords\": [\n\"이미지 분석\",\n\"딥러닝\",\n\"드론\"\n],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 2237\",\n\"quote\": \"선박 손상 이미지 분석을 위한 딥러닝 모델 개발 및 모델링 및 드론 어플리케이션 개발\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"title\": \"기류분석을 위한 딥러닝 모델링\",\n\"client_organization\": \"프리랜서\",\n\"role\": \"개발 총괄\",\n\"start_date\": \"2020-04-01\",\n\"end_date\": \"2020-12-01\",\n\"keywords\": [\n\"기류분석\",\n\"딥러닝\"\n],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 2236\",\n\"quote\": \"기류분석을 위한 딥러닝 모델링\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"title\": \"모션 인식을 위한 딥러닝 모델링\",\n\"client_organization\": \"연구원\",\n\"role\": \"컨설팅\",\n\"start_date\": \"2019-08-01\",",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.6825
+      },
+      {
+        "source_type": "instructor",
+        "evidence": {
+          "source_document_id": "rag:instructor-102:db-42b07bc61166",
+          "page": null,
+          "section": "chunk 4",
+          "quote": "l,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 2232\",\n\"quote\": \"신입과정_Embedded Linux, Project, C++ Programming\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"Embedded/Smart Path 신입사원 교육\",\n\"organization\": \"LG전자\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 2231\",\n\"quote\": \"Embedded/Smart Path 신입사원 교육\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"증강현실 기법을 활용한 Mobile 게임개발 프로젝트 등\",\n\"organization\": \"주식회사 나이텍\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 2233\",\n\"quote\": \"증강현실 기법을 활용한 Mobile 게임개발 프로젝트 등\",\n\"confidence\": 1.0",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.6812
+      },
+      {
+        "source_type": "instructor",
+        "evidence": {
+          "source_document_id": "rag:instructor-102:db-42b07bc61166",
+          "page": null,
+          "section": "chunk 2",
+          "quote": "eam 선임연구원\"\n],\n\"vendor_certifications\": [],\n\"teaching_items\": [\n{\n\"topic\": \"AI 전문 인력 양성 과정\",\n\"organization\": \"한국전자통신연구원\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 2230\",\n\"quote\": \"AI 전문 인력 양성 과정\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"라이프케어IoT프로젝트개발과정 등\",\n\"organization\": \"군산대학교\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{\n\"source_document_id\": \"instructor-source:내부 강사 정보.xlsx\",\n\"page\": null,\n\"section\": \"2.\n강의 및 프로젝트 이력 row 2229\",\n\"quote\": \"라이프케어IoT프로젝트개발과정 등\",\n\"confidence\": 1.0\n}\n]\n},\n{\n\"topic\": \"데이터사이언티스트 신입/재직자 양성 교육\",\n\"organization\": \"LGCNS\",\n\"target_audience\": [],\n\"delivery_format\": [],\n\"hours\": null,\n\"outcomes\": [],\n\"evidence\": [\n{",
+          "confidence": 1.0
+        },
+        "retrieval_score": 0.6797
+      }
+    ]
+  }
+}

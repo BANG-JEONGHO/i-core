@@ -1,0 +1,2408 @@
+{
+  "project": {
+    "schema_version": "education_project_v1",
+    "service_type": "education_program",
+    "program_type": "vocational_training",
+    "classification_confidence": 1.0,
+    "base": {
+      "project_name": "(붙임2)_제안요청서.pdf",
+      "client_organization": null,
+      "purpose": [
+        "순천향대학교에서 약 20명의 학생을 대상으로 이론과 실습 및 프로젝트 기반 학습을 병행하여 클라우드 및 AI 전문 실무 역량을 배양하고, 자격 취득과 취업을 연계 지원하는 50시간 규모의 교육과정을 기획·운영하는 용역",
+        "총 50시간의 교육과정 기획 및 운영",
+        "클라우드·AI 전문 강사진 배정 및 지원",
+        "교육용 클라우드 플랫폼 계정/크레딧 운영 및 관리",
+        "온라인 협업 플랫폼 활용 학생 관리",
+        "교재 및 홍보물(현수막, 포스터, 카드뉴스 등) 제작",
+        "결과 보고서 제출",
+        "안전하고 책임 있는 AI 활용 역량 배양",
+        "실무 적용 역량 및 문제 해결/협업 역량 강화",
+        "클라우드·AI 분야 자격 취득 및 취업 경쟁력 강화"
+      ],
+      "contract_method": null,
+      "start_date": null,
+      "end_date": null,
+      "budget_krw": null,
+      "vat_included": null,
+      "deliverables": [
+        "총 50시간의 교육과정 기획 및 운영",
+        "클라우드·AI 전문 강사진 배정 및 지원",
+        "교육용 클라우드 플랫폼 계정/크레딧 운영 및 관리",
+        "온라인 협업 플랫폼 활용 학생 관리",
+        "교재 및 홍보물(현수막, 포스터, 카드뉴스 등) 제작",
+        "결과 보고서 제출",
+        "안전하고 책임 있는 AI 활용 역량 배양",
+        "실무 적용 역량 및 문제 해결/협업 역량 강화",
+        "클라우드·AI 분야 자격 취득 및 취업 경쟁력 강화"
+      ],
+      "proposal_requirements": [
+        "최근 3년 이내 클라우드 및 인공지능(AI)분야 교육과정을 수행한 실적이 있는 업체",
+        "클라우드 또는 인공지능(AI)분야 전문 강사진 2명 이상을 보유한 업체(재직증명서, 강사확인서, 관련 자격증 등으로 증빙 가능)",
+        "제안하는 교육과정의 운영에 필요한 전문 인력 및 교육 운영 체계를 갖춘 업체",
+        "공동 수급(컨소시엄)은 허용하지 않으며 단일업체여야 함",
+        "국가를 당사자로 하는 계약에 관한 법률 시행령 제76조에 의한 부정당업자가 아닌 자",
+        "교육과정 기획 및 지원",
+        "강사(주강사, 보조강사) 및 현업 전문가 섭외",
+        "교육 인프라(클라우드 계정 및 크레딧) 지원 및 모니터링",
+        "전담 인력 배정 및 학생 관리",
+        "수강생 평가 및 공인 자격증 취득 모의평가 지원",
+        "홍보물 및 교재 제작"
+      ],
+      "compliance_requirements": [
+        "사업의 기획력 및 적합성 (교육 취지에 맞는 구성 및 기획, 교육 내용의 우수성)",
+        "강사진 구성 능력 (클라우드·AI 분야 공인 자격 또는 전문성을 보유한 강사진 구성)",
+        "제안업체 전문성 및 조직역량 (조직 및 인원, 책임자의 능력, 전담 인력 구성 및 투입 규모)",
+        "안전관리 및 계획 (참여인원 안전관리 대책, 기타 비상시 대책)",
+        "최근 3년 실적의 수준 (2024~2026년 누적 실적 평가)",
+        "기업경영상태 (기업신용평가 등급에 의함)",
+        "제안가격의 적정성 (정량평가)"
+      ]
+    },
+    "education": {
+      "technology_domains": [
+        "데이터 주권(소버린 AI)",
+        "클라우드",
+        "인공지능(AI)",
+        "AI 도구",
+        "인공지능",
+        "AI",
+        "교육과정",
+        "실적",
+        "전문 강사진",
+        "강사 보유",
+        "전문 인력",
+        "교육 운영 체계",
+        "단일업체",
+        "공동수급 불가",
+        "컨소시엄 제한",
+        "부정당업자",
+        "국가계약법",
+        "기획력",
+        "적합성",
+        "교육 내용",
+        "우수성",
+        "강사진 구성",
+        "공인 자격",
+        "전문성",
+        "조직역량",
+        "전담 인력",
+        "책임자 능력",
+        "안전관리",
+        "비상대책",
+        "누적 실적",
+        "수행 실적",
+        "기업경영상태",
+        "신용평가등급",
+        "제안가격",
+        "가격평가"
+      ],
+      "program_topics": [
+        "데이터 주권(소버린 AI)",
+        "클라우드",
+        "인공지능(AI)",
+        "AI 도구",
+        "기획력",
+        "적합성",
+        "교육 내용",
+        "우수성",
+        "강사진 구성",
+        "공인 자격",
+        "전문성",
+        "조직역량",
+        "전담 인력",
+        "책임자 능력",
+        "안전관리",
+        "비상대책",
+        "누적 실적",
+        "수행 실적",
+        "기업경영상태",
+        "신용평가등급",
+        "제안가격",
+        "가격평가",
+        "인공지능",
+        "AI",
+        "교육과정",
+        "실적",
+        "전문 강사진",
+        "강사 보유",
+        "전문 인력",
+        "교육 운영 체계",
+        "단일업체",
+        "공동수급 불가",
+        "컨소시엄 제한",
+        "부정당업자",
+        "국가계약법"
+      ],
+      "target_audience": [
+        "순천향대학교 학생 및 참여인원 약 20명"
+      ],
+      "participant_capacity": null,
+      "delivery_format": [
+        "이론/실습 병행 현장 중심 교육",
+        "프로젝트 기반 학습",
+        "오프라인 교육 (순천향대학교 인간사랑관)"
+      ],
+      "education_hours": null,
+      "schedule": [],
+      "required_roles": [
+        "교육과정 기획 및 지원",
+        "강사(주강사, 보조강사) 및 현업 전문가 섭외",
+        "교육 인프라(클라우드 계정 및 크레딧) 지원 및 모니터링",
+        "전담 인력 배정 및 학생 관리",
+        "수강생 평가 및 공인 자격증 취득 모의평가 지원",
+        "홍보물 및 교재 제작"
+      ],
+      "instructor_requirements": {
+        "required_experience": [
+          "최근 3년 이내 클라우드 및 인공지능(AI)분야 교육과정을 수행한 실적이 있는 업체"
+        ],
+        "required_certifications": [
+          "클라우드 또는 인공지능(AI)분야 전문 강사진 2명 이상을 보유한 업체(재직증명서, 강사확인서, 관련 자격증 등으로 증빙 가능)"
+        ],
+        "required_vendor_credentials": [],
+        "similar_project_experience": []
+      },
+      "curriculum_requirements": [],
+      "operational_requirements": [],
+      "practical_project_requirements": [
+        "총 50시간의 교육과정 기획 및 운영",
+        "클라우드·AI 전문 강사진 배정 및 지원",
+        "교육용 클라우드 플랫폼 계정/크레딧 운영 및 관리",
+        "온라인 협업 플랫폼 활용 학생 관리",
+        "교재 및 홍보물(현수막, 포스터, 카드뉴스 등) 제작",
+        "결과 보고서 제출",
+        "교육과정 기획 및 지원",
+        "강사(주강사, 보조강사) 및 현업 전문가 섭외",
+        "교육 인프라(클라우드 계정 및 크레딧) 지원 및 모니터링",
+        "전담 인력 배정 및 학생 관리",
+        "수강생 평가 및 공인 자격증 취득 모의평가 지원",
+        "홍보물 및 교재 제작"
+      ],
+      "assessment_requirements": [
+        "사업의 기획력 및 적합성 (교육 취지에 맞는 구성 및 기획, 교육 내용의 우수성)",
+        "강사진 구성 능력 (클라우드·AI 분야 공인 자격 또는 전문성을 보유한 강사진 구성)",
+        "제안업체 전문성 및 조직역량 (조직 및 인원, 책임자의 능력, 전담 인력 구성 및 투입 규모)",
+        "안전관리 및 계획 (참여인원 안전관리 대책, 기타 비상시 대책)",
+        "최근 3년 실적의 수준 (2024~2026년 누적 실적 평가)",
+        "기업경영상태 (기업신용평가 등급에 의함)",
+        "제안가격의 적정성 (정량평가)"
+      ],
+      "outcome_requirements": [
+        "안전하고 책임 있는 AI 활용 역량 배양",
+        "실무 적용 역량 및 문제 해결/협업 역량 강화",
+        "클라우드·AI 분야 자격 취득 및 취업 경쟁력 강화"
+      ]
+    },
+    "extensions": {
+      "source_task_order_id": "9c66c411-5b62-4d1d-9973-3d2992266302",
+      "normalized_qualifications": [
+        {
+          "category": "실적 요건",
+          "description": "최근 3년 이내 클라우드 및 인공지능(AI)분야 교육과정을 수행한 실적이 있는 업체",
+          "is_mandatory": true,
+          "keywords": [
+            "클라우드",
+            "인공지능",
+            "AI",
+            "교육과정",
+            "실적"
+          ]
+        },
+        {
+          "category": "인력 요건",
+          "description": "클라우드 또는 인공지능(AI)분야 전문 강사진 2명 이상을 보유한 업체(재직증명서, 강사확인서, 관련 자격증 등으로 증빙 가능)",
+          "is_mandatory": true,
+          "keywords": [
+            "전문 강사진",
+            "클라우드",
+            "인공지능",
+            "강사 보유"
+          ]
+        },
+        {
+          "category": "운영 체계",
+          "description": "제안하는 교육과정의 운영에 필요한 전문 인력 및 교육 운영 체계를 갖춘 업체",
+          "is_mandatory": true,
+          "keywords": [
+            "전문 인력",
+            "교육 운영 체계"
+          ]
+        },
+        {
+          "category": "참여 제한",
+          "description": "공동 수급(컨소시엄)은 허용하지 않으며 단일업체여야 함",
+          "is_mandatory": true,
+          "keywords": [
+            "단일업체",
+            "공동수급 불가",
+            "컨소시엄 제한"
+          ]
+        },
+        {
+          "category": "법적 요건",
+          "description": "국가를 당사자로 하는 계약에 관한 법률 시행령 제76조에 의한 부정당업자가 아닌 자",
+          "is_mandatory": true,
+          "keywords": [
+            "부정당업자",
+            "국가계약법"
+          ]
+        }
+      ],
+      "normalized_evaluation_criteria": [
+        {
+          "category": "기술평가(정성)",
+          "description": "사업의 기획력 및 적합성 (교육 취지에 맞는 구성 및 기획, 교육 내용의 우수성)",
+          "weight": 20,
+          "keywords": [
+            "기획력",
+            "적합성",
+            "교육 내용",
+            "우수성"
+          ]
+        },
+        {
+          "category": "기술평가(정성)",
+          "description": "강사진 구성 능력 (클라우드·AI 분야 공인 자격 또는 전문성을 보유한 강사진 구성)",
+          "weight": 15,
+          "keywords": [
+            "강사진 구성",
+            "공인 자격",
+            "전문성"
+          ]
+        },
+        {
+          "category": "기술평가(정성)",
+          "description": "제안업체 전문성 및 조직역량 (조직 및 인원, 책임자의 능력, 전담 인력 구성 및 투입 규모)",
+          "weight": 15,
+          "keywords": [
+            "전문성",
+            "조직역량",
+            "전담 인력",
+            "책임자 능력"
+          ]
+        },
+        {
+          "category": "기술평가(정성)",
+          "description": "안전관리 및 계획 (참여인원 안전관리 대책, 기타 비상시 대책)",
+          "weight": 10,
+          "keywords": [
+            "안전관리",
+            "비상대책"
+          ]
+        },
+        {
+          "category": "기술평가(정량)",
+          "description": "최근 3년 실적의 수준 (2024~2026년 누적 실적 평가)",
+          "weight": 10,
+          "keywords": [
+            "누적 실적",
+            "수행 실적"
+          ]
+        },
+        {
+          "category": "기술평가(정량)",
+          "description": "기업경영상태 (기업신용평가 등급에 의함)",
+          "weight": 10,
+          "keywords": [
+            "기업경영상태",
+            "신용평가등급"
+          ]
+        },
+        {
+          "category": "가격평가",
+          "description": "제안가격의 적정성 (정량평가)",
+          "weight": 20,
+          "keywords": [
+            "제안가격",
+            "가격평가"
+          ]
+        }
+      ],
+      "overview": {
+        "section_titles": [
+          "나. 교육개요",
+          "추진내용",
+          "추진내용 | 작업 프로세스",
+          "교육 목적",
+          "교육개요",
+          "과업내용",
+          "세부 수행 내용(안)"
+        ],
+        "summary": "순천향대학교에서 약 20명의 학생을 대상으로 이론과 실습 및 프로젝트 기반 학습을 병행하여 클라우드 및 AI 전문 실무 역량을 배양하고, 자격 취득과 취업을 연계 지원하는 50시간 규모의 교육과정을 기획·운영하는 용역",
+        "core_topics": [
+          "데이터 주권(소버린 AI)",
+          "클라우드",
+          "인공지능(AI)",
+          "AI 도구"
+        ],
+        "target_audience": [
+          "순천향대학교 학생 및 참여인원 약 20명"
+        ],
+        "delivery_formats": [
+          "이론/실습 병행 현장 중심 교육",
+          "프로젝트 기반 학습",
+          "오프라인 교육 (순천향대학교 인간사랑관)"
+        ],
+        "required_roles": [
+          "교육과정 기획 및 지원",
+          "강사(주강사, 보조강사) 및 현업 전문가 섭외",
+          "교육 인프라(클라우드 계정 및 크레딧) 지원 및 모니터링",
+          "전담 인력 배정 및 학생 관리",
+          "수강생 평가 및 공인 자격증 취득 모의평가 지원",
+          "홍보물 및 교재 제작"
+        ],
+        "scope": [
+          "총 50시간의 교육과정 기획 및 운영",
+          "클라우드·AI 전문 강사진 배정 및 지원",
+          "교육용 클라우드 플랫폼 계정/크레딧 운영 및 관리",
+          "온라인 협업 플랫폼 활용 학생 관리",
+          "교재 및 홍보물(현수막, 포스터, 카드뉴스 등) 제작",
+          "결과 보고서 제출"
+        ],
+        "expected_outcomes": [
+          "안전하고 책임 있는 AI 활용 역량 배양",
+          "실무 적용 역량 및 문제 해결/협업 역량 강화",
+          "클라우드·AI 분야 자격 취득 및 취업 경쟁력 강화"
+        ],
+        "preferred_experience": [],
+        "source_excerpt": "나. 교육개요\n1) 사 업 명 : 클라우드 및 AI 전문 교육과정 운영\n\n추진내용\n1주 2주 3주 4주 5주 6주\n\n추진내용 | 작업 프로세스\n1주 | 2주 | 3주 | 4주 | 5주 | 6주",
+        "matching_rules": [
+          {
+            "key": "core_topics",
+            "label": "핵심 교육 주제",
+            "values": [
+              "데이터 주권(소버린 AI)",
+              "클라우드",
+              "인공지능(AI)",
+              "AI 도구"
+            ]
+          },
+          {
+            "key": "target_audience",
+            "label": "교육 대상",
+            "values": [
+              "순천향대학교 학생 및 참여인원 약 20명"
+            ]
+          },
+          {
+            "key": "delivery_formats",
+            "label": "운영 방식",
+            "values": [
+              "이론/실습 병행 현장 중심 교육",
+              "프로젝트 기반 학습",
+              "오프라인 교육 (순천향대학교 인간사랑관)"
+            ]
+          },
+          {
+            "key": "required_roles",
+            "label": "요구 역할",
+            "values": [
+              "교육과정 기획 및 지원",
+              "강사(주강사, 보조강사) 및 현업 전문가 섭외",
+              "교육 인프라(클라우드 계정 및 크레딧) 지원 및 모니터링",
+              "전담 인력 배정 및 학생 관리",
+              "수강생 평가 및 공인 자격증 취득 모의평가 지원",
+              "홍보물 및 교재 제작"
+            ]
+          },
+          {
+            "key": "scope",
+            "label": "업무 범위",
+            "values": [
+              "총 50시간의 교육과정 기획 및 운영",
+              "클라우드·AI 전문 강사진 배정 및 지원",
+              "교육용 클라우드 플랫폼 계정/크레딧 운영 및 관리",
+              "온라인 협업 플랫폼 활용 학생 관리",
+              "교재 및 홍보물(현수막, 포스터, 카드뉴스 등) 제작",
+              "결과 보고서 제출"
+            ]
+          },
+          {
+            "key": "expected_outcomes",
+            "label": "기대 성과",
+            "values": [
+              "안전하고 책임 있는 AI 활용 역량 배양",
+              "실무 적용 역량 및 문제 해결/협업 역량 강화",
+              "클라우드·AI 분야 자격 취득 및 취업 경쟁력 강화"
+            ]
+          }
+        ]
+      }
+    },
+    "evidence": [
+      {
+        "source_document_id": "task-order:9c66c411-5b62-4d1d-9973-3d2992266302",
+        "page": null,
+        "section": "normalized task-order requirements",
+        "quote": "제 안 요 청 서\n클라우드 및 AI 전문 교육과정 운영 용역 입찰\n2026. 6.\n※ 본 자료는 제안내용의 설명을 위한 배포자료로, 이외 목적으로 무단복제, 전달 및 사용하는 행위를 금함.\nI 입찰 내용\n1. 입 찰 명 : 클라우드 및 AI 전문 교육과정 운영 용역 입찰\n2. 사업기간 : 계약체결일 ~ 2026.8.31.까지\n3. 배정예산 : 금 50,000,000원(금오천만원) 내(부가세 포함)\n4. 입찰개요\n가. 교육 목적\n1) 데이터 주권(소버린 AI)의 중요성을 이해하고, 기업 핵심 데이터의 안전한 활용 역량을 갖춘 인재 양성\n2) AI 도구를 활용해 업무 효율을 높이는 실무 기초 역량 배양\n3) 프로젝트 기반 학습을 통해 AI 활용 역량을 강화하고, 클라우드·AI 분야 자격 취득과 취업 연계를\n지원하는 전주기적 교육체계를 구축\n나. 교육개요\n1) 사 업 명 : 클라우드 및 AI 전문 교육과정 운영\n2) 교육기간 : 2026.7.15.(수) ~ 7.29.(수)\n3) 진행장소 : 순천향대학교 인간사랑관 2층 임베디드 실습실 6205호\n4) 추진방향\n가) 데이터 주권 이해를 바탕으로 안전하고 책임 있는 AI 활용 역량 배양\n나) 이론과 실습을 병행하는 현장 중심 교육을 통해 클라우드·AI 기술의 실무 적용 역량 제고\n다) 프로젝트 기반 학습을 통한 문제 해결 능력 및 협업 역량 강화\n라) 클라우드·AI 분야 자격 취득 지원 및 산업체 연계를 통한 취업 경쟁력 강화\n5) 참여인원 : 약 20명\n6) 주최/주관 : 순천향대학교/AI의료융합혁신교육원 학사지원팀\n다. 과업내용\n1) 교육 지원 전반사항\n가) 교육과정 기획·지원\n- 클라우드·AI 교육과정에 적합한 이론/실습 병행 현장형 교육과정 기획 및 제안\n- 2026.7.15.~7.29. 총 50시간 교육 일정 운영, 기획 및 지원\n나) 강사 섭외 및 지원\n- 클라우드 및 AI 활용 교육 강사 섭외 및 교육 진행(주강사, 보조강사)\n- 클라우드·AI 분야 전문 강사진 포함 지원\n- 현업 전문가 특강(현직자 특강)",
+        "confidence": 1.0
+      }
+    ],
+    "review_status": "unreviewed"
+  },
+  "instructor": {
+    "instructor_id": "instructor-81",
+    "profile_version": "db-3f4c7f8174f1",
+    "display_name": "임경혜",
+    "expertise_tags": [
+      "Java",
+      "Servlet",
+      "JSP",
+      "EJB",
+      "MyBatis",
+      "Struts",
+      "Spring",
+      "DevOn Framework",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "XML",
+      "AJAX",
+      "jQuery",
+      "Vue.js",
+      "Oracle SQL",
+      "PL",
+      "SQL",
+      "MySQL",
+      "Android",
+      "C Programming",
+      "COBOL",
+      "Java Programming",
+      "Web Application Development",
+      "Mobile Platform & Android",
+      "Object-Oriented Analysis & Design (UML)",
+      "Database Modeling & SQL",
+      "SW 아카데미",
+      "SSAFY",
+      "인공지능",
+      "자율주행",
+      "영상처리",
+      "스마트시티",
+      "데이터레이크",
+      "Web UI",
+      "Web Project",
+      "AI Cloud",
+      "Network AI",
+      "IT",
+      "DX",
+      "B2B Delivery",
+      "소프트웨어",
+      "IT 전문가",
+      "AI",
+      "SW 개발",
+      "신입기술과정",
+      "SW개발",
+      "신입예정자",
+      "IT 역량",
+      "Web Framework",
+      "Web Programming",
+      "Team Project",
+      "DB",
+      "Web",
+      "빅데이터",
+      "안드로이드",
+      "eGovFrame",
+      "클라우드",
+      "SAP ERP",
+      "영업분석",
+      "금융서비스",
+      "웹 개발",
+      "S",
+      "W공학",
+      "시큐어코딩",
+      "자바",
+      "Framework",
+      "NHN",
+      "Web Component",
+      "웹서비스",
+      "신입사원",
+      "VCC",
+      "Web2.0",
+      "OOAD",
+      "UML",
+      "U-CAMP",
+      "컨설팅",
+      "OS",
+      "C",
+      "Mobile Platform",
+      "JDBC",
+      "웹 컴포넌트",
+      "Java Web",
+      "Mobile",
+      "Web Services",
+      "JWSDP",
+      "J2ME",
+      "Wireless",
+      "차세대기술"
+    ],
+    "summary": "20년 이상 경력의 Java 및 웹/모바일 전문 강사",
+    "delivery_modes": [],
+    "availability_notes": null,
+    "vendor_experience": [
+      "삼성전자㈜ - 삼성 청년 SW 아카데미(SSAFY) 7기 ~ 9기 전임강사, 강의",
+      "㈜LG CNS - 교육사업부 U-CAMP JAVA 전문가과정 전임강사, 강의/교재개발/과정컨설팅",
+      "㈜LG CNS 기술대학원 - 교육사업부 U-CAMP과정 전임강사, 강의/교재개발/과정컨설팅",
+      "한국썬마이크로시스템즈㈜ - 교육사업부 전임강사, 강의 및 교재개발",
+      "SK 건설(주) - IT 기획팀 대리, 분석/설계/개발"
+    ],
+    "vendor_certifications": [
+      "SQLD ( SQL Developer )",
+      "PMP (Project Management Professional)",
+      "ITIL Foundation",
+      "SCNA (Sun Certified Network Administrator)",
+      "SCSA (Sun Certified System Administrator)",
+      "SCWCD (Sun Certified Web Component Developer)",
+      "정보처리기사",
+      "SCJP (Sun Certified Java Programmer)"
+    ],
+    "teaching_items": [
+      {
+        "topic": "삼성 청년 SW 아카데미(SSAFY) 7기 ~ 9기",
+        "organization": "삼성전자㈜",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1834",
+            "quote": "삼성 청년 SW 아카데미(SSAFY) 7기 ~ 9기",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "자율주행 영상처리를 위한 인공지능 SW 개발자 양성 과정",
+        "organization": "엔코아 교육센터 플레이데이터",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1835",
+            "quote": "자율주행 영상처리를 위한 인공지능 SW 개발자 양성 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "스마트시티 국토정보관리 데이터레이크 전문가 양성과정",
+        "organization": "엔코아 교육센터 플레이데이터",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1836",
+            "quote": "스마트시티 국토정보관리 데이터레이크 전문가 양성과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "LG CNS 협력회사 신입사원 U-CAMP JAVA 전문가 과정 33기",
+        "organization": "LG CNS",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1837",
+            "quote": "LG CNS 협력회사 신입사원 U-CAMP JAVA 전문가 과정 33기",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "미래인재육성프로젝트 AI Cloud",
+        "organization": "KT",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1840",
+            "quote": "미래인재육성프로젝트 AI Cloud",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "미래인재육성프로젝트 Network AI",
+        "organization": "KT",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1839",
+            "quote": "미래인재육성프로젝트 Network AI",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "미래인재육성프로젝트 IT/DX B2B Delivery",
+        "organization": "KT",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1838",
+            "quote": "미래인재육성프로젝트 IT/DX B2B Delivery",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Java 집중 캠프",
+        "organization": "안동대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1841",
+            "quote": "Java 집중 캠프",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "JavaScript 실무활용",
+        "organization": "대구 소프트웨어 고등학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": 28,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1842",
+            "quote": "JavaScript 실무활용",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "LG CNS 협력회사 신입사원 U-CAMP JAVA 전문가 과정 32기",
+        "organization": "LG CNS",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1843",
+            "quote": "LG CNS 협력회사 신입사원 U-CAMP JAVA 전문가 과정 32기",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "하계방학 소프트웨어 집중 과정",
+        "organization": "선문대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1844",
+            "quote": "하계방학 소프트웨어 집중 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "취업 연계 IT 전문가 양성 교육과정",
+        "organization": "인제대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": 70,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1845",
+            "quote": "취업 연계 IT 전문가 양성 교육과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "LG CNS 협력회사 신입사원 U-CAMP JAVA 전문가 과정 31기",
+        "organization": "LG CNS",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1846",
+            "quote": "LG CNS 협력회사 신입사원 U-CAMP JAVA 전문가 과정 31기",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "KT 4차 산업 아카데미 과정 / AI/SW 개발 기술 과정",
+        "organization": "KT",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1848",
+            "quote": "KT 4차 산업 아카데미 과정 / AI/SW 개발 기술 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "2020 신규직원 기본전산교육 JAVA 활용 과정",
+        "organization": "국민건강보험공단본부",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1847",
+            "quote": "2020 신규직원 기본전산교육 JAVA 활용 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "LG CNS 협력회사 신입사원 U-CAMP JAVA 전문가 과정 30기",
+        "organization": "LG CNS",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1849",
+            "quote": "LG CNS 협력회사 신입사원 U-CAMP JAVA 전문가 과정 30기",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "LG CNS 신입기술과정 (ICST)",
+        "organization": "LG CNS",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1850",
+            "quote": "LG CNS 신입기술과정 (ICST)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "실무개발자를 위한 Android Application Programming 과정",
+        "organization": "신한은행 (신한 DS)",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1853",
+            "quote": "실무개발자를 위한 Android Application Programming 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "제4차산업 AI/SW개발 기술 익히기",
+        "organization": "KT",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1852",
+            "quote": "제4차산업 AI/SW개발 기술 익히기",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "SK㈜ 협력사 신입예정자과정 (행복성장캠퍼스)",
+        "organization": "SK",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1851",
+            "quote": "SK㈜ 협력사 신입예정자과정 (행복성장캠퍼스)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "실무개발자를 위한 Java Programming중급 과정",
+        "organization": "롯데정보통신㈜",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1854",
+            "quote": "실무개발자를 위한 Java Programming중급 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "COBOL 실무개발자를 위한 Java Programming Beginner과정",
+        "organization": "SK 주식회사",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1855",
+            "quote": "COBOL 실무개발자를 위한 Java Programming Beginner과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "LG CNS 협력회사 신입사원 U-CAMP JAVA 전문가 과정 29기",
+        "organization": "LG CNS",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1856",
+            "quote": "LG CNS 협력회사 신입사원 U-CAMP JAVA 전문가 과정 29기",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "2018학년도 전공능력역량강화 캠프 (JAVA 소프트웨어 개발과정)",
+        "organization": "광주 마이스터 고등학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1857",
+            "quote": "2018학년도 전공능력역량강화 캠프 (JAVA 소프트웨어 개발과정)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "2018년 IT 역량 강화과정",
+        "organization": "KB 손해보험",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1859",
+            "quote": "2018년 IT 역량 강화과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "지능정보사회를 위한 응용 Web Framework 개발자 양성과정",
+        "organization": "KOSTA (한국소프트웨어 기술진흥협회)",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1858",
+            "quote": "지능정보사회를 위한 응용 Web Framework 개발자 양성과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "LG CNS 협력회사 신입사원 U-CAMP JAVA 전문가 과정 28기",
+        "organization": "LG CNS",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1860",
+            "quote": "LG CNS 협력회사 신입사원 U-CAMP JAVA 전문가 과정 28기",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "SWFC 신입사원 과정 (Web Programming & Team Project)",
+        "organization": "삼성전자㈜ 기흥",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": 160,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1861",
+            "quote": "SWFC 신입사원 과정 (Web Programming & Team Project)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Android & Web App. 개발을 위한 Java & DB 개발과정",
+        "organization": "서울여자대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1862",
+            "quote": "Android & Web App. 개발을 위한 Java & DB 개발과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "4차 산업혁명의 모바일 기반 기술 Java & Android 엔지니어 양성과정",
+        "organization": "KOSTA (한국소프트웨어 기술진흥협회)",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1863",
+            "quote": "4차 산업혁명의 모바일 기반 기술 Java & Android 엔지니어 양성과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "2018 kt ds 신입사원 입문교육",
+        "organization": "kt ds",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1864",
+            "quote": "2018 kt ds 신입사원 입문교육",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Android & Web App. 개발을 위한 Java & DB 개발과정",
+        "organization": "서울여자대학교 (여성공학인재양성사업단)",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1865",
+            "quote": "Android & Web App. 개발을 위한 Java & DB 개발과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "2017년 청년취업아카데미 빅데이터 기반 안드로이드 프로그래밍 전문 개발자 양성과정",
+        "organization": "KSA(한국표준협회) (삼육대학교)",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1867",
+            "quote": "2017년 청년취업아카데미 빅데이터 기반 안드로이드 프로그래밍 전문 개발자 양성과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "클라우드 기반 eGovFrame 프로그래밍 개발자 양성과정",
+        "organization": "KOSTA (한국소프트웨어 기술진흥협회)",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1866",
+            "quote": "클라우드 기반 eGovFrame 프로그래밍 개발자 양성과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "2017년 하반기 신입 IT 입문교육 (Java & Web Programming)",
+        "organization": "롯데정보통신㈜",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1868",
+            "quote": "2017년 하반기 신입 IT 입문교육 (Java & Web Programming)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "2017년도 빅데이터 청년인재 양성 교육",
+        "organization": "KODB(한국데이터베이스진흥원) - 부산대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1869",
+            "quote": "2017년도 빅데이터 청년인재 양성 교육",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "2017년 상반기 신입 IT 입문교육 (Java & Web Programming)",
+        "organization": "롯데정보통신㈜",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1870",
+            "quote": "2017년 상반기 신입 IT 입문교육 (Java & Web Programming)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "신입과정 (Java & Web Programming)",
+        "organization": "㈜동부 IT 부문",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1871",
+            "quote": "신입과정 (Java & Web Programming)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "WE-UP사업 특강 자바 심화과정",
+        "organization": "서울여자대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1872",
+            "quote": "WE-UP사업 특강 자바 심화과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "2016년 청년취업아카데미 빅데이터 기반 안드로이드 프로그래밍 전문 개발자 양성과정",
+        "organization": "한국산업인력공단 (삼육대학교 컴퓨터학부)",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1873",
+            "quote": "2016년 청년취업아카데미 빅데이터 기반 안드로이드 프로그래밍 전문 개발자 양성과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "2016년 청년취업아카데미 SAP ERP를 활용한 영업분석 전문가 과정",
+        "organization": "한국생산성본부 (국민대학교 인문학부)",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1874",
+            "quote": "2016년 청년취업아카데미 SAP ERP를 활용한 영업분석 전문가 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "IT 금융서비스 융합 신입인력 양성과정",
+        "organization": "한경닷컴 IT교육센터",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1875",
+            "quote": "IT 금융서비스 융합 신입인력 양성과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Java Programming",
+        "organization": "CJ 올리브네트웍스",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1876",
+            "quote": "Java Programming",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "신입과정 (Java & Web Programming)",
+        "organization": "㈜동부 IT 부문",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1877",
+            "quote": "신입과정 (Java & Web Programming)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "M0 신입사원 프로그래밍 과정 (Servlet/JSP를 활용한 웹 개발)",
+        "organization": "kt ds",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1878",
+            "quote": "M0 신입사원 프로그래밍 과정 (Servlet/JSP를 활용한 웹 개발)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "M0 신입사원 프로그래밍 과정 (S/W공학, SQL/DB Modeling, Java Programming)",
+        "organization": "kt ds",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1880",
+            "quote": "M0 신입사원 프로그래밍 과정 (S/W공학, SQL/DB Modeling, Java Programming)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "2015년 청년취업아카데미 빅데이터 기반 안드로이드 프로그래밍 전문 개발자 양성과정",
+        "organization": "한국산업인력공단 (삼육대학교)",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1879",
+            "quote": "2015년 청년취업아카데미 빅데이터 기반 안드로이드 프로그래밍 전문 개발자 양성과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "삼성전자 반도체 단지총괄쪽 신입사원 교육과정 Web Programming(XML, Servlet & JSP)",
+        "organization": "삼성전자㈜ 기흥",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1881",
+            "quote": "삼성전자 반도체 단지총괄쪽 신입사원 교육과정 Web Programming(XML, Servlet & JSP)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Android & Web 기반의 App. 개발을 위한 Java 개발 과정",
+        "organization": "서울여자대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1882",
+            "quote": "Android & Web 기반의 App. 개발을 위한 Java 개발 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "시큐어코딩 자바",
+        "organization": "한국디지털컨버전스협회",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1883",
+            "quote": "시큐어코딩 자바",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Android App. 개발을 위한 Java 개발자과정",
+        "organization": "서울여자대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1886",
+            "quote": "Android App. 개발을 위한 Java 개발자과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "DB 개발자 과정 (Java, SQL, Web Component, Framework, Project)",
+        "organization": "KODB (삼육대학교)",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1887",
+            "quote": "DB 개발자 과정 (Java, SQL, Web Component, Framework, Project)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "DB 개발자 과정 (Java, SQL, Web Component, Framework, Project)",
+        "organization": "KODB (삼육대학교)",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1888",
+            "quote": "DB 개발자 과정 (Java, SQL, Web Component, Framework, Project)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "개발 실무자를 위한 자바 핵심 프로그래밍",
+        "organization": "다우기술",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1889",
+            "quote": "개발 실무자를 위한 자바 핵심 프로그래밍",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Android App. 개발을 위한 Java 개발자과정",
+        "organization": "서울여자대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1890",
+            "quote": "Android App. 개발을 위한 Java 개발자과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "DB 개발자 과정 (Java, SQL, Web Component, Framework, Project)",
+        "organization": "KODB (서울여자대학교)",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1891",
+            "quote": "DB 개발자 과정 (Java, SQL, Web Component, Framework, Project)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "jQuery 기반 Ajax 프로젝트 실습 (새롬정보 재직자)",
+        "organization": "KICOX (한국산업단지공단)",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1893",
+            "quote": "jQuery 기반 Ajax 프로젝트 실습 (새롬정보 재직자)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "NHN 소프트웨어 멤버십 예비과정 (Java, Servlet & JSP, XML, Ajax, iBatis, Spring, Project)",
+        "organization": "(주)NHN (네이버)",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1892",
+            "quote": "NHN 소프트웨어 멤버십 예비과정 (Java, Servlet & JSP, XML, Ajax, iBatis, Spring, Project)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Android App. 개발을 위한 Java 개발자과정",
+        "organization": "서울여자대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1894",
+            "quote": "Android App. 개발을 위한 Java 개발자과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "DB 개발자 과정 (Java, SQL, Web, Framework)",
+        "organization": "KODB (서울여자대학교)",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1895",
+            "quote": "DB 개발자 과정 (Java, SQL, Web, Framework)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Java IT 솔루션 응용프로그램 실무 (Web Component)",
+        "organization": "KICOX (한국산업단지공단)",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1896",
+            "quote": "Java IT 솔루션 응용프로그램 실무 (Web Component)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "OTS 신입사원 IT 직무교육과정 (Java & SQL, Web)",
+        "organization": "삼성 멀티 캠퍼스",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1898",
+            "quote": "OTS 신입사원 IT 직무교육과정 (Java & SQL, Web)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "XML & 웹서비스",
+        "organization": "HP 교육센터",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1897",
+            "quote": "XML & 웹서비스",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Java Programming",
+        "organization": "삼성전자㈜",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1899",
+            "quote": "Java Programming",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "LG CNS 신입사원과정(VCC)",
+        "organization": "LG CNS",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1885",
+            "quote": "LG CNS 신입사원과정(VCC)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Ajax를 이용한 Web2.0 Application 개발",
+        "organization": "KICOX (한국산업단지공단)",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1900",
+            "quote": "Ajax를 이용한 Web2.0 Application 개발",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Java Programming",
+        "organization": "삼성전자㈜",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1901",
+            "quote": "Java Programming",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "XML 실무 과정",
+        "organization": "롯데정보통신㈜",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1902",
+            "quote": "XML 실무 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "OO Analysis & Design Using UML",
+        "organization": "현대정보기술",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1903",
+            "quote": "OO Analysis & Design Using UML",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "LG CNS 협력회사 신입사원 (U-CAMP JAVA 전문가과정 1기 ~ 21기) 과정 컨설팅, 과정/교재 개발",
+        "organization": "LG CNS",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1884",
+            "quote": "LG CNS 협력회사 신입사원 (U-CAMP JAVA 전문가과정 1기 ~ 21기) 과정 컨설팅, 과정/교재 개발",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Java 기반의 전문 인력 양성 (Java, Web Component, Project)",
+        "organization": "(주)정도유아이티",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1904",
+            "quote": "Java 기반의 전문 인력 양성 (Java, Web Component, Project)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "OOAD & UML",
+        "organization": "하나은행(주)",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1905",
+            "quote": "OOAD & UML",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "O/S 및 C Programming",
+        "organization": "MDS 테크놀로지(주)",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1906",
+            "quote": "O/S 및 C Programming",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Java Programming",
+        "organization": "(주)KT인재개발원",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1907",
+            "quote": "Java Programming",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "통신단말기 기술세미나 (Mobile Platform)",
+        "organization": "삼성전자(주)",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1908",
+            "quote": "통신단말기 기술세미나 (Mobile Platform)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "공군개발자 IT분야 자바 프로그래밍",
+        "organization": "(주)KT 인재개발원",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1909",
+            "quote": "공군개발자 IT분야 자바 프로그래밍",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "JDBC & Web Component Programming",
+        "organization": "서울여자대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1910",
+            "quote": "JDBC & Web Component Programming",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Java 기반 기술 교육 실무자를 위한 웹 컴포넌트 개발",
+        "organization": "(주)신한은행",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1911",
+            "quote": "Java 기반 기술 교육 실무자를 위한 웹 컴포넌트 개발",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Java Web Expert 과정",
+        "organization": "재단법인 윤익인력개발원",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1912",
+            "quote": "Java Web Expert 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Java Mobile Programming",
+        "organization": "포스데이터㈜",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1913",
+            "quote": "Java Mobile Programming",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "부산 모바일 세미나",
+        "organization": "동명정보대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1916",
+            "quote": "부산 모바일 세미나",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "대구 모바일 세미나",
+        "organization": "(주)GB테크",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1915",
+            "quote": "대구 모바일 세미나",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "정보통신 총괄 신입사원 Mobile Platform",
+        "organization": "삼성전자㈜",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1914",
+            "quote": "정보통신 총괄 신입사원 Mobile Platform",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "JDBC를 활용한 자바 프로젝트 실전",
+        "organization": "한국산업인력공단 서울본부",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1917",
+            "quote": "JDBC를 활용한 자바 프로젝트 실전",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "실무자를 위한 웹 컴포넌트 개발",
+        "organization": "포스데이타(주)",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1918",
+            "quote": "실무자를 위한 웹 컴포넌트 개발",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Java Mobile Programming",
+        "organization": "포스데이타(주)",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1919",
+            "quote": "Java Mobile Programming",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Web Services Programming with JWSDP",
+        "organization": "중앙인력개발센타",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1920",
+            "quote": "Web Services Programming with JWSDP",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Developing J2ME and Wireless Applications",
+        "organization": "포스데이타(주)",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1922",
+            "quote": "Developing J2ME and Wireless Applications",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Java Overview for Non Developer",
+        "organization": "대우정보시스템",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1921",
+            "quote": "Java Overview for Non Developer",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Advanced Servlet & JSP Workshop",
+        "organization": "중앙고용정보원",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1923",
+            "quote": "Advanced Servlet & JSP Workshop",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "실무자를 위한 웹 컴포넌트 개발",
+        "organization": "포스데이타(주) 포항사무소",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1924",
+            "quote": "실무자를 위한 웹 컴포넌트 개발",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "차세대기반기술교육",
+        "organization": "(주)국민은행",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1925",
+            "quote": "차세대기반기술교육",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Java, Web Component, EJB, Mobile Programming & Platform, OOAD & UML",
+        "organization": "한국 썬 교육센터",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 1926",
+            "quote": "Java, Web Component, EJB, Mobile Programming & Platform, OOAD & UML",
+            "confidence": 1.0
+          }
+        ]
+      }
+    ],
+    "project_items": [],
+    "work_experience_items": [
+      {
+        "organization": "삼성전자㈜",
+        "summary": "삼성 청년 SW 아카데미(SSAFY) 7기 ~ 9기 전임강사, 강의",
+        "start_date": "2022-01-01",
+        "end_date": "2023-05-01",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 801",
+            "quote": "삼성 청년 SW 아카데미(SSAFY) 7기 ~ 9기 전임강사, 강의",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "organization": "㈜LG CNS",
+        "summary": "교육사업부 U-CAMP JAVA 전문가과정 전임강사, 강의/교재개발/과정컨설팅",
+        "start_date": "2018-09-01",
+        "end_date": "2021-05-01",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 800",
+            "quote": "교육사업부 U-CAMP JAVA 전문가과정 전임강사, 강의/교재개발/과정컨설팅",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "organization": "㈜LG CNS 기술대학원",
+        "summary": "교육사업부 U-CAMP과정 전임강사, 강의/교재개발/과정컨설팅",
+        "start_date": "2006-04-01",
+        "end_date": "2015-05-01",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 799",
+            "quote": "교육사업부 U-CAMP과정 전임강사, 강의/교재개발/과정컨설팅",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "organization": "한국썬마이크로시스템즈㈜",
+        "summary": "교육사업부 전임강사, 강의 및 교재개발",
+        "start_date": "2001-04-01",
+        "end_date": "2006-03-01",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 798",
+            "quote": "교육사업부 전임강사, 강의 및 교재개발",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "organization": "SK 건설(주)",
+        "summary": "IT 기획팀 대리, 분석/설계/개발",
+        "start_date": "1992-07-01",
+        "end_date": "2000-10-01",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 797",
+            "quote": "IT 기획팀 대리, 분석/설계/개발",
+            "confidence": 1.0
+          }
+        ]
+      }
+    ],
+    "certifications": [
+      {
+        "name": "SQLD ( SQL Developer )",
+        "issuer": "KDB (Korea Database Agency)",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 802",
+            "quote": "SQLD ( SQL Developer )",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "PMP (Project Management Professional)",
+        "issuer": "PMI (Project Management Institute)",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 803",
+            "quote": "PMP (Project Management Professional)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "ITIL Foundation",
+        "issuer": "OGC (Office of Government Commerce)",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 805",
+            "quote": "ITIL Foundation",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "SCNA (Sun Certified Network Administrator)",
+        "issuer": "Sun Microsystems",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 806",
+            "quote": "SCNA (Sun Certified Network Administrator)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "SCSA (Sun Certified System Administrator)",
+        "issuer": "Sun Microsystems",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 807",
+            "quote": "SCSA (Sun Certified System Administrator)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "SCWCD (Sun Certified Web Component Developer)",
+        "issuer": "Sun Microsystems",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 808",
+            "quote": "SCWCD (Sun Certified Web Component Developer)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "정보처리기사",
+        "issuer": "한국산업인력공단",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 804",
+            "quote": "정보처리기사",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "SCJP (Sun Certified Java Programmer)",
+        "issuer": "Sun Microsystems",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 809",
+            "quote": "SCJP (Sun Certified Java Programmer)",
+            "confidence": 1.0
+          }
+        ]
+      }
+    ],
+    "source_document_ids": [
+      "instructor-source:내부 강사 정보.xlsx",
+      "instructor-db:81"
+    ],
+    "extensions": {
+      "other_records": [
+        {
+          "category": "저서",
+          "detail": "Software 개발자 능력평가 (LG 전자 S/W 개발자 필기, 실기 문제 개발)",
+          "organization": "LG 전자",
+          "start_date": "2012",
+          "end_date": null
+        },
+        {
+          "category": "저서",
+          "detail": "Web Component Programming (LG CNS 기술대학 직원 교육용)",
+          "organization": "LG CNS",
+          "start_date": "2009",
+          "end_date": null
+        },
+        {
+          "category": "저서",
+          "detail": "Java Fundamental & Programming (LG CNS On-Line Contents 과정 개발)",
+          "organization": "LG CNS",
+          "start_date": "2008",
+          "end_date": null
+        },
+        {
+          "category": "저서",
+          "detail": "JDBC Programming (LG CNS 기술대학 직원 교육용)",
+          "organization": "LG CNS",
+          "start_date": "2008",
+          "end_date": null
+        },
+        {
+          "category": "저서",
+          "detail": "SQL & PL/SQL (LG CNS 기술대학 직원 교육용)",
+          "organization": "LG CNS",
+          "start_date": "2008",
+          "end_date": null
+        },
+        {
+          "category": "저서",
+          "detail": "모바일 플랫폼 (삼성전자 사내 직원 교육용)",
+          "organization": "삼성전자(주)",
+          "start_date": "2004",
+          "end_date": null
+        },
+        {
+          "category": "저서",
+          "detail": "모바일 환경과 기술동향 (포스데이타 사내 직원 교육용)",
+          "organization": "포스데이터(주)",
+          "start_date": "2004",
+          "end_date": null
+        },
+        {
+          "category": "저서",
+          "detail": "Java Web Component Programming (SK C&C 사내 직원교육용)",
+          "organization": "SK C&C",
+          "start_date": "2003",
+          "end_date": null
+        }
+      ]
+    },
+    "evidence": [
+      {
+        "source_document_id": "instructor-db:81",
+        "page": null,
+        "section": "instructors",
+        "quote": "20년 이상 경력의 Java 및 웹/모바일 전문 강사",
+        "confidence": 1.0
+      }
+    ],
+    "review_status": "unreviewed"
+  }
+}

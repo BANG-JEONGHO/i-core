@@ -1,0 +1,866 @@
+{
+  "project": {
+    "schema_version": "education_project_v1",
+    "service_type": "education_program",
+    "program_type": "vocational_training",
+    "classification_confidence": 1.0,
+    "base": {
+      "project_name": "(과업지시서) [RISE사업] AWS C3 인증센터 구축 및 교직원 역량 강화 교육 운영.pdf",
+      "client_organization": null,
+      "purpose": [
+        "울산과학대학교 교직원 및 교원을 대상으로 AWS C3 인증센터를 구축하고, 클라우드 및 AI 역량 강화를 위한 기초통합교육, SAA 교육, AAI 교육 등 맞춤형 프로그램을 개발 및 운영하는 사업입니다.",
+        "AWS C3 시험장 인프라 구축(1인 독립부스)",
+        "학습 플랫폼 라이선스 및 AWS 실습 환경 구축",
+        "AWS C3 운영 시스템 및 Tier 관리 구축",
+        "AWS 교직원 역량 강화 교육 운영(기초통합, SAA, AAI)",
+        "교육 효과성 분석 및 만족도 설문조사",
+        "최종 성과물 및 결과보고서 제출",
+        "지역 디지털 전환 촉진 및 실무형 클라우드-AI 역량을 갖춘 인재 양성",
+        "대학 자체 글로벌 표준 교육 체계 구축",
+        "디지털 혁신 기여 및 학생 취업인식 개선"
+      ],
+      "contract_method": null,
+      "start_date": null,
+      "end_date": null,
+      "budget_krw": null,
+      "vat_included": null,
+      "deliverables": [
+        "AWS C3 시험장 인프라 구축(1인 독립부스)",
+        "학습 플랫폼 라이선스 및 AWS 실습 환경 구축",
+        "AWS C3 운영 시스템 및 Tier 관리 구축",
+        "AWS 교직원 역량 강화 교육 운영(기초통합, SAA, AAI)",
+        "교육 효과성 분석 및 만족도 설문조사",
+        "최종 성과물 및 결과보고서 제출",
+        "지역 디지털 전환 촉진 및 실무형 클라우드-AI 역량을 갖춘 인재 양성",
+        "대학 자체 글로벌 표준 교육 체계 구축",
+        "디지털 혁신 기여 및 학생 취업인식 개선"
+      ],
+      "proposal_requirements": [
+        "국가를 당사자로 하는 계약에 관한 법률 시행령 제12조 및 동법 시행규칙 제14조에 의한 자격요건을 갖추고 부정당업자로 등록되거나 제재받은 사실이 없는 업체",
+        "공고일 기준 사업장의 소재지가 울산광역시 또는 부산광역시에 위치한 업체",
+        "공고일 기준 최근 3년 이내 국내 대학 및 전문대학 또는 공공기관에서 유사한 위탁운영 실적이 단일건수 기준 5천만원 이상 1건 이상 실행업체(사업완료 건수)",
+        "단계별 AWS 공인 전문 강사로 구성",
+        "성범죄 경력, 아동학대 전력 등에 의해 과업 수행에 자격이 없는 강사 배제 및 전력 조회 협조",
+        "AWS 공인 전문 강사",
+        "과업관리 책임자"
+      ],
+      "compliance_requirements": [
+        "평가 교육과정 개발 (사업목적에 부합하는 교육 컨텐츠 구성, 교육 컨텐츠 개발 프로세스 및 연구의 전문성과 독창성)",
+        "사업목적에 부합하는 교육 컨텐츠 구성 (교육 목적에 맞는 프로그램 구성 및 내용의 충실성)"
+      ]
+    },
+    "education": {
+      "technology_domains": [
+        "AWS C3 구축",
+        "교직원 역량 강화 교육",
+        "클라우드",
+        "AI",
+        "SAA-C03",
+        "국가계약법",
+        "자격요건",
+        "부정당업자",
+        "울산광역시",
+        "부산광역시",
+        "소재지",
+        "위탁운영",
+        "유사실적",
+        "5천만원",
+        "AWS 공인 강사",
+        "전문 강사",
+        "성범죄 경력",
+        "아동학대 전력",
+        "교육과정 개발",
+        "교육 컨텐츠",
+        "독창성",
+        "프로그램 구성",
+        "충실성"
+      ],
+      "program_topics": [
+        "AWS C3 구축",
+        "교직원 역량 강화 교육",
+        "클라우드",
+        "AI",
+        "SAA-C03",
+        "교육과정 개발",
+        "교육 컨텐츠",
+        "독창성",
+        "프로그램 구성",
+        "충실성",
+        "국가계약법",
+        "자격요건",
+        "부정당업자",
+        "울산광역시",
+        "부산광역시",
+        "소재지",
+        "위탁운영",
+        "유사실적",
+        "5천만원",
+        "AWS 공인 강사",
+        "전문 강사",
+        "성범죄 경력",
+        "아동학대 전력"
+      ],
+      "target_audience": [
+        "본교 교직원 및 교원"
+      ],
+      "participant_capacity": null,
+      "delivery_format": [
+        "ILT 정규과정",
+        "AWS Skill Builder 자기주도 학습",
+        "시험 대비"
+      ],
+      "education_hours": null,
+      "schedule": [],
+      "required_roles": [
+        "AWS 공인 전문 강사",
+        "과업관리 책임자"
+      ],
+      "instructor_requirements": {
+        "required_experience": [
+          "공고일 기준 최근 3년 이내 국내 대학 및 전문대학 또는 공공기관에서 유사한 위탁운영 실적이 단일건수 기준 5천만원 이상 1건 이상 실행업체(사업완료 건수)",
+          "성범죄 경력, 아동학대 전력 등에 의해 과업 수행에 자격이 없는 강사 배제 및 전력 조회 협조"
+        ],
+        "required_certifications": [
+          "국가를 당사자로 하는 계약에 관한 법률 시행령 제12조 및 동법 시행규칙 제14조에 의한 자격요건을 갖추고 부정당업자로 등록되거나 제재받은 사실이 없는 업체",
+          "성범죄 경력, 아동학대 전력 등에 의해 과업 수행에 자격이 없는 강사 배제 및 전력 조회 협조"
+        ],
+        "required_vendor_credentials": [],
+        "similar_project_experience": [
+          "최근 3년 이내 국내 대학 및 전문대학 또는 공공기관 유사 위탁운영 실적"
+        ]
+      },
+      "curriculum_requirements": [],
+      "operational_requirements": [],
+      "practical_project_requirements": [
+        "AWS C3 시험장 인프라 구축(1인 독립부스)",
+        "학습 플랫폼 라이선스 및 AWS 실습 환경 구축",
+        "AWS C3 운영 시스템 및 Tier 관리 구축",
+        "AWS 교직원 역량 강화 교육 운영(기초통합, SAA, AAI)",
+        "교육 효과성 분석 및 만족도 설문조사",
+        "최종 성과물 및 결과보고서 제출",
+        "AWS 공인 전문 강사",
+        "과업관리 책임자"
+      ],
+      "assessment_requirements": [
+        "평가 교육과정 개발 (사업목적에 부합하는 교육 컨텐츠 구성, 교육 컨텐츠 개발 프로세스 및 연구의 전문성과 독창성)",
+        "사업목적에 부합하는 교육 컨텐츠 구성 (교육 목적에 맞는 프로그램 구성 및 내용의 충실성)"
+      ],
+      "outcome_requirements": [
+        "지역 디지털 전환 촉진 및 실무형 클라우드-AI 역량을 갖춘 인재 양성",
+        "대학 자체 글로벌 표준 교육 체계 구축",
+        "디지털 혁신 기여 및 학생 취업인식 개선"
+      ]
+    },
+    "extensions": {
+      "source_task_order_id": "0567b063-38c5-48b3-b2d2-1a5eefae5189",
+      "normalized_qualifications": [
+        {
+          "category": "일반자격",
+          "description": "국가를 당사자로 하는 계약에 관한 법률 시행령 제12조 및 동법 시행규칙 제14조에 의한 자격요건을 갖추고 부정당업자로 등록되거나 제재받은 사실이 없는 업체",
+          "is_mandatory": true,
+          "keywords": [
+            "국가계약법",
+            "자격요건",
+            "부정당업자"
+          ]
+        },
+        {
+          "category": "소재지",
+          "description": "공고일 기준 사업장의 소재지가 울산광역시 또는 부산광역시에 위치한 업체",
+          "is_mandatory": true,
+          "keywords": [
+            "울산광역시",
+            "부산광역시",
+            "소재지"
+          ]
+        },
+        {
+          "category": "수행실적",
+          "description": "공고일 기준 최근 3년 이내 국내 대학 및 전문대학 또는 공공기관에서 유사한 위탁운영 실적이 단일건수 기준 5천만원 이상 1건 이상 실행업체(사업완료 건수)",
+          "is_mandatory": true,
+          "keywords": [
+            "위탁운영",
+            "유사실적",
+            "5천만원"
+          ]
+        },
+        {
+          "category": "인력요건",
+          "description": "단계별 AWS 공인 전문 강사로 구성",
+          "is_mandatory": true,
+          "keywords": [
+            "AWS 공인 강사",
+            "전문 강사"
+          ]
+        },
+        {
+          "category": "인력요건",
+          "description": "성범죄 경력, 아동학대 전력 등에 의해 과업 수행에 자격이 없는 강사 배제 및 전력 조회 협조",
+          "is_mandatory": true,
+          "keywords": [
+            "성범죄 경력",
+            "아동학대 전력"
+          ]
+        }
+      ],
+      "normalized_evaluation_criteria": [
+        {
+          "category": "기술평가",
+          "description": "평가 교육과정 개발 (사업목적에 부합하는 교육 컨텐츠 구성, 교육 컨텐츠 개발 프로세스 및 연구의 전문성과 독창성)",
+          "weight": 20,
+          "keywords": [
+            "교육과정 개발",
+            "교육 컨텐츠",
+            "독창성"
+          ]
+        },
+        {
+          "category": "기술평가",
+          "description": "사업목적에 부합하는 교육 컨텐츠 구성 (교육 목적에 맞는 프로그램 구성 및 내용의 충실성)",
+          "weight": 10,
+          "keywords": [
+            "교육 컨텐츠",
+            "프로그램 구성",
+            "충실성"
+          ]
+        }
+      ],
+      "overview": {
+        "section_titles": [
+          "Ⅰ. 과업 개요 ················································································ 1",
+          "Ⅰ 과업 개요",
+          "1. 과업 개요",
+          "2. 과업 목적",
+          "사업목적 달성을 위해 적극 협조하여야 한다.",
+          "­사업목적에 부합하는 교육 컨텐츠 구성",
+          "- 사업목적에 부합하는 교육 컨텐츠 구성",
+          "2. 사업내용",
+          "사업 개요",
+          "Ⅱ 과업 내용",
+          "Ⅲ 과업 수행 지침"
+        ],
+        "summary": "울산과학대학교 교직원 및 교원을 대상으로 AWS C3 인증센터를 구축하고, 클라우드 및 AI 역량 강화를 위한 기초통합교육, SAA 교육, AAI 교육 등 맞춤형 프로그램을 개발 및 운영하는 사업입니다.",
+        "core_topics": [
+          "AWS C3 구축",
+          "교직원 역량 강화 교육",
+          "클라우드",
+          "AI",
+          "SAA-C03"
+        ],
+        "target_audience": [
+          "본교 교직원 및 교원"
+        ],
+        "delivery_formats": [
+          "ILT 정규과정",
+          "AWS Skill Builder 자기주도 학습",
+          "시험 대비"
+        ],
+        "required_roles": [
+          "AWS 공인 전문 강사",
+          "과업관리 책임자"
+        ],
+        "scope": [
+          "AWS C3 시험장 인프라 구축(1인 독립부스)",
+          "학습 플랫폼 라이선스 및 AWS 실습 환경 구축",
+          "AWS C3 운영 시스템 및 Tier 관리 구축",
+          "AWS 교직원 역량 강화 교육 운영(기초통합, SAA, AAI)",
+          "교육 효과성 분석 및 만족도 설문조사",
+          "최종 성과물 및 결과보고서 제출"
+        ],
+        "expected_outcomes": [
+          "지역 디지털 전환 촉진 및 실무형 클라우드-AI 역량을 갖춘 인재 양성",
+          "대학 자체 글로벌 표준 교육 체계 구축",
+          "디지털 혁신 기여 및 학생 취업인식 개선"
+        ],
+        "preferred_experience": [
+          "최근 3년 이내 국내 대학 및 전문대학 또는 공공기관 유사 위탁운영 실적"
+        ],
+        "source_excerpt": "Ⅰ. 과업 개요 ················································································ 1\nⅡ. 과업 내용 ················································································ 3\nⅢ. 과업 수행 지침 ······································································· 7\nⅣ. 과업 수행 사업자 선정 ······························································· 13\nⅤ. 제안서 작성 및 제출 ··································································· 18\n[별첨] 제출 서류 양식 ······································································· 26\n\nⅠ 과업 개요\n1. 과업 개요\n\n1. 과업 개요\n가. 과 업 명: 2026년 AWS C3 구축 및 교직원 역량 강화 교육\n\n2. 과업 목적\n가. 지역 디지털 전환의 촉진: 새로운 비즈니스 모델 창출을 지원하는 실무형\n클라우드-AI 역량을 갖춘 인재를 양성\n\n사업목적 달성을 위해 적극 협조하여야 한다.\n9) 과업지시서와 관련하여 문구, 용어의 해석 및 과업의 범위 등에 대\n하여 이견이 있을 때는 발주기관의 해석과 지시에 따른다.\n\n­사업목적에 부합하는 교육 컨텐츠 구성\n평가 교육과정 개발 20\n\n­사업목적에 부합하는 교육 컨텐츠 구성\n­교육 컨텐츠 개발 프로세스 및 연구의 전문성과\n독창성 | 20\n\n- 사업목적에 부합하는 교육 컨텐츠 구성\n10\n\n- 사업목적에 부합하는 교육 컨텐츠 구성\n- 교육 목적에 맞는 프로그램 구성 및 내용의 충실성\n\n2. 사업내용\n방법, 교재 등), 창의적 제안 등 사업수행 내용 제시\n\n사업 개요\n계약 번호 | 계약일자 | 계약기간 | 계약금액\n(VAT포함) | 이행실적\n완료일자 | 비율(%) | 실적(원)\n증명서\n발급\n기관 | 위 사실을 증명함",
+        "matching_rules": [
+          {
+            "key": "core_topics",
+            "label": "핵심 교육 주제",
+            "values": [
+              "AWS C3 구축",
+              "교직원 역량 강화 교육",
+              "클라우드",
+              "AI",
+              "SAA-C03"
+            ]
+          },
+          {
+            "key": "target_audience",
+            "label": "교육 대상",
+            "values": [
+              "본교 교직원 및 교원"
+            ]
+          },
+          {
+            "key": "delivery_formats",
+            "label": "운영 방식",
+            "values": [
+              "ILT 정규과정",
+              "AWS Skill Builder 자기주도 학습",
+              "시험 대비"
+            ]
+          },
+          {
+            "key": "required_roles",
+            "label": "요구 역할",
+            "values": [
+              "AWS 공인 전문 강사",
+              "과업관리 책임자"
+            ]
+          },
+          {
+            "key": "scope",
+            "label": "업무 범위",
+            "values": [
+              "AWS C3 시험장 인프라 구축(1인 독립부스)",
+              "학습 플랫폼 라이선스 및 AWS 실습 환경 구축",
+              "AWS C3 운영 시스템 및 Tier 관리 구축",
+              "AWS 교직원 역량 강화 교육 운영(기초통합, SAA, AAI)",
+              "교육 효과성 분석 및 만족도 설문조사",
+              "최종 성과물 및 결과보고서 제출"
+            ]
+          },
+          {
+            "key": "expected_outcomes",
+            "label": "기대 성과",
+            "values": [
+              "지역 디지털 전환 촉진 및 실무형 클라우드-AI 역량을 갖춘 인재 양성",
+              "대학 자체 글로벌 표준 교육 체계 구축",
+              "디지털 혁신 기여 및 학생 취업인식 개선"
+            ]
+          },
+          {
+            "key": "preferred_experience",
+            "label": "우대 경험",
+            "values": [
+              "최근 3년 이내 국내 대학 및 전문대학 또는 공공기관 유사 위탁운영 실적"
+            ]
+          }
+        ]
+      }
+    },
+    "evidence": [
+      {
+        "source_document_id": "task-order:0567b063-38c5-48b3-b2d2-1a5eefae5189",
+        "page": null,
+        "section": "normalized task-order requirements",
+        "quote": "2026년 AWS C3 인증센터 구축 및\n교직원 역량 강화 교육 용역 과업지시서\n.\n2026. 7. .\n목 차\nⅠ. 과업 개요 ················································································ 1\nⅡ. 과업 내용 ················································································ 3\nⅢ. 과업 수행 지침 ······································································· 7\nⅣ. 과업 수행 사업자 선정 ······························································· 13\nⅤ. 제안서 작성 및 제출 ··································································· 18\n[별첨] 제출 서류 양식 ······································································· 26\nⅠ 과업 개요\n1. 과업 개요\n가. 과 업 명: 2026년 AWS C3 구축 및 교직원 역량 강화 교육\n나. 과업기간: 계약체결일로부터 2026. 10. 30.까지\n다. 계약방법: 협상에 의한 계약, 제한경쟁입찰\n라. 사업예산: 금180,000,000원(금일억팔천만원)(부가가치세 포함)\n2. 과업 목적\n가. 지역 디지털 전환의 촉진: 새로운 비즈니스 모델 창출을 지원하는 실무형\n클라우드-AI 역량을 갖춘 인재를 양성\n나. 글로벌 표준 교육 체계 구축: 대학이 자체적으로 국제 표준 교육 과정을\n설계하고 운영할 수 있는 체계\n다. 사회적 가치 창출: 지역 인재의 일자리 창출과 기업의 디지털 전환 성공\n사례를 확대함으로써 디지털 혁신 기여도 상승취업 마인드 함양, 자기주도\n적 취업진로 설계 등 학생 취업인식 개선\n3. 주요 내용\n",
+        "confidence": 1.0
+      }
+    ],
+    "review_status": "unreviewed"
+  },
+  "instructor": {
+    "instructor_id": "instructor-42",
+    "profile_version": "db-657f7ef0e3cb",
+    "display_name": "서민호",
+    "expertise_tags": [
+      "Python",
+      "R",
+      "AWS Cloud",
+      "Google Cloud",
+      "KT Cloud",
+      "Fusion360",
+      "Sculptris",
+      "영상 편집",
+      "인공지능",
+      "생성형 AI",
+      "빅데이터",
+      "마케팅",
+      "3D프린팅",
+      "클라우드",
+      "스마트도시",
+      "AWS",
+      "DeepRacer",
+      "Data science",
+      "AI 밋업",
+      "데이터",
+      "매출",
+      "AI",
+      "실무",
+      "AI트렌드",
+      "비즈니스",
+      "iOS",
+      "앱 개발",
+      "인재양성",
+      "프롬프트 엔지니어링",
+      "ICT이노베이션",
+      "AGI",
+      "뉴스 브리핑",
+      "일자리창출",
+      "청년보부상",
+      "유튜브",
+      "스타트업",
+      "콘텐츠 마케팅",
+      "소셜마케팅"
+    ],
+    "summary": "AI, 빅데이터, 클라우드 및 마케팅 기술 교육 전문 강사",
+    "delivery_modes": [],
+    "availability_notes": null,
+    "vendor_experience": [
+      "세종시 - 지역산업맞춤형일자리창출 지원사업 ‘청년보부상’",
+      "AI회사 송디 - 대표",
+      "(주)에이아이택스 - AI팀 팀장 AI자문",
+      "㈜쓰리디아이템즈 - 교육팀 강사 교육",
+      "㈜오브젝트빌드 - 대표"
+    ],
+    "vendor_certifications": [
+      "콘텐츠마케터",
+      "3D프린팅안전관리사",
+      "홈팩토리마스터",
+      "정보처리 기능사 2급"
+    ],
+    "teaching_items": [
+      {
+        "topic": "거점형 스마트도시 조성사업 교육",
+        "organization": "천안과학산업진흥원",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 951",
+            "quote": "거점형 스마트도시 조성사업 교육",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "AWS DeepRacer 과정",
+        "organization": "부산교육청",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 952",
+            "quote": "AWS DeepRacer 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Data siance",
+        "organization": "삼성디스플레이",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 953",
+            "quote": "Data siance",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "AI 밋업",
+        "organization": "아이보스",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 943",
+            "quote": "AI 밋업",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "데이터가 올려주는 내가게 매출 AI 강의",
+        "organization": "생산성본부",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 942",
+            "quote": "데이터가 올려주는 내가게 매출 AI 강의",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "생성형 AI 실무자 과정",
+        "organization": "IGM",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 941",
+            "quote": "생성형 AI 실무자 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "AI트렌드와 비즈니스 적용법",
+        "organization": "경기도경제과학진흥원",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 940",
+            "quote": "AI트렌드와 비즈니스 적용법",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "AWS DeepRacer 과정",
+        "organization": "제주대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 954",
+            "quote": "AWS DeepRacer 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "iOS 앱 개발",
+        "organization": "금유연수원",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 956",
+            "quote": "iOS 앱 개발",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "AWS DeepRacer 과정",
+        "organization": "한국외국어대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 955",
+            "quote": "AWS DeepRacer 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "Goolge Cloud 활용 AI 인재양성 과정",
+        "organization": "경기도경제과학진흥원",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 957",
+            "quote": "Goolge Cloud 활용 AI 인재양성 과정",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "프롬프트 엔지니어링 강의",
+        "organization": "그로우앤베터",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 944",
+            "quote": "프롬프트 엔지니어링 강의",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "<수도권/전남 ICT이노베이션 스퀘어 사업>",
+        "organization": "한국IT서비스산업협회",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 950",
+            "quote": "<수도권/전남 ICT이노베이션 스퀘어 사업>",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "AI AGI 활용 사업방 커뮤니티 주간 AI 뉴스 브리핑",
+        "organization": "지피터스",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 945",
+            "quote": "AI AGI 활용 사업방 커뮤니티 주간 AI 뉴스 브리핑",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "유튜브 비즈니스(1학기 강의)",
+        "organization": "중앙대학교",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 947",
+            "quote": "유튜브 비즈니스(1학기 강의)",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "스타트업 콘텐츠 마케팅",
+        "organization": "경기북부문화창조허브",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 948",
+            "quote": "스타트업 콘텐츠 마케팅",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "topic": "3D프린팅 비즈니스와 소셜마케팅",
+        "organization": "서울산업진흥원",
+        "target_audience": [],
+        "delivery_format": [],
+        "hours": null,
+        "outcomes": [],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 949",
+            "quote": "3D프린팅 비즈니스와 소셜마케팅",
+            "confidence": 1.0
+          }
+        ]
+      }
+    ],
+    "project_items": [
+      {
+        "title": "지역산업맞춤형일자리창출 지원사업 ‘청년보부상’",
+        "client_organization": "세종시",
+        "role": "주강사",
+        "start_date": "2019",
+        "end_date": null,
+        "keywords": [
+          "일자리창출",
+          "청년보부상"
+        ],
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "2. 강의 및 프로젝트 이력 row 946",
+            "quote": "지역산업맞춤형일자리창출 지원사업 ‘청년보부상’",
+            "confidence": 1.0
+          }
+        ]
+      }
+    ],
+    "work_experience_items": [
+      {
+        "organization": "AI회사 송디",
+        "summary": "대표",
+        "start_date": "2025-05-01",
+        "end_date": "2026-01-01",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 402",
+            "quote": "대표",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "organization": "(주)에이아이택스",
+        "summary": "AI팀 팀장 AI자문",
+        "start_date": "2025-01-01",
+        "end_date": "2026-01-01",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 401",
+            "quote": "AI팀 팀장 AI자문",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "organization": "㈜쓰리디아이템즈",
+        "summary": "교육팀 강사 교육",
+        "start_date": "2014-04-01",
+        "end_date": "2021-02-01",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 403",
+            "quote": "교육팀 강사 교육",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "organization": "㈜오브젝트빌드",
+        "summary": "대표",
+        "start_date": "2013-01-01",
+        "end_date": "2013-06-01",
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 404",
+            "quote": "대표",
+            "confidence": 1.0
+          }
+        ]
+      }
+    ],
+    "certifications": [
+      {
+        "name": "콘텐츠마케터",
+        "issuer": "민간자격증",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 407",
+            "quote": "콘텐츠마케터",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "3D프린팅안전관리사",
+        "issuer": "민간자격증",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 406",
+            "quote": "3D프린팅안전관리사",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "홈팩토리마스터",
+        "issuer": "민간자격증",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 405",
+            "quote": "홈팩토리마스터",
+            "confidence": 1.0
+          }
+        ]
+      },
+      {
+        "name": "정보처리 기능사 2급",
+        "issuer": "산업인력관리공단",
+        "expires_at": null,
+        "evidence": [
+          {
+            "source_document_id": "instructor-source:내부 강사 정보.xlsx",
+            "page": null,
+            "section": "3. 자격 및 경력 row 408",
+            "quote": "정보처리 기능사 2급",
+            "confidence": 1.0
+          }
+        ]
+      }
+    ],
+    "source_document_ids": [
+      "instructor-source:내부 강사 정보.xlsx",
+      "instructor-db:42"
+    ],
+    "extensions": {},
+    "evidence": [
+      {
+        "source_document_id": "instructor-db:42",
+        "page": null,
+        "section": "instructors",
+        "quote": "AI, 빅데이터, 클라우드 및 마케팅 기술 교육 전문 강사",
+        "confidence": 1.0
+      }
+    ],
+    "review_status": "unreviewed"
+  }
+}
