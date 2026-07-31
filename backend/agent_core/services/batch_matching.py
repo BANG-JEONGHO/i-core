@@ -31,8 +31,17 @@ class BatchMatchingWorkflow:
         self.evidence_retriever = evidence_retriever
         self.review_workers = max(1, review_workers)
 
-    def run(self, request: BatchMatchRequest) -> BatchMatchResult:
-        rankings = rank_instructors(request.project, self.repository, self.evidence_retriever)
+    def run(
+        self,
+        request: BatchMatchRequest,
+        precomputed_rankings: list | None = None,
+    ) -> BatchMatchResult:
+        # 이미 계산된 랭킹이 있으면 재사용한다. 없으면 기존처럼 새로 계산한다.
+        rankings = (
+            precomputed_rankings
+            if precomputed_rankings is not None
+            else rank_instructors(request.project, self.repository, self.evidence_retriever)
+        )
         available_ids = set(self.repository.list_instructor_ids())
         unknown_ids = sorted(set(request.review_instructor_ids) - available_ids)
         if unknown_ids:

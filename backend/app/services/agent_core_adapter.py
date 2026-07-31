@@ -114,7 +114,7 @@ def execute_agent_core_matching(task_order: TaskOrder) -> tuple[list[dict[str, A
     # Second phase: independent analysis A, verifier B, and code grounding.
     request = BatchMatchRequest(project=project, review_instructor_ids=review_ids)
     try:
-        batch_result = workflow.run(request)
+        batch_result = workflow.run(request, precomputed_rankings=preliminary.rankings)
         BatchRunStorage(Path(settings.AGENT_BATCH_RUN_STORAGE_DIR)).save_batch_run(
             request, batch_result
         )
