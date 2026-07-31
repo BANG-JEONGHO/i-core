@@ -23,6 +23,44 @@ logger = structlog.get_logger()
 _client: genai.Client | None = None
 MODEL = settings.GEMINI_MODEL
 
+# ─────────────────────────────────────────────────────────
+# 추출 결과 양식. AI가 이 모양대로만 답하도록 강제한다.
+# ─────────────────────────────────────────────────────────
+from pydantic import BaseModel, Field
+
+
+class QualificationItem(BaseModel):
+    category: str = ""
+    description: str = ""
+    is_mandatory: bool = False
+    keywords: list[str] = Field(default_factory=list)
+
+
+class CriterionItem(BaseModel):
+    category: str = ""
+    description: str = ""
+    weight: float | None = None
+    keywords: list[str] = Field(default_factory=list)
+
+
+class OverviewItem(BaseModel):
+    section_titles: list[str] = Field(default_factory=list)
+    summary: str = ""
+    core_topics: list[str] = Field(default_factory=list)
+    target_audience: list[str] = Field(default_factory=list)
+    delivery_formats: list[str] = Field(default_factory=list)
+    required_roles: list[str] = Field(default_factory=list)
+    scope: list[str] = Field(default_factory=list)
+    expected_outcomes: list[str] = Field(default_factory=list)
+    preferred_experience: list[str] = Field(default_factory=list)
+    source_excerpt: str = ""
+
+
+class ExtractionResult(BaseModel):
+    qualifications: list[QualificationItem] = Field(default_factory=list)
+    evaluation_criteria: list[CriterionItem] = Field(default_factory=list)
+    overview: OverviewItem = Field(default_factory=OverviewItem)
+
 
 def _get_client() -> genai.Client:
     global _client
@@ -435,12 +473,37 @@ async def parse_document_with_ai(file_content: bytes, file_name: str) -> dict:
 
 
 def _parse_with_text(client: genai.Client, text: str) -> dict:
-    """텍스트를 Gemini에 전달하여 파싱."""
+    """텍스트를 Gemini에 전달하여 파싱. 스키마를 강제하고 실패 시 재시도한다."""
     overview_hint = extract_overview_context(text)
     prompt = EXTRACTION_PROMPT + "\n\n## 과업지시서 텍스트:\n" + text[:10000]
     if overview_hint["source_excerpt"] and overview_hint["source_excerpt"] not in text[:10000]:
         prompt += "\n\n## 제목 규칙으로 찾은 개요 후보 (반드시 원문과 대조):\n" + overview_hint["source_excerpt"]
 
+    last_error: Exception | None = None
+    for attempt in range(2):
+        try:
+            interaction = client.interactions.create(
+                model=MODEL,
+                input=prompt,
+                response_format={
+                    "type": "text",
+                    "mime_type": "application/json",
+                    "schema": ExtractionResult.model_json_schema(),
+                },
+            )
+            parsed = ExtractionResult.model_validate_json(interaction.output_text)
+            logger.info("extraction_schema_ok", attempt=attempt + 1)
+            return parsed.model_dump(mode="json")
+        except Exception as error:
+            last_error = error
+            logger.warning(
+                "extraction_schema_failed",
+                attempt=attempt + 1,
+                error=str(error)[:300],
+            )
+
+    # 두 번 다 실패하면 기존 수동 파싱으로 마지막 시도
+    logger.warning("extraction_fallback_to_manual_parse", error=str(last_error)[:300])
     response = client.models.generate_content(model=MODEL, contents=prompt)
     return _parse_json_response(response.text)
 
@@ -515,6 +578,7 @@ def _parse_json_response(text: str) -> dict:
                 return json.loads(text[start:end])
             except:
                 pass
+    logger.error("json_parse_failed_completely", preview=text[:200])
     return {"qualifications": [], "evaluation_criteria": [], "overview": {}}
 
 
