@@ -70,9 +70,15 @@ async def google_login(request: GoogleLoginRequest, db: AsyncSession = Depends(g
 
     email = str(identity.get("email") or "").strip().lower()
     if not email or not bool(identity.get("email_verified")):
-        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="A verified email is required")
-    if settings.GOOGLE_ALLOWED_DOMAIN and not email.endswith(f"@{settings.GOOGLE_ALLOWED_DOMAIN.lower()}"):
-        raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="This Google account is not allowed")
+        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="인증된 이메일이 필요합니다.")
+
+    allowed_domain = (settings.GOOGLE_ALLOWED_DOMAIN or "iceu.kr").strip().lower()
+    domain_part = email.split("@")[-1] if "@" in email else ""
+    if allowed_domain and domain_part != allowed_domain:
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail=f"{allowed_domain} 계정으로만 로그인할 수 있습니다.",
+        )
 
     result = await db.execute(select(User).where(User.username == email))
     user = result.scalar_one_or_none()

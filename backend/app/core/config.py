@@ -30,9 +30,9 @@ class Settings(BaseSettings):
     GEMINI_EMBEDDING_MODEL: str = "gemini-embedding-001"
 
     # Google OAuth (leave blank to keep username/password-only login)
-    GOOGLE_CLIENT_ID: str = ""
+    GOOGLE_CLIENT_ID: str = "761086712825-cp5lvscdoer4lt8emg2gmhbrejktng0s.apps.googleusercontent.com"
     # Optional domain restriction for a company Google Workspace deployment.
-    GOOGLE_ALLOWED_DOMAIN: str = ""
+    GOOGLE_ALLOWED_DOMAIN: str = "iceu.kr"
     # Set to true only when the deployment intentionally routes Gemini API
     # traffic through HTTP(S)_PROXY. Local/serverless deployments should
     # connect directly by default.
@@ -60,6 +60,9 @@ class Settings(BaseSettings):
         "http://localhost:8700",
         "http://127.0.0.1:8900",
         "https://i-core-frontend-761086712825.asia-northeast3.run.app",
+        "https://iceu-pianofan9.web.app",
+        "https://iceu-pianofan9.firebaseapp.com",
+        "https://icore.iceu.kr",
     ]
 
     # File Upload

@@ -4,8 +4,14 @@ __pycache__
 *.pyo
 *.pyd
 .pytest_cache
+.mypy_cache
 .env
 .env.local
 tests
 .git
 .gitignore
+data/
+uploads/
+*.db
+*.sqlite
+*.sqlite3

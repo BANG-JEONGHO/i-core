@@ -28,27 +28,33 @@ jobs:
             --region asia-northeast3 \
             --allow-unauthenticated \
             --add-cloudsql-instances "iceu-bangjeongho833:asia-northeast3:icore-postgres" \
-            --set-env-vars "APP_NAME=i-Core API,DEBUG=false,GOOGLE_CLIENT_ID=761086712825-cp5lvscdoer4lt8emg2gmhbrejktng0s.apps.googleusercontent.com,GCS_BUCKET=icore-documents-gb, GOOGLE_ALLOWED_DOMAIN=iceu.kr" \
+            --set-env-vars "APP_NAME=i-Core API,DEBUG=false,GOOGLE_CLIENT_ID=761086712825-cp5lvscdoer4lt8emg2gmhbrejktng0s.apps.googleusercontent.com,GCS_BUCKET=icore-documents-gb,GOOGLE_ALLOWED_DOMAIN=iceu.kr" \
             --set-secrets "SECRET_KEY=icore-secret-key:latest,GEMINI_API_KEY=gemini-api-key:latest,DATABASE_URL=icore-app-database-url:latest,INSTRUCTOR_DATABASE_URL=icore-instructor-database-url:latest"
 
   deploy-frontend:
-    name: Deploy Frontend to Cloud Run
+    name: Deploy Frontend to Firebase Hosting
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Build Frontend
+        run: |
+          cd frontend
+          npm ci
+          npm run build
 
       - name: Google Auth
         uses: google-github-actions/auth@v2
         with:
           credentials_json: ${{ secrets.GCP_SA_KEY }}
 
-      - name: Set up Cloud SDK
-        uses: google-github-actions/setup-gcloud@v2
-
-      - name: Deploy Frontend
+      - name: Deploy to Firebase Hosting
         run: |
-          gcloud run deploy i-core-frontend \
-            --source ./frontend \
-            --region asia-northeast3 \
-            --allow-unauthenticated
+          cd frontend
+          npx firebase-tools deploy --only hosting --project iceu-pianofan9

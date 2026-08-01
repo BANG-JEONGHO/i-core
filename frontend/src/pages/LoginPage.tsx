@@ -18,7 +18,9 @@ declare global {
   }
 }
 
-const GOOGLE_CLIENT_ID = import.meta.env.VITE_GOOGLE_CLIENT_ID || '';
+const GOOGLE_CLIENT_ID =
+  import.meta.env.VITE_GOOGLE_CLIENT_ID ||
+  '761086712825-cp5lvscdoer4lt8emg2gmhbrejktng0s.apps.googleusercontent.com';
 
 export default function LoginPage() {
   const [loading, setLoading] = useState(false);
@@ -54,6 +56,7 @@ export default function LoginPage() {
         window.google.accounts.id.initialize({
           client_id: GOOGLE_CLIENT_ID,
           callback: handleGoogleCallback,
+          hd: 'iceu.kr',
         });
 
         // 모바일 및 PC 화면 크기에 맞춘 버튼 넓이

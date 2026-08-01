@@ -3,8 +3,8 @@
 > **공고문 문서(HWP/PDF)만 올리면 AI가 핵심 요건을 읽고, 가장 적합한 전문 강사를 자동으로 추천해주는 스마트 매칭 서비스**
 
 <p align="left">
-  <a href="https://i-core-frontend-761086712825.asia-northeast3.run.app">
-    <img src="https://img.shields.io/badge/🚀_Live_App-Web_Service-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white" alt="Live App" />
+  <a href="https://iceu-pianofan9.web.app">
+    <img src="https://img.shields.io/badge/🚀_Live_App-Web_Service-4285F4?style=for-the-badge&logo=firebase&logoColor=white" alt="Live App" />
   </a>
   <a href="https://i-core-backend-761086712825.asia-northeast3.run.app/docs">
     <img src="https://img.shields.io/badge/📖_Swagger_API-Docs-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="Swagger Docs" />
@@ -200,16 +200,7 @@ i-core/
 
 ## ⚡ 빠른 시작 가이드 (Quick Start)
 
-### 1. 웹사이트에서 바로 사용하기 (인터넷만 있으면 접속 가능)
+### 웹사이트에서 바로 사용하기 (인터넷만 있으면 접속 가능)
 구글 클라우드에 배포되어 있어 프로그램 설치 없이 브라우저로 바로 접속할 수 있습니다:
-- **웹 서비스 접속**: [https://i-core-frontend-761086712825.asia-northeast3.run.app](https://i-core-frontend-761086712825.asia-northeast3.run.app)
+- **웹 서비스 접속**: [https://iceu-pianofan9.web.app](https://iceu-pianofan9.web.app)
 - **개발자 API 문서**: [https://i-core-backend-761086712825.asia-northeast3.run.app/docs](https://i-core-backend-761086712825.asia-northeast3.run.app/docs)
-
----
-
-### 2. 내 컴퓨터에서 직접 테스트할 때 (개발자용)
-프로젝트 폴더에서 `start.bat`을 실행하면 내 컴퓨터에서 바로 테스트 환경이 켜집니다:
-```powershell
-.\start.bat
-```
-- 접속 주소: `http://localhost:8900`
